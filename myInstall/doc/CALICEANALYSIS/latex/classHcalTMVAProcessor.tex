@@ -1,0 +1,212 @@
+\section{Hcal\-T\-M\-V\-A\-Processor Class Reference}
+\label{classHcalTMVAProcessor}\index{Hcal\-T\-M\-V\-A\-Processor@{Hcal\-T\-M\-V\-A\-Processor}}
+Inheritance diagram for Hcal\-T\-M\-V\-A\-Processor\-:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classHcalTMVAProcessor}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+{\bf Hcal\-T\-M\-V\-A\-Processor} $\ast$ {\bfseries new\-Processor} ()\label{classHcalTMVAProcessor_a349bd1bb9e3a76bcb1eb140f36263859}
+
+\item 
+virtual void {\bfseries init} ()\label{classHcalTMVAProcessor_a3a5c09ecf812c886e905ebdc1446ce58}
+
+\item 
+virtual void {\bfseries process\-Event} (L\-C\-Event $\ast$)\label{classHcalTMVAProcessor_a4676ff5e437b9545fbecc26c685cfdc9}
+
+\item 
+virtual void {\bfseries end} ()\label{classHcalTMVAProcessor_a40f44f94285655cdaf2c42b84eebeaf1}
+
+\end{DoxyCompactItemize}
+\subsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+int {\bfseries cellsize} (int cellid, bool coarse=false)\label{classHcalTMVAProcessor_a22f18ae83004fa9cff45d4eb94ef978b}
+
+\item 
+int {\bfseries get\-Marina\-Shower\-Start\-Hcal\-Layer} (L\-C\-Event $\ast$evt, std\-::string shower\-Start\-Col\-Name)\label{classHcalTMVAProcessor_a12c68b7b1c5c921f12de723e41679fa7}
+
+\item 
+bool {\bfseries tbtrack\-Loop} (L\-C\-Event $\ast$evt)\label{classHcalTMVAProcessor_ad9528c31a4609b9589014de808134be8}
+
+\item 
+void {\bfseries fill\-Root\-Tree} (L\-C\-Event $\ast$evt)\label{classHcalTMVAProcessor_ab9e9661d462cfcd18e7f3d03a4225ea3}
+
+\item 
+void {\bfseries T\-M\-V\-A\-Classification} (std\-::string T\-M\-V\-A\-Method\-Name, std\-::string signal\-File\-Name, std\-::string background\-File\-Name, float signal\-Weight, float background\-Weight, std\-::string argument\-For\-Prepare\-Training\-And\-Test\-Tree, std\-::string argument\-For\-Book\-Method)\label{classHcalTMVAProcessor_ab8d2344c572a257e79a032565469849a}
+
+\item 
+void {\bfseries T\-M\-V\-A\-Classification\-Application} (std\-::string T\-M\-V\-A\-Method\-Name, std\-::string signal\-File\-Name)\label{classHcalTMVAProcessor_a90d0bc5de7db0722b39cbef51e9dacf8}
+
+\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+std\-::string {\bfseries \-\_\-shower\-Start\-Col\-Name}\label{classHcalTMVAProcessor_a828711ef10b4b4556e1650148fdddb56}
+
+\item 
+std\-::string {\bfseries \-\_\-ptf\-Track\-Col\-Name}\label{classHcalTMVAProcessor_a866284ca5765034888614bf32ee3a8b5}
+
+\item 
+std\-::string {\bfseries \-\_\-hcal\-Col\-Name}\label{classHcalTMVAProcessor_ab91c0aefa8371bb9fea28884413572cf}
+
+\item 
+std\-::string {\bfseries \-\_\-ecal\-Col\-Name}\label{classHcalTMVAProcessor_aaf7d811967d03a8b61bd5ca589a0b6a5}
+
+\item 
+std\-::string {\bfseries \-\_\-fex\-Track\-Col\-Name}\label{classHcalTMVAProcessor_aa52a884dc3d852f83dd10c0db7b666fe}
+
+\item 
+std\-::string {\bfseries \-\_\-fey\-Track\-Col\-Name}\label{classHcalTMVAProcessor_acf4b95a70aa0818757a9dabb70d911dc}
+
+\item 
+bool {\bfseries \-\_\-\-Fill\-Root\-Tree}\label{classHcalTMVAProcessor_a9869466d9a7ab2657b00ac02bcda13d4}
+
+\item 
+bool {\bfseries \-\_\-\-T\-M\-V\-A\-\_\-\-Training}\label{classHcalTMVAProcessor_a0c790893fd157dd495ed4bd2f7e599a5}
+
+\item 
+bool {\bfseries \-\_\-\-T\-M\-V\-A\-\_\-\-Analysis}\label{classHcalTMVAProcessor_a5c0440c4c0f66f41bb5b6a9d21395f11}
+
+\item 
+float {\bfseries \-\_\-signal\-Weight}\label{classHcalTMVAProcessor_a8878e5e96b8cf447eb762ff4046ae402}
+
+\item 
+float {\bfseries \-\_\-background\-Weight}\label{classHcalTMVAProcessor_a7c44771323a9a99aa8ce5bd9a3c495a4}
+
+\item 
+std\-::string {\bfseries \-\_\-\-T\-M\-V\-A\-\_\-\-Method}\label{classHcalTMVAProcessor_a29578e096e86d3f96bb45d235d15323d}
+
+\item 
+std\-::string {\bfseries \-\_\-\-T\-M\-V\-A\-\_\-\-Training\-\_\-\-Signal\-File}\label{classHcalTMVAProcessor_a23b46bc83b036cf7f30d9cb97b285944}
+
+\item 
+std\-::string {\bfseries \-\_\-\-T\-M\-V\-A\-\_\-\-Training\-\_\-\-Background\-File}\label{classHcalTMVAProcessor_a99d2e077eceb739619f6a96980f6760c}
+
+\item 
+std\-::string {\bfseries \-\_\-\-T\-M\-V\-A\-\_\-\-Analysis\-\_\-\-Signal\-File}\label{classHcalTMVAProcessor_ae02107fea53a584976f0410b6736b334}
+
+\item 
+std\-::string {\bfseries \-\_\-argument\-For\-Prepare\-Training\-And\-Test\-Tree}\label{classHcalTMVAProcessor_a017d9bd4421477da408429969bc864f6}
+
+\item 
+std\-::string {\bfseries \-\_\-argument\-For\-Book\-Method}\label{classHcalTMVAProcessor_a1ec4a723499d288dbe4e73d07d4071c7}
+
+\item 
+float {\bfseries \-\_\-fx\-Trk\-At\-Hcal\-Front}\label{classHcalTMVAProcessor_a7ad14a383211affa5f97b60f18f3a41e}
+
+\item 
+float {\bfseries \-\_\-fy\-Trk\-At\-Hcal\-Front}\label{classHcalTMVAProcessor_ab7936148a25f097df87ca558b3abc106}
+
+\item 
+std\-::string {\bfseries \-\_\-mapping\-Processor\-Name}\label{classHcalTMVAProcessor_a52850d454438baf9ff1523ffde25191a}
+
+\item 
+const C\-A\-L\-I\-C\-E\-::\-Ahc\-Mapper $\ast$ {\bfseries \-\_\-mapper}\label{classHcalTMVAProcessor_a16047af3976807c609a9e91816662764}
+
+\item 
+std\-::string {\bfseries \-\_\-root\-File\-Name}\label{classHcalTMVAProcessor_a5e07d08f6ceaa0a14d712d05b93bb2bf}
+
+\item 
+std\-::string {\bfseries \-\_\-root\-File\-Mode}\label{classHcalTMVAProcessor_a8dfa042a0a07fa7122b99e8654cc3743}
+
+\item 
+T\-File $\ast$ {\bfseries \-\_\-root\-File}\label{classHcalTMVAProcessor_aabc121d4b37a5732a333b3ece61f5868}
+
+\item 
+T\-Tree $\ast$ {\bfseries \-\_\-root\-Tree}\label{classHcalTMVAProcessor_a2c4856e701ee9b82e8bffe84e84ac020}
+
+\item 
+float {\bfseries \-\_\-energy\-Sum}\label{classHcalTMVAProcessor_a00bc9323d52765ce8d2ab4d4b2a6d48e}
+
+\item 
+float {\bfseries \-\_\-energy1\-Momentum}\label{classHcalTMVAProcessor_a3b52255ba9b63b79104ffe8b1ecc7421}
+
+\item 
+float {\bfseries \-\_\-energy2\-Momentum}\label{classHcalTMVAProcessor_a42ab7b04ad9c379e7fec2205e8136f0d}
+
+\item 
+float {\bfseries \-\_\-energy3\-Momentum}\label{classHcalTMVAProcessor_a82308de405661fa309717629b2e28cef}
+
+\item 
+float {\bfseries \-\_\-energy\-Ratio}\label{classHcalTMVAProcessor_a30c123fdb9ec6ec83325426a8e7c300f}
+
+\item 
+float {\bfseries \-\_\-\-R90\-\_\-hits}\label{classHcalTMVAProcessor_a1333659172590a47aeec97c5dffbfebb}
+
+\item 
+float {\bfseries \-\_\-\-N90ratio\-N}\label{classHcalTMVAProcessor_ab4b965bab5e25b3f61f18228613ad7cb}
+
+\item 
+float {\bfseries \-\_\-hits\-Mean}\label{classHcalTMVAProcessor_a173a05b0ad67e93838bcdcb68d050622}
+
+\item 
+float {\bfseries \-\_\-energy\-Density}\label{classHcalTMVAProcessor_a397d6fba47101360c617b11826ee83f9}
+
+\item 
+int {\bfseries \-\_\-layer\-Max\-Diff\-Start}\label{classHcalTMVAProcessor_a6f6692cd1c48be72ca7278b8254cf83d}
+
+\item 
+int {\bfseries \-\_\-start\-Layer}\label{classHcalTMVAProcessor_aabb429e5a6a10496999dda602b541006}
+
+\item 
+int {\bfseries \-\_\-n\-Layer\-Max\-Energy}\label{classHcalTMVAProcessor_a9fadcc3533a11de7aabcdf1a3e42612f}
+
+\item 
+T\-H1\-F $\ast$ {\bfseries \-\_\-h\-Long}\label{classHcalTMVAProcessor_af3334ea5f23a41a21e77968c72b79b0f}
+
+\item 
+T\-H1\-F $\ast$ {\bfseries \-\_\-h\-Long\-\_\-from\-Shower\-Start}\label{classHcalTMVAProcessor_a3b67b4268924aa76cc593085f3a3bc57}
+
+\item 
+T\-H1\-F $\ast$ {\bfseries \-\_\-h\-Energy\-Sum}\label{classHcalTMVAProcessor_a4f87d18c0692f5df7320ae4372f8323a}
+
+\item 
+T\-H1\-F $\ast$ {\bfseries \-\_\-h\-Num\-Hits}\label{classHcalTMVAProcessor_abe950cfbfb7692ab9a0eff9ce1b13fe4}
+
+\item 
+T\-H1\-F $\ast$ {\bfseries \-\_\-h\-Shower\-Start}\label{classHcalTMVAProcessor_af14572f4de0c74e68e9889a135794241}
+
+\item 
+T\-H1\-F $\ast$ {\bfseries \-\_\-h\-Layer\-Max\-Energy}\label{classHcalTMVAProcessor_a43a01c577c5ffcea6ac03c4582403a45}
+
+\item 
+T\-H1\-F $\ast$ {\bfseries \-\_\-h\-Num\-Hits\-Per\-Layer}\label{classHcalTMVAProcessor_a927053a0e53266124e864d43b0545f79}
+
+\item 
+T\-H1\-F $\ast$ {\bfseries \-\_\-h\-Hit\-Energy}\label{classHcalTMVAProcessor_a8a652a8351094ade96b56b520c4ae461}
+
+\item 
+T\-H1\-F $\ast$ {\bfseries \-\_\-h\-Cog\-X}\label{classHcalTMVAProcessor_a59c2d88635f53f23f19b4f8ac0dbaa9d}
+
+\item 
+T\-H1\-F $\ast$ {\bfseries \-\_\-h\-Cog\-Y}\label{classHcalTMVAProcessor_aee553e8c73afc261adb0a1e407efd027}
+
+\item 
+T\-H1\-F $\ast$ {\bfseries \-\_\-h\-Trk\-X\-Slope}\label{classHcalTMVAProcessor_ad151e361f63f5508f974eeac8ebed55e}
+
+\item 
+T\-H1\-F $\ast$ {\bfseries \-\_\-h\-Trk\-X\-Offset}\label{classHcalTMVAProcessor_a64939191b4e6fbb6be87f4bfa928c38c}
+
+\item 
+T\-H1\-F $\ast$ {\bfseries \-\_\-h\-Trk\-X\-At\-Hcal\-Front}\label{classHcalTMVAProcessor_aded67ef40132ed0ff2c1470861430f8e}
+
+\item 
+T\-H1\-F $\ast$ {\bfseries \-\_\-h\-Trk\-Y\-Slope}\label{classHcalTMVAProcessor_a17c2a4a3a32b2a67fba024e3d284d4d4}
+
+\item 
+T\-H1\-F $\ast$ {\bfseries \-\_\-h\-Trk\-Y\-Offset}\label{classHcalTMVAProcessor_af8695ab9ecdd282d0a94669184229c3e}
+
+\item 
+T\-H1\-F $\ast$ {\bfseries \-\_\-h\-Trk\-Y\-At\-Hcal\-Front}\label{classHcalTMVAProcessor_a5ade5d7d0c9764a6e787ab77189146b1}
+
+\end{DoxyCompactItemize}
+
+
+The documentation for this class was generated from the following files\-:\begin{DoxyCompactItemize}
+\item 
+/nfs/dust/ilc/user/marquezh/\-Calice\-Soft\-\_\-w\-\_\-\-I\-L\-C\-Soft\-\_\-v02-\/03-\/02/calice\-\_\-analysis/addon\-Procs/include/Hcal\-T\-M\-V\-A\-Processor.\-hh\item 
+/nfs/dust/ilc/user/marquezh/\-Calice\-Soft\-\_\-w\-\_\-\-I\-L\-C\-Soft\-\_\-v02-\/03-\/02/calice\-\_\-analysis/addon\-Procs/src/Hcal\-T\-M\-V\-A\-Processor.\-cc\end{DoxyCompactItemize}

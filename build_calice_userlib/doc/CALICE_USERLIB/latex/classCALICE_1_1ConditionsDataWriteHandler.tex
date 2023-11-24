@@ -1,0 +1,290 @@
+\section{C\-A\-L\-I\-C\-E\-:\-:Conditions\-Data\-Write\-Handler Class Reference}
+\label{classCALICE_1_1ConditionsDataWriteHandler}\index{C\-A\-L\-I\-C\-E\-::\-Conditions\-Data\-Write\-Handler@{C\-A\-L\-I\-C\-E\-::\-Conditions\-Data\-Write\-Handler}}
+
+
+Handler of conditions data changes which writes the replaced collections to a conditions data base.  
+
+
+
+
+{\ttfamily \#include $<$Conditions\-Data\-Write\-Handler.\-hh$>$}
+
+Inheritance diagram for C\-A\-L\-I\-C\-E\-:\-:Conditions\-Data\-Write\-Handler\-:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classCALICE_1_1ConditionsDataWriteHandler}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+{\bf Conditions\-Data\-Write\-Handler} (const std\-::string \&col\-\_\-name, const std\-::string \&db\-\_\-init\-\_\-string, const std\-::string \&folder\-\_\-name, const std\-::string \&tag, const std\-::string \&description)
+\begin{DoxyCompactList}\small\item\em constructor. \end{DoxyCompactList}\item 
+{\bf $\sim$\-Conditions\-Data\-Write\-Handler} ()\label{classCALICE_1_1ConditionsDataWriteHandler_a581dea40c8faa28948c8cb461d9126dc}
+
+\begin{DoxyCompactList}\small\item\em destructor. \end{DoxyCompactList}\item 
+void {\bf conditions\-Changed} (lcio\-::\-L\-C\-Collection $\ast$col)
+\begin{DoxyCompactList}\small\item\em Be notified if conditions data changes and redirect changes to responsible class. \end{DoxyCompactList}\item 
+void {\bf write\-Conditions\-Data} (const long64 \&best\-\_\-guess\-\_\-of\-\_\-till\-\_\-time\-\_\-stamp)
+\begin{DoxyCompactList}\small\item\em write the conditions data to the conditions database. \end{DoxyCompactList}\item 
+void {\bf set\-Since\-Time} (long64 since\-\_\-time)
+\begin{DoxyCompactList}\small\item\em Set the correct since time for the current conditions data. \end{DoxyCompactList}\item 
+const std\-::string \& {\bfseries name} () const \label{classCALICE_1_1ConditionsDataWriteHandler_a578e53e8c53ee791d1ab574811551496}
+
+\item 
+unsigned int {\bf number\-Of\-Writes} () const \label{classCALICE_1_1ConditionsDataWriteHandler_a535ca783c3475b0cbacd99484c4e4229}
+
+\begin{DoxyCompactList}\small\item\em Get the number of collections written to the database;. \end{DoxyCompactList}\item 
+unsigned int {\bf changes} () const \label{classCALICE_1_1ConditionsDataWriteHandler_ae53d14eec368dc28b8bc5dcb73ed2d01}
+
+\begin{DoxyCompactList}\small\item\em Get the number of recognised changes of the conditions data. \end{DoxyCompactList}\item 
+long64 {\bf valid\-At\-Most\-Since} () const \label{classCALICE_1_1ConditionsDataWriteHandler_a1899ab4669280acec16c6baa53e6abc3}
+
+\begin{DoxyCompactList}\small\item\em Get the time of the first recognised conditions data change. \end{DoxyCompactList}\item 
+long64 {\bf valid\-At\-Most\-Till} () const \label{classCALICE_1_1ConditionsDataWriteHandler_a487fe71c6d796b46dac6dd7ea16eb917}
+
+\begin{DoxyCompactList}\small\item\em Get the time of the last write to the data base. \end{DoxyCompactList}\item 
+long64 {\bf current\-Valid\-Since} () const \label{classCALICE_1_1ConditionsDataWriteHandler_ac3a420cb581ed9519e06e795dd13ac9a}
+
+\begin{DoxyCompactList}\small\item\em Get the time of the first recognised conditions data change. \end{DoxyCompactList}\item 
+long64 {\bf current\-Valid\-Till} () const \label{classCALICE_1_1ConditionsDataWriteHandler_a7cae6dc5fd78a5aa243bb589ba4c7caa}
+
+\begin{DoxyCompactList}\small\item\em Get the time of the last write to the data base. \end{DoxyCompactList}\item 
+const std\-::string \& {\bfseries get\-Tag} () const \label{classCALICE_1_1ConditionsDataWriteHandler_a3e14961a4bf03b6282f2b59fe87790fa}
+
+\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+const std\-::string {\bf \-\_\-col\-Name}\label{classCALICE_1_1ConditionsDataWriteHandler_a7e065bb6ab09b579ce20f7dbbbdf07a2}
+
+\begin{DoxyCompactList}\small\item\em name of the collection (not used) \end{DoxyCompactList}\item 
+lccd\-::\-D\-B\-Interface {\bfseries \-\_\-db}\label{classCALICE_1_1ConditionsDataWriteHandler_a94ae745611b1bff4441eab7677c408c1}
+
+\item 
+lccd\-::\-I\-Conditions\-Handler $\ast$ {\bf \-\_\-change\-Handler}\label{classCALICE_1_1ConditionsDataWriteHandler_a3a20bce4a053386c2d4f786653438f38}
+
+\begin{DoxyCompactList}\small\item\em handler of the conditions data \end{DoxyCompactList}\item 
+const std\-::string {\bfseries \-\_\-tag}\label{classCALICE_1_1ConditionsDataWriteHandler_a62de4dca742011f4fdb976d4bb3abee2}
+
+\item 
+const std\-::string {\bfseries \-\_\-description}\label{classCALICE_1_1ConditionsDataWriteHandler_a01342556e5b2c4916dbb3d3705dd0af3}
+
+\item 
+long64 {\bf \-\_\-since}
+\begin{DoxyCompactList}\small\item\em the time of the event just before the conditions data changed. \end{DoxyCompactList}\item 
+long64 {\bf \-\_\-till}
+\begin{DoxyCompactList}\small\item\em Best guess of the till time stamp (may be wrong). \end{DoxyCompactList}\item 
+L\-C\-Collection $\ast$ {\bf \-\_\-col}
+\begin{DoxyCompactList}\small\item\em pointer to the clone of the conditions data collection. \end{DoxyCompactList}\item 
+unsigned int {\bf \-\_\-changes}
+\begin{DoxyCompactList}\small\item\em keep track of the number of changes. \end{DoxyCompactList}\item 
+unsigned int {\bf \-\_\-writes}
+\begin{DoxyCompactList}\small\item\em keep track of the number of conditions data written to the database. \end{DoxyCompactList}\item 
+long64 {\bfseries \-\_\-first}\label{classCALICE_1_1ConditionsDataWriteHandler_a8076fe1b19e269527fa769de5a88a65e}
+
+\item 
+long64 {\bfseries \-\_\-last}\label{classCALICE_1_1ConditionsDataWriteHandler_a5debaace61a41f99d2df0ce318c036bf}
+
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Handler of conditions data changes which writes the replaced collections to a conditions data base. 
+
+When ever conditions data changes the old (cloned) collection will be stored with the time stamps of the event just before the former conditions data change and the time stamp of the last event. At the end of the run, the conditions data has to be written manually by calling \doxyref{write\-Conditions\-Data()}{p.}{classCALICE_1_1ConditionsDataWriteHandler_a139623a650f56c24a5d32658da9af09b} with the time stamp of the last event. 
+
+Definition at line 40 of file Conditions\-Data\-Write\-Handler.\-hh.
+
+
+
+\subsection{Constructor \& Destructor Documentation}
+\index{C\-A\-L\-I\-C\-E\-::\-Conditions\-Data\-Write\-Handler@{C\-A\-L\-I\-C\-E\-::\-Conditions\-Data\-Write\-Handler}!Conditions\-Data\-Write\-Handler@{Conditions\-Data\-Write\-Handler}}
+\index{Conditions\-Data\-Write\-Handler@{Conditions\-Data\-Write\-Handler}!CALICE::ConditionsDataWriteHandler@{C\-A\-L\-I\-C\-E\-::\-Conditions\-Data\-Write\-Handler}}
+\subsubsection[{Conditions\-Data\-Write\-Handler}]{\setlength{\rightskip}{0pt plus 5cm}C\-A\-L\-I\-C\-E\-::\-Conditions\-Data\-Write\-Handler\-::\-Conditions\-Data\-Write\-Handler (
+\begin{DoxyParamCaption}
+\item[{const std\-::string \&}]{col\-\_\-name, }
+\item[{const std\-::string \&}]{db\-\_\-init\-\_\-string, }
+\item[{const std\-::string \&}]{folder\-\_\-name, }
+\item[{const std\-::string \&}]{tag, }
+\item[{const std\-::string \&}]{description}
+\end{DoxyParamCaption}
+)}\label{classCALICE_1_1ConditionsDataWriteHandler_ae0e0b43ca010d9a424f962480175b110}
+
+
+constructor. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em col\-\_\-name} & the name of the to be monitored collection (not needed). \\
+\hline
+{\em db\-\_\-init\-\_\-string} & specifier of the database host name, database name, user and password. \\
+\hline
+{\em folder\-\_\-name} & name of the destination folder. \\
+\hline
+{\em tag} & to be applied at the end of the run to the folder. \\
+\hline
+{\em description} & the description added to every collection written toe the data base. \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 15 of file Conditions\-Data\-Write\-Handler.\-cc.
+
+
+
+References \-\_\-change\-Handler, \-\_\-col\-Name, \-\_\-since, and \-\_\-till.
+
+
+
+\subsection{Member Function Documentation}
+\index{C\-A\-L\-I\-C\-E\-::\-Conditions\-Data\-Write\-Handler@{C\-A\-L\-I\-C\-E\-::\-Conditions\-Data\-Write\-Handler}!conditions\-Changed@{conditions\-Changed}}
+\index{conditions\-Changed@{conditions\-Changed}!CALICE::ConditionsDataWriteHandler@{C\-A\-L\-I\-C\-E\-::\-Conditions\-Data\-Write\-Handler}}
+\subsubsection[{conditions\-Changed}]{\setlength{\rightskip}{0pt plus 5cm}void C\-A\-L\-I\-C\-E\-::\-Conditions\-Data\-Write\-Handler\-::conditions\-Changed (
+\begin{DoxyParamCaption}
+\item[{lcio\-::\-L\-C\-Collection $\ast$}]{col}
+\end{DoxyParamCaption}
+)}\label{classCALICE_1_1ConditionsDataWriteHandler_a0289e54f162d87125bce02b71dc46b51}
+
+
+Be notified if conditions data changes and redirect changes to responsible class. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em col} & the collection containing the new conditions data \\
+\hline
+\end{DoxyParams}
+if (\-\_\-change\-Handler) \{ 
+
+Definition at line 59 of file Conditions\-Data\-Write\-Handler.\-cc.
+
+
+
+References \-\_\-change\-Handler, \-\_\-changes, \-\_\-col, \-\_\-col\-Name, \-\_\-since, \-\_\-till, C\-A\-L\-I\-C\-E\-::clone\-Collection(), and write\-Conditions\-Data().
+
+\index{C\-A\-L\-I\-C\-E\-::\-Conditions\-Data\-Write\-Handler@{C\-A\-L\-I\-C\-E\-::\-Conditions\-Data\-Write\-Handler}!set\-Since\-Time@{set\-Since\-Time}}
+\index{set\-Since\-Time@{set\-Since\-Time}!CALICE::ConditionsDataWriteHandler@{C\-A\-L\-I\-C\-E\-::\-Conditions\-Data\-Write\-Handler}}
+\subsubsection[{set\-Since\-Time}]{\setlength{\rightskip}{0pt plus 5cm}void C\-A\-L\-I\-C\-E\-::\-Conditions\-Data\-Write\-Handler\-::set\-Since\-Time (
+\begin{DoxyParamCaption}
+\item[{long64}]{since\-\_\-time}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\label{classCALICE_1_1ConditionsDataWriteHandler_aaac4f4263bbfb7a38cfbf0cb6c6ef99b}
+
+
+Set the correct since time for the current conditions data. 
+
+The since time will be initialised by the time of the last event. But this is just too early. So, the \doxyref{marlin\-::\-Conditions\-Data\-Writer}{p.}{classmarlin_1_1ConditionsDataWriter} has to set the time of the next event. 
+
+Definition at line 78 of file Conditions\-Data\-Write\-Handler.\-hh.
+
+
+
+References \-\_\-since.
+
+\index{C\-A\-L\-I\-C\-E\-::\-Conditions\-Data\-Write\-Handler@{C\-A\-L\-I\-C\-E\-::\-Conditions\-Data\-Write\-Handler}!write\-Conditions\-Data@{write\-Conditions\-Data}}
+\index{write\-Conditions\-Data@{write\-Conditions\-Data}!CALICE::ConditionsDataWriteHandler@{C\-A\-L\-I\-C\-E\-::\-Conditions\-Data\-Write\-Handler}}
+\subsubsection[{write\-Conditions\-Data}]{\setlength{\rightskip}{0pt plus 5cm}void C\-A\-L\-I\-C\-E\-::\-Conditions\-Data\-Write\-Handler\-::write\-Conditions\-Data (
+\begin{DoxyParamCaption}
+\item[{const long64 \&}]{best\-\_\-guess\-\_\-of\-\_\-till\-\_\-time\-\_\-stamp}
+\end{DoxyParamCaption}
+)}\label{classCALICE_1_1ConditionsDataWriteHandler_a139623a650f56c24a5d32658da9af09b}
+
+
+write the conditions data to the conditions database. 
+
+Must be called at the end of the run to 
+
+Definition at line 112 of file Conditions\-Data\-Write\-Handler.\-cc.
+
+
+
+References \-\_\-col, \-\_\-col\-Name, \-\_\-since, and \-\_\-writes.
+
+
+
+Referenced by conditions\-Changed().
+
+
+
+\subsection{Field Documentation}
+\index{C\-A\-L\-I\-C\-E\-::\-Conditions\-Data\-Write\-Handler@{C\-A\-L\-I\-C\-E\-::\-Conditions\-Data\-Write\-Handler}!\-\_\-changes@{\-\_\-changes}}
+\index{\-\_\-changes@{\-\_\-changes}!CALICE::ConditionsDataWriteHandler@{C\-A\-L\-I\-C\-E\-::\-Conditions\-Data\-Write\-Handler}}
+\subsubsection[{\-\_\-changes}]{\setlength{\rightskip}{0pt plus 5cm}unsigned int C\-A\-L\-I\-C\-E\-::\-Conditions\-Data\-Write\-Handler\-::\-\_\-changes\hspace{0.3cm}{\ttfamily [private]}}\label{classCALICE_1_1ConditionsDataWriteHandler_a3f95dd0e4ec24fbd1d4df217a679191d}
+
+
+keep track of the number of changes. 
+
+
+
+Definition at line 124 of file Conditions\-Data\-Write\-Handler.\-hh.
+
+
+
+Referenced by conditions\-Changed().
+
+\index{C\-A\-L\-I\-C\-E\-::\-Conditions\-Data\-Write\-Handler@{C\-A\-L\-I\-C\-E\-::\-Conditions\-Data\-Write\-Handler}!\-\_\-col@{\-\_\-col}}
+\index{\-\_\-col@{\-\_\-col}!CALICE::ConditionsDataWriteHandler@{C\-A\-L\-I\-C\-E\-::\-Conditions\-Data\-Write\-Handler}}
+\subsubsection[{\-\_\-col}]{\setlength{\rightskip}{0pt plus 5cm}L\-C\-Collection$\ast$ C\-A\-L\-I\-C\-E\-::\-Conditions\-Data\-Write\-Handler\-::\-\_\-col\hspace{0.3cm}{\ttfamily [private]}}\label{classCALICE_1_1ConditionsDataWriteHandler_a8db218626a224e54f964cf46054890cb}
+
+
+pointer to the clone of the conditions data collection. 
+
+
+
+Definition at line 121 of file Conditions\-Data\-Write\-Handler.\-hh.
+
+
+
+Referenced by conditions\-Changed(), write\-Conditions\-Data(), and $\sim$\-Conditions\-Data\-Write\-Handler().
+
+\index{C\-A\-L\-I\-C\-E\-::\-Conditions\-Data\-Write\-Handler@{C\-A\-L\-I\-C\-E\-::\-Conditions\-Data\-Write\-Handler}!\-\_\-since@{\-\_\-since}}
+\index{\-\_\-since@{\-\_\-since}!CALICE::ConditionsDataWriteHandler@{C\-A\-L\-I\-C\-E\-::\-Conditions\-Data\-Write\-Handler}}
+\subsubsection[{\-\_\-since}]{\setlength{\rightskip}{0pt plus 5cm}long64 C\-A\-L\-I\-C\-E\-::\-Conditions\-Data\-Write\-Handler\-::\-\_\-since\hspace{0.3cm}{\ttfamily [private]}}\label{classCALICE_1_1ConditionsDataWriteHandler_ae9c2172504130f906f18d6459823d62b}
+
+
+the time of the event just before the conditions data changed. 
+
+
+
+Definition at line 119 of file Conditions\-Data\-Write\-Handler.\-hh.
+
+
+
+Referenced by conditions\-Changed(), Conditions\-Data\-Write\-Handler(), current\-Valid\-Since(), set\-Since\-Time(), and write\-Conditions\-Data().
+
+\index{C\-A\-L\-I\-C\-E\-::\-Conditions\-Data\-Write\-Handler@{C\-A\-L\-I\-C\-E\-::\-Conditions\-Data\-Write\-Handler}!\-\_\-till@{\-\_\-till}}
+\index{\-\_\-till@{\-\_\-till}!CALICE::ConditionsDataWriteHandler@{C\-A\-L\-I\-C\-E\-::\-Conditions\-Data\-Write\-Handler}}
+\subsubsection[{\-\_\-till}]{\setlength{\rightskip}{0pt plus 5cm}long64 C\-A\-L\-I\-C\-E\-::\-Conditions\-Data\-Write\-Handler\-::\-\_\-till\hspace{0.3cm}{\ttfamily [private]}}\label{classCALICE_1_1ConditionsDataWriteHandler_a3867ef683d994f3ab4a00b2ef7ae410c}
+
+
+Best guess of the till time stamp (may be wrong). 
+
+
+
+Definition at line 120 of file Conditions\-Data\-Write\-Handler.\-hh.
+
+
+
+Referenced by conditions\-Changed(), Conditions\-Data\-Write\-Handler(), and current\-Valid\-Till().
+
+\index{C\-A\-L\-I\-C\-E\-::\-Conditions\-Data\-Write\-Handler@{C\-A\-L\-I\-C\-E\-::\-Conditions\-Data\-Write\-Handler}!\-\_\-writes@{\-\_\-writes}}
+\index{\-\_\-writes@{\-\_\-writes}!CALICE::ConditionsDataWriteHandler@{C\-A\-L\-I\-C\-E\-::\-Conditions\-Data\-Write\-Handler}}
+\subsubsection[{\-\_\-writes}]{\setlength{\rightskip}{0pt plus 5cm}unsigned int C\-A\-L\-I\-C\-E\-::\-Conditions\-Data\-Write\-Handler\-::\-\_\-writes\hspace{0.3cm}{\ttfamily [private]}}\label{classCALICE_1_1ConditionsDataWriteHandler_aafdf1c7e91d569aed9cf422cd77d8fb6}
+
+
+keep track of the number of conditions data written to the database. 
+
+
+
+Definition at line 126 of file Conditions\-Data\-Write\-Handler.\-hh.
+
+
+
+Referenced by changes(), number\-Of\-Writes(), and write\-Conditions\-Data().
+
+
+
+The documentation for this class was generated from the following files\-:\begin{DoxyCompactItemize}
+\item 
+Conditions\-Data\-Write\-Handler.\-hh\item 
+Conditions\-Data\-Write\-Handler.\-cc\end{DoxyCompactItemize}

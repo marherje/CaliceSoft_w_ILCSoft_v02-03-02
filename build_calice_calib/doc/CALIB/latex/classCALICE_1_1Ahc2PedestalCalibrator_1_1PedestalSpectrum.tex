@@ -1,0 +1,125 @@
+\section{C\-A\-L\-I\-C\-E\-:\-:Ahc2\-Pedestal\-Calibrator\-:\-:Pedestal\-Spectrum Class Reference}
+\label{classCALICE_1_1Ahc2PedestalCalibrator_1_1PedestalSpectrum}\index{C\-A\-L\-I\-C\-E\-::\-Ahc2\-Pedestal\-Calibrator\-::\-Pedestal\-Spectrum@{C\-A\-L\-I\-C\-E\-::\-Ahc2\-Pedestal\-Calibrator\-::\-Pedestal\-Spectrum}}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+{\bf Pedestal\-Spectrum} (int chip\-I\-D, int chn)
+\begin{DoxyCompactList}\small\item\em Constructor. \end{DoxyCompactList}\item 
+virtual {\bf $\sim$\-Pedestal\-Spectrum} ()\label{classCALICE_1_1Ahc2PedestalCalibrator_1_1PedestalSpectrum_a8d608d0c276148d7d197361cc75d0fd7}
+
+\begin{DoxyCompactList}\small\item\em Default destructor. \end{DoxyCompactList}\item 
+void {\bf Fill} (double val, int mem\-Cell)
+\begin{DoxyCompactList}\small\item\em Fill function. \end{DoxyCompactList}\item 
+void {\bf Fit\-Pedestals} ()
+\begin{DoxyCompactList}\small\item\em Fit Pedestal function. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Data Fields}
+\begin{DoxyCompactItemize}
+\item 
+std\-::vector$<$ double $>$ {\bf pedestal\-Offsets}\label{classCALICE_1_1Ahc2PedestalCalibrator_1_1PedestalSpectrum_a05e78cb9b9717d1ac7c2b905ddc6ab9f}
+
+\begin{DoxyCompactList}\small\item\em vector containing the offset of each memory cells compared to the first memory cell \end{DoxyCompactList}\item 
+std\-::vector$<$ double $>$ {\bf pedestal\-Positions}\label{classCALICE_1_1Ahc2PedestalCalibrator_1_1PedestalSpectrum_a86f9afd5754e127d8cd23cd92beef702}
+
+\begin{DoxyCompactList}\small\item\em vector containing the position of pedestal for each memory cells \end{DoxyCompactList}\item 
+std\-::vector$<$ double $>$ {\bf pedestal\-Widths}\label{classCALICE_1_1Ahc2PedestalCalibrator_1_1PedestalSpectrum_ab85bc6de877015ebc9a7a50e462573a1}
+
+\begin{DoxyCompactList}\small\item\em vector containing the width of pedestal for each memory cells \end{DoxyCompactList}\item 
+double {\bf pedestal\-Position\-All}\label{classCALICE_1_1Ahc2PedestalCalibrator_1_1PedestalSpectrum_a3cd2f8ae912bb2f5945b960a4328c962}
+
+\begin{DoxyCompactList}\small\item\em Pedestal position for all memory cells. \end{DoxyCompactList}\item 
+double {\bf pedestal\-Width\-All}\label{classCALICE_1_1Ahc2PedestalCalibrator_1_1PedestalSpectrum_a46ee3c76b98aa250608c7088b5701f1b}
+
+\begin{DoxyCompactList}\small\item\em Pedestal width for all memory cells. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+T\-H1\-F $\ast$ {\bf histo\-All}\label{classCALICE_1_1Ahc2PedestalCalibrator_1_1PedestalSpectrum_a1b2d35a3e63dba3ff5dd98277f1600d4}
+
+\begin{DoxyCompactList}\small\item\em Histogram with pedestal with all memory cells. \end{DoxyCompactList}\item 
+std\-::vector$<$ T\-H1\-F $\ast$ $>$ {\bf \-\_\-histos}\label{classCALICE_1_1Ahc2PedestalCalibrator_1_1PedestalSpectrum_a9731a0fb9d895d3f5de1b3f48ebc6d72}
+
+\begin{DoxyCompactList}\small\item\em vector of histograms for each memory cells \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+
+
+Definition at line 87 of file Ahc2\-Pedestal\-Calibrator.\-hh.
+
+
+
+\subsection{Constructor \& Destructor Documentation}
+\index{C\-A\-L\-I\-C\-E\-::\-Ahc2\-Pedestal\-Calibrator\-::\-Pedestal\-Spectrum@{C\-A\-L\-I\-C\-E\-::\-Ahc2\-Pedestal\-Calibrator\-::\-Pedestal\-Spectrum}!Pedestal\-Spectrum@{Pedestal\-Spectrum}}
+\index{Pedestal\-Spectrum@{Pedestal\-Spectrum}!CALICE::Ahc2PedestalCalibrator::PedestalSpectrum@{C\-A\-L\-I\-C\-E\-::\-Ahc2\-Pedestal\-Calibrator\-::\-Pedestal\-Spectrum}}
+\subsubsection[{Pedestal\-Spectrum}]{\setlength{\rightskip}{0pt plus 5cm}C\-A\-L\-I\-C\-E\-::\-Ahc2\-Pedestal\-Calibrator\-::\-Pedestal\-Spectrum\-::\-Pedestal\-Spectrum (
+\begin{DoxyParamCaption}
+\item[{int}]{chip\-I\-D, }
+\item[{int}]{chn}
+\end{DoxyParamCaption}
+)}\label{classCALICE_1_1Ahc2PedestalCalibrator_1_1PedestalSpectrum_a0a2027acbf11acdad38d43865326d6ec}
+
+
+Constructor. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em chip\-I\-D} & -\/ chip\-I\-D Chip number \\
+\hline
+{\em chn} & -\/ chn Channel number \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 242 of file Ahc2\-Pedestal\-Calibrator.\-cc.
+
+
+
+References \-\_\-histos, histo\-All, pedestal\-Offsets, pedestal\-Positions, and pedestal\-Widths.
+
+
+
+\subsection{Member Function Documentation}
+\index{C\-A\-L\-I\-C\-E\-::\-Ahc2\-Pedestal\-Calibrator\-::\-Pedestal\-Spectrum@{C\-A\-L\-I\-C\-E\-::\-Ahc2\-Pedestal\-Calibrator\-::\-Pedestal\-Spectrum}!Fill@{Fill}}
+\index{Fill@{Fill}!CALICE::Ahc2PedestalCalibrator::PedestalSpectrum@{C\-A\-L\-I\-C\-E\-::\-Ahc2\-Pedestal\-Calibrator\-::\-Pedestal\-Spectrum}}
+\subsubsection[{Fill}]{\setlength{\rightskip}{0pt plus 5cm}void C\-A\-L\-I\-C\-E\-::\-Ahc2\-Pedestal\-Calibrator\-::\-Pedestal\-Spectrum\-::\-Fill (
+\begin{DoxyParamCaption}
+\item[{double}]{val, }
+\item[{int}]{mem\-Cell}
+\end{DoxyParamCaption}
+)}\label{classCALICE_1_1Ahc2PedestalCalibrator_1_1PedestalSpectrum_a841449ab23669fbe897bd2686b7ce7e4}
+
+
+Fill function. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em val} & -\/ val value to fill in histogram \\
+\hline
+{\em mem\-Cell} & -\/ mem\-Cell corresponding Memory cell \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 279 of file Ahc2\-Pedestal\-Calibrator.\-cc.
+
+\index{C\-A\-L\-I\-C\-E\-::\-Ahc2\-Pedestal\-Calibrator\-::\-Pedestal\-Spectrum@{C\-A\-L\-I\-C\-E\-::\-Ahc2\-Pedestal\-Calibrator\-::\-Pedestal\-Spectrum}!Fit\-Pedestals@{Fit\-Pedestals}}
+\index{Fit\-Pedestals@{Fit\-Pedestals}!CALICE::Ahc2PedestalCalibrator::PedestalSpectrum@{C\-A\-L\-I\-C\-E\-::\-Ahc2\-Pedestal\-Calibrator\-::\-Pedestal\-Spectrum}}
+\subsubsection[{Fit\-Pedestals}]{\setlength{\rightskip}{0pt plus 5cm}void C\-A\-L\-I\-C\-E\-::\-Ahc2\-Pedestal\-Calibrator\-::\-Pedestal\-Spectrum\-::\-Fit\-Pedestals (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{classCALICE_1_1Ahc2PedestalCalibrator_1_1PedestalSpectrum_a8b1be0c38bf68c5cc30854111dc1f170}
+
+
+Fit Pedestal function. 
+
+Fit the pedestal using T\-Spectrum and using a gauss function for fitting 
+
+Definition at line 292 of file Ahc2\-Pedestal\-Calibrator.\-cc.
+
+
+
+The documentation for this class was generated from the following files\-:\begin{DoxyCompactItemize}
+\item 
+Ahc2\-Pedestal\-Calibrator.\-hh\item 
+Ahc2\-Pedestal\-Calibrator.\-cc\end{DoxyCompactItemize}

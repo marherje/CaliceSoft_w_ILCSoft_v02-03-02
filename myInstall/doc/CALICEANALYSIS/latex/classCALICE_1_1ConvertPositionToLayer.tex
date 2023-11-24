@@ -1,0 +1,113 @@
+\section{C\-A\-L\-I\-C\-E\-:\-:Convert\-Position\-To\-Layer Class Reference}
+\label{classCALICE_1_1ConvertPositionToLayer}\index{C\-A\-L\-I\-C\-E\-::\-Convert\-Position\-To\-Layer@{C\-A\-L\-I\-C\-E\-::\-Convert\-Position\-To\-Layer}}
+
+
+Processor for converting a position Float\-Vec parameter to the number of the closest layer.  
+
+
+
+
+{\ttfamily \#include $<$Convert\-Position\-To\-Layer.\-hh$>$}
+
+Inheritance diagram for C\-A\-L\-I\-C\-E\-:\-:Convert\-Position\-To\-Layer\-:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classCALICE_1_1ConvertPositionToLayer}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+virtual Processor $\ast$ {\bfseries new\-Processor} ()\label{classCALICE_1_1ConvertPositionToLayer_a19c62a73c4ea6636b31e98780dfe4dbd}
+
+\item 
+virtual void {\bf init} ()
+\item 
+virtual void {\bf process\-Run\-Header} (L\-C\-Run\-Header $\ast$run)
+\item 
+virtual void {\bf process\-Event} (L\-C\-Event $\ast$evt)
+\item 
+virtual void {\bfseries check} (L\-C\-Event $\ast$evt)\label{classCALICE_1_1ConvertPositionToLayer_a87177a62a9c55eda1209410efd4b7481}
+
+\item 
+virtual void {\bf end} ()
+\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+std\-::string {\bfseries \-\_\-par\-Name\-In}\label{classCALICE_1_1ConvertPositionToLayer_ab5771bf5dceebc05cf241c2f1268f6b3}
+
+\item 
+std\-::string {\bfseries \-\_\-cell\-I\-D\-Encoding}\label{classCALICE_1_1ConvertPositionToLayer_a373ae619279f0f1eb0c9277c236fe028}
+
+\item 
+std\-::string {\bfseries \-\_\-mapping\-Processor\-Name}\label{classCALICE_1_1ConvertPositionToLayer_a91aff57d115d8a16f06ac8f7939af5c7}
+
+\item 
+std\-::string {\bfseries \-\_\-cell\-Description\-Processor\-Name}\label{classCALICE_1_1ConvertPositionToLayer_af49914c248523c4a8d520fd238324202}
+
+\item 
+int {\bfseries \-\_\-n\-Run}\label{classCALICE_1_1ConvertPositionToLayer_ad2fd992c4000098077792de317bbb5b1}
+
+\item 
+int {\bfseries \-\_\-n\-Evt}\label{classCALICE_1_1ConvertPositionToLayer_ac4ce3ac8a9bfe3bf2d22e0e293346c3f}
+
+\item 
+const C\-A\-L\-I\-C\-E\-::\-Mapper $\ast$ {\bfseries \-\_\-mapper}\label{classCALICE_1_1ConvertPositionToLayer_a17d64aa238473785c0df64b0a5614b6f}
+
+\item 
+unsigned int {\bfseries \-\_\-mapper\-Version}\label{classCALICE_1_1ConvertPositionToLayer_a3195a7855b8d5baffdfc3cde745630e5}
+
+\item 
+C\-A\-L\-I\-C\-E\-::\-Mapped\-Container\\*
+$<$ C\-A\-L\-I\-C\-E\-::\-Cell\-Description $>$ $\ast$ {\bfseries \-\_\-cell\-Descriptions}\label{classCALICE_1_1ConvertPositionToLayer_a3abd6f7b37da7cd4f13e9207c13c9fd7}
+
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Processor for converting a position Float\-Vec parameter to the number of the closest layer. 
+
+\begin{DoxyAuthor}{Author}
+N. Feege, University of Hamburg 
+\end{DoxyAuthor}
+\begin{DoxyDate}{Date}
+Dec 2010 
+\end{DoxyDate}
+
+
+\subsection{Member Function Documentation}
+\index{C\-A\-L\-I\-C\-E\-::\-Convert\-Position\-To\-Layer@{C\-A\-L\-I\-C\-E\-::\-Convert\-Position\-To\-Layer}!end@{end}}
+\index{end@{end}!CALICE::ConvertPositionToLayer@{C\-A\-L\-I\-C\-E\-::\-Convert\-Position\-To\-Layer}}
+\subsubsection[{end}]{\setlength{\rightskip}{0pt plus 5cm}void C\-A\-L\-I\-C\-E\-::\-Convert\-Position\-To\-Layer\-::end (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}\label{classCALICE_1_1ConvertPositionToLayer_ac66a2dbdfd05395fa80d848f1910d24a}
+Called after data processing for clean up. \index{C\-A\-L\-I\-C\-E\-::\-Convert\-Position\-To\-Layer@{C\-A\-L\-I\-C\-E\-::\-Convert\-Position\-To\-Layer}!init@{init}}
+\index{init@{init}!CALICE::ConvertPositionToLayer@{C\-A\-L\-I\-C\-E\-::\-Convert\-Position\-To\-Layer}}
+\subsubsection[{init}]{\setlength{\rightskip}{0pt plus 5cm}void C\-A\-L\-I\-C\-E\-::\-Convert\-Position\-To\-Layer\-::init (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}\label{classCALICE_1_1ConvertPositionToLayer_a526400d819dea92c0cd829c08aff0054}
+Called at the begin of the job before anything is read. Use to initialize the processor, e.\-g. book histograms. \index{C\-A\-L\-I\-C\-E\-::\-Convert\-Position\-To\-Layer@{C\-A\-L\-I\-C\-E\-::\-Convert\-Position\-To\-Layer}!process\-Event@{process\-Event}}
+\index{process\-Event@{process\-Event}!CALICE::ConvertPositionToLayer@{C\-A\-L\-I\-C\-E\-::\-Convert\-Position\-To\-Layer}}
+\subsubsection[{process\-Event}]{\setlength{\rightskip}{0pt plus 5cm}void C\-A\-L\-I\-C\-E\-::\-Convert\-Position\-To\-Layer\-::process\-Event (
+\begin{DoxyParamCaption}
+\item[{L\-C\-Event $\ast$}]{evt}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}\label{classCALICE_1_1ConvertPositionToLayer_af739937006d956958e4340d0a3e104e3}
+Called for every event -\/ the working horse. \index{C\-A\-L\-I\-C\-E\-::\-Convert\-Position\-To\-Layer@{C\-A\-L\-I\-C\-E\-::\-Convert\-Position\-To\-Layer}!process\-Run\-Header@{process\-Run\-Header}}
+\index{process\-Run\-Header@{process\-Run\-Header}!CALICE::ConvertPositionToLayer@{C\-A\-L\-I\-C\-E\-::\-Convert\-Position\-To\-Layer}}
+\subsubsection[{process\-Run\-Header}]{\setlength{\rightskip}{0pt plus 5cm}void C\-A\-L\-I\-C\-E\-::\-Convert\-Position\-To\-Layer\-::process\-Run\-Header (
+\begin{DoxyParamCaption}
+\item[{L\-C\-Run\-Header $\ast$}]{run}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}\label{classCALICE_1_1ConvertPositionToLayer_ac8e3edf234bfb030a487be80f5c11892}
+Called for every run. 
+
+The documentation for this class was generated from the following files\-:\begin{DoxyCompactItemize}
+\item 
+/nfs/dust/ilc/user/marquezh/\-Calice\-Soft\-\_\-w\-\_\-\-I\-L\-C\-Soft\-\_\-v02-\/03-\/02/calice\-\_\-analysis/addon\-Procs/include/Convert\-Position\-To\-Layer.\-hh\item 
+/nfs/dust/ilc/user/marquezh/\-Calice\-Soft\-\_\-w\-\_\-\-I\-L\-C\-Soft\-\_\-v02-\/03-\/02/calice\-\_\-analysis/addon\-Procs/src/Convert\-Position\-To\-Layer.\-cc\end{DoxyCompactItemize}

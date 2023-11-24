@@ -1,0 +1,213 @@
+\section{C\-A\-L\-I\-C\-E\-:\-:Read\-Out\-Configuration\-Block Class Reference}
+\label{classCALICE_1_1ReadOutConfigurationBlock}\index{C\-A\-L\-I\-C\-E\-::\-Read\-Out\-Configuration\-Block@{C\-A\-L\-I\-C\-E\-::\-Read\-Out\-Configuration\-Block}}
+
+
+Stores the general readout configuration.  
+
+
+
+
+{\ttfamily \#include $<$Read\-Out\-Configuration\-Block.\-hh$>$}
+
+Inheritance diagram for C\-A\-L\-I\-C\-E\-:\-:Read\-Out\-Configuration\-Block\-:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=3.000000cm]{classCALICE_1_1ReadOutConfigurationBlock}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+{\bf Read\-Out\-Configuration\-Block} ()\label{classCALICE_1_1ReadOutConfigurationBlock_a1feffcf7e53558cc766f915df91c77f6}
+
+\begin{DoxyCompactList}\small\item\em Default Constructor. \end{DoxyCompactList}\item 
+{\bf Read\-Out\-Configuration\-Block} (L\-C\-Object $\ast${\bf obj})\label{classCALICE_1_1ReadOutConfigurationBlock_af7c0da82de150f6a1350352d55a6ebc9}
+
+\begin{DoxyCompactList}\small\item\em 'Copy constructor' needed to interpret L\-C\-Collection read from file/database. \end{DoxyCompactList}\item 
+{\bf Read\-Out\-Configuration\-Block} \& {\bf set\-Crate\-I\-D} (int number)\label{classCALICE_1_1ReadOutConfigurationBlock_acd6303ce63afca0173c24a71f04f8b37}
+
+\begin{DoxyCompactList}\small\item\em Set the crate number. \end{DoxyCompactList}\item 
+int {\bf get\-Crate\-I\-D} () const \label{classCALICE_1_1ReadOutConfigurationBlock_a98e07561739cfc7bc2c78795cbb3c4c1}
+
+\begin{DoxyCompactList}\small\item\em Get the crate number. \end{DoxyCompactList}\item 
+{\bf Read\-Out\-Configuration\-Block} \& {\bf set\-Slot\-Enable} (int slot\-Enable)\label{classCALICE_1_1ReadOutConfigurationBlock_a124327e6d9d6cb2cc6d5e8f1206822d0}
+
+\begin{DoxyCompactList}\small\item\em Set the slot enable. \end{DoxyCompactList}\item 
+int {\bf get\-Slot\-Enable} () const \label{classCALICE_1_1ReadOutConfigurationBlock_ad6371f1f0c9265929ffe188eee3af650}
+
+\begin{DoxyCompactList}\small\item\em Get the slot enable. \end{DoxyCompactList}\item 
+bool {\bf is\-Slot\-Enabled} (unsigned int slot\-\_\-i) const \label{classCALICE_1_1ReadOutConfigurationBlock_adc3aaad7146b988d2104afe9d2040c4d}
+
+\begin{DoxyCompactList}\small\item\em is the slot enabled? \end{DoxyCompactList}\item 
+{\bf Read\-Out\-Configuration\-Block} \& {\bf set\-Fe\-Slot\-Enable} (int slot\-Fe\-Enable, int pos)\label{classCALICE_1_1ReadOutConfigurationBlock_ad26f69f9b5b2e9a8e3475747deca6bd1}
+
+\begin{DoxyCompactList}\small\item\em Set the Slot Fe\-Enable. \end{DoxyCompactList}\item 
+int {\bf get\-Fe\-Slot\-Enable} (int pos) const \label{classCALICE_1_1ReadOutConfigurationBlock_a2e5793f0faf8ecd1e8e6f1f09705dda9}
+
+\begin{DoxyCompactList}\small\item\em Get the Slot Fe\-Enable. \end{DoxyCompactList}\item 
+bool {\bf is\-Fe\-Enabled} (unsigned int slot\-\_\-i, unsigned int fe\-\_\-i) const \label{classCALICE_1_1ReadOutConfigurationBlock_a6f2a49d25eca7cd65c7d75686e090477}
+
+\begin{DoxyCompactList}\small\item\em is the slot enabled? \end{DoxyCompactList}\item 
+{\bf Read\-Out\-Configuration\-Block} \& {\bf set\-Vme\-Period} (int vme\-Period)\label{classCALICE_1_1ReadOutConfigurationBlock_ad6a6098170b8d0bead04d896b007f9ac}
+
+\begin{DoxyCompactList}\small\item\em Set the vme period. \end{DoxyCompactList}\item 
+int {\bf get\-Vme\-Period} () const \label{classCALICE_1_1ReadOutConfigurationBlock_a5b7245f74625727d0fdc2721a93717d5}
+
+\begin{DoxyCompactList}\small\item\em Get the vme period. \end{DoxyCompactList}\item 
+{\bf Read\-Out\-Configuration\-Block} \& {\bf set\-Be\-Period} (int be\-Period)\label{classCALICE_1_1ReadOutConfigurationBlock_afd86cb4d01ebe64c133c247864a4ecb3}
+
+\begin{DoxyCompactList}\small\item\em Set the be period. \end{DoxyCompactList}\item 
+int {\bf get\-Be\-Period} () const \label{classCALICE_1_1ReadOutConfigurationBlock_aa9da9fb8e38a51aa11a9a98af418c254}
+
+\begin{DoxyCompactList}\small\item\em Get the be period. \end{DoxyCompactList}\item 
+{\bf Read\-Out\-Configuration\-Block} \& {\bf set\-Bec\-Period} (int bec\-Period)\label{classCALICE_1_1ReadOutConfigurationBlock_ac6488211011c4e6cefbc53a51e2fcbd8}
+
+\begin{DoxyCompactList}\small\item\em Set the bec period. \end{DoxyCompactList}\item 
+int {\bf get\-Bec\-Period} () const \label{classCALICE_1_1ReadOutConfigurationBlock_a7ba52389e8d38871cfe29e26c1cc4fb7}
+
+\begin{DoxyCompactList}\small\item\em Get the bec period. \end{DoxyCompactList}\item 
+{\bf Read\-Out\-Configuration\-Block} \& {\bf set\-Fe\-Period} (int fe\-Period)\label{classCALICE_1_1ReadOutConfigurationBlock_aa9a883ae90850c71f4ff3e970023de54}
+
+\begin{DoxyCompactList}\small\item\em Set the fe period. \end{DoxyCompactList}\item 
+int {\bf get\-Fe\-Period} () const \label{classCALICE_1_1ReadOutConfigurationBlock_ac3bfd648ca9a5be9dbca2e3f68c47a6d}
+
+\begin{DoxyCompactList}\small\item\em Get the fe period. \end{DoxyCompactList}\item 
+{\bf Read\-Out\-Configuration\-Block} \& {\bf set\-Be\-Soft\-Trigger} (int be\-Soft\-Trigger)\label{classCALICE_1_1ReadOutConfigurationBlock_a9354cacd086c9275752440e47d789330}
+
+\begin{DoxyCompactList}\small\item\em Set the Be Soft Trigger. \end{DoxyCompactList}\item 
+int {\bf get\-Be\-Soft\-Trigger} () const 
+\begin{DoxyCompactList}\small\item\em Get the Be Soft Trigger Config. \end{DoxyCompactList}\item 
+{\bf Read\-Out\-Configuration\-Block} \& {\bf set\-Fe\-Soft\-Trigger} (int fe\-Soft\-Trigger)
+\begin{DoxyCompactList}\small\item\em Set the Fe Soft Trigger(s) Config. \end{DoxyCompactList}\item 
+int {\bf get\-Fe\-Soft\-Trigger} () const 
+\begin{DoxyCompactList}\small\item\em Get the Fe Soft Trigger Config. \end{DoxyCompactList}\item 
+bool {\bf get\-Fe\-Soft\-Trigger} (unsigned int fe\-\_\-i) const \label{classCALICE_1_1ReadOutConfigurationBlock_a4d6d67168f9947f7b7fec65e70eedf43}
+
+\begin{DoxyCompactList}\small\item\em Get the front-\/end soft trigger. \end{DoxyCompactList}\item 
+{\bf Read\-Out\-Configuration\-Block} \& {\bf set\-Fe\-Brc\-Soft\-Trigger} (int fe\-Brc\-Soft\-Trigger)\label{classCALICE_1_1ReadOutConfigurationBlock_ad52f356c42cb8f2e27e0da38cb51488b}
+
+\begin{DoxyCompactList}\small\item\em Set the Broadcast Soft Trigger. \end{DoxyCompactList}\item 
+int {\bf get\-Fe\-Brc\-Soft\-Trigger} () const 
+\begin{DoxyCompactList}\small\item\em Get the Broadcast Soft Trigger Config. \end{DoxyCompactList}\item 
+{\bf Read\-Out\-Configuration\-Block} \& {\bf set\-Conf\-Mode} (int conf\-Mode)\label{classCALICE_1_1ReadOutConfigurationBlock_a1ed6559512ef825953dd589819beebd6}
+
+\begin{DoxyCompactList}\small\item\em Set the Conf Mode. \end{DoxyCompactList}\item 
+int {\bf get\-Conf\-Mode} () const \label{classCALICE_1_1ReadOutConfigurationBlock_a1be43e61191d45f09885d5609b948d06}
+
+\begin{DoxyCompactList}\small\item\em Get the Conf Mode. \end{DoxyCompactList}\item 
+void {\bf print} (std\-::ostream \&os)\label{classCALICE_1_1ReadOutConfigurationBlock_abe66a507e93653954f25bc0581f5ab6b}
+
+\begin{DoxyCompactList}\small\item\em Convenient print method. \end{DoxyCompactList}\item 
+const std\-::string {\bf get\-Type\-Name} () const \label{classCALICE_1_1ReadOutConfigurationBlock_a063d7bba17367a429fca311cbd85e325}
+
+\begin{DoxyCompactList}\small\item\em Return the type of the class. \end{DoxyCompactList}\item 
+const std\-::string {\bf get\-Data\-Description} () const \label{classCALICE_1_1ReadOutConfigurationBlock_a1b2f47a1d4066031d5a187abecb3b160}
+
+\begin{DoxyCompactList}\small\item\em Return a brief description of the data members. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static unsigned int {\bfseries get\-First\-Slot} ()\label{classCALICE_1_1ReadOutConfigurationBlock_afb7bd18900bfd2d02a6faf2e104f0991}
+
+\item 
+static unsigned int {\bfseries get\-Last\-Slot} ()\label{classCALICE_1_1ReadOutConfigurationBlock_ad920a9c806ec94b6c4098d449ab33a27}
+
+\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Detailed Description}
+Stores the general readout configuration. 
+
+e.\-g. to decide whether a softtrigger was enabled In addition information about general hardware configuration can be retrieved. For a give crate the enabled slots can be obtained by the get\-Slot\-Enable method For this slot in turn the enabled Fe can be found by withe get\-Fe\-Slot\-Enable(int) method e.\-g. fe = get\-Fe\-Slot\-Enable((slot-\/2)/4) byte = (slot-\/2)\%4 =$>$ bits\-\_\-enabled = (ife$>$$>$(8$\ast$byte))\&0xff; The eight bits of enabled tells you which fe's were enabled in the given slot The eight L\-S\-B returned by the get\-Fe\-Soft\-Trigger method tells you whether softtriggers were enabled for a given set of fe's.
+
+\begin{DoxySeeAlso}{See Also}
+\doxyref{Conditions\-Change\-Delegator}{p.}{classCALICE_1_1ConditionsChangeDelegator} 
+\end{DoxySeeAlso}
+\begin{DoxyAuthor}{Author}
+R. Poeschl L\-A\-L (based on the other interface classes)
+\end{DoxyAuthor}
+\begin{DoxyDate}{Date}
+May 2006 
+\end{DoxyDate}
+
+
+Definition at line 60 of file Read\-Out\-Configuration\-Block.\-hh.
+
+
+
+\subsection{Member Function Documentation}
+\index{C\-A\-L\-I\-C\-E\-::\-Read\-Out\-Configuration\-Block@{C\-A\-L\-I\-C\-E\-::\-Read\-Out\-Configuration\-Block}!get\-Be\-Soft\-Trigger@{get\-Be\-Soft\-Trigger}}
+\index{get\-Be\-Soft\-Trigger@{get\-Be\-Soft\-Trigger}!CALICE::ReadOutConfigurationBlock@{C\-A\-L\-I\-C\-E\-::\-Read\-Out\-Configuration\-Block}}
+\subsubsection[{get\-Be\-Soft\-Trigger}]{\setlength{\rightskip}{0pt plus 5cm}int C\-A\-L\-I\-C\-E\-::\-Read\-Out\-Configuration\-Block\-::get\-Be\-Soft\-Trigger (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}\label{classCALICE_1_1ReadOutConfigurationBlock_a21a26e17adecd19fb2bff968c1d5f4ec}
+
+
+Get the Be Soft Trigger Config. 
+
+
+
+Definition at line 200 of file Read\-Out\-Configuration\-Block.\-hh.
+
+
+
+Referenced by C\-A\-L\-I\-C\-E\-::\-Trigger\-Handler\-Calice\-::check\-For\-Software\-Trigger\-On(), and print().
+
+\index{C\-A\-L\-I\-C\-E\-::\-Read\-Out\-Configuration\-Block@{C\-A\-L\-I\-C\-E\-::\-Read\-Out\-Configuration\-Block}!get\-Fe\-Brc\-Soft\-Trigger@{get\-Fe\-Brc\-Soft\-Trigger}}
+\index{get\-Fe\-Brc\-Soft\-Trigger@{get\-Fe\-Brc\-Soft\-Trigger}!CALICE::ReadOutConfigurationBlock@{C\-A\-L\-I\-C\-E\-::\-Read\-Out\-Configuration\-Block}}
+\subsubsection[{get\-Fe\-Brc\-Soft\-Trigger}]{\setlength{\rightskip}{0pt plus 5cm}int C\-A\-L\-I\-C\-E\-::\-Read\-Out\-Configuration\-Block\-::get\-Fe\-Brc\-Soft\-Trigger (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}\label{classCALICE_1_1ReadOutConfigurationBlock_ad307d2a60dab55b24c33522284bb5c0c}
+
+
+Get the Broadcast Soft Trigger Config. 
+
+
+
+Definition at line 233 of file Read\-Out\-Configuration\-Block.\-hh.
+
+
+
+Referenced by print().
+
+\index{C\-A\-L\-I\-C\-E\-::\-Read\-Out\-Configuration\-Block@{C\-A\-L\-I\-C\-E\-::\-Read\-Out\-Configuration\-Block}!get\-Fe\-Soft\-Trigger@{get\-Fe\-Soft\-Trigger}}
+\index{get\-Fe\-Soft\-Trigger@{get\-Fe\-Soft\-Trigger}!CALICE::ReadOutConfigurationBlock@{C\-A\-L\-I\-C\-E\-::\-Read\-Out\-Configuration\-Block}}
+\subsubsection[{get\-Fe\-Soft\-Trigger}]{\setlength{\rightskip}{0pt plus 5cm}int C\-A\-L\-I\-C\-E\-::\-Read\-Out\-Configuration\-Block\-::get\-Fe\-Soft\-Trigger (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}\label{classCALICE_1_1ReadOutConfigurationBlock_a37c4f8a65d1b4901a068b41578527658}
+
+
+Get the Fe Soft Trigger Config. 
+
+
+
+Definition at line 212 of file Read\-Out\-Configuration\-Block.\-hh.
+
+\index{C\-A\-L\-I\-C\-E\-::\-Read\-Out\-Configuration\-Block@{C\-A\-L\-I\-C\-E\-::\-Read\-Out\-Configuration\-Block}!set\-Fe\-Soft\-Trigger@{set\-Fe\-Soft\-Trigger}}
+\index{set\-Fe\-Soft\-Trigger@{set\-Fe\-Soft\-Trigger}!CALICE::ReadOutConfigurationBlock@{C\-A\-L\-I\-C\-E\-::\-Read\-Out\-Configuration\-Block}}
+\subsubsection[{set\-Fe\-Soft\-Trigger}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Read\-Out\-Configuration\-Block}\& C\-A\-L\-I\-C\-E\-::\-Read\-Out\-Configuration\-Block\-::set\-Fe\-Soft\-Trigger (
+\begin{DoxyParamCaption}
+\item[{int}]{fe\-Soft\-Trigger}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\label{classCALICE_1_1ReadOutConfigurationBlock_a6854f6ef6737bb3d23e041ff8fd58057}
+
+
+Set the Fe Soft Trigger(s) Config. 
+
+
+
+Definition at line 206 of file Read\-Out\-Configuration\-Block.\-hh.
+
+
+
+The documentation for this class was generated from the following files\-:\begin{DoxyCompactItemize}
+\item 
+Read\-Out\-Configuration\-Block.\-hh\item 
+Read\-Out\-Configuration\-Block.\-cc\end{DoxyCompactItemize}

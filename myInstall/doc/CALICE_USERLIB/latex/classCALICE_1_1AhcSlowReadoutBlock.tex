@@ -1,0 +1,75 @@
+\section{C\-A\-L\-I\-C\-E\-:\-:Ahc\-Slow\-Readout\-Block Class Reference}
+\label{classCALICE_1_1AhcSlowReadoutBlock}\index{C\-A\-L\-I\-C\-E\-::\-Ahc\-Slow\-Readout\-Block@{C\-A\-L\-I\-C\-E\-::\-Ahc\-Slow\-Readout\-Block}}
+
+
+Interface Class to access the Ahc\-Slow\-Configuration Data For the time being we treat only the movable stage positions Update\-: 6/7/08 Added z and rotated position of stage (Maintain backward compatibility)  
+
+
+
+
+{\ttfamily \#include $<$Ahc\-Slow\-Readout\-Block.\-hh$>$}
+
+Inheritance diagram for C\-A\-L\-I\-C\-E\-:\-:Ahc\-Slow\-Readout\-Block\-:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=3.000000cm]{classCALICE_1_1AhcSlowReadoutBlock}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+{\bf Ahc\-Slow\-Readout\-Block} ()\label{classCALICE_1_1AhcSlowReadoutBlock_a5cdefa13a9db415369ef3df6e3b39da8}
+
+\begin{DoxyCompactList}\small\item\em Simple Constructor. \end{DoxyCompactList}\item 
+{\bf Ahc\-Slow\-Readout\-Block} (L\-C\-Object $\ast${\bf obj})\label{classCALICE_1_1AhcSlowReadoutBlock_a5b753db9f7e51e90eb67ca16e053faac}
+
+\begin{DoxyCompactList}\small\item\em 'Copy constructor' needed to interpret L\-C\-Collection read from file/database. \end{DoxyCompactList}\item 
+{\bf Ahc\-Slow\-Readout\-Block} \& {\bfseries set\-\_\-xyz\-Position\-\_\-mm} (double xpos, double ypos, double zpos)\label{classCALICE_1_1AhcSlowReadoutBlock_a07a5a75c46e30d25d87c46d5cf8dba73}
+
+\item 
+{\bf Ahc\-Slow\-Readout\-Block} \& {\bfseries set\-\_\-rot\-Position\-\_\-deg} (double cpos)\label{classCALICE_1_1AhcSlowReadoutBlock_aa4a13bec9f6c5db71c8cf3b793c08709}
+
+\item 
+virtual double {\bfseries get\-\_\-x\-Position\-\_\-mm} ()\label{classCALICE_1_1AhcSlowReadoutBlock_a62d5383dfd433dc6eebbd38abd1f8a7c}
+
+\item 
+virtual double {\bfseries get\-\_\-y\-Position\-\_\-mm} ()\label{classCALICE_1_1AhcSlowReadoutBlock_a59c904fd485befa6d9afe0cd2424ab20}
+
+\item 
+virtual double {\bfseries get\-\_\-z\-Position\-\_\-mm} ()\label{classCALICE_1_1AhcSlowReadoutBlock_a73203222645101c2b8ce65736bf7752f}
+
+\item 
+virtual double {\bfseries get\-\_\-c\-Position\-\_\-deg} ()\label{classCALICE_1_1AhcSlowReadoutBlock_add5f7179047770f32f533ac660612b1d}
+
+\item 
+void {\bf print} (std\-::ostream \&os)\label{classCALICE_1_1AhcSlowReadoutBlock_a4133b32c50c5946b39da0f961811f09a}
+
+\begin{DoxyCompactList}\small\item\em Convenient print method. \end{DoxyCompactList}\item 
+const std\-::string {\bf get\-Type\-Name} () const \label{classCALICE_1_1AhcSlowReadoutBlock_ae8699367e40866501f179e740a80bcab}
+
+\begin{DoxyCompactList}\small\item\em Return the type of the class. \end{DoxyCompactList}\item 
+const std\-::string {\bf get\-Data\-Description} () const \label{classCALICE_1_1AhcSlowReadoutBlock_ae057949d71e0d6d7f4f2a808222b683c}
+
+\begin{DoxyCompactList}\small\item\em Return a brief description of the data members. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Detailed Description}
+Interface Class to access the Ahc\-Slow\-Configuration Data For the time being we treat only the movable stage positions Update\-: 6/7/08 Added z and rotated position of stage (Maintain backward compatibility) 
+
+\begin{DoxyAuthor}{Author}
+\-: Roman Pöschl D\-E\-S\-Y 
+\end{DoxyAuthor}
+\begin{DoxyDate}{Date}
+Nov 2005 
+\end{DoxyDate}
+
+
+Definition at line 28 of file Ahc\-Slow\-Readout\-Block.\-hh.
+
+
+
+The documentation for this class was generated from the following files\-:\begin{DoxyCompactItemize}
+\item 
+Ahc\-Slow\-Readout\-Block.\-hh\item 
+Ahc\-Slow\-Readout\-Block.\-cc\end{DoxyCompactItemize}

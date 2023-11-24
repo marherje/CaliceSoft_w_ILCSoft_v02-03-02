@@ -1,0 +1,120 @@
+\section{H\-Cal\-Track\-Filter Class Reference}
+\label{classHCalTrackFilter}\index{H\-Cal\-Track\-Filter@{H\-Cal\-Track\-Filter}}
+Inheritance diagram for H\-Cal\-Track\-Filter\-:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classHCalTrackFilter}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+marlin\-::\-Processor $\ast$ {\bfseries new\-Processor} ()\label{classHCalTrackFilter_a42fae3a98615aaf4f163401d2156b091}
+
+\item 
+virtual void {\bf init} ()
+\item 
+virtual void {\bf process\-Run\-Header} (L\-C\-Run\-Header $\ast$run)
+\item 
+virtual void {\bf process\-Event} (L\-C\-Event $\ast$evt)
+\item 
+virtual void {\bfseries check} (L\-C\-Event $\ast$evt)\label{classHCalTrackFilter_a140c52dc7476c0116033173bea32e589}
+
+\item 
+virtual void {\bf end} ()
+\end{DoxyCompactItemize}
+\subsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+virtual E\-V\-E\-N\-T\-::\-Cluster $\ast$ {\bfseries filter\-Track\-Hough} (E\-V\-E\-N\-T\-::\-Cluster $\ast$track)\label{classHCalTrackFilter_a212d7686c61f5b50f9ca0364d49eae94}
+
+\item 
+void {\bfseries divide\-And\-Check\-Hough\-Space} (int m\-Min, int r\-Min, int m\-Max, int r\-Max)\label{classHCalTrackFilter_a2fe6db1741b034405180f79e07d7b991}
+
+\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+std\-::vector$<$ double $>$ {\bfseries \-\_\-hough\-Space\-Binning\-M}\label{classHCalTrackFilter_aca9c7072b7b890c2b5a7e837e5f5aace}
+
+\item 
+std\-::vector$<$ double $>$ {\bfseries \-\_\-hough\-Space\-Binning\-T}\label{classHCalTrackFilter_a37d51653b75afd2d49c3b14c7d7f3975}
+
+\item 
+std\-::vector$<$ {\bf Hough\-Band} $\ast$ $>$ {\bfseries \-\_\-all\-Hough\-Bands}\label{classHCalTrackFilter_a269b9de68d416296a85513a5055a1de7}
+
+\item 
+std\-::vector$<$ {\bf Hough\-Band} $\ast$ $>$ {\bfseries \-\_\-biggest\-Intersection}\label{classHCalTrackFilter_acdc46ed6288b80bdfa02e059d715ad4e}
+
+\item 
+int {\bfseries \-\_\-recursive\-Counter}\label{classHCalTrackFilter_a0d0612b016022c9b2ba7f8dd78be9be9}
+
+\item 
+C\-A\-L\-I\-C\-E\-::\-Mapped\-Container\\*
+$<$ C\-A\-L\-I\-C\-E\-::\-Cell\-Description $>$ $\ast$ {\bfseries \-\_\-cell\-Descriptions}\label{classHCalTrackFilter_a3e0c3d717120ad1db2d78e0799e67d4a}
+
+\item 
+std\-::string {\bfseries \-\_\-cell\-Description\-Processor\-Name}\label{classHCalTrackFilter_aba43cb0e3543f152a94c612fef0a5d7d}
+
+\item 
+std\-::string {\bfseries \-\_\-lcc\-Track\-Cluster\-Name}\label{classHCalTrackFilter_a2b8f5be022e46d4490deb2145c3ca7f4}
+
+\item 
+std\-::string {\bfseries \-\_\-lcc\-Filtered\-Track\-Cluster\-Name}\label{classHCalTrackFilter_a0d282b7afe432306d80bf825f17e90da}
+
+\item 
+int {\bfseries \-\_\-min\-Number\-Of\-Hits}\label{classHCalTrackFilter_a2741e0107f22d5591b8a7b113e63e610}
+
+\item 
+int {\bfseries \-\_\-max\-Nr\-Rejected\-Hits}\label{classHCalTrackFilter_aa62684492d509b45ff1ac83bc7e66322}
+
+\item 
+unsigned {\bfseries \-\_\-stats\-Nr\-Hits\-Rejected}\label{classHCalTrackFilter_a91b9bae7fc736f0f1e34d4c0baaa262d}
+
+\item 
+unsigned {\bfseries \-\_\-stats\-Nr\-Tracks\-Rejected}\label{classHCalTrackFilter_abab3e86ca7dabdc8a95007938fdaca26}
+
+\item 
+unsigned {\bfseries \-\_\-stats\-Nr\-Events}\label{classHCalTrackFilter_a051a4318eef7a08434d3d97be69f24ee}
+
+\item 
+unsigned {\bfseries \-\_\-stats\-Nr\-Tracks}\label{classHCalTrackFilter_a45a6a1ea3ca1bb34d8fa9052d179cae0}
+
+\end{DoxyCompactItemize}
+
+
+\subsection{Member Function Documentation}
+\index{H\-Cal\-Track\-Filter@{H\-Cal\-Track\-Filter}!end@{end}}
+\index{end@{end}!HCalTrackFilter@{H\-Cal\-Track\-Filter}}
+\subsubsection[{end}]{\setlength{\rightskip}{0pt plus 5cm}void H\-Cal\-Track\-Filter\-::end (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}\label{classHCalTrackFilter_a76efe273651d21a7197df73113ca04cc}
+Called after data processing for clean up. \index{H\-Cal\-Track\-Filter@{H\-Cal\-Track\-Filter}!init@{init}}
+\index{init@{init}!HCalTrackFilter@{H\-Cal\-Track\-Filter}}
+\subsubsection[{init}]{\setlength{\rightskip}{0pt plus 5cm}void H\-Cal\-Track\-Filter\-::init (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}\label{classHCalTrackFilter_a3913b55fc4b34aa6abe6a1f1120f0096}
+Called at the begin of the job before anything is read. Use to initialize the processor, e.\-g. book histograms. \index{H\-Cal\-Track\-Filter@{H\-Cal\-Track\-Filter}!process\-Event@{process\-Event}}
+\index{process\-Event@{process\-Event}!HCalTrackFilter@{H\-Cal\-Track\-Filter}}
+\subsubsection[{process\-Event}]{\setlength{\rightskip}{0pt plus 5cm}void H\-Cal\-Track\-Filter\-::process\-Event (
+\begin{DoxyParamCaption}
+\item[{L\-C\-Event $\ast$}]{evt}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}\label{classHCalTrackFilter_aec07b7d533c6214c3b02bfc07f89c47b}
+Called for every event -\/ the working horse. \index{H\-Cal\-Track\-Filter@{H\-Cal\-Track\-Filter}!process\-Run\-Header@{process\-Run\-Header}}
+\index{process\-Run\-Header@{process\-Run\-Header}!HCalTrackFilter@{H\-Cal\-Track\-Filter}}
+\subsubsection[{process\-Run\-Header}]{\setlength{\rightskip}{0pt plus 5cm}virtual void H\-Cal\-Track\-Filter\-::process\-Run\-Header (
+\begin{DoxyParamCaption}
+\item[{L\-C\-Run\-Header $\ast$}]{run}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}\label{classHCalTrackFilter_a5b3799e2dacbab50c8cec27424bd72be}
+Called for every run. 
+
+The documentation for this class was generated from the following files\-:\begin{DoxyCompactItemize}
+\item 
+/nfs/dust/ilc/user/marquezh/\-Calice\-Soft\-\_\-w\-\_\-\-I\-L\-C\-Soft\-\_\-v02-\/03-\/02/calice\-\_\-analysis/addon\-Procs/include/H\-Cal\-Track\-Filter.\-hh\item 
+/nfs/dust/ilc/user/marquezh/\-Calice\-Soft\-\_\-w\-\_\-\-I\-L\-C\-Soft\-\_\-v02-\/03-\/02/calice\-\_\-analysis/addon\-Procs/src/H\-Cal\-Track\-Filter.\-cc\end{DoxyCompactItemize}

@@ -1,0 +1,43 @@
+Performing C SOURCE FILE Test CMAKE_HAVE_LIBC_PTHREAD failed with the following output:
+Change Dir: /nfs/dust/ilc/user/marquezh/CaliceSoft_w_ILCSoft_v02-03-02/build_calice_reco/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_c5a57/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_c5a57.dir/build.make CMakeFiles/cmTC_c5a57.dir/build
+gmake[1]: Entering directory `/nfs/dust/ilc/user/marquezh/CaliceSoft_w_ILCSoft_v02-03-02/build_calice_reco/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_c5a57.dir/src.c.o
+/cvmfs/sft.cern.ch/lcg/releases/gcc/10.3.0-f5826/x86_64-centos7/bin/gcc -DCMAKE_HAVE_LIBC_PTHREAD   -o CMakeFiles/cmTC_c5a57.dir/src.c.o -c /nfs/dust/ilc/user/marquezh/CaliceSoft_w_ILCSoft_v02-03-02/build_calice_reco/CMakeFiles/CMakeTmp/src.c
+Linking C executable cmTC_c5a57
+/cvmfs/ilc.desy.de/sw/x86_64_gcc103_centos7/CMake/3.23.2/bin/cmake -E cmake_link_script CMakeFiles/cmTC_c5a57.dir/link.txt --verbose=1
+/cvmfs/sft.cern.ch/lcg/releases/gcc/10.3.0-f5826/x86_64-centos7/bin/gcc -rdynamic CMakeFiles/cmTC_c5a57.dir/src.c.o -o cmTC_c5a57 
+/cvmfs/sft.cern.ch/lcg/releases/binutils/2.36.1-a9696/x86_64-centos7/bin/ld: CMakeFiles/cmTC_c5a57.dir/src.c.o: in function `main':
+src.c:(.text+0x2d): undefined reference to `pthread_create'
+/cvmfs/sft.cern.ch/lcg/releases/binutils/2.36.1-a9696/x86_64-centos7/bin/ld: src.c:(.text+0x39): undefined reference to `pthread_detach'
+/cvmfs/sft.cern.ch/lcg/releases/binutils/2.36.1-a9696/x86_64-centos7/bin/ld: src.c:(.text+0x45): undefined reference to `pthread_cancel'
+/cvmfs/sft.cern.ch/lcg/releases/binutils/2.36.1-a9696/x86_64-centos7/bin/ld: src.c:(.text+0x56): undefined reference to `pthread_join'
+/cvmfs/sft.cern.ch/lcg/releases/binutils/2.36.1-a9696/x86_64-centos7/bin/ld: src.c:(.text+0x6a): undefined reference to `pthread_atfork'
+collect2: error: ld returned 1 exit status
+gmake[1]: *** [cmTC_c5a57] Error 1
+gmake[1]: Leaving directory `/nfs/dust/ilc/user/marquezh/CaliceSoft_w_ILCSoft_v02-03-02/build_calice_reco/CMakeFiles/CMakeTmp'
+gmake: *** [cmTC_c5a57/fast] Error 2
+
+
+Source file was:
+#include <pthread.h>
+
+static void* test_func(void* data)
+{
+  return data;
+}
+
+int main(void)
+{
+  pthread_t thread;
+  pthread_create(&thread, NULL, test_func, NULL);
+  pthread_detach(thread);
+  pthread_cancel(thread);
+  pthread_join(thread, NULL);
+  pthread_atfork(NULL, NULL, NULL);
+  pthread_exit(NULL);
+
+  return 0;
+}
+

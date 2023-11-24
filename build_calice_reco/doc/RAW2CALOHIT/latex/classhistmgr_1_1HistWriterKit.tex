@@ -1,0 +1,85 @@
+\section{histmgr\-:\-:Hist\-Writer\-Kit Class Reference}
+\label{classhistmgr_1_1HistWriterKit}\index{histmgr\-::\-Hist\-Writer\-Kit@{histmgr\-::\-Hist\-Writer\-Kit}}
+
+
+Abstract interface of a histogram writer kit.  
+
+
+
+
+{\ttfamily \#include $<$Hist\-Writer\-Kit.\-hh$>$}
+
+Inheritance diagram for histmgr\-:\-:Hist\-Writer\-Kit\-:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classhistmgr_1_1HistWriterKit}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+virtual {\bf $\sim$\-Hist\-Writer\-Kit} ()
+\begin{DoxyCompactList}\small\item\em Destructor. \end{DoxyCompactList}\item 
+virtual {\bf Hist\-Writer} $\ast$ {\bf create\-Writer} (const std\-::string \&name)=0
+\begin{DoxyCompactList}\small\item\em create a histogram write. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Abstract interface of a histogram writer kit. 
+
+The writer kit is used to create the actual histogram writer. \begin{DoxySeeAlso}{See Also}
+\doxyref{Root\-Writer\-Kit}{p.}{classhistmgr_1_1RootWriterKit} 
+\end{DoxySeeAlso}
+
+
+Definition at line 13 of file Hist\-Writer\-Kit.\-hh.
+
+
+
+\subsection{Constructor \& Destructor Documentation}
+\index{histmgr\-::\-Hist\-Writer\-Kit@{histmgr\-::\-Hist\-Writer\-Kit}!$\sim$\-Hist\-Writer\-Kit@{$\sim$\-Hist\-Writer\-Kit}}
+\index{$\sim$\-Hist\-Writer\-Kit@{$\sim$\-Hist\-Writer\-Kit}!histmgr::HistWriterKit@{histmgr\-::\-Hist\-Writer\-Kit}}
+\subsubsection[{$\sim$\-Hist\-Writer\-Kit}]{\setlength{\rightskip}{0pt plus 5cm}virtual histmgr\-::\-Hist\-Writer\-Kit\-::$\sim$\-Hist\-Writer\-Kit (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}\label{classhistmgr_1_1HistWriterKit_aa3c62231adb0f1f95295d27e559009a3}
+
+
+Destructor. 
+
+Abstract classes need a virtual destructor. 
+
+Definition at line 19 of file Hist\-Writer\-Kit.\-hh.
+
+
+
+\subsection{Member Function Documentation}
+\index{histmgr\-::\-Hist\-Writer\-Kit@{histmgr\-::\-Hist\-Writer\-Kit}!create\-Writer@{create\-Writer}}
+\index{create\-Writer@{create\-Writer}!histmgr::HistWriterKit@{histmgr\-::\-Hist\-Writer\-Kit}}
+\subsubsection[{create\-Writer}]{\setlength{\rightskip}{0pt plus 5cm}virtual {\bf Hist\-Writer}$\ast$ histmgr\-::\-Hist\-Writer\-Kit\-::create\-Writer (
+\begin{DoxyParamCaption}
+\item[{const std\-::string \&}]{name}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [pure virtual]}}\label{classhistmgr_1_1HistWriterKit_a4e07d5baf676d4af138d09f2e92b4001}
+
+
+create a histogram write. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em name} & the name of the file to which the histograms should be written \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+a pointer a histogram writer which should be ready to write histograms. 
+\end{DoxyReturn}
+
+
+Implemented in {\bf histmgr\-::\-Root\-Writer\-Kit} \doxyref{}{p.}{classhistmgr_1_1RootWriterKit_a480fb8728c4592098a59344922a58c71}.
+
+
+
+The documentation for this class was generated from the following file\-:\begin{DoxyCompactItemize}
+\item 
+Hist\-Writer\-Kit.\-hh\end{DoxyCompactItemize}

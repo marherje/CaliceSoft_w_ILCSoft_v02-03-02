@@ -1,0 +1,221 @@
+\section{C\-A\-L\-I\-C\-E\-:\-:Bit\-Set Class Reference}
+\label{classCALICE_1_1BitSet}\index{C\-A\-L\-I\-C\-E\-::\-Bit\-Set@{C\-A\-L\-I\-C\-E\-::\-Bit\-Set}}
+
+
+Base class for easy definition of bit sets.  
+
+
+
+
+{\ttfamily \#include $<$Bit\-Set.\-hh$>$}
+
+Inheritance diagram for C\-A\-L\-I\-C\-E\-:\-:Bit\-Set\-:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=1.728395cm]{classCALICE_1_1BitSet}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+int {\bf get\-Int} () const 
+\begin{DoxyCompactList}\small\item\em get integer corresponding to the bits \end{DoxyCompactList}\item 
+void {\bf set\-Bits} (const int value)
+\begin{DoxyCompactList}\small\item\em set all bits with an integer \end{DoxyCompactList}\item 
+std\-::vector$<$ int $>$ {\bf get\-Int\-Vec} () const 
+\begin{DoxyCompactList}\small\item\em get vector of ints with elements corresponding to the single bits (1 for true and 0 for false) \end{DoxyCompactList}\item 
+void {\bf clear} ()\label{classCALICE_1_1BitSet_abd6be6d671e597c9c04afd73d25f7b6a}
+
+\begin{DoxyCompactList}\small\item\em clear all bits to 0 \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+{\bf Bit\-Set} (const unsigned int max\-Bits, const int value=0x0)
+\begin{DoxyCompactList}\small\item\em constructur \end{DoxyCompactList}\item 
+bool {\bf get\-Bit} (unsigned int bit\-No) const 
+\begin{DoxyCompactList}\small\item\em get function for bit number \end{DoxyCompactList}\item 
+void {\bf set\-Bit} (unsigned int bit\-No, bool state)
+\begin{DoxyCompactList}\small\item\em set function for bit number \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+int {\bfseries \-\_\-bits}\label{classCALICE_1_1BitSet_acb489ad5309a1343dc9d368fbfabb4e7}
+
+\item 
+unsigned int {\bfseries \-\_\-max\-Bits}\label{classCALICE_1_1BitSet_a0105ecaa0c1f03c666f90f3d3b7207c6}
+
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Base class for easy definition of bit sets. 
+
+Derived classes have to define the meaning of the bits. No instantiation possible.
+
+\begin{DoxyAuthor}{Author}
+{\tt Benjamin.\-Lutz@desy.\-de} 
+\end{DoxyAuthor}
+\begin{DoxyDate}{Date}
+November 2009 
+\end{DoxyDate}
+\begin{DoxyVersion}{Version}
+1.\-0 
+\end{DoxyVersion}
+
+
+Definition at line 18 of file Bit\-Set.\-hh.
+
+
+
+\subsection{Constructor \& Destructor Documentation}
+\index{C\-A\-L\-I\-C\-E\-::\-Bit\-Set@{C\-A\-L\-I\-C\-E\-::\-Bit\-Set}!Bit\-Set@{Bit\-Set}}
+\index{Bit\-Set@{Bit\-Set}!CALICE::BitSet@{C\-A\-L\-I\-C\-E\-::\-Bit\-Set}}
+\subsubsection[{Bit\-Set}]{\setlength{\rightskip}{0pt plus 5cm}C\-A\-L\-I\-C\-E\-::\-Bit\-Set\-::\-Bit\-Set (
+\begin{DoxyParamCaption}
+\item[{const unsigned int}]{max\-Bits, }
+\item[{const int}]{value = {\ttfamily 0x0}}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [protected]}}\label{classCALICE_1_1BitSet_a73f400c579b2731fc366faf7fa873aa9}
+
+
+constructur 
+
+maximum number of bits defines the size of the returned vector
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em max\-Bits} & maximum number of bits \\
+\hline
+\mbox{\tt in}  & {\em value} & to initialise to different than 0 \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 69 of file Bit\-Set.\-hh.
+
+
+
+\subsection{Member Function Documentation}
+\index{C\-A\-L\-I\-C\-E\-::\-Bit\-Set@{C\-A\-L\-I\-C\-E\-::\-Bit\-Set}!get\-Bit@{get\-Bit}}
+\index{get\-Bit@{get\-Bit}!CALICE::BitSet@{C\-A\-L\-I\-C\-E\-::\-Bit\-Set}}
+\subsubsection[{get\-Bit}]{\setlength{\rightskip}{0pt plus 5cm}bool C\-A\-L\-I\-C\-E\-::\-Bit\-Set\-::get\-Bit (
+\begin{DoxyParamCaption}
+\item[{unsigned int}]{bit\-No}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [protected]}}\label{classCALICE_1_1BitSet_a0ffe3a5bdb4f4f5ec069c4330fef672b}
+
+
+get function for bit number 
+
+
+\begin{DoxyParams}{Parameters}
+{\em bit\-No} & number of the bit to return \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+state of bit 
+\end{DoxyReturn}
+
+
+Definition at line 80 of file Bit\-Set.\-hh.
+
+
+
+Referenced by get\-Int\-Vec(), C\-A\-L\-I\-C\-E\-::\-Tcmt\-Event\-Bits\-::has\-Max\-Number\-Hits\-Muon(), C\-A\-L\-I\-C\-E\-::\-Tcmt\-Event\-Bits\-::has\-Max\-Number\-Muon\-Like\-Towers(), C\-A\-L\-I\-C\-E\-::\-Tcmt\-Event\-Bits\-::has\-Max\-Sum\-Energy\-Muon(), C\-A\-L\-I\-C\-E\-::\-Tcmt\-Event\-Bits\-::has\-Min\-Number\-Hits\-Muon(), C\-A\-L\-I\-C\-E\-::\-Tcmt\-Event\-Bits\-::has\-Min\-Number\-Muon\-Like\-Layers(), C\-A\-L\-I\-C\-E\-::\-Tcmt\-Event\-Bits\-::has\-Min\-Number\-Muon\-Like\-Towers(), C\-A\-L\-I\-C\-E\-::\-Tcmt\-Event\-Bits\-::has\-Min\-Sum\-Energy\-Muon(), C\-A\-L\-I\-C\-E\-::\-Tcmt\-Event\-Bits\-::is\-Leakage(), C\-A\-L\-I\-C\-E\-::\-Tcmt\-Event\-Bits\-::is\-Muon(), and C\-A\-L\-I\-C\-E\-::\-Tcmt\-Event\-Bits\-::is\-Pedestal().
+
+\index{C\-A\-L\-I\-C\-E\-::\-Bit\-Set@{C\-A\-L\-I\-C\-E\-::\-Bit\-Set}!get\-Int@{get\-Int}}
+\index{get\-Int@{get\-Int}!CALICE::BitSet@{C\-A\-L\-I\-C\-E\-::\-Bit\-Set}}
+\subsubsection[{get\-Int}]{\setlength{\rightskip}{0pt plus 5cm}int C\-A\-L\-I\-C\-E\-::\-Bit\-Set\-::get\-Int (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}\label{classCALICE_1_1BitSet_a148efced5e1ce099391216e2f4c9718a}
+
+
+get integer corresponding to the bits 
+
+\begin{DoxyReturn}{Returns}
+integer with the bits set 
+\end{DoxyReturn}
+
+
+Definition at line 27 of file Bit\-Set.\-hh.
+
+
+
+Referenced by C\-A\-L\-I\-C\-E\-::\-Tcmt\-Event\-Identifier\-::add\-Results().
+
+\index{C\-A\-L\-I\-C\-E\-::\-Bit\-Set@{C\-A\-L\-I\-C\-E\-::\-Bit\-Set}!get\-Int\-Vec@{get\-Int\-Vec}}
+\index{get\-Int\-Vec@{get\-Int\-Vec}!CALICE::BitSet@{C\-A\-L\-I\-C\-E\-::\-Bit\-Set}}
+\subsubsection[{get\-Int\-Vec}]{\setlength{\rightskip}{0pt plus 5cm}std\-::vector$<$int$>$ C\-A\-L\-I\-C\-E\-::\-Bit\-Set\-::get\-Int\-Vec (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}\label{classCALICE_1_1BitSet_a807161095aee85a74b6f520f32690ace}
+
+
+get vector of ints with elements corresponding to the single bits (1 for true and 0 for false) 
+
+\begin{DoxyReturn}{Returns}
+vector of integers of single bits 
+\end{DoxyReturn}
+
+
+Definition at line 44 of file Bit\-Set.\-hh.
+
+
+
+References get\-Bit().
+
+
+
+Referenced by C\-A\-L\-I\-C\-E\-::\-Tcmt\-Event\-Identifier\-::add\-Results().
+
+\index{C\-A\-L\-I\-C\-E\-::\-Bit\-Set@{C\-A\-L\-I\-C\-E\-::\-Bit\-Set}!set\-Bit@{set\-Bit}}
+\index{set\-Bit@{set\-Bit}!CALICE::BitSet@{C\-A\-L\-I\-C\-E\-::\-Bit\-Set}}
+\subsubsection[{set\-Bit}]{\setlength{\rightskip}{0pt plus 5cm}void C\-A\-L\-I\-C\-E\-::\-Bit\-Set\-::set\-Bit (
+\begin{DoxyParamCaption}
+\item[{unsigned int}]{bit\-No, }
+\item[{bool}]{state}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [protected]}}\label{classCALICE_1_1BitSet_ae1b313a2e4a97fd9f197239f4abb9a49}
+
+
+set function for bit number 
+
+
+\begin{DoxyParams}{Parameters}
+{\em bit\-No} & number of the bit to set \\
+\hline
+{\em state} & state to witch the bit gets set \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 87 of file Bit\-Set.\-hh.
+
+\index{C\-A\-L\-I\-C\-E\-::\-Bit\-Set@{C\-A\-L\-I\-C\-E\-::\-Bit\-Set}!set\-Bits@{set\-Bits}}
+\index{set\-Bits@{set\-Bits}!CALICE::BitSet@{C\-A\-L\-I\-C\-E\-::\-Bit\-Set}}
+\subsubsection[{set\-Bits}]{\setlength{\rightskip}{0pt plus 5cm}void C\-A\-L\-I\-C\-E\-::\-Bit\-Set\-::set\-Bits (
+\begin{DoxyParamCaption}
+\item[{const int}]{value}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\label{classCALICE_1_1BitSet_a17ed04fb84b1be0b476312d046333704}
+
+
+set all bits with an integer 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em value} & integer with the bits \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 34 of file Bit\-Set.\-hh.
+
+
+
+The documentation for this class was generated from the following file\-:\begin{DoxyCompactItemize}
+\item 
+Bit\-Set.\-hh\end{DoxyCompactItemize}

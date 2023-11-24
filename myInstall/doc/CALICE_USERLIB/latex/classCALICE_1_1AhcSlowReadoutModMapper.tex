@@ -1,0 +1,155 @@
+\section{C\-A\-L\-I\-C\-E\-:\-:Ahc\-Slow\-Readout\-Mod\-Mapper Class Reference}
+\label{classCALICE_1_1AhcSlowReadoutModMapper}\index{C\-A\-L\-I\-C\-E\-::\-Ahc\-Slow\-Readout\-Mod\-Mapper@{C\-A\-L\-I\-C\-E\-::\-Ahc\-Slow\-Readout\-Mod\-Mapper}}
+
+
+Class to correct the mapping of Ahc\-Slow\-Readout\-Mod\-Block-\/classes.  
+
+
+
+
+{\ttfamily \#include $<$Ahc\-Slow\-Readout\-Mod\-Mapper.\-hh$>$}
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+lcio\-::\-L\-C\-Collection $\ast$ {\bf map\-Collection} (const lcio\-::\-L\-C\-Collection $\ast$const col) const 
+\begin{DoxyCompactList}\small\item\em returns collection with corrected Ahc\-Slow\-Readout\-Mod\-Block-\/elements for an unmapped collection of \doxyref{Ahc\-Slow\-Readout\-Mod\-Block}{p.}{classCALICE_1_1AhcSlowReadoutModBlock} \end{DoxyCompactList}\item 
+void {\bf update\-Mapping} (const lcio\-::\-L\-C\-Collection $\ast$const col)
+\begin{DoxyCompactList}\small\item\em Function to update the mapping. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void {\bfseries init} ()\label{classCALICE_1_1AhcSlowReadoutModMapper_acdefd374a029f03e44e43ae651bc16fb}
+
+\item 
+void {\bfseries ensure\-Size} (unsigned int i)\label{classCALICE_1_1AhcSlowReadoutModMapper_a840d2c17a25ecfe401031047dbdf00b8}
+
+\item 
+bool {\bfseries is\-Available} (int module)\label{classCALICE_1_1AhcSlowReadoutModMapper_a8e06c12f239c65287643281ef986473d}
+
+\item 
+void {\bfseries set\-Values} ({\bf Ahc\-Slow\-Readout\-Mod\-Block} $\ast$output, const std\-::vector$<$ {\bf Ahc\-Slow\-Readout\-Mod\-Block} $\ast$ $>$ \&input, unsigned int module) const \label{classCALICE_1_1AhcSlowReadoutModMapper_a7ed1bd5cad8c574ed031c2d7ecc680aa}
+
+\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+std\-::vector$<$ bool $>$ {\bfseries \-\_\-is\-Available}\label{classCALICE_1_1AhcSlowReadoutModMapper_a9c7cdd3f7492a7dcf9ce358a41d4e3a7}
+
+\item 
+std\-::vector$<$ int $>$ {\bfseries \-\_\-\-C\-M\-Blabel}\label{classCALICE_1_1AhcSlowReadoutModMapper_ae8b8700496f48a1e9056ec4ddd92abe7}
+
+\item 
+std\-::vector$<$ int $>$ {\bfseries \-\_\-\-H\-Vlabel}\label{classCALICE_1_1AhcSlowReadoutModMapper_a1ad249bcd18e4ced012b5269671810ae}
+
+\item 
+std\-::vector$<$ int $>$ {\bfseries \-\_\-\-L\-Vlabel}\label{classCALICE_1_1AhcSlowReadoutModMapper_a168f8dcf17583bc6e49b671c7824fcf7}
+
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Class to correct the mapping of Ahc\-Slow\-Readout\-Mod\-Block-\/classes. 
+
+The class \doxyref{Ahc\-Slow\-Readout\-Mod\-Block}{p.}{classCALICE_1_1AhcSlowReadoutModBlock} containes the module number for which the records stands. Due to problems in the slow control in the years 2006 and 2007 the values from the different data sources have been written with wrong module number. Therefore, the single \doxyref{Ahc\-Slow\-Readout\-Mod\-Block}{p.}{classCALICE_1_1AhcSlowReadoutModBlock} contains a collection of values from different modules. e.\-g. record with label \char`\"{}module = 17\char`\"{} contains C\-M\-B readings from module 23, H\-V readings from module 19 and corrupted L\-V readings
+
+This class collects, as far as possible, the datas for the modules from the different records these ended up. If the mapping for one part is missing the values for this source will not be filled.
+
+\begin{DoxySeeAlso}{See Also}
+\doxyref{Ahc\-Slow\-Readout\-Mod\-Block}{p.}{classCALICE_1_1AhcSlowReadoutModBlock} 
+
+\doxyref{Ahc\-Slow\-Readout\-Mod\-Mapping}{p.}{classCALICE_1_1AhcSlowReadoutModMapping}
+\end{DoxySeeAlso}
+\begin{DoxyAuthor}{Author}
+{\tt Benjamin.\-Lutz@desy.\-de} 
+\end{DoxyAuthor}
+\begin{DoxyDate}{Date}
+Nov 2008 
+\end{DoxyDate}
+\begin{DoxyVersion}{Version}
+1.\-0 
+\end{DoxyVersion}
+
+
+Definition at line 34 of file Ahc\-Slow\-Readout\-Mod\-Mapper.\-hh.
+
+
+
+\subsection{Member Function Documentation}
+\index{C\-A\-L\-I\-C\-E\-::\-Ahc\-Slow\-Readout\-Mod\-Mapper@{C\-A\-L\-I\-C\-E\-::\-Ahc\-Slow\-Readout\-Mod\-Mapper}!map\-Collection@{map\-Collection}}
+\index{map\-Collection@{map\-Collection}!CALICE::AhcSlowReadoutModMapper@{C\-A\-L\-I\-C\-E\-::\-Ahc\-Slow\-Readout\-Mod\-Mapper}}
+\subsubsection[{map\-Collection}]{\setlength{\rightskip}{0pt plus 5cm}lcio\-::\-L\-C\-Collection $\ast$ C\-A\-L\-I\-C\-E\-::\-Ahc\-Slow\-Readout\-Mod\-Mapper\-::map\-Collection (
+\begin{DoxyParamCaption}
+\item[{const lcio\-::\-L\-C\-Collection $\ast$const}]{col}
+\end{DoxyParamCaption}
+) const}\label{classCALICE_1_1AhcSlowReadoutModMapper_aaf98120ee4080f6de37b5017ea6e4bb1}
+
+
+returns collection with corrected Ahc\-Slow\-Readout\-Mod\-Block-\/elements for an unmapped collection of \doxyref{Ahc\-Slow\-Readout\-Mod\-Block}{p.}{classCALICE_1_1AhcSlowReadoutModBlock} 
+
+
+\begin{DoxyExceptions}{Exceptions}
+{\em \doxyref{Wrong\-Data\-Format\-Exception}{p.}{classCALICE_1_1WrongDataFormatException}} & When the collection type is not L\-C\-Generic\-Objects or the collection parameter \char`\"{}\-Type\-Name\char`\"{} is not \char`\"{}\-Ahc\-Slow\-Readout\-Mod\-Block\char`\"{} \\
+\hline
+\end{DoxyExceptions}
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em col} & collection of \doxyref{Ahc\-Slow\-Readout\-Mod\-Block}{p.}{classCALICE_1_1AhcSlowReadoutModBlock} \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+corrected collection of \doxyref{Ahc\-Slow\-Readout\-Mod\-Block}{p.}{classCALICE_1_1AhcSlowReadoutModBlock} 
+\end{DoxyReturn}
+\begin{DoxySeeAlso}{See Also}
+\doxyref{Wrong\-Data\-Format\-Exception}{p.}{classCALICE_1_1WrongDataFormatException} 
+
+\doxyref{Ahc\-Slow\-Readout\-Mod\-Block}{p.}{classCALICE_1_1AhcSlowReadoutModBlock} 
+\end{DoxySeeAlso}
+
+
+Definition at line 88 of file Ahc\-Slow\-Readout\-Mod\-Mapper.\-cc.
+
+
+
+References C\-A\-L\-I\-C\-E\-::\-Scint\-Calo\-Slow\-Readout\-Mod\-Block\-::get\-Module\-Number(), and C\-A\-L\-I\-C\-E\-::\-Scint\-Calo\-Slow\-Readout\-Mod\-Block\-::set\-Module\-Number().
+
+\index{C\-A\-L\-I\-C\-E\-::\-Ahc\-Slow\-Readout\-Mod\-Mapper@{C\-A\-L\-I\-C\-E\-::\-Ahc\-Slow\-Readout\-Mod\-Mapper}!update\-Mapping@{update\-Mapping}}
+\index{update\-Mapping@{update\-Mapping}!CALICE::AhcSlowReadoutModMapper@{C\-A\-L\-I\-C\-E\-::\-Ahc\-Slow\-Readout\-Mod\-Mapper}}
+\subsubsection[{update\-Mapping}]{\setlength{\rightskip}{0pt plus 5cm}void C\-A\-L\-I\-C\-E\-::\-Ahc\-Slow\-Readout\-Mod\-Mapper\-::update\-Mapping (
+\begin{DoxyParamCaption}
+\item[{const lcio\-::\-L\-C\-Collection $\ast$const}]{col}
+\end{DoxyParamCaption}
+)}\label{classCALICE_1_1AhcSlowReadoutModMapper_a5e8636113c362bb680cf97ab0a63a9f6}
+
+
+Function to update the mapping. 
+
+
+\begin{DoxyExceptions}{Exceptions}
+{\em \doxyref{C\-A\-L\-I\-C\-E\-::\-Wrong\-Data\-Format\-Exception}{p.}{classCALICE_1_1WrongDataFormatException}} & When the collection type is not L\-C\-Generic\-Objects or the collection parameter \char`\"{}\-Type\-Name\char`\"{} is not \char`\"{}\-Ahc\-Slow\-Readout\-Mod\-Mapping\char`\"{} \\
+\hline
+\end{DoxyExceptions}
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em col} & The collection of \doxyref{Ahc\-Slow\-Readout\-Mod\-Mapping}{p.}{classCALICE_1_1AhcSlowReadoutModMapping} objects \\
+\hline
+\end{DoxyParams}
+\begin{DoxySeeAlso}{See Also}
+\doxyref{Wrong\-Data\-Format\-Exception}{p.}{classCALICE_1_1WrongDataFormatException} 
+
+\doxyref{Ahc\-Slow\-Readout\-Mod\-Mapping}{p.}{classCALICE_1_1AhcSlowReadoutModMapping} 
+\end{DoxySeeAlso}
+
+
+Definition at line 133 of file Ahc\-Slow\-Readout\-Mod\-Mapper.\-cc.
+
+
+
+References C\-A\-L\-I\-C\-E\-::\-Ahc\-Slow\-Readout\-Mod\-Mapping\-::get\-C\-M\-Blabel(), C\-A\-L\-I\-C\-E\-::\-Ahc\-Slow\-Readout\-Mod\-Mapping\-::get\-H\-Vlabel(), C\-A\-L\-I\-C\-E\-::\-Ahc\-Slow\-Readout\-Mod\-Mapping\-::get\-L\-Vlabel(), and C\-A\-L\-I\-C\-E\-::\-Ahc\-Slow\-Readout\-Mod\-Mapping\-::get\-Module().
+
+
+
+The documentation for this class was generated from the following files\-:\begin{DoxyCompactItemize}
+\item 
+Ahc\-Slow\-Readout\-Mod\-Mapper.\-hh\item 
+Ahc\-Slow\-Readout\-Mod\-Mapper.\-cc\end{DoxyCompactItemize}

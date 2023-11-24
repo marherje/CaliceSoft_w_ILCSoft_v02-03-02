@@ -1,0 +1,114 @@
+\section{C\-A\-L\-I\-C\-E\-:\-:Run\-Time\-Conditions\-Handler Class Reference}
+\label{classCALICE_1_1RunTimeConditionsHandler}\index{C\-A\-L\-I\-C\-E\-::\-Run\-Time\-Conditions\-Handler@{C\-A\-L\-I\-C\-E\-::\-Run\-Time\-Conditions\-Handler}}
+
+
+Implementation of Conditions\-Handler\-Base that can be used to propagate conditions data that were generated at runtime.  
+
+
+
+
+{\ttfamily \#include $<$Run\-Time\-Conditions\-Handler.\-hh$>$}
+
+Inheritance diagram for C\-A\-L\-I\-C\-E\-:\-:Run\-Time\-Conditions\-Handler\-:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classCALICE_1_1RunTimeConditionsHandler}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+{\bf Run\-Time\-Conditions\-Handler} (const std\-::string \&name)
+\begin{DoxyCompactList}\small\item\em Default constructor. \end{DoxyCompactList}\item 
+virtual void {\bfseries update} (L\-C\-C\-D\-Time\-Stamp timestamp)\label{classCALICE_1_1RunTimeConditionsHandler_a2512774ec5cc836083d0e33d5bdf2bc2}
+
+\item 
+virtual void {\bfseries update} (L\-C\-Collection $\ast$col)\label{classCALICE_1_1RunTimeConditionsHandler_a05f4714fa0493f98faeb3efa8b6fce1e}
+
+\item 
+virtual void {\bf register\-Default\-Collection} (L\-C\-Collection $\ast$col)\label{classCALICE_1_1RunTimeConditionsHandler_a40b4326a9b931702afdd3bd6f6cdad31}
+
+\begin{DoxyCompactList}\small\item\em Register a pointer to a default collection which will be passed to the I\-Conditions\-Change\-Listener if no data can be found for a given time stamp. \end{DoxyCompactList}\item 
+virtual L\-C\-Collection $\ast$ {\bf default\-Collection} ()\label{classCALICE_1_1RunTimeConditionsHandler_a211c66b829f2f9942612667b04da119b}
+
+\begin{DoxyCompactList}\small\item\em The default collection registered with the handler. \end{DoxyCompactList}\item 
+virtual L\-C\-Collection $\ast$ {\bf last\-Valid\-Collection} ()\label{classCALICE_1_1RunTimeConditionsHandler_a0867758af207626a60529ab86ea9fd64}
+
+\begin{DoxyCompactList}\small\item\em The last valid collection held by the handler. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+virtual void {\bfseries update\-Event} (L\-C\-Event $\ast$evt)\label{classCALICE_1_1RunTimeConditionsHandler_a9e896232b8fa2153fd51524efb11c3a9}
+
+\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+L\-C\-Event $\ast$ {\bfseries \-\_\-evt}\label{classCALICE_1_1RunTimeConditionsHandler_a0d779f9c8f24741a487848089cfbd9da}
+
+\item 
+bool {\bfseries \-\_\-missed\-Add\-Event}\label{classCALICE_1_1RunTimeConditionsHandler_ac1245dfab8ccb6a2464d7e9105da3326}
+
+\item 
+L\-C\-Collection $\ast$ {\bf \-\_\-default\-Col}\label{classCALICE_1_1RunTimeConditionsHandler_a9dc518975a177949967cca8853c14f3b}
+
+\begin{DoxyCompactList}\small\item\em the default (empty) collection \end{DoxyCompactList}\item 
+L\-C\-Collection $\ast$ {\bf \-\_\-last\-Valid\-Collection}\label{classCALICE_1_1RunTimeConditionsHandler_a1b2f0d346ce096596e7f703306d2f091}
+
+\begin{DoxyCompactList}\small\item\em the last valid collection \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Implementation of Conditions\-Handler\-Base that can be used to propagate conditions data that were generated at runtime. 
+
+This is necessary if the output of a processor should trigger a Conditions\-Change\-Listener The data will get an infinite validity time intervall assigned.\par
+
+
+\begin{DoxyAuthor}{Author}
+{\tt Benjamin.\-Lutz@desy.\-de} 
+\end{DoxyAuthor}
+\begin{DoxyDate}{Date}
+Dec 2008 
+\end{DoxyDate}
+\begin{DoxyVersion}{Version}
+1.\-0 
+\end{DoxyVersion}
+
+
+Definition at line 22 of file Run\-Time\-Conditions\-Handler.\-hh.
+
+
+
+\subsection{Constructor \& Destructor Documentation}
+\index{C\-A\-L\-I\-C\-E\-::\-Run\-Time\-Conditions\-Handler@{C\-A\-L\-I\-C\-E\-::\-Run\-Time\-Conditions\-Handler}!Run\-Time\-Conditions\-Handler@{Run\-Time\-Conditions\-Handler}}
+\index{Run\-Time\-Conditions\-Handler@{Run\-Time\-Conditions\-Handler}!CALICE::RunTimeConditionsHandler@{C\-A\-L\-I\-C\-E\-::\-Run\-Time\-Conditions\-Handler}}
+\subsubsection[{Run\-Time\-Conditions\-Handler}]{\setlength{\rightskip}{0pt plus 5cm}C\-A\-L\-I\-C\-E\-::\-Run\-Time\-Conditions\-Handler\-::\-Run\-Time\-Conditions\-Handler (
+\begin{DoxyParamCaption}
+\item[{const std\-::string \&}]{name}
+\end{DoxyParamCaption}
+)}\label{classCALICE_1_1RunTimeConditionsHandler_a00f0851171a0e2294317f8fed106033b}
+
+
+Default constructor. 
+
+You have to specify the following parameters\-:
+
+
+\begin{DoxyParams}{Parameters}
+{\em name,\-:} & name of this conditions data set -\/ used, e.\-g. as collection name in update(\-L\-C\-Event$\ast$ evt) \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 21 of file Run\-Time\-Conditions\-Handler.\-cc.
+
+
+
+References \-\_\-default\-Col, and \-\_\-last\-Valid\-Collection.
+
+
+
+The documentation for this class was generated from the following files\-:\begin{DoxyCompactItemize}
+\item 
+Run\-Time\-Conditions\-Handler.\-hh\item 
+Run\-Time\-Conditions\-Handler.\-cc\end{DoxyCompactItemize}

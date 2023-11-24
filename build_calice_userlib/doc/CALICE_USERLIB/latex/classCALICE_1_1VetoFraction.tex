@@ -1,0 +1,96 @@
+\section{C\-A\-L\-I\-C\-E\-:\-:Veto\-Fraction Class Reference}
+\label{classCALICE_1_1VetoFraction}\index{C\-A\-L\-I\-C\-E\-::\-Veto\-Fraction@{C\-A\-L\-I\-C\-E\-::\-Veto\-Fraction}}
+
+
+Class to store the fraction of events that are cut with a certain purity setting of the veto.  
+
+
+
+
+{\ttfamily \#include $<$Veto\-Fraction.\-hh$>$}
+
+Inheritance diagram for C\-A\-L\-I\-C\-E\-:\-:Veto\-Fraction\-:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classCALICE_1_1VetoFraction}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+{\bf Veto\-Fraction} (const float purity, const float fraction)\label{classCALICE_1_1VetoFraction_a59c07a9bd31ae6165122a1b09411a483}
+
+\begin{DoxyCompactList}\small\item\em Constructor with initial values. \end{DoxyCompactList}\item 
+{\bf Veto\-Fraction} (E\-V\-E\-N\-T\-::\-L\-C\-Object $\ast$object)\label{classCALICE_1_1VetoFraction_ac5fd6ab373c417aac1c6868619bf90c2}
+
+\begin{DoxyCompactList}\small\item\em Constructor from L\-C\-Object. \end{DoxyCompactList}\item 
+{\bf $\sim$\-Veto\-Fraction} ()\label{classCALICE_1_1VetoFraction_a55a93867c38ed1f4bdfee8ca2ef831c6}
+
+\begin{DoxyCompactList}\small\item\em Destructor. \end{DoxyCompactList}\item 
+void {\bfseries set\-Purity} (float purity)\label{classCALICE_1_1VetoFraction_abd9f68b2c4142c9800f08ee310fb102f}
+
+\item 
+void {\bfseries set\-Fraction} (float fraction)\label{classCALICE_1_1VetoFraction_a7340533b1d5cd86a94225f7ccc9bad73}
+
+\item 
+float {\bf get\-Purity} () const \label{classCALICE_1_1VetoFraction_a2b458d1246e49a5b8176e8c224ba0ba1}
+
+\begin{DoxyCompactList}\small\item\em purity in [\%] \end{DoxyCompactList}\item 
+float {\bf get\-Fraction} () const 
+\begin{DoxyCompactList}\small\item\em fraction \end{DoxyCompactList}\item 
+const std\-::string {\bf get\-Type\-Name} () const \label{classCALICE_1_1VetoFraction_a1543156db25771800dc2b5af338f303a}
+
+\begin{DoxyCompactList}\small\item\em Implementation of L\-C\-Generic\-Object\-::get\-Type\-Name. \end{DoxyCompactList}\item 
+const std\-::string {\bf get\-Data\-Description} () const \label{classCALICE_1_1VetoFraction_a25fa02f063a97ad451ef86eb3ca6fedc}
+
+\begin{DoxyCompactList}\small\item\em Implementation of L\-C\-Generic\-Object\-::get\-Data\-Description. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Class to store the fraction of events that are cut with a certain purity setting of the veto. 
+
+Thanks go to Sebastian Richter for the suggestion of the clas name.
+
+\begin{DoxyAttention}{Attention}
+Take care of the units of the return function!
+\end{DoxyAttention}
+\begin{DoxyAuthor}{Author}
+{\tt Benjamin.\-Lutz@desy.\-de} 
+\end{DoxyAuthor}
+\begin{DoxyVersion}{Version}
+1.\-0 
+\end{DoxyVersion}
+\begin{DoxyDate}{Date}
+September 2008 
+\end{DoxyDate}
+
+
+Definition at line 22 of file Veto\-Fraction.\-hh.
+
+
+
+\subsection{Member Function Documentation}
+\index{C\-A\-L\-I\-C\-E\-::\-Veto\-Fraction@{C\-A\-L\-I\-C\-E\-::\-Veto\-Fraction}!get\-Fraction@{get\-Fraction}}
+\index{get\-Fraction@{get\-Fraction}!CALICE::VetoFraction@{C\-A\-L\-I\-C\-E\-::\-Veto\-Fraction}}
+\subsubsection[{get\-Fraction}]{\setlength{\rightskip}{0pt plus 5cm}float C\-A\-L\-I\-C\-E\-::\-Veto\-Fraction\-::get\-Fraction (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const}\label{classCALICE_1_1VetoFraction_adcff26d17db7f0cea85ab846f8debaa6}
+
+
+fraction 
+
+\begin{DoxyRemark}{Remarks}
+As the name suggests the unit is {\bfseries not} \%. Values should be in [0,1]. 
+\end{DoxyRemark}
+
+
+Definition at line 17 of file Veto\-Fraction.\-cc.
+
+
+
+The documentation for this class was generated from the following files\-:\begin{DoxyCompactItemize}
+\item 
+Veto\-Fraction.\-hh\item 
+Veto\-Fraction.\-cc\end{DoxyCompactItemize}

@@ -1,0 +1,30 @@
+\section{/nfs/dust/ilc/user/marquezh/\-Calice\-Soft\-\_\-w\-\_\-\-I\-L\-C\-Soft\-\_\-v02-\/03-\/02/calice\-\_\-db\-\_\-tools/include/\-Average\-Linear\-Fit\-Slopes.hh File Reference}
+\label{AverageLinearFitSlopes_8hh}\index{/nfs/dust/ilc/user/marquezh/\-Calice\-Soft\-\_\-w\-\_\-\-I\-L\-C\-Soft\-\_\-v02-\/03-\/02/calice\-\_\-db\-\_\-tools/include/\-Average\-Linear\-Fit\-Slopes.\-hh@{/nfs/dust/ilc/user/marquezh/\-Calice\-Soft\-\_\-w\-\_\-\-I\-L\-C\-Soft\-\_\-v02-\/03-\/02/calice\-\_\-db\-\_\-tools/include/\-Average\-Linear\-Fit\-Slopes.\-hh}}
+{\ttfamily \#include \char`\"{}Linear\-Fit\-Slope.\-hh\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}Access\-Linear\-Fit\-Slope.\-hh\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}lcio.\-h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}I\-M\-P\-L/\-L\-C\-Collection\-Vec.\-h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}I\-M\-P\-L/\-L\-C\-T\-O\-O\-L\-S.\-h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}I\-O/\-L\-C\-Reader.\-h\char`\"{}}\\*
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class {\bf Average\-Linear\-Fit\-Slopes}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+This tool calculates the average of n sets of C\-A\-L\-I\-C\-E\-::\-Linear\-Fit\-Slopes.
+
+Command line parameters\-:\par
+\par
+ /e --val -\/$>$ add new value for average\par
+\par
+ /e --txt $<$inputfile.\-txt$>$ -\/$>$ define .txt file as source (format\-: module/chip/channel/value/error...)\par
+ /e --slcio $<$inputfile.\-slcio$>$ $<$collection$>$ -\/$>$ define collection from .slcio file as source\par
+ /e --db $<$D\-Bfolder$>$ $<$time$>$ -\/$>$ define database folder at time $<$time$>$ as source, using no tag\par
+ /e --db\-\_\-tag $<$D\-Bfolder$>$ $<$time$>$ $<$tag$>$ -\/$>$ define database folder at time $<$time$>$ and tag $<$tag$>$ as source\par
+
+
+Definition in file {\bf Average\-Linear\-Fit\-Slopes.\-hh}.
+

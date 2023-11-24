@@ -1,0 +1,107 @@
+\section{Fe\-Stat\-List\-Base\-\_\-t Class Reference}
+\label{classFeStatListBase__t}\index{Fe\-Stat\-List\-Base\-\_\-t@{Fe\-Stat\-List\-Base\-\_\-t}}
+
+
+Container class which can store statistics objects for all existing front-\/ends.  
+
+
+
+
+{\ttfamily \#include $<$Fe\-Stat\-List\-\_\-t.\-hh$>$}
+
+Inheritance diagram for Fe\-Stat\-List\-Base\-\_\-t\-:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classFeStatListBase__t}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void {\bf show} (const char $\ast$label)
+\begin{DoxyCompactList}\small\item\em Print statistics about all front-\/ends. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Protected Types}
+\begin{DoxyCompactItemize}
+\item 
+typedef {\bf Stat\-Obj\-\_\-t} $\ast$ {\bfseries Stat\-Obj\-Ptr}\label{classFeStatListBase__t_a375c72380cafb0c98dfc80cbd1d0305f}
+
+\end{DoxyCompactItemize}
+\subsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+{\bf Stat\-Obj\-Ptr} \& {\bf get\-Stat} (unsigned int board\-\_\-id)
+\begin{DoxyCompactList}\small\item\em Get the statistics object for the given board id. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+std\-::map$<$ unsigned int, \\*
+std\-::vector$<$ std\-::vector\\*
+$<$ {\bf Stat\-Obj\-Ptr} $>$ $>$ $>$ {\bfseries \-\_\-fe\-Info}\label{classFeStatListBase__t_aa6de25584603d7826ea405b0d56dd0ff}
+
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Container class which can store statistics objects for all existing front-\/ends. 
+
+The statistics collected from all front-\/ends can be printed to an output stream. {\bfseries This class should not be used directly but the template \doxyref{Fe\-Stat\-List\-\_\-t}{p.}{classFeStatList__t}} which gives You type safety. 
+
+Definition at line 59 of file Fe\-Stat\-List\-\_\-t.\-hh.
+
+
+
+\subsection{Member Function Documentation}
+\index{Fe\-Stat\-List\-Base\-\_\-t@{Fe\-Stat\-List\-Base\-\_\-t}!get\-Stat@{get\-Stat}}
+\index{get\-Stat@{get\-Stat}!FeStatListBase_t@{Fe\-Stat\-List\-Base\-\_\-t}}
+\subsubsection[{get\-Stat}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Stat\-Obj\-Ptr}\& Fe\-Stat\-List\-Base\-\_\-t\-::get\-Stat (
+\begin{DoxyParamCaption}
+\item[{unsigned int}]{board\-\_\-id}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [protected]}}\label{classFeStatListBase__t_af736c1e9e3e131095ac69d5b7448ce6f}
+
+
+Get the statistics object for the given board id. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em board\-\_\-id} & id which tells the crate, slot and front-\/end. This method should not be used directly but the template \doxyref{Fe\-Stat\-List\-\_\-t\-::get\-Stat}{p.}{classFeStatList__t_a5b29ca60859d52c5e2279f9636ac6b01} \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 86 of file Fe\-Stat\-List\-\_\-t.\-hh.
+
+
+
+References C\-A\-L\-I\-C\-E\-::\-Board\-I\-D\-::get\-Board\-Component\-Number(), C\-A\-L\-I\-C\-E\-::\-Board\-I\-D\-::get\-Crate\-I\-D(), and C\-A\-L\-I\-C\-E\-::\-Board\-I\-D\-::get\-Slot\-I\-D().
+
+
+
+Referenced by Fe\-Stat\-List\-\_\-t$<$ T\-\_\-\-Stat\-Obj\-\_\-t $>$\-::get\-Stat().
+
+\index{Fe\-Stat\-List\-Base\-\_\-t@{Fe\-Stat\-List\-Base\-\_\-t}!show@{show}}
+\index{show@{show}!FeStatListBase_t@{Fe\-Stat\-List\-Base\-\_\-t}}
+\subsubsection[{show}]{\setlength{\rightskip}{0pt plus 5cm}void Fe\-Stat\-List\-Base\-\_\-t\-::show (
+\begin{DoxyParamCaption}
+\item[{const char $\ast$}]{label}
+\end{DoxyParamCaption}
+)}\label{classFeStatListBase__t_af8d07bf048c14d95c95338c3d1b10f91}
+
+
+Print statistics about all front-\/ends. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em label} & text to be printed as a header line. The output depends on the statistics objects used. {\bfseries N\-O\-T\-E\-:} This method will call the method \doxyref{Stat\-Obj\-\_\-t\-::finish}{p.}{classStatObj__t_a47e9637e59dc8e2cb5889de98160e553} i.\-e. the objects should not be changed afterwords otherwise the result will rather undefined. \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 24 of file Fe\-Stat\-List\-\_\-t.\-cc.
+
+
+
+The documentation for this class was generated from the following files\-:\begin{DoxyCompactItemize}
+\item 
+Fe\-Stat\-List\-\_\-t.\-hh\item 
+Fe\-Stat\-List\-\_\-t.\-cc\end{DoxyCompactItemize}

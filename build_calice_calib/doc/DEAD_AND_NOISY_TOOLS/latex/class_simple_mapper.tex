@@ -1,0 +1,233 @@
+\hypertarget{class_simple_mapper}{\section{Simple\-Mapper Class Reference}
+\label{class_simple_mapper}\index{Simple\-Mapper@{Simple\-Mapper}}
+}
+
+
+The \hyperlink{class_simple_mapper}{Simple\-Mapper} helper class reads in the A\-H\-C.\-cfg text file and provides the mapping (slot, frontend) -\/$>$ (module, chip)  
+
+
+
+
+{\ttfamily \#include $<$Simple\-Mapper.\-h$>$}
+
+\subsection*{Data Structures}
+\begin{DoxyCompactItemize}
+\item 
+struct \hyperlink{struct_simple_mapper_1_1_module_description}{Module\-Description}
+\begin{DoxyCompactList}\small\item\em Internal helper struct for the value\-: a module description consisting of. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+typedef std\-::pair$<$ int, int $>$ \hyperlink{class_simple_mapper_a6fbef133414fb482f870ab56e7237682}{Module\-Layer\-I\-D}
+\begin{DoxyCompactList}\small\item\em A pair of ints, the first one being the module\-I\-D, the second one the layer number. \end{DoxyCompactList}\item 
+typedef std\-::pair$<$ int, int $>$ \hyperlink{class_simple_mapper_a2b973730223591df7c876a6dfbb922a0}{Slot\-Frontend\-I\-D}
+\begin{DoxyCompactList}\small\item\em A pair of ints, the first one being the slot number, the second one the front end I\-D. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_simple_mapper_aac9a4d9921f0f079f2f0a4778a83c27d}{Simple\-Mapper} (std\-::string config\-File\-Name)
+\item 
+\hyperlink{class_simple_mapper_a6fbef133414fb482f870ab56e7237682}{Module\-Layer\-I\-D} \hyperlink{class_simple_mapper_a33ffad5d6bdccd5347630b65764e4b99}{get\-Module\-Layer\-I\-D} (\hyperlink{class_simple_mapper_a2b973730223591df7c876a6dfbb922a0}{Slot\-Frontend\-I\-D} sf\-I\-D)
+\begin{DoxyCompactList}\small\item\em Get the Module\-Layer\-I\-D from knowing the Slot\-Frontend\-I\-D. \end{DoxyCompactList}\item 
+bool \hyperlink{class_simple_mapper_a02936c8c25f05737945901618a777515}{is\-A\-H\-C8} (\hyperlink{class_simple_mapper_a2b973730223591df7c876a6dfbb922a0}{Slot\-Frontend\-I\-D} sf\-I\-D)
+\begin{DoxyCompactList}\small\item\em Check if a module is A\-H\-C8 (larger 6x6 cells also in the middle of the module, thus only 8 chips are needed instead of 12 on a normal module). \end{DoxyCompactList}\item 
+bool \hyperlink{class_simple_mapper_a09cf4f914abaad39fc4cc039f4e41ea2}{is\-T\-C\-M\-T} (\hyperlink{class_simple_mapper_a2b973730223591df7c876a6dfbb922a0}{Slot\-Frontend\-I\-D} sf\-I\-D)
+\begin{DoxyCompactList}\small\item\em Check if a module is from the tail catcher (normal module with 12 chips) \end{DoxyCompactList}\item 
+void \hyperlink{class_simple_mapper_a0cfad0a5093ba57a9540b99f850cd474}{print} ()
+\begin{DoxyCompactList}\small\item\em A debug function. Dumps the map to the console. \end{DoxyCompactList}\item 
+unsigned int \hyperlink{class_simple_mapper_a857de2500f82b01e1a6f116df8aed8a6}{get\-Module\-Type} (\hyperlink{class_simple_mapper_a2b973730223591df7c876a6dfbb922a0}{Slot\-Frontend\-I\-D} sf\-I\-D)
+\begin{DoxyCompactList}\small\item\em Get the module type from the Slot\-Front\-End\-I\-D. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Data Fields}
+\begin{DoxyCompactItemize}
+\item 
+std\-::map$<$ \hyperlink{class_simple_mapper_a2b973730223591df7c876a6dfbb922a0}{Slot\-Frontend\-I\-D}, \\*
+\hyperlink{struct_simple_mapper_1_1_module_description}{Module\-Description} $>$ \hyperlink{class_simple_mapper_abc72184f9c3735233e2d21ef36161699}{\-\_\-sf2ml\-Map}
+\begin{DoxyCompactList}\small\item\em A map with the Slot\-Frontend\-I\-D as key. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+The \hyperlink{class_simple_mapper}{Simple\-Mapper} helper class reads in the A\-H\-C.\-cfg text file and provides the mapping (slot, frontend) -\/$>$ (module, chip) 
+
+Definition at line 11 of file Simple\-Mapper.\-h.
+
+
+
+\subsection{Member Typedef Documentation}
+\hypertarget{class_simple_mapper_a6fbef133414fb482f870ab56e7237682}{\index{Simple\-Mapper@{Simple\-Mapper}!Module\-Layer\-I\-D@{Module\-Layer\-I\-D}}
+\index{Module\-Layer\-I\-D@{Module\-Layer\-I\-D}!SimpleMapper@{Simple\-Mapper}}
+\subsubsection[{Module\-Layer\-I\-D}]{\setlength{\rightskip}{0pt plus 5cm}typedef std\-::pair$<$int, int$>$ {\bf Simple\-Mapper\-::\-Module\-Layer\-I\-D}}}\label{class_simple_mapper_a6fbef133414fb482f870ab56e7237682}
+
+
+A pair of ints, the first one being the module\-I\-D, the second one the layer number. 
+
+
+
+Definition at line 18 of file Simple\-Mapper.\-h.
+
+\hypertarget{class_simple_mapper_a2b973730223591df7c876a6dfbb922a0}{\index{Simple\-Mapper@{Simple\-Mapper}!Slot\-Frontend\-I\-D@{Slot\-Frontend\-I\-D}}
+\index{Slot\-Frontend\-I\-D@{Slot\-Frontend\-I\-D}!SimpleMapper@{Simple\-Mapper}}
+\subsubsection[{Slot\-Frontend\-I\-D}]{\setlength{\rightskip}{0pt plus 5cm}typedef std\-::pair$<$int, int$>$ {\bf Simple\-Mapper\-::\-Slot\-Frontend\-I\-D}}}\label{class_simple_mapper_a2b973730223591df7c876a6dfbb922a0}
+
+
+A pair of ints, the first one being the slot number, the second one the front end I\-D. 
+
+
+
+Definition at line 22 of file Simple\-Mapper.\-h.
+
+
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{class_simple_mapper_aac9a4d9921f0f079f2f0a4778a83c27d}{\index{Simple\-Mapper@{Simple\-Mapper}!Simple\-Mapper@{Simple\-Mapper}}
+\index{Simple\-Mapper@{Simple\-Mapper}!SimpleMapper@{Simple\-Mapper}}
+\subsubsection[{Simple\-Mapper}]{\setlength{\rightskip}{0pt plus 5cm}Simple\-Mapper\-::\-Simple\-Mapper (
+\begin{DoxyParamCaption}
+\item[{std\-::string}]{config\-File\-Name}
+\end{DoxyParamCaption}
+)}}\label{class_simple_mapper_aac9a4d9921f0f079f2f0a4778a83c27d}
+
+
+Definition at line 10 of file Simple\-Mapper.\-cxx.
+
+
+
+References \-\_\-sf2ml\-Map, Module\-Type\-::\-A\-H\-C, Module\-Type\-::\-A\-H\-C8, A\-H\-C\-A\-L\-\_\-\-M\-A\-X\-\_\-\-L\-A\-Y\-E\-R\-S, and Module\-Type\-::\-T\-C\-M\-T.
+
+
+
+\subsection{Member Function Documentation}
+\hypertarget{class_simple_mapper_a33ffad5d6bdccd5347630b65764e4b99}{\index{Simple\-Mapper@{Simple\-Mapper}!get\-Module\-Layer\-I\-D@{get\-Module\-Layer\-I\-D}}
+\index{get\-Module\-Layer\-I\-D@{get\-Module\-Layer\-I\-D}!SimpleMapper@{Simple\-Mapper}}
+\subsubsection[{get\-Module\-Layer\-I\-D}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Simple\-Mapper\-::\-Module\-Layer\-I\-D} Simple\-Mapper\-::get\-Module\-Layer\-I\-D (
+\begin{DoxyParamCaption}
+\item[{{\bf Simple\-Mapper\-::\-Slot\-Frontend\-I\-D}}]{sf\-I\-D}
+\end{DoxyParamCaption}
+)}}\label{class_simple_mapper_a33ffad5d6bdccd5347630b65764e4b99}
+
+
+Get the Module\-Layer\-I\-D from knowing the Slot\-Frontend\-I\-D. 
+
+
+
+Definition at line 135 of file Simple\-Mapper.\-cxx.
+
+
+
+References \-\_\-sf2ml\-Map.
+
+
+
+Referenced by Spectrum\-Properties\-Run\-Info\-::\-Spectrum\-Properties\-Run\-Info().
+
+\hypertarget{class_simple_mapper_a857de2500f82b01e1a6f116df8aed8a6}{\index{Simple\-Mapper@{Simple\-Mapper}!get\-Module\-Type@{get\-Module\-Type}}
+\index{get\-Module\-Type@{get\-Module\-Type}!SimpleMapper@{Simple\-Mapper}}
+\subsubsection[{get\-Module\-Type}]{\setlength{\rightskip}{0pt plus 5cm}unsigned int Simple\-Mapper\-::get\-Module\-Type (
+\begin{DoxyParamCaption}
+\item[{{\bf Simple\-Mapper\-::\-Slot\-Frontend\-I\-D}}]{sf\-I\-D}
+\end{DoxyParamCaption}
+)}}\label{class_simple_mapper_a857de2500f82b01e1a6f116df8aed8a6}
+
+
+Get the module type from the Slot\-Front\-End\-I\-D. 
+
+
+
+Definition at line 156 of file Simple\-Mapper.\-cxx.
+
+
+
+References \-\_\-sf2ml\-Map.
+
+
+
+Referenced by Spectrum\-Properties\-Run\-Info\-::\-Spectrum\-Properties\-Run\-Info().
+
+\hypertarget{class_simple_mapper_a02936c8c25f05737945901618a777515}{\index{Simple\-Mapper@{Simple\-Mapper}!is\-A\-H\-C8@{is\-A\-H\-C8}}
+\index{is\-A\-H\-C8@{is\-A\-H\-C8}!SimpleMapper@{Simple\-Mapper}}
+\subsubsection[{is\-A\-H\-C8}]{\setlength{\rightskip}{0pt plus 5cm}bool Simple\-Mapper\-::is\-A\-H\-C8 (
+\begin{DoxyParamCaption}
+\item[{{\bf Simple\-Mapper\-::\-Slot\-Frontend\-I\-D}}]{sf\-I\-D}
+\end{DoxyParamCaption}
+)}}\label{class_simple_mapper_a02936c8c25f05737945901618a777515}
+
+
+Check if a module is A\-H\-C8 (larger 6x6 cells also in the middle of the module, thus only 8 chips are needed instead of 12 on a normal module). 
+
+
+
+Definition at line 141 of file Simple\-Mapper.\-cxx.
+
+
+
+References \-\_\-sf2ml\-Map, and Module\-Type\-::\-A\-H\-C8.
+
+
+
+Referenced by Spectrum\-Properties\-Run\-Info\-::\-Spectrum\-Properties\-Run\-Info().
+
+\hypertarget{class_simple_mapper_a09cf4f914abaad39fc4cc039f4e41ea2}{\index{Simple\-Mapper@{Simple\-Mapper}!is\-T\-C\-M\-T@{is\-T\-C\-M\-T}}
+\index{is\-T\-C\-M\-T@{is\-T\-C\-M\-T}!SimpleMapper@{Simple\-Mapper}}
+\subsubsection[{is\-T\-C\-M\-T}]{\setlength{\rightskip}{0pt plus 5cm}bool Simple\-Mapper\-::is\-T\-C\-M\-T (
+\begin{DoxyParamCaption}
+\item[{{\bf Simple\-Mapper\-::\-Slot\-Frontend\-I\-D}}]{sf\-I\-D}
+\end{DoxyParamCaption}
+)}}\label{class_simple_mapper_a09cf4f914abaad39fc4cc039f4e41ea2}
+
+
+Check if a module is from the tail catcher (normal module with 12 chips) 
+
+
+
+Definition at line 146 of file Simple\-Mapper.\-cxx.
+
+
+
+References \-\_\-sf2ml\-Map, and Module\-Type\-::\-T\-C\-M\-T.
+
+\hypertarget{class_simple_mapper_a0cfad0a5093ba57a9540b99f850cd474}{\index{Simple\-Mapper@{Simple\-Mapper}!print@{print}}
+\index{print@{print}!SimpleMapper@{Simple\-Mapper}}
+\subsubsection[{print}]{\setlength{\rightskip}{0pt plus 5cm}void Simple\-Mapper\-::print (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{class_simple_mapper_a0cfad0a5093ba57a9540b99f850cd474}
+
+
+A debug function. Dumps the map to the console. 
+
+
+
+Definition at line 111 of file Simple\-Mapper.\-cxx.
+
+
+
+References Simple\-Mapper\-::\-Module\-Description\-::\-\_\-layer, Simple\-Mapper\-::\-Module\-Description\-::\-\_\-module, Simple\-Mapper\-::\-Module\-Description\-::\-\_\-module\-Type, \-\_\-sf2ml\-Map, Module\-Type\-::\-A\-H\-C, Module\-Type\-::\-A\-H\-C8, and Module\-Type\-::\-T\-C\-M\-T.
+
+
+
+Referenced by main().
+
+
+
+\subsection{Field Documentation}
+\hypertarget{class_simple_mapper_abc72184f9c3735233e2d21ef36161699}{\index{Simple\-Mapper@{Simple\-Mapper}!\-\_\-sf2ml\-Map@{\-\_\-sf2ml\-Map}}
+\index{\-\_\-sf2ml\-Map@{\-\_\-sf2ml\-Map}!SimpleMapper@{Simple\-Mapper}}
+\subsubsection[{\-\_\-sf2ml\-Map}]{\setlength{\rightskip}{0pt plus 5cm}std\-::map$<$ {\bf Slot\-Frontend\-I\-D}, {\bf Module\-Description} $>$ Simple\-Mapper\-::\-\_\-sf2ml\-Map}}\label{class_simple_mapper_abc72184f9c3735233e2d21ef36161699}
+
+
+A map with the Slot\-Frontend\-I\-D as key. 
+
+The value consists of the Module\-Layer\-I\-D and a flag word with the module type 
+
+Definition at line 56 of file Simple\-Mapper.\-h.
+
+
+
+Referenced by get\-Module\-Layer\-I\-D(), get\-Module\-Type(), is\-A\-H\-C8(), is\-T\-C\-M\-T(), print(), and Simple\-Mapper().
+
+
+
+The documentation for this class was generated from the following files\-:\begin{DoxyCompactItemize}
+\item 
+\hyperlink{_simple_mapper_8h}{Simple\-Mapper.\-h}\item 
+\hyperlink{_simple_mapper_8cxx}{Simple\-Mapper.\-cxx}\end{DoxyCompactItemize}

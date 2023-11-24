@@ -1,0 +1,100 @@
+\section{digisim\-:\-:Digitizer Class Reference}
+\label{classdigisim_1_1Digitizer}\index{digisim\-::\-Digitizer@{digisim\-::\-Digitizer}}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+{\bfseries Digitizer} (std\-::string name)\label{classdigisim_1_1Digitizer_af23f97bc436d7d882822fd5a46222ce2}
+
+\item 
+void {\bfseries init} (std\-::shared\-\_\-ptr$<$ marlin\-::\-String\-Parameters $>$ pars)\label{classdigisim_1_1Digitizer_a7b7ee64e5e0329f70c5d462d5dca5523}
+
+\item 
+void {\bfseries init} (std\-::vector$<$ std\-::string $>$ collnames, std\-::vector$<$ {\bf Modifier\-Parameters} $>$ modifiers)\label{classdigisim_1_1Digitizer_ab3e8c0b4a5a1773b44ce0ecd964298c8}
+
+\item 
+void {\bfseries init} (std\-::string in\-Coll, std\-::string out\-Coll, std\-::string links\-Coll, std\-::vector$<$ {\bf Modifier\-Parameters} $>$ modifiers)\label{classdigisim_1_1Digitizer_a9cda05b68efc291523f1ee9d268cb884}
+
+\item 
+void {\bf initialize} (std\-::vector$<$ {\bf Modifier\-Parameters} $>$ modifiers)
+\begin{DoxyCompactList}\small\item\em Instantiate modifiers, assuming the collection names have been set. \end{DoxyCompactList}\item 
+void {\bf process} (L\-C\-Event $\ast$evt)\label{classdigisim_1_1Digitizer_a7012daa4097d73f1cd21cf894e6ae1a7}
+
+\begin{DoxyCompactList}\small\item\em Called for every event -\/ the event loop. \end{DoxyCompactList}\item 
+void {\bfseries end} ()\label{classdigisim_1_1Digitizer_a40c49da9a558250ea248e462ef895c41}
+
+\item 
+std\-::string {\bfseries get\-Name} ()\label{classdigisim_1_1Digitizer_ad44b298e9395eb7a3c8a200fe9bd4efd}
+
+\end{DoxyCompactItemize}
+\subsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+std\-::map$<$ long long, {\bf Temp\-Cal\-Hit} $>$ {\bfseries create\-Temp\-Hits} (const Cal\-Hit\-Map \&sim\-Hits)\label{classdigisim_1_1Digitizer_a9ef8f3d94a3491b0221c166ae3820ff3}
+
+\item 
+void {\bfseries create\-Output\-Collections} (const std\-::map$<$ long long, {\bf Temp\-Cal\-Hit} $>$ tmp\-Hits, L\-C\-Collection $\ast$\&raw\-Vec, L\-C\-Collection $\ast$\&rel\-Vec)\label{classdigisim_1_1Digitizer_af22d9e764ba3aed8b5bbb5a17e5a62ce}
+
+\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+int {\bfseries \-\_\-n\-Run}\label{classdigisim_1_1Digitizer_a4eefda52faaf6a17ef48c8b486ac2531}
+
+\item 
+int {\bfseries \-\_\-n\-Evt}\label{classdigisim_1_1Digitizer_aa49d78fa38014a642fb699cde8970e71}
+
+\item 
+int {\bfseries \-\_\-debug}\label{classdigisim_1_1Digitizer_a57011e6745ef3c1d0272514dee75fd18}
+
+\item 
+std\-::string {\bfseries \-\_\-name}\label{classdigisim_1_1Digitizer_ab193142fb498d1991aaf30671b9d6abd}
+
+\item 
+std\-::vector$<$ {\bf Cal\-Hit\-Modifier} $\ast$ $>$ {\bfseries \-\_\-modifs}\label{classdigisim_1_1Digitizer_a095d111a53880dfe3d2ab6bbadd38eb0}
+
+\item 
+std\-::string {\bfseries \-\_\-input\-Coll}\label{classdigisim_1_1Digitizer_afadeb603edea52f158b4201be28d578e}
+
+\item 
+std\-::string {\bfseries \-\_\-output\-Coll}\label{classdigisim_1_1Digitizer_ad3b522fb767939438f1137df2a551989}
+
+\item 
+std\-::string {\bfseries \-\_\-links\-Coll}\label{classdigisim_1_1Digitizer_ad9c673919cf20cdf1f4e39e6cabc9e91}
+
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+
+
+Definition at line 21 of file Digitizer.\-hpp.
+
+
+
+\subsection{Member Function Documentation}
+\index{digisim\-::\-Digitizer@{digisim\-::\-Digitizer}!initialize@{initialize}}
+\index{initialize@{initialize}!digisim::Digitizer@{digisim\-::\-Digitizer}}
+\subsubsection[{initialize}]{\setlength{\rightskip}{0pt plus 5cm}void digisim\-::\-Digitizer\-::initialize (
+\begin{DoxyParamCaption}
+\item[{std\-::vector$<$ {\bf Modifier\-Parameters} $>$}]{modifiers}
+\end{DoxyParamCaption}
+)}\label{classdigisim_1_1Digitizer_abd7040d86648e9006b28beb18161e294}
+
+
+Instantiate modifiers, assuming the collection names have been set. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em modifiers} & a vector with \doxyref{Modifier\-Parameters}{p.}{classdigisim_1_1ModifierParameters} objects. Each \doxyref{Modifier\-Parameters}{p.}{classdigisim_1_1ModifierParameters} object will be associated to its own modifier, creating a chain of modifiers for this digitizer. \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 216 of file Digitizer.\-cpp.
+
+
+
+The documentation for this class was generated from the following files\-:\begin{DoxyCompactItemize}
+\item 
+Digitizer.\-hpp\item 
+Digitizer.\-cpp\end{DoxyCompactItemize}

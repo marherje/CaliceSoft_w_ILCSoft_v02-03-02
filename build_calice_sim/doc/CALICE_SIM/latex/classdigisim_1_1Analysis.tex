@@ -1,0 +1,163 @@
+\section{digisim\-:\-:Analysis Class Reference}
+\label{classdigisim_1_1Analysis}\index{digisim\-::\-Analysis@{digisim\-::\-Analysis}}
+Inheritance diagram for digisim\-:\-:Analysis\-:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classdigisim_1_1Analysis}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+virtual Processor $\ast$ {\bfseries new\-Processor} ()\label{classdigisim_1_1Analysis_a7833aa1aec8aba2ff528f318c9f7a21f}
+
+\item 
+virtual void {\bf init} ()
+\begin{DoxyCompactList}\small\item\em Called at the begin of the job before anything is read. \end{DoxyCompactList}\item 
+virtual void {\bf process\-Event} (L\-C\-Event $\ast$evt)
+\begin{DoxyCompactList}\small\item\em Called for every run. \end{DoxyCompactList}\item 
+virtual void {\bfseries process\-Ecal\-Data} (L\-C\-Event $\ast$evt, std\-::string col\-Name)\label{classdigisim_1_1Analysis_a8d1bb0673ddeb75a6e75f79bbd34bf08}
+
+\item 
+virtual void {\bfseries process\-Hcal\-Data} (L\-C\-Event $\ast$evt, std\-::string col\-Name)\label{classdigisim_1_1Analysis_a926b71c47a87e0dab62fba442bc8f470}
+
+\item 
+virtual void {\bfseries process\-Tcmt\-Data} (L\-C\-Event $\ast$evt, std\-::string col\-Name)\label{classdigisim_1_1Analysis_ac67d2029aaafe07d629e3544ae87cd77}
+
+\item 
+virtual void {\bfseries process\-Hcal\-Raw\-Data} (L\-C\-Event $\ast$evt, std\-::string col\-Name)\label{classdigisim_1_1Analysis_abc397c722130e36df08c04038798024b}
+
+\item 
+virtual void {\bf end} ()\label{classdigisim_1_1Analysis_a50de7a9a3fd99be0766ce248fc337d9e}
+
+\begin{DoxyCompactList}\small\item\em Called after data processing for clean up. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+L\-C\-Event $\ast$ {\bfseries \-\_\-evt}\label{classdigisim_1_1Analysis_a2080e48dd7f1a2a4275486263bdaadf6}
+
+\item 
+std\-::string {\bfseries \-\_\-tcmt\-Coll\-Name}\label{classdigisim_1_1Analysis_a9613be73c5f30f19f8fa966abe0ad956}
+
+\item 
+std\-::string {\bfseries \-\_\-ecal\-Coll\-Name}\label{classdigisim_1_1Analysis_a9dcf5a8273a4c70db4293d5a85625ac3}
+
+\item 
+std\-::string {\bfseries \-\_\-hcal\-Coll\-Name}\label{classdigisim_1_1Analysis_aa9e8df324923e3b95a3b666062e712ea}
+
+\item 
+int {\bfseries \-\_\-n\-Run}\label{classdigisim_1_1Analysis_a22f4ac6af41dd1ee09f5eadb99c7667a}
+
+\item 
+int {\bfseries \-\_\-n\-Evt}\label{classdigisim_1_1Analysis_ad96aa588bfffd028fd3d0570dbf15b14}
+
+\item 
+T\-H1\-F $\ast$ {\bfseries \-\_\-h\-Tcmt\-Cell\-Energy}\label{classdigisim_1_1Analysis_adfa670531c288ca2aa896ebc2a696085}
+
+\item 
+T\-H1\-F $\ast$ {\bfseries \-\_\-h\-Tcmt\-Cell\-Energy\-M\-I\-P}\label{classdigisim_1_1Analysis_a6f24be97f2b61afd138cc80964acaa10}
+
+\item 
+T\-H1\-F $\ast$ {\bfseries \-\_\-h\-Tcmt\-Hits\-Per\-Event}\label{classdigisim_1_1Analysis_af40c47d62f171a8ef64c89ea27adb477}
+
+\item 
+T\-Profile $\ast$ {\bfseries \-\_\-h\-Tcmt\-Layer\-Energy}\label{classdigisim_1_1Analysis_aa38b5f4f0176e2f1c587f8d17f20c560}
+
+\item 
+T\-Profile $\ast$ {\bfseries \-\_\-h\-Tcmt\-Hits\-Per\-Layer}\label{classdigisim_1_1Analysis_a02a3142dee8ed1f0366d569649b5e9d3}
+
+\item 
+T\-H1\-F $\ast$ {\bfseries \-\_\-h\-Ecal\-Cell\-Energy}\label{classdigisim_1_1Analysis_af4dc9cf9e10e1a754f44c2b9171499e2}
+
+\item 
+T\-H1\-F $\ast$ {\bfseries \-\_\-h\-Ecal\-Cell\-Energy\-M\-I\-P}\label{classdigisim_1_1Analysis_abd50a9947512532269f9dd197bb5b6df}
+
+\item 
+T\-H1\-F $\ast$ {\bfseries \-\_\-h\-Ecal\-Hits\-Per\-Event}\label{classdigisim_1_1Analysis_a3ef8ff0015e1f346a7118d7e6db85e3a}
+
+\item 
+T\-Profile $\ast$ {\bfseries \-\_\-h\-Ecal\-Layer\-Energy}\label{classdigisim_1_1Analysis_aab2aadd135e334396b43d53e18ad5a9f}
+
+\item 
+T\-Profile $\ast$ {\bfseries \-\_\-h\-Ecal\-Hits\-Per\-Layer}\label{classdigisim_1_1Analysis_a6d441cf365fd2d8e920a69673b9e398c}
+
+\item 
+T\-H1\-F $\ast$ {\bfseries \-\_\-h\-Hcal\-Cell\-Energy}\label{classdigisim_1_1Analysis_a2cad795e5aaa76f30cf8b8b0633faec3}
+
+\item 
+T\-H1\-F $\ast$ {\bfseries \-\_\-h\-Hcal\-Cell\-Energy\-M\-I\-P}\label{classdigisim_1_1Analysis_a83c17757df81607d0d9d6db4932d3cf2}
+
+\item 
+T\-H1\-F $\ast$ {\bfseries \-\_\-h\-Hcal\-Live\-Energy\-Per\-Layer}\label{classdigisim_1_1Analysis_a9368b4c0d2acabcbd5d84f0276491c33}
+
+\item 
+T\-H1\-F $\ast$ {\bfseries \-\_\-h\-Hcal\-Hits\-Per\-Event}\label{classdigisim_1_1Analysis_ac1c375d006159732565f7af0db77c406}
+
+\item 
+T\-Profile $\ast$ {\bfseries \-\_\-h\-Hcal\-Layer\-Energy}\label{classdigisim_1_1Analysis_a43deac993af029b83ab38b651c03566e}
+
+\item 
+T\-Profile $\ast$ {\bfseries \-\_\-h\-Hcal\-Hits\-Per\-Layer}\label{classdigisim_1_1Analysis_ac5c905987df1a92f991e0f48c66a12ca}
+
+\end{DoxyCompactItemize}
+\subsection*{Static Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+static const int {\bfseries N\-L\-A\-Y\-E\-R\-S\-E\-C\-A\-L} = 30\label{classdigisim_1_1Analysis_a8806d79d8814a3c97295478c815c5c25}
+
+\item 
+static const int {\bfseries N\-L\-A\-Y\-E\-R\-S\-H\-C\-A\-L} = 30\label{classdigisim_1_1Analysis_ad573a5e63ba9248c340246f9e12f2481}
+
+\item 
+static const int {\bfseries N\-L\-A\-Y\-E\-R\-S\-T\-C\-M\-T} = 16\label{classdigisim_1_1Analysis_a7fd72aa80c9f0fb53f5cdea012a1b971}
+
+\item 
+static T\-File {\bfseries \-\_\-root\-File}\label{classdigisim_1_1Analysis_ae2aa162113837efb0bbc67365968d8e6}
+
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+
+
+Definition at line 26 of file Analysis.\-hpp.
+
+
+
+\subsection{Member Function Documentation}
+\index{digisim\-::\-Analysis@{digisim\-::\-Analysis}!init@{init}}
+\index{init@{init}!digisim::Analysis@{digisim\-::\-Analysis}}
+\subsubsection[{init}]{\setlength{\rightskip}{0pt plus 5cm}void digisim\-::\-Analysis\-::init (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}\label{classdigisim_1_1Analysis_a875663000e9ab739e85ac10910c82923}
+
+
+Called at the begin of the job before anything is read. 
+
+Use to initialize the processor, e.\-g. book histograms. 
+
+Definition at line 330 of file Analysis.\-cpp.
+
+\index{digisim\-::\-Analysis@{digisim\-::\-Analysis}!process\-Event@{process\-Event}}
+\index{process\-Event@{process\-Event}!digisim::Analysis@{digisim\-::\-Analysis}}
+\subsubsection[{process\-Event}]{\setlength{\rightskip}{0pt plus 5cm}void digisim\-::\-Analysis\-::process\-Event (
+\begin{DoxyParamCaption}
+\item[{L\-C\-Event $\ast$}]{evt}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}\label{classdigisim_1_1Analysis_a8b9bfc8551df1ede860c27a67511faaa}
+
+
+Called for every run. 
+
+Called for every event 
+
+Definition at line 66 of file Analysis.\-cpp.
+
+
+
+The documentation for this class was generated from the following files\-:\begin{DoxyCompactItemize}
+\item 
+Analysis.\-hpp\item 
+Analysis.\-cpp\end{DoxyCompactItemize}

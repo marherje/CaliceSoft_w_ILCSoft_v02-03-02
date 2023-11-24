@@ -1,0 +1,214 @@
+\section{C\-A\-L\-I\-C\-E\-:\-:Clusteriser Class Reference}
+\label{classCALICE_1_1Clusteriser}\index{C\-A\-L\-I\-C\-E\-::\-Clusteriser@{C\-A\-L\-I\-C\-E\-::\-Clusteriser}}
+
+
+Simple class to try to select hits resulting from one mip.  
+
+
+
+
+{\ttfamily \#include $<$Clusteriser.\-hh$>$}
+
+Inheritance diagram for C\-A\-L\-I\-C\-E\-:\-:Clusteriser\-:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classCALICE_1_1Clusteriser}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+Processor $\ast$ {\bfseries new\-Processor} ()\label{classCALICE_1_1Clusteriser_afc7acd77a2c4c6108896d86185534533}
+
+\item 
+{\bf Clusteriser} ()
+\begin{DoxyCompactList}\small\item\em Select Mips . \end{DoxyCompactList}\item 
+void {\bf init} ()
+\begin{DoxyCompactList}\small\item\em Called at the begin of the job before anything is read. \end{DoxyCompactList}\item 
+void {\bf process\-Run\-Header} (L\-C\-Run\-Header $\ast$run)
+\begin{DoxyCompactList}\small\item\em Called for every run, e.\-g. \end{DoxyCompactList}\item 
+void {\bf process\-Event} (L\-C\-Event $\ast$evt\-P)\label{classCALICE_1_1Clusteriser_a1970423a42279c703863638f1b8cc298}
+
+\begin{DoxyCompactList}\small\item\em Called for every event -\/ the working horse. \end{DoxyCompactList}\item 
+void {\bfseries end} ()\label{classCALICE_1_1Clusteriser_a70d9b2bb4d1be51c3608c0e57b398926}
+
+\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+Int\-\_\-t {\bf \-\_\-n\-Hits\-Min}
+\begin{DoxyCompactList}\small\item\em minimum required number of hits for a cluster (marlin processor parameter). \end{DoxyCompactList}\item 
+Float\-\_\-t {\bf \-\_\-max\-Dist}
+\begin{DoxyCompactList}\small\item\em the maximum distance between hits considered to be close (marlin processor parameter). \end{DoxyCompactList}\item 
+Float\-\_\-t {\bf \-\_\-min\-Energy}
+\begin{DoxyCompactList}\small\item\em the minimum energy required for a cluster to be accepted. \end{DoxyCompactList}\item 
+Float\-\_\-t {\bf \-\_\-w0}
+\begin{DoxyCompactList}\small\item\em Cut parameter which defines the energy threshold of hits considered in the centre-\/of-\/gravity determination. \end{DoxyCompactList}\item 
+E\-V\-E\-N\-T\-::\-Float\-Vec {\bf \-\_\-pos\-Error}
+\begin{DoxyCompactList}\small\item\em the error on the cluster position in x, y and z. \end{DoxyCompactList}\item 
+std\-::string {\bf \-\_\-col\-Name}\label{classCALICE_1_1Clusteriser_af6a7832cc276de50a9c96649b5b27bc3}
+
+\begin{DoxyCompactList}\small\item\em name of the hit input collection (Marlin processor parameter) \end{DoxyCompactList}\item 
+std\-::string {\bf \-\_\-cluster\-Col\-Name}\label{classCALICE_1_1Clusteriser_a2eda1746e521ba46d07556aabdfbfb6b}
+
+\begin{DoxyCompactList}\small\item\em name of the cluster output collection (Marlin processor parameter) \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+std\-::vector$<$ U\-Int\-\_\-t $>$ {\bf \-\_\-isolated\-Hits}\label{classCALICE_1_1Clusteriser_ad87b17caeede7031aa2b2e0c4dac5f53}
+
+\begin{DoxyCompactList}\small\item\em temporary buffer \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Simple class to try to select hits resulting from one mip. 
+
+This processor tries to find hits in the chosen hit collection which are close together. If the number adjacent hits is large enough a cluster is created. \begin{DoxyRefDesc}{Todo}
+\item[{\bf Todo}]\-: add shower shape criterium, maximum number of tolerated hits \end{DoxyRefDesc}
+
+
+Definition at line 27 of file Clusteriser.\-hh.
+
+
+
+\subsection{Constructor \& Destructor Documentation}
+\index{C\-A\-L\-I\-C\-E\-::\-Clusteriser@{C\-A\-L\-I\-C\-E\-::\-Clusteriser}!Clusteriser@{Clusteriser}}
+\index{Clusteriser@{Clusteriser}!CALICE::Clusteriser@{C\-A\-L\-I\-C\-E\-::\-Clusteriser}}
+\subsubsection[{Clusteriser}]{\setlength{\rightskip}{0pt plus 5cm}C\-A\-L\-I\-C\-E\-::\-Clusteriser\-::\-Clusteriser (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{classCALICE_1_1Clusteriser_af90511eeaaf5a849272c290935a9d5a2}
+
+
+Select Mips . 
+
+Mip tracks are search within the calorimeter hits. Developped for cosmics. 
+
+Definition at line 43 of file Clusteriser.\-cc.
+
+
+
+References \-\_\-cluster\-Col\-Name, \-\_\-col\-Name, \-\_\-max\-Dist, \-\_\-min\-Energy, \-\_\-n\-Hits\-Min, \-\_\-pos\-Error, and \-\_\-w0.
+
+
+
+\subsection{Member Function Documentation}
+\index{C\-A\-L\-I\-C\-E\-::\-Clusteriser@{C\-A\-L\-I\-C\-E\-::\-Clusteriser}!init@{init}}
+\index{init@{init}!CALICE::Clusteriser@{C\-A\-L\-I\-C\-E\-::\-Clusteriser}}
+\subsubsection[{init}]{\setlength{\rightskip}{0pt plus 5cm}void C\-A\-L\-I\-C\-E\-::\-Clusteriser\-::init (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{classCALICE_1_1Clusteriser_ac1461d10ca6ff3ffe4e90e248382d28d}
+
+
+Called at the begin of the job before anything is read. 
+
+Use to initialize the processor, e.\-g. book histograms. 
+
+Definition at line 137 of file Clusteriser.\-cc.
+
+
+
+References \-\_\-pos\-Error, and histmgr\-::\-Hist\-Mgr\-::create\-Histograms().
+
+\index{C\-A\-L\-I\-C\-E\-::\-Clusteriser@{C\-A\-L\-I\-C\-E\-::\-Clusteriser}!process\-Run\-Header@{process\-Run\-Header}}
+\index{process\-Run\-Header@{process\-Run\-Header}!CALICE::Clusteriser@{C\-A\-L\-I\-C\-E\-::\-Clusteriser}}
+\subsubsection[{process\-Run\-Header}]{\setlength{\rightskip}{0pt plus 5cm}void C\-A\-L\-I\-C\-E\-::\-Clusteriser\-::process\-Run\-Header (
+\begin{DoxyParamCaption}
+\item[{L\-C\-Run\-Header $\ast$}]{run}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\label{classCALICE_1_1Clusteriser_a243b8bcabecb882cbee9787a5b34f2c1}
+
+
+Called for every run, e.\-g. 
+
+overwrite to initialize run dependent histograms. 
+
+Definition at line 45 of file Clusteriser.\-hh.
+
+
+
+\subsection{Field Documentation}
+\index{C\-A\-L\-I\-C\-E\-::\-Clusteriser@{C\-A\-L\-I\-C\-E\-::\-Clusteriser}!\-\_\-max\-Dist@{\-\_\-max\-Dist}}
+\index{\-\_\-max\-Dist@{\-\_\-max\-Dist}!CALICE::Clusteriser@{C\-A\-L\-I\-C\-E\-::\-Clusteriser}}
+\subsubsection[{\-\_\-max\-Dist}]{\setlength{\rightskip}{0pt plus 5cm}Float\-\_\-t C\-A\-L\-I\-C\-E\-::\-Clusteriser\-::\-\_\-max\-Dist\hspace{0.3cm}{\ttfamily [protected]}}\label{classCALICE_1_1Clusteriser_a807005cec4f96c8a6b5aaac0def5e81b}
+
+
+the maximum distance between hits considered to be close (marlin processor parameter). 
+
+
+
+Definition at line 55 of file Clusteriser.\-hh.
+
+
+
+Referenced by Clusteriser(), and process\-Event().
+
+\index{C\-A\-L\-I\-C\-E\-::\-Clusteriser@{C\-A\-L\-I\-C\-E\-::\-Clusteriser}!\-\_\-min\-Energy@{\-\_\-min\-Energy}}
+\index{\-\_\-min\-Energy@{\-\_\-min\-Energy}!CALICE::Clusteriser@{C\-A\-L\-I\-C\-E\-::\-Clusteriser}}
+\subsubsection[{\-\_\-min\-Energy}]{\setlength{\rightskip}{0pt plus 5cm}Float\-\_\-t C\-A\-L\-I\-C\-E\-::\-Clusteriser\-::\-\_\-min\-Energy\hspace{0.3cm}{\ttfamily [protected]}}\label{classCALICE_1_1Clusteriser_adddac3244a642b766585fdb7653b2f16}
+
+
+the minimum energy required for a cluster to be accepted. 
+
+
+
+Definition at line 56 of file Clusteriser.\-hh.
+
+
+
+Referenced by Clusteriser(), and process\-Event().
+
+\index{C\-A\-L\-I\-C\-E\-::\-Clusteriser@{C\-A\-L\-I\-C\-E\-::\-Clusteriser}!\-\_\-n\-Hits\-Min@{\-\_\-n\-Hits\-Min}}
+\index{\-\_\-n\-Hits\-Min@{\-\_\-n\-Hits\-Min}!CALICE::Clusteriser@{C\-A\-L\-I\-C\-E\-::\-Clusteriser}}
+\subsubsection[{\-\_\-n\-Hits\-Min}]{\setlength{\rightskip}{0pt plus 5cm}Int\-\_\-t C\-A\-L\-I\-C\-E\-::\-Clusteriser\-::\-\_\-n\-Hits\-Min\hspace{0.3cm}{\ttfamily [protected]}}\label{classCALICE_1_1Clusteriser_a5451dad61f977c6de41a25739c6fb97c}
+
+
+minimum required number of hits for a cluster (marlin processor parameter). 
+
+
+
+Definition at line 54 of file Clusteriser.\-hh.
+
+
+
+Referenced by Clusteriser(), and process\-Event().
+
+\index{C\-A\-L\-I\-C\-E\-::\-Clusteriser@{C\-A\-L\-I\-C\-E\-::\-Clusteriser}!\-\_\-pos\-Error@{\-\_\-pos\-Error}}
+\index{\-\_\-pos\-Error@{\-\_\-pos\-Error}!CALICE::Clusteriser@{C\-A\-L\-I\-C\-E\-::\-Clusteriser}}
+\subsubsection[{\-\_\-pos\-Error}]{\setlength{\rightskip}{0pt plus 5cm}E\-V\-E\-N\-T\-::\-Float\-Vec C\-A\-L\-I\-C\-E\-::\-Clusteriser\-::\-\_\-pos\-Error\hspace{0.3cm}{\ttfamily [protected]}}\label{classCALICE_1_1Clusteriser_a02ac68c99c5bc9a3bb259cde379316d5}
+
+
+the error on the cluster position in x, y and z. 
+
+
+
+Definition at line 60 of file Clusteriser.\-hh.
+
+
+
+Referenced by Clusteriser(), init(), and process\-Event().
+
+\index{C\-A\-L\-I\-C\-E\-::\-Clusteriser@{C\-A\-L\-I\-C\-E\-::\-Clusteriser}!\-\_\-w0@{\-\_\-w0}}
+\index{\-\_\-w0@{\-\_\-w0}!CALICE::Clusteriser@{C\-A\-L\-I\-C\-E\-::\-Clusteriser}}
+\subsubsection[{\-\_\-w0}]{\setlength{\rightskip}{0pt plus 5cm}Float\-\_\-t C\-A\-L\-I\-C\-E\-::\-Clusteriser\-::\-\_\-w0\hspace{0.3cm}{\ttfamily [protected]}}\label{classCALICE_1_1Clusteriser_aa761e8e58c6b8b4239ebccf1cf7e0f44}
+
+
+Cut parameter which defines the energy threshold of hits considered in the centre-\/of-\/gravity determination. 
+
+
+
+Definition at line 57 of file Clusteriser.\-hh.
+
+
+
+Referenced by Clusteriser(), and process\-Event().
+
+
+
+The documentation for this class was generated from the following files\-:\begin{DoxyCompactItemize}
+\item 
+Clusteriser.\-hh\item 
+Clusteriser.\-cc\end{DoxyCompactItemize}

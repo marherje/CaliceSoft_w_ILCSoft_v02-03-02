@@ -1,0 +1,374 @@
+\section{C\-A\-L\-I\-C\-E\-:\-:Fe\-Configuration\-Block Class Reference}
+\label{classCALICE_1_1FeConfigurationBlock}\index{C\-A\-L\-I\-C\-E\-::\-Fe\-Configuration\-Block@{C\-A\-L\-I\-C\-E\-::\-Fe\-Configuration\-Block}}
+
+
+Stores the configuration data of the front-\/end of one C\-E\-R\-C board.  
+
+
+
+
+{\ttfamily \#include $<$Fe\-Configuration\-Block.\-hh$>$}
+
+Inheritance diagram for C\-A\-L\-I\-C\-E\-:\-:Fe\-Configuration\-Block\-:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=3.000000cm]{classCALICE_1_1FeConfigurationBlock}
+\end{center}
+\end{figure}
+\subsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+enum {\bfseries E\-Flags} \{ {\bfseries k\-Flags\-Calib\-Enable} =1, 
+{\bfseries k\-Flags\-Hold\-Invert} =2
+ \}
+\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+{\bf Fe\-Configuration\-Block} (int board\-I\-D)
+\begin{DoxyCompactList}\small\item\em Convenient c'tor. \end{DoxyCompactList}\item 
+{\bf Fe\-Configuration\-Block} (L\-C\-Object $\ast${\bf obj})\label{classCALICE_1_1FeConfigurationBlock_ad308a81b2a293efbfa9b059acfd5cd0a}
+
+\begin{DoxyCompactList}\small\item\em 'Copy constructor' needed to interpret L\-C\-Collection read from file/database. \end{DoxyCompactList}\item 
+{\bf Fe\-Configuration\-Block} \& {\bf set\-Crate\-I\-D} (short crate\-I\-D)\label{classCALICE_1_1FeConfigurationBlock_ae3ce69d5022c5ef8ab80eaa4a5809a49}
+
+\begin{DoxyCompactList}\small\item\em Set the crate I\-D. \end{DoxyCompactList}\item 
+short {\bf get\-Crate\-I\-D} () const \label{classCALICE_1_1FeConfigurationBlock_a563d030e1ad417a4b34f4f88c8fac9c2}
+
+\begin{DoxyCompactList}\small\item\em Get the crate I\-D. \end{DoxyCompactList}\item 
+{\bf Fe\-Configuration\-Block} \& {\bf set\-Slot\-I\-D} (short slot\-I\-D)\label{classCALICE_1_1FeConfigurationBlock_af1379b5cf37a687434a04e5c0e2f3a7d}
+
+\begin{DoxyCompactList}\small\item\em Set the slot I\-D. \end{DoxyCompactList}\item 
+short {\bf get\-Slot\-I\-D} () const \label{classCALICE_1_1FeConfigurationBlock_a02ff27401b5e03747517a7dc0b6257eb}
+
+\begin{DoxyCompactList}\small\item\em Get the slot I\-D. \end{DoxyCompactList}\item 
+{\bf Fe\-Configuration\-Block} \& {\bf set\-Board\-Component\-Number} (short component\-Number)\label{classCALICE_1_1FeConfigurationBlock_a6dfac4b0c8aa3a8928ff990573a1e80e}
+
+\begin{DoxyCompactList}\small\item\em Set the Boardcomponentnumber. \end{DoxyCompactList}\item 
+short {\bf get\-Board\-Component\-Number} () const \label{classCALICE_1_1FeConfigurationBlock_ab6f0a6007b28356f1c3d91631c8523f9}
+
+\begin{DoxyCompactList}\small\item\em Get the Boardcomponentnumber. \end{DoxyCompactList}\item 
+void {\bf set\-Record\-Label} (int label)
+\begin{DoxyCompactList}\small\item\em Set the Record\-Label, i.\-e. \end{DoxyCompactList}\item 
+short {\bf get\-Record\-Label} () const \label{classCALICE_1_1FeConfigurationBlock_afe1b8c73434e4d650e9c1e5e069e6d21}
+
+\begin{DoxyCompactList}\small\item\em Get the record label. \end{DoxyCompactList}\item 
+{\bf Fe\-Configuration\-Block} \& {\bf set\-Board\-I\-D} (int board\-I\-D)\label{classCALICE_1_1FeConfigurationBlock_a16507223dc4a936eb23e398b64cdab64}
+
+\begin{DoxyCompactList}\small\item\em Set the board\-I\-D composed by crate, slot and component number. \end{DoxyCompactList}\item 
+int {\bf get\-Board\-I\-D} () const \label{classCALICE_1_1FeConfigurationBlock_a74250fb79bd778eb83550422b605351e}
+
+\begin{DoxyCompactList}\small\item\em Get the board\-I\-D. \end{DoxyCompactList}\item 
+{\bf Fe\-Configuration\-Block} \& {\bf set\-Calib\-Start} (int calib\-Start)
+\begin{DoxyCompactList}\small\item\em Set Calibration pulse start value. \end{DoxyCompactList}\item 
+int {\bf get\-Calib\-Start} ()
+\begin{DoxyCompactList}\small\item\em Get calibration pulse start value. \end{DoxyCompactList}\item 
+{\bf Fe\-Configuration\-Block} \& {\bf set\-Calib\-Width} (int calib\-Width)
+\begin{DoxyCompactList}\small\item\em Set duration of the calibration pulse. \end{DoxyCompactList}\item 
+int {\bf get\-Calib\-Width} ()
+\begin{DoxyCompactList}\small\item\em Get duration of the calibration pulse. \end{DoxyCompactList}\item 
+{\bf Fe\-Configuration\-Block} \& {\bf set\-Calib\-Enable} (bool calib\-\_\-enable)\label{classCALICE_1_1FeConfigurationBlock_a47922959e144fce64a42999ac95dd70f}
+
+\begin{DoxyCompactList}\small\item\em Se the calib enable value ???? \end{DoxyCompactList}\item 
+{\bf Fe\-Configuration\-Block} \& {\bf set\-Calib\-Enable} ()\label{classCALICE_1_1FeConfigurationBlock_aaa1ae41514efc1703372a25f7177f078}
+
+\begin{DoxyCompactList}\small\item\em Method called by previously defined method ???? \end{DoxyCompactList}\item 
+{\bf Fe\-Configuration\-Block} \& {\bf clear\-Calib\-Enable} ()\label{classCALICE_1_1FeConfigurationBlock_a38cd4c4d715da68c80665b6a776c1f9d}
+
+\begin{DoxyCompactList}\small\item\em clear the calib enable flag \end{DoxyCompactList}\item 
+bool {\bf is\-Calib\-Enable} ()\label{classCALICE_1_1FeConfigurationBlock_a1666f4bfbe633804a10d053b497f9b9a}
+
+\begin{DoxyCompactList}\small\item\em Check the calib enable flag. \end{DoxyCompactList}\item 
+{\bf Fe\-Configuration\-Block} \& {\bf set\-Hold\-Start} (int hold\-Start)\label{classCALICE_1_1FeConfigurationBlock_a1c0c26a0dc93c4bff4f2421b13b4331d}
+
+\begin{DoxyCompactList}\small\item\em Set the start of holding the signal. \end{DoxyCompactList}\item 
+int {\bf get\-Hold\-Start} ()\label{classCALICE_1_1FeConfigurationBlock_aa128199acd551603835ac602a4d26ab2}
+
+\begin{DoxyCompactList}\small\item\em Get the signel hold start value. \end{DoxyCompactList}\item 
+{\bf Fe\-Configuration\-Block} \& {\bfseries set\-Hold\-Width} (int hold\-Width)\label{classCALICE_1_1FeConfigurationBlock_aa97429cd69298a8a052ac1d8fa074292}
+
+\item 
+int {\bf get\-Hold\-Width} ()\label{classCALICE_1_1FeConfigurationBlock_ab9157a0c4cbcf36b26dc41b985e910c5}
+
+\begin{DoxyCompactList}\small\item\em Set the hold width. \end{DoxyCompactList}\item 
+{\bf Fe\-Configuration\-Block} \& {\bf set\-Hold\-Invert} (bool hold\-\_\-invert)\label{classCALICE_1_1FeConfigurationBlock_a2152b1b5300eca2f4b6effc419f0347c}
+
+\begin{DoxyCompactList}\small\item\em Set whether the holded signal is to be inverted. \end{DoxyCompactList}\item 
+{\bf Fe\-Configuration\-Block} \& {\bf set\-Hold\-Invert} ()\label{classCALICE_1_1FeConfigurationBlock_af8ecb2354dd14ab6c4e508f2daed21a4}
+
+\begin{DoxyCompactList}\small\item\em Method called by previously defined method ???? \end{DoxyCompactList}\item 
+{\bf Fe\-Configuration\-Block} \& {\bf clear\-Hold\-Invert} ()\label{classCALICE_1_1FeConfigurationBlock_abf9d4ad4735645e5d2a98a44fdd40d06}
+
+\begin{DoxyCompactList}\small\item\em Clear the hold invert signel. \end{DoxyCompactList}\item 
+bool {\bfseries is\-Hold\-Invert} ()\label{classCALICE_1_1FeConfigurationBlock_aed101a6b1a554ab8d0b82151f72600f9}
+
+\item 
+{\bf Fe\-Configuration\-Block} \& {\bf set\-Vfe\-Reset\-Start} (int vfe\-Reset\-Start)\label{classCALICE_1_1FeConfigurationBlock_a34726d417dd6e1d687a10f2b01d83ee8}
+
+\begin{DoxyCompactList}\small\item\em Start of the Vfe Reset. \end{DoxyCompactList}\item 
+int {\bfseries get\-Vfe\-Reset\-Start} ()\label{classCALICE_1_1FeConfigurationBlock_aff0543c96dbd09f449fe0bb2d1e669d6}
+
+\item 
+{\bf Fe\-Configuration\-Block} \& {\bf set\-Vfe\-Reset\-End} (int vfe\-Reset\-End)\label{classCALICE_1_1FeConfigurationBlock_a339645f629042b5e938a19623ec9a7fa}
+
+\begin{DoxyCompactList}\small\item\em Set the end of the Vfe Reset. \end{DoxyCompactList}\item 
+int {\bf get\-Vfe\-Reset\-End} ()\label{classCALICE_1_1FeConfigurationBlock_a3a4385a4b617f7600622187bdb6764dd}
+
+\begin{DoxyCompactList}\small\item\em Get the end of the Vfe Reset. \end{DoxyCompactList}\item 
+{\bf Fe\-Configuration\-Block} \& {\bf set\-Vfe\-Srin\-Start} (int vfe\-Srin\-Start)\label{classCALICE_1_1FeConfigurationBlock_a58042919f7785d1ca47b4e95e2bdad74}
+
+\begin{DoxyCompactList}\small\item\em I have no idea what the follwing functions really do as long as the data are correct the experts can work with them. \end{DoxyCompactList}\item 
+int {\bfseries get\-Vfe\-Srin\-Start} ()\label{classCALICE_1_1FeConfigurationBlock_aac9d779f7bd4183d3eb143a1f01a514e}
+
+\item 
+{\bf Fe\-Configuration\-Block} \& {\bfseries set\-Vfe\-Srin\-End} (int vfe\-Srin\-End)\label{classCALICE_1_1FeConfigurationBlock_a6839e0d212773b7cca4e2613fb625d53}
+
+\item 
+int {\bfseries get\-Vfe\-Srin\-End} ()\label{classCALICE_1_1FeConfigurationBlock_a824b9083e874f07e9e33f1696ab1761e}
+
+\item 
+{\bf Fe\-Configuration\-Block} \& {\bfseries set\-Vfe\-Mplex\-Clock\-Start} (int vfe\-Mplex\-Clock\-Start)\label{classCALICE_1_1FeConfigurationBlock_aec0636a1bf439fb53e8bcdfc3e0ae96e}
+
+\item 
+int {\bfseries get\-Vfe\-Mplex\-Clock\-Start} ()\label{classCALICE_1_1FeConfigurationBlock_a466b3a7b3f357e02f7d784aa05ddcc2e}
+
+\item 
+{\bf Fe\-Configuration\-Block} \& {\bfseries set\-Vfe\-Mplex\-Clock\-Mark} (int vfe\-Mplex\-Clock\-Mark)\label{classCALICE_1_1FeConfigurationBlock_a7810ee9b17633bcdeb152fa329b4f153}
+
+\item 
+int {\bfseries get\-Vfe\-Mplex\-Clock\-Mark} ()\label{classCALICE_1_1FeConfigurationBlock_a2ab66e21d8a9c82a16c9da2a1629cc7d}
+
+\item 
+{\bf Fe\-Configuration\-Block} \& {\bfseries set\-Vfe\-Mplex\-Clock\-Space} (int vfe\-Mplex\-Clock\-Space)\label{classCALICE_1_1FeConfigurationBlock_a56f9f13c060a99d76e4933a5d2048129}
+
+\item 
+int {\bfseries get\-Vfe\-Mplex\-Clock\-Space} ()\label{classCALICE_1_1FeConfigurationBlock_a3672f0d174adb315819788ef57c2d31a}
+
+\item 
+{\bf Fe\-Configuration\-Block} \& {\bfseries set\-Vfe\-Mplex\-Clock\-Pulses} (int vfe\-Mplex\-Clock\-Pulses)\label{classCALICE_1_1FeConfigurationBlock_a88816754e77a134944edda1fc30b730b}
+
+\item 
+int {\bfseries get\-Vfe\-Mplex\-Clock\-Pulses} ()\label{classCALICE_1_1FeConfigurationBlock_aab9112f13270b30c1de654762cd47e42}
+
+\item 
+{\bf Fe\-Configuration\-Block} \& {\bf set\-Adc\-Start} (int adc\-Start)\label{classCALICE_1_1FeConfigurationBlock_aa81d30fbb45e727db2f6b15e5e19eaa1}
+
+\begin{DoxyCompactList}\small\item\em Start of the A\-D\-C Reading. \end{DoxyCompactList}\item 
+int {\bfseries get\-Adc\-Start} ()\label{classCALICE_1_1FeConfigurationBlock_ab0fa93856bc277f5339ebda4bc9029e8}
+
+\item 
+{\bf Fe\-Configuration\-Block} \& {\bf set\-Adc\-End} (int adc\-End)\label{classCALICE_1_1FeConfigurationBlock_ac84c3e5ce3cdba6b38729ccb6a2994ab}
+
+\begin{DoxyCompactList}\small\item\em End of the A\-D\-C Reading, kind of gate width. \end{DoxyCompactList}\item 
+int {\bfseries get\-Adc\-End} ()\label{classCALICE_1_1FeConfigurationBlock_a3945433f65d53e796883780d493668a4}
+
+\item 
+{\bf Fe\-Configuration\-Block} \& {\bf set\-Adc\-Control\-Bits} (int adc\-Control)\label{classCALICE_1_1FeConfigurationBlock_a855366a700b94188991980a7dc6f874a}
+
+\begin{DoxyCompactList}\small\item\em To whom it may concern ;-\/) \end{DoxyCompactList}\item 
+int {\bfseries get\-Adc\-Control\-Bits} ()\label{classCALICE_1_1FeConfigurationBlock_a7688093dca4620004f2f258e5aceccd9}
+
+\item 
+{\bf Fe\-Configuration\-Block} \& {\bf set\-Adc\-Delay} (int adc\-Delay)\label{classCALICE_1_1FeConfigurationBlock_aa292afb028f56f005f00fb612441c96f}
+
+\begin{DoxyCompactList}\small\item\em Delay of the A\-D\-C readout. \end{DoxyCompactList}\item 
+int {\bfseries get\-Adc\-Delay} ()\label{classCALICE_1_1FeConfigurationBlock_a861748eff70647d9b61bb1b873a3b72f}
+
+\item 
+{\bf Fe\-Configuration\-Block} \& {\bf set\-Dac\-Data} (int top\-\_\-value, int bottom\-\_\-value)\label{classCALICE_1_1FeConfigurationBlock_a93df30d4ef75296c3f4b1d0fc530fea2}
+
+\begin{DoxyCompactList}\small\item\em Dac Data setting. \end{DoxyCompactList}\item 
+int {\bf get\-Dac\-Data\-Top} () const \label{classCALICE_1_1FeConfigurationBlock_a0edacda05ba67fe730a5048c762b2a36}
+
+\begin{DoxyCompactList}\small\item\em Daq data on top side of the A\-D\-C sample. \end{DoxyCompactList}\item 
+int {\bf get\-Dac\-Data\-Bottom} () const \label{classCALICE_1_1FeConfigurationBlock_ad17bbeac4b724a2bae469433c39fabcf}
+
+\begin{DoxyCompactList}\small\item\em Daq data onbottom side of the A\-D\-C sample. \end{DoxyCompactList}\item 
+{\bf Fe\-Configuration\-Block} \& {\bf set\-Frame\-Sync\-Delay} (int frame\-Sync\-Delay)\label{classCALICE_1_1FeConfigurationBlock_a91dffce82ee010e9fc2b28e33cb7f659}
+
+\begin{DoxyCompactList}\small\item\em Again not many ideas what this means. \end{DoxyCompactList}\item 
+int {\bfseries get\-Frame\-Sync\-Delay} ()\label{classCALICE_1_1FeConfigurationBlock_a3f7147f16e7499193371e6309402e011}
+
+\item 
+{\bf Fe\-Configuration\-Block} \& {\bfseries set\-Qdr\-Data\-Delay} (int qdr\-Data\-Delay)\label{classCALICE_1_1FeConfigurationBlock_a6372913f160fb46ba06d9c89da7797c3}
+
+\item 
+int {\bfseries get\-Qdr\-Data\-Delay} ()\label{classCALICE_1_1FeConfigurationBlock_aa91a26f9caefe64fddd6f9f56f056539}
+
+\item 
+{\bf Fe\-Configuration\-Block} \& {\bf set\-Vfe\-Info} (int vfe\-Info)\label{classCALICE_1_1FeConfigurationBlock_a30ceed6080bb3325a0896fff15559c3f}
+
+\begin{DoxyCompactList}\small\item\em Set Vfe Info for Boards not identified as belonging to the Si\-W Ecal (only the word itself for the time being. \end{DoxyCompactList}\item 
+{\bf Fe\-Configuration\-Block} \& {\bf set\-Emc\-Vfe\-Info} (int vfe\-Info, int i\-Bot, int i\-Top, int i\-Bot\-Low\-Gain\-Bit, int i\-Top\-Low\-Gain\-Bit)\label{classCALICE_1_1FeConfigurationBlock_a4c29580324b1b2f9c4aa82df62d5684e}
+
+\begin{DoxyCompactList}\small\item\em Set Vfe Info for the Emc Information. \end{DoxyCompactList}\item 
+int {\bf get\-Vfe\-Info} ()\label{classCALICE_1_1FeConfigurationBlock_ab8d419cc19457884b930ad5e1955f7e7}
+
+\begin{DoxyCompactList}\small\item\em Get complete the Vfe Info. \end{DoxyCompactList}\item 
+int {\bf emc\-Vfe\-Bottom\-Enable} (int chip)\label{classCALICE_1_1FeConfigurationBlock_a0c2e92d3989a3d8d0cd8891204d73065}
+
+\begin{DoxyCompactList}\small\item\em Get some detailed emc (!!) vfe info (basically taken from Pauls online software. \end{DoxyCompactList}\item 
+int {\bfseries emc\-Vfe\-Top\-Enable} (int chip)\label{classCALICE_1_1FeConfigurationBlock_a6e93464d42248f7a0107847cf2292c7d}
+
+\item 
+bool {\bfseries emc\-Vfe\-Low\-Gain\-Bottom} ()\label{classCALICE_1_1FeConfigurationBlock_a7ff08d5a8676e1c46559a29182a209ce}
+
+\item 
+bool {\bfseries emc\-Vfe\-Low\-Gain\-Top} ()\label{classCALICE_1_1FeConfigurationBlock_a9daa373171241b64c93684e3acb2b916}
+
+\item 
+void {\bf print} (std\-::ostream \&os, int)\label{classCALICE_1_1FeConfigurationBlock_abbc1473158e077c3bdba09c9cbbcd5b5}
+
+\begin{DoxyCompactList}\small\item\em Convenient print method. \end{DoxyCompactList}\item 
+const std\-::string {\bf get\-Type\-Name} () const \label{classCALICE_1_1FeConfigurationBlock_a2ffba337323323ddc6f365ebb8f60d1b}
+
+\begin{DoxyCompactList}\small\item\em Return the type of the class. \end{DoxyCompactList}\item 
+const std\-::string {\bf get\-Data\-Description} () const \label{classCALICE_1_1FeConfigurationBlock_a7fd977089ba3e5bde538d861e44a5f2d}
+
+\begin{DoxyCompactList}\small\item\em Return a brief description of the data members. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static unsigned int {\bfseries make\-Board\-I\-D} (const short crate\-I\-D, const short slot\-I\-D, const short board\-Component\-Number)\label{classCALICE_1_1FeConfigurationBlock_a91dd19e52959ce8e1bb7abd6048f92b7}
+
+\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Detailed Description}
+Stores the configuration data of the front-\/end of one C\-E\-R\-C board. 
+
+Based on \doxyref{Adc\-Block}{p.}{classCALICE_1_1AdcBlock}. This is just a copy of the Calice D\-A\-Q class Crc\-Fe\-Configuration\-Data. Since I don't have a profound understanding of the meaning of its members the documentation is mostly missing or at least very poor.
+
+\begin{DoxyAuthor}{Author}
+Götz Gaycken L\-L\-R (Ecole Polytechnique) 
+\end{DoxyAuthor}
+\begin{DoxyDate}{Date}
+Apr 2005 
+\end{DoxyDate}
+
+
+Definition at line 58 of file Fe\-Configuration\-Block.\-hh.
+
+
+
+\subsection{Constructor \& Destructor Documentation}
+\index{C\-A\-L\-I\-C\-E\-::\-Fe\-Configuration\-Block@{C\-A\-L\-I\-C\-E\-::\-Fe\-Configuration\-Block}!Fe\-Configuration\-Block@{Fe\-Configuration\-Block}}
+\index{Fe\-Configuration\-Block@{Fe\-Configuration\-Block}!CALICE::FeConfigurationBlock@{C\-A\-L\-I\-C\-E\-::\-Fe\-Configuration\-Block}}
+\subsubsection[{Fe\-Configuration\-Block}]{\setlength{\rightskip}{0pt plus 5cm}C\-A\-L\-I\-C\-E\-::\-Fe\-Configuration\-Block\-::\-Fe\-Configuration\-Block (
+\begin{DoxyParamCaption}
+\item[{int}]{board\-I\-D}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\label{classCALICE_1_1FeConfigurationBlock_a1485b6c6c005ca86e5c70aae13a5ec4d}
+
+
+Convenient c'tor. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em board\-I\-D} & C\-E\-R\-C board I\-D (V\-M\-E crate channel)) \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 76 of file Fe\-Configuration\-Block.\-hh.
+
+
+
+\subsection{Member Function Documentation}
+\index{C\-A\-L\-I\-C\-E\-::\-Fe\-Configuration\-Block@{C\-A\-L\-I\-C\-E\-::\-Fe\-Configuration\-Block}!get\-Calib\-Start@{get\-Calib\-Start}}
+\index{get\-Calib\-Start@{get\-Calib\-Start}!CALICE::FeConfigurationBlock@{C\-A\-L\-I\-C\-E\-::\-Fe\-Configuration\-Block}}
+\subsubsection[{get\-Calib\-Start}]{\setlength{\rightskip}{0pt plus 5cm}int C\-A\-L\-I\-C\-E\-::\-Fe\-Configuration\-Block\-::get\-Calib\-Start (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\label{classCALICE_1_1FeConfigurationBlock_a46de3022895df41ce50ed5be8dc4f753}
+
+
+Get calibration pulse start value. 
+
+\begin{DoxyReturn}{Returns}
+pulse start in units of 6.\-25 ns. 
+\end{DoxyReturn}
+
+
+Definition at line 172 of file Fe\-Configuration\-Block.\-hh.
+
+\index{C\-A\-L\-I\-C\-E\-::\-Fe\-Configuration\-Block@{C\-A\-L\-I\-C\-E\-::\-Fe\-Configuration\-Block}!get\-Calib\-Width@{get\-Calib\-Width}}
+\index{get\-Calib\-Width@{get\-Calib\-Width}!CALICE::FeConfigurationBlock@{C\-A\-L\-I\-C\-E\-::\-Fe\-Configuration\-Block}}
+\subsubsection[{get\-Calib\-Width}]{\setlength{\rightskip}{0pt plus 5cm}int C\-A\-L\-I\-C\-E\-::\-Fe\-Configuration\-Block\-::get\-Calib\-Width (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\label{classCALICE_1_1FeConfigurationBlock_a5eaeeefd9b9d9fe7f4922cfd3589de4c}
+
+
+Get duration of the calibration pulse. 
+
+\begin{DoxyReturn}{Returns}
+pulse duration in units of 6.\-25 ns. 
+\end{DoxyReturn}
+
+
+Definition at line 182 of file Fe\-Configuration\-Block.\-hh.
+
+\index{C\-A\-L\-I\-C\-E\-::\-Fe\-Configuration\-Block@{C\-A\-L\-I\-C\-E\-::\-Fe\-Configuration\-Block}!set\-Calib\-Start@{set\-Calib\-Start}}
+\index{set\-Calib\-Start@{set\-Calib\-Start}!CALICE::FeConfigurationBlock@{C\-A\-L\-I\-C\-E\-::\-Fe\-Configuration\-Block}}
+\subsubsection[{set\-Calib\-Start}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Fe\-Configuration\-Block}\& C\-A\-L\-I\-C\-E\-::\-Fe\-Configuration\-Block\-::set\-Calib\-Start (
+\begin{DoxyParamCaption}
+\item[{int}]{calib\-Start}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\label{classCALICE_1_1FeConfigurationBlock_a41757e805ef1627ab79c1106e0448614}
+
+
+Set Calibration pulse start value. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em calib\-Start} & pulse start in units of 6.\-25 ns. \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 167 of file Fe\-Configuration\-Block.\-hh.
+
+\index{C\-A\-L\-I\-C\-E\-::\-Fe\-Configuration\-Block@{C\-A\-L\-I\-C\-E\-::\-Fe\-Configuration\-Block}!set\-Calib\-Width@{set\-Calib\-Width}}
+\index{set\-Calib\-Width@{set\-Calib\-Width}!CALICE::FeConfigurationBlock@{C\-A\-L\-I\-C\-E\-::\-Fe\-Configuration\-Block}}
+\subsubsection[{set\-Calib\-Width}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Fe\-Configuration\-Block}\& C\-A\-L\-I\-C\-E\-::\-Fe\-Configuration\-Block\-::set\-Calib\-Width (
+\begin{DoxyParamCaption}
+\item[{int}]{calib\-Width}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\label{classCALICE_1_1FeConfigurationBlock_ac01aedde84c305677f215eec469ea277}
+
+
+Set duration of the calibration pulse. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em calib\-Width} & pulse duration in units of 6.\-25 ns. \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 177 of file Fe\-Configuration\-Block.\-hh.
+
+\index{C\-A\-L\-I\-C\-E\-::\-Fe\-Configuration\-Block@{C\-A\-L\-I\-C\-E\-::\-Fe\-Configuration\-Block}!set\-Record\-Label@{set\-Record\-Label}}
+\index{set\-Record\-Label@{set\-Record\-Label}!CALICE::FeConfigurationBlock@{C\-A\-L\-I\-C\-E\-::\-Fe\-Configuration\-Block}}
+\subsubsection[{set\-Record\-Label}]{\setlength{\rightskip}{0pt plus 5cm}void C\-A\-L\-I\-C\-E\-::\-Fe\-Configuration\-Block\-::set\-Record\-Label (
+\begin{DoxyParamCaption}
+\item[{int}]{label}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\label{classCALICE_1_1FeConfigurationBlock_a3da15375ce338c89149a9f963a9785d4}
+
+
+Set the Record\-Label, i.\-e. 
+
+whether this dataset was written to or read from a C\-R\-C board 
+
+Definition at line 147 of file Fe\-Configuration\-Block.\-hh.
+
+
+
+The documentation for this class was generated from the following file\-:\begin{DoxyCompactItemize}
+\item 
+Fe\-Configuration\-Block.\-hh\end{DoxyCompactItemize}

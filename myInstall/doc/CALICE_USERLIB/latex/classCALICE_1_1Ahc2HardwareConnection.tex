@@ -1,0 +1,92 @@
+\section{C\-A\-L\-I\-C\-E\-:\-:Ahc2\-Hardware\-Connection Class Reference}
+\label{classCALICE_1_1Ahc2HardwareConnection}\index{C\-A\-L\-I\-C\-E\-::\-Ahc2\-Hardware\-Connection@{C\-A\-L\-I\-C\-E\-::\-Ahc2\-Hardware\-Connection}}
+
+
+Class to store int values for Hardware\-Connection plus integer cell index in L\-C\-I\-O.  
+
+
+
+
+{\ttfamily \#include $<$Ahc2\-Hardware\-Connection.\-hh$>$}
+
+Inheritance diagram for C\-A\-L\-I\-C\-E\-:\-:Ahc2\-Hardware\-Connection\-:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classCALICE_1_1Ahc2HardwareConnection}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+{\bf Ahc2\-Hardware\-Connection} ()\label{classCALICE_1_1Ahc2HardwareConnection_a0becd0f9301781011ab848337c3c7eab}
+
+\begin{DoxyCompactList}\small\item\em Empty constructor. \end{DoxyCompactList}\item 
+{\bf Ahc2\-Hardware\-Connection} (const int id, const int Chip, const int Module\-Number, const int Chip\-Nr)\label{classCALICE_1_1Ahc2HardwareConnection_ab19d0086bc61acb957d03a547c0ab589}
+
+\begin{DoxyCompactList}\small\item\em Constructor with initial values. \end{DoxyCompactList}\item 
+{\bf Ahc2\-Hardware\-Connection} (E\-V\-E\-N\-T\-::\-L\-C\-Object $\ast$obj)\label{classCALICE_1_1Ahc2HardwareConnection_a9c3e5db7893f4aacf68ec17cb9aeb421}
+
+\begin{DoxyCompactList}\small\item\em Constructor from L\-C\-Object. \end{DoxyCompactList}\item 
+{\bf $\sim$\-Ahc2\-Hardware\-Connection} ()\label{classCALICE_1_1Ahc2HardwareConnection_ab77e19f41adae47a8d88d10c3b171c16}
+
+\begin{DoxyCompactList}\small\item\em Destructor. \end{DoxyCompactList}\item 
+int {\bf get\-I\-D} () const \label{classCALICE_1_1Ahc2HardwareConnection_abe54d399d3d4e02c602deea3c224f8a5}
+
+\begin{DoxyCompactList}\small\item\em Return index identifier. \end{DoxyCompactList}\item 
+int {\bf get\-Chip} () const \label{classCALICE_1_1Ahc2HardwareConnection_ab7f74ef16dfe7b6a25e2c56230d0c6fc}
+
+\begin{DoxyCompactList}\small\item\em Return the Chip\-I\-D. \end{DoxyCompactList}\item 
+int {\bf get\-Module\-Number} () const \label{classCALICE_1_1Ahc2HardwareConnection_af217512dbc7bf71d2c128a9935532294}
+
+\begin{DoxyCompactList}\small\item\em Return the Module\-Number. \end{DoxyCompactList}\item 
+int {\bf get\-Chip\-Number} () const \label{classCALICE_1_1Ahc2HardwareConnection_a64b7b4c23e8d862a1d0967186022785b}
+
+\begin{DoxyCompactList}\small\item\em Return the Chip\-Number. \end{DoxyCompactList}\item 
+void {\bf set\-I\-D} (const int I\-D)\label{classCALICE_1_1Ahc2HardwareConnection_a8cf88bd1e291534c8b73a37a707e9631}
+
+\begin{DoxyCompactList}\small\item\em set index identifier \end{DoxyCompactList}\item 
+void {\bf set\-Chip} (const int Chip)\label{classCALICE_1_1Ahc2HardwareConnection_a2e3f3b9483c6564db3451cdcb0caaf88}
+
+\begin{DoxyCompactList}\small\item\em set the Chip\-I\-D \end{DoxyCompactList}\item 
+void {\bf set\-Module\-Number} (const int Module\-Number)\label{classCALICE_1_1Ahc2HardwareConnection_a65292ca8879275abf37f19fb16fd198a}
+
+\begin{DoxyCompactList}\small\item\em set the Module\-Number \end{DoxyCompactList}\item 
+void {\bf set\-Chip\-Number} (const int Chip\-Number)\label{classCALICE_1_1Ahc2HardwareConnection_aeee207bd52c55f7499f8fc5cceed2720}
+
+\begin{DoxyCompactList}\small\item\em set the Chip\-Number \end{DoxyCompactList}\item 
+virtual const std\-::string {\bf get\-Type\-Name} () const \label{classCALICE_1_1Ahc2HardwareConnection_aca4aa2ddf56a2022029fbef9f28e17a2}
+
+\begin{DoxyCompactList}\small\item\em Implementation of L\-C\-Generic\-Object\-::get\-Type\-Name. \end{DoxyCompactList}\item 
+virtual const std\-::string {\bf get\-Data\-Description} () const \label{classCALICE_1_1Ahc2HardwareConnection_a08a33f99895fb19ab59d07d6e3b46e3e}
+
+\begin{DoxyCompactList}\small\item\em Implementation of L\-C\-Generic\-Object\-::get\-Data\-Description. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Class to store int values for Hardware\-Connection plus integer cell index in L\-C\-I\-O. 
+
+This class provides an interface to store four numbers inside an L\-C\-I\-O object\-:
+\begin{DoxyItemize}
+\item an integer identifier, e.\-g. the index of a calorimeter cell
+\item a 1st int value, Chip\-I\-D
+\item a 2nd int value, Module\-Number
+\item a 3rd int value, Chip\-Number
+\end{DoxyItemize}
+
+This class is used in Ahc2\-Calibrate\-Processor to get Module\-Number and Chip\-Number from Hardware information
+
+\begin{DoxyAuthor}{Author}
+Eldwan Brianne 
+\end{DoxyAuthor}
+\begin{DoxyDate}{Date}
+November 2015 
+\end{DoxyDate}
+
+
+Definition at line 27 of file Ahc2\-Hardware\-Connection.\-hh.
+
+
+
+The documentation for this class was generated from the following file\-:\begin{DoxyCompactItemize}
+\item 
+Ahc2\-Hardware\-Connection.\-hh\end{DoxyCompactItemize}

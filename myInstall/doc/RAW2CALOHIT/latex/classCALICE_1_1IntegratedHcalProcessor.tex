@@ -1,0 +1,584 @@
+\section{C\-A\-L\-I\-C\-E\-:\-:Integrated\-Hcal\-Processor Class Reference}
+\label{classCALICE_1_1IntegratedHcalProcessor}\index{C\-A\-L\-I\-C\-E\-::\-Integrated\-Hcal\-Processor@{C\-A\-L\-I\-C\-E\-::\-Integrated\-Hcal\-Processor}}
+
+
+Base class for all processors which need a lot of A\-Hcal specific data, like the \doxyref{C\-A\-L\-I\-C\-E\-::\-Integrated\-Hcal\-Calibration\-Processor}{p.}{classCALICE_1_1IntegratedHcalCalibrationProcessor} and the C\-A\-L\-I\-C\-E\-::\-Integrated\-Hcal\-Digitization\-Processor.  
+
+
+
+
+{\ttfamily \#include $<$Integrated\-Hcal\-Processor.\-hh$>$}
+
+Inheritance diagram for C\-A\-L\-I\-C\-E\-:\-:Integrated\-Hcal\-Processor\-:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=4.000000cm]{classCALICE_1_1IntegratedHcalProcessor}
+\end{center}
+\end{figure}
+\subsection*{Data Structures}
+\begin{DoxyCompactItemize}
+\item 
+struct {\bf Neighbour\-Item}
+\begin{DoxyCompactList}\small\item\em int \-\_\-fudge\-Non\-Existing\-Saturation\-Corrections; \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+{\bf Integrated\-Hcal\-Processor} (const std\-::string processor\-Name=\char`\"{}Integrated\-Hcal\-Processor\char`\"{})
+\begin{DoxyCompactList}\small\item\em \-\_\-gain\-Fit\-Results\-Map(\&\-C\-A\-L\-I\-C\-E\-::\-Linear\-Fit\-Result\-::get\-I\-D), \-\_\-\-Mip\-Fit\-Results\-Map(\&\-C\-A\-L\-I\-C\-E\-::\-Linear\-Fit\-Result\-::get\-I\-D), \end{DoxyCompactList}\item 
+virtual {\bf $\sim$\-Integrated\-Hcal\-Processor} ()
+\item 
+{\bf Integrated\-Hcal\-Processor} $\ast$ {\bfseries new\-Processor} ()\label{classCALICE_1_1IntegratedHcalProcessor_a1756ad865a23dee3410dcca7e3ea6594}
+
+\item 
+virtual void {\bf init} ()
+\end{DoxyCompactItemize}
+\subsection*{Protected Types}
+\begin{DoxyCompactItemize}
+\item 
+typedef std\-::map$<$ unsigned, \\*
+std\-::vector$<$ {\bf Neighbour\-Item} $>$ $\ast$ $>$ {\bfseries Neighbour\-Map}\label{classCALICE_1_1IntegratedHcalProcessor_a0bfd2769021f0a1a69ab275249d8bb81}
+
+\end{DoxyCompactItemize}
+\subsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void {\bf fill\-Temp\-Count\-Maps} (int cell\-I\-D)\label{classCALICE_1_1IntegratedHcalProcessor_af53541acd9828c24c24a915b92eb073e}
+
+\begin{DoxyCompactList}\small\item\em Is used to fill temperature correction statistic maps. \end{DoxyCompactList}\item 
+void {\bfseries fill\-Temp\-Count\-Maps} (unsigned module, unsigned chip, unsigned channel)\label{classCALICE_1_1IntegratedHcalProcessor_a1f7f99d2acf5eb86bb88a66f014caf42}
+
+\item 
+void {\bf print\-Temp\-Count\-Maps} (std\-::ostream \&out)\label{classCALICE_1_1IntegratedHcalProcessor_aeb33252fcb974978f913ed4e14e65d24}
+
+\begin{DoxyCompactList}\small\item\em Is used to print temperature correction statistic maps. \end{DoxyCompactList}\item 
+virtual void {\bf ahc\-Sro\-Mod\-Data\-Col\-Changed} (lcio\-::\-L\-C\-Collection $\ast$col)
+\begin{DoxyCompactList}\small\item\em void Integrated\-Hcal\-Processor\-::gain\-Calibration\-Changed(lcio\-::\-L\-C\-Collection$\ast$ col) \{ ifdef H\-C\-A\-L\-R\-E\-C\-O\-\_\-\-D\-E\-B\-U\-G \end{DoxyCompactList}\item 
+virtual void {\bfseries temperature\-Sensor\-Calibration\-Changed} (lcio\-::\-L\-C\-Collection $\ast$col)\label{classCALICE_1_1IntegratedHcalProcessor_a789b552c5a5d2b9f98d23d0c0cfb78be}
+
+\item 
+virtual void {\bfseries Sipm\-Info\-Changed} (lcio\-::\-L\-C\-Collection $\ast$col)\label{classCALICE_1_1IntegratedHcalProcessor_a7f9eff7025074d0a5a573f62ecdaa198}
+
+\item 
+virtual void {\bfseries Sipm\-Saturation\-Changed} (lcio\-::\-L\-C\-Collection $\ast$col)\label{classCALICE_1_1IntegratedHcalProcessor_ab191e86a502f637fc0956f5281a6fae6}
+
+\item 
+virtual void {\bfseries Module\-Production\-Changed} (lcio\-::\-L\-C\-Collection $\ast$col)\label{classCALICE_1_1IntegratedHcalProcessor_a762308d52579972a065c7af24afafdb4}
+
+\item 
+virtual void {\bfseries module\-Type\-Changed} (lcio\-::\-L\-C\-Collection $\ast$col)\label{classCALICE_1_1IntegratedHcalProcessor_ad82209008f52da453135a2df963e6f98}
+
+\item 
+virtual void {\bfseries module\-Location\-Changed} (lcio\-::\-L\-C\-Collection $\ast$col)\label{classCALICE_1_1IntegratedHcalProcessor_ac66500e314f73a864dbddbb78a332ef0}
+
+\item 
+virtual void {\bfseries module\-Connection\-Changed} (lcio\-::\-L\-C\-Collection $\ast$col)\label{classCALICE_1_1IntegratedHcalProcessor_a0062408fe85891e299dc2dfd6702c5c5}
+
+\item 
+float {\bf get\-Mip} (int Cell\-I\-D)
+\begin{DoxyCompactList}\small\item\em Use this function to get the Mip constant of a cell. \end{DoxyCompactList}\item 
+float {\bf get\-Corrected\-Amplitude} (int cell\-I\-D, float sat\-Ampl)\label{classCALICE_1_1IntegratedHcalProcessor_a88d95564a2e46cf8859f37ac20f18cad}
+
+\begin{DoxyCompactList}\small\item\em float get\-Mip(unsigned int module, unsigned int chip, unsigned int channel); \end{DoxyCompactList}\item 
+float {\bfseries get\-Saturated\-Amplitude} (int cell\-I\-D, float lin\-Ampl)\label{classCALICE_1_1IntegratedHcalProcessor_afa0e0dd7c1dbd94bf9c424e1ad45a6ea}
+
+\item 
+float {\bf get\-Gain} (int cell\-I\-D)
+\begin{DoxyCompactList}\small\item\em Use this function to get the Gain constant of a cell. \end{DoxyCompactList}\item 
+float {\bf get\-I\-C} (int cell\-I\-D)
+\begin{DoxyCompactList}\small\item\em float get\-Gain(unsigned int module, unsigned int chip, unsigned int channel); \end{DoxyCompactList}\item 
+float {\bf get\-Cell\-Temp} (int cell\-I\-D)\label{classCALICE_1_1IntegratedHcalProcessor_a417b653d6ab575ded3a10ff860f18a85}
+
+\begin{DoxyCompactList}\small\item\em float get\-I\-C(unsigned int module, unsigned int chip, unsigned int channel); \end{DoxyCompactList}\item 
+float {\bfseries get\-Cell\-Temp} (unsigned int module, unsigned int chip, unsigned int channel)\label{classCALICE_1_1IntegratedHcalProcessor_adb26bbccc99eafa88a192c0c70282e6f}
+
+\item 
+std\-::pair$<$ unsigned int, \\*
+unsigned int $>$ {\bfseries get\-Module\-I\-Dand\-Cellkey} (unsigned int module, unsigned int chip, unsigned int channel)\label{classCALICE_1_1IntegratedHcalProcessor_aeebb764248fff7bc69b29d6db13204da}
+
+\item 
+void {\bfseries update\-Geometry\-Maps} ()\label{classCALICE_1_1IntegratedHcalProcessor_ae4ce3d127835924c41361acbebc3be28}
+
+\item 
+std\-::vector$<$ {\bf Neighbour\-Item} $>$ $\ast$ {\bfseries get\-Neighbour\-List} (const unsigned short module, const unsigned cellkey) const \label{classCALICE_1_1IntegratedHcalProcessor_a4ae51b0fc8bf833f00e1563382875b33}
+
+\item 
+int {\bfseries reverse\-Lookup} (int I, int J, int K) const \label{classCALICE_1_1IntegratedHcalProcessor_a91f4d1c50a77782f37e8cf1f14ac82f5}
+
+\item 
+int {\bfseries geometrical\-Lookup} (int module, int chip, int channel)\label{classCALICE_1_1IntegratedHcalProcessor_a17ede3cc89f52980a83e2e0abe362a75}
+
+\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+bool {\bfseries \-\_\-do\-Mip\-Temp\-Corr}\label{classCALICE_1_1IntegratedHcalProcessor_a2b3b326d43f7dcf0d988baaa016bfa58}
+
+\item 
+bool {\bfseries \-\_\-do\-Gain\-Temp\-Corr}\label{classCALICE_1_1IntegratedHcalProcessor_a91b9fe707133bb82554271e48e55fe02}
+
+\item 
+std\-::map$<$ unsigned, unsigned $>$ {\bf \-\_\-cell\-Occurence\-Counter}
+\begin{DoxyCompactList}\small\item\em Use this map to count how often the cell specified with the Hcal\-Tile\-Index occurs during calibration or digitization in the whole run. \end{DoxyCompactList}\item 
+std\-::map$<$ unsigned, unsigned $>$ {\bf \-\_\-cell\-Mip\-Temp\-Corr\-Counter}
+\begin{DoxyCompactList}\small\item\em Use this map to count how often the cell specified with the Hcal\-Tile\-Index is calibrated or digitized with a temperature corrected Mip constant. \end{DoxyCompactList}\item 
+std\-::map$<$ unsigned, unsigned $>$ {\bf \-\_\-cell\-No\-Mip\-Temp\-Corr\-Counter}
+\begin{DoxyCompactList}\small\item\em Use this map to count how often the cell specified with the Hcal\-Tile\-Index is calibrated or digitized using a Mip constant without temperature correction. \end{DoxyCompactList}\item 
+std\-::map$<$ unsigned, unsigned $>$ {\bf \-\_\-cell\-Gain\-Temp\-Corr\-Counter}
+\begin{DoxyCompactList}\small\item\em Use this map to count how often the cell specified with the Hcal\-Tile\-Index is calibrated or digitized with a temperature corrected Gain constant. \end{DoxyCompactList}\item 
+std\-::map$<$ unsigned, unsigned $>$ {\bf \-\_\-cell\-No\-Gain\-Temp\-Corr\-Counter}
+\begin{DoxyCompactList}\small\item\em Use this map to count how often the cell specified with the Hcal\-Tile\-Index is calibrated or digitized using a Gain constant without temperature correction. \end{DoxyCompactList}\item 
+bool {\bf \-\_\-cell\-Calib\-Used\-Mip\-Temp\-Corr}
+\begin{DoxyCompactList}\small\item\em This flags shows whether the current cell is calibrated or digitized with a temperature corrected mip constant or not. \end{DoxyCompactList}\item 
+bool {\bf \-\_\-cell\-Calib\-Used\-Gain\-Temp\-Corr}
+\begin{DoxyCompactList}\small\item\em This flags shows whether the current cell is calibrated or digitized with a temperature corrected mip constant or not. \end{DoxyCompactList}\item 
+std\-::string {\bfseries \-\_\-gain\-Cal\-Col\-Name}\label{classCALICE_1_1IntegratedHcalProcessor_a40fcfe93120bef56b0bdc790a26fc462}
+
+\item 
+std\-::string {\bfseries \-\_\-inter\-Cal\-Col\-Name}\label{classCALICE_1_1IntegratedHcalProcessor_ab8121fe4f449cc9b0a859ddd54dfd089}
+
+\item 
+std\-::string {\bfseries \-\_\-mip\-Cal\-Col\-Name}\label{classCALICE_1_1IntegratedHcalProcessor_a16394fd12e15b65cd9c5e4e98acf64da}
+
+\item 
+std\-::string {\bfseries \-\_\-ahc\-Sro\-Mod\-Data\-Col\-Name}\label{classCALICE_1_1IntegratedHcalProcessor_a70140ada65f48e8b681694d342ff43ef}
+
+\item 
+std\-::string {\bfseries \-\_\-col\-Name\-Module\-Description}\label{classCALICE_1_1IntegratedHcalProcessor_a62b331db047f75432bbe71f2e540346d}
+
+\item 
+std\-::string {\bfseries \-\_\-col\-Name\-Module\-Location}\label{classCALICE_1_1IntegratedHcalProcessor_a1071290475af63de89c4e157a6c9adce}
+
+\item 
+std\-::string {\bfseries \-\_\-col\-Name\-Module\-Connection}\label{classCALICE_1_1IntegratedHcalProcessor_a55180d508f4ab66f8992f4cf06b9c973}
+
+\item 
+std\-::string {\bfseries \-\_\-temperature\-Sensor\-Calibration\-Col\-Name}\label{classCALICE_1_1IntegratedHcalProcessor_a702fc5e8b442a72ba1dc10b05e046ae9}
+
+\item 
+Ahc\-Temp\-Provider $\ast$ {\bfseries \-\_\-temp\-Provider}\label{classCALICE_1_1IntegratedHcalProcessor_a5b41cba62cd72b22d8e84c553c27547c}
+
+\item 
+lccd\-::\-Conditions\-Map$<$ int, \\*
+C\-A\-L\-I\-C\-E\-::\-Linear\-Fit\-Constant $>$ {\bfseries \-\_\-gain\-Fit\-Constants\-Map}\label{classCALICE_1_1IntegratedHcalProcessor_a16f74752283b7213211955642c24adf7}
+
+\item 
+lccd\-::\-Conditions\-Map$<$ int, \\*
+C\-A\-L\-I\-C\-E\-::\-Linear\-Fit\-Slope $>$ {\bfseries \-\_\-gain\-Fit\-Slopes\-Map}\label{classCALICE_1_1IntegratedHcalProcessor_a3ed7cb66c11825e22df586f16b008987}
+
+\item 
+lccd\-::\-Conditions\-Map$<$ int, \\*
+C\-A\-L\-I\-C\-E\-::\-Linear\-Fit\-Constant $>$ {\bfseries \-\_\-\-Mip\-Fit\-Constants\-Map}\label{classCALICE_1_1IntegratedHcalProcessor_a27106155fa040cc474cdb19b6d0fde26}
+
+\item 
+lccd\-::\-Conditions\-Map$<$ int, \\*
+C\-A\-L\-I\-C\-E\-::\-Linear\-Fit\-Slope $>$ {\bfseries \-\_\-\-Mip\-Fit\-Slopes\-Map}\label{classCALICE_1_1IntegratedHcalProcessor_adfb1960abe0ed795e0ea00a502273b4b}
+
+\item 
+lccd\-::\-Conditions\-Map$<$ const int, \\*
+C\-A\-L\-I\-C\-E\-::\-Sat\-Corr\-Itep $>$ {\bfseries \-\_\-\-Sat\-Corr\-Map}\label{classCALICE_1_1IntegratedHcalProcessor_a656e486cedc3eb7c1660f1eaa54a93b9}
+
+\item 
+lccd\-::\-Conditions\-Map$<$ int, \\*
+C\-A\-L\-I\-C\-E\-::\-Linear\-Fit\-Constant $>$ {\bfseries \-\_\-\-Inter\-Constants\-Map}\label{classCALICE_1_1IntegratedHcalProcessor_a7f517e8fc14737205ba1a5d599eccad1}
+
+\item 
+std\-::string {\bfseries \-\_\-gain\-Fit\-Constants\-Collection\-Name}\label{classCALICE_1_1IntegratedHcalProcessor_a3349b45b04410e56b6127de149c2971b}
+
+\item 
+std\-::string {\bfseries \-\_\-\-Mip\-Fit\-Constants\-Collection\-Name}\label{classCALICE_1_1IntegratedHcalProcessor_a8f5e2fe335aba5f95811cbe6e378cbf7}
+
+\item 
+std\-::string {\bfseries \-\_\-\-Sat\-Corr\-Collection\-Name}\label{classCALICE_1_1IntegratedHcalProcessor_a00a60e9a07361a03ebf69ca837348aea}
+
+\item 
+std\-::string {\bfseries \-\_\-gain\-Fit\-Slopes\-Collection\-Name}\label{classCALICE_1_1IntegratedHcalProcessor_a0172b42b0662f1051c293605c282274d}
+
+\item 
+std\-::string {\bfseries \-\_\-\-Mip\-Fit\-Slopes\-Collection\-Name}\label{classCALICE_1_1IntegratedHcalProcessor_a854a49311e1fcc228ac6d30779b1340a}
+
+\item 
+std\-::string {\bfseries \-\_\-\-Inter\-Constants\-Collection\-Name}\label{classCALICE_1_1IntegratedHcalProcessor_a1e6a00e7aced2c44317b0865145b927f}
+
+\item 
+Int\-Vec {\bf \-\_\-modules}\label{classCALICE_1_1IntegratedHcalProcessor_a1b03f52aa888d675035ccf0c3e533994}
+
+\begin{DoxyCompactList}\small\item\em Calibration\-Set$<$\-Gain\-Constants$>$$\ast$ \-\_\-gain\-Calib\-Set; Calibration\-Set$<$\-Inter\-Constants$>$$\ast$ \-\_\-inter\-Calib\-Set; Calibration\-Set$<$\-M\-I\-P\-Constants$>$$\ast$ \-\_\-mip\-Calib\-Set;. \end{DoxyCompactList}\item 
+float {\bfseries \-\_\-gain\-Scaling\-Factor}\label{classCALICE_1_1IntegratedHcalProcessor_afd0793107948e1b518bc48edf2f902c3}
+
+\item 
+float {\bfseries \-\_\-mip\-Scaling\-Factor}\label{classCALICE_1_1IntegratedHcalProcessor_abb530fcd9b374a9b41f42b2f27e91c64}
+
+\item 
+{\bf Hcal\-Temp\-Model} $\ast$ {\bfseries \-\_\-temp\-Model}\label{classCALICE_1_1IntegratedHcalProcessor_add2ba4229041de00306f3265412af375}
+
+\item 
+Mapping\-And\-Alignment {\bfseries \-\_\-mapping}\label{classCALICE_1_1IntegratedHcalProcessor_aea7df0eff16f7759ea41789b0e3886d0}
+
+\item 
+Hcal\-Module\-Index\-Reverse\-Lookup {\bfseries \-\_\-index\-Lookup}\label{classCALICE_1_1IntegratedHcalProcessor_a40bd029718e50227668cef2246783bc6}
+
+\item 
+int {\bfseries \-\_\-view\-Connection\-Tree}\label{classCALICE_1_1IntegratedHcalProcessor_a4fd6516291240ccdaeecefca4bf40ad1}
+
+\item 
+std\-::map$<$ unsigned, unsigned $>$ {\bfseries \-\_\-inverse\-Module\-Map}\label{classCALICE_1_1IntegratedHcalProcessor_a307a2681e8856810362e166080ec4795}
+
+\item 
+std\-::map$<$ unsigned, unsigned $>$ {\bfseries \-\_\-cell\-Map}\label{classCALICE_1_1IntegratedHcalProcessor_a99d9a6d6bd972756bd8cb8e6d1b37ea5}
+
+\item 
+Neighbour\-Map {\bfseries \-\_\-neighbour\-Map}\label{classCALICE_1_1IntegratedHcalProcessor_ac3c877341fc3fd71315b67abfcaa701a}
+
+\item 
+Conditions\-Change\-Delegator\\*
+$<$ {\bf Integrated\-Hcal\-Processor} $>$ {\bf \-\_\-ahc\-Sro\-Mod\-Data\-Change}\label{classCALICE_1_1IntegratedHcalProcessor_a9b73ff8cf620b9ca23f3820413c0ff9c}
+
+\begin{DoxyCompactList}\small\item\em Conditions\-Change\-Delegator$<$\-Integrated\-Hcal\-Processor$>$ \-\_\-gain\-Calibration\-Change; Conditions\-Change\-Delegator$<$\-Integrated\-Hcal\-Processor$>$ \-\_\-inter\-Calibration\-Change; Conditions\-Change\-Delegator$<$\-Integrated\-Hcal\-Processor$>$ \-\_\-mip\-Calibration\-Change;. \end{DoxyCompactList}\item 
+Conditions\-Change\-Delegator\\*
+$<$ {\bf Integrated\-Hcal\-Processor} $>$ {\bfseries \-\_\-temperature\-Sensor\-Calibration\-Change}\label{classCALICE_1_1IntegratedHcalProcessor_a1148d25fd93f901f71f404ba01bcd026}
+
+\item 
+Conditions\-Change\-Delegator\\*
+$<$ {\bf Integrated\-Hcal\-Processor} $>$ {\bfseries \-\_\-module\-Type\-Change}\label{classCALICE_1_1IntegratedHcalProcessor_a9356228a9c3859031a0b0b52e0034cab}
+
+\item 
+Conditions\-Change\-Delegator\\*
+$<$ {\bf Integrated\-Hcal\-Processor} $>$ {\bfseries \-\_\-module\-Location\-Change}\label{classCALICE_1_1IntegratedHcalProcessor_a10fa4eb77c7eb393e8fe709b0b4f5d18}
+
+\item 
+Conditions\-Change\-Delegator\\*
+$<$ {\bf Integrated\-Hcal\-Processor} $>$ {\bfseries \-\_\-module\-Connection\-Change}\label{classCALICE_1_1IntegratedHcalProcessor_a45e69354f1b5b49d548fb138f76aff8a}
+
+\item 
+lcio\-::\-L\-C\-Collection $\ast$ {\bfseries \-\_\-ahc\-Sro\-Mod\-Data\-Col}\label{classCALICE_1_1IntegratedHcalProcessor_a533260a9dd56825f6044544918458e52}
+
+\end{DoxyCompactItemize}
+\subsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void {\bfseries consider\-Neighbour\-Relation} (const unsigned central\-Cell\-Index, const int row\-Offset, const int column\-Offset)\label{classCALICE_1_1IntegratedHcalProcessor_ada73b452af34c6c39b4f2972571fcb66}
+
+\item 
+void {\bfseries establish\-Tile\-Coverage} (const unsigned central\-Cell\-Index, const int row\-Offset, const int column\-Offset)\label{classCALICE_1_1IntegratedHcalProcessor_ac2d61eaf3e4a5083cbd9cf272c7d005d}
+
+\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+int {\bfseries \-\_\-do\-Sat\-Scaling}\label{classCALICE_1_1IntegratedHcalProcessor_add82a2f652cff16a0eb8bb26b6503b38}
+
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Base class for all processors which need a lot of A\-Hcal specific data, like the \doxyref{C\-A\-L\-I\-C\-E\-::\-Integrated\-Hcal\-Calibration\-Processor}{p.}{classCALICE_1_1IntegratedHcalCalibrationProcessor} and the C\-A\-L\-I\-C\-E\-::\-Integrated\-Hcal\-Digitization\-Processor. 
+
+\begin{DoxyAuthor}{Author}
+Sebastian Schmidt 
+\end{DoxyAuthor}
+
+
+Definition at line 58 of file Integrated\-Hcal\-Processor.\-hh.
+
+
+
+\subsection{Constructor \& Destructor Documentation}
+\index{C\-A\-L\-I\-C\-E\-::\-Integrated\-Hcal\-Processor@{C\-A\-L\-I\-C\-E\-::\-Integrated\-Hcal\-Processor}!Integrated\-Hcal\-Processor@{Integrated\-Hcal\-Processor}}
+\index{Integrated\-Hcal\-Processor@{Integrated\-Hcal\-Processor}!CALICE::IntegratedHcalProcessor@{C\-A\-L\-I\-C\-E\-::\-Integrated\-Hcal\-Processor}}
+\subsubsection[{Integrated\-Hcal\-Processor}]{\setlength{\rightskip}{0pt plus 5cm}C\-A\-L\-I\-C\-E\-::\-Integrated\-Hcal\-Processor\-::\-Integrated\-Hcal\-Processor (
+\begin{DoxyParamCaption}
+\item[{const std\-::string}]{processor\-Name = {\ttfamily \char`\"{}IntegratedHcalProcessor\char`\"{}}}
+\end{DoxyParamCaption}
+)}\label{classCALICE_1_1IntegratedHcalProcessor_a1f9c46f39106dd619be790c45c3e93eb}
+
+
+\-\_\-gain\-Fit\-Results\-Map(\&\-C\-A\-L\-I\-C\-E\-::\-Linear\-Fit\-Result\-::get\-I\-D), \-\_\-\-Mip\-Fit\-Results\-Map(\&\-C\-A\-L\-I\-C\-E\-::\-Linear\-Fit\-Result\-::get\-I\-D), 
+
+\-\_\-gain\-Calibration\-Change(this,\&\-Integrated\-Hcal\-Processor\-::gain\-Calibration\-Changed), \-\_\-inter\-Calibration\-Change(this,\&\-Integrated\-Hcal\-Processor\-::inter\-Calibration\-Changed), \-\_\-mip\-Calibration\-Change(this,\&\-Integrated\-Hcal\-Processor\-::mip\-Calibration\-Changed), register\-Processor\-Parameter(\char`\"{}\-Gain\-Calibration\-Collection\-Template\char`\"{}, \char`\"{}\-Template for the name of the module wise collections with the gain calibration constants\char`\"{}, {\itshape gain\-Cal\-Col\-Name, std\-::string(\char`\"{}\-Gain$<$/em$>$\char`\"{}));}
+
+{\itshape register\-Processor\-Parameter(\char`\"{}\-Inter\-Calibration\-Collection\-Template\char`\"{}, \char`\"{}\-Template for the name of the module wise collections with the inter calibration constants\char`\"{}, {\itshape inter\-Cal\-Col\-Name, std\-::string(\char`\"{}\-I\-C$<$/em$>$\char`\"{}));}}
+
+{\itshape {\itshape register\-Processor\-Parameter(\char`\"{}\-M\-I\-P\-Calibration\-Collection\-Template\char`\"{}, \char`\"{}\-Template for the name of the module wise collections with the M\-I\-P calibration constants\char`\"{}, {\itshape mip\-Cal\-Col\-Name, std\-::string(\char`\"{}\-M\-I\-P$<$/em$>$\char`\"{}));}}}
+
+{\itshape {\itshape {\itshape register\-Processor\-Parameter(\char`\"{}\-Fudge\-Non\-Existing\-Saturation\-Corrections\char`\"{}, \char`\"{}set saturation corrections to 1 (1) or to 0 (0) if they don't exist\char`\"{}, \-\_\-fudge\-Non\-Existing\-Saturation\-Corrections, (int) 0);}}}
+
+{\itshape {\itshape {\itshape register\-Processor\-Parameter(\char`\"{}\-Correct\-L\-Y\-Sat\char`\"{},\char`\"{}\char`\"{}, \-\_\-correct\-Sat\-L\-Y, false);}}}
+
+{\itshape {\itshape {\itshape \-\_\-gain\-Calib\-Set = new Calibration\-Set$<$\-Gain\-Constants$>$(\-\_\-temp\-Model); \-\_\-inter\-Calib\-Set = new Calibration\-Set$<$\-Inter\-Constants$>$(\-\_\-temp\-Model); \-\_\-mip\-Calib\-Set = new Calibration\-Set$<$\-M\-I\-P\-Constants$>$(\-\_\-temp\-Model); }}}
+
+Definition at line 36 of file Integrated\-Hcal\-Processor.\-cc.
+
+
+
+References \-\_\-modules.
+
+\index{C\-A\-L\-I\-C\-E\-::\-Integrated\-Hcal\-Processor@{C\-A\-L\-I\-C\-E\-::\-Integrated\-Hcal\-Processor}!$\sim$\-Integrated\-Hcal\-Processor@{$\sim$\-Integrated\-Hcal\-Processor}}
+\index{$\sim$\-Integrated\-Hcal\-Processor@{$\sim$\-Integrated\-Hcal\-Processor}!CALICE::IntegratedHcalProcessor@{C\-A\-L\-I\-C\-E\-::\-Integrated\-Hcal\-Processor}}
+\subsubsection[{$\sim$\-Integrated\-Hcal\-Processor}]{\setlength{\rightskip}{0pt plus 5cm}C\-A\-L\-I\-C\-E\-::\-Integrated\-Hcal\-Processor\-::$\sim$\-Integrated\-Hcal\-Processor (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}\label{classCALICE_1_1IntegratedHcalProcessor_aab224b9608bde19e5aafa8c3c06f73ca}
+if ( \-\_\-gain\-Calib\-Set ) delete \-\_\-gain\-Calib\-Set; if ( \-\_\-inter\-Calib\-Set ) delete \-\_\-inter\-Calib\-Set; if ( \-\_\-mip\-Calib\-Set ) delete \-\_\-mip\-Calib\-Set; 
+
+Definition at line 164 of file Integrated\-Hcal\-Processor.\-cc.
+
+
+
+\subsection{Member Function Documentation}
+\index{C\-A\-L\-I\-C\-E\-::\-Integrated\-Hcal\-Processor@{C\-A\-L\-I\-C\-E\-::\-Integrated\-Hcal\-Processor}!ahc\-Sro\-Mod\-Data\-Col\-Changed@{ahc\-Sro\-Mod\-Data\-Col\-Changed}}
+\index{ahc\-Sro\-Mod\-Data\-Col\-Changed@{ahc\-Sro\-Mod\-Data\-Col\-Changed}!CALICE::IntegratedHcalProcessor@{C\-A\-L\-I\-C\-E\-::\-Integrated\-Hcal\-Processor}}
+\subsubsection[{ahc\-Sro\-Mod\-Data\-Col\-Changed}]{\setlength{\rightskip}{0pt plus 5cm}void C\-A\-L\-I\-C\-E\-::\-Integrated\-Hcal\-Processor\-::ahc\-Sro\-Mod\-Data\-Col\-Changed (
+\begin{DoxyParamCaption}
+\item[{lcio\-::\-L\-C\-Collection $\ast$}]{col}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}, {\ttfamily [virtual]}}\label{classCALICE_1_1IntegratedHcalProcessor_af154b6a1ea4688828bb3d5fc297a6005}
+
+
+void Integrated\-Hcal\-Processor\-::gain\-Calibration\-Changed(lcio\-::\-L\-C\-Collection$\ast$ col) \{ ifdef H\-C\-A\-L\-R\-E\-C\-O\-\_\-\-D\-E\-B\-U\-G 
+
+std\-::cout $<$$<$ \char`\"{}\-Integrated\-Hcal\-Processor\-::gain\-Calibration\-Changed()\char`\"{} $<$$<$ std\-::endl; endif \-\_\-gain\-Calib\-Set-\/$>$set\-Scaling\-Factor( \-\_\-gain\-Scaling\-Factor ); if (\-\_\-ahc\-Sro\-Mod\-Data\-Col) \-\_\-gain\-Calib\-Set-\/$>$fill(col, \-\_\-ahc\-Sro\-Mod\-Data\-Col); else \-\_\-gain\-Calib\-Set-\/$>$fill(col); // \-\_\-gain\-Calib\-Set-\/$>$apply\-Scaling\-Factor( \-\_\-gain\-Scaling\-Factor ); // calculate\-Light\-Yield(); \};
+
+void Integrated\-Hcal\-Processor\-::inter\-Calibration\-Changed(lcio\-::\-L\-C\-Collection$\ast$ col) \{ ifdef H\-C\-A\-L\-R\-E\-C\-O\-\_\-\-D\-E\-B\-U\-G std\-::cout $<$$<$ \char`\"{}\-Integrated\-Hcal\-Processor\-::inter\-Calibration\-Changed()\char`\"{} $<$$<$ std\-::endl; endif if (\-\_\-ahc\-Sro\-Mod\-Data\-Col) \-\_\-inter\-Calib\-Set-\/$>$fill(col, \-\_\-ahc\-Sro\-Mod\-Data\-Col); else \-\_\-inter\-Calib\-Set-\/$>$fill(col); // calculate\-Light\-Yield(); \};
+
+void Integrated\-Hcal\-Processor\-::mip\-Calibration\-Changed(lcio\-::\-L\-C\-Collection$\ast$ col) \{ ifdef H\-C\-A\-L\-R\-E\-C\-O\-\_\-\-D\-E\-B\-U\-G std\-::cout $<$$<$ \char`\"{}\-Integrated\-Hcal\-Processor\-::mip\-Calibration\-Changed()\char`\"{} $<$$<$ std\-::endl; endif \-\_\-mip\-Calib\-Set-\/$>$set\-Scaling\-Factor( \-\_\-mip\-Scaling\-Factor ); if (\-\_\-ahc\-Sro\-Mod\-Data\-Col) \-\_\-mip\-Calib\-Set-\/$>$fill(col, \-\_\-ahc\-Sro\-Mod\-Data\-Col); else \-\_\-mip\-Calib\-Set-\/$>$fill(col); // \-\_\-mip\-Calib\-Set-\/$>$apply\-Scaling\-Factor( \-\_\-mip\-Scaling\-Factor ); // calculate\-Light\-Yield(); \}; \-\_\-gain\-Calib\-Set-\/$>$set\-Temp(\-\_\-ahc\-Sro\-Mod\-Data\-Col); \-\_\-inter\-Calib\-Set-\/$>$set\-Temp(\-\_\-ahc\-Sro\-Mod\-Data\-Col); \-\_\-mip\-Calib\-Set-\/$>$set\-Temp(\-\_\-ahc\-Sro\-Mod\-Data\-Col); 
+
+Definition at line 369 of file Integrated\-Hcal\-Processor.\-cc.
+
+\index{C\-A\-L\-I\-C\-E\-::\-Integrated\-Hcal\-Processor@{C\-A\-L\-I\-C\-E\-::\-Integrated\-Hcal\-Processor}!get\-Gain@{get\-Gain}}
+\index{get\-Gain@{get\-Gain}!CALICE::IntegratedHcalProcessor@{C\-A\-L\-I\-C\-E\-::\-Integrated\-Hcal\-Processor}}
+\subsubsection[{get\-Gain}]{\setlength{\rightskip}{0pt plus 5cm}float C\-A\-L\-I\-C\-E\-::\-Integrated\-Hcal\-Processor\-::get\-Gain (
+\begin{DoxyParamCaption}
+\item[{int}]{cell\-I\-D}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}}\label{classCALICE_1_1IntegratedHcalProcessor_a99aee82ab26b548395aedb40448bf45b}
+
+
+Use this function to get the Gain constant of a cell. 
+
+float \doxyref{Integrated\-Hcal\-Processor\-::get\-Mip}{p.}{classCALICE_1_1IntegratedHcalProcessor_a4c9a7ff2de71086a63f297a74c0e96ca}(unsigned int module, unsigned int chip, unsigned int channel) \{ streamlog\-\_\-out(\-D\-E\-B\-U\-G0) $<$$<$ \char`\"{}-\/-\/get\-Mip() started\char`\"{} $<$$<$ std\-::endl; \-\_\-cell\-Calib\-Used\-Mip\-Temp\-Corr = false;
+
+This includes temperature correction.
+
+if( \-\_\-do\-Mip\-Temp\-Corr ) \{ try \{
+
+Linear\-Fit\-Constant\& Mip\-Fit\-Constant = \-\_\-\-Mip\-Fit\-Constants\-Map.\-find(Hcal\-Tile\-Index( module, chip, channel).get\-Index()); const Linear\-Fit\-Slope\& Mip\-Fit\-Slope = \-\_\-\-Mip\-Fit\-Slopes\-Map.\-find(Hcal\-Tile\-Index( module, chip, channel).get\-Index());
+
+Mip\-Fit\-Constant.\-set\-Slope(Mip\-Fit\-Slope.\-get\-Slope());
+
+const double current\-Temperature = get\-Cell\-Temp(module, chip, channel);
+
+streamlog\-\_\-out(\-D\-E\-B\-U\-G4) $<$$<$ \char`\"{}\-Using mip temperature dependency\char`\"{} $<$$<$ std\-::endl;
+
+\-\_\-cell\-Calib\-Used\-Mip\-Temp\-Corr=true; streamlog\-\_\-out(\-D\-E\-B\-U\-G0) $<$$<$ \char`\"{}-\/-\/get\-Mip() ended\char`\"{} $<$$<$ std\-::endl;
+
+return Mip\-Fit\-Constant.\-eval(current\-Temperature);
+
+\} catch(lcio\-::\-Exception e) \{
+
+streamlog\-\_\-out(\-D\-E\-B\-U\-G4) $<$$<$ \char`\"{}\-No mip temperature dependency found for \char`\"{} $<$$<$ \char`\"{}module\-: \char`\"{} $<$$<$ module $<$$<$ \char`\"{} chip\-: \char`\"{} $<$$<$ chip $<$$<$ \char`\"{} channel\-: \char`\"{} $<$$<$ channel $<$$<$ '\par
+' $<$$<$ \char`\"{}\-Using fall back constant.\char`\"{} $<$$<$ std\-::endl; \} \}
+
+std\-::pair$<$unsigned int, unsigned int$>$ I\-Dand\-Key = get\-Module\-I\-Dand\-Cellkey(module,chip,channel);
+
+int moduleid = I\-Dand\-Key.\-first; int cellkey = I\-Dand\-Key.\-second;
+
+M\-I\-P\-Constants$\ast$ mip\-Calib = \-\_\-mip\-Calib\-Set-\/$>$get\-Calib(moduleid, cellkey);
+
+// default mip is 100000 float mip = 100000; if ( mip\-Calib ) \{ mip = mip\-Calib-\/$>$get\-M\-I\-P\-Value(); \}
+
+\-\_\-cell\-Calib\-Used\-Mip\-Temp\-Corr = false; streamlog\-\_\-out(\-D\-E\-B\-U\-G0) $<$$<$ \char`\"{}-\/-\/get\-Mip() ended\char`\"{} $<$$<$ std\-::endl; return mip;
+
+\}; return 400; Hcal\-Tile\-Index hti( cell\-I\-D ); streamlog\-\_\-out(\-D\-E\-B\-U\-G4) $<$$<$ \char`\"{}\-No gain temperature dependency found for \char`\"{} $<$$<$ \char`\"{}module\-: \char`\"{} $<$$<$ hti.\-get\-Module() $<$$<$ \char`\"{} chip\-: \char`\"{} $<$$<$ hti.\-get\-Chip() $<$$<$ \char`\"{} channel\-: \char`\"{} $<$$<$ hti.\-get\-Channel() $<$$<$ '\par
+' $<$$<$ \char`\"{}\-Using fall back constant.\char`\"{} $<$$<$ std\-::endl;
+
+return get\-Gain( hti.\-get\-Module(), hti.\-get\-Chip(), hti.\-get\-Channel() ); 
+
+Definition at line 641 of file Integrated\-Hcal\-Processor.\-cc.
+
+
+
+References \-\_\-cell\-Calib\-Used\-Gain\-Temp\-Corr, and get\-Cell\-Temp().
+
+\index{C\-A\-L\-I\-C\-E\-::\-Integrated\-Hcal\-Processor@{C\-A\-L\-I\-C\-E\-::\-Integrated\-Hcal\-Processor}!get\-I\-C@{get\-I\-C}}
+\index{get\-I\-C@{get\-I\-C}!CALICE::IntegratedHcalProcessor@{C\-A\-L\-I\-C\-E\-::\-Integrated\-Hcal\-Processor}}
+\subsubsection[{get\-I\-C}]{\setlength{\rightskip}{0pt plus 5cm}float C\-A\-L\-I\-C\-E\-::\-Integrated\-Hcal\-Processor\-::get\-I\-C (
+\begin{DoxyParamCaption}
+\item[{int}]{cell\-I\-D}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}}\label{classCALICE_1_1IntegratedHcalProcessor_af8083a34cd5d30ab682dde74c536bbe4}
+
+
+float get\-Gain(unsigned int module, unsigned int chip, unsigned int channel); 
+
+float \doxyref{Integrated\-Hcal\-Processor\-::get\-Gain}{p.}{classCALICE_1_1IntegratedHcalProcessor_a99aee82ab26b548395aedb40448bf45b}(unsigned int module, unsigned int chip, unsigned int channel) \{ streamlog\-\_\-out(\-D\-E\-B\-U\-G0) $<$$<$ \char`\"{}-\/-\/get\-Gain() started\char`\"{} $<$$<$ std\-::endl;
+
+\-\_\-cell\-Calib\-Used\-Gain\-Temp\-Corr = false;
+
+std\-::pair$<$unsigned int, unsigned int$>$ I\-Dand\-Key = get\-Module\-I\-Dand\-Cellkey(module,chip,channel);
+
+int moduleid = I\-Dand\-Key.\-first; int cellkey = I\-Dand\-Key.\-second;
+
+Gain\-Constants$\ast$ gain\-Calib = \-\_\-gain\-Calib\-Set-\/$>$get\-Calib(moduleid, cellkey);
+
+// default gain is 400 float gain = 400; if ( gain\-Calib ) \{ gain = gain\-Calib-\/$>$get\-Gain\-Value(); \}
+
+\-\_\-cell\-Calib\-Used\-Gain\-Temp\-Corr = false; streamlog\-\_\-out(\-D\-E\-B\-U\-G0) $<$$<$ \char`\"{}-\/-\/get\-Gain() ended\char`\"{} $<$$<$ std\-::endl; return gain;
+
+\}; Hcal\-Tile\-Index hti( cell\-I\-D ); return get\-I\-C( hti.\-get\-Module(), hti.\-get\-Chip(), hti.\-get\-Channel() ); 
+
+Definition at line 711 of file Integrated\-Hcal\-Processor.\-cc.
+
+\index{C\-A\-L\-I\-C\-E\-::\-Integrated\-Hcal\-Processor@{C\-A\-L\-I\-C\-E\-::\-Integrated\-Hcal\-Processor}!get\-Mip@{get\-Mip}}
+\index{get\-Mip@{get\-Mip}!CALICE::IntegratedHcalProcessor@{C\-A\-L\-I\-C\-E\-::\-Integrated\-Hcal\-Processor}}
+\subsubsection[{get\-Mip}]{\setlength{\rightskip}{0pt plus 5cm}float C\-A\-L\-I\-C\-E\-::\-Integrated\-Hcal\-Processor\-::get\-Mip (
+\begin{DoxyParamCaption}
+\item[{int}]{Cell\-I\-D}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}}\label{classCALICE_1_1IntegratedHcalProcessor_a4c9a7ff2de71086a63f297a74c0e96ca}
+
+
+Use this function to get the Mip constant of a cell. 
+
+This includes temperature correction. return 100000; Hcal\-Tile\-Index hti( cell\-I\-D ); streamlog\-\_\-out(\-D\-E\-B\-U\-G4) $<$$<$ \char`\"{}\-No mip temperature dependency found for \char`\"{} $<$$<$ \char`\"{}module\-: \char`\"{} $<$$<$ hti.\-get\-Module() $<$$<$ \char`\"{} chip\-: \char`\"{} $<$$<$ hti.\-get\-Chip() $<$$<$ \char`\"{} channel\-: \char`\"{} $<$$<$ hti.\-get\-Channel() $<$$<$ '\par
+' $<$$<$ \char`\"{}\-Using fall back constant.\char`\"{} $<$$<$ std\-::endl; return get\-Mip( hti.\-get\-Module(), hti.\-get\-Chip(), hti.\-get\-Channel() ); 
+
+Definition at line 539 of file Integrated\-Hcal\-Processor.\-cc.
+
+
+
+References \-\_\-cell\-Calib\-Used\-Mip\-Temp\-Corr, and get\-Cell\-Temp().
+
+\index{C\-A\-L\-I\-C\-E\-::\-Integrated\-Hcal\-Processor@{C\-A\-L\-I\-C\-E\-::\-Integrated\-Hcal\-Processor}!init@{init}}
+\index{init@{init}!CALICE::IntegratedHcalProcessor@{C\-A\-L\-I\-C\-E\-::\-Integrated\-Hcal\-Processor}}
+\subsubsection[{init}]{\setlength{\rightskip}{0pt plus 5cm}void C\-A\-L\-I\-C\-E\-::\-Integrated\-Hcal\-Processor\-::init (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}\label{classCALICE_1_1IntegratedHcalProcessor_a72760a0c4f8d4c8ec362a2d3b7e0eb4c}
+if (parameter\-Set(\char`\"{}\-Module\char`\"{})) \{ unsigned index = 0 ; message $<$$<$ \char`\"{}\-Missing condition data\-: \char`\"{}; while (index $<$ \-\_\-modules.\-size() )\{
+
+char \-\_\-mod[10]; sprintf(\-\_\-mod,\char`\"{}\%.\-2d\char`\"{},\-\_\-modules[index++]); std\-::string \-\_\-module(\-\_\-mod);
+
+std\-::string \-\_\-final\-Gain\-Cal\-Col\-Name = \-\_\-gain\-Cal\-Col\-Name + \-\_\-module; if (!marlin\-::\-Conditions\-Processor\-::register\-Change\-Listener (\&\-\_\-gain\-Calibration\-Change ,\-\_\-final\-Gain\-Cal\-Col\-Name)) \{ message $<$$<$ \char`\"{} \char`\"{} $<$$<$ \-\_\-final\-Gain\-Cal\-Col\-Name; error=true; \} else \{ ifdef H\-C\-A\-L\-R\-E\-C\-O\-\_\-\-D\-E\-B\-U\-G std\-::cout $<$$<$ \char`\"{}\-Integrated\-Hcal\-Processor\-: register conditions data handler for gain calibration collection \char`\"{} $<$$<$ \-\_\-final\-Gain\-Cal\-Col\-Name $<$$<$ std\-::endl; endif \} std\-::string \-\_\-final\-Inter\-Cal\-Col\-Name = \-\_\-inter\-Cal\-Col\-Name + \-\_\-module; if (!marlin\-::\-Conditions\-Processor\-::register\-Change\-Listener (\&\-\_\-inter\-Calibration\-Change ,\-\_\-final\-Inter\-Cal\-Col\-Name)) \{ message $<$$<$ \char`\"{} \char`\"{} $<$$<$ \-\_\-final\-Inter\-Cal\-Col\-Name; error=true; \} else \{ ifdef H\-C\-A\-L\-R\-E\-C\-O\-\_\-\-D\-E\-B\-U\-G std\-::cout $<$$<$ \char`\"{}\-Integrated\-Hcal\-Processor\-: register conditions data handler for inter calibration collection \char`\"{} $<$$<$ \-\_\-final\-Inter\-Cal\-Col\-Name $<$$<$ std\-::endl; endif \} std\-::string \-\_\-final\-Mip\-Cal\-Col\-Name = \-\_\-mip\-Cal\-Col\-Name + \-\_\-module; if (!marlin\-::\-Conditions\-Processor\-::register\-Change\-Listener (\&\-\_\-mip\-Calibration\-Change ,\-\_\-final\-Mip\-Cal\-Col\-Name)) \{ message $<$$<$ \char`\"{} \char`\"{} $<$$<$ \-\_\-final\-Mip\-Cal\-Col\-Name; error=true; \} else \{ ifdef H\-C\-A\-L\-R\-E\-C\-O\-\_\-\-D\-E\-B\-U\-G std\-::cout $<$$<$ \char`\"{}\-Integrated\-Hcal\-Processor\-: register conditions data handler for M\-I\-P collection \char`\"{} $<$$<$ \-\_\-final\-Mip\-Cal\-Col\-Name $<$$<$ std\-::endl; endif \} \} \} 
+
+Definition at line 172 of file Integrated\-Hcal\-Processor.\-cc.
+
+
+
+References \-\_\-ahc\-Sro\-Mod\-Data\-Change.
+
+
+
+\subsection{Field Documentation}
+\index{C\-A\-L\-I\-C\-E\-::\-Integrated\-Hcal\-Processor@{C\-A\-L\-I\-C\-E\-::\-Integrated\-Hcal\-Processor}!\-\_\-cell\-Calib\-Used\-Gain\-Temp\-Corr@{\-\_\-cell\-Calib\-Used\-Gain\-Temp\-Corr}}
+\index{\-\_\-cell\-Calib\-Used\-Gain\-Temp\-Corr@{\-\_\-cell\-Calib\-Used\-Gain\-Temp\-Corr}!CALICE::IntegratedHcalProcessor@{C\-A\-L\-I\-C\-E\-::\-Integrated\-Hcal\-Processor}}
+\subsubsection[{\-\_\-cell\-Calib\-Used\-Gain\-Temp\-Corr}]{\setlength{\rightskip}{0pt plus 5cm}bool C\-A\-L\-I\-C\-E\-::\-Integrated\-Hcal\-Processor\-::\-\_\-cell\-Calib\-Used\-Gain\-Temp\-Corr\hspace{0.3cm}{\ttfamily [protected]}}\label{classCALICE_1_1IntegratedHcalProcessor_a5dcdc3f51bf1582fd45eee2303013885}
+
+
+This flags shows whether the current cell is calibrated or digitized with a temperature corrected mip constant or not. 
+
+This should be set and only set in \doxyref{get\-Gain}{p.}{classCALICE_1_1IntegratedHcalProcessor_a99aee82ab26b548395aedb40448bf45b}. U\-S\-E W\-I\-T\-H C\-A\-R\-E! 
+
+Definition at line 101 of file Integrated\-Hcal\-Processor.\-hh.
+
+
+
+Referenced by fill\-Temp\-Count\-Maps(), and get\-Gain().
+
+\index{C\-A\-L\-I\-C\-E\-::\-Integrated\-Hcal\-Processor@{C\-A\-L\-I\-C\-E\-::\-Integrated\-Hcal\-Processor}!\-\_\-cell\-Calib\-Used\-Mip\-Temp\-Corr@{\-\_\-cell\-Calib\-Used\-Mip\-Temp\-Corr}}
+\index{\-\_\-cell\-Calib\-Used\-Mip\-Temp\-Corr@{\-\_\-cell\-Calib\-Used\-Mip\-Temp\-Corr}!CALICE::IntegratedHcalProcessor@{C\-A\-L\-I\-C\-E\-::\-Integrated\-Hcal\-Processor}}
+\subsubsection[{\-\_\-cell\-Calib\-Used\-Mip\-Temp\-Corr}]{\setlength{\rightskip}{0pt plus 5cm}bool C\-A\-L\-I\-C\-E\-::\-Integrated\-Hcal\-Processor\-::\-\_\-cell\-Calib\-Used\-Mip\-Temp\-Corr\hspace{0.3cm}{\ttfamily [protected]}}\label{classCALICE_1_1IntegratedHcalProcessor_a924b96689ce217feebad4bb3d8d966fe}
+
+
+This flags shows whether the current cell is calibrated or digitized with a temperature corrected mip constant or not. 
+
+This should be set and only set in \doxyref{get\-Mip}{p.}{classCALICE_1_1IntegratedHcalProcessor_a4c9a7ff2de71086a63f297a74c0e96ca}. U\-S\-E W\-I\-T\-H C\-A\-R\-E! 
+
+Definition at line 96 of file Integrated\-Hcal\-Processor.\-hh.
+
+
+
+Referenced by fill\-Temp\-Count\-Maps(), and get\-Mip().
+
+\index{C\-A\-L\-I\-C\-E\-::\-Integrated\-Hcal\-Processor@{C\-A\-L\-I\-C\-E\-::\-Integrated\-Hcal\-Processor}!\-\_\-cell\-Gain\-Temp\-Corr\-Counter@{\-\_\-cell\-Gain\-Temp\-Corr\-Counter}}
+\index{\-\_\-cell\-Gain\-Temp\-Corr\-Counter@{\-\_\-cell\-Gain\-Temp\-Corr\-Counter}!CALICE::IntegratedHcalProcessor@{C\-A\-L\-I\-C\-E\-::\-Integrated\-Hcal\-Processor}}
+\subsubsection[{\-\_\-cell\-Gain\-Temp\-Corr\-Counter}]{\setlength{\rightskip}{0pt plus 5cm}std\-::map$<$unsigned,unsigned$>$ C\-A\-L\-I\-C\-E\-::\-Integrated\-Hcal\-Processor\-::\-\_\-cell\-Gain\-Temp\-Corr\-Counter\hspace{0.3cm}{\ttfamily [protected]}}\label{classCALICE_1_1IntegratedHcalProcessor_a5aef2ca09e4ddf1aca9101b6a39ad430}
+
+
+Use this map to count how often the cell specified with the Hcal\-Tile\-Index is calibrated or digitized with a temperature corrected Gain constant. 
+
+
+
+Definition at line 86 of file Integrated\-Hcal\-Processor.\-hh.
+
+
+
+Referenced by fill\-Temp\-Count\-Maps(), and print\-Temp\-Count\-Maps().
+
+\index{C\-A\-L\-I\-C\-E\-::\-Integrated\-Hcal\-Processor@{C\-A\-L\-I\-C\-E\-::\-Integrated\-Hcal\-Processor}!\-\_\-cell\-Mip\-Temp\-Corr\-Counter@{\-\_\-cell\-Mip\-Temp\-Corr\-Counter}}
+\index{\-\_\-cell\-Mip\-Temp\-Corr\-Counter@{\-\_\-cell\-Mip\-Temp\-Corr\-Counter}!CALICE::IntegratedHcalProcessor@{C\-A\-L\-I\-C\-E\-::\-Integrated\-Hcal\-Processor}}
+\subsubsection[{\-\_\-cell\-Mip\-Temp\-Corr\-Counter}]{\setlength{\rightskip}{0pt plus 5cm}std\-::map$<$unsigned,unsigned$>$ C\-A\-L\-I\-C\-E\-::\-Integrated\-Hcal\-Processor\-::\-\_\-cell\-Mip\-Temp\-Corr\-Counter\hspace{0.3cm}{\ttfamily [protected]}}\label{classCALICE_1_1IntegratedHcalProcessor_a7a9a051d48ea511eb296f8f280e046f5}
+
+
+Use this map to count how often the cell specified with the Hcal\-Tile\-Index is calibrated or digitized with a temperature corrected Mip constant. 
+
+
+
+Definition at line 77 of file Integrated\-Hcal\-Processor.\-hh.
+
+
+
+Referenced by fill\-Temp\-Count\-Maps(), and print\-Temp\-Count\-Maps().
+
+\index{C\-A\-L\-I\-C\-E\-::\-Integrated\-Hcal\-Processor@{C\-A\-L\-I\-C\-E\-::\-Integrated\-Hcal\-Processor}!\-\_\-cell\-No\-Gain\-Temp\-Corr\-Counter@{\-\_\-cell\-No\-Gain\-Temp\-Corr\-Counter}}
+\index{\-\_\-cell\-No\-Gain\-Temp\-Corr\-Counter@{\-\_\-cell\-No\-Gain\-Temp\-Corr\-Counter}!CALICE::IntegratedHcalProcessor@{C\-A\-L\-I\-C\-E\-::\-Integrated\-Hcal\-Processor}}
+\subsubsection[{\-\_\-cell\-No\-Gain\-Temp\-Corr\-Counter}]{\setlength{\rightskip}{0pt plus 5cm}std\-::map$<$unsigned,unsigned$>$ C\-A\-L\-I\-C\-E\-::\-Integrated\-Hcal\-Processor\-::\-\_\-cell\-No\-Gain\-Temp\-Corr\-Counter\hspace{0.3cm}{\ttfamily [protected]}}\label{classCALICE_1_1IntegratedHcalProcessor_a955302afe87b1825142d630c868f848d}
+
+
+Use this map to count how often the cell specified with the Hcal\-Tile\-Index is calibrated or digitized using a Gain constant without temperature correction. 
+
+
+
+Definition at line 91 of file Integrated\-Hcal\-Processor.\-hh.
+
+
+
+Referenced by fill\-Temp\-Count\-Maps(), and print\-Temp\-Count\-Maps().
+
+\index{C\-A\-L\-I\-C\-E\-::\-Integrated\-Hcal\-Processor@{C\-A\-L\-I\-C\-E\-::\-Integrated\-Hcal\-Processor}!\-\_\-cell\-No\-Mip\-Temp\-Corr\-Counter@{\-\_\-cell\-No\-Mip\-Temp\-Corr\-Counter}}
+\index{\-\_\-cell\-No\-Mip\-Temp\-Corr\-Counter@{\-\_\-cell\-No\-Mip\-Temp\-Corr\-Counter}!CALICE::IntegratedHcalProcessor@{C\-A\-L\-I\-C\-E\-::\-Integrated\-Hcal\-Processor}}
+\subsubsection[{\-\_\-cell\-No\-Mip\-Temp\-Corr\-Counter}]{\setlength{\rightskip}{0pt plus 5cm}std\-::map$<$unsigned,unsigned$>$ C\-A\-L\-I\-C\-E\-::\-Integrated\-Hcal\-Processor\-::\-\_\-cell\-No\-Mip\-Temp\-Corr\-Counter\hspace{0.3cm}{\ttfamily [protected]}}\label{classCALICE_1_1IntegratedHcalProcessor_a5642bd3592ed841a45bf1bad6f4d2d1d}
+
+
+Use this map to count how often the cell specified with the Hcal\-Tile\-Index is calibrated or digitized using a Mip constant without temperature correction. 
+
+
+
+Definition at line 82 of file Integrated\-Hcal\-Processor.\-hh.
+
+
+
+Referenced by fill\-Temp\-Count\-Maps(), and print\-Temp\-Count\-Maps().
+
+\index{C\-A\-L\-I\-C\-E\-::\-Integrated\-Hcal\-Processor@{C\-A\-L\-I\-C\-E\-::\-Integrated\-Hcal\-Processor}!\-\_\-cell\-Occurence\-Counter@{\-\_\-cell\-Occurence\-Counter}}
+\index{\-\_\-cell\-Occurence\-Counter@{\-\_\-cell\-Occurence\-Counter}!CALICE::IntegratedHcalProcessor@{C\-A\-L\-I\-C\-E\-::\-Integrated\-Hcal\-Processor}}
+\subsubsection[{\-\_\-cell\-Occurence\-Counter}]{\setlength{\rightskip}{0pt plus 5cm}std\-::map$<$unsigned,unsigned$>$ C\-A\-L\-I\-C\-E\-::\-Integrated\-Hcal\-Processor\-::\-\_\-cell\-Occurence\-Counter\hspace{0.3cm}{\ttfamily [protected]}}\label{classCALICE_1_1IntegratedHcalProcessor_a47e8d74c1ec7f9c5a1ba43b5b18b258f}
+
+
+Use this map to count how often the cell specified with the Hcal\-Tile\-Index occurs during calibration or digitization in the whole run. 
+
+
+
+Definition at line 73 of file Integrated\-Hcal\-Processor.\-hh.
+
+
+
+Referenced by fill\-Temp\-Count\-Maps(), and print\-Temp\-Count\-Maps().
+
+
+
+The documentation for this class was generated from the following files\-:\begin{DoxyCompactItemize}
+\item 
+Integrated\-Hcal\-Processor.\-hh\item 
+Integrated\-Hcal\-Processor.\-cc\end{DoxyCompactItemize}

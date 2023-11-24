@@ -1,0 +1,47 @@
+\section{/nfs/dust/ilc/user/marquezh/\-Calice\-Soft\-\_\-w\-\_\-\-I\-L\-C\-Soft\-\_\-v02-\/03-\/02/calice\-\_\-db\-\_\-tools/src/extract\-Hcal\-Temperatures\-Per\-Sensors.cc File Reference}
+\label{extractHcalTemperaturesPerSensors_8cc}\index{/nfs/dust/ilc/user/marquezh/\-Calice\-Soft\-\_\-w\-\_\-\-I\-L\-C\-Soft\-\_\-v02-\/03-\/02/calice\-\_\-db\-\_\-tools/src/extract\-Hcal\-Temperatures\-Per\-Sensors.\-cc@{/nfs/dust/ilc/user/marquezh/\-Calice\-Soft\-\_\-w\-\_\-\-I\-L\-C\-Soft\-\_\-v02-\/03-\/02/calice\-\_\-db\-\_\-tools/src/extract\-Hcal\-Temperatures\-Per\-Sensors.\-cc}}
+{\ttfamily \#include $<$fstream$>$}\\*
+{\ttfamily \#include $<$iostream$>$}\\*
+{\ttfamily \#include $<$cstring$>$}\\*
+{\ttfamily \#include \char`\"{}lccd/\-D\-B\-Interface.\-hh\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}lccd/\-D\-B\-Cond\-Handler.\-hh\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}Calice\-D\-B\-Helper.\-hh\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}Average.\-hh\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}Ahc\-Simple\-Temp\-Provider.\-hh\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}Ahc\-Cern2010\-Temp\-Provider.\-hh\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}Ahc\-Slow\-Readout\-Mod\-Mapper.\-hh\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}Calice\-Run\-Time.\-hh\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}Calice\-D\-B\-Init\-Helper.\-hh\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}Run\-Location.\-hh\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}Ahc\-Mapper.\-hh\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}T\-File.\-h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}T\-Tree.\-h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}T\-R\-O\-O\-T.\-h\char`\"{}}\\*
+\subsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\#define {\bfseries H\-C\-A\-L\-\_\-\-M\-A\-X\-\_\-\-L\-A\-Y\-E\-R\-S}~39\label{extractHcalTemperaturesPerSensors_8cc_a20b17206f49806955ad85b59267112ca}
+
+\item 
+\#define {\bfseries H\-C\-A\-L\-\_\-\-M\-A\-X\-\_\-\-C\-H\-I\-P}~12\label{extractHcalTemperaturesPerSensors_8cc_ae9aff8fe25711ec20f0caf6db90ae060}
+
+\item 
+\#define {\bfseries H\-C\-A\-L\-\_\-\-M\-A\-X\-\_\-\-C\-H\-A\-N\-N\-E\-L}~18\label{extractHcalTemperaturesPerSensors_8cc_a5ce1ff92baa7e4a39bd2e8f920e1d95c}
+
+\item 
+\#define {\bfseries H\-C\-A\-L\-\_\-\-M\-A\-X\-\_\-\-T\-E\-M\-P\-\_\-\-S\-E\-N\-S\-O\-R\-S}~5\label{extractHcalTemperaturesPerSensors_8cc_a99a40167883b5c0fcc41ddf232d7220b}
+
+\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+int {\bfseries main} (int argc, char $\ast$$\ast$argv)\label{extractHcalTemperaturesPerSensors_8cc_a3c04138a5bfe5d72780bb7e82a18e627}
+
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+This tool creates a R\-O\-O\-T file with a R\-O\-O\-T tree containining the A\-H\-C\-A\-L temperatures per sensor and per layer. 
+
+Definition in file {\bf extract\-Hcal\-Temperatures\-Per\-Sensors.\-cc}.
+

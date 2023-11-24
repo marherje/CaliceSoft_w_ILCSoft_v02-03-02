@@ -1,0 +1,156 @@
+\section{marlin\-:\-:Drift\-Chamber\-Write\-Engine Class Reference}
+\label{classmarlin_1_1DriftChamberWriteEngine}\index{marlin\-::\-Drift\-Chamber\-Write\-Engine@{marlin\-::\-Drift\-Chamber\-Write\-Engine}}
+
+
+Inheritance diagram for marlin\-:\-:Drift\-Chamber\-Write\-Engine\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=190pt]{classmarlin_1_1DriftChamberWriteEngine__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for marlin\-:\-:Drift\-Chamber\-Write\-Engine\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=194pt]{classmarlin_1_1DriftChamberWriteEngine__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+{\bfseries Drift\-Chamber\-Write\-Engine} ({\bf Root\-Tree\-Writer} $\ast$host)\label{classmarlin_1_1DriftChamberWriteEngine_a2650f5a2c8e56d670f8ffd2f9ae6d872}
+
+\item 
+virtual const std\-::string \& {\bf get\-Engine\-Name} ()
+\item 
+virtual void {\bf register\-Parameters} ()
+\item 
+virtual void {\bf register\-Branches} (T\-Tree $\ast$host\-Tree)
+\item 
+virtual void {\bf fill\-Variables} (E\-V\-E\-N\-T\-::\-L\-C\-Event $\ast$)
+\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\begin{tabbing}
+xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=\kill
+struct \{\\
+\>float {\bfseries EcalXYZ} [3]\\
+\>float {\bfseries HcalXYZ} [3]\\
+\>float {\bfseries Phi}\\
+\>float {\bfseries Lambda}\\
+\>float {\bfseries Chi2}\\
+\} {\bfseries \_hitsFill}\label{classmarlin_1_1DriftChamberWriteEngine_a6b016c299ff4d1537ade6592c45303f5}
+\\
+
+\end{tabbing}\end{DoxyCompactItemize}
+\subsection*{Static Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+static const unsigned int {\bfseries M\-A\-X\-H\-I\-T\-S} = 7608\label{classmarlin_1_1DriftChamberWriteEngine_af0a61ec798ac8419a1aba09bc9d35a68}
+
+\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Detailed Description}
+
+
+Definition at line 17 of file Drift\-Chamber\-Write\-Engine.\-hh.
+
+
+
+\subsection{Member Function Documentation}
+\index{marlin\-::\-Drift\-Chamber\-Write\-Engine@{marlin\-::\-Drift\-Chamber\-Write\-Engine}!fill\-Variables@{fill\-Variables}}
+\index{fill\-Variables@{fill\-Variables}!marlin::DriftChamberWriteEngine@{marlin\-::\-Drift\-Chamber\-Write\-Engine}}
+\subsubsection[{fill\-Variables}]{\setlength{\rightskip}{0pt plus 5cm}void marlin\-::\-Drift\-Chamber\-Write\-Engine\-::fill\-Variables (
+\begin{DoxyParamCaption}
+\item[{E\-V\-E\-N\-T\-::\-L\-C\-Event $\ast$}]{evt}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}\label{classmarlin_1_1DriftChamberWriteEngine_ae4ac9d60684437fd6b4d5c3365c0e7ef}
+Implement this to extract the variables which you want to fill into the {\itshape R\-O\-O\-T} tree from the event. Write the value of the variables you want to add to the tree to the member variables, which you registered to the {\itshape R\-O\-O\-T} tree. The \doxyref{Root\-Tree\-Writer}{p.}{classmarlin_1_1RootTreeWriter} will call T\-Tree\-::\-Fill() for you. 
+\begin{DoxyParams}{Parameters}
+{\em evt} & the current event \\
+\hline
+\end{DoxyParams}
+
+
+Implements {\bf marlin\-::\-Root\-Write\-Engine} \doxyref{}{p.}{classmarlin_1_1RootWriteEngine_ace823bd839cee7e8c8755e60c4cc7134}.
+
+
+
+Definition at line 47 of file Drift\-Chamber\-Write\-Engine.\-cc.
+
+\index{marlin\-::\-Drift\-Chamber\-Write\-Engine@{marlin\-::\-Drift\-Chamber\-Write\-Engine}!get\-Engine\-Name@{get\-Engine\-Name}}
+\index{get\-Engine\-Name@{get\-Engine\-Name}!marlin::DriftChamberWriteEngine@{marlin\-::\-Drift\-Chamber\-Write\-Engine}}
+\subsubsection[{get\-Engine\-Name}]{\setlength{\rightskip}{0pt plus 5cm}virtual const std\-::string\& marlin\-::\-Drift\-Chamber\-Write\-Engine\-::get\-Engine\-Name (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}\label{classmarlin_1_1DriftChamberWriteEngine_a54c3c6b481d7f957c95dc0b8dd9b9d37}
+Returns the name of the engine to the \doxyref{Root\-Tree\-Writer}{p.}{classmarlin_1_1RootTreeWriter} processor. \begin{DoxyReturn}{Returns}
+Must return a string with the engine name. 
+\end{DoxyReturn}
+\begin{DoxyRefDesc}{Todo}
+\item[{\bf Todo}]fixme\-: should be const, but must be declared const in implementations too. Need to fix all existing engines?!? \end{DoxyRefDesc}
+
+
+Implements {\bf marlin\-::\-Root\-Write\-Engine} \doxyref{}{p.}{classmarlin_1_1RootWriteEngine_a31e38120fe60efcb15666fd569ba5862}.
+
+
+
+Definition at line 26 of file Drift\-Chamber\-Write\-Engine.\-hh.
+
+\index{marlin\-::\-Drift\-Chamber\-Write\-Engine@{marlin\-::\-Drift\-Chamber\-Write\-Engine}!register\-Branches@{register\-Branches}}
+\index{register\-Branches@{register\-Branches}!marlin::DriftChamberWriteEngine@{marlin\-::\-Drift\-Chamber\-Write\-Engine}}
+\subsubsection[{register\-Branches}]{\setlength{\rightskip}{0pt plus 5cm}void marlin\-::\-Drift\-Chamber\-Write\-Engine\-::register\-Branches (
+\begin{DoxyParamCaption}
+\item[{T\-Tree $\ast$}]{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}\label{classmarlin_1_1DriftChamberWriteEngine_a3b32b9dc07adaa637821917ec5a879a3}
+\begin{DoxyVerb}Implement to register local variables to the output tree
+\param pointer to the \a ROOT tree, which the RootTreeWriter processor fills at the
+end of each event.
+Usually the implementation looks like@verbatim 
+\end{DoxyVerb}
+ /// host\-Tree-\/$>$Branch(\char`\"{}variable\char`\"{},\&\-\_\-variable\char`\"{} ,\char`\"{}variable/\-F" ); /// . But you can add any type of branch you like. 
+
+Implements {\bf marlin\-::\-Root\-Write\-Engine} \doxyref{}{p.}{classmarlin_1_1RootWriteEngine_ad467dc6e73fdd9fd4311f7277fd02a89}.
+
+
+
+Definition at line 38 of file Drift\-Chamber\-Write\-Engine.\-cc.
+
+\index{marlin\-::\-Drift\-Chamber\-Write\-Engine@{marlin\-::\-Drift\-Chamber\-Write\-Engine}!register\-Parameters@{register\-Parameters}}
+\index{register\-Parameters@{register\-Parameters}!marlin::DriftChamberWriteEngine@{marlin\-::\-Drift\-Chamber\-Write\-Engine}}
+\subsubsection[{register\-Parameters}]{\setlength{\rightskip}{0pt plus 5cm}void marlin\-::\-Drift\-Chamber\-Write\-Engine\-::register\-Parameters (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}\label{classmarlin_1_1DriftChamberWriteEngine_a6632be0ed7f8ef14290e40550d64556c}
+\begin{DoxyVerb}Used to register steering parameters.
+Implement to register \a marlin steering file parameters. Use \a marlin syntax
+to register parameters for the calling RootTreeWriter processor. 
+
+use@verbatim 
+\end{DoxyVerb}
+ /// \-\_\-host\-Proc.\-relay\-Register\-Processor\-Parameter(...) /// \-\_\-host\-Proc.\-relay\-Register...() ///  instead of {\itshape marlin} processors\begin{DoxyVerb}register...() \end{DoxyVerb}
+ methods 
+
+Implements {\bf marlin\-::\-Root\-Write\-Engine} \doxyref{}{p.}{classmarlin_1_1RootWriteEngine_ae12b70923768043fa5c1438f078c41d3}.
+
+
+
+Definition at line 27 of file Drift\-Chamber\-Write\-Engine.\-cc.
+
+
+
+The documentation for this class was generated from the following files\-:\begin{DoxyCompactItemize}
+\item 
+Drift\-Chamber\-Write\-Engine.\-hh\item 
+Drift\-Chamber\-Write\-Engine.\-cc\end{DoxyCompactItemize}

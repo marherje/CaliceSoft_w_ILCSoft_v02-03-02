@@ -1,0 +1,137 @@
+\section{C\-A\-L\-I\-C\-E\-:\-:Board\-I\-D Class Reference}
+\label{classCALICE_1_1BoardID}\index{C\-A\-L\-I\-C\-E\-::\-Board\-I\-D@{C\-A\-L\-I\-C\-E\-::\-Board\-I\-D}}
+
+
+Create a packed board id of crate, slot, component numbers and the label.  
+
+
+
+
+{\ttfamily \#include $<$Board\-I\-D.\-hh$>$}
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+{\bf Board\-I\-D} ()
+\begin{DoxyCompactList}\small\item\em Create the packed id. \end{DoxyCompactList}\item 
+{\bf Board\-I\-D} (const short crate\-I\-D, const short slot\-I\-D, const short board\-Component\-Number)\label{classCALICE_1_1BoardID_a7a77aa3cd232b76c491e51b97e70466e}
+
+\begin{DoxyCompactList}\small\item\em Label does not belong to the Device I\-D since it ony indicates whether data were written or read back. \end{DoxyCompactList}\item 
+{\bf Board\-I\-D} (const unsigned int packed\-\_\-id)
+\begin{DoxyCompactList}\small\item\em Wrap interface around packed id. \end{DoxyCompactList}\item 
+short {\bf get\-Crate\-I\-D} () const \label{classCALICE_1_1BoardID_a21bcc5f005a519c857eb9084081a5076}
+
+\begin{DoxyCompactList}\small\item\em Unpack the crate id. \end{DoxyCompactList}\item 
+short {\bf get\-Slot\-I\-D} () const \label{classCALICE_1_1BoardID_ad14869e733b4949a9266ae609cf31167}
+
+\begin{DoxyCompactList}\small\item\em Unpack the slot id. \end{DoxyCompactList}\item 
+short {\bf get\-Board\-Component\-Number} () const \label{classCALICE_1_1BoardID_aeff4d82392ef0af0fe036e1dd7edad0b}
+
+\begin{DoxyCompactList}\small\item\em Unpack the board component number. \end{DoxyCompactList}\item 
+unsigned int {\bf id} () const 
+\begin{DoxyCompactList}\small\item\em Unpack the board label. \end{DoxyCompactList}\item 
+{\bf operator unsigned int} ()\label{classCALICE_1_1BoardID_a6d639d0cd155108c97a48ca5c368917a}
+
+\begin{DoxyCompactList}\small\item\em Get the packed id. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+unsigned int {\bfseries \-\_\-id}\label{classCALICE_1_1BoardID_a77bc700e4cebf6b6a3dddb421ee5fd6b}
+
+\end{DoxyCompactItemize}
+\subsection*{Friends}
+\begin{DoxyCompactItemize}
+\item 
+bool const {\bf operator$<$} (const {\bf Board\-I\-D} \&b1, const {\bf Board\-I\-D} \&b2)\label{classCALICE_1_1BoardID_a53050a9db904e5e5bdbb5a167c5a29dd}
+
+\begin{DoxyCompactList}\small\item\em Compiler complained about missing $<$, $>$ operators when \doxyref{Board\-I\-D}{p.}{classCALICE_1_1BoardID} was directly used in a map, therefore we overload this operators. \end{DoxyCompactList}\item 
+bool const {\bf operator$>$} (const {\bf Board\-I\-D} \&b1, const {\bf Board\-I\-D} \&b2)
+\begin{DoxyCompactList}\small\item\em See above ... \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Create a packed board id of crate, slot, component numbers and the label. 
+
+Class is cheap and can be used to generate a packed board id\-: unsigned int packed\-\_\-id = Board\-I\-D(short crate\-I\-D, short slot\-I\-D, short board\-Component\-Number, short board\-Label).\doxyref{id()}{p.}{classCALICE_1_1BoardID_a6079e4bcda24933f67f573b877c6746e}; or unsigned int packed\-\_\-id = Board\-I\-D(short crate\-I\-D, short slot\-I\-D, short board\-Component\-Number, short board\-Label); 
+
+Definition at line 17 of file Board\-I\-D.\-hh.
+
+
+
+\subsection{Constructor \& Destructor Documentation}
+\index{C\-A\-L\-I\-C\-E\-::\-Board\-I\-D@{C\-A\-L\-I\-C\-E\-::\-Board\-I\-D}!Board\-I\-D@{Board\-I\-D}}
+\index{Board\-I\-D@{Board\-I\-D}!CALICE::BoardID@{C\-A\-L\-I\-C\-E\-::\-Board\-I\-D}}
+\subsubsection[{Board\-I\-D}]{\setlength{\rightskip}{0pt plus 5cm}C\-A\-L\-I\-C\-E\-::\-Board\-I\-D\-::\-Board\-I\-D (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\label{classCALICE_1_1BoardID_a0bbfeabb419fbdf6823504cd844a9a91}
+
+
+Create the packed id. 
+
+default constructor. The default constructor produces an illegal board id. 
+
+Definition at line 29 of file Board\-I\-D.\-hh.
+
+\index{C\-A\-L\-I\-C\-E\-::\-Board\-I\-D@{C\-A\-L\-I\-C\-E\-::\-Board\-I\-D}!Board\-I\-D@{Board\-I\-D}}
+\index{Board\-I\-D@{Board\-I\-D}!CALICE::BoardID@{C\-A\-L\-I\-C\-E\-::\-Board\-I\-D}}
+\subsubsection[{Board\-I\-D}]{\setlength{\rightskip}{0pt plus 5cm}C\-A\-L\-I\-C\-E\-::\-Board\-I\-D\-::\-Board\-I\-D (
+\begin{DoxyParamCaption}
+\item[{const unsigned int}]{packed\-\_\-id}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\label{classCALICE_1_1BoardID_a0c4690a0e17a9dc665e14525b70b3b24}
+
+
+Wrap interface around packed id. 
+
+Cheap method to decode the packed components. slot\-\_\-id=Board\-I\-D(packed\-\_\-id).\doxyref{get\-Slot\-I\-D()}{p.}{classCALICE_1_1BoardID_ad14869e733b4949a9266ae609cf31167}; 
+
+Definition at line 49 of file Board\-I\-D.\-hh.
+
+
+
+\subsection{Member Function Documentation}
+\index{C\-A\-L\-I\-C\-E\-::\-Board\-I\-D@{C\-A\-L\-I\-C\-E\-::\-Board\-I\-D}!id@{id}}
+\index{id@{id}!CALICE::BoardID@{C\-A\-L\-I\-C\-E\-::\-Board\-I\-D}}
+\subsubsection[{id}]{\setlength{\rightskip}{0pt plus 5cm}unsigned int C\-A\-L\-I\-C\-E\-::\-Board\-I\-D\-::id (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}\label{classCALICE_1_1BoardID_a6079e4bcda24933f67f573b877c6746e}
+
+
+Unpack the board label. 
+
+Get the packed id. 
+
+Definition at line 80 of file Board\-I\-D.\-hh.
+
+
+
+Referenced by C\-A\-L\-I\-C\-E\-::operator$>$().
+
+
+
+\subsection{Friends And Related Function Documentation}
+\index{C\-A\-L\-I\-C\-E\-::\-Board\-I\-D@{C\-A\-L\-I\-C\-E\-::\-Board\-I\-D}!operator$>$@{operator$>$}}
+\index{operator$>$@{operator$>$}!CALICE::BoardID@{C\-A\-L\-I\-C\-E\-::\-Board\-I\-D}}
+\subsubsection[{operator$>$}]{\setlength{\rightskip}{0pt plus 5cm}bool const operator$>$ (
+\begin{DoxyParamCaption}
+\item[{const {\bf Board\-I\-D} \&}]{b1, }
+\item[{const {\bf Board\-I\-D} \&}]{b2}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [friend]}}\label{classCALICE_1_1BoardID_a434e3e7f9f569d6d01ff7e57aebbf3de}
+
+
+See above ... 
+
+
+
+Definition at line 101 of file Board\-I\-D.\-hh.
+
+
+
+The documentation for this class was generated from the following file\-:\begin{DoxyCompactItemize}
+\item 
+Board\-I\-D.\-hh\end{DoxyCompactItemize}

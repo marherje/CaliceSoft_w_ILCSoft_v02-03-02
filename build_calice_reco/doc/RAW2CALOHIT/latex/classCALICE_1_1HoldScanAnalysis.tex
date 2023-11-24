@@ -1,0 +1,257 @@
+\section{C\-A\-L\-I\-C\-E\-:\-:Hold\-Scan\-Analysis Class Reference}
+\label{classCALICE_1_1HoldScanAnalysis}\index{C\-A\-L\-I\-C\-E\-::\-Hold\-Scan\-Analysis@{C\-A\-L\-I\-C\-E\-::\-Hold\-Scan\-Analysis}}
+
+
+Create Signal histograms per pad of all hits of all reconstructed clusters.  
+
+
+
+
+{\ttfamily \#include $<$Hold\-Scan\-Analysis.\-hh$>$}
+
+Inheritance diagram for C\-A\-L\-I\-C\-E\-:\-:Hold\-Scan\-Analysis\-:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=3.000000cm]{classCALICE_1_1HoldScanAnalysis}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+Processor $\ast$ {\bfseries new\-Processor} ()\label{classCALICE_1_1HoldScanAnalysis_ad5990596dee1b8767277be9526521161}
+
+\item 
+void {\bf init} ()
+\begin{DoxyCompactList}\small\item\em Called at the begin of the job before anything is read. \end{DoxyCompactList}\item 
+void {\bf process\-Run\-Header} (L\-C\-Run\-Header $\ast$run)
+\begin{DoxyCompactList}\small\item\em Called for every run, e.\-g. \end{DoxyCompactList}\item 
+void {\bf process\-Event} (L\-C\-Event $\ast$evt\-P)
+\begin{DoxyCompactList}\small\item\em Called for every event -\/ the working horse. \end{DoxyCompactList}\item 
+void {\bfseries end} ()\label{classCALICE_1_1HoldScanAnalysis_a13ed162b61891ce64fb6cfff41719b18}
+
+\end{DoxyCompactItemize}
+\subsection*{Protected Types}
+\begin{DoxyCompactItemize}
+\item 
+enum {\bfseries E\-Hist\-Type} \{ {\bfseries k\-Hist\-Signal\-Per\-Hold\-Value}, 
+{\bfseries k\-Hist\-Total\-Signal\-Per\-Hold\-Value}, 
+{\bfseries k\-N\-Hist}
+ \}
+\end{DoxyCompactItemize}
+\subsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void {\bf create\-Histograms} ()
+\begin{DoxyCompactList}\small\item\em create and register histogram collections. \end{DoxyCompactList}\item 
+void {\bf fe\-Conf\-Changed} (E\-V\-E\-N\-T\-::\-L\-C\-Collection $\ast$col)\label{classCALICE_1_1HoldScanAnalysis_a59d01b5f9111a355a98087f22edda54c}
+
+\begin{DoxyCompactList}\small\item\em Handle changes of Fe configuration data. \end{DoxyCompactList}\item 
+void {\bfseries module\-Type\-Changed} (lcio\-::\-L\-C\-Collection $\ast$col)\label{classCALICE_1_1HoldScanAnalysis_a13f67124dfbac5a43384720d728cd79d}
+
+\item 
+void {\bfseries module\-Location\-Changed} (lcio\-::\-L\-C\-Collection $\ast$col)\label{classCALICE_1_1HoldScanAnalysis_ac7853b9f5030f2cffff1763c803c6ed4}
+
+\item 
+void {\bfseries module\-Connection\-Changed} (lcio\-::\-L\-C\-Collection $\ast$col)\label{classCALICE_1_1HoldScanAnalysis_a8b1ef0f8b1806f814f738179a0c94773}
+
+\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+Float\-Vec {\bf \-\_\-signal\-Hist\-Par}
+\begin{DoxyCompactList}\small\item\em binning of the per hold value histograms. \end{DoxyCompactList}\item 
+std\-::string {\bfseries \-\_\-cluster\-Col\-Name}\label{classCALICE_1_1HoldScanAnalysis_a821525b65e2b0658befe4572ff2b5a5b}
+
+\item 
+std\-::string {\bfseries \-\_\-fe\-Conf\-Col\-Name}\label{classCALICE_1_1HoldScanAnalysis_a05396b051321b994175ab5c26bc36ccd}
+
+\item 
+{\bf histmgr\-::\-Key\-\_\-t} {\bf \-\_\-hist\-Group\-Key}
+\begin{DoxyCompactList}\small\item\em Key for the histogram group. \end{DoxyCompactList}\item 
+int {\bf \-\_\-n\-Hist\-Max}\label{classCALICE_1_1HoldScanAnalysis_a9d4b44b172ef158fc0cc865ff00c8200}
+
+\begin{DoxyCompactList}\small\item\em Maximum number of hold values for which signal histograms can be created (parameter) \end{DoxyCompactList}\item 
+int {\bf \-\_\-min\-Number\-Of\-Hits}
+\begin{DoxyCompactList}\small\item\em Minimum number of hits of accepted clusters (parameter). \end{DoxyCompactList}\item 
+Float\-\_\-t {\bf \-\_\-min\-Cluster\-Signal}
+\begin{DoxyCompactList}\small\item\em Minimum signal of accepted clusters (parameter). \end{DoxyCompactList}\item 
+Conditions\-Change\-Delegator\\*
+$<$ {\bf Hold\-Scan\-Analysis} $>$ {\bfseries \-\_\-fe\-Conf\-Change}\label{classCALICE_1_1HoldScanAnalysis_abc178bb058507f39db6a6b9434153141}
+
+\item 
+{\bf Module\-Index\-Reverse\-Lookup} {\bfseries \-\_\-index\-Lookup}\label{classCALICE_1_1HoldScanAnalysis_a19e9e6c81508e9e2a993f980448b0255}
+
+\item 
+L\-C\-Collection $\ast$ {\bfseries \-\_\-n\-Hits\-Histogram}\label{classCALICE_1_1HoldScanAnalysis_a62943d737949a663b3ea9583adeb56d8}
+
+\item 
+L\-C\-Collection $\ast$ {\bfseries \-\_\-cluster\-Signal\-Histogram}\label{classCALICE_1_1HoldScanAnalysis_accdd2109f252c0a48d601dd3f675cbf1}
+
+\item 
+L\-C\-Collection $\ast$ {\bfseries \-\_\-hold\-Value\-Container}\label{classCALICE_1_1HoldScanAnalysis_aee61abfbb2658d6b4e184604e58b6dcb}
+
+\item 
+{\bf histmgr\-::\-Key\-\_\-t} {\bfseries \-\_\-hist\-Key} [k\-N\-Hist]\label{classCALICE_1_1HoldScanAnalysis_a2d3c6efe1f8a31b54998e8fc548db0e4}
+
+\item 
+U\-Int\-\_\-t {\bfseries \-\_\-n\-Hist}\label{classCALICE_1_1HoldScanAnalysis_ac9cacb21c7c4e771c1f288bb68e390d2}
+
+\item 
+std\-::map$<$ int, U\-Int\-\_\-t $>$ {\bfseries \-\_\-hold\-Start\-Map}\label{classCALICE_1_1HoldScanAnalysis_a9f62a744912af880d609661590b59cb0}
+
+\item 
+std\-::vector$<$ U\-Int\-\_\-t $>$ {\bfseries \-\_\-histogram\-Index}\label{classCALICE_1_1HoldScanAnalysis_a4d69205cdc09cb052ac036b530c7ae41}
+
+\item 
+U\-Int\-\_\-t {\bfseries \-\_\-n\-Clusters}\label{classCALICE_1_1HoldScanAnalysis_a1a8fa6dbaaabcf4e2059a828bd6c05e1}
+
+\item 
+U\-Int\-\_\-t {\bfseries \-\_\-n\-Missing\-Hold\-Changes}\label{classCALICE_1_1HoldScanAnalysis_afea5db3b613767acb605be6f4f6a20ca}
+
+\item 
+U\-Int\-\_\-t {\bfseries \-\_\-module\-Index\-Out\-Of\-Range}\label{classCALICE_1_1HoldScanAnalysis_ae9a8dcd16dde44f63bc083ceabd98616}
+
+\item 
+U\-Int\-\_\-t {\bfseries \-\_\-n\-Beam\-Or\-Cosmics\-Events}\label{classCALICE_1_1HoldScanAnalysis_aae4c0032da689c8bd59a62dc1a9fb23e}
+
+\item 
+U\-Int\-\_\-t {\bfseries \-\_\-current\-Common\-Hold\-Start}\label{classCALICE_1_1HoldScanAnalysis_a9bc44aaf4bbc5147174b8e3d813df954}
+
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Create Signal histograms per pad of all hits of all reconstructed clusters. 
+
+This class derives from \doxyref{V\-Raw\-A\-D\-C\-Value\-Processor}{p.}{classCALICE_1_1VRawADCValueProcessor}, since the information about the detector is needed to setup the signal histograms. 
+
+Definition at line 25 of file Hold\-Scan\-Analysis.\-hh.
+
+
+
+\subsection{Member Function Documentation}
+\index{C\-A\-L\-I\-C\-E\-::\-Hold\-Scan\-Analysis@{C\-A\-L\-I\-C\-E\-::\-Hold\-Scan\-Analysis}!create\-Histograms@{create\-Histograms}}
+\index{create\-Histograms@{create\-Histograms}!CALICE::HoldScanAnalysis@{C\-A\-L\-I\-C\-E\-::\-Hold\-Scan\-Analysis}}
+\subsubsection[{create\-Histograms}]{\setlength{\rightskip}{0pt plus 5cm}void C\-A\-L\-I\-C\-E\-::\-Hold\-Scan\-Analysis\-::create\-Histograms (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}}\label{classCALICE_1_1HoldScanAnalysis_af9b442f35ad6b560ecf6736fdaa39314}
+
+
+create and register histogram collections. 
+
+
+
+Definition at line 105 of file Hold\-Scan\-Analysis.\-cc.
+
+
+
+References histmgr\-::\-Hist\-Mgr\-::create\-Histogram\-Group(), and histmgr\-::\-Hist\-Mgr\-::create\-Histograms().
+
+\index{C\-A\-L\-I\-C\-E\-::\-Hold\-Scan\-Analysis@{C\-A\-L\-I\-C\-E\-::\-Hold\-Scan\-Analysis}!init@{init}}
+\index{init@{init}!CALICE::HoldScanAnalysis@{C\-A\-L\-I\-C\-E\-::\-Hold\-Scan\-Analysis}}
+\subsubsection[{init}]{\setlength{\rightskip}{0pt plus 5cm}void C\-A\-L\-I\-C\-E\-::\-Hold\-Scan\-Analysis\-::init (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{classCALICE_1_1HoldScanAnalysis_aa879bdea19cfbf5e5533174dc7a24c0f}
+
+
+Called at the begin of the job before anything is read. 
+
+Use to initialize the processor, e.\-g. book histograms. 
+
+Definition at line 128 of file Hold\-Scan\-Analysis.\-cc.
+
+
+
+References histmgr\-::\-Hist\-Mgr\-::create\-Histograms().
+
+\index{C\-A\-L\-I\-C\-E\-::\-Hold\-Scan\-Analysis@{C\-A\-L\-I\-C\-E\-::\-Hold\-Scan\-Analysis}!process\-Event@{process\-Event}}
+\index{process\-Event@{process\-Event}!CALICE::HoldScanAnalysis@{C\-A\-L\-I\-C\-E\-::\-Hold\-Scan\-Analysis}}
+\subsubsection[{process\-Event}]{\setlength{\rightskip}{0pt plus 5cm}void C\-A\-L\-I\-C\-E\-::\-Hold\-Scan\-Analysis\-::process\-Event (
+\begin{DoxyParamCaption}
+\item[{L\-C\-Event $\ast$}]{evt\-P}
+\end{DoxyParamCaption}
+)}\label{classCALICE_1_1HoldScanAnalysis_ae6c771d770ca5b456f82efe1e8c19d13}
+
+
+Called for every event -\/ the working horse. 
+
+
+
+Definition at line 161 of file Hold\-Scan\-Analysis.\-cc.
+
+
+
+References histmgr\-::\-Float\-Histogram1\-D\-::fill(), histmgr\-::\-Hist\-Mgr\-::get\-Histogram\-Collection(), and histmgr\-::\-Histogram\-Collection\-\_\-t\-::histogram().
+
+\index{C\-A\-L\-I\-C\-E\-::\-Hold\-Scan\-Analysis@{C\-A\-L\-I\-C\-E\-::\-Hold\-Scan\-Analysis}!process\-Run\-Header@{process\-Run\-Header}}
+\index{process\-Run\-Header@{process\-Run\-Header}!CALICE::HoldScanAnalysis@{C\-A\-L\-I\-C\-E\-::\-Hold\-Scan\-Analysis}}
+\subsubsection[{process\-Run\-Header}]{\setlength{\rightskip}{0pt plus 5cm}void C\-A\-L\-I\-C\-E\-::\-Hold\-Scan\-Analysis\-::process\-Run\-Header (
+\begin{DoxyParamCaption}
+\item[{L\-C\-Run\-Header $\ast$}]{run}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\label{classCALICE_1_1HoldScanAnalysis_ae23825d881a551a473319f0dc518bd20}
+
+
+Called for every run, e.\-g. 
+
+overwrite to initialize run dependent histograms. 
+
+Definition at line 43 of file Hold\-Scan\-Analysis.\-hh.
+
+
+
+\subsection{Field Documentation}
+\index{C\-A\-L\-I\-C\-E\-::\-Hold\-Scan\-Analysis@{C\-A\-L\-I\-C\-E\-::\-Hold\-Scan\-Analysis}!\-\_\-hist\-Group\-Key@{\-\_\-hist\-Group\-Key}}
+\index{\-\_\-hist\-Group\-Key@{\-\_\-hist\-Group\-Key}!CALICE::HoldScanAnalysis@{C\-A\-L\-I\-C\-E\-::\-Hold\-Scan\-Analysis}}
+\subsubsection[{\-\_\-hist\-Group\-Key}]{\setlength{\rightskip}{0pt plus 5cm}{\bf histmgr\-::\-Key\-\_\-t} C\-A\-L\-I\-C\-E\-::\-Hold\-Scan\-Analysis\-::\-\_\-hist\-Group\-Key\hspace{0.3cm}{\ttfamily [protected]}}\label{classCALICE_1_1HoldScanAnalysis_a85e98fffce43215e0edabf5afc2b346b}
+
+
+Key for the histogram group. 
+
+
+
+Definition at line 63 of file Hold\-Scan\-Analysis.\-hh.
+
+\index{C\-A\-L\-I\-C\-E\-::\-Hold\-Scan\-Analysis@{C\-A\-L\-I\-C\-E\-::\-Hold\-Scan\-Analysis}!\-\_\-min\-Cluster\-Signal@{\-\_\-min\-Cluster\-Signal}}
+\index{\-\_\-min\-Cluster\-Signal@{\-\_\-min\-Cluster\-Signal}!CALICE::HoldScanAnalysis@{C\-A\-L\-I\-C\-E\-::\-Hold\-Scan\-Analysis}}
+\subsubsection[{\-\_\-min\-Cluster\-Signal}]{\setlength{\rightskip}{0pt plus 5cm}Float\-\_\-t C\-A\-L\-I\-C\-E\-::\-Hold\-Scan\-Analysis\-::\-\_\-min\-Cluster\-Signal\hspace{0.3cm}{\ttfamily [protected]}}\label{classCALICE_1_1HoldScanAnalysis_aaa4aecb1608fddf7a791e6a00e8d9aac}
+
+
+Minimum signal of accepted clusters (parameter). 
+
+
+
+Definition at line 68 of file Hold\-Scan\-Analysis.\-hh.
+
+\index{C\-A\-L\-I\-C\-E\-::\-Hold\-Scan\-Analysis@{C\-A\-L\-I\-C\-E\-::\-Hold\-Scan\-Analysis}!\-\_\-min\-Number\-Of\-Hits@{\-\_\-min\-Number\-Of\-Hits}}
+\index{\-\_\-min\-Number\-Of\-Hits@{\-\_\-min\-Number\-Of\-Hits}!CALICE::HoldScanAnalysis@{C\-A\-L\-I\-C\-E\-::\-Hold\-Scan\-Analysis}}
+\subsubsection[{\-\_\-min\-Number\-Of\-Hits}]{\setlength{\rightskip}{0pt plus 5cm}int C\-A\-L\-I\-C\-E\-::\-Hold\-Scan\-Analysis\-::\-\_\-min\-Number\-Of\-Hits\hspace{0.3cm}{\ttfamily [protected]}}\label{classCALICE_1_1HoldScanAnalysis_aa13f8c6d7a4c85a4a7eb70c1ec9a02a0}
+
+
+Minimum number of hits of accepted clusters (parameter). 
+
+
+
+Definition at line 67 of file Hold\-Scan\-Analysis.\-hh.
+
+\index{C\-A\-L\-I\-C\-E\-::\-Hold\-Scan\-Analysis@{C\-A\-L\-I\-C\-E\-::\-Hold\-Scan\-Analysis}!\-\_\-signal\-Hist\-Par@{\-\_\-signal\-Hist\-Par}}
+\index{\-\_\-signal\-Hist\-Par@{\-\_\-signal\-Hist\-Par}!CALICE::HoldScanAnalysis@{C\-A\-L\-I\-C\-E\-::\-Hold\-Scan\-Analysis}}
+\subsubsection[{\-\_\-signal\-Hist\-Par}]{\setlength{\rightskip}{0pt plus 5cm}Float\-Vec C\-A\-L\-I\-C\-E\-::\-Hold\-Scan\-Analysis\-::\-\_\-signal\-Hist\-Par\hspace{0.3cm}{\ttfamily [protected]}}\label{classCALICE_1_1HoldScanAnalysis_af5d6fa8f5fce15286a9fbb3390f35391}
+
+
+binning of the per hold value histograms. 
+
+
+
+Definition at line 56 of file Hold\-Scan\-Analysis.\-hh.
+
+
+
+The documentation for this class was generated from the following files\-:\begin{DoxyCompactItemize}
+\item 
+Hold\-Scan\-Analysis.\-hh\item 
+Hold\-Scan\-Analysis.\-cc\end{DoxyCompactItemize}

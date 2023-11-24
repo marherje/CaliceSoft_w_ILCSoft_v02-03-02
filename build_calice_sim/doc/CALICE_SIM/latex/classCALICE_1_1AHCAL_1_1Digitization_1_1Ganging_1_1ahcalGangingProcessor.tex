@@ -1,0 +1,138 @@
+\section{C\-A\-L\-I\-C\-E\-:\-:A\-H\-C\-A\-L\-:\-:Digitization\-:\-:Ganging\-:\-:ahcal\-Ganging\-Processor Class Reference}
+\label{classCALICE_1_1AHCAL_1_1Digitization_1_1Ganging_1_1ahcalGangingProcessor}\index{C\-A\-L\-I\-C\-E\-::\-A\-H\-C\-A\-L\-::\-Digitization\-::\-Ganging\-::ahcal\-Ganging\-Processor@{C\-A\-L\-I\-C\-E\-::\-A\-H\-C\-A\-L\-::\-Digitization\-::\-Ganging\-::ahcal\-Ganging\-Processor}}
+
+
+The processor performing the ganging.  
+
+
+
+
+{\ttfamily \#include $<$ahcal\-Ganging\-Processor.\-hh$>$}
+
+Inheritance diagram for C\-A\-L\-I\-C\-E\-:\-:A\-H\-C\-A\-L\-:\-:Digitization\-:\-:Ganging\-:\-:ahcal\-Ganging\-Processor\-:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classCALICE_1_1AHCAL_1_1Digitization_1_1Ganging_1_1ahcalGangingProcessor}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+marlin\-::\-Processor $\ast$ {\bfseries new\-Processor} ()\label{classCALICE_1_1AHCAL_1_1Digitization_1_1Ganging_1_1ahcalGangingProcessor_a9a66e176471d6bab6a78a591c7a8fe14}
+
+\item 
+void {\bf init} ()
+\begin{DoxyCompactList}\small\item\em Initiliases the ganging chain of responsibilty for fine and coarse modules. \end{DoxyCompactList}\item 
+void {\bf process\-Event} (lcio\-::\-L\-C\-Event $\ast$evt)\label{classCALICE_1_1AHCAL_1_1Digitization_1_1Ganging_1_1ahcalGangingProcessor_a4472b19f4354ed820e033c649a6464dd}
+
+\begin{DoxyCompactList}\small\item\em Called every event. \end{DoxyCompactList}\item 
+float {\bf energy\-Sum} (std\-::vector$<$ Sim\-Calorimeter\-Hit $\ast$ $>$ vec\-Sim\-Hits)\label{classCALICE_1_1AHCAL_1_1Digitization_1_1Ganging_1_1ahcalGangingProcessor_ad7057224da280aae5d6dd0b1b6987f5d}
+
+\begin{DoxyCompactList}\small\item\em Helper function to add up all Sim\-Calorimeter\-Hit energies. \end{DoxyCompactList}\item 
+void {\bf create\-Output\-Collections} (lcio\-::\-L\-C\-Event $\ast$evt)\label{classCALICE_1_1AHCAL_1_1Digitization_1_1Ganging_1_1ahcalGangingProcessor_a97a288c25d78ca34a840537937c6e650}
+
+\begin{DoxyCompactList}\small\item\em Creates the ganged collection. \end{DoxyCompactList}\item 
+void {\bf tidy\-Up} ()\label{classCALICE_1_1AHCAL_1_1Digitization_1_1Ganging_1_1ahcalGangingProcessor_ae693cebeaff120fdc170c1470efd4f88}
+
+\begin{DoxyCompactList}\small\item\em Resets everything which is event specific. \end{DoxyCompactList}\item 
+void {\bfseries end} ()\label{classCALICE_1_1AHCAL_1_1Digitization_1_1Ganging_1_1ahcalGangingProcessor_ac8591372ea5a0fde5b77d10cc3cb1187}
+
+\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+std\-::string {\bf \-\_\-input\-Collection\-Name}\label{classCALICE_1_1AHCAL_1_1Digitization_1_1Ganging_1_1ahcalGangingProcessor_a86280fa3badb720de25a0580e5d57223}
+
+\begin{DoxyCompactList}\small\item\em The name of the incoming collection. \end{DoxyCompactList}\item 
+std\-::string {\bf \-\_\-output\-Collection\-Name}\label{classCALICE_1_1AHCAL_1_1Digitization_1_1Ganging_1_1ahcalGangingProcessor_a3bb50975778976e74b076ac14059fd81}
+
+\begin{DoxyCompactList}\small\item\em The name of the outgoing collection. \end{DoxyCompactList}\item 
+float {\bfseries \-\_\-tile\-Border\-Attenuation\-Factor}\label{classCALICE_1_1AHCAL_1_1Digitization_1_1Ganging_1_1ahcalGangingProcessor_a3b6ac87efbe5f79354ecf9bb86f6b641}
+
+\item 
+{\bf Contribution\-Map} {\bf \-\_\-contribution\-Map}
+\begin{DoxyCompactList}\small\item\em Instance which holds the gather Sim\-Calorimeter\-Hits. \end{DoxyCompactList}\item 
+std\-::vector$<$ {\bf Ganger} $\ast$ $>$ {\bf \-\_\-gangers\-For\-Fine\-Modules}
+\begin{DoxyCompactList}\small\item\em All gangers needed for a fine module. \end{DoxyCompactList}\item 
+std\-::vector$<$ {\bf Ganger} $\ast$ $>$ {\bf \-\_\-gangers\-For\-Coarse\-Modules}
+\begin{DoxyCompactList}\small\item\em All gangers needed for a coarse module. \end{DoxyCompactList}\item 
+std\-::map$<$ int, Module\-Type $>$ {\bf \-\_\-module\-Type\-Order}
+\begin{DoxyCompactList}\small\item\em Layer to module type map. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+The processor performing the ganging. 
+
+Definition at line 75 of file ahcal\-Ganging\-Processor.\-hh.
+
+
+
+\subsection{Member Function Documentation}
+\index{C\-A\-L\-I\-C\-E\-::\-A\-H\-C\-A\-L\-::\-Digitization\-::\-Ganging\-::ahcal\-Ganging\-Processor@{C\-A\-L\-I\-C\-E\-::\-A\-H\-C\-A\-L\-::\-Digitization\-::\-Ganging\-::ahcal\-Ganging\-Processor}!init@{init}}
+\index{init@{init}!CALICE::AHCAL::Digitization::Ganging::ahcalGangingProcessor@{C\-A\-L\-I\-C\-E\-::\-A\-H\-C\-A\-L\-::\-Digitization\-::\-Ganging\-::ahcal\-Ganging\-Processor}}
+\subsubsection[{init}]{\setlength{\rightskip}{0pt plus 5cm}void ahcal\-Ganging\-Processor\-::init (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{classCALICE_1_1AHCAL_1_1Digitization_1_1Ganging_1_1ahcalGangingProcessor_af1f1ff625562d20de4107f25a9998394}
+
+
+Initiliases the ganging chain of responsibilty for fine and coarse modules. 
+
+Defines location of module types. 
+
+Definition at line 166 of file ahcal\-Ganging\-Processor.\-cc.
+
+
+
+\subsection{Field Documentation}
+\index{C\-A\-L\-I\-C\-E\-::\-A\-H\-C\-A\-L\-::\-Digitization\-::\-Ganging\-::ahcal\-Ganging\-Processor@{C\-A\-L\-I\-C\-E\-::\-A\-H\-C\-A\-L\-::\-Digitization\-::\-Ganging\-::ahcal\-Ganging\-Processor}!\-\_\-contribution\-Map@{\-\_\-contribution\-Map}}
+\index{\-\_\-contribution\-Map@{\-\_\-contribution\-Map}!CALICE::AHCAL::Digitization::Ganging::ahcalGangingProcessor@{C\-A\-L\-I\-C\-E\-::\-A\-H\-C\-A\-L\-::\-Digitization\-::\-Ganging\-::ahcal\-Ganging\-Processor}}
+\subsubsection[{\-\_\-contribution\-Map}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Contribution\-Map} C\-A\-L\-I\-C\-E\-::\-A\-H\-C\-A\-L\-::\-Digitization\-::\-Ganging\-::ahcal\-Ganging\-Processor\-::\-\_\-contribution\-Map\hspace{0.3cm}{\ttfamily [private]}}\label{classCALICE_1_1AHCAL_1_1Digitization_1_1Ganging_1_1ahcalGangingProcessor_a8440464f02c34f8267bc3fffc23e5f5f}
+
+
+Instance which holds the gather Sim\-Calorimeter\-Hits. 
+
+The outcome of the ganging is here. 
+
+Definition at line 125 of file ahcal\-Ganging\-Processor.\-hh.
+
+\index{C\-A\-L\-I\-C\-E\-::\-A\-H\-C\-A\-L\-::\-Digitization\-::\-Ganging\-::ahcal\-Ganging\-Processor@{C\-A\-L\-I\-C\-E\-::\-A\-H\-C\-A\-L\-::\-Digitization\-::\-Ganging\-::ahcal\-Ganging\-Processor}!\-\_\-gangers\-For\-Coarse\-Modules@{\-\_\-gangers\-For\-Coarse\-Modules}}
+\index{\-\_\-gangers\-For\-Coarse\-Modules@{\-\_\-gangers\-For\-Coarse\-Modules}!CALICE::AHCAL::Digitization::Ganging::ahcalGangingProcessor@{C\-A\-L\-I\-C\-E\-::\-A\-H\-C\-A\-L\-::\-Digitization\-::\-Ganging\-::ahcal\-Ganging\-Processor}}
+\subsubsection[{\-\_\-gangers\-For\-Coarse\-Modules}]{\setlength{\rightskip}{0pt plus 5cm}std\-::vector$<${\bf Ganger}$\ast$$>$ C\-A\-L\-I\-C\-E\-::\-A\-H\-C\-A\-L\-::\-Digitization\-::\-Ganging\-::ahcal\-Ganging\-Processor\-::\-\_\-gangers\-For\-Coarse\-Modules\hspace{0.3cm}{\ttfamily [private]}}\label{classCALICE_1_1AHCAL_1_1Digitization_1_1Ganging_1_1ahcalGangingProcessor_a3136b9597513288f99e8f4e5599da935}
+
+
+All gangers needed for a coarse module. 
+
+Filled in \doxyref{init()}{p.}{classCALICE_1_1AHCAL_1_1Digitization_1_1Ganging_1_1ahcalGangingProcessor_af1f1ff625562d20de4107f25a9998394}. 
+
+Definition at line 133 of file ahcal\-Ganging\-Processor.\-hh.
+
+\index{C\-A\-L\-I\-C\-E\-::\-A\-H\-C\-A\-L\-::\-Digitization\-::\-Ganging\-::ahcal\-Ganging\-Processor@{C\-A\-L\-I\-C\-E\-::\-A\-H\-C\-A\-L\-::\-Digitization\-::\-Ganging\-::ahcal\-Ganging\-Processor}!\-\_\-gangers\-For\-Fine\-Modules@{\-\_\-gangers\-For\-Fine\-Modules}}
+\index{\-\_\-gangers\-For\-Fine\-Modules@{\-\_\-gangers\-For\-Fine\-Modules}!CALICE::AHCAL::Digitization::Ganging::ahcalGangingProcessor@{C\-A\-L\-I\-C\-E\-::\-A\-H\-C\-A\-L\-::\-Digitization\-::\-Ganging\-::ahcal\-Ganging\-Processor}}
+\subsubsection[{\-\_\-gangers\-For\-Fine\-Modules}]{\setlength{\rightskip}{0pt plus 5cm}std\-::vector$<${\bf Ganger}$\ast$$>$ C\-A\-L\-I\-C\-E\-::\-A\-H\-C\-A\-L\-::\-Digitization\-::\-Ganging\-::ahcal\-Ganging\-Processor\-::\-\_\-gangers\-For\-Fine\-Modules\hspace{0.3cm}{\ttfamily [private]}}\label{classCALICE_1_1AHCAL_1_1Digitization_1_1Ganging_1_1ahcalGangingProcessor_aec06e26e5edfbccd58b555e87ea08f27}
+
+
+All gangers needed for a fine module. 
+
+Filled in \doxyref{init()}{p.}{classCALICE_1_1AHCAL_1_1Digitization_1_1Ganging_1_1ahcalGangingProcessor_af1f1ff625562d20de4107f25a9998394}. 
+
+Definition at line 129 of file ahcal\-Ganging\-Processor.\-hh.
+
+\index{C\-A\-L\-I\-C\-E\-::\-A\-H\-C\-A\-L\-::\-Digitization\-::\-Ganging\-::ahcal\-Ganging\-Processor@{C\-A\-L\-I\-C\-E\-::\-A\-H\-C\-A\-L\-::\-Digitization\-::\-Ganging\-::ahcal\-Ganging\-Processor}!\-\_\-module\-Type\-Order@{\-\_\-module\-Type\-Order}}
+\index{\-\_\-module\-Type\-Order@{\-\_\-module\-Type\-Order}!CALICE::AHCAL::Digitization::Ganging::ahcalGangingProcessor@{C\-A\-L\-I\-C\-E\-::\-A\-H\-C\-A\-L\-::\-Digitization\-::\-Ganging\-::ahcal\-Ganging\-Processor}}
+\subsubsection[{\-\_\-module\-Type\-Order}]{\setlength{\rightskip}{0pt plus 5cm}std\-::map$<$int,Module\-Type$>$ C\-A\-L\-I\-C\-E\-::\-A\-H\-C\-A\-L\-::\-Digitization\-::\-Ganging\-::ahcal\-Ganging\-Processor\-::\-\_\-module\-Type\-Order\hspace{0.3cm}{\ttfamily [private]}}\label{classCALICE_1_1AHCAL_1_1Digitization_1_1Ganging_1_1ahcalGangingProcessor_a1cb7ea3c7daaca045c4d5147eaa077da}
+
+
+Layer to module type map. 
+
+Filled in \doxyref{init()}{p.}{classCALICE_1_1AHCAL_1_1Digitization_1_1Ganging_1_1ahcalGangingProcessor_af1f1ff625562d20de4107f25a9998394}. 
+
+Definition at line 137 of file ahcal\-Ganging\-Processor.\-hh.
+
+
+
+The documentation for this class was generated from the following files\-:\begin{DoxyCompactItemize}
+\item 
+ahcal\-Ganging\-Processor.\-hh\item 
+ahcal\-Ganging\-Processor.\-cc\end{DoxyCompactItemize}

@@ -1,0 +1,156 @@
+\section{C\-A\-L\-I\-C\-E\-:\-:Ahc\-Median\-Filter\-Temp\-Provider Class Reference}
+\label{classCALICE_1_1AhcMedianFilterTempProvider}\index{C\-A\-L\-I\-C\-E\-::\-Ahc\-Median\-Filter\-Temp\-Provider@{C\-A\-L\-I\-C\-E\-::\-Ahc\-Median\-Filter\-Temp\-Provider}}
+
+
+This is a very simple temperature provider for the ahcal.  
+
+
+
+
+{\ttfamily \#include $<$Ahc\-Median\-Filter\-Temp\-Provider.\-hh$>$}
+
+Inheritance diagram for C\-A\-L\-I\-C\-E\-:\-:Ahc\-Median\-Filter\-Temp\-Provider\-:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classCALICE_1_1AhcMedianFilterTempProvider}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+{\bfseries Ahc\-Median\-Filter\-Temp\-Provider} ({\bf Ahc\-Mapper} const $\ast$mapper)\label{classCALICE_1_1AhcMedianFilterTempProvider_afc6895b4468f12307c2da9f64c3eb5ed}
+
+\item 
+virtual float {\bf get\-Cell\-Temp} (int module, int chip, int chan)
+\begin{DoxyCompactList}\small\item\em Returns the temperature for the cell in the specified module connected to the given chip and channel. \end{DoxyCompactList}\item 
+virtual float {\bf get\-Cell\-Temp\-Error} (int module, int chip, int chan)\label{classCALICE_1_1AhcMedianFilterTempProvider_ace083f026078087a40383dd051d34843}
+
+\begin{DoxyCompactList}\small\item\em Returns the error on the temperature for the cell in the specified module connected to the given chip and channel. \end{DoxyCompactList}\item 
+virtual float {\bf get\-Avg\-Temp} ()\label{classCALICE_1_1AhcMedianFilterTempProvider_a237fba51962e5102c9580cfa9ed431fa}
+
+\begin{DoxyCompactList}\small\item\em Returns the average calorimeter temperature. \end{DoxyCompactList}\item 
+virtual float {\bf get\-Avg\-Module\-Temp} (unsigned module)\label{classCALICE_1_1AhcMedianFilterTempProvider_a5395b7d6095c39af7e0b80b133ba400d}
+
+\begin{DoxyCompactList}\small\item\em Returns the average module temperature. \end{DoxyCompactList}\item 
+float {\bf get\-Sensor\-Temp} (int module, int sensor)\label{classCALICE_1_1AhcMedianFilterTempProvider_ac9f730849a87bda3106773b7dc869f2e}
+
+\begin{DoxyCompactList}\small\item\em Return the temperature for the specified module and sensor. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+virtual void {\bf apply\-Correction} ()
+\begin{DoxyCompactList}\small\item\em This function applies the correction to the internal 'cache' for the temperature values from the five sensors. \end{DoxyCompactList}\item 
+bool {\bf is\-Bad\-Value} (float t)\label{classCALICE_1_1AhcMedianFilterTempProvider_a708c84d516d63059ba6665dae2da147e}
+
+\begin{DoxyCompactList}\small\item\em Returns true if argument value is outside the sanity range. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+int {\bf get\-Sensor} (int chip, int chan)\label{classCALICE_1_1AhcMedianFilterTempProvider_a23a23ba36d563be88a3f1a20a51b28c9}
+
+\begin{DoxyCompactList}\small\item\em Returns the closest sensor to cell connected to chip, chan according to D\-E\-S\-Y-\/\-T\-H\-E\-S\-I\-S-\/2008-\/050. \end{DoxyCompactList}\item 
+double {\bfseries median} (float a[$\,$], int n)\label{classCALICE_1_1AhcMedianFilterTempProvider_acab9513cd7e4395371bde8d433177cdb}
+
+\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+{\bf Ahc\-Mapper} const $\ast$ {\bfseries \-\_\-mapper}\label{classCALICE_1_1AhcMedianFilterTempProvider_aa401791e44b7cc8c0c9093b66d84ac6a}
+
+\item 
+float {\bfseries \-\_\-calo\-Mean\-Temp}\label{classCALICE_1_1AhcMedianFilterTempProvider_a76bfbd1b9fd6deead5eeaf572f2498ef}
+
+\item 
+float {\bfseries \-\_\-calo\-Mean\-Temp\-R\-M\-S}\label{classCALICE_1_1AhcMedianFilterTempProvider_a73f567416a0bcb8b5f8a130df8cad1f3}
+
+\item 
+int {\bfseries \-\_\-calo\-Mean\-Count}\label{classCALICE_1_1AhcMedianFilterTempProvider_abfa3e2672c774bc6814b5f44eda6ba9a}
+
+\item 
+std\-::vector$<$ float $>$ {\bfseries \-\_\-module\-Mean\-Temp}\label{classCALICE_1_1AhcMedianFilterTempProvider_a20f5463fcf3ba997a6b081615830940f}
+
+\item 
+std\-::vector$<$ float $>$ {\bfseries \-\_\-module\-Mean\-Temp\-R\-M\-S}\label{classCALICE_1_1AhcMedianFilterTempProvider_aecb3f33637742eb7af6b9e0cbdb276a8}
+
+\item 
+std\-::vector$<$ int $>$ {\bfseries \-\_\-module\-Mean\-Count}\label{classCALICE_1_1AhcMedianFilterTempProvider_a17ece36832271a1590d721aabc0ce7ed}
+
+\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Detailed Description}
+This is a very simple temperature provider for the ahcal. 
+
+What it does\-:
+\begin{DoxyItemize}
+\item the calibration set is applied
+\item if a temperature sensor gives a value outside the defined sanity range the value is replaced by the average of the four sensors in that module
+\item for each cell the temperature value from the 'closest' sensor, according to the table 3.\-1, D\-E\-S\-Y-\/\-T\-H\-E\-S\-I\-S-\/2008-\/050 is returned
+\end{DoxyItemize}
+
+Also see the documentation for the several functions for more detailed information. This new temperature provider with median filter created\-: Date\-: August 2013 Author\-: Sergey Morozov The temperature provider is based on the \doxyref{Ahc\-Simple\-Temp\-Provider}{p.}{classCALICE_1_1AhcSimpleTempProvider} with some updates\-:
+\begin{DoxyItemize}
+\item all temperature sensors are set to the layer average temperature.
+\item the median filter to layer-\/by-\/layer profile has been introduced. This will help to remove the out-\/layers with wrong temperature measurements in some layers of A\-H\-C\-A\-L. Note\-: you need smooth (median filtered for example) M\-I\-P and gain temperature profiles in the M\-I\-P and gain calibrations to use this tempetarure provider for data reconstruction! 
+\end{DoxyItemize}
+
+Definition at line 38 of file Ahc\-Median\-Filter\-Temp\-Provider.\-hh.
+
+
+
+\subsection{Member Function Documentation}
+\index{C\-A\-L\-I\-C\-E\-::\-Ahc\-Median\-Filter\-Temp\-Provider@{C\-A\-L\-I\-C\-E\-::\-Ahc\-Median\-Filter\-Temp\-Provider}!apply\-Correction@{apply\-Correction}}
+\index{apply\-Correction@{apply\-Correction}!CALICE::AhcMedianFilterTempProvider@{C\-A\-L\-I\-C\-E\-::\-Ahc\-Median\-Filter\-Temp\-Provider}}
+\subsubsection[{apply\-Correction}]{\setlength{\rightskip}{0pt plus 5cm}void C\-A\-L\-I\-C\-E\-::\-Ahc\-Median\-Filter\-Temp\-Provider\-::apply\-Correction (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}, {\ttfamily [virtual]}}\label{classCALICE_1_1AhcMedianFilterTempProvider_a9ffdad9db5836b0ceb55f317095cfe8c}
+
+
+This function applies the correction to the internal 'cache' for the temperature values from the five sensors. 
+
+It should be called everytime a new collection of temperatures or calibrations have been at set or the sanity range has been changed, i.\-e. if one of new\-Sro\-Mod\-Col, new\-Calib\-Col or new\-Sanity\-Range is true. This is done in \doxyref{get\-Cell\-Temp()}{p.}{classCALICE_1_1AhcMedianFilterTempProvider_a2d5865711d94a975e593df2713608880} and \doxyref{get\-Cell\-Temp\-Error()}{p.}{classCALICE_1_1AhcMedianFilterTempProvider_ace083f026078087a40383dd051d34843}. 
+
+Definition at line 97 of file Ahc\-Median\-Filter\-Temp\-Provider.\-cc.
+
+
+
+References C\-A\-L\-I\-C\-E\-::\-Ahc\-Temp\-Provider\-::\-\_\-sro\-Mod\-Col, C\-A\-L\-I\-C\-E\-::\-Ahc\-Mapper\-::get\-K(), C\-A\-L\-I\-C\-E\-::\-Scint\-Calo\-Slow\-Readout\-Mod\-Block\-::get\-Module\-Number(), is\-Bad\-Value(), C\-A\-L\-I\-C\-E\-::\-Ahc\-Temp\-Provider\-::new\-Calib\-Col, C\-A\-L\-I\-C\-E\-::\-Ahc\-Temp\-Provider\-::new\-Sanity\-Range, C\-A\-L\-I\-C\-E\-::\-Ahc\-Temp\-Provider\-::new\-Sro\-Mod\-Col, C\-A\-L\-I\-C\-E\-::\-Ahc\-Temp\-Provider\-::sensor\-Temp, C\-A\-L\-I\-C\-E\-::\-Ahc\-Temp\-Provider\-::sensor\-Temp\-Error, and C\-A\-L\-I\-C\-E\-::\-Ahc\-Temp\-Provider\-::update\-Cache().
+
+
+
+Referenced by get\-Avg\-Module\-Temp(), get\-Avg\-Temp(), get\-Cell\-Temp(), get\-Cell\-Temp\-Error(), and get\-Sensor\-Temp().
+
+\index{C\-A\-L\-I\-C\-E\-::\-Ahc\-Median\-Filter\-Temp\-Provider@{C\-A\-L\-I\-C\-E\-::\-Ahc\-Median\-Filter\-Temp\-Provider}!get\-Cell\-Temp@{get\-Cell\-Temp}}
+\index{get\-Cell\-Temp@{get\-Cell\-Temp}!CALICE::AhcMedianFilterTempProvider@{C\-A\-L\-I\-C\-E\-::\-Ahc\-Median\-Filter\-Temp\-Provider}}
+\subsubsection[{get\-Cell\-Temp}]{\setlength{\rightskip}{0pt plus 5cm}float C\-A\-L\-I\-C\-E\-::\-Ahc\-Median\-Filter\-Temp\-Provider\-::get\-Cell\-Temp (
+\begin{DoxyParamCaption}
+\item[{int}]{module, }
+\item[{int}]{chip, }
+\item[{int}]{chan}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}\label{classCALICE_1_1AhcMedianFilterTempProvider_a2d5865711d94a975e593df2713608880}
+
+
+Returns the temperature for the cell in the specified module connected to the given chip and channel. 
+
+For each cell the temperature value from the 'closest' sensor, according to the table 3.\-1, D\-E\-S\-Y-\/\-T\-H\-E\-S\-I\-S-\/2008-\/050 is returned. 
+
+Implements {\bf C\-A\-L\-I\-C\-E\-::\-Ahc\-Temp\-Provider} \doxyref{}{p.}{classCALICE_1_1AhcTempProvider_aa12c75d45d7ade54316dd113a6bab2d1}.
+
+
+
+Definition at line 19 of file Ahc\-Median\-Filter\-Temp\-Provider.\-cc.
+
+
+
+References apply\-Correction(), get\-Sensor(), C\-A\-L\-I\-C\-E\-::\-Ahc\-Temp\-Provider\-::new\-Calib\-Col, C\-A\-L\-I\-C\-E\-::\-Ahc\-Temp\-Provider\-::new\-Sanity\-Range, C\-A\-L\-I\-C\-E\-::\-Ahc\-Temp\-Provider\-::new\-Sro\-Mod\-Col, and C\-A\-L\-I\-C\-E\-::\-Ahc\-Temp\-Provider\-::sensor\-Temp.
+
+
+
+The documentation for this class was generated from the following files\-:\begin{DoxyCompactItemize}
+\item 
+Ahc\-Median\-Filter\-Temp\-Provider.\-hh\item 
+Ahc\-Median\-Filter\-Temp\-Provider.\-cc\end{DoxyCompactItemize}

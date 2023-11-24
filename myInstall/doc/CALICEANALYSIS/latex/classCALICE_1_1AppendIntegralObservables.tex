@@ -1,0 +1,94 @@
+\section{C\-A\-L\-I\-C\-E\-:\-:Append\-Integral\-Observables Class Reference}
+\label{classCALICE_1_1AppendIntegralObservables}\index{C\-A\-L\-I\-C\-E\-::\-Append\-Integral\-Observables@{C\-A\-L\-I\-C\-E\-::\-Append\-Integral\-Observables}}
+
+
+Processor for appending integral observables like energy sum per event to each event as event parameter.  
+
+
+
+
+{\ttfamily \#include $<$Append\-Integral\-Observables.\-hh$>$}
+
+Inheritance diagram for C\-A\-L\-I\-C\-E\-:\-:Append\-Integral\-Observables\-:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classCALICE_1_1AppendIntegralObservables}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+virtual Processor $\ast$ {\bfseries new\-Processor} ()\label{classCALICE_1_1AppendIntegralObservables_ae4e5bf5b6b635918b71198dfdcc2de41}
+
+\item 
+virtual void {\bf init} ()
+\item 
+virtual void {\bf process\-Run\-Header} (L\-C\-Run\-Header $\ast$run)
+\item 
+virtual void {\bf process\-Event} (L\-C\-Event $\ast$evt)
+\item 
+virtual void {\bfseries check} (L\-C\-Event $\ast$evt)\label{classCALICE_1_1AppendIntegralObservables_a6a616ca3848eefb2008f64ad2533725d}
+
+\item 
+virtual void {\bf end} ()
+\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+std\-::string {\bfseries \-\_\-col\-Name\-In}\label{classCALICE_1_1AppendIntegralObservables_a61277a3bfaf5170147ad4955d97b64bb}
+
+\item 
+int {\bfseries \-\_\-n\-Run}\label{classCALICE_1_1AppendIntegralObservables_a96fe79f733d56fc1abfba93f9dd507a0}
+
+\item 
+int {\bfseries \-\_\-n\-Evt}\label{classCALICE_1_1AppendIntegralObservables_a24a6b0239aeb481f2d5efd8a41704f24}
+
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Processor for appending integral observables like energy sum per event to each event as event parameter. 
+
+\begin{DoxyAuthor}{Author}
+N. Feege, University of Hamburg 
+\end{DoxyAuthor}
+\begin{DoxyDate}{Date}
+May 2010 
+\end{DoxyDate}
+
+
+\subsection{Member Function Documentation}
+\index{C\-A\-L\-I\-C\-E\-::\-Append\-Integral\-Observables@{C\-A\-L\-I\-C\-E\-::\-Append\-Integral\-Observables}!end@{end}}
+\index{end@{end}!CALICE::AppendIntegralObservables@{C\-A\-L\-I\-C\-E\-::\-Append\-Integral\-Observables}}
+\subsubsection[{end}]{\setlength{\rightskip}{0pt plus 5cm}void C\-A\-L\-I\-C\-E\-::\-Append\-Integral\-Observables\-::end (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}\label{classCALICE_1_1AppendIntegralObservables_a7430551409a1385ce1291b725d5e0003}
+Called after data processing for clean up. \index{C\-A\-L\-I\-C\-E\-::\-Append\-Integral\-Observables@{C\-A\-L\-I\-C\-E\-::\-Append\-Integral\-Observables}!init@{init}}
+\index{init@{init}!CALICE::AppendIntegralObservables@{C\-A\-L\-I\-C\-E\-::\-Append\-Integral\-Observables}}
+\subsubsection[{init}]{\setlength{\rightskip}{0pt plus 5cm}void C\-A\-L\-I\-C\-E\-::\-Append\-Integral\-Observables\-::init (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}\label{classCALICE_1_1AppendIntegralObservables_a75e4d2e19ff5c01d7a7a0e637692ee88}
+Called at the begin of the job before anything is read. Use to initialize the processor, e.\-g. book histograms. \index{C\-A\-L\-I\-C\-E\-::\-Append\-Integral\-Observables@{C\-A\-L\-I\-C\-E\-::\-Append\-Integral\-Observables}!process\-Event@{process\-Event}}
+\index{process\-Event@{process\-Event}!CALICE::AppendIntegralObservables@{C\-A\-L\-I\-C\-E\-::\-Append\-Integral\-Observables}}
+\subsubsection[{process\-Event}]{\setlength{\rightskip}{0pt plus 5cm}void C\-A\-L\-I\-C\-E\-::\-Append\-Integral\-Observables\-::process\-Event (
+\begin{DoxyParamCaption}
+\item[{L\-C\-Event $\ast$}]{evt}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}\label{classCALICE_1_1AppendIntegralObservables_a4cb4c0e7ab84e80068282e0fe9efd72a}
+Called for every event -\/ the working horse. \index{C\-A\-L\-I\-C\-E\-::\-Append\-Integral\-Observables@{C\-A\-L\-I\-C\-E\-::\-Append\-Integral\-Observables}!process\-Run\-Header@{process\-Run\-Header}}
+\index{process\-Run\-Header@{process\-Run\-Header}!CALICE::AppendIntegralObservables@{C\-A\-L\-I\-C\-E\-::\-Append\-Integral\-Observables}}
+\subsubsection[{process\-Run\-Header}]{\setlength{\rightskip}{0pt plus 5cm}void C\-A\-L\-I\-C\-E\-::\-Append\-Integral\-Observables\-::process\-Run\-Header (
+\begin{DoxyParamCaption}
+\item[{L\-C\-Run\-Header $\ast$}]{run}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}\label{classCALICE_1_1AppendIntegralObservables_ab7f95ebc7f017da0a70120f47c155f2d}
+Called for every run. 
+
+The documentation for this class was generated from the following files\-:\begin{DoxyCompactItemize}
+\item 
+/nfs/dust/ilc/user/marquezh/\-Calice\-Soft\-\_\-w\-\_\-\-I\-L\-C\-Soft\-\_\-v02-\/03-\/02/calice\-\_\-analysis/addon\-Procs/include/Append\-Integral\-Observables.\-hh\item 
+/nfs/dust/ilc/user/marquezh/\-Calice\-Soft\-\_\-w\-\_\-\-I\-L\-C\-Soft\-\_\-v02-\/03-\/02/calice\-\_\-analysis/addon\-Procs/src/Append\-Integral\-Observables.\-cc\end{DoxyCompactItemize}

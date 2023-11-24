@@ -1,0 +1,68 @@
+\section{/nfs/dust/ilc/user/marquezh/\-Calice\-Soft\-\_\-w\-\_\-\-I\-L\-C\-Soft\-\_\-v02-\/03-\/02/calice\-\_\-db\-\_\-tools/src/copy\-\_\-dbfolder2dump.cc File Reference}
+\label{copy__dbfolder2dump_8cc}\index{/nfs/dust/ilc/user/marquezh/\-Calice\-Soft\-\_\-w\-\_\-\-I\-L\-C\-Soft\-\_\-v02-\/03-\/02/calice\-\_\-db\-\_\-tools/src/copy\-\_\-dbfolder2dump.\-cc@{/nfs/dust/ilc/user/marquezh/\-Calice\-Soft\-\_\-w\-\_\-\-I\-L\-C\-Soft\-\_\-v02-\/03-\/02/calice\-\_\-db\-\_\-tools/src/copy\-\_\-dbfolder2dump.\-cc}}
+{\ttfamily \#include \char`\"{}lcio.\-h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}E\-V\-E\-N\-T/\-L\-C\-Collection.\-h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}I\-M\-P\-L/\-L\-C\-Collection\-Vec.\-h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}I\-M\-P\-L/\-L\-C\-Event\-Impl.\-h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}I\-M\-P\-L/\-L\-C\-Parameters\-Impl.\-h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}I\-M\-P\-L/\-L\-C\-Run\-Header\-Impl.\-h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}U\-T\-I\-L/\-L\-C\-Time.\-h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}U\-T\-I\-L/\-L\-C\-T\-O\-O\-L\-S.\-h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}Run\-Time\-Info.\-hh\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}Daq\-Run\-Summary\-Block.\-hh\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}Ahc\-Slow\-Readout\-Block.\-hh\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}Bml\-Slow\-Run\-Data\-Block.\-hh\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}Beam\-Momentum.\-hh\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}lccd.\-h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}lccd/\-D\-B\-Interface.\-hh\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}Conditions\-D\-B/\-I\-Cond\-D\-B\-Mgr.\-h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}Conditions\-D\-B/\-I\-Cond\-D\-B\-Data\-Access.\-h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}Conditions\-D\-B/\-I\-Cond\-D\-B\-Data\-Iterator.\-h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}Conditions\-D\-B/\-Cond\-D\-B\-Obj\-Factory.\-h\char`\"{}}\\*
+{\ttfamily \#include $<$algorithm$>$}\\*
+{\ttfamily \#include $<$functional$>$}\\*
+{\ttfamily \#include $<$sstream$>$}\\*
+{\ttfamily \#include $<$string$>$}\\*
+{\ttfamily \#include $<$map$>$}\\*
+{\ttfamily \#include $<$utility$>$}\\*
+{\ttfamily \#include \char`\"{}Calice\-D\-B\-Init\-Helper.\-hh\char`\"{}}\\*
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+void {\bfseries write\-File} (std\-::string folder)\label{copy__dbfolder2dump_8cc_ada0ffd7754b118c1822366ad197a1fdd}
+
+\item 
+int {\bfseries main} (int argc, char $\ast$$\ast$argv)\label{copy__dbfolder2dump_8cc_a3c04138a5bfe5d72780bb7e82a18e627}
+
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+This tool dumps the whole content of a database folder (all times and tags) to an .slcio file. The output file name is generated automatically.
+
+Usage\-:
+
+
+\begin{DoxyCode}
+copy\_dbfolder2dump <foldername>
+\end{DoxyCode}
+
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em $<$foldername$>$} & source database folder\\
+\hline
+\end{DoxyParams}
+\begin{DoxySeeAlso}{See Also}
+\doxyref{copy\-\_\-dbfolder2dbfile.\-cc}{p.}{copy__dbfolder2dbfile_8cc} 
+
+\doxyref{copy\-\_\-dbfolder2simplefile.\-cc}{p.}{copy__dbfolder2simplefile_8cc} 
+
+\doxyref{copy\-\_\-dump2dbfolder.\-cc}{p.}{copy__dump2dbfolder_8cc} 
+
+\doxyref{copy\-\_\-file2dbfolder.\-cc}{p.}{copy__file2dbfolder_8cc} 
+\end{DoxySeeAlso}
+
+
+Definition in file {\bf copy\-\_\-dbfolder2dump.\-cc}.
+

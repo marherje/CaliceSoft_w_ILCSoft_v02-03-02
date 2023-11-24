@@ -1,0 +1,95 @@
+\section{digisim\-:\-:Digi\-Sim\-Processor Class Reference}
+\label{classdigisim_1_1DigiSimProcessor}\index{digisim\-::\-Digi\-Sim\-Processor@{digisim\-::\-Digi\-Sim\-Processor}}
+Inheritance diagram for digisim\-:\-:Digi\-Sim\-Processor\-:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classdigisim_1_1DigiSimProcessor}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+virtual Processor $\ast$ {\bfseries new\-Processor} ()\label{classdigisim_1_1DigiSimProcessor_aa222ce6e8d8948c1d1c6dd413d3a0d45}
+
+\item 
+void {\bfseries print\-Relation} (const E\-V\-E\-N\-T\-::\-L\-C\-Collection $\ast$col) const \label{classdigisim_1_1DigiSimProcessor_a524cf1b360877b285cbe11775db8b24e}
+
+\item 
+virtual void {\bf init} ()
+\begin{DoxyCompactList}\small\item\em Called at the begin of the job before anything is read. \end{DoxyCompactList}\item 
+virtual void {\bf process\-Run\-Header} (L\-C\-Run\-Header $\ast$run)\label{classdigisim_1_1DigiSimProcessor_afebcfdc5cee837f85b936f1bb2755641}
+
+\begin{DoxyCompactList}\small\item\em Called for every run. \end{DoxyCompactList}\item 
+virtual void {\bf process\-Event} (L\-C\-Event $\ast$evt)\label{classdigisim_1_1DigiSimProcessor_a9871ae2646095074aa75eba727d3377a}
+
+\begin{DoxyCompactList}\small\item\em Called for every event -\/ the working horse. \end{DoxyCompactList}\item 
+virtual void {\bf end} ()\label{classdigisim_1_1DigiSimProcessor_a2028c0212bdad8abc1359f0a6652d1a4}
+
+\begin{DoxyCompactList}\small\item\em Called after data processing for clean up. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+string {\bfseries diginame}\label{classdigisim_1_1DigiSimProcessor_a1f36e9a8e9f51d4138b194ae39e90344}
+
+\item 
+L\-C\-Writer $\ast$ {\bfseries \-\_\-lc\-Wrt}\label{classdigisim_1_1DigiSimProcessor_a775602d175432ad858eb44d3d2bfa8e9}
+
+\item 
+int {\bfseries \-\_\-n\-Run}\label{classdigisim_1_1DigiSimProcessor_ad02d718ca23c6918b78d56bc73170303}
+
+\item 
+int {\bfseries \-\_\-n\-Evt}\label{classdigisim_1_1DigiSimProcessor_a91a6f63de7603ee1d9fc13c95439cf4e}
+
+\item 
+int {\bfseries \-\_\-debug}\label{classdigisim_1_1DigiSimProcessor_af12d11d34e1b73e055a6f65fce61efd3}
+
+\item 
+std\-::list$<$ {\bf Cal\-Hit\-Modifier} $\ast$ $>$ {\bfseries \-\_\-modifs}\label{classdigisim_1_1DigiSimProcessor_a75b1fc16f09f7c3018a62a744f786663}
+
+\item 
+std\-::string {\bfseries \-\_\-input\-Coll}\label{classdigisim_1_1DigiSimProcessor_a4d79d468a8eaa78ee05c68df7c6b24d2}
+
+\item 
+std\-::string {\bfseries \-\_\-output\-Coll}\label{classdigisim_1_1DigiSimProcessor_a5b55fe6a6503cf31a89a066e96875057}
+
+\item 
+std\-::string {\bfseries \-\_\-links\-Coll}\label{classdigisim_1_1DigiSimProcessor_a99b2a5a5c2666d367b59eda5b1157a67}
+
+\item 
+std\-::vector$<$ std\-::string $>$ {\bfseries \-\_\-modif\-Names}\label{classdigisim_1_1DigiSimProcessor_ad1b9e146bff72901ef2f7714ff337185}
+
+\item 
+std\-::vector$<$ {\bf Digitizer} $>$ {\bfseries \-\_\-digitizers}\label{classdigisim_1_1DigiSimProcessor_a092b7a7d3a2311925a1ff343305f77ed}
+
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+
+
+Definition at line 29 of file Digi\-Sim\-Processor.\-hpp.
+
+
+
+\subsection{Member Function Documentation}
+\index{digisim\-::\-Digi\-Sim\-Processor@{digisim\-::\-Digi\-Sim\-Processor}!init@{init}}
+\index{init@{init}!digisim::DigiSimProcessor@{digisim\-::\-Digi\-Sim\-Processor}}
+\subsubsection[{init}]{\setlength{\rightskip}{0pt plus 5cm}void digisim\-::\-Digi\-Sim\-Processor\-::init (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}\label{classdigisim_1_1DigiSimProcessor_a2ffa050ec7b4477cbce6da55a4a1d1e9}
+
+
+Called at the begin of the job before anything is read. 
+
+Use to initialize the processor, e.\-g. book histograms. 
+
+Definition at line 90 of file Digi\-Sim\-Processor.\-cpp.
+
+
+
+The documentation for this class was generated from the following files\-:\begin{DoxyCompactItemize}
+\item 
+Digi\-Sim\-Processor.\-hpp\item 
+Digi\-Sim\-Processor.\-cpp\end{DoxyCompactItemize}

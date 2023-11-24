@@ -1,0 +1,182 @@
+\section{C\-A\-L\-I\-C\-E\-:\-:Dhc\-Readout\-Conf\-Block Class Reference}
+\label{classCALICE_1_1DhcReadoutConfBlock}\index{C\-A\-L\-I\-C\-E\-::\-Dhc\-Readout\-Conf\-Block@{C\-A\-L\-I\-C\-E\-::\-Dhc\-Readout\-Conf\-Block}}
+
+
+Class to interface the configuration of the Dhcal fes.  
+
+
+
+
+{\ttfamily \#include $<$Dhc\-Readout\-Conf\-Block.\-hh$>$}
+
+Inheritance diagram for C\-A\-L\-I\-C\-E\-:\-:Dhc\-Readout\-Conf\-Block\-:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=3.000000cm]{classCALICE_1_1DhcReadoutConfBlock}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+{\bf Dhc\-Readout\-Conf\-Block} ()\label{classCALICE_1_1DhcReadoutConfBlock_a70a6203130f321b808bfd840623d9e7f}
+
+\begin{DoxyCompactList}\small\item\em Simple Constructor. \end{DoxyCompactList}\item 
+{\bf Dhc\-Readout\-Conf\-Block} (L\-C\-Object $\ast${\bf obj})
+\begin{DoxyCompactList}\small\item\em 'Copy constructor' needed to interpret L\-C\-Collection read from file/database. \end{DoxyCompactList}\item 
+virtual {\bf $\sim$\-Dhc\-Readout\-Conf\-Block} ()\label{classCALICE_1_1DhcReadoutConfBlock_a1765688be6fb5c820ad7403b700b4462}
+
+\begin{DoxyCompactList}\small\item\em The destructor. \end{DoxyCompactList}\item 
+{\bf Dhc\-Readout\-Conf\-Block} \& {\bf set\-Numbers} (unsigned int numbers)\label{classCALICE_1_1DhcReadoutConfBlock_ae23cae3a4b8e9a5390e67a8a9022d401}
+
+\begin{DoxyCompactList}\small\item\em Set the numbers. \end{DoxyCompactList}\item 
+unsigned int {\bf get\-Numbers} () const \label{classCALICE_1_1DhcReadoutConfBlock_a9f32a07abeb6b9231c893af87d489458}
+
+\begin{DoxyCompactList}\small\item\em Get the numbers. \end{DoxyCompactList}\item 
+unsigned int {\bf get\-Crate\-Number} ()\label{classCALICE_1_1DhcReadoutConfBlock_a780bef3bacec82f4b3526eb27c2d7115}
+
+\begin{DoxyCompactList}\small\item\em Return the crate number, can be obtained from numbers. \end{DoxyCompactList}\item 
+{\bf Dhc\-Readout\-Conf\-Block} \& {\bf set\-Slot\-Enable\-Mask} (unsigned int slotenablemask)\label{classCALICE_1_1DhcReadoutConfBlock_afa415eb6133bf1c69058c298322770d6}
+
+\begin{DoxyCompactList}\small\item\em Set the slot enable mask, which tells which slots in could (in principle) have been enabled. \end{DoxyCompactList}\item 
+unsigned int {\bf get\-Slot\-Enable\-Mask} () const \label{classCALICE_1_1DhcReadoutConfBlock_af6c73aac10efdf9b040b3f7c129b460d}
+
+\begin{DoxyCompactList}\small\item\em Get the slot enable mask. \end{DoxyCompactList}\item 
+{\bf Dhc\-Readout\-Conf\-Block} \& {\bf set\-Slot\-Enable} (unsigned int slotenable)
+\begin{DoxyCompactList}\small\item\em Set the slot enable, i.\-e. \end{DoxyCompactList}\item 
+unsigned int {\bf get\-Slot\-Enable} () const \label{classCALICE_1_1DhcReadoutConfBlock_a3b7ff51d37ea0eb0d9fd28483d4f4d05}
+
+\begin{DoxyCompactList}\small\item\em Get the slot enable. \end{DoxyCompactList}\item 
+{\bf Dhc\-Readout\-Conf\-Block} \& {\bf set\-Number\-Of\-Slots} (unsigned int numslots)\label{classCALICE_1_1DhcReadoutConfBlock_aa8c67bc9f9b615951ffaeb1322780870}
+
+\begin{DoxyCompactList}\small\item\em Set the number of slots, note that this number will have to be multiplied by two, leave it for the time being. \end{DoxyCompactList}\item 
+unsigned int {\bf get\-Number\-Of\-Slots} () const \label{classCALICE_1_1DhcReadoutConfBlock_ade3ff579b72a62e49ffb1ac2eb5d4af0}
+
+\begin{DoxyCompactList}\small\item\em Get the numbers of slots. \end{DoxyCompactList}\item 
+{\bf Dhc\-Readout\-Conf\-Block} \& {\bf set\-Slot\-Fe\-Enable} (unsigned int islot, unsigned int val)\label{classCALICE_1_1DhcReadoutConfBlock_a86d81715bb55e049b0165413b5dd78e7}
+
+\begin{DoxyCompactList}\small\item\em Set the enabled fes for this slot. \end{DoxyCompactList}\item 
+unsigned short {\bf get\-Slot\-Fe\-Enable} (unsigned int islot)\label{classCALICE_1_1DhcReadoutConfBlock_a6dfd32e97665265a42e265be9adaad72}
+
+\begin{DoxyCompactList}\small\item\em Get the enabled fes for this slot. \end{DoxyCompactList}\item 
+{\bf Dhc\-Readout\-Conf\-Block} \& {\bf set\-Slot\-Fe\-Revision} (unsigned int islot, unsigned char val)\label{classCALICE_1_1DhcReadoutConfBlock_a50394d95d1b8a5645fd20aea51eab985}
+
+\begin{DoxyCompactList}\small\item\em Set the revision number of the fes for this slot. \end{DoxyCompactList}\item 
+unsigned char {\bf get\-Slot\-Fe\-Revision} (unsigned int islot)\label{classCALICE_1_1DhcReadoutConfBlock_a6e3a476cb7b0bfb8f873f560061ac359}
+
+\begin{DoxyCompactList}\small\item\em Set the revision number of the fes for this slot. \end{DoxyCompactList}\item 
+{\bf Dhc\-Readout\-Conf\-Block} \& {\bf set\-Be\-Wait\-Interval} (unsigned int timeinmus)\label{classCALICE_1_1DhcReadoutConfBlock_a2c55d4268e15f6d729b6c137e84a7ce9}
+
+\begin{DoxyCompactList}\small\item\em Set the Be wait interval. \end{DoxyCompactList}\item 
+L\-C\-Time {\bf get\-Be\-Wait\-Interval} ()\label{classCALICE_1_1DhcReadoutConfBlock_aee430b699617c6f5455097a665d479dd}
+
+\begin{DoxyCompactList}\small\item\em Return the Be wait interval, in mus. \end{DoxyCompactList}\item 
+std\-::ostream \& {\bf print} (std\-::ostream \&ostrm)\label{classCALICE_1_1DhcReadoutConfBlock_a8ee86e4066e289a3b7c8ac19af5cb45c}
+
+\begin{DoxyCompactList}\small\item\em Convenient print method. \end{DoxyCompactList}\item 
+const std\-::string {\bfseries get\-Type\-Name} () const \label{classCALICE_1_1DhcReadoutConfBlock_a634f76ea5b591f421b31605ef247b1c4}
+
+\item 
+const std\-::string {\bf get\-Data\-Description} () const \label{classCALICE_1_1DhcReadoutConfBlock_a13be0777aff947ce444b20b25b53720e}
+
+\begin{DoxyCompactList}\small\item\em Return a brief description of the data members. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void {\bf fill\-Slot\-To\-Words\-Association\-Mask} (unsigned int, bool)
+\begin{DoxyCompactList}\small\item\em Association mask. \end{DoxyCompactList}\item 
+void {\bf fill\-Method} (unsigned int, unsigned int, unsigned int, unsigned int)\label{classCALICE_1_1DhcReadoutConfBlock_a593c9ef319474740dba7dc0c723d5dac}
+
+\begin{DoxyCompactList}\small\item\em A convenient method to fill fe eanble and fe revision values. \end{DoxyCompactList}\item 
+unsigned short {\bf get\-Method} (unsigned int, unsigned int, unsigned int)\label{classCALICE_1_1DhcReadoutConfBlock_a7b5d00a1093812e7eee3fc1a67798138}
+
+\begin{DoxyCompactList}\small\item\em A convenient method to fill fe eanble and fe revision values. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+std\-::map$<$ unsigned int, \\*
+unsigned int $>$ {\bf \-\_\-islotfill\-Map}\label{classCALICE_1_1DhcReadoutConfBlock_abce693038d694ce51fb6cde002c4dd60}
+
+\begin{DoxyCompactList}\small\item\em map which associates the slots with the position in the L\-C\-Generic\-Object \end{DoxyCompactList}\item 
+bool {\bf \-\_\-num\-Slots\-Initialised}\label{classCALICE_1_1DhcReadoutConfBlock_ae767a99973ecf078a438c5c80e4f3019}
+
+\begin{DoxyCompactList}\small\item\em is the number of slots initialised (makes only sense during the filling sequence) \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Detailed Description}
+Class to interface the configuration of the Dhcal fes. 
+
+\begin{DoxyAuthor}{Author}
+R. Pöschl (L\-A\-L Orsay), J. Smith (A\-N\-L) 
+\end{DoxyAuthor}
+\begin{DoxyDate}{Date}
+Apr 2011 
+\end{DoxyDate}
+\begin{DoxyRefDesc}{Todo}
+\item[{\bf Todo}]Attention we may introduce a platform dependency here!!!! The structure of the object assumes that L\-C\-Generic\-Objects are aligned on 32 bits Need maybe revision for assumptions on data alignment, could be added as collection parameters, \end{DoxyRefDesc}
+
+
+Definition at line 32 of file Dhc\-Readout\-Conf\-Block.\-hh.
+
+
+
+\subsection{Constructor \& Destructor Documentation}
+\index{C\-A\-L\-I\-C\-E\-::\-Dhc\-Readout\-Conf\-Block@{C\-A\-L\-I\-C\-E\-::\-Dhc\-Readout\-Conf\-Block}!Dhc\-Readout\-Conf\-Block@{Dhc\-Readout\-Conf\-Block}}
+\index{Dhc\-Readout\-Conf\-Block@{Dhc\-Readout\-Conf\-Block}!CALICE::DhcReadoutConfBlock@{C\-A\-L\-I\-C\-E\-::\-Dhc\-Readout\-Conf\-Block}}
+\subsubsection[{Dhc\-Readout\-Conf\-Block}]{\setlength{\rightskip}{0pt plus 5cm}C\-A\-L\-I\-C\-E\-::\-Dhc\-Readout\-Conf\-Block\-::\-Dhc\-Readout\-Conf\-Block (
+\begin{DoxyParamCaption}
+\item[{L\-C\-Object $\ast$}]{obj}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\label{classCALICE_1_1DhcReadoutConfBlock_a7d4faa50c5595058596fde44971854ab}
+
+
+'Copy constructor' needed to interpret L\-C\-Collection read from file/database. 
+
+
+
+Definition at line 48 of file Dhc\-Readout\-Conf\-Block.\-hh.
+
+
+
+\subsection{Member Function Documentation}
+\index{C\-A\-L\-I\-C\-E\-::\-Dhc\-Readout\-Conf\-Block@{C\-A\-L\-I\-C\-E\-::\-Dhc\-Readout\-Conf\-Block}!fill\-Slot\-To\-Words\-Association\-Mask@{fill\-Slot\-To\-Words\-Association\-Mask}}
+\index{fill\-Slot\-To\-Words\-Association\-Mask@{fill\-Slot\-To\-Words\-Association\-Mask}!CALICE::DhcReadoutConfBlock@{C\-A\-L\-I\-C\-E\-::\-Dhc\-Readout\-Conf\-Block}}
+\subsubsection[{fill\-Slot\-To\-Words\-Association\-Mask}]{\setlength{\rightskip}{0pt plus 5cm}void Dhc\-Readout\-Conf\-Block\-::fill\-Slot\-To\-Words\-Association\-Mask (
+\begin{DoxyParamCaption}
+\item[{unsigned int}]{slotenablemask, }
+\item[{bool}]{initvals}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [private]}}\label{classCALICE_1_1DhcReadoutConfBlock_ae090fa9e9abbbd1156220bff23b0293c}
+
+
+Association mask. 
+
+using the slot enable mask we create the map which associates the slots to the position in the L\-C\-Generic\-Object 
+
+Definition at line 21 of file Dhc\-Readout\-Conf\-Block.\-cc.
+
+
+
+References \-\_\-islotfill\-Map, \-\_\-num\-Slots\-Initialised, get\-Number\-Of\-Slots(), and C\-A\-L\-I\-C\-E\-::\-L\-C\-Generic\-Object\-Impl\-Ext\-::obj().
+
+\index{C\-A\-L\-I\-C\-E\-::\-Dhc\-Readout\-Conf\-Block@{C\-A\-L\-I\-C\-E\-::\-Dhc\-Readout\-Conf\-Block}!set\-Slot\-Enable@{set\-Slot\-Enable}}
+\index{set\-Slot\-Enable@{set\-Slot\-Enable}!CALICE::DhcReadoutConfBlock@{C\-A\-L\-I\-C\-E\-::\-Dhc\-Readout\-Conf\-Block}}
+\subsubsection[{set\-Slot\-Enable}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Dhc\-Readout\-Conf\-Block}\& C\-A\-L\-I\-C\-E\-::\-Dhc\-Readout\-Conf\-Block\-::set\-Slot\-Enable (
+\begin{DoxyParamCaption}
+\item[{unsigned int}]{slotenable}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\label{classCALICE_1_1DhcReadoutConfBlock_a3c77ac14bc825e8e14ec2346547c5ce4}
+
+
+Set the slot enable, i.\-e. 
+
+the slots which are really enabled 
+
+Definition at line 92 of file Dhc\-Readout\-Conf\-Block.\-hh.
+
+
+
+The documentation for this class was generated from the following files\-:\begin{DoxyCompactItemize}
+\item 
+Dhc\-Readout\-Conf\-Block.\-hh\item 
+Dhc\-Readout\-Conf\-Block.\-cc\end{DoxyCompactItemize}

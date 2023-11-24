@@ -1,0 +1,475 @@
+\section{marlin\-:\-:Hit\-Write\-Engine Class Reference}
+\label{classmarlin_1_1HitWriteEngine}\index{marlin\-::\-Hit\-Write\-Engine@{marlin\-::\-Hit\-Write\-Engine}}
+
+
+Inheritance diagram for marlin\-:\-:Hit\-Write\-Engine\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=178pt]{classmarlin_1_1HitWriteEngine__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for marlin\-:\-:Hit\-Write\-Engine\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=188pt]{classmarlin_1_1HitWriteEngine__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+{\bfseries Hit\-Write\-Engine} ({\bf Root\-Tree\-Writer} $\ast$host)\label{classmarlin_1_1HitWriteEngine_a27a4e92d6197606067508fd4ff38680f}
+
+\item 
+virtual const std\-::string \& {\bf get\-Engine\-Name} ()
+\item 
+virtual void {\bf register\-Parameters} ()
+\item 
+virtual void {\bf register\-Branches} (T\-Tree $\ast$host\-Tree)
+\item 
+virtual void {\bf fill\-Variables} (E\-V\-E\-N\-T\-::\-L\-C\-Event $\ast$)
+\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\begin{tabbing}
+xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=\kill
+struct \{\\
+\>int {\bf iEvt}\\
+\>int {\bf nHits}\\
+\>int {\bf nLayers}\\
+\>int {\bf st}\\
+\>int {\bf MCst}\\
+\>int {\bf MIP2GeVFlag}\\
+\>float {\bf MIP2GeVFactor}\\
+\>float {\bf st\_z}\\
+\>float {\bf MCst\_z}\\
+\>float {\bf energySum}\\
+\>float {\bf energyDensity}\\
+\>float {\bf cogX}\\
+\>float {\bfseries cogY}\\
+\>float {\bfseries cogZ}\\
+\>float {\bf cogI}\\
+\>float {\bf cogJ}\\
+\>float {\bf cogIGeom}\\
+\>float {\bf cogJGeom}\\
+\>float {\bf radius}\\
+\>float {\bf radiusEw}\\
+\>float {\bfseries frac25}\\
+\>std::vector$<$ int $>$ $\ast$ {\bf cellID}\\
+\>std::vector$<$ int $>$ $\ast$ {\bf hitI}\\
+\>std::vector$<$ int $>$ $\ast$ {\bf hitJ}\\
+\>std::vector$<$ int $>$ $\ast$ {\bf hitK}\\
+\>std::vector$<$ float $>$ $\ast$ {\bfseries hitEnergy}\\
+\>std::vector$<$ float $>$ $\ast$ {\bfseries hitTime}\\
+\>std::vector$<$ int $>$ $\ast$ {\bf hitType}\\
+\>std::vector$<$ float $>$ $\ast$ {\bf hitRadius}\\
+\>std::vector$<$ float $>$ $\ast$ {\bf hitEnergyDensity}\\
+\>std::vector$<$ float $>$ $\ast$ {\bfseries hitX}\\
+\>std::vector$<$ float $>$ $\ast$ {\bfseries hitY}\\
+\>std::vector$<$ float $>$ $\ast$ {\bfseries hitZ}\\
+\>std::vector$<$ int $>$ $\ast$ {\bf cellSize}\\
+\>std::vector$<$ float $>$ $\ast$ {\bfseries cellTemperature}\\
+\>std::vector$<$ float $>$ $\ast$ {\bfseries hitAmplRawADC}\\
+\>std::vector$<$ float $>$ $\ast$ {\bfseries hitAmplRawMinusPedestalADC}\\
+\>std::vector$<$ int $>$ $\ast$ {\bf lNHits}\\
+\>std::vector$<$ float $>$ $\ast$ {\bf lEnergy}\\
+\>std::vector$<$ float $>$ $\ast$ {\bf lEnergy\_err}\\
+\>std::vector$<$ float $>$ $\ast$ {\bf lCogX}\\
+\>std::vector$<$ float $>$ $\ast$ {\bfseries lCogY}\\
+\>std::vector$<$ float $>$ $\ast$ {\bf lCogI}\\
+\>std::vector$<$ float $>$ $\ast$ {\bfseries lCogJ}\\
+\>std::vector$<$ float $>$ $\ast$ {\bf lCogIGeom}\\
+\>std::vector$<$ float $>$ $\ast$ {\bfseries lCogJGeom}\\
+\>std::vector$<$ float $>$ $\ast$ {\bf lRadius}\\
+\>std::vector$<$ float $>$ $\ast$ {\bf lRadiusEw}\\
+\>float {\bf energySum5Layer}\\
+\>int {\bf nHits5Layer}\\
+\>float {\bf cogX5Layer}\\
+\>float {\bfseries cogY5Layer}\\
+\>float {\bfseries cogZ5Layer}\\
+\} {\bfseries \_hitsFill}\label{classmarlin_1_1HitWriteEngine_a1bbba269bf861157a5e03da3544cb0e4}
+\\
+
+\end{tabbing}\end{DoxyCompactItemize}
+\subsection*{Static Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+static const unsigned int {\bfseries M\-A\-X\-L\-A\-Y\-E\-R\-S} = 100\label{classmarlin_1_1HitWriteEngine_ae772b112d07d36d2840a2045b71011c8}
+
+\item 
+static const unsigned int {\bfseries M\-A\-X\-A\-S\-I\-C\-S} = 16\label{classmarlin_1_1HitWriteEngine_a6602f95b892bcc691da6da8db625696c}
+
+\item 
+static const unsigned int {\bfseries M\-A\-X\-C\-H\-A\-N\-N\-E\-L\-S} = 36\label{classmarlin_1_1HitWriteEngine_afb75fb17b73e95ee519fb7b0a01aeadb}
+
+\item 
+static const unsigned int {\bfseries M\-A\-X\-C\-E\-L\-L\-S} = M\-A\-X\-L\-A\-Y\-E\-R\-S$\ast$M\-A\-X\-A\-S\-I\-C\-S$\ast$M\-A\-X\-C\-H\-A\-N\-N\-E\-L\-S\label{classmarlin_1_1HitWriteEngine_ae82379925369e9e2acf59996206f8149}
+
+\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Detailed Description}
+
+
+Definition at line 18 of file Hit\-Write\-Engine.\-hh.
+
+
+
+\subsection{Member Function Documentation}
+\index{marlin\-::\-Hit\-Write\-Engine@{marlin\-::\-Hit\-Write\-Engine}!fill\-Variables@{fill\-Variables}}
+\index{fill\-Variables@{fill\-Variables}!marlin::HitWriteEngine@{marlin\-::\-Hit\-Write\-Engine}}
+\subsubsection[{fill\-Variables}]{\setlength{\rightskip}{0pt plus 5cm}void marlin\-::\-Hit\-Write\-Engine\-::fill\-Variables (
+\begin{DoxyParamCaption}
+\item[{E\-V\-E\-N\-T\-::\-L\-C\-Event $\ast$}]{evt}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}\label{classmarlin_1_1HitWriteEngine_a1ee46edbad4693ee7213c153c30dd2d9}
+Implement this to extract the variables which you want to fill into the {\itshape R\-O\-O\-T} tree from the event. Write the value of the variables you want to add to the tree to the member variables, which you registered to the {\itshape R\-O\-O\-T} tree. The \doxyref{Root\-Tree\-Writer}{p.}{classmarlin_1_1RootTreeWriter} will call T\-Tree\-::\-Fill() for you. 
+\begin{DoxyParams}{Parameters}
+{\em evt} & the current event \\
+\hline
+\end{DoxyParams}
+
+
+Implements {\bf marlin\-::\-Root\-Write\-Engine} \doxyref{}{p.}{classmarlin_1_1RootWriteEngine_ace823bd839cee7e8c8755e60c4cc7134}.
+
+
+
+Definition at line 286 of file Hit\-Write\-Engine.\-cc.
+
+\index{marlin\-::\-Hit\-Write\-Engine@{marlin\-::\-Hit\-Write\-Engine}!get\-Engine\-Name@{get\-Engine\-Name}}
+\index{get\-Engine\-Name@{get\-Engine\-Name}!marlin::HitWriteEngine@{marlin\-::\-Hit\-Write\-Engine}}
+\subsubsection[{get\-Engine\-Name}]{\setlength{\rightskip}{0pt plus 5cm}virtual const std\-::string\& marlin\-::\-Hit\-Write\-Engine\-::get\-Engine\-Name (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}\label{classmarlin_1_1HitWriteEngine_a13d17e1b000f55fd5819659426ece2f0}
+Returns the name of the engine to the \doxyref{Root\-Tree\-Writer}{p.}{classmarlin_1_1RootTreeWriter} processor. \begin{DoxyReturn}{Returns}
+Must return a string with the engine name. 
+\end{DoxyReturn}
+\begin{DoxyRefDesc}{Todo}
+\item[{\bf Todo}]fixme\-: should be const, but must be declared const in implementations too. Need to fix all existing engines?!? \end{DoxyRefDesc}
+
+
+Implements {\bf marlin\-::\-Root\-Write\-Engine} \doxyref{}{p.}{classmarlin_1_1RootWriteEngine_a31e38120fe60efcb15666fd569ba5862}.
+
+
+
+Definition at line 27 of file Hit\-Write\-Engine.\-hh.
+
+\index{marlin\-::\-Hit\-Write\-Engine@{marlin\-::\-Hit\-Write\-Engine}!register\-Branches@{register\-Branches}}
+\index{register\-Branches@{register\-Branches}!marlin::HitWriteEngine@{marlin\-::\-Hit\-Write\-Engine}}
+\subsubsection[{register\-Branches}]{\setlength{\rightskip}{0pt plus 5cm}void marlin\-::\-Hit\-Write\-Engine\-::register\-Branches (
+\begin{DoxyParamCaption}
+\item[{T\-Tree $\ast$}]{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}\label{classmarlin_1_1HitWriteEngine_a9de31f39b17a9e782cc7d41d07fce547}
+\begin{DoxyVerb}Implement to register local variables to the output tree
+\param pointer to the \a ROOT tree, which the RootTreeWriter processor fills at the
+end of each event.
+Usually the implementation looks like@verbatim 
+\end{DoxyVerb}
+ /// host\-Tree-\/$>$Branch(\char`\"{}variable\char`\"{},\&\-\_\-variable\char`\"{} ,\char`\"{}variable/\-F" ); /// . But you can add any type of branch you like. 
+
+Implements {\bf marlin\-::\-Root\-Write\-Engine} \doxyref{}{p.}{classmarlin_1_1RootWriteEngine_ad467dc6e73fdd9fd4311f7277fd02a89}.
+
+
+
+Definition at line 128 of file Hit\-Write\-Engine.\-cc.
+
+\index{marlin\-::\-Hit\-Write\-Engine@{marlin\-::\-Hit\-Write\-Engine}!register\-Parameters@{register\-Parameters}}
+\index{register\-Parameters@{register\-Parameters}!marlin::HitWriteEngine@{marlin\-::\-Hit\-Write\-Engine}}
+\subsubsection[{register\-Parameters}]{\setlength{\rightskip}{0pt plus 5cm}void marlin\-::\-Hit\-Write\-Engine\-::register\-Parameters (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}\label{classmarlin_1_1HitWriteEngine_a54f5c814d074396779ba6d21b2acff6c}
+\begin{DoxyVerb}Used to register steering parameters.
+Implement to register \a marlin steering file parameters. Use \a marlin syntax
+to register parameters for the calling RootTreeWriter processor. 
+
+use@verbatim 
+\end{DoxyVerb}
+ /// \-\_\-host\-Proc.\-relay\-Register\-Processor\-Parameter(...) /// \-\_\-host\-Proc.\-relay\-Register...() ///  instead of {\itshape marlin} processors\begin{DoxyVerb}register...() \end{DoxyVerb}
+ methods 
+
+Implements {\bf marlin\-::\-Root\-Write\-Engine} \doxyref{}{p.}{classmarlin_1_1RootWriteEngine_ae12b70923768043fa5c1438f078c41d3}.
+
+
+
+Definition at line 51 of file Hit\-Write\-Engine.\-cc.
+
+
+
+\subsection{Member Data Documentation}
+\index{marlin\-::\-Hit\-Write\-Engine@{marlin\-::\-Hit\-Write\-Engine}!cell\-I\-D@{cell\-I\-D}}
+\index{cell\-I\-D@{cell\-I\-D}!marlin::HitWriteEngine@{marlin\-::\-Hit\-Write\-Engine}}
+\subsubsection[{cell\-I\-D}]{\setlength{\rightskip}{0pt plus 5cm}std\-::vector$<$int$>$$\ast$ marlin\-::\-Hit\-Write\-Engine\-::cell\-I\-D}\label{classmarlin_1_1HitWriteEngine_a6758666f1cb9528ff80850bb9c86c89c}
+Encoded I\-J\-K information of one hit 
+
+Definition at line 66 of file Hit\-Write\-Engine.\-hh.
+
+\index{marlin\-::\-Hit\-Write\-Engine@{marlin\-::\-Hit\-Write\-Engine}!cell\-Size@{cell\-Size}}
+\index{cell\-Size@{cell\-Size}!marlin::HitWriteEngine@{marlin\-::\-Hit\-Write\-Engine}}
+\subsubsection[{cell\-Size}]{\setlength{\rightskip}{0pt plus 5cm}std\-::vector$<$int$>$$\ast$ marlin\-::\-Hit\-Write\-Engine\-::cell\-Size}\label{classmarlin_1_1HitWriteEngine_a4ea31ff49e0d7b23987c716db39ff134}
+side length of hit scintillator tile 
+
+Definition at line 79 of file Hit\-Write\-Engine.\-hh.
+
+\index{marlin\-::\-Hit\-Write\-Engine@{marlin\-::\-Hit\-Write\-Engine}!cog\-I@{cog\-I}}
+\index{cog\-I@{cog\-I}!marlin::HitWriteEngine@{marlin\-::\-Hit\-Write\-Engine}}
+\subsubsection[{cog\-I}]{\setlength{\rightskip}{0pt plus 5cm}float marlin\-::\-Hit\-Write\-Engine\-::cog\-I}\label{classmarlin_1_1HitWriteEngine_a0d5739077e6cb790b40956af1df73d68}
+center of gravity with cell index I (column) 
+
+Definition at line 58 of file Hit\-Write\-Engine.\-hh.
+
+\index{marlin\-::\-Hit\-Write\-Engine@{marlin\-::\-Hit\-Write\-Engine}!cog\-I\-Geom@{cog\-I\-Geom}}
+\index{cog\-I\-Geom@{cog\-I\-Geom}!marlin::HitWriteEngine@{marlin\-::\-Hit\-Write\-Engine}}
+\subsubsection[{cog\-I\-Geom}]{\setlength{\rightskip}{0pt plus 5cm}float marlin\-::\-Hit\-Write\-Engine\-::cog\-I\-Geom}\label{classmarlin_1_1HitWriteEngine_a5adaa9d2becfcdd609da4e6305bfa604}
+geometrical (not weighted) center of gravity with cell index I (column) 
+
+Definition at line 60 of file Hit\-Write\-Engine.\-hh.
+
+\index{marlin\-::\-Hit\-Write\-Engine@{marlin\-::\-Hit\-Write\-Engine}!cog\-J@{cog\-J}}
+\index{cog\-J@{cog\-J}!marlin::HitWriteEngine@{marlin\-::\-Hit\-Write\-Engine}}
+\subsubsection[{cog\-J}]{\setlength{\rightskip}{0pt plus 5cm}float marlin\-::\-Hit\-Write\-Engine\-::cog\-J}\label{classmarlin_1_1HitWriteEngine_a5d4f9d6403bf2c717ea72d41e6221266}
+center of gravity with cell index J (row) 
+
+Definition at line 59 of file Hit\-Write\-Engine.\-hh.
+
+\index{marlin\-::\-Hit\-Write\-Engine@{marlin\-::\-Hit\-Write\-Engine}!cog\-J\-Geom@{cog\-J\-Geom}}
+\index{cog\-J\-Geom@{cog\-J\-Geom}!marlin::HitWriteEngine@{marlin\-::\-Hit\-Write\-Engine}}
+\subsubsection[{cog\-J\-Geom}]{\setlength{\rightskip}{0pt plus 5cm}float marlin\-::\-Hit\-Write\-Engine\-::cog\-J\-Geom}\label{classmarlin_1_1HitWriteEngine_ac3cc354d17d8adb8237dd86e1467b450}
+geometrical (not weighted) center of gravity with cell index J (row) 
+
+Definition at line 61 of file Hit\-Write\-Engine.\-hh.
+
+\index{marlin\-::\-Hit\-Write\-Engine@{marlin\-::\-Hit\-Write\-Engine}!cog\-X@{cog\-X}}
+\index{cog\-X@{cog\-X}!marlin::HitWriteEngine@{marlin\-::\-Hit\-Write\-Engine}}
+\subsubsection[{cog\-X}]{\setlength{\rightskip}{0pt plus 5cm}float marlin\-::\-Hit\-Write\-Engine\-::cog\-X}\label{classmarlin_1_1HitWriteEngine_a320557965f98c1fd3e49ff9e24e9771e}
+center of gravity in x weighted by energy on whole calo\-: (sum \{1 to n\-Hits\} hit\-Energy$\ast$hit\-Pos[0])/energy\-Sum 
+
+Definition at line 55 of file Hit\-Write\-Engine.\-hh.
+
+\index{marlin\-::\-Hit\-Write\-Engine@{marlin\-::\-Hit\-Write\-Engine}!cog\-X5\-Layer@{cog\-X5\-Layer}}
+\index{cog\-X5\-Layer@{cog\-X5\-Layer}!marlin::HitWriteEngine@{marlin\-::\-Hit\-Write\-Engine}}
+\subsubsection[{cog\-X5\-Layer}]{\setlength{\rightskip}{0pt plus 5cm}float marlin\-::\-Hit\-Write\-Engine\-::cog\-X5\-Layer}\label{classmarlin_1_1HitWriteEngine_ab38ac9d94c3d04471fde8605ffd83d3a}
+center of gravity weighted by energy over the first 5 layers 
+
+Definition at line 100 of file Hit\-Write\-Engine.\-hh.
+
+\index{marlin\-::\-Hit\-Write\-Engine@{marlin\-::\-Hit\-Write\-Engine}!energy\-Density@{energy\-Density}}
+\index{energy\-Density@{energy\-Density}!marlin::HitWriteEngine@{marlin\-::\-Hit\-Write\-Engine}}
+\subsubsection[{energy\-Density}]{\setlength{\rightskip}{0pt plus 5cm}float marlin\-::\-Hit\-Write\-Engine\-::energy\-Density}\label{classmarlin_1_1HitWriteEngine_a627c316d195e9ae403793635972cee20}
+energy density of one event\-: sum \{1 to n\-Layers\} (sum \{1 to n\-Hits\-Per\-Layer\} hit\-Energy/cell\-Size$^\wedge$2) 
+
+Definition at line 54 of file Hit\-Write\-Engine.\-hh.
+
+\index{marlin\-::\-Hit\-Write\-Engine@{marlin\-::\-Hit\-Write\-Engine}!energy\-Sum@{energy\-Sum}}
+\index{energy\-Sum@{energy\-Sum}!marlin::HitWriteEngine@{marlin\-::\-Hit\-Write\-Engine}}
+\subsubsection[{energy\-Sum}]{\setlength{\rightskip}{0pt plus 5cm}float marlin\-::\-Hit\-Write\-Engine\-::energy\-Sum}\label{classmarlin_1_1HitWriteEngine_a04f8d90cf4031ca7a37290d4c4c3e07f}
+sum of all hits in one event\-: sum \{1 to n\-Hits\} hit\-Energy 
+
+Definition at line 53 of file Hit\-Write\-Engine.\-hh.
+
+\index{marlin\-::\-Hit\-Write\-Engine@{marlin\-::\-Hit\-Write\-Engine}!energy\-Sum5\-Layer@{energy\-Sum5\-Layer}}
+\index{energy\-Sum5\-Layer@{energy\-Sum5\-Layer}!marlin::HitWriteEngine@{marlin\-::\-Hit\-Write\-Engine}}
+\subsubsection[{energy\-Sum5\-Layer}]{\setlength{\rightskip}{0pt plus 5cm}float marlin\-::\-Hit\-Write\-Engine\-::energy\-Sum5\-Layer}\label{classmarlin_1_1HitWriteEngine_acc1807823e03b6af70ad9af1897e1510}
+energy Sum for the first 5 layer outside 28 cm radius 
+
+Definition at line 97 of file Hit\-Write\-Engine.\-hh.
+
+\index{marlin\-::\-Hit\-Write\-Engine@{marlin\-::\-Hit\-Write\-Engine}!hit\-Energy\-Density@{hit\-Energy\-Density}}
+\index{hit\-Energy\-Density@{hit\-Energy\-Density}!marlin::HitWriteEngine@{marlin\-::\-Hit\-Write\-Engine}}
+\subsubsection[{hit\-Energy\-Density}]{\setlength{\rightskip}{0pt plus 5cm}std\-::vector$<$float$>$$\ast$ marlin\-::\-Hit\-Write\-Engine\-::hit\-Energy\-Density}\label{classmarlin_1_1HitWriteEngine_a51ef974d761387596c7ccfa176f607de}
+hit energy weighted by cell\-Size$^\wedge$2 (dimension\-: E/mm$^\wedge$2) 
+
+Definition at line 74 of file Hit\-Write\-Engine.\-hh.
+
+\index{marlin\-::\-Hit\-Write\-Engine@{marlin\-::\-Hit\-Write\-Engine}!hit\-I@{hit\-I}}
+\index{hit\-I@{hit\-I}!marlin::HitWriteEngine@{marlin\-::\-Hit\-Write\-Engine}}
+\subsubsection[{hit\-I}]{\setlength{\rightskip}{0pt plus 5cm}std\-::vector$<$int$>$$\ast$ marlin\-::\-Hit\-Write\-Engine\-::hit\-I}\label{classmarlin_1_1HitWriteEngine_a955606aa54681ed40c9c6d949356abb9}
+number of hit scintillator tile, x component 
+
+Definition at line 67 of file Hit\-Write\-Engine.\-hh.
+
+\index{marlin\-::\-Hit\-Write\-Engine@{marlin\-::\-Hit\-Write\-Engine}!hit\-J@{hit\-J}}
+\index{hit\-J@{hit\-J}!marlin::HitWriteEngine@{marlin\-::\-Hit\-Write\-Engine}}
+\subsubsection[{hit\-J}]{\setlength{\rightskip}{0pt plus 5cm}std\-::vector$<$int$>$$\ast$ marlin\-::\-Hit\-Write\-Engine\-::hit\-J}\label{classmarlin_1_1HitWriteEngine_a3bea3fbafb45b898dfde40c89e595f12}
+number of hit scintillator tile, y component 
+
+Definition at line 68 of file Hit\-Write\-Engine.\-hh.
+
+\index{marlin\-::\-Hit\-Write\-Engine@{marlin\-::\-Hit\-Write\-Engine}!hit\-K@{hit\-K}}
+\index{hit\-K@{hit\-K}!marlin::HitWriteEngine@{marlin\-::\-Hit\-Write\-Engine}}
+\subsubsection[{hit\-K}]{\setlength{\rightskip}{0pt plus 5cm}std\-::vector$<$int$>$$\ast$ marlin\-::\-Hit\-Write\-Engine\-::hit\-K}\label{classmarlin_1_1HitWriteEngine_a9342319e4f61fbb5dceb37f20a352b9b}
+number of hit scintillator tile, z component, also corresponds to the layer number 
+
+Definition at line 69 of file Hit\-Write\-Engine.\-hh.
+
+\index{marlin\-::\-Hit\-Write\-Engine@{marlin\-::\-Hit\-Write\-Engine}!hit\-Radius@{hit\-Radius}}
+\index{hit\-Radius@{hit\-Radius}!marlin::HitWriteEngine@{marlin\-::\-Hit\-Write\-Engine}}
+\subsubsection[{hit\-Radius}]{\setlength{\rightskip}{0pt plus 5cm}std\-::vector$<$float$>$$\ast$ marlin\-::\-Hit\-Write\-Engine\-::hit\-Radius}\label{classmarlin_1_1HitWriteEngine_a3b324953b8e5298e6be4229e0bd932be}
+hit distance to the cog in mm\-: sqrt((cog\-X -\/ hit\-Pos[0])$^\wedge$2 + (cog\-Y -\/ hitpos[1])$^\wedge$2) 
+
+Definition at line 73 of file Hit\-Write\-Engine.\-hh.
+
+\index{marlin\-::\-Hit\-Write\-Engine@{marlin\-::\-Hit\-Write\-Engine}!hit\-Type@{hit\-Type}}
+\index{hit\-Type@{hit\-Type}!marlin::HitWriteEngine@{marlin\-::\-Hit\-Write\-Engine}}
+\subsubsection[{hit\-Type}]{\setlength{\rightskip}{0pt plus 5cm}std\-::vector$<$int$>$$\ast$ marlin\-::\-Hit\-Write\-Engine\-::hit\-Type}\label{classmarlin_1_1HitWriteEngine_a8ef627938d85a378e8b3c6ea00d26929}
+Gainbit$\ast$100 + memory\-Cell 
+
+Definition at line 72 of file Hit\-Write\-Engine.\-hh.
+
+\index{marlin\-::\-Hit\-Write\-Engine@{marlin\-::\-Hit\-Write\-Engine}!i\-Evt@{i\-Evt}}
+\index{i\-Evt@{i\-Evt}!marlin::HitWriteEngine@{marlin\-::\-Hit\-Write\-Engine}}
+\subsubsection[{i\-Evt}]{\setlength{\rightskip}{0pt plus 5cm}int marlin\-::\-Hit\-Write\-Engine\-::i\-Evt}\label{classmarlin_1_1HitWriteEngine_ac9a933cd831080ff06418315ecd2ef4b}
+Event number counter, should always be event\-Number +1 since event\-Number starts at 0 
+
+Definition at line 44 of file Hit\-Write\-Engine.\-hh.
+
+\index{marlin\-::\-Hit\-Write\-Engine@{marlin\-::\-Hit\-Write\-Engine}!l\-Cog\-I@{l\-Cog\-I}}
+\index{l\-Cog\-I@{l\-Cog\-I}!marlin::HitWriteEngine@{marlin\-::\-Hit\-Write\-Engine}}
+\subsubsection[{l\-Cog\-I}]{\setlength{\rightskip}{0pt plus 5cm}std\-::vector$<$float$>$$\ast$ marlin\-::\-Hit\-Write\-Engine\-::l\-Cog\-I}\label{classmarlin_1_1HitWriteEngine_aa6924fc8d27aac661554866ecb63311d}
+center of gravity in I,J weighted by energy in one layer 
+
+Definition at line 91 of file Hit\-Write\-Engine.\-hh.
+
+\index{marlin\-::\-Hit\-Write\-Engine@{marlin\-::\-Hit\-Write\-Engine}!l\-Cog\-I\-Geom@{l\-Cog\-I\-Geom}}
+\index{l\-Cog\-I\-Geom@{l\-Cog\-I\-Geom}!marlin::HitWriteEngine@{marlin\-::\-Hit\-Write\-Engine}}
+\subsubsection[{l\-Cog\-I\-Geom}]{\setlength{\rightskip}{0pt plus 5cm}std\-::vector$<$float$>$$\ast$ marlin\-::\-Hit\-Write\-Engine\-::l\-Cog\-I\-Geom}\label{classmarlin_1_1HitWriteEngine_a855f79fe2108ebd9a5ff4f3a7bd5a4b7}
+geometrical (not weighted) center of gravity in I,J 
+
+Definition at line 93 of file Hit\-Write\-Engine.\-hh.
+
+\index{marlin\-::\-Hit\-Write\-Engine@{marlin\-::\-Hit\-Write\-Engine}!l\-Cog\-X@{l\-Cog\-X}}
+\index{l\-Cog\-X@{l\-Cog\-X}!marlin::HitWriteEngine@{marlin\-::\-Hit\-Write\-Engine}}
+\subsubsection[{l\-Cog\-X}]{\setlength{\rightskip}{0pt plus 5cm}std\-::vector$<$float$>$$\ast$ marlin\-::\-Hit\-Write\-Engine\-::l\-Cog\-X}\label{classmarlin_1_1HitWriteEngine_af850c5806c37c2d1e3868b6db8a0d8d8}
+center of gravity weighted by energy in one layer 
+
+Definition at line 89 of file Hit\-Write\-Engine.\-hh.
+
+\index{marlin\-::\-Hit\-Write\-Engine@{marlin\-::\-Hit\-Write\-Engine}!l\-Energy@{l\-Energy}}
+\index{l\-Energy@{l\-Energy}!marlin::HitWriteEngine@{marlin\-::\-Hit\-Write\-Engine}}
+\subsubsection[{l\-Energy}]{\setlength{\rightskip}{0pt plus 5cm}std\-::vector$<$float$>$$\ast$ marlin\-::\-Hit\-Write\-Engine\-::l\-Energy}\label{classmarlin_1_1HitWriteEngine_abc824317750d8a9771b5dea05602291d}
+layer by layer Energy 
+
+Definition at line 86 of file Hit\-Write\-Engine.\-hh.
+
+\index{marlin\-::\-Hit\-Write\-Engine@{marlin\-::\-Hit\-Write\-Engine}!l\-Energy\-\_\-err@{l\-Energy\-\_\-err}}
+\index{l\-Energy\-\_\-err@{l\-Energy\-\_\-err}!marlin::HitWriteEngine@{marlin\-::\-Hit\-Write\-Engine}}
+\subsubsection[{l\-Energy\-\_\-err}]{\setlength{\rightskip}{0pt plus 5cm}std\-::vector$<$float$>$$\ast$ marlin\-::\-Hit\-Write\-Engine\-::l\-Energy\-\_\-err}\label{classmarlin_1_1HitWriteEngine_acc878032245d785b9a3782838e7bf880}
+layer by layer Energy error (not yet filled in Calorimeter\-Hit class) 
+
+Definition at line 87 of file Hit\-Write\-Engine.\-hh.
+
+\index{marlin\-::\-Hit\-Write\-Engine@{marlin\-::\-Hit\-Write\-Engine}!l\-N\-Hits@{l\-N\-Hits}}
+\index{l\-N\-Hits@{l\-N\-Hits}!marlin::HitWriteEngine@{marlin\-::\-Hit\-Write\-Engine}}
+\subsubsection[{l\-N\-Hits}]{\setlength{\rightskip}{0pt plus 5cm}std\-::vector$<$int$>$$\ast$ marlin\-::\-Hit\-Write\-Engine\-::l\-N\-Hits}\label{classmarlin_1_1HitWriteEngine_ab46bff3ca2325fe222c6c5a57b7f9590}
+layer by layer number of hits 
+
+Definition at line 85 of file Hit\-Write\-Engine.\-hh.
+
+\index{marlin\-::\-Hit\-Write\-Engine@{marlin\-::\-Hit\-Write\-Engine}!l\-Radius@{l\-Radius}}
+\index{l\-Radius@{l\-Radius}!marlin::HitWriteEngine@{marlin\-::\-Hit\-Write\-Engine}}
+\subsubsection[{l\-Radius}]{\setlength{\rightskip}{0pt plus 5cm}std\-::vector$<$float$>$$\ast$ marlin\-::\-Hit\-Write\-Engine\-::l\-Radius}\label{classmarlin_1_1HitWriteEngine_a36adc47cbcd8d73b670576d8dd753704}
+shower radius (in x,y plane) in one layer calculated w.\-r.\-t. the cog 
+
+Definition at line 95 of file Hit\-Write\-Engine.\-hh.
+
+\index{marlin\-::\-Hit\-Write\-Engine@{marlin\-::\-Hit\-Write\-Engine}!l\-Radius\-Ew@{l\-Radius\-Ew}}
+\index{l\-Radius\-Ew@{l\-Radius\-Ew}!marlin::HitWriteEngine@{marlin\-::\-Hit\-Write\-Engine}}
+\subsubsection[{l\-Radius\-Ew}]{\setlength{\rightskip}{0pt plus 5cm}std\-::vector$<$float$>$$\ast$ marlin\-::\-Hit\-Write\-Engine\-::l\-Radius\-Ew}\label{classmarlin_1_1HitWriteEngine_ac03c6e7e9524cbe32ff70c8aaa7c1e02}
+energy\-Density weighted shower radius (in x,y plane) in one layer calculated w.\-r.\-t. the cog 
+
+Definition at line 96 of file Hit\-Write\-Engine.\-hh.
+
+\index{marlin\-::\-Hit\-Write\-Engine@{marlin\-::\-Hit\-Write\-Engine}!M\-Cst@{M\-Cst}}
+\index{M\-Cst@{M\-Cst}!marlin::HitWriteEngine@{marlin\-::\-Hit\-Write\-Engine}}
+\subsubsection[{M\-Cst}]{\setlength{\rightskip}{0pt plus 5cm}int marlin\-::\-Hit\-Write\-Engine\-::\-M\-Cst}\label{classmarlin_1_1HitWriteEngine_a6f4c5984a706162c23498b60f1b96c6c}
+M\-C True Shower Start Layer 
+
+Definition at line 48 of file Hit\-Write\-Engine.\-hh.
+
+\index{marlin\-::\-Hit\-Write\-Engine@{marlin\-::\-Hit\-Write\-Engine}!M\-Cst\-\_\-z@{M\-Cst\-\_\-z}}
+\index{M\-Cst\-\_\-z@{M\-Cst\-\_\-z}!marlin::HitWriteEngine@{marlin\-::\-Hit\-Write\-Engine}}
+\subsubsection[{M\-Cst\-\_\-z}]{\setlength{\rightskip}{0pt plus 5cm}float marlin\-::\-Hit\-Write\-Engine\-::\-M\-Cst\-\_\-z}\label{classmarlin_1_1HitWriteEngine_a2bf8550c4afaa708ea9c5b4f64bd01b7}
+M\-C True Shower Start Position in z 
+
+Definition at line 52 of file Hit\-Write\-Engine.\-hh.
+
+\index{marlin\-::\-Hit\-Write\-Engine@{marlin\-::\-Hit\-Write\-Engine}!M\-I\-P2\-Ge\-V\-Factor@{M\-I\-P2\-Ge\-V\-Factor}}
+\index{M\-I\-P2\-Ge\-V\-Factor@{M\-I\-P2\-Ge\-V\-Factor}!marlin::HitWriteEngine@{marlin\-::\-Hit\-Write\-Engine}}
+\subsubsection[{M\-I\-P2\-Ge\-V\-Factor}]{\setlength{\rightskip}{0pt plus 5cm}float marlin\-::\-Hit\-Write\-Engine\-::\-M\-I\-P2\-Ge\-V\-Factor}\label{classmarlin_1_1HitWriteEngine_adfc99cab78b4c3a0c82c3b13aa817cbb}
+Factor for the M\-I\-P to Ge\-V conversion (1 -\/ default) 
+
+Definition at line 50 of file Hit\-Write\-Engine.\-hh.
+
+\index{marlin\-::\-Hit\-Write\-Engine@{marlin\-::\-Hit\-Write\-Engine}!M\-I\-P2\-Ge\-V\-Flag@{M\-I\-P2\-Ge\-V\-Flag}}
+\index{M\-I\-P2\-Ge\-V\-Flag@{M\-I\-P2\-Ge\-V\-Flag}!marlin::HitWriteEngine@{marlin\-::\-Hit\-Write\-Engine}}
+\subsubsection[{M\-I\-P2\-Ge\-V\-Flag}]{\setlength{\rightskip}{0pt plus 5cm}int marlin\-::\-Hit\-Write\-Engine\-::\-M\-I\-P2\-Ge\-V\-Flag}\label{classmarlin_1_1HitWriteEngine_a9c44552e22036081ce19a41ea0bdce74}
+Flag if energy of event was converted to Ge\-V (1) or not (0 -\/ default) 
+
+Definition at line 49 of file Hit\-Write\-Engine.\-hh.
+
+\index{marlin\-::\-Hit\-Write\-Engine@{marlin\-::\-Hit\-Write\-Engine}!n\-Hits@{n\-Hits}}
+\index{n\-Hits@{n\-Hits}!marlin::HitWriteEngine@{marlin\-::\-Hit\-Write\-Engine}}
+\subsubsection[{n\-Hits}]{\setlength{\rightskip}{0pt plus 5cm}int marlin\-::\-Hit\-Write\-Engine\-::n\-Hits}\label{classmarlin_1_1HitWriteEngine_a8f290f60ae2ae9bc1e77952456cc1322}
+number of hits 
+
+Definition at line 45 of file Hit\-Write\-Engine.\-hh.
+
+\index{marlin\-::\-Hit\-Write\-Engine@{marlin\-::\-Hit\-Write\-Engine}!n\-Hits5\-Layer@{n\-Hits5\-Layer}}
+\index{n\-Hits5\-Layer@{n\-Hits5\-Layer}!marlin::HitWriteEngine@{marlin\-::\-Hit\-Write\-Engine}}
+\subsubsection[{n\-Hits5\-Layer}]{\setlength{\rightskip}{0pt plus 5cm}int marlin\-::\-Hit\-Write\-Engine\-::n\-Hits5\-Layer}\label{classmarlin_1_1HitWriteEngine_a9dbc035b7760b149eff932d42e1af0d9}
+number of Hits for the first 5 layer outside 28 cm radius 
+
+Definition at line 98 of file Hit\-Write\-Engine.\-hh.
+
+\index{marlin\-::\-Hit\-Write\-Engine@{marlin\-::\-Hit\-Write\-Engine}!n\-Layers@{n\-Layers}}
+\index{n\-Layers@{n\-Layers}!marlin::HitWriteEngine@{marlin\-::\-Hit\-Write\-Engine}}
+\subsubsection[{n\-Layers}]{\setlength{\rightskip}{0pt plus 5cm}int marlin\-::\-Hit\-Write\-Engine\-::n\-Layers}\label{classmarlin_1_1HitWriteEngine_a20e42247cd3ad25b094953620c8e52a6}
+number of layers \-: M\-A\-X\-L\-A\-Y\-E\-R\-S ! 
+
+Definition at line 46 of file Hit\-Write\-Engine.\-hh.
+
+\index{marlin\-::\-Hit\-Write\-Engine@{marlin\-::\-Hit\-Write\-Engine}!radius@{radius}}
+\index{radius@{radius}!marlin::HitWriteEngine@{marlin\-::\-Hit\-Write\-Engine}}
+\subsubsection[{radius}]{\setlength{\rightskip}{0pt plus 5cm}float marlin\-::\-Hit\-Write\-Engine\-::radius}\label{classmarlin_1_1HitWriteEngine_ac63a4a884b40f19840a7e62467164a0e}
+shower radius (in x,y plane) calculated w.\-r.\-t. the cog\-: (sum \{1 to n\-Hits\} hit\-Radius)/n\-Hits 
+
+Definition at line 62 of file Hit\-Write\-Engine.\-hh.
+
+\index{marlin\-::\-Hit\-Write\-Engine@{marlin\-::\-Hit\-Write\-Engine}!radius\-Ew@{radius\-Ew}}
+\index{radius\-Ew@{radius\-Ew}!marlin::HitWriteEngine@{marlin\-::\-Hit\-Write\-Engine}}
+\subsubsection[{radius\-Ew}]{\setlength{\rightskip}{0pt plus 5cm}float marlin\-::\-Hit\-Write\-Engine\-::radius\-Ew}\label{classmarlin_1_1HitWriteEngine_a621a3f9340ef096f9aa9baa0d9ae364b}
+shower radius (in x,y plane) calculated w.\-r.\-t. the cog, energy\-Density weighted, calculated from the information of the individual layers 
+
+Definition at line 63 of file Hit\-Write\-Engine.\-hh.
+
+\index{marlin\-::\-Hit\-Write\-Engine@{marlin\-::\-Hit\-Write\-Engine}!st@{st}}
+\index{st@{st}!marlin::HitWriteEngine@{marlin\-::\-Hit\-Write\-Engine}}
+\subsubsection[{st}]{\setlength{\rightskip}{0pt plus 5cm}int marlin\-::\-Hit\-Write\-Engine\-::st}\label{classmarlin_1_1HitWriteEngine_a9206636ce97519dbb32ea833c51bc95d}
+Shower Start Layer 
+
+Definition at line 47 of file Hit\-Write\-Engine.\-hh.
+
+\index{marlin\-::\-Hit\-Write\-Engine@{marlin\-::\-Hit\-Write\-Engine}!st\-\_\-z@{st\-\_\-z}}
+\index{st\-\_\-z@{st\-\_\-z}!marlin::HitWriteEngine@{marlin\-::\-Hit\-Write\-Engine}}
+\subsubsection[{st\-\_\-z}]{\setlength{\rightskip}{0pt plus 5cm}float marlin\-::\-Hit\-Write\-Engine\-::st\-\_\-z}\label{classmarlin_1_1HitWriteEngine_a448c70f25d0f64ded05dd661c2672763}
+Shower Start Position in z 
+
+Definition at line 51 of file Hit\-Write\-Engine.\-hh.
+
+
+
+The documentation for this class was generated from the following files\-:\begin{DoxyCompactItemize}
+\item 
+Hit\-Write\-Engine.\-hh\item 
+Hit\-Write\-Engine.\-cc\end{DoxyCompactItemize}

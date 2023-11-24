@@ -1,0 +1,147 @@
+\section{C\-A\-L\-I\-C\-E\-:\-:Ahc2\-R\-O\-C\-Threshold\-Processor Class Reference}
+\label{classCALICE_1_1Ahc2ROCThresholdProcessor}\index{C\-A\-L\-I\-C\-E\-::\-Ahc2\-R\-O\-C\-Threshold\-Processor@{C\-A\-L\-I\-C\-E\-::\-Ahc2\-R\-O\-C\-Threshold\-Processor}}
+
+
+Class for doing the \doxyref{A\-H\-C\-A\-L}{p.}{namespaceCALICE_1_1AHCAL} R\-O\-C Simulating behavior.  
+
+
+
+
+{\ttfamily \#include $<$Ahc2\-R\-O\-C\-Threshold\-Processor.\-hh$>$}
+
+Inheritance diagram for C\-A\-L\-I\-C\-E\-:\-:Ahc2\-R\-O\-C\-Threshold\-Processor\-:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classCALICE_1_1Ahc2ROCThresholdProcessor}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+virtual Processor $\ast$ {\bfseries new\-Processor} ()\label{classCALICE_1_1Ahc2ROCThresholdProcessor_aa193ba020919b40c3c91085a1cc66d4a}
+
+\item 
+{\bf Ahc2\-R\-O\-C\-Threshold\-Processor} ()\label{classCALICE_1_1Ahc2ROCThresholdProcessor_ab1704441505945a9dcbc47b80f16566e}
+
+\begin{DoxyCompactList}\small\item\em Constructor. \end{DoxyCompactList}\item 
+{\bf $\sim$\-Ahc2\-R\-O\-C\-Threshold\-Processor} ()\label{classCALICE_1_1Ahc2ROCThresholdProcessor_ab6ff1870b195412741211db8610501bb}
+
+\begin{DoxyCompactList}\small\item\em Destructor. \end{DoxyCompactList}\item 
+virtual void {\bf init} ()\label{classCALICE_1_1Ahc2ROCThresholdProcessor_a9cccdbb4240bba916ff6dc81f5a2d7cf}
+
+\begin{DoxyCompactList}\small\item\em Initialise. \end{DoxyCompactList}\item 
+virtual void {\bf process\-Run\-Header} (L\-C\-Run\-Header $\ast$run)\label{classCALICE_1_1Ahc2ROCThresholdProcessor_a2e3340c95492818108566bd06a667c66}
+
+\begin{DoxyCompactList}\small\item\em Process header. \end{DoxyCompactList}\item 
+virtual void {\bf process\-Event} (L\-C\-Event $\ast$evt)\label{classCALICE_1_1Ahc2ROCThresholdProcessor_a7ecbc0929e784e429d53914b26a4d9b9}
+
+\begin{DoxyCompactList}\small\item\em Process event (the working horse) \end{DoxyCompactList}\item 
+virtual void {\bf check} (L\-C\-Event $\ast$evt)\label{classCALICE_1_1Ahc2ROCThresholdProcessor_ab026a8529bb96eb43757f708c4e63356}
+
+\begin{DoxyCompactList}\small\item\em Check. \end{DoxyCompactList}\item 
+virtual void {\bf end} ()\label{classCALICE_1_1Ahc2ROCThresholdProcessor_ae39dacafb2a8b2e07a087b4cae04a7a0}
+
+\begin{DoxyCompactList}\small\item\em End of processing. \end{DoxyCompactList}\item 
+virtual void {\bf print\-Parameters} ()\label{classCALICE_1_1Ahc2ROCThresholdProcessor_ae6d62f6232c14fb7038fe08701e57be2}
+
+\begin{DoxyCompactList}\small\item\em Print Parameters. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+std\-::string {\bf \-\_\-calorim\-Inp\-Collection}\label{classCALICE_1_1Ahc2ROCThresholdProcessor_a60b33e4ec2f8859870691b0a5a9b06c4}
+
+\begin{DoxyCompactList}\small\item\em input collection name \end{DoxyCompactList}\item 
+std\-::string {\bf \-\_\-calorim\-Out\-Collection}\label{classCALICE_1_1Ahc2ROCThresholdProcessor_a5bbe60c8516f421ff31879e318b77c9d}
+
+\begin{DoxyCompactList}\small\item\em output collection name \end{DoxyCompactList}\item 
+vector$<$ std\-::string $>$ {\bf \-\_\-calorim\-Inp\-Collections}\label{classCALICE_1_1Ahc2ROCThresholdProcessor_a84c9fa484bf114809c283bcd098cb7c5}
+
+\begin{DoxyCompactList}\small\item\em input collection name \end{DoxyCompactList}\item 
+vector$<$ std\-::string $>$ {\bf \-\_\-calorim\-Out\-Collections}\label{classCALICE_1_1Ahc2ROCThresholdProcessor_ae774780c23556903916980a556048672}
+
+\begin{DoxyCompactList}\small\item\em output collection name \end{DoxyCompactList}\item 
+std\-::string {\bfseries \-\_\-encoding}\label{classCALICE_1_1Ahc2ROCThresholdProcessor_ae52fc82c424c5b0692e68b8ce7fc4a46}
+
+\item 
+float {\bf energy\-Threshold}\label{classCALICE_1_1Ahc2ROCThresholdProcessor_ae03d5ba16a2f892a15cff2ca19b03475}
+
+\begin{DoxyCompactList}\small\item\em Threshold. \end{DoxyCompactList}\item 
+float {\bf halfd\-S}\label{classCALICE_1_1Ahc2ROCThresholdProcessor_a19a4d90c4ac1a4c1ec6d5c68ffa53b1d}
+
+\begin{DoxyCompactList}\small\item\em half dead space \end{DoxyCompactList}\item 
+int {\bf \-\_\-n\-Run}\label{classCALICE_1_1Ahc2ROCThresholdProcessor_a96d3965db3c014b35df0e61fa8fafffe}
+
+\begin{DoxyCompactList}\small\item\em run number \end{DoxyCompactList}\item 
+int {\bf \-\_\-n\-Evt}\label{classCALICE_1_1Ahc2ROCThresholdProcessor_a10d4875cd898bfa45970886a9bf16bbc}
+
+\begin{DoxyCompactList}\small\item\em event number \end{DoxyCompactList}\item 
+std\-::string {\bf \-\_\-mapping\-Processor\-Name}\label{classCALICE_1_1Ahc2ROCThresholdProcessor_a31029f43ae89b71d54cc88c6a4c3eb40}
+
+\begin{DoxyCompactList}\small\item\em name of the processor which provides the mapping \end{DoxyCompactList}\item 
+std\-::string {\bf \-\_\-calib\-Processor\-Name}\label{classCALICE_1_1Ahc2ROCThresholdProcessor_a314178c8fbcc0a6bb9765ff801b9c903}
+
+\begin{DoxyCompactList}\small\item\em name of the processor which provides the Si\-P\-M calibrations \end{DoxyCompactList}\item 
+const Ahc2\-Mapper $\ast$ {\bf \-\_\-mapper}\label{classCALICE_1_1Ahc2ROCThresholdProcessor_a6d60f00fdd551a8102f1a5232669f4b6}
+
+\begin{DoxyCompactList}\small\item\em the mapper \end{DoxyCompactList}\item 
+Mapped\-Container\\*
+$<$ Ahc2\-Calibrations $>$ $\ast$ {\bf \-\_\-calib\-Container}\label{classCALICE_1_1Ahc2ROCThresholdProcessor_a69041e2f134eee50feaa855f2117104f}
+
+\begin{DoxyCompactList}\small\item\em mapped container of Si\-P\-M calibrations \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+float {\bf \-\_\-tile\-Edge\-X}\label{classCALICE_1_1Ahc2ROCThresholdProcessor_a016893bc97957f9d94f1e97b4a177518}
+
+\begin{DoxyCompactList}\small\item\em Tile size in X. \end{DoxyCompactList}\item 
+float {\bf \-\_\-tile\-Edge\-Y}\label{classCALICE_1_1Ahc2ROCThresholdProcessor_aa18043151bdf9186f48699c9eec0fc1b}
+
+\begin{DoxyCompactList}\small\item\em Tile size in Y. \end{DoxyCompactList}\item 
+float {\bf \-\_\-dead\-Space}\label{classCALICE_1_1Ahc2ROCThresholdProcessor_a599dcde5b82f16f8c08badc05c1ee7aa}
+
+\begin{DoxyCompactList}\small\item\em dead space \end{DoxyCompactList}\item 
+float {\bf \-\_\-\-M\-I\-Pvalue}\label{classCALICE_1_1Ahc2ROCThresholdProcessor_a5bc9a6cdc1c901f62ec0bd735482cea3}
+
+\begin{DoxyCompactList}\small\item\em M\-I\-P Value. \end{DoxyCompactList}\item 
+float {\bf \-\_\-\-M\-I\-P\-Thr}\label{classCALICE_1_1Ahc2ROCThresholdProcessor_a0fd1875b10471d5cd0153fd0a7649473}
+
+\begin{DoxyCompactList}\small\item\em M\-I\-P Threshold. \end{DoxyCompactList}\item 
+float {\bf \-\_\-tfast}\label{classCALICE_1_1Ahc2ROCThresholdProcessor_a047fe6811de6d2a4169aed1c703d45c2}
+
+\begin{DoxyCompactList}\small\item\em fast shaper integration time \end{DoxyCompactList}\item 
+float {\bf \-\_\-tslow}\label{classCALICE_1_1Ahc2ROCThresholdProcessor_a4c900cd49b07609a35fc63133b07d5ed}
+
+\begin{DoxyCompactList}\small\item\em slow shaper integration time \end{DoxyCompactList}\item 
+int {\bf \-\_\-\-N\-Layer}\label{classCALICE_1_1Ahc2ROCThresholdProcessor_aff6fce2c0647e3377166df58ff09bc38}
+
+\begin{DoxyCompactList}\small\item\em Number of layers. \end{DoxyCompactList}\item 
+string {\bf \-\_\-\-Layer\-Pattern}\label{classCALICE_1_1Ahc2ROCThresholdProcessor_ac1c94db1c3053969b17b12258808f3ac}
+
+\begin{DoxyCompactList}\small\item\em layer pattern \end{DoxyCompactList}\item 
+vector$<$ int $>$ {\bf \-\_\-\-Layer\-Pattern\-Vector}\label{classCALICE_1_1Ahc2ROCThresholdProcessor_a99fe2aabc7aec8020fd48512c7f9291c}
+
+\begin{DoxyCompactList}\small\item\em layer pattern vector \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Class for doing the \doxyref{A\-H\-C\-A\-L}{p.}{namespaceCALICE_1_1AHCAL} R\-O\-C Simulating behavior. 
+
+\begin{DoxyAuthor}{Author}
+{\tt eldwan.\-brianne@desy.\-de} 
+\end{DoxyAuthor}
+\begin{DoxyVersion}{Version}
+2.\-0 
+\end{DoxyVersion}
+\begin{DoxyDate}{Date}
+November 2015 
+\end{DoxyDate}
+
+
+Definition at line 32 of file Ahc2\-R\-O\-C\-Threshold\-Processor.\-hh.
+
+
+
+The documentation for this class was generated from the following files\-:\begin{DoxyCompactItemize}
+\item 
+Ahc2\-R\-O\-C\-Threshold\-Processor.\-hh\item 
+Ahc2\-R\-O\-C\-Threshold\-Processor.\-cc\end{DoxyCompactItemize}

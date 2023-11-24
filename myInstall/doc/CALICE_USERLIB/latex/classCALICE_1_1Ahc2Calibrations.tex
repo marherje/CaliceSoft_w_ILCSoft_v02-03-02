@@ -1,0 +1,271 @@
+\section{C\-A\-L\-I\-C\-E\-:\-:Ahc2\-Calibrations Class Reference}
+\label{classCALICE_1_1Ahc2Calibrations}\index{C\-A\-L\-I\-C\-E\-::\-Ahc2\-Calibrations@{C\-A\-L\-I\-C\-E\-::\-Ahc2\-Calibrations}}
+
+
+storing all informations necessary to calibrate a H\-B\-U Si\-P\-M read channel  
+
+
+
+
+{\ttfamily \#include $<$Ahc2\-Calibrations.\-hh$>$}
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+{\bfseries Ahc2\-Calibrations} ({\bf Linear\-Fit\-Compound} $\ast$M\-I\-P, {\bf Linear\-Fit\-Compound} $\ast$gain, {\bf Simple\-Value} $\ast$pedestal, {\bf Simple\-Value\-Vector} $\ast$pedestal\-Memory\-Cell\-Offset, {\bf Simple\-Value} $\ast$low\-Gain\-Pedestal, {\bf Simple\-Value\-Vector} $\ast$low\-Gain\-Pedestal\-Memory\-Cell\-Offset, {\bf Simple\-Value} $\ast$inter\-Calibration, {\bf Simple\-Value} $\ast$inter\-Calibration\-Physics\-Calib, {\bf Simple\-Value} $\ast$temperature, {\bf Saturation\-Parameters} $\ast$saturation, {\bf Simple\-Value\-Vector} $\ast$time\-Slopes\-Calibration, {\bf Simple\-Value\-Vector} $\ast$time\-Offset\-Calibration, {\bf Simple\-Value\-Vector} $\ast$time\-Offset\-Mem\-Cell\-Even\-Calibration, {\bf Simple\-Value\-Vector} $\ast$time\-Offset\-Mem\-Cell\-Odd\-Calibration, {\bf Simple\-Value\-Vector} $\ast$time\-Offset\-Mem\-Cell\-Even\-Buffer\-Even\-Event\-Even\-Calibration, {\bf Simple\-Value\-Vector} $\ast$time\-Offset\-Mem\-Cell\-Odd\-Buffer\-Even\-Event\-Odd\-Calibration, {\bf Simple\-Value\-Vector} $\ast$time\-Offset\-Mem\-Cell\-Even\-Buffer\-Odd\-Event\-Even\-Calibration, {\bf Simple\-Value\-Vector} $\ast$time\-Offset\-Mem\-Cell\-Odd\-Buffer\-Odd\-Event\-Odd\-Calibration, {\bf Simple\-Value\-Vector} $\ast$Occupancy\-Bxid\-Even\-High\-Gain\-Calibration, {\bf Simple\-Value\-Vector} $\ast$Occupancy\-Bxid\-Even\-Low\-Gain\-Calibration, {\bf Simple\-Value\-Vector} $\ast$Occupancy\-Bxid\-Odd\-High\-Gain\-Calibration, {\bf Simple\-Value\-Vector} $\ast$Occupancy\-Bxid\-Odd\-Low\-Gain\-Calibration, const int status, const int cell\-I\-D, const std\-::string \&cell\-I\-D\-Encoding)\label{classCALICE_1_1Ahc2Calibrations_a9888f56fc5fc4a2527d8b69560a017a0}
+
+\item 
+{\bf Linear\-Fit\-Compound} $\ast$ {\bfseries get\-M\-I\-P} () const \label{classCALICE_1_1Ahc2Calibrations_a8fdd3c513f5bb8ff484ece6173dbf3fe}
+
+\item 
+{\bf Linear\-Fit\-Compound} $\ast$ {\bfseries get\-Gain} () const \label{classCALICE_1_1Ahc2Calibrations_ab4a252f2e7589fd8429a65774181ecb3}
+
+\item 
+{\bf Simple\-Value} $\ast$ {\bfseries get\-Pedestal} () const \label{classCALICE_1_1Ahc2Calibrations_ae1c09b266458a55af0f854cbd714231c}
+
+\item 
+{\bf Simple\-Value\-Vector} $\ast$ {\bfseries get\-Pedestal\-Memory\-Cell\-Offset} () const \label{classCALICE_1_1Ahc2Calibrations_a07a161f7ea41cdea8a91af0e56740381}
+
+\item 
+{\bf Simple\-Value} $\ast$ {\bfseries get\-Low\-Gain\-Pedestal} () const \label{classCALICE_1_1Ahc2Calibrations_a63bd021a647dbdac00f22e387fdf522a}
+
+\item 
+{\bf Simple\-Value\-Vector} $\ast$ {\bfseries get\-Low\-Gain\-Pedestal\-Memory\-Cell\-Offset} () const \label{classCALICE_1_1Ahc2Calibrations_a89f9629d85227f1a04e6241a2953487c}
+
+\item 
+{\bf Simple\-Value} $\ast$ {\bfseries get\-Inter\-Calibration} () const \label{classCALICE_1_1Ahc2Calibrations_a8edc2b5e2d253116996be42c6c7cd90c}
+
+\item 
+{\bf Simple\-Value} $\ast$ {\bfseries get\-Physics\-Calib\-I\-C} () const \label{classCALICE_1_1Ahc2Calibrations_abc1a937aac4a27234ac474901a847624}
+
+\item 
+{\bf Simple\-Value} $\ast$ {\bfseries get\-Temperature} () const \label{classCALICE_1_1Ahc2Calibrations_a0169760750c84e6341f5293e8347cf75}
+
+\item 
+{\bf Saturation\-Parameters} $\ast$ {\bfseries get\-Saturation} () const \label{classCALICE_1_1Ahc2Calibrations_acfbbab2fcfc1353175bf2196512122a5}
+
+\item 
+{\bf Simple\-Value\-Vector} $\ast$ {\bfseries get\-Time\-Slopes} () const \label{classCALICE_1_1Ahc2Calibrations_a2d565ca0cdc228535d932845c2e25bc5}
+
+\item 
+{\bf Simple\-Value\-Vector} $\ast$ {\bfseries get\-Time\-Offset} () const \label{classCALICE_1_1Ahc2Calibrations_a2ea94518b27fc02638ff22330ee8d22b}
+
+\item 
+{\bf Simple\-Value\-Vector} $\ast$ {\bfseries get\-Time\-Offset\-Mem\-Cell\-Even} () const \label{classCALICE_1_1Ahc2Calibrations_a63e61adf723ae249438dcbf9cfb826c9}
+
+\item 
+{\bf Simple\-Value\-Vector} $\ast$ {\bfseries get\-Time\-Offset\-Mem\-Cell\-Odd} () const \label{classCALICE_1_1Ahc2Calibrations_a8cba3c625997c6c9748216e0c3237581}
+
+\item 
+{\bf Simple\-Value\-Vector} $\ast$ {\bfseries get\-Time\-Offset\-Mem\-Cell\-Even\-Buffer\-Even\-Event\-Even} () const \label{classCALICE_1_1Ahc2Calibrations_a06cc210cba3b0b64c5246b2afc3bfb12}
+
+\item 
+{\bf Simple\-Value\-Vector} $\ast$ {\bfseries get\-Time\-Offset\-Mem\-Cell\-Odd\-Buffer\-Even\-Event\-Odd} () const \label{classCALICE_1_1Ahc2Calibrations_a1c0284bbce4bddd84e29a66db9d5a5f5}
+
+\item 
+{\bf Simple\-Value\-Vector} $\ast$ {\bfseries get\-Time\-Offset\-Mem\-Cell\-Even\-Buffer\-Odd\-Event\-Even} () const \label{classCALICE_1_1Ahc2Calibrations_af43febbfc161a9ee021fb9a63fd825cc}
+
+\item 
+{\bf Simple\-Value\-Vector} $\ast$ {\bfseries get\-Time\-Offset\-Mem\-Cell\-Odd\-Buffer\-Odd\-Event\-Odd} () const \label{classCALICE_1_1Ahc2Calibrations_a158d4b34cc236a5e1470d5845ebb8dd6}
+
+\item 
+{\bf Simple\-Value\-Vector} $\ast$ {\bfseries get\-Occupancy\-Bxid\-Even\-High\-Gain} () const \label{classCALICE_1_1Ahc2Calibrations_ac146a72bf6f6cf3b35a4f01799f97c86}
+
+\item 
+{\bf Simple\-Value\-Vector} $\ast$ {\bfseries get\-Occupancy\-Bxid\-Even\-Low\-Gain} () const \label{classCALICE_1_1Ahc2Calibrations_ac5e9fc14adce26175532a3997f3368d9}
+
+\item 
+{\bf Simple\-Value\-Vector} $\ast$ {\bfseries get\-Occupancy\-Bxid\-Odd\-High\-Gain} () const \label{classCALICE_1_1Ahc2Calibrations_a5042f6033737a0d31308346080b744d7}
+
+\item 
+{\bf Simple\-Value\-Vector} $\ast$ {\bfseries get\-Occupancy\-Bxid\-Odd\-Low\-Gain} () const \label{classCALICE_1_1Ahc2Calibrations_a6c7c82893d57b4baa455d88fe74e93dc}
+
+\item 
+int {\bfseries get\-Status} () const \label{classCALICE_1_1Ahc2Calibrations_abd138930b5b67cda32960a1e5805369f}
+
+\item 
+int {\bfseries get\-Cell\-I\-D} () const \label{classCALICE_1_1Ahc2Calibrations_a863df224a883b4075531d5718a309959}
+
+\item 
+const std\-::string \& {\bfseries get\-Cell\-I\-D\-Encoding} () const \label{classCALICE_1_1Ahc2Calibrations_a912aefba37f34f874a3c05ae029d9f10}
+
+\item 
+void {\bfseries set\-M\-I\-P} ({\bf Linear\-Fit\-Compound} $\ast$M\-I\-P)\label{classCALICE_1_1Ahc2Calibrations_a579397bf370b64b210647a449fece2cb}
+
+\item 
+void {\bfseries set\-Gain} ({\bf Linear\-Fit\-Compound} $\ast$gain)\label{classCALICE_1_1Ahc2Calibrations_ab6cad8fd192851c21edbbd6aa1814f68}
+
+\item 
+void {\bfseries set\-Pedestal} ({\bf Simple\-Value} $\ast$pedestal)\label{classCALICE_1_1Ahc2Calibrations_a8b2e58c97f7e5b5a25fd07d66333d95d}
+
+\item 
+void {\bfseries set\-Pedestal\-Memory\-Cell\-Offset} ({\bf Simple\-Value\-Vector} $\ast$pedestal\-Memory\-Cell\-Offset)\label{classCALICE_1_1Ahc2Calibrations_a40e89ab42152fb10a2b4318d6b6d2588}
+
+\item 
+void {\bfseries set\-Low\-Gain\-Pedestal} ({\bf Simple\-Value} $\ast$low\-Gain\-Pedestal)\label{classCALICE_1_1Ahc2Calibrations_a555a2738d250d0c98c3b263dada3ca8d}
+
+\item 
+void {\bfseries set\-Low\-Gain\-Pedestal\-Memory\-Cell\-Offset} ({\bf Simple\-Value\-Vector} $\ast$low\-Gain\-Pedestal\-Memory\-Cell\-Offset)\label{classCALICE_1_1Ahc2Calibrations_ae8f9e0eb9e2209a8cb608a0edac16c78}
+
+\item 
+void {\bfseries set\-Inter\-Calibration} ({\bf Simple\-Value} $\ast$inter\-Calibration)\label{classCALICE_1_1Ahc2Calibrations_a7a5db8ef5f4c3f2aab84889b54c15852}
+
+\item 
+void {\bfseries set\-Physics\-Calib\-I\-C} ({\bf Simple\-Value} $\ast$inter\-Calibration\-Physics\-Calib)\label{classCALICE_1_1Ahc2Calibrations_ac83d32c7dac04831bd8890c357e2e49c}
+
+\item 
+void {\bfseries set\-Temperature} ({\bf Simple\-Value} $\ast$temperature)\label{classCALICE_1_1Ahc2Calibrations_ae1409d9eb74bc38bbce60f13231df61d}
+
+\item 
+void {\bfseries set\-Saturation} ({\bf Saturation\-Parameters} $\ast$param)\label{classCALICE_1_1Ahc2Calibrations_acd5284f9adbcd950fe3caa9244495a34}
+
+\item 
+void {\bfseries set\-Time\-Slopes} ({\bf Simple\-Value\-Vector} $\ast$time\-Slopes)\label{classCALICE_1_1Ahc2Calibrations_a673f9d436e10789805e539773b5a4887}
+
+\item 
+void {\bfseries set\-Time\-Offset} ({\bf Simple\-Value\-Vector} $\ast$time\-Offset)\label{classCALICE_1_1Ahc2Calibrations_a1f7aa8d3c84e57b7474a40be2ad1ee30}
+
+\item 
+void {\bfseries set\-Time\-Offset\-Mem\-Cell\-Even} ({\bf Simple\-Value\-Vector} $\ast$time\-Offset\-Mem\-Cell\-Even)\label{classCALICE_1_1Ahc2Calibrations_a9b04c99d86154e79c216d3c7d3406536}
+
+\item 
+void {\bfseries set\-Time\-Offset\-Mem\-Cell\-Odd} ({\bf Simple\-Value\-Vector} $\ast$time\-Offset\-Mem\-Cell\-Odd)\label{classCALICE_1_1Ahc2Calibrations_a431ae56f79d026c1f8f5d409c2abea72}
+
+\item 
+void {\bfseries set\-Time\-Offset\-Mem\-Cell\-Even\-Buffer\-Even\-Event\-Even} ({\bf Simple\-Value\-Vector} $\ast$time\-Offset\-Mem\-Cell\-Even\-Buffer\-Even\-Event\-Even)\label{classCALICE_1_1Ahc2Calibrations_a83670559cf0efbfaee9c16de5da5c0a6}
+
+\item 
+void {\bfseries set\-Time\-Offset\-Mem\-Cell\-Odd\-Buffer\-Even\-Event\-Odd} ({\bf Simple\-Value\-Vector} $\ast$time\-Offset\-Mem\-Cell\-Odd\-Buffer\-Even\-Event\-Odd)\label{classCALICE_1_1Ahc2Calibrations_af841493f85e968bf6048c1ac5198a668}
+
+\item 
+void {\bfseries set\-Time\-Offset\-Mem\-Cell\-Even\-Buffer\-Odd\-Event\-Even} ({\bf Simple\-Value\-Vector} $\ast$time\-Offset\-Mem\-Cell\-Even\-Buffer\-Odd\-Event\-Even)\label{classCALICE_1_1Ahc2Calibrations_a5c5ceb502f5d2eb42461665297c9e48e}
+
+\item 
+void {\bfseries set\-Time\-Offset\-Mem\-Cell\-Odd\-Buffer\-Odd\-Event\-Odd} ({\bf Simple\-Value\-Vector} $\ast$time\-Offset\-Mem\-Cell\-Odd\-Buffer\-Odd\-Event\-Odd)\label{classCALICE_1_1Ahc2Calibrations_ad5e1ecb7f3038ea9219e3df6e076a289}
+
+\item 
+void {\bfseries set\-Occupancy\-Bxid\-Even\-High\-Gain} ({\bf Simple\-Value\-Vector} $\ast$Occupancy\-Bxid\-Even\-High\-Gain)\label{classCALICE_1_1Ahc2Calibrations_a0c47dbd7e02f41eb37807708b69b6d96}
+
+\item 
+void {\bfseries set\-Occupancy\-Bxid\-Even\-Low\-Gain} ({\bf Simple\-Value\-Vector} $\ast$Occupancy\-Bxid\-Even\-Low\-Gain)\label{classCALICE_1_1Ahc2Calibrations_ac9ea2f871722475812b3045cf6272330}
+
+\item 
+void {\bfseries set\-Occupancy\-Bxid\-Odd\-High\-Gain} ({\bf Simple\-Value\-Vector} $\ast$Occupancy\-Bxid\-Odd\-High\-Gain)\label{classCALICE_1_1Ahc2Calibrations_a6f5df40413007ffdc43bc76c34b21e20}
+
+\item 
+void {\bfseries set\-Occupancy\-Bxid\-Odd\-Low\-Gain} ({\bf Simple\-Value\-Vector} $\ast$Occupancy\-Bxid\-Odd\-Low\-Gain)\label{classCALICE_1_1Ahc2Calibrations_a9e0edbae2eed1dec6cc9c13581c7297c}
+
+\item 
+void {\bfseries set\-Status} (const int status)\label{classCALICE_1_1Ahc2Calibrations_ad5435a2ccdfa548e16c8c7a6dbdacb77}
+
+\item 
+void {\bfseries set\-Cell\-I\-D} (const int cell\-I\-D)\label{classCALICE_1_1Ahc2Calibrations_a34bbc74589d8a3e41719c5ce3cff3a38}
+
+\item 
+void {\bfseries set\-Cell\-I\-D\-Encoding} (const std\-::string \&encoding)\label{classCALICE_1_1Ahc2Calibrations_a09ce017f8db987840a98331781425d68}
+
+\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+{\bf Linear\-Fit\-Compound} $\ast$ {\bfseries \-\_\-gain}\label{classCALICE_1_1Ahc2Calibrations_a03eefbf76823ac538ac161116c721094}
+
+\item 
+{\bf Linear\-Fit\-Compound} $\ast$ {\bfseries \-\_\-\-M\-I\-P}\label{classCALICE_1_1Ahc2Calibrations_a62f955858c113f4d74839b775431573f}
+
+\item 
+{\bf Simple\-Value} $\ast$ {\bfseries \-\_\-pedestal}\label{classCALICE_1_1Ahc2Calibrations_a4efe9ef32165ddb8b060e1cea599662c}
+
+\item 
+{\bf Simple\-Value\-Vector} $\ast$ {\bfseries \-\_\-pedestal\-Memory\-Cell\-Offset}\label{classCALICE_1_1Ahc2Calibrations_ad99c21640b4a8c7a5cfd4eef39d71888}
+
+\item 
+{\bf Simple\-Value} $\ast$ {\bfseries \-\_\-low\-Gain\-Pedestal}\label{classCALICE_1_1Ahc2Calibrations_a6738b35d654551de7e2da86c3bf28160}
+
+\item 
+{\bf Simple\-Value\-Vector} $\ast$ {\bfseries \-\_\-low\-Gain\-Pedestal\-Memory\-Cell\-Offset}\label{classCALICE_1_1Ahc2Calibrations_a588aba128c20afe6769157d9e14cc674}
+
+\item 
+{\bf Simple\-Value} $\ast$ {\bfseries \-\_\-inter\-Calibration}\label{classCALICE_1_1Ahc2Calibrations_ae4efcf3a0b9a4f68a0b0bec543f1127f}
+
+\item 
+{\bf Simple\-Value} $\ast$ {\bfseries \-\_\-inter\-Calibration\-Physics\-Calib}\label{classCALICE_1_1Ahc2Calibrations_a857c20a5260ad72e67fd331b714e95e5}
+
+\item 
+{\bf Simple\-Value} $\ast$ {\bfseries \-\_\-temperature}\label{classCALICE_1_1Ahc2Calibrations_aa3af368bb355aedaa207832852ebf38a}
+
+\item 
+{\bf Saturation\-Parameters} $\ast$ {\bfseries \-\_\-saturation}\label{classCALICE_1_1Ahc2Calibrations_af91d92efebefb744991268c919b2f8c6}
+
+\item 
+{\bf Simple\-Value\-Vector} $\ast$ {\bfseries \-\_\-time\-Slopes\-Calibration}\label{classCALICE_1_1Ahc2Calibrations_a07e277795a54bda83dd8b3d866b7bdf7}
+
+\item 
+{\bf Simple\-Value\-Vector} $\ast$ {\bfseries \-\_\-time\-Offset\-Calibration}\label{classCALICE_1_1Ahc2Calibrations_ab69dc6a5c19ed04cf5fd2f662db49f4d}
+
+\item 
+{\bf Simple\-Value\-Vector} $\ast$ {\bfseries \-\_\-time\-Offset\-Mem\-Cell\-Even\-Calibration}\label{classCALICE_1_1Ahc2Calibrations_aed33bff61e370b8720cbca5d2f218b59}
+
+\item 
+{\bf Simple\-Value\-Vector} $\ast$ {\bfseries \-\_\-time\-Offset\-Mem\-Cell\-Odd\-Calibration}\label{classCALICE_1_1Ahc2Calibrations_aca2f68025de9861d3e7cc8272b03aaf9}
+
+\item 
+{\bf Simple\-Value\-Vector} $\ast$ {\bfseries \-\_\-time\-Offset\-Mem\-Cell\-Even\-Buffer\-Even\-Event\-Even\-Calibration}\label{classCALICE_1_1Ahc2Calibrations_a1883d049098f6fbeffc55268eab4cfc6}
+
+\item 
+{\bf Simple\-Value\-Vector} $\ast$ {\bfseries \-\_\-time\-Offset\-Mem\-Cell\-Odd\-Buffer\-Even\-Event\-Odd\-Calibration}\label{classCALICE_1_1Ahc2Calibrations_a0310be3f24f13b3c7b6ba46fbc429735}
+
+\item 
+{\bf Simple\-Value\-Vector} $\ast$ {\bfseries \-\_\-time\-Offset\-Mem\-Cell\-Even\-Buffer\-Odd\-Event\-Even\-Calibration}\label{classCALICE_1_1Ahc2Calibrations_ab0ab6048367a183e846e7cf090f883f5}
+
+\item 
+{\bf Simple\-Value\-Vector} $\ast$ {\bfseries \-\_\-time\-Offset\-Mem\-Cell\-Odd\-Buffer\-Odd\-Event\-Odd\-Calibration}\label{classCALICE_1_1Ahc2Calibrations_a8c1062777bb2217122ea6463e6e38629}
+
+\item 
+{\bf Simple\-Value\-Vector} $\ast$ {\bfseries \-\_\-\-Occupancy\-Bxid\-Even\-High\-Gain\-Calibration}\label{classCALICE_1_1Ahc2Calibrations_a8681d07d597402f78ef318ba2d6b0ca3}
+
+\item 
+{\bf Simple\-Value\-Vector} $\ast$ {\bfseries \-\_\-\-Occupancy\-Bxid\-Even\-Low\-Gain\-Calibration}\label{classCALICE_1_1Ahc2Calibrations_a9d24516885ac8cd54585a7b71a0d8284}
+
+\item 
+{\bf Simple\-Value\-Vector} $\ast$ {\bfseries \-\_\-\-Occupancy\-Bxid\-Odd\-High\-Gain\-Calibration}\label{classCALICE_1_1Ahc2Calibrations_a1f3ec5e9f315ff9d2605953f425e90a9}
+
+\item 
+{\bf Simple\-Value\-Vector} $\ast$ {\bfseries \-\_\-\-Occupancy\-Bxid\-Odd\-Low\-Gain\-Calibration}\label{classCALICE_1_1Ahc2Calibrations_a95fca6474a05047aab0cc0a7486c2b74}
+
+\item 
+int {\bfseries \-\_\-status}\label{classCALICE_1_1Ahc2Calibrations_a92a7eab19aa5cc8bebdfdcd4989f17b3}
+
+\item 
+int {\bfseries \-\_\-cell\-I\-D}\label{classCALICE_1_1Ahc2Calibrations_a444c186f7f53950fb4a17759adc2fc87}
+
+\item 
+std\-::string {\bfseries \-\_\-cell\-I\-D\-Encoding}\label{classCALICE_1_1Ahc2Calibrations_a37a85e6102734162295d0e187ea19ff5}
+
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+storing all informations necessary to calibrate a H\-B\-U Si\-P\-M read channel 
+
+This class is meant as central holder of all necessary informations to calibrate a H\-B\-U Si\-P\-M. Currently, following informations are stored\-: \begin{DoxyItemize}
+\item {\ttfamily M\-I\-P} calibration in form of a {\bfseries \doxyref{Linear\-Fit\-Result}{p.}{classCALICE_1_1LinearFitResult}} \item {\ttfamily gain} calibration in form of a {\bfseries \doxyref{Linear\-Fit\-Result}{p.}{classCALICE_1_1LinearFitResult}} \item {\ttfamily pedestal} calibration in form of a {\bfseries \doxyref{Simple\-Value}{p.}{classCALICE_1_1SimpleValue}} \item {\ttfamily temperature} calibration in form of a {\bfseries \doxyref{Simple\-Value}{p.}{classCALICE_1_1SimpleValue}} \item {\ttfamily inter} {\ttfamily calibration} in form of a {\bfseries \doxyref{Simple\-Value}{p.}{classCALICE_1_1SimpleValue}} \item {\ttfamily inter} {\ttfamily calibration} Physics Calib in form of a {\bfseries \doxyref{Simple\-Value}{p.}{classCALICE_1_1SimpleValue}} \item {\ttfamily saturation} {\ttfamily parameters} {\ttfamily in} form of a {\bfseries \doxyref{Saturation\-Parameters}{p.}{classCALICE_1_1SaturationParameters}} \item {\ttfamily time} slopes {\ttfamily parameters} {\ttfamily in} form of a {\bfseries \doxyref{Simple\-Value\-Vector}{p.}{classCALICE_1_1SimpleValueVector}} \item {\ttfamily time} pedestal {\ttfamily parameters} {\ttfamily in} form of a {\bfseries \doxyref{Simple\-Value\-Vector}{p.}{classCALICE_1_1SimpleValueVector}} \item {\ttfamily status} in form of an {\bfseries integer} \end{DoxyItemize}
+\begin{DoxyAuthor}{Author}
+{\tt Shaojun.\-lu@desy.\-de} 
+\end{DoxyAuthor}
+\begin{DoxyVersion}{Version}
+0.\-1 
+\end{DoxyVersion}
+\begin{DoxyDate}{Date}
+Feburary 2013 
+\end{DoxyDate}
+
+
+Definition at line 33 of file Ahc2\-Calibrations.\-hh.
+
+
+
+The documentation for this class was generated from the following files\-:\begin{DoxyCompactItemize}
+\item 
+Ahc2\-Calibrations.\-hh\item 
+Ahc2\-Calibrations.\-cc\end{DoxyCompactItemize}

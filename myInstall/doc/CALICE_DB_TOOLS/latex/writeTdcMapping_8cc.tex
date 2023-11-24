@@ -1,0 +1,64 @@
+\section{/nfs/dust/ilc/user/marquezh/\-Calice\-Soft\-\_\-w\-\_\-\-I\-L\-C\-Soft\-\_\-v02-\/03-\/02/calice\-\_\-db\-\_\-tools/src/write\-Tdc\-Mapping.cc File Reference}
+\label{writeTdcMapping_8cc}\index{/nfs/dust/ilc/user/marquezh/\-Calice\-Soft\-\_\-w\-\_\-\-I\-L\-C\-Soft\-\_\-v02-\/03-\/02/calice\-\_\-db\-\_\-tools/src/write\-Tdc\-Mapping.\-cc@{/nfs/dust/ilc/user/marquezh/\-Calice\-Soft\-\_\-w\-\_\-\-I\-L\-C\-Soft\-\_\-v02-\/03-\/02/calice\-\_\-db\-\_\-tools/src/write\-Tdc\-Mapping.\-cc}}
+{\ttfamily \#include $<$string$>$}\\*
+{\ttfamily \#include $<$iostream$>$}\\*
+{\ttfamily \#include $<$fstream$>$}\\*
+{\ttfamily \#include $<$sstream$>$}\\*
+{\ttfamily \#include $<$unistd.\-h$>$}\\*
+{\ttfamily \#include $<$cstring$>$}\\*
+{\ttfamily \#include \char`\"{}lcio.\-h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}I\-M\-P\-L/\-L\-C\-Collection\-Vec.\-h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}Tdc\-Index.\-hh\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}D\-C\-Index.\-hh\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}Tdc\-Connection.\-hh\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}D\-B\-Cond\-Writer.\-hh\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}Calice\-Time.\-hh\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}Calice\-D\-B\-Init\-Helper.\-hh\char`\"{}}\\*
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+void {\bfseries print\-Help} (int argc, char $\ast$$\ast$argv)\label{writeTdcMapping_8cc_a1b5a1d3071ab7a7222af534a20a6aba6}
+
+\item 
+E\-V\-E\-N\-T\-::\-L\-C\-Collection $\ast$ {\bfseries read\-Input\-File} (const std\-::string \&fname)\label{writeTdcMapping_8cc_a73c9acbe18b12bd0312a40ddea8da9d4}
+
+\item 
+int {\bfseries main} (int argc, char $\ast$$\ast$argv)\label{writeTdcMapping_8cc_a3c04138a5bfe5d72780bb7e82a18e627}
+
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+This tool creates a Tdc\-Mapping object and writes it to an L\-C\-C\-D conditions database. Input values have to be given as command line arguments and default to zero.
+
+Usage\-:
+
+
+\begin{DoxyCode}
+writeTdcMapping [-l <folder>] [-f <from>] [-u <until>] [-d <descr>] [-r <file>] [-w]
+\end{DoxyCode}
+
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt out}  & {\em $<$folder$>$} & database folder the collection is written to \\
+\hline
+\mbox{\tt out}  & {\em $<$from$>$} & D\-B entry will be valid from this run or point in time \\
+\hline
+\mbox{\tt out}  & {\em $<$until$>$} & D\-B entry will be valid until this run or point in time \\
+\hline
+\mbox{\tt out}  & {\em $<$descr$>$} & description of D\-B entry \\
+\hline
+\mbox{\tt in}  & {\em $<$file$>$} & file to read input data from \\
+\hline
+ & {\em $<$-\/w$>$} & switch\-: nothing is written without -\/w (test run)\\
+\hline
+\end{DoxyParams}
+Any time string has to have the format Y\-Y\-Y\-Y-\/\-M\-M-\/\-D\-D-\/hh-\/mm-\/ss.\-sss
+
+\begin{DoxyRefDesc}{Todo}
+\item[{\bf Todo}]move this tool to calice\-\_\-cddata\end{DoxyRefDesc}
+
+
+Definition in file {\bf write\-Tdc\-Mapping.\-cc}.
+

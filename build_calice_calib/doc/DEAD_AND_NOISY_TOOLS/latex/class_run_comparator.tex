@@ -1,0 +1,439 @@
+\hypertarget{class_run_comparator}{\section{Run\-Comparator Class Reference}
+\label{class_run_comparator}\index{Run\-Comparator@{Run\-Comparator}}
+}
+
+
+A class to facilitate the comparison of two runs.  
+
+
+
+
+{\ttfamily \#include $<$Run\-Comparator.\-h$>$}
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_run_comparator_ad66bf8c2b9402ed2f00f69afcc6e8bd6}{Run\-Comparator} (\hyperlink{class_spectrum_properties_run_info}{Spectrum\-Properties\-Run\-Info} const \&first\-Run\-Info, \hyperlink{class_spectrum_properties_run_info}{Spectrum\-Properties\-Run\-Info} const \&second\-Run\-Info)
+\begin{DoxyCompactList}\small\item\em Initialise the class by giving the two \hyperlink{class_spectrum_properties_run_info}{Spectrum\-Properties\-Run\-Info} objects of the two runs. \end{DoxyCompactList}\item 
+\hyperlink{class_run_comparator_a6df76f47b1cd9e6da5615814f3f631c5}{$\sim$\-Run\-Comparator} ()
+\begin{DoxyCompactList}\small\item\em Destructor to free the dynamically allocated histograms. \end{DoxyCompactList}\item 
+void \hyperlink{class_run_comparator_a31b28d33c185a2be5a17c42525dd2ec0}{prepare\-Graph} (std\-::pair$<$ double, double $>$($\ast$calculator\-Function)(\hyperlink{class_t_channel_spectrum_properties}{T\-Channel\-Spectrum\-Properties} const \&, \hyperlink{class_t_channel_spectrum_properties}{T\-Channel\-Spectrum\-Properties} const \&))
+\begin{DoxyCompactList}\small\item\em Convenience function which fills the graph and the histograms for all channels. \end{DoxyCompactList}\item 
+void \hyperlink{class_run_comparator_a23682ec1792eea496942f83d8b9a36e8}{prepare\-Graph} (std\-::pair$<$ double, double $>$($\ast$calculator\-Function)(\hyperlink{class_t_channel_spectrum_properties}{T\-Channel\-Spectrum\-Properties} const \&, \hyperlink{class_t_channel_spectrum_properties}{T\-Channel\-Spectrum\-Properties} const \&), std\-::vector$<$ \hyperlink{class_spectrum_properties_run_info_1_1_channel_i_d}{Spectrum\-Properties\-Run\-Info\-::\-Channel\-I\-D} $>$ const \&channel\-List)
+\begin{DoxyCompactList}\small\item\em This function fills the graph and the histograms with the values calculates by the calculator\-Function (first value on the x axis, second on the y axis). \end{DoxyCompactList}\item 
+T\-Graph $\ast$ \hyperlink{class_run_comparator_a75e708544897139bec4a7b11dc66925b}{get\-Graph} ()
+\begin{DoxyCompactList}\small\item\em Gets a pointer to the graph object. \end{DoxyCompactList}\item 
+T\-H1\-D $\ast$ \hyperlink{class_run_comparator_aa7db01e7789d70087584da1d3e6c281e}{get\-X\-Axis\-Histo} ()
+\begin{DoxyCompactList}\small\item\em Gets a pointer to the x axis histogram (histogram of the first variable of the calculator function). \end{DoxyCompactList}\item 
+T\-H1\-D $\ast$ \hyperlink{class_run_comparator_a91ce139df30b4af12e1d64d3421ff570}{get\-Y\-Axis\-Histo} ()
+\begin{DoxyCompactList}\small\item\em Gets a pointer to the y axis histogram (histogram of the first variable of the calculator function). \end{DoxyCompactList}\item 
+std\-::map\\*
+$<$ \hyperlink{class_spectrum_properties_run_info_1_1_channel_i_d}{Spectrum\-Properties\-Run\-Info\-::\-Channel\-I\-D}, \\*
+std\-::pair$<$ double, double $>$\\*
+ $>$ const \& \hyperlink{class_run_comparator_a47854c2f02d9632b0c9cd004820fee20}{get\-Channel\-Values\-Map} () const 
+\begin{DoxyCompactList}\small\item\em Returns a map with all channels and the correlated x and y values. \end{DoxyCompactList}\item 
+std\-::set\\*
+$<$ \hyperlink{class_spectrum_properties_run_info_1_1_channel_i_d}{Spectrum\-Properties\-Run\-Info\-::\-Channel\-I\-D} $>$ \hyperlink{class_run_comparator_a3d58b62450dcc496322872f01774ce68}{get\-Channels\-With\-Cut} (Double\-\_\-t y\-Min=-\/D\-B\-L\-\_\-\-M\-A\-X, Double\-\_\-t y\-Max=D\-B\-L\-\_\-\-M\-A\-X, Double\-\_\-t x\-Min=-\/D\-B\-L\-\_\-\-M\-A\-X, Double\-\_\-t x\-Max=D\-B\-L\-\_\-\-M\-A\-X) const 
+\begin{DoxyCompactList}\small\item\em Returns a set with the channels and the correlated x and y values and cuts on x and y. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static std\-::pair$<$ double, double $>$ \hyperlink{class_run_comparator_a7e9217ea3aff2f7f2b94760b8df8884a}{calculate\-Channel\-And\-Pedestal\-Corrected\-Mean} (\hyperlink{class_t_channel_spectrum_properties}{T\-Channel\-Spectrum\-Properties} const \&spectrum\-Properties\-P\-M\-Noise, \hyperlink{class_t_channel_spectrum_properties}{T\-Channel\-Spectrum\-Properties} const \&spectrum\-Properties\-Other)
+\begin{DoxyCompactList}\small\item\em This function returns the global channel number for the x axis (first value) and {\ttfamily channel\-Spectrum\-Properties\-Other.\-\_\-mean} -\/ {\ttfamily channel\-Spectrum\-Properties\-P\-M\-Noise.\-\_\-mean} for the y axis (second value). \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_spectrum_properties_run_info}{Spectrum\-Properties\-Run\-Info} const \& \hyperlink{class_run_comparator_a3893b88661dc9ab2c46b8881d20772a2}{\-\_\-first\-Run\-Info}
+\begin{DoxyCompactList}\small\item\em pointer to the first \hyperlink{class_spectrum_properties_run_info}{Spectrum\-Properties\-Run\-Info} \end{DoxyCompactList}\item 
+\hyperlink{class_spectrum_properties_run_info}{Spectrum\-Properties\-Run\-Info} const \& \hyperlink{class_run_comparator_a2dc5760e0e8acc987f8a56a906895e5a}{\-\_\-second\-Run\-Info}
+\begin{DoxyCompactList}\small\item\em pointer to the first \hyperlink{class_spectrum_properties_run_info}{Spectrum\-Properties\-Run\-Info} \end{DoxyCompactList}\item 
+T\-Graph $\ast$ \hyperlink{class_run_comparator_ade24b6bfa3960ac66f027a2669014d6a}{\-\_\-the\-Graph}
+\begin{DoxyCompactList}\small\item\em The internal instance of the graph. \end{DoxyCompactList}\item 
+T\-H1\-D $\ast$ \hyperlink{class_run_comparator_ab86d48424540d0f3f9abf52a2c11366b}{\-\_\-x\-Axis\-Histo}
+\begin{DoxyCompactList}\small\item\em The internal instance of the x axis histogram. \end{DoxyCompactList}\item 
+T\-H1\-D $\ast$ \hyperlink{class_run_comparator_a05efdd671ec49502c946eb813e84ed62}{\-\_\-y\-Axis\-Histo}
+\begin{DoxyCompactList}\small\item\em The internal instance of the y axis histogram. \end{DoxyCompactList}\item 
+std\-::map\\*
+$<$ \hyperlink{class_spectrum_properties_run_info_1_1_channel_i_d}{Spectrum\-Properties\-Run\-Info\-::\-Channel\-I\-D}, \\*
+std\-::pair$<$ double, double $>$ $>$ \hyperlink{class_run_comparator_aae7b9f0694da7b251fdc513c5cf466b7}{\-\_\-channel\-Values\-Map}
+\begin{DoxyCompactList}\small\item\em A map to correlate channel\-I\-D and the calculated values. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+A class to facilitate the comparison of two runs. 
+
+It creates a T\-Graph with two numbers calculated from the T\-Channel\-Spectrum\-Propertiess for the two runs for each channel, and the {\ttfamily projections} on the axes, i. e. a 1\-D histogram of each of the values.
+
+The numbers calculated are defined by a function which takes two T\-Channel\-Spectrum\-Propertiess as input and returns a pair of doubles. The most important functions are defined within this class, but the user can also define his own functions, which provides full flexibility.
+
+Although the definition of function pointers look complicated and lengthy, the usage is simple\-: 
+\begin{DoxyCode}
+\textcolor{comment}{// a PMNoise run}
+\hyperlink{class_spectrum_properties_run_info}{SpectrumPropertiesRunInfo} priPMNoise(123, \textcolor{stringliteral}{"myAHCConfig.cfg"});
+
+\textcolor{comment}{// a PMLedVcalib run}
+\hyperlink{class_spectrum_properties_run_info}{SpectrumPropertiesRunInfo} priPMLED(124, \textcolor{stringliteral}{"myAHCConfig.cfg"});
+
+\hyperlink{class_run_comparator}{RunComparator} myRunComparator( priPMNoise, priPMLED );
+
+\textcolor{comment}{// create the graph with the channel number on the x axis and the }
+\textcolor{comment}{// pedestal corrected mean on the y axis. Just pass the address of the }
+\textcolor{comment}{// function (thus the &).}
+myRunComparator.prepareGraph( &\hyperlink{class_run_comparator_a7e9217ea3aff2f7f2b94760b8df8884a}{calculateChannelAndPedestalCorrectedMean}
+       );
+
+myRunComparator.getGraph()->Draw(\textcolor{stringliteral}{"AP"}); \textcolor{comment}{//draw the graph}
+myRunComparator.getXAxisHisto()->Draw(); \textcolor{comment}{//draw the histo for the x axis values}
+\end{DoxyCode}
+
+
+\begin{DoxyRefDesc}{Todo}
+\item[\hyperlink{todo__todo000001}{Todo}]Make the return values of the clones graphs and histos auto pointers. Damn, C\-I\-N\-T does not support auto pointers \-:-\/( \end{DoxyRefDesc}
+
+
+Definition at line 51 of file Run\-Comparator.\-h.
+
+
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{class_run_comparator_ad66bf8c2b9402ed2f00f69afcc6e8bd6}{\index{Run\-Comparator@{Run\-Comparator}!Run\-Comparator@{Run\-Comparator}}
+\index{Run\-Comparator@{Run\-Comparator}!RunComparator@{Run\-Comparator}}
+\subsubsection[{Run\-Comparator}]{\setlength{\rightskip}{0pt plus 5cm}Run\-Comparator\-::\-Run\-Comparator (
+\begin{DoxyParamCaption}
+\item[{{\bf Spectrum\-Properties\-Run\-Info} const \&}]{first\-Run\-Info, }
+\item[{{\bf Spectrum\-Properties\-Run\-Info} const \&}]{second\-Run\-Info}
+\end{DoxyParamCaption}
+)}}\label{class_run_comparator_ad66bf8c2b9402ed2f00f69afcc6e8bd6}
+
+
+Initialise the class by giving the two \hyperlink{class_spectrum_properties_run_info}{Spectrum\-Properties\-Run\-Info} objects of the two runs. 
+
+
+
+Definition at line 6 of file Run\-Comparator.\-cxx.
+
+\hypertarget{class_run_comparator_a6df76f47b1cd9e6da5615814f3f631c5}{\index{Run\-Comparator@{Run\-Comparator}!$\sim$\-Run\-Comparator@{$\sim$\-Run\-Comparator}}
+\index{$\sim$\-Run\-Comparator@{$\sim$\-Run\-Comparator}!RunComparator@{Run\-Comparator}}
+\subsubsection[{$\sim$\-Run\-Comparator}]{\setlength{\rightskip}{0pt plus 5cm}Run\-Comparator\-::$\sim$\-Run\-Comparator (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{class_run_comparator_a6df76f47b1cd9e6da5615814f3f631c5}
+
+
+Destructor to free the dynamically allocated histograms. 
+
+
+
+Definition at line 12 of file Run\-Comparator.\-cxx.
+
+
+
+References \-\_\-the\-Graph, \-\_\-x\-Axis\-Histo, and \-\_\-y\-Axis\-Histo.
+
+
+
+\subsection{Member Function Documentation}
+\hypertarget{class_run_comparator_a7e9217ea3aff2f7f2b94760b8df8884a}{\index{Run\-Comparator@{Run\-Comparator}!calculate\-Channel\-And\-Pedestal\-Corrected\-Mean@{calculate\-Channel\-And\-Pedestal\-Corrected\-Mean}}
+\index{calculate\-Channel\-And\-Pedestal\-Corrected\-Mean@{calculate\-Channel\-And\-Pedestal\-Corrected\-Mean}!RunComparator@{Run\-Comparator}}
+\subsubsection[{calculate\-Channel\-And\-Pedestal\-Corrected\-Mean}]{\setlength{\rightskip}{0pt plus 5cm}std\-::pair$<$ double, double $>$ Run\-Comparator\-::calculate\-Channel\-And\-Pedestal\-Corrected\-Mean (
+\begin{DoxyParamCaption}
+\item[{{\bf T\-Channel\-Spectrum\-Properties} const \&}]{spectrum\-Properties\-P\-M\-Noise, }
+\item[{{\bf T\-Channel\-Spectrum\-Properties} const \&}]{spectrum\-Properties\-Other}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}}\label{class_run_comparator_a7e9217ea3aff2f7f2b94760b8df8884a}
+
+
+This function returns the global channel number for the x axis (first value) and {\ttfamily channel\-Spectrum\-Properties\-Other.\-\_\-mean} -\/ {\ttfamily channel\-Spectrum\-Properties\-P\-M\-Noise.\-\_\-mean} for the y axis (second value). 
+
+This usually only makes sense if the first argument ({\ttfamily spectrum\-Properties\-P\-M\-Noise}) is a noise run, where the mean value is the pedestal. 
+
+Definition at line 86 of file Run\-Comparator.\-cxx.
+
+
+
+References T\-Channel\-Spectrum\-Properties\-::\-\_\-channel, T\-Channel\-Spectrum\-Properties\-::\-\_\-chip, T\-Channel\-Spectrum\-Properties\-::\-\_\-mean, T\-Channel\-Spectrum\-Properties\-::\-\_\-module, and Spectrum\-Properties\-Run\-Info\-::get\-Global\-Channel\-Number().
+
+
+
+Referenced by main().
+
+\hypertarget{class_run_comparator_a3d58b62450dcc496322872f01774ce68}{\index{Run\-Comparator@{Run\-Comparator}!get\-Channels\-With\-Cut@{get\-Channels\-With\-Cut}}
+\index{get\-Channels\-With\-Cut@{get\-Channels\-With\-Cut}!RunComparator@{Run\-Comparator}}
+\subsubsection[{get\-Channels\-With\-Cut}]{\setlength{\rightskip}{0pt plus 5cm}std\-::set$<$ {\bf Spectrum\-Properties\-Run\-Info\-::\-Channel\-I\-D} $>$ Run\-Comparator\-::get\-Channels\-With\-Cut (
+\begin{DoxyParamCaption}
+\item[{Double\-\_\-t}]{y\-Min = {\ttfamily -\/DBL\-\_\-MAX}, }
+\item[{Double\-\_\-t}]{y\-Max = {\ttfamily DBL\-\_\-MAX}, }
+\item[{Double\-\_\-t}]{x\-Min = {\ttfamily -\/DBL\-\_\-MAX}, }
+\item[{Double\-\_\-t}]{x\-Max = {\ttfamily DBL\-\_\-MAX}}
+\end{DoxyParamCaption}
+) const}}\label{class_run_comparator_a3d58b62450dcc496322872f01774ce68}
+
+
+Returns a set with the channels and the correlated x and y values and cuts on x and y. 
+
+Note the ordering of the cut parameter\-: The cuts on y come first for convenience since there will be cuts on y more often than on x, so one can just leave the default values which do not cut at all. n.\-b.\-: The return value is a set because it has a find() which allows to check whether a channel is in the set. 
+
+Definition at line 144 of file Run\-Comparator.\-cxx.
+
+
+
+References \-\_\-channel\-Values\-Map.
+
+\hypertarget{class_run_comparator_a47854c2f02d9632b0c9cd004820fee20}{\index{Run\-Comparator@{Run\-Comparator}!get\-Channel\-Values\-Map@{get\-Channel\-Values\-Map}}
+\index{get\-Channel\-Values\-Map@{get\-Channel\-Values\-Map}!RunComparator@{Run\-Comparator}}
+\subsubsection[{get\-Channel\-Values\-Map}]{\setlength{\rightskip}{0pt plus 5cm}std\-::map$<$ {\bf Spectrum\-Properties\-Run\-Info\-::\-Channel\-I\-D}, std\-::pair$<$ double, double $>$ $>$ const \& Run\-Comparator\-::get\-Channel\-Values\-Map (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const}}\label{class_run_comparator_a47854c2f02d9632b0c9cd004820fee20}
+
+
+Returns a map with all channels and the correlated x and y values. 
+
+
+
+Definition at line 138 of file Run\-Comparator.\-cxx.
+
+
+
+References \-\_\-channel\-Values\-Map.
+
+\hypertarget{class_run_comparator_a75e708544897139bec4a7b11dc66925b}{\index{Run\-Comparator@{Run\-Comparator}!get\-Graph@{get\-Graph}}
+\index{get\-Graph@{get\-Graph}!RunComparator@{Run\-Comparator}}
+\subsubsection[{get\-Graph}]{\setlength{\rightskip}{0pt plus 5cm}T\-Graph $\ast$ Run\-Comparator\-::get\-Graph (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{class_run_comparator_a75e708544897139bec4a7b11dc66925b}
+
+
+Gets a pointer to the graph object. 
+
+The first variable of the return value of the calculator\-Function is in the x axis, the second one on the y axis. \begin{DoxyAttention}{Attention}
+This pointer is only valid until the next call of \hyperlink{class_run_comparator_a31b28d33c185a2be5a17c42525dd2ec0}{prepare\-Graph()}. If you want to preserve the graph make a clone of it\-: 
+\begin{DoxyCode}
+myRunComparator.prepareGraph( &functionForMyFirstGraph );
+\textcolor{comment}{// clone the graph to preserve it}
+TGraph *myFirstGraph = myRunComparator.getGraph()->Clone();
+
+\textcolor{comment}{// Now create the second graph. The first graph inside the RunComparator is deleted.}
+myRunComparator.prepareGraph( &functionForMySecondGraph );
+\textcolor{comment}{// If we need no further graphs we don't need to clone this one:}
+TGraph *mySecondGraph = myRunComparator.getGraph();
+\end{DoxyCode}
+ 
+\end{DoxyAttention}
+
+
+Definition at line 101 of file Run\-Comparator.\-cxx.
+
+
+
+References \-\_\-the\-Graph.
+
+
+
+Referenced by main().
+
+\hypertarget{class_run_comparator_aa7db01e7789d70087584da1d3e6c281e}{\index{Run\-Comparator@{Run\-Comparator}!get\-X\-Axis\-Histo@{get\-X\-Axis\-Histo}}
+\index{get\-X\-Axis\-Histo@{get\-X\-Axis\-Histo}!RunComparator@{Run\-Comparator}}
+\subsubsection[{get\-X\-Axis\-Histo}]{\setlength{\rightskip}{0pt plus 5cm}T\-H1\-D $\ast$ Run\-Comparator\-::get\-X\-Axis\-Histo (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{class_run_comparator_aa7db01e7789d70087584da1d3e6c281e}
+
+
+Gets a pointer to the x axis histogram (histogram of the first variable of the calculator function). 
+
+\begin{DoxyAttention}{Attention}
+This pointer is only valid until the next call of \hyperlink{class_run_comparator_a31b28d33c185a2be5a17c42525dd2ec0}{prepare\-Graph()}. If you want to preserve the graph make a clone of it. 
+\end{DoxyAttention}
+
+
+Definition at line 113 of file Run\-Comparator.\-cxx.
+
+
+
+References \-\_\-x\-Axis\-Histo.
+
+
+
+Referenced by main().
+
+\hypertarget{class_run_comparator_a91ce139df30b4af12e1d64d3421ff570}{\index{Run\-Comparator@{Run\-Comparator}!get\-Y\-Axis\-Histo@{get\-Y\-Axis\-Histo}}
+\index{get\-Y\-Axis\-Histo@{get\-Y\-Axis\-Histo}!RunComparator@{Run\-Comparator}}
+\subsubsection[{get\-Y\-Axis\-Histo}]{\setlength{\rightskip}{0pt plus 5cm}T\-H1\-D $\ast$ Run\-Comparator\-::get\-Y\-Axis\-Histo (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{class_run_comparator_a91ce139df30b4af12e1d64d3421ff570}
+
+
+Gets a pointer to the y axis histogram (histogram of the first variable of the calculator function). 
+
+\begin{DoxyAttention}{Attention}
+This pointer is only valid until the next call of \hyperlink{class_run_comparator_a31b28d33c185a2be5a17c42525dd2ec0}{prepare\-Graph()} (or the \hyperlink{class_run_comparator}{Run\-Comparator} is deleted). If you want to preserve the graph make a clone of it. 
+\end{DoxyAttention}
+
+
+Definition at line 125 of file Run\-Comparator.\-cxx.
+
+
+
+References \-\_\-y\-Axis\-Histo.
+
+
+
+Referenced by main().
+
+\hypertarget{class_run_comparator_a31b28d33c185a2be5a17c42525dd2ec0}{\index{Run\-Comparator@{Run\-Comparator}!prepare\-Graph@{prepare\-Graph}}
+\index{prepare\-Graph@{prepare\-Graph}!RunComparator@{Run\-Comparator}}
+\subsubsection[{prepare\-Graph}]{\setlength{\rightskip}{0pt plus 5cm}void Run\-Comparator\-::prepare\-Graph (
+\begin{DoxyParamCaption}
+\item[{std\-::pair$<$ double, double $>$($\ast$)({\bf T\-Channel\-Spectrum\-Properties} const \&, {\bf T\-Channel\-Spectrum\-Properties} const \&)}]{calculator\-Function}
+\end{DoxyParamCaption}
+)}}\label{class_run_comparator_a31b28d33c185a2be5a17c42525dd2ec0}
+
+
+Convenience function which fills the graph and the histograms for all channels. 
+
+
+
+Definition at line 19 of file Run\-Comparator.\-cxx.
+
+
+
+References \-\_\-first\-Run\-Info, and Spectrum\-Properties\-Run\-Info\-::get\-Channels\-With\-R\-M\-S\-Cut().
+
+
+
+Referenced by main().
+
+\hypertarget{class_run_comparator_a23682ec1792eea496942f83d8b9a36e8}{\index{Run\-Comparator@{Run\-Comparator}!prepare\-Graph@{prepare\-Graph}}
+\index{prepare\-Graph@{prepare\-Graph}!RunComparator@{Run\-Comparator}}
+\subsubsection[{prepare\-Graph}]{\setlength{\rightskip}{0pt plus 5cm}void Run\-Comparator\-::prepare\-Graph (
+\begin{DoxyParamCaption}
+\item[{std\-::pair$<$ double, double $>$($\ast$)({\bf T\-Channel\-Spectrum\-Properties} const \&, {\bf T\-Channel\-Spectrum\-Properties} const \&)}]{calculator\-Function, }
+\item[{std\-::vector$<$ {\bf Spectrum\-Properties\-Run\-Info\-::\-Channel\-I\-D} $>$ const \&}]{channel\-List}
+\end{DoxyParamCaption}
+)}}\label{class_run_comparator_a23682ec1792eea496942f83d8b9a36e8}
+
+
+This function fills the graph and the histograms with the values calculates by the calculator\-Function (first value on the x axis, second on the y axis). 
+
+
+\begin{DoxyParams}{Parameters}
+{\em calculator\-Function} & The first parameter is a pointer to a function which returns a pair of doubles and takes two const references to \hyperlink{class_t_channel_spectrum_properties}{T\-Channel\-Spectrum\-Properties} as argument. This function calculates the values for the x and y axis from the channel spectrum\-Propertiess. \\
+\hline
+{\em channel\-List} & A const reference to a vector of channel I\-Ds. These are the channels for which the graph and the histograms are filled. \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 29 of file Run\-Comparator.\-cxx.
+
+
+
+References \-\_\-channel\-Values\-Map, \-\_\-first\-Run\-Info, \-\_\-second\-Run\-Info, \-\_\-the\-Graph, \-\_\-x\-Axis\-Histo, \-\_\-y\-Axis\-Histo, Spectrum\-Properties\-Run\-Info\-::get\-Channel\-Spectrum\-Properties(), and Spectrum\-Properties\-Run\-Info\-::get\-Run\-Number().
+
+
+
+\subsection{Field Documentation}
+\hypertarget{class_run_comparator_aae7b9f0694da7b251fdc513c5cf466b7}{\index{Run\-Comparator@{Run\-Comparator}!\-\_\-channel\-Values\-Map@{\-\_\-channel\-Values\-Map}}
+\index{\-\_\-channel\-Values\-Map@{\-\_\-channel\-Values\-Map}!RunComparator@{Run\-Comparator}}
+\subsubsection[{\-\_\-channel\-Values\-Map}]{\setlength{\rightskip}{0pt plus 5cm}std\-::map$<$ {\bf Spectrum\-Properties\-Run\-Info\-::\-Channel\-I\-D}, std\-::pair$<$double, double$>$ $>$ Run\-Comparator\-::\-\_\-channel\-Values\-Map\hspace{0.3cm}{\ttfamily [protected]}}}\label{class_run_comparator_aae7b9f0694da7b251fdc513c5cf466b7}
+
+
+A map to correlate channel\-I\-D and the calculated values. 
+
+
+
+Definition at line 154 of file Run\-Comparator.\-h.
+
+
+
+Referenced by get\-Channels\-With\-Cut(), get\-Channel\-Values\-Map(), and prepare\-Graph().
+
+\hypertarget{class_run_comparator_a3893b88661dc9ab2c46b8881d20772a2}{\index{Run\-Comparator@{Run\-Comparator}!\-\_\-first\-Run\-Info@{\-\_\-first\-Run\-Info}}
+\index{\-\_\-first\-Run\-Info@{\-\_\-first\-Run\-Info}!RunComparator@{Run\-Comparator}}
+\subsubsection[{\-\_\-first\-Run\-Info}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Spectrum\-Properties\-Run\-Info} const\& Run\-Comparator\-::\-\_\-first\-Run\-Info\hspace{0.3cm}{\ttfamily [protected]}}}\label{class_run_comparator_a3893b88661dc9ab2c46b8881d20772a2}
+
+
+pointer to the first \hyperlink{class_spectrum_properties_run_info}{Spectrum\-Properties\-Run\-Info} 
+
+
+
+Definition at line 146 of file Run\-Comparator.\-h.
+
+
+
+Referenced by prepare\-Graph().
+
+\hypertarget{class_run_comparator_a2dc5760e0e8acc987f8a56a906895e5a}{\index{Run\-Comparator@{Run\-Comparator}!\-\_\-second\-Run\-Info@{\-\_\-second\-Run\-Info}}
+\index{\-\_\-second\-Run\-Info@{\-\_\-second\-Run\-Info}!RunComparator@{Run\-Comparator}}
+\subsubsection[{\-\_\-second\-Run\-Info}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Spectrum\-Properties\-Run\-Info} const\& Run\-Comparator\-::\-\_\-second\-Run\-Info\hspace{0.3cm}{\ttfamily [protected]}}}\label{class_run_comparator_a2dc5760e0e8acc987f8a56a906895e5a}
+
+
+pointer to the first \hyperlink{class_spectrum_properties_run_info}{Spectrum\-Properties\-Run\-Info} 
+
+
+
+Definition at line 147 of file Run\-Comparator.\-h.
+
+
+
+Referenced by prepare\-Graph().
+
+\hypertarget{class_run_comparator_ade24b6bfa3960ac66f027a2669014d6a}{\index{Run\-Comparator@{Run\-Comparator}!\-\_\-the\-Graph@{\-\_\-the\-Graph}}
+\index{\-\_\-the\-Graph@{\-\_\-the\-Graph}!RunComparator@{Run\-Comparator}}
+\subsubsection[{\-\_\-the\-Graph}]{\setlength{\rightskip}{0pt plus 5cm}T\-Graph$\ast$ Run\-Comparator\-::\-\_\-the\-Graph\hspace{0.3cm}{\ttfamily [protected]}}}\label{class_run_comparator_ade24b6bfa3960ac66f027a2669014d6a}
+
+
+The internal instance of the graph. 
+
+
+
+Definition at line 149 of file Run\-Comparator.\-h.
+
+
+
+Referenced by get\-Graph(), prepare\-Graph(), and $\sim$\-Run\-Comparator().
+
+\hypertarget{class_run_comparator_ab86d48424540d0f3f9abf52a2c11366b}{\index{Run\-Comparator@{Run\-Comparator}!\-\_\-x\-Axis\-Histo@{\-\_\-x\-Axis\-Histo}}
+\index{\-\_\-x\-Axis\-Histo@{\-\_\-x\-Axis\-Histo}!RunComparator@{Run\-Comparator}}
+\subsubsection[{\-\_\-x\-Axis\-Histo}]{\setlength{\rightskip}{0pt plus 5cm}T\-H1\-D$\ast$ Run\-Comparator\-::\-\_\-x\-Axis\-Histo\hspace{0.3cm}{\ttfamily [protected]}}}\label{class_run_comparator_ab86d48424540d0f3f9abf52a2c11366b}
+
+
+The internal instance of the x axis histogram. 
+
+
+
+Definition at line 150 of file Run\-Comparator.\-h.
+
+
+
+Referenced by get\-X\-Axis\-Histo(), prepare\-Graph(), and $\sim$\-Run\-Comparator().
+
+\hypertarget{class_run_comparator_a05efdd671ec49502c946eb813e84ed62}{\index{Run\-Comparator@{Run\-Comparator}!\-\_\-y\-Axis\-Histo@{\-\_\-y\-Axis\-Histo}}
+\index{\-\_\-y\-Axis\-Histo@{\-\_\-y\-Axis\-Histo}!RunComparator@{Run\-Comparator}}
+\subsubsection[{\-\_\-y\-Axis\-Histo}]{\setlength{\rightskip}{0pt plus 5cm}T\-H1\-D$\ast$ Run\-Comparator\-::\-\_\-y\-Axis\-Histo\hspace{0.3cm}{\ttfamily [protected]}}}\label{class_run_comparator_a05efdd671ec49502c946eb813e84ed62}
+
+
+The internal instance of the y axis histogram. 
+
+
+
+Definition at line 151 of file Run\-Comparator.\-h.
+
+
+
+Referenced by get\-Y\-Axis\-Histo(), prepare\-Graph(), and $\sim$\-Run\-Comparator().
+
+
+
+The documentation for this class was generated from the following files\-:\begin{DoxyCompactItemize}
+\item 
+\hyperlink{_run_comparator_8h}{Run\-Comparator.\-h}\item 
+\hyperlink{_run_comparator_8cxx}{Run\-Comparator.\-cxx}\end{DoxyCompactItemize}

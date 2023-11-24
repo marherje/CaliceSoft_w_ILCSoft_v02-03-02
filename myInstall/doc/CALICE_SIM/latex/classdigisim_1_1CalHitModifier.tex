@@ -1,0 +1,67 @@
+\section{digisim\-:\-:Cal\-Hit\-Modifier Class Reference}
+\label{classdigisim_1_1CalHitModifier}\index{digisim\-::\-Cal\-Hit\-Modifier@{digisim\-::\-Cal\-Hit\-Modifier}}
+Inheritance diagram for digisim\-:\-:Cal\-Hit\-Modifier\-:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=1.212121cm]{classdigisim_1_1CalHitModifier}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+virtual {\bf Cal\-Hit\-Modifier} $\ast$ {\bfseries new\-Instance} (const std\-::string \&mod\-Name)=0\label{classdigisim_1_1CalHitModifier_a78f014f6849ab103ddbe94093db157ff}
+
+\item 
+virtual void {\bfseries set\-Debug} (int deb)\label{classdigisim_1_1CalHitModifier_a40b3f84abd58a31f5f7c755f3289b68d}
+
+\item 
+virtual void {\bfseries init} (std\-::vector$<$ float $>$ \&floats)=0\label{classdigisim_1_1CalHitModifier_aa42345de981ae1c1be57db93f3d0870b}
+
+\item 
+virtual void {\bfseries process\-Hits} (Temp\-Cal\-Hit\-Map \&hitmap)=0\label{classdigisim_1_1CalHitModifier_a26d09ac955c90b605d14be89da08b1f3}
+
+\item 
+virtual void {\bfseries print} () const =0\label{classdigisim_1_1CalHitModifier_ae0f77ccebc8851ea8f9867b6ba5c6aa6}
+
+\end{DoxyCompactItemize}
+\subsection*{Static Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+static std\-::map$<$ std\-::string, \\*
+{\bf Cal\-Hit\-Modifier} $\ast$ $>$ {\bfseries \-\_\-modifiers\-Available}\label{classdigisim_1_1CalHitModifier_a08096a0d105eb7415212805c6312b9db}
+
+\end{DoxyCompactItemize}
+\subsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+{\bfseries Cal\-Hit\-Modifier} (const std\-::string \&mod\-Name)\label{classdigisim_1_1CalHitModifier_ad342fac586ba1bb42049f4f91880ea8a}
+
+\end{DoxyCompactItemize}
+\subsection*{Static Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static void {\bfseries register\-Modifier} (const std\-::string \&name, {\bf Cal\-Hit\-Modifier} $\ast$p\-Mod)\label{classdigisim_1_1CalHitModifier_a406b5226b448efcd0b3ef0027087b70c}
+
+\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+int {\bfseries \-\_\-debug}\label{classdigisim_1_1CalHitModifier_a6995b37aaaf3f1e9a6b0d125d0af6dd5}
+
+\item 
+const std\-::string {\bfseries \-\_\-name}\label{classdigisim_1_1CalHitModifier_a121de4a7e029ba9c96cfd2c93b7d3017}
+
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+
+
+Definition at line 25 of file Cal\-Hit\-Modifier.\-hpp.
+
+
+
+The documentation for this class was generated from the following files\-:\begin{DoxyCompactItemize}
+\item 
+Cal\-Hit\-Modifier.\-hpp\item 
+Globals.\-cpp\end{DoxyCompactItemize}

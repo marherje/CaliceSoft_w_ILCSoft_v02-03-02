@@ -1,0 +1,274 @@
+\section{C\-A\-L\-I\-C\-E\-:\-:Ahc2\-Time\-Calibrator Class Reference}
+\label{classCALICE_1_1Ahc2TimeCalibrator}\index{C\-A\-L\-I\-C\-E\-::\-Ahc2\-Time\-Calibrator@{C\-A\-L\-I\-C\-E\-::\-Ahc2\-Time\-Calibrator}}
+
+
+Processor that does the Si\-P\-M calibration.  
+
+
+
+
+{\ttfamily \#include $<$Ahc2\-Time\-Calibrator.\-hh$>$}
+
+Inheritance diagram for C\-A\-L\-I\-C\-E\-:\-:Ahc2\-Time\-Calibrator\-:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classCALICE_1_1Ahc2TimeCalibrator}
+\end{center}
+\end{figure}
+\subsection*{Data Structures}
+\begin{DoxyCompactItemize}
+\item 
+struct {\bf Calib\-Value}
+\item 
+struct {\bf Hit}
+\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+{\bf Ahc2\-Time\-Calibrator} $\ast$ {\bfseries new\-Processor} ()\label{classCALICE_1_1Ahc2TimeCalibrator_a62fcfe64c82ded7d6b18a097eac0e227}
+
+\item 
+virtual void {\bfseries init} ()\label{classCALICE_1_1Ahc2TimeCalibrator_a1fd9c70b3c5e877cf9453576cdd9fc7f}
+
+\item 
+virtual void {\bfseries process\-Event} (L\-C\-Event $\ast$evt)\label{classCALICE_1_1Ahc2TimeCalibrator_a9e46000ab9e97cbf91ed0b5227fecbd1}
+
+\item 
+virtual void {\bfseries end} ()\label{classCALICE_1_1Ahc2TimeCalibrator_a2c604dd3e54a64f208d81bfb9fce8677}
+
+\end{DoxyCompactItemize}
+\subsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void {\bfseries Fill\-Container} (L\-C\-Event $\ast$evt)\label{classCALICE_1_1Ahc2TimeCalibrator_a8f4d7a95735401fbc9f2743fc0c3ac8e}
+
+\item 
+{\bf Hit} {\bfseries Read\-Labview\-Block} (const Labview\-Block2 \&block)\label{classCALICE_1_1Ahc2TimeCalibrator_a2039365be1b6ce5fdb18a9daaec4d5f8}
+
+\item 
+{\bf Hit} {\bfseries Read\-E\-U\-D\-A\-Q\-Block} (const E\-U\-D\-A\-Q\-Block2016 \&block, int channel)\label{classCALICE_1_1Ahc2TimeCalibrator_a5f2d63f6a2d905854f342adcd97c085d}
+
+\item 
+void {\bfseries Process\-Hit} ({\bf Hit} $\ast$hit)\label{classCALICE_1_1Ahc2TimeCalibrator_a9498da3d788f62db60161e3007341163}
+
+\item 
+void {\bfseries Fit\-Calibration} ()\label{classCALICE_1_1Ahc2TimeCalibrator_a02b4d7022243d6027d9e39657bdb2935}
+
+\item 
+std\-::pair$<$ float, float $>$ {\bfseries calculate\-Slope} (int module\-Nr, int chip\-Nr, int ref\-Mem\-Cell)\label{classCALICE_1_1Ahc2TimeCalibrator_a2a4c34a90bef00000a74b804e82b45ea}
+
+\item 
+void {\bfseries Write\-Slopes} (std\-::string fname)\label{classCALICE_1_1Ahc2TimeCalibrator_ab930ac5be7053794d7f2df6bfe680614}
+
+\item 
+void {\bfseries Write\-Offsets} (std\-::string fname)\label{classCALICE_1_1Ahc2TimeCalibrator_ac1f9ee17b56d41367cba2a742c6d395e}
+
+\item 
+void {\bfseries Write\-Non\-Linearity} (std\-::string fname)\label{classCALICE_1_1Ahc2TimeCalibrator_a744f1b022a5165b0ff981854a15a0fa8}
+
+\item 
+void {\bfseries Write\-Time\-Walk} (std\-::string fname)\label{classCALICE_1_1Ahc2TimeCalibrator_a70a98f2549e828f4ef7296d16832312d}
+
+\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+std\-::map$<$ int, std\-::map$<$ int, \\*
+std\-::map$<$ int, std\-::map$<$ int, \\*
+std\-::map$<$ int, std\-::vector\\*
+$<$ std\-::pair$<$ float, short $>$ $>$ $>$ $>$ $>$ $>$ $>$ {\bfseries \-\_\-sorted\-Hit\-Container}\label{classCALICE_1_1Ahc2TimeCalibrator_a4ad9a1a2332f58a2c3360f1b445f983b}
+
+\item 
+std\-::map$<$ int, std\-::map$<$ int, \\*
+std\-::map$<$ int, std\-::map$<$ int, \\*
+std\-::map$<$ int, {\bf Calib\-Value} $>$ $>$ $>$ $>$ $>$ {\bfseries \-\_\-m\-\_\-calibration\-\_\-slopes}\label{classCALICE_1_1Ahc2TimeCalibrator_a32d278ad093772556244b07621793fa0}
+
+\item 
+std\-::map$<$ int, std\-::map$<$ int, \\*
+std\-::map$<$ int, std\-::map$<$ int, \\*
+std\-::map$<$ int, {\bf Calib\-Value} $>$ $>$ $>$ $>$ $>$ {\bfseries \-\_\-m\-\_\-calibration\-\_\-offsets}\label{classCALICE_1_1Ahc2TimeCalibrator_a142b706b13a6463b3777ce834866da12}
+
+\item 
+std\-::map$<$ int, std\-::map$<$ int, \\*
+std\-::map$<$ int, std\-::map$<$ int, \\*
+std\-::map$<$ int, {\bf Calib\-Value} $>$ $>$ $>$ $>$ $>$ {\bfseries \-\_\-m\-\_\-calibration\-\_\-non\-Lin\-\_\-\-A}\label{classCALICE_1_1Ahc2TimeCalibrator_a220589cf03693be989b7623ced2c7e9e}
+
+\item 
+std\-::map$<$ int, std\-::map$<$ int, \\*
+std\-::map$<$ int, std\-::map$<$ int, \\*
+std\-::map$<$ int, {\bf Calib\-Value} $>$ $>$ $>$ $>$ $>$ {\bfseries \-\_\-m\-\_\-calibration\-\_\-non\-Lin\-\_\-\-B}\label{classCALICE_1_1Ahc2TimeCalibrator_a9140f56412c2aec3e7124155a051b9a3}
+
+\item 
+std\-::map$<$ int, std\-::map$<$ int, \\*
+std\-::map$<$ int, std\-::map$<$ int, \\*
+std\-::map$<$ int, {\bf Calib\-Value} $>$ $>$ $>$ $>$ $>$ {\bfseries \-\_\-m\-\_\-calibration\-\_\-non\-Lin\-\_\-\-C}\label{classCALICE_1_1Ahc2TimeCalibrator_aa07376af37b1f1a9998c44c530c9be5c}
+
+\item 
+std\-::map$<$ int, std\-::map$<$ int, \\*
+std\-::map$<$ int, std\-::map$<$ int, \\*
+std\-::map$<$ int, {\bf Calib\-Value} $>$ $>$ $>$ $>$ $>$ {\bfseries \-\_\-m\-\_\-calibration\-\_\-time\-Walk\-\_\-\-A}\label{classCALICE_1_1Ahc2TimeCalibrator_ad0a16941e1683907356d77461dd45eba}
+
+\item 
+std\-::map$<$ int, std\-::map$<$ int, \\*
+std\-::map$<$ int, std\-::map$<$ int, \\*
+std\-::map$<$ int, {\bf Calib\-Value} $>$ $>$ $>$ $>$ $>$ {\bfseries \-\_\-m\-\_\-calibration\-\_\-time\-Walk\-\_\-\-B}\label{classCALICE_1_1Ahc2TimeCalibrator_a4db838d0d776f380426f63860bbaa214}
+
+\item 
+std\-::map$<$ int, std\-::map$<$ int, \\*
+std\-::map$<$ int, std\-::map$<$ int, \\*
+std\-::map$<$ int, {\bf Calib\-Value} $>$ $>$ $>$ $>$ $>$ {\bfseries \-\_\-m\-\_\-calibration\-\_\-time\-Walk\-\_\-\-C}\label{classCALICE_1_1Ahc2TimeCalibrator_a17084934e1788a37037f9e130db4bbed}
+
+\item 
+int {\bfseries \-\_\-n\-Channels}\label{classCALICE_1_1Ahc2TimeCalibrator_aa5b8cbd07c30249556a8e2a36320d430}
+
+\item 
+double {\bfseries \-\_\-tdc\-Error}\label{classCALICE_1_1Ahc2TimeCalibrator_a0f493e5b59d9067a36743f9f680294f0}
+
+\item 
+double {\bfseries \-\_\-time\-Reference\-Error}\label{classCALICE_1_1Ahc2TimeCalibrator_aa849707a3a42de7e23c9f4eba28034c5}
+
+\item 
+std\-::string {\bf \-\_\-input\-Col\-Name}\label{classCALICE_1_1Ahc2TimeCalibrator_a1f129629f332173ceb51063af096d2c5}
+
+\begin{DoxyCompactList}\small\item\em name of the input collection \end{DoxyCompactList}\item 
+std\-::string {\bf \-\_\-ahc\-Hit\-Output\-Col\-Name}\label{classCALICE_1_1Ahc2TimeCalibrator_a7f5d3fd865838898b136b4a67c62947b}
+
+\begin{DoxyCompactList}\small\item\em name of the output A\-H\-C hit collection \end{DoxyCompactList}\item 
+std\-::string {\bf \-\_\-mapping\-Processor\-Name}\label{classCALICE_1_1Ahc2TimeCalibrator_a3acabba4b48f6b02b20e620ff5fbfe1e}
+
+\begin{DoxyCompactList}\small\item\em name of the processor which provides the mapping \end{DoxyCompactList}\item 
+std\-::string {\bfseries \-\_\-\-Ahc2\-Hardware\-Connection\-Name}\label{classCALICE_1_1Ahc2TimeCalibrator_a1a27e778eeb532c45e45066c8a62e687}
+
+\item 
+std\-::string {\bf \-\_\-temperature\-Processor\-Name}\label{classCALICE_1_1Ahc2TimeCalibrator_a4514484c08b455b1aeacdcb9437b5891}
+
+\begin{DoxyCompactList}\small\item\em name of the processor which provides the Si\-P\-M temperature \end{DoxyCompactList}\item 
+std\-::string {\bf \-\_\-\-B\-I\-F\-Collection\-Name}\label{classCALICE_1_1Ahc2TimeCalibrator_a6e782c335d79533e8a07de0a4cd9e548}
+
+\begin{DoxyCompactList}\small\item\em name of the processor which provides the Si\-P\-M temperature \end{DoxyCompactList}\item 
+int {\bfseries \-\_\-\-B\-I\-F\-Trigger\-Input\-Source}\label{classCALICE_1_1Ahc2TimeCalibrator_a6892b48b05b8004283567cb4b92a4764}
+
+\item 
+std\-::string {\bfseries \-\_\-reference\-Time\-Type}\label{classCALICE_1_1Ahc2TimeCalibrator_ab5b5c93d447b33cac8235999fd187653}
+
+\item 
+std\-::string {\bfseries \-\_\-output\-File\-Name\-\_\-time\-Slopes}\label{classCALICE_1_1Ahc2TimeCalibrator_a56cdc5e9bc932c58edbd46c3bbca5230}
+
+\item 
+std\-::string {\bfseries \-\_\-output\-File\-Name\-\_\-time\-Offsets}\label{classCALICE_1_1Ahc2TimeCalibrator_a408ffd6f123e860d267744f7fa894783}
+
+\item 
+std\-::string {\bfseries \-\_\-output\-File\-Name\-\_\-time\-Non\-Linearity}\label{classCALICE_1_1Ahc2TimeCalibrator_a4ebb2345b37be10960e788ff9fb1160e}
+
+\item 
+std\-::string {\bfseries \-\_\-output\-File\-Name\-\_\-time\-Walk}\label{classCALICE_1_1Ahc2TimeCalibrator_a7366ba658069d92b966e321aa340fb31}
+
+\item 
+bool {\bfseries \-\_\-skip\-First\-Memory\-Cell}\label{classCALICE_1_1Ahc2TimeCalibrator_aa4d1078711558d163eeb66822d8dd94a}
+
+\item 
+int {\bfseries \-\_\-min\-Hits\-Fit}\label{classCALICE_1_1Ahc2TimeCalibrator_a79c2ba9abf8dea2d2a8c7d197dde52c2}
+
+\item 
+int {\bfseries \-\_\-max\-Hits\-Fit}\label{classCALICE_1_1Ahc2TimeCalibrator_a866c3efc071b29bcdf8a3d4e12539cc9}
+
+\item 
+std\-::string {\bf \-\_\-cell\-Description\-Processor\-Name}\label{classCALICE_1_1Ahc2TimeCalibrator_a36014aff492d28ca737829e1158c9a4b}
+
+\begin{DoxyCompactList}\small\item\em name of the processor which provides the cells description \end{DoxyCompactList}\item 
+Mapped\-Container\\*
+$<$ Cell\-Description $>$ $\ast$ {\bf \-\_\-cell\-Descriptions}\label{classCALICE_1_1Ahc2TimeCalibrator_abe7c15147b77f585c769a7e1dc017af2}
+
+\begin{DoxyCompactList}\small\item\em mapped container of cells description \end{DoxyCompactList}\item 
+const Mapper $\ast$ {\bf \-\_\-mapper}\label{classCALICE_1_1Ahc2TimeCalibrator_a64c2d4119029e9ce8a77047b7b545c6c}
+
+\begin{DoxyCompactList}\small\item\em the mapper \end{DoxyCompactList}\item 
+Mapped\-Container$<$ Simple\-Value $>$ $\ast$ {\bf \-\_\-temperature\-Container}\label{classCALICE_1_1Ahc2TimeCalibrator_ade953481012d4286540e924df6e50165}
+
+\begin{DoxyCompactList}\small\item\em mapped container of cells temperature \end{DoxyCompactList}\item 
+bool {\bf \-\_\-newdataformat}\label{classCALICE_1_1Ahc2TimeCalibrator_ade5aaf5f3727eb0ee1e1d9dd1c4d484d}
+
+\begin{DoxyCompactList}\small\item\em flag for the new data format in E\-U\-D\-A\-Q \end{DoxyCompactList}\item 
+bool {\bf \-\_\-is\-First\-Event}
+\begin{DoxyCompactList}\small\item\em flag to switch to D\-A\-T\-A/\-M\-C at the first event, the following events should be the same. \end{DoxyCompactList}\item 
+Mapped\-Container\\*
+$<$ Calorimeter\-Hit\-Impl $>$ $\ast$ {\bf \-\_\-\-Hit\-Container}\label{classCALICE_1_1Ahc2TimeCalibrator_a7627ab3a3eb5245b1500a5a228bd3ccb}
+
+\begin{DoxyCompactList}\small\item\em mapped container of A\-H\-C\-A\-L cells \end{DoxyCompactList}\item 
+std\-::map$<$ int, std\-::pair$<$ int, \\*
+int $>$ $>$ {\bf \-\_\-\-Hardware\-Connnection\-Container}\label{classCALICE_1_1Ahc2TimeCalibrator_aa91b9bbcb6a6a3be99515647e895e611}
+
+\begin{DoxyCompactList}\small\item\em map containing relationship between Chip\-I\-D and Module/\-Chip\-Nb \end{DoxyCompactList}\item 
+int {\bfseries \-\_\-i\-Evt} = 0\label{classCALICE_1_1Ahc2TimeCalibrator_a2441a8d16fa6b8f36d6ffbbe2bccfe85}
+
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Processor that does the Si\-P\-M calibration. 
+
+The calibration is done according to the formula\-: $E_{calibrated}=f_{saturation}((E_{raw}-pedestal) \cdot IC/gain) \cdot gain/IC/MIP$
+
+Please note\-:
+\begin{DoxyItemize}
+\item this processor does the calibration for both data and Monte Carlo, based on the type of the input collection (\char`\"{}\-L\-C\-Generic\-Object\char`\"{} for data, and \char`\"{}\-Calorimeter\-Hit\char`\"{} for Monte Carlo);
+\item for noise creation, the saturation correction is disabled (do\-Saturation\-Correction=false), as well as the Zero\-Suppression (Zero\-Suppression = false)
+\item for Monte Carlo, the pedestal subtraction is disabled (Pedestal\-Subtraction=false)
+\end{DoxyItemize}
+
+\begin{DoxyParagraph}{processor parameters}
+\begin{TabularC}{2}
+\hline
+steering file parameter name &description  \\\cline{1-2}
+{\bfseries {\itshape  Input\-Collection\-Name }}&name of the input collection, with energy in A\-D\-C counts \\\cline{1-2}
+{\bfseries {\itshape  Output\-Collection\-Name }}&name of the output collection, with energy in M\-I\-Ps \\\cline{1-2}
+{\bfseries {\itshape  Mapping\-Processor\-Name }}&name of the mapping processor that provides the necessary Mapper class \\\cline{1-2}
+{\bfseries {\itshape  Ahc2\-Calibrations\-Processor\-Name }}&name of the processor which provides the Si\-P\-M calibrations \\\cline{1-2}
+{\bfseries {\itshape  Si\-P\-M\-Temperature\-Processor\-Name }}&name of the processor which provides the Si\-P\-M temperature \\\cline{1-2}
+{\bfseries {\itshape  Pedestal\-Subtraction }}&Flag to enable/disable pedestal subtraction \\\cline{1-2}
+{\bfseries {\itshape  Zero\-Suppression }}&Flag to enable/disable zero suppression (intention to apply the M\-I\-P cut) \\\cline{1-2}
+{\bfseries {\itshape  Mip\-Cut }}&Value of the M\-I\-P cut (default\-: 0.\-4 M\-I\-Ps) \\\cline{1-2}
+{\bfseries {\itshape  do\-Mip\-Conversion }}&Flag to enable/disable M\-I\-P Calibration \\\cline{1-2}
+{\bfseries {\itshape  do\-Mip\-Temperature\-Correction }}&Flag to enable/disable temperature correction of the M\-I\-P \\\cline{1-2}
+{\bfseries {\itshape  do\-Gain\-Temperature\-Correction }}&Flag to enable/disable temperature correction of the gain \\\cline{1-2}
+{\bfseries {\itshape  do\-Saturation\-Correction }}&Flag to enable/disable the saturation correction \\\cline{1-2}
+{\bfseries {\itshape  do\-Time\-Conversion }}&Flag to enable/disable the T\-D\-C Calibration \\\cline{1-2}
+{\bfseries {\itshape  do\-Error\-Calculation }}&Flag to enable/disable error calculation \\\cline{1-2}
+{\bfseries {\itshape  filter\-Dead\-Cells }}&Flag to enable/disable the filtering of dead cells \\\cline{1-2}
+{\bfseries {\itshape  filter\-Default\-Cells }}&Flag to enable/disable the filtering of default dead cells \\\cline{1-2}
+\end{TabularC}
+
+\end{DoxyParagraph}
+\begin{DoxyAuthor}{Author}
+{\tt cgraf@mpp.\-mpg.\-de} 
+\end{DoxyAuthor}
+\begin{DoxyVersion}{Version}
+0.\-1 
+\end{DoxyVersion}
+\begin{DoxyDate}{Date}
+January 2018 
+\end{DoxyDate}
+
+
+Definition at line 63 of file Ahc2\-Time\-Calibrator.\-hh.
+
+
+
+\subsection{Field Documentation}
+\index{C\-A\-L\-I\-C\-E\-::\-Ahc2\-Time\-Calibrator@{C\-A\-L\-I\-C\-E\-::\-Ahc2\-Time\-Calibrator}!\-\_\-is\-First\-Event@{\-\_\-is\-First\-Event}}
+\index{\-\_\-is\-First\-Event@{\-\_\-is\-First\-Event}!CALICE::Ahc2TimeCalibrator@{C\-A\-L\-I\-C\-E\-::\-Ahc2\-Time\-Calibrator}}
+\subsubsection[{\-\_\-is\-First\-Event}]{\setlength{\rightskip}{0pt plus 5cm}bool C\-A\-L\-I\-C\-E\-::\-Ahc2\-Time\-Calibrator\-::\-\_\-is\-First\-Event\hspace{0.3cm}{\ttfamily [protected]}}\label{classCALICE_1_1Ahc2TimeCalibrator_a5f7e021c927d01063e9ec177deec463c}
+
+
+flag to switch to D\-A\-T\-A/\-M\-C at the first event, the following events should be the same. 
+
+
+
+Definition at line 182 of file Ahc2\-Time\-Calibrator.\-hh.
+
+
+
+The documentation for this class was generated from the following files\-:\begin{DoxyCompactItemize}
+\item 
+Ahc2\-Time\-Calibrator.\-hh\item 
+Ahc2\-Time\-Calibrator.\-cc\end{DoxyCompactItemize}

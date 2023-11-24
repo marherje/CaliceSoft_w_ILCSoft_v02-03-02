@@ -1,0 +1,112 @@
+\section{digisim\-:\-:Sim\-Calorimeter\-Hits\-Processor Class Reference}
+\label{classdigisim_1_1SimCalorimeterHitsProcessor}\index{digisim\-::\-Sim\-Calorimeter\-Hits\-Processor@{digisim\-::\-Sim\-Calorimeter\-Hits\-Processor}}
+Inheritance diagram for digisim\-:\-:Sim\-Calorimeter\-Hits\-Processor\-:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classdigisim_1_1SimCalorimeterHitsProcessor}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+virtual Processor $\ast$ {\bfseries new\-Processor} ()\label{classdigisim_1_1SimCalorimeterHitsProcessor_a0167d5d99f039550ff02ae2c6053f1e4}
+
+\item 
+virtual void {\bf init} ()
+\begin{DoxyCompactList}\small\item\em Called at the begin of the job before anything is read. \end{DoxyCompactList}\item 
+virtual void {\bf process\-Event} (L\-C\-Event $\ast$evt)
+\begin{DoxyCompactList}\small\item\em Called for every run. \end{DoxyCompactList}\item 
+virtual void {\bf end} ()\label{classdigisim_1_1SimCalorimeterHitsProcessor_a415577954cca081b450fd0a608560529}
+
+\begin{DoxyCompactList}\small\item\em Called after data processing for clean up. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+L\-C\-Event $\ast$ {\bfseries \-\_\-evt}\label{classdigisim_1_1SimCalorimeterHitsProcessor_abd5a88f643a6ff8b4a2f42bca5909fe8}
+
+\item 
+std\-::vector$<$ std\-::string $>$ {\bfseries \-\_\-raw\-Names}\label{classdigisim_1_1SimCalorimeterHitsProcessor_ae70e4f720684c6836f7341b639b32f17}
+
+\item 
+std\-::vector$<$ std\-::string $>$ {\bfseries \-\_\-link\-Names}\label{classdigisim_1_1SimCalorimeterHitsProcessor_a969829cd4ae399f8012ee38c790bd6fa}
+
+\item 
+std\-::vector$<$ std\-::string $>$ {\bfseries \-\_\-output\-Names}\label{classdigisim_1_1SimCalorimeterHitsProcessor_ac30ad5b4d57c5c983a6c840ca3a988ee}
+
+\item 
+double {\bfseries \-\_\-ene\-Factor}\label{classdigisim_1_1SimCalorimeterHitsProcessor_a7be096df555305c582986a4048c2db66}
+
+\item 
+double {\bfseries \-\_\-time\-Factor}\label{classdigisim_1_1SimCalorimeterHitsProcessor_a89c7b96076328bd999480165b9b8993c}
+
+\item 
+int {\bfseries \-\_\-n\-Run}\label{classdigisim_1_1SimCalorimeterHitsProcessor_abf27722a302a66a718722009882e37af}
+
+\item 
+int {\bfseries \-\_\-n\-Evt}\label{classdigisim_1_1SimCalorimeterHitsProcessor_a78e7e5a57ea47b1fe85d8335d73e360b}
+
+\item 
+std\-::map$<$ const \\*
+E\-V\-E\-N\-T\-::\-Raw\-Calorimeter\-Hit \\*
+$\ast$, std\-::vector$<$ const \\*
+E\-V\-E\-N\-T\-::\-L\-C\-Relation $\ast$ $>$ $\ast$ $>$ $\ast$ {\bfseries \-\_\-links\-Map}\label{classdigisim_1_1SimCalorimeterHitsProcessor_a4391c1811ba2ccea77a3c1a0df009151}
+
+\item 
+{\bf Raw2\-Sim\-Converter} $\ast$ {\bfseries \-\_\-converter}\label{classdigisim_1_1SimCalorimeterHitsProcessor_a6943e3c363a9272114a8b9f523c88486}
+
+\end{DoxyCompactItemize}
+\subsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+E\-V\-E\-N\-T\-::\-L\-C\-Collection $\ast$ {\bfseries create\-Output\-Collection} (const std\-::vector$<$ const I\-M\-P\-L\-::\-Sim\-Calorimeter\-Hit\-Impl $\ast$ $>$ \&newhits)\label{classdigisim_1_1SimCalorimeterHitsProcessor_ab346f980ae3d444d89bd61ac9b558bfd}
+
+\item 
+void {\bfseries clear\-Links\-Map} ()\label{classdigisim_1_1SimCalorimeterHitsProcessor_a651df6cc5857e5defa3ded96b7ee1d7f}
+
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+
+
+Definition at line 25 of file Sim\-Calorimeter\-Hits\-Processor.\-hpp.
+
+
+
+\subsection{Member Function Documentation}
+\index{digisim\-::\-Sim\-Calorimeter\-Hits\-Processor@{digisim\-::\-Sim\-Calorimeter\-Hits\-Processor}!init@{init}}
+\index{init@{init}!digisim::SimCalorimeterHitsProcessor@{digisim\-::\-Sim\-Calorimeter\-Hits\-Processor}}
+\subsubsection[{init}]{\setlength{\rightskip}{0pt plus 5cm}void digisim\-::\-Sim\-Calorimeter\-Hits\-Processor\-::init (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}\label{classdigisim_1_1SimCalorimeterHitsProcessor_a0db07062a94c58566e7d6e9ec76269ad}
+
+
+Called at the begin of the job before anything is read. 
+
+Use to initialize the processor, e.\-g. book histograms. 
+
+Definition at line 164 of file Sim\-Calorimeter\-Hits\-Processor.\-cpp.
+
+\index{digisim\-::\-Sim\-Calorimeter\-Hits\-Processor@{digisim\-::\-Sim\-Calorimeter\-Hits\-Processor}!process\-Event@{process\-Event}}
+\index{process\-Event@{process\-Event}!digisim::SimCalorimeterHitsProcessor@{digisim\-::\-Sim\-Calorimeter\-Hits\-Processor}}
+\subsubsection[{process\-Event}]{\setlength{\rightskip}{0pt plus 5cm}void digisim\-::\-Sim\-Calorimeter\-Hits\-Processor\-::process\-Event (
+\begin{DoxyParamCaption}
+\item[{L\-C\-Event $\ast$}]{evt}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}\label{classdigisim_1_1SimCalorimeterHitsProcessor_aa4a52f270887036315f7fde324a45fd8}
+
+
+Called for every run. 
+
+Called for every event 
+
+Definition at line 82 of file Sim\-Calorimeter\-Hits\-Processor.\-cpp.
+
+
+
+The documentation for this class was generated from the following files\-:\begin{DoxyCompactItemize}
+\item 
+Sim\-Calorimeter\-Hits\-Processor.\-hpp\item 
+Sim\-Calorimeter\-Hits\-Processor.\-cpp\end{DoxyCompactItemize}

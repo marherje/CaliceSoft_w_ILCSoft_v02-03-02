@@ -1,0 +1,125 @@
+\section{marlin\-:\-:Run\-Time\-Processor Class Reference}
+\label{classmarlin_1_1RunTimeProcessor}\index{marlin\-::\-Run\-Time\-Processor@{marlin\-::\-Run\-Time\-Processor}}
+
+
+Simple processor which allows for an eay relation bwetween runnumbers and runtime and therefore a convenient browsing of the database.  
+
+
+
+
+{\ttfamily \#include $<$Run\-Time\-Processor.\-hh$>$}
+
+Inheritance diagram for marlin\-:\-:Run\-Time\-Processor\-:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classmarlin_1_1RunTimeProcessor}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+Processor $\ast$ {\bfseries new\-Processor} ()\label{classmarlin_1_1RunTimeProcessor_abb4e168d5fbedd389700c6a49d3cda16}
+
+\item 
+void {\bf init} ()
+\begin{DoxyCompactList}\small\item\em Called at the begin of the job before anything is read. \end{DoxyCompactList}\item 
+void {\bf process\-Run\-Header} (L\-C\-Run\-Header $\ast$run)
+\begin{DoxyCompactList}\small\item\em Called for every run, e.\-g. \end{DoxyCompactList}\item 
+void {\bf process\-Event} (L\-C\-Event $\ast$evt\-P)
+\begin{DoxyCompactList}\small\item\em Called for every event -\/ the working horse. \end{DoxyCompactList}\item 
+void {\bfseries end} ()\label{classmarlin_1_1RunTimeProcessor_a67b683b9715712a534b86e365f551e5b}
+
+\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+int {\bfseries \-\_\-runnum}\label{classmarlin_1_1RunTimeProcessor_a226602232ec99af268c81e0b928aa785}
+
+\item 
+long64 {\bfseries \-\_\-beginofrun}\label{classmarlin_1_1RunTimeProcessor_a2801c1b8c0d4daa85e436ea969549629}
+
+\item 
+long64 {\bfseries \-\_\-endofrun}\label{classmarlin_1_1RunTimeProcessor_a1769a8281ce2531d7e486bd852dc5fd6}
+
+\item 
+bool {\bfseries \-\_\-begin\-Of\-Run\-Fetched}\label{classmarlin_1_1RunTimeProcessor_a064ab19d742cc513c1c3415e7fbba7b5}
+
+\item 
+std\-::string {\bfseries \-\_\-col\-Runtime}\label{classmarlin_1_1RunTimeProcessor_a6526b4be2886ba43df9208122a1ebf96}
+
+\item 
+std\-::string {\bfseries \-\_\-dbinit}\label{classmarlin_1_1RunTimeProcessor_ae1fe5999ff7a51f6eb2bfb21670fd4d5}
+
+\item 
+bool {\bfseries \-\_\-flag}\label{classmarlin_1_1RunTimeProcessor_afba9e89de5bf364a966fe0b920c346ad}
+
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Simple processor which allows for an eay relation bwetween runnumbers and runtime and therefore a convenient browsing of the database. 
+
+\begin{DoxyAuthor}{Author}
+\-: R.\-Poeschl L\-A\-L
+\end{DoxyAuthor}
+\begin{DoxyDate}{Date}
+Jun 2007 
+\end{DoxyDate}
+
+
+Definition at line 18 of file Run\-Time\-Processor.\-hh.
+
+
+
+\subsection{Member Function Documentation}
+\index{marlin\-::\-Run\-Time\-Processor@{marlin\-::\-Run\-Time\-Processor}!init@{init}}
+\index{init@{init}!marlin::RunTimeProcessor@{marlin\-::\-Run\-Time\-Processor}}
+\subsubsection[{init}]{\setlength{\rightskip}{0pt plus 5cm}void marlin\-::\-Run\-Time\-Processor\-::init (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{classmarlin_1_1RunTimeProcessor_a864e65299205a751d64242464e61159c}
+
+
+Called at the begin of the job before anything is read. 
+
+Use to initialize the processor, e.\-g. book histograms. 
+
+Definition at line 61 of file Run\-Time\-Processor.\-cc.
+
+\index{marlin\-::\-Run\-Time\-Processor@{marlin\-::\-Run\-Time\-Processor}!process\-Event@{process\-Event}}
+\index{process\-Event@{process\-Event}!marlin::RunTimeProcessor@{marlin\-::\-Run\-Time\-Processor}}
+\subsubsection[{process\-Event}]{\setlength{\rightskip}{0pt plus 5cm}void marlin\-::\-Run\-Time\-Processor\-::process\-Event (
+\begin{DoxyParamCaption}
+\item[{L\-C\-Event $\ast$}]{evt\-P}
+\end{DoxyParamCaption}
+)}\label{classmarlin_1_1RunTimeProcessor_ab0ec7ef8923b3a6115658a69800aeb0f}
+
+
+Called for every event -\/ the working horse. 
+
+
+
+Definition at line 84 of file Run\-Time\-Processor.\-cc.
+
+\index{marlin\-::\-Run\-Time\-Processor@{marlin\-::\-Run\-Time\-Processor}!process\-Run\-Header@{process\-Run\-Header}}
+\index{process\-Run\-Header@{process\-Run\-Header}!marlin::RunTimeProcessor@{marlin\-::\-Run\-Time\-Processor}}
+\subsubsection[{process\-Run\-Header}]{\setlength{\rightskip}{0pt plus 5cm}void marlin\-::\-Run\-Time\-Processor\-::process\-Run\-Header (
+\begin{DoxyParamCaption}
+\item[{L\-C\-Run\-Header $\ast$}]{run}
+\end{DoxyParamCaption}
+)}\label{classmarlin_1_1RunTimeProcessor_a7fe5dbba9ba3b2566bbfbf971acc3e7a}
+
+
+Called for every run, e.\-g. 
+
+overwrite to initialize run dependent histograms. 
+
+Definition at line 73 of file Run\-Time\-Processor.\-cc.
+
+
+
+The documentation for this class was generated from the following files\-:\begin{DoxyCompactItemize}
+\item 
+Run\-Time\-Processor.\-hh\item 
+Run\-Time\-Processor.\-cc\end{DoxyCompactItemize}

@@ -1,0 +1,84 @@
+\section{C\-A\-L\-I\-C\-E\-:\-:Append\-Processor Class Reference}
+\label{classCALICE_1_1AppendProcessor}\index{C\-A\-L\-I\-C\-E\-::\-Append\-Processor@{C\-A\-L\-I\-C\-E\-::\-Append\-Processor}}
+
+
+Processor which allows to append events from additional L\-C\-I\-O files.  
+
+
+
+
+{\ttfamily \#include $<$Append\-Processor.\-hh$>$}
+
+Inheritance diagram for C\-A\-L\-I\-C\-E\-:\-:Append\-Processor\-:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classCALICE_1_1AppendProcessor}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+virtual Processor $\ast$ {\bfseries new\-Processor} ()\label{classCALICE_1_1AppendProcessor_a49551ee02f9d177c4d77a9c0248aba85}
+
+\item 
+virtual void {\bfseries init} ()\label{classCALICE_1_1AppendProcessor_ac589867ec7de2dee41f13db721261877}
+
+\item 
+virtual void {\bfseries process\-Event} (lcio\-::\-L\-C\-Event $\ast$evt)\label{classCALICE_1_1AppendProcessor_ab5b4a17cc986692a45f4d6e748df08ee}
+
+\end{DoxyCompactItemize}
+\subsection*{Protected Types}
+\begin{DoxyCompactItemize}
+\item 
+enum {\bfseries Hits\-Type\-\_\-t} \{ {\bfseries T\-C\-M\-T\-H\-I\-T}, 
+{\bfseries F\-A\-S\-T\-C\-A\-L\-I\-C\-E\-H\-I\-T}
+ \}
+\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+lcio\-::\-String\-Vec {\bfseries \-\_\-append\-File\-Names}\label{classCALICE_1_1AppendProcessor_afdd4ad0e4dada93d7d01c3f7632ab52f}
+
+\item 
+lcio\-::\-String\-Vec {\bfseries \-\_\-append\-Collection\-Input\-Names}\label{classCALICE_1_1AppendProcessor_adaa30643ff06a2922ba6150d0074a209}
+
+\item 
+lcio\-::\-String\-Vec {\bfseries \-\_\-append\-Collection\-Output\-Names}\label{classCALICE_1_1AppendProcessor_a587c513c73ccba16381895637ea7a573}
+
+\item 
+lcio\-::\-Int\-Vec {\bfseries \-\_\-append\-Collection\-Fix\-Levels}\label{classCALICE_1_1AppendProcessor_aeffce05dc4e7e46b4b6f8255bc25b087}
+
+\item 
+lcio\-::\-L\-C\-Reader $\ast$ {\bfseries \-\_\-lc\-Reader}\label{classCALICE_1_1AppendProcessor_af05bb76ed964d8ea1834a757bd6ea9f6}
+
+\item 
+lcio\-::\-Int\-Vec {\bfseries \-\_\-use\-Tcmt\-Hits}\label{classCALICE_1_1AppendProcessor_a7970df457e270143908dd9a3b79b39b1}
+
+\item 
+Hits\-Type\-\_\-t {\bfseries \-\_\-hits\-Type}\label{classCALICE_1_1AppendProcessor_ad93eefa5222ef45a3715c19eaa8ce2de}
+
+\item 
+bool {\bfseries \-\_\-append\-Repeat\-Collections}\label{classCALICE_1_1AppendProcessor_a82e205bebcae4791e97857b1b548ff28}
+
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Processor which allows to append events from additional L\-C\-I\-O files. 
+
+\begin{DoxyAuthor}{Authors}
+Sebastian Schmidt, Joergen Samson, Guilherme Lima, Sebastian Richter 
+\end{DoxyAuthor}
+\begin{DoxyVersion}{Version}
+1.\-0 
+\end{DoxyVersion}
+
+
+Definition at line 16 of file Append\-Processor.\-hh.
+
+
+
+The documentation for this class was generated from the following files\-:\begin{DoxyCompactItemize}
+\item 
+Append\-Processor.\-hh\item 
+Append\-Processor.\-cc\end{DoxyCompactItemize}

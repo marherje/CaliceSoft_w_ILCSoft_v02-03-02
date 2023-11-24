@@ -1,0 +1,36 @@
+\section{/nfs/dust/ilc/user/marquezh/\-Calice\-Soft\-\_\-w\-\_\-\-I\-L\-C\-Soft\-\_\-v02-\/03-\/02/calice\-\_\-db\-\_\-tools/include/\-Lightyield\-Calculator.hh File Reference}
+\label{LightyieldCalculator_8hh}\index{/nfs/dust/ilc/user/marquezh/\-Calice\-Soft\-\_\-w\-\_\-\-I\-L\-C\-Soft\-\_\-v02-\/03-\/02/calice\-\_\-db\-\_\-tools/include/\-Lightyield\-Calculator.\-hh@{/nfs/dust/ilc/user/marquezh/\-Calice\-Soft\-\_\-w\-\_\-\-I\-L\-C\-Soft\-\_\-v02-\/03-\/02/calice\-\_\-db\-\_\-tools/include/\-Lightyield\-Calculator.\-hh}}
+{\ttfamily \#include \char`\"{}Linear\-Fit\-Constant.\-hh\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}Access\-Linear\-Fit\-Constant.\-hh\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}Access\-Linear\-Fit\-Slope.\-hh\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}lcio.\-h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}I\-M\-P\-L/\-L\-C\-Collection\-Vec.\-h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}I\-M\-P\-L/\-L\-C\-T\-O\-O\-L\-S.\-h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}I\-O/\-L\-C\-Reader.\-h\char`\"{}}\\*
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class {\bf Lightyield\-Calculator}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+this tool calculates the lightyield from C\-A\-L\-I\-C\-E\-::\-Linear\-Fit\-Constants.
+
+command line parameters\-:
+
+{\itshape --temp\-\_\-corr} -\/$>$ switch temperature correction O\-N\par
+\par
+ {\itshape --mip} -\/$>$ define M\-I\-P input\par
+ {\itshape --gain} -\/$>$ define G\-A\-I\-N input\par
+ {\itshape --gain\-\_\-slopes} -\/$>$ define input for G\-A\-I\-N slopes d\-G/d\-T\par
+ {\itshape --ic} -\/$>$ define I\-C input\par
+\par
+ {\itshape --txt} $<$inputfile.\-txt$>$ -\/$>$ define .txt file as source (format\-: module/chip/channel/value/error...)\par
+ {\itshape --slcio} $<$inputfile.\-slcio$>$ $<$collection$>$ -\/$>$ define collection from .slcio file as source\par
+ {\itshape --db} $<$D\-Bfolder$>$ $<$time$>$ -\/$>$ define database folder at time $<$time$>$ as source, using no tag\par
+ {\itshape --db\-\_\-tag} $<$D\-Bfolder$>$ $<$time$>$ $<$tag$>$ -\/$>$ define database folder at time $<$time$>$ and tag $<$tag$>$ as source\par
+
+
+Definition in file {\bf Lightyield\-Calculator.\-hh}.
+

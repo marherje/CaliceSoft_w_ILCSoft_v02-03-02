@@ -1,0 +1,197 @@
+\section{Hist\-Par Class Reference}
+\label{classHistPar}\index{Hist\-Par@{Hist\-Par}}
+
+
+Class to describe the binning of equidistant histograms.  
+
+
+
+
+{\ttfamily \#include $<$Hist\-Par.\-hh$>$}
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+{\bf Hist\-Par} ()
+\begin{DoxyCompactList}\small\item\em Default constructor. \end{DoxyCompactList}\item 
+{\bf Hist\-Par} (U\-Int\-\_\-t n\-\_\-bins, Float\-\_\-t x\-\_\-min, Float\-\_\-t x\-\_\-max)
+\begin{DoxyCompactList}\small\item\em Constructor. \end{DoxyCompactList}\item 
+{\bf Hist\-Par} \& {\bf set\-N\-Bins} (U\-Int\-\_\-t n\-\_\-bins)
+\begin{DoxyCompactList}\small\item\em Set the number of bins. \end{DoxyCompactList}\item 
+{\bf Hist\-Par} \& {\bf set\-X\-Min} (Float\-\_\-t x\-\_\-min)
+\begin{DoxyCompactList}\small\item\em Set the lower edge of the first bin. \end{DoxyCompactList}\item 
+{\bf Hist\-Par} \& {\bf set\-X\-Max} (Float\-\_\-t x\-\_\-max)
+\begin{DoxyCompactList}\small\item\em set the upper edge of the last bin. \end{DoxyCompactList}\item 
+U\-Int\-\_\-t {\bf n\-Bins} () const 
+\begin{DoxyCompactList}\small\item\em The number of bins to be used. \end{DoxyCompactList}\item 
+Float\-\_\-t {\bf x\-Min} () const 
+\begin{DoxyCompactList}\small\item\em The lower edge of the first bin. \end{DoxyCompactList}\item 
+Float\-\_\-t {\bf x\-Max} () const 
+\begin{DoxyCompactList}\small\item\em The upper edge of the last bin. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+U\-Int\-\_\-t {\bfseries \-\_\-n\-Bins}\label{classHistPar_a2f92256cb42728ba7451833957f8e736}
+
+\item 
+Float\-\_\-t {\bfseries \-\_\-x\-Min}\label{classHistPar_a42e200659eadda3a8cc9d437b508fd69}
+
+\item 
+Float\-\_\-t {\bfseries \-\_\-x\-Max}\label{classHistPar_a231c21049680a88f30390d2c8e2b24f1}
+
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Class to describe the binning of equidistant histograms. 
+
+Definition at line 8 of file Hist\-Par.\-hh.
+
+
+
+\subsection{Constructor \& Destructor Documentation}
+\index{Hist\-Par@{Hist\-Par}!Hist\-Par@{Hist\-Par}}
+\index{Hist\-Par@{Hist\-Par}!HistPar@{Hist\-Par}}
+\subsubsection[{Hist\-Par}]{\setlength{\rightskip}{0pt plus 5cm}Hist\-Par\-::\-Hist\-Par (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\label{classHistPar_a03ca9e6513517a8d0748eeb9b3723366}
+
+
+Default constructor. 
+
+The binning defined by the default constructor is invalid. 
+
+Definition at line 14 of file Hist\-Par.\-hh.
+
+\index{Hist\-Par@{Hist\-Par}!Hist\-Par@{Hist\-Par}}
+\index{Hist\-Par@{Hist\-Par}!HistPar@{Hist\-Par}}
+\subsubsection[{Hist\-Par}]{\setlength{\rightskip}{0pt plus 5cm}Hist\-Par\-::\-Hist\-Par (
+\begin{DoxyParamCaption}
+\item[{U\-Int\-\_\-t}]{n\-\_\-bins, }
+\item[{Float\-\_\-t}]{x\-\_\-min, }
+\item[{Float\-\_\-t}]{x\-\_\-max}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\label{classHistPar_aa2be58b98431631d7dd39cc214a88c62}
+
+
+Constructor. 
+
+\begin{DoxySeeAlso}{See Also}
+\doxyref{set\-N\-Bins}{p.}{classHistPar_a56c5bd27973aadd8f2f0d2b35e9fb783},\doxyref{set\-X\-Min}{p.}{classHistPar_ae822c2e2fdc618936d86b7fb0c6ba6fe},set\-Xmax 
+\end{DoxySeeAlso}
+
+
+Definition at line 19 of file Hist\-Par.\-hh.
+
+
+
+\subsection{Member Function Documentation}
+\index{Hist\-Par@{Hist\-Par}!n\-Bins@{n\-Bins}}
+\index{n\-Bins@{n\-Bins}!HistPar@{Hist\-Par}}
+\subsubsection[{n\-Bins}]{\setlength{\rightskip}{0pt plus 5cm}U\-Int\-\_\-t Hist\-Par\-::n\-Bins (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}\label{classHistPar_a6d6a4c67550ec02a8e0233b89897baf8}
+
+
+The number of bins to be used. 
+
+This does not include overflow and underflow bins. Thus, generally two more bins will be used to store the overflow and the underflow. 
+
+Definition at line 41 of file Hist\-Par.\-hh.
+
+
+
+Referenced by histmgr\-::\-Float\-Histogram1\-D\-::\-Float\-Histogram1\-D(), histmgr\-::\-Float\-Histogram2\-D\-::\-Float\-Histogram2\-D(), histmgr\-::\-Profile1\-D\-::\-Profile1\-D(), and histmgr\-::\-Histogram1\-D\-::set\-Binning().
+
+\index{Hist\-Par@{Hist\-Par}!set\-N\-Bins@{set\-N\-Bins}}
+\index{set\-N\-Bins@{set\-N\-Bins}!HistPar@{Hist\-Par}}
+\subsubsection[{set\-N\-Bins}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Hist\-Par}\& Hist\-Par\-::set\-N\-Bins (
+\begin{DoxyParamCaption}
+\item[{U\-Int\-\_\-t}]{n\-\_\-bins}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\label{classHistPar_a56c5bd27973aadd8f2f0d2b35e9fb783}
+
+
+Set the number of bins. 
+
+This does not include overflow and underflow bins. Thus, generally two more bins will be used to store the overflow and the underflow. 
+
+Definition at line 25 of file Hist\-Par.\-hh.
+
+\index{Hist\-Par@{Hist\-Par}!set\-X\-Max@{set\-X\-Max}}
+\index{set\-X\-Max@{set\-X\-Max}!HistPar@{Hist\-Par}}
+\subsubsection[{set\-X\-Max}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Hist\-Par}\& Hist\-Par\-::set\-X\-Max (
+\begin{DoxyParamCaption}
+\item[{Float\-\_\-t}]{x\-\_\-max}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\label{classHistPar_af50d5c36606d0e7d8460f12b9cc61446}
+
+
+set the upper edge of the last bin. 
+
+Everything above this value will be directed to the overflow bin. 
+
+Definition at line 35 of file Hist\-Par.\-hh.
+
+\index{Hist\-Par@{Hist\-Par}!set\-X\-Min@{set\-X\-Min}}
+\index{set\-X\-Min@{set\-X\-Min}!HistPar@{Hist\-Par}}
+\subsubsection[{set\-X\-Min}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Hist\-Par}\& Hist\-Par\-::set\-X\-Min (
+\begin{DoxyParamCaption}
+\item[{Float\-\_\-t}]{x\-\_\-min}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\label{classHistPar_ae822c2e2fdc618936d86b7fb0c6ba6fe}
+
+
+Set the lower edge of the first bin. 
+
+Everything below this value will be directed to the underflow bin. 
+
+Definition at line 30 of file Hist\-Par.\-hh.
+
+\index{Hist\-Par@{Hist\-Par}!x\-Max@{x\-Max}}
+\index{x\-Max@{x\-Max}!HistPar@{Hist\-Par}}
+\subsubsection[{x\-Max}]{\setlength{\rightskip}{0pt plus 5cm}Float\-\_\-t Hist\-Par\-::x\-Max (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}\label{classHistPar_a533bc6a30c8d3fde6a8df312dfa83761}
+
+
+The upper edge of the last bin. 
+
+Everything above this value will be directed to the overflow bin. 
+
+Definition at line 51 of file Hist\-Par.\-hh.
+
+
+
+Referenced by histmgr\-::\-Histogram1\-D\-::set\-Binning().
+
+\index{Hist\-Par@{Hist\-Par}!x\-Min@{x\-Min}}
+\index{x\-Min@{x\-Min}!HistPar@{Hist\-Par}}
+\subsubsection[{x\-Min}]{\setlength{\rightskip}{0pt plus 5cm}Float\-\_\-t Hist\-Par\-::x\-Min (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}\label{classHistPar_a53d9f558f797c20e709f72a644f49634}
+
+
+The lower edge of the first bin. 
+
+Everything below this value will be directed to the underflow bin. 
+
+Definition at line 46 of file Hist\-Par.\-hh.
+
+
+
+Referenced by histmgr\-::\-Histogram1\-D\-::set\-Binning().
+
+
+
+The documentation for this class was generated from the following file\-:\begin{DoxyCompactItemize}
+\item 
+Hist\-Par.\-hh\end{DoxyCompactItemize}

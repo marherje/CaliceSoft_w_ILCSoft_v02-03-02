@@ -1,0 +1,124 @@
+\section{C\-A\-L\-I\-C\-E\-:\-:C\-Hit Class Reference}
+\label{classCALICE_1_1CHit}\index{C\-A\-L\-I\-C\-E\-::\-C\-Hit@{C\-A\-L\-I\-C\-E\-::\-C\-Hit}}
+
+
+{\ttfamily \#include $<$Shower\-Start\-Finding\-Processor.\-hh$>$}
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+{\bf C\-Hit} ()
+\item 
+{\bf $\sim$\-C\-Hit} ()
+\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+int {\bfseries l}\label{classCALICE_1_1CHit_ae0fd15bed570010ba641d99302254a8c}
+
+\item 
+float {\bf x}
+\item 
+float {\bf y}
+\item 
+float {\bf z}
+\item 
+float {\bf e}
+\item 
+float {\bf r}
+\item 
+float {\bf c}
+\item 
+int {\bf n1}
+\item 
+int {\bf n2}
+\item 
+int {\bf n3}
+\item 
+int {\bf nc}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Auxiliary class to keep hit data 
+
+\subsection{Constructor \& Destructor Documentation}
+\index{C\-A\-L\-I\-C\-E\-::\-C\-Hit@{C\-A\-L\-I\-C\-E\-::\-C\-Hit}!C\-Hit@{C\-Hit}}
+\index{C\-Hit@{C\-Hit}!CALICE::CHit@{C\-A\-L\-I\-C\-E\-::\-C\-Hit}}
+\subsubsection[{C\-Hit}]{\setlength{\rightskip}{0pt plus 5cm}C\-A\-L\-I\-C\-E\-::\-C\-Hit\-::\-C\-Hit (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\label{classCALICE_1_1CHit_a6622cd3ad6d204e6ca418819743ecd7d}
+Constructor with member initialization \index{C\-A\-L\-I\-C\-E\-::\-C\-Hit@{C\-A\-L\-I\-C\-E\-::\-C\-Hit}!$\sim$\-C\-Hit@{$\sim$\-C\-Hit}}
+\index{$\sim$\-C\-Hit@{$\sim$\-C\-Hit}!CALICE::CHit@{C\-A\-L\-I\-C\-E\-::\-C\-Hit}}
+\subsubsection[{$\sim$\-C\-Hit}]{\setlength{\rightskip}{0pt plus 5cm}C\-A\-L\-I\-C\-E\-::\-C\-Hit\-::$\sim$\-C\-Hit (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\label{classCALICE_1_1CHit_a525fa9fce2eb17ffbd40825c7dc8328f}
+Default destructor 
+
+\subsection{Member Data Documentation}
+\index{C\-A\-L\-I\-C\-E\-::\-C\-Hit@{C\-A\-L\-I\-C\-E\-::\-C\-Hit}!c@{c}}
+\index{c@{c}!CALICE::CHit@{C\-A\-L\-I\-C\-E\-::\-C\-Hit}}
+\subsubsection[{c}]{\setlength{\rightskip}{0pt plus 5cm}float C\-Hit\-::c}\label{classCALICE_1_1CHit_a501007bdab32d174e272c37f2093fb7d}
+Criteria for distance between neighbour hits 
+
+Referenced by Primary\-Track\-Finder\-::process\-Event().
+
+\index{C\-A\-L\-I\-C\-E\-::\-C\-Hit@{C\-A\-L\-I\-C\-E\-::\-C\-Hit}!e@{e}}
+\index{e@{e}!CALICE::CHit@{C\-A\-L\-I\-C\-E\-::\-C\-Hit}}
+\subsubsection[{e}]{\setlength{\rightskip}{0pt plus 5cm}float C\-Hit\-::e}\label{classCALICE_1_1CHit_a350b70c6610b2a393237a14ee2f51310}
+z coordinate of hit 
+
+Referenced by Primary\-Track\-Finder\-::process\-Event().
+
+\index{C\-A\-L\-I\-C\-E\-::\-C\-Hit@{C\-A\-L\-I\-C\-E\-::\-C\-Hit}!n1@{n1}}
+\index{n1@{n1}!CALICE::CHit@{C\-A\-L\-I\-C\-E\-::\-C\-Hit}}
+\subsubsection[{n1}]{\setlength{\rightskip}{0pt plus 5cm}int C\-A\-L\-I\-C\-E\-::\-C\-Hit\-::n1}\label{classCALICE_1_1CHit_ac76e3d9bbfa459b7a49cd30cc09639d3}
+Cell size in mm for track error estimate \index{C\-A\-L\-I\-C\-E\-::\-C\-Hit@{C\-A\-L\-I\-C\-E\-::\-C\-Hit}!n2@{n2}}
+\index{n2@{n2}!CALICE::CHit@{C\-A\-L\-I\-C\-E\-::\-C\-Hit}}
+\subsubsection[{n2}]{\setlength{\rightskip}{0pt plus 5cm}int C\-A\-L\-I\-C\-E\-::\-C\-Hit\-::n2}\label{classCALICE_1_1CHit_a7eb720820d3c5a6d73393f4f4dafd835}
+Number of neighbors in the same layer \index{C\-A\-L\-I\-C\-E\-::\-C\-Hit@{C\-A\-L\-I\-C\-E\-::\-C\-Hit}!n3@{n3}}
+\index{n3@{n3}!CALICE::CHit@{C\-A\-L\-I\-C\-E\-::\-C\-Hit}}
+\subsubsection[{n3}]{\setlength{\rightskip}{0pt plus 5cm}int C\-A\-L\-I\-C\-E\-::\-C\-Hit\-::n3}\label{classCALICE_1_1CHit_a2c9c0d94bba38ddb42a2e5f7f209c125}
+Number of neighbors in the same and previous layers \index{C\-A\-L\-I\-C\-E\-::\-C\-Hit@{C\-A\-L\-I\-C\-E\-::\-C\-Hit}!nc@{nc}}
+\index{nc@{nc}!CALICE::CHit@{C\-A\-L\-I\-C\-E\-::\-C\-Hit}}
+\subsubsection[{nc}]{\setlength{\rightskip}{0pt plus 5cm}int C\-A\-L\-I\-C\-E\-::\-C\-Hit\-::nc}\label{classCALICE_1_1CHit_aec2c8db262fd4081b45342f3825dc375}
+Number of neighbors around the hit \index{C\-A\-L\-I\-C\-E\-::\-C\-Hit@{C\-A\-L\-I\-C\-E\-::\-C\-Hit}!r@{r}}
+\index{r@{r}!CALICE::CHit@{C\-A\-L\-I\-C\-E\-::\-C\-Hit}}
+\subsubsection[{r}]{\setlength{\rightskip}{0pt plus 5cm}float C\-Hit\-::r}\label{classCALICE_1_1CHit_ac1bc0f62968053da2b6e42de30757397}
+Hit energy in M\-I\-P
+
+Hit energy in M\-I\-Ps 
+
+Referenced by Primary\-Track\-Finder\-::\-Find\-Track(), C\-A\-L\-I\-C\-E\-Overlay\-Preparation\-::process\-Event(), and Primary\-Track\-Finder\-::process\-Event().
+
+\index{C\-A\-L\-I\-C\-E\-::\-C\-Hit@{C\-A\-L\-I\-C\-E\-::\-C\-Hit}!x@{x}}
+\index{x@{x}!CALICE::CHit@{C\-A\-L\-I\-C\-E\-::\-C\-Hit}}
+\subsubsection[{x}]{\setlength{\rightskip}{0pt plus 5cm}float C\-Hit\-::x}\label{classCALICE_1_1CHit_a2d75c2ec6af4d1974d54dc7c95bb3769}
+Layer number 
+
+Referenced by Primary\-Track\-Finder\-::dist\-X\-Y(), Primary\-Track\-Finder\-::\-Find\-Track(), C\-A\-L\-I\-C\-E\-Overlay\-Preparation\-::process\-Event(), and Primary\-Track\-Finder\-::process\-Event().
+
+\index{C\-A\-L\-I\-C\-E\-::\-C\-Hit@{C\-A\-L\-I\-C\-E\-::\-C\-Hit}!y@{y}}
+\index{y@{y}!CALICE::CHit@{C\-A\-L\-I\-C\-E\-::\-C\-Hit}}
+\subsubsection[{y}]{\setlength{\rightskip}{0pt plus 5cm}float C\-Hit\-::y}\label{classCALICE_1_1CHit_a9ae960cc5bb59e64f41814c05501067f}
+x coordinate of hit 
+
+Referenced by Primary\-Track\-Finder\-::dist\-X\-Y(), Primary\-Track\-Finder\-::\-Find\-Track(), C\-A\-L\-I\-C\-E\-Overlay\-Preparation\-::process\-Event(), and Primary\-Track\-Finder\-::process\-Event().
+
+\index{C\-A\-L\-I\-C\-E\-::\-C\-Hit@{C\-A\-L\-I\-C\-E\-::\-C\-Hit}!z@{z}}
+\index{z@{z}!CALICE::CHit@{C\-A\-L\-I\-C\-E\-::\-C\-Hit}}
+\subsubsection[{z}]{\setlength{\rightskip}{0pt plus 5cm}float C\-Hit\-::z}\label{classCALICE_1_1CHit_ab1d439b8468fc38824edd2242475458e}
+y coordinate of hit 
+
+Referenced by Primary\-Track\-Finder\-::\-Find\-Track(), C\-A\-L\-I\-C\-E\-Overlay\-Preparation\-::process\-Event(), and Primary\-Track\-Finder\-::process\-Event().
+
+
+
+The documentation for this class was generated from the following files\-:\begin{DoxyCompactItemize}
+\item 
+/nfs/dust/ilc/user/marquezh/\-Calice\-Soft\-\_\-w\-\_\-\-I\-L\-C\-Soft\-\_\-v02-\/03-\/02/calice\-\_\-analysis/addon\-Procs/include/Shower\-Start\-Finding\-Processor.\-hh\item 
+/nfs/dust/ilc/user/marquezh/\-Calice\-Soft\-\_\-w\-\_\-\-I\-L\-C\-Soft\-\_\-v02-\/03-\/02/calice\-\_\-analysis/addon\-Procs/include/Primary\-Track\-Finder.\-hh\end{DoxyCompactItemize}

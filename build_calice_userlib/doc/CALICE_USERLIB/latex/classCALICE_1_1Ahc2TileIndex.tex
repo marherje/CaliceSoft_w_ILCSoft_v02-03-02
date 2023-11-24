@@ -1,0 +1,200 @@
+\section{C\-A\-L\-I\-C\-E\-:\-:Ahc2\-Tile\-Index Class Reference}
+\label{classCALICE_1_1Ahc2TileIndex}\index{C\-A\-L\-I\-C\-E\-::\-Ahc2\-Tile\-Index@{C\-A\-L\-I\-C\-E\-::\-Ahc2\-Tile\-Index}}
+
+
+Encodes/decodes hardware channel information for the Large \doxyref{C\-A\-L\-I\-C\-E}{p.}{namespaceCALICE} A\-H\-C\-A\-L prototype.  
+
+
+
+
+{\ttfamily \#include $<$Ahc2\-Tile\-Index.\-hh$>$}
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+{\bf Ahc2\-Tile\-Index} ()
+\begin{DoxyCompactList}\small\item\em Empty constructor. \end{DoxyCompactList}\item 
+{\bfseries Ahc2\-Tile\-Index} (std\-::string module\-Encoding\-String)\label{classCALICE_1_1Ahc2TileIndex_a741ee85e80eaeb8f8a877e59a3630c7b}
+
+\item 
+{\bf Ahc2\-Tile\-Index} (int index, std\-::string module\-Encoding\-String=\char`\"{}\char`\"{})\label{classCALICE_1_1Ahc2TileIndex_a0aef10843302b1e72b649edf7bd46b7e}
+
+\begin{DoxyCompactList}\small\item\em Constructor from an integer for decoding. \end{DoxyCompactList}\item 
+{\bf Ahc2\-Tile\-Index} (short mod, short chip, short chan, std\-::string module\-Encoding\-String=\char`\"{}\char`\"{})
+\begin{DoxyCompactList}\small\item\em Constructor from the minimum set of parameters required for unique identification. \end{DoxyCompactList}\item 
+{\bf Ahc2\-Tile\-Index} (short mod, short chip, short chan, short sipm, std\-::string module\-Encoding\-String=\char`\"{}\char`\"{})
+\begin{DoxyCompactList}\small\item\em Constructor from the full set of parameters. \end{DoxyCompactList}\item 
+{\bf $\sim$\-Ahc2\-Tile\-Index} ()\label{classCALICE_1_1Ahc2TileIndex_a28ec1fc4a510f974a25902ec2279892b}
+
+\begin{DoxyCompactList}\small\item\em Destructor -\/ does nothing. \end{DoxyCompactList}\item 
+unsigned int {\bf get\-Module} () const \label{classCALICE_1_1Ahc2TileIndex_a52d837a5b768fd5a0cdff7b7f42221f9}
+
+\begin{DoxyCompactList}\small\item\em Decode module identifier. \end{DoxyCompactList}\item 
+unsigned short {\bf get\-Module\-Type} () const \label{classCALICE_1_1Ahc2TileIndex_ab33c2b64160bb2b26e66e488e96a0ec8}
+
+\begin{DoxyCompactList}\small\item\em Derive module type from module and chip identifier. \end{DoxyCompactList}\item 
+unsigned short {\bf get\-Chip} () const \label{classCALICE_1_1Ahc2TileIndex_a85e39d362d4b4dcd4269f7fe096e4fdb}
+
+\begin{DoxyCompactList}\small\item\em Decode A\-S\-I\-C identifier. \end{DoxyCompactList}\item 
+unsigned short {\bf get\-Channel} () const \label{classCALICE_1_1Ahc2TileIndex_a0893a9e4039759fbc919617e9b04c503}
+
+\begin{DoxyCompactList}\small\item\em Decode multiplex channel. \end{DoxyCompactList}\item 
+unsigned short {\bf get\-Sipm} () const \label{classCALICE_1_1Ahc2TileIndex_ab61d3e31a46c7087f806abff9bab35ad}
+
+\begin{DoxyCompactList}\small\item\em Decode Si\-P\-M number. \end{DoxyCompactList}\item 
+unsigned int {\bf get\-Index} () const \label{classCALICE_1_1Ahc2TileIndex_a39e4a87b9bbe42b156a004134ec865b3}
+
+\begin{DoxyCompactList}\small\item\em Return T\-H\-E index. \end{DoxyCompactList}\item 
+{\bf Ahc2\-Tile\-Index} \& {\bf set\-Module\-Encoding\-String} (std\-::string module\-Encoding\-String)\label{classCALICE_1_1Ahc2TileIndex_a51686e409eaf9998c4f6a36e014a4634}
+
+\begin{DoxyCompactList}\small\item\em set module encoding stirng \end{DoxyCompactList}\item 
+{\bf Ahc2\-Tile\-Index} \& {\bfseries set\-Index} (unsigned int index)\label{classCALICE_1_1Ahc2TileIndex_a64bdbc64aea683d61fc7812bf96d551e}
+
+\item 
+{\bf Ahc2\-Tile\-Index} \& {\bf set\-Module} (short mod)\label{classCALICE_1_1Ahc2TileIndex_a48e0b7549bd93ae396c61c24933c4998}
+
+\begin{DoxyCompactList}\small\item\em Encode module identifier. \end{DoxyCompactList}\item 
+{\bf Ahc2\-Tile\-Index} \& {\bf set\-Chip} (short chip)\label{classCALICE_1_1Ahc2TileIndex_a61f601112b794116197860b4cf217aca}
+
+\begin{DoxyCompactList}\small\item\em Encode A\-S\-I\-C identifier. \end{DoxyCompactList}\item 
+{\bf Ahc2\-Tile\-Index} \& {\bf set\-Channel} (short chan)\label{classCALICE_1_1Ahc2TileIndex_a7dc32f4e96c886e608efc8bf1a48e91d}
+
+\begin{DoxyCompactList}\small\item\em Encode multiplex channel. \end{DoxyCompactList}\item 
+{\bf Ahc2\-Tile\-Index} \& {\bf set\-Sipm} (short sipm)\label{classCALICE_1_1Ahc2TileIndex_adb3ebef7ea8ff30202e9df1e657fee95}
+
+\begin{DoxyCompactList}\small\item\em Encode Si\-P\-M number. \end{DoxyCompactList}\item 
+std\-::string {\bf get\-Encoding\-String} (const unsigned int startbit)\label{classCALICE_1_1Ahc2TileIndex_a10fa7c1377ee78f298d505699dde0ba8}
+
+\begin{DoxyCompactList}\small\item\em Return the cellid encoding string according to an lcio Bit\-Field64. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+unsigned int {\bfseries \-\_\-index}\label{classCALICE_1_1Ahc2TileIndex_a89014d6ace3fd676c9820c1f9e8a43e0}
+
+\item 
+std\-::string {\bfseries \-\_\-module\-Encoding\-String}\label{classCALICE_1_1Ahc2TileIndex_ab191565b86ed6a757e25c32e43e01cd3}
+
+\item 
+U\-T\-I\-L\-::\-Bit\-Field64 $\ast$ {\bfseries \-\_\-bf\-\_\-cell\-I\-D}\label{classCALICE_1_1Ahc2TileIndex_a898a68a95fc0abe58c6a9392115c32b0}
+
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Encodes/decodes hardware channel information for the Large \doxyref{C\-A\-L\-I\-C\-E}{p.}{namespaceCALICE} A\-H\-C\-A\-L prototype. 
+
+This class encodes and decodes module, chip and channel as well as the Si\-P\-M number into/from a single integer. This integer is intended to be stored in the Cell\-I\-D1 field of L\-C\-I\-O Calorimeter\-Hit objects for easy reference to and unique identification of the hardware information of reconstructed hits.
+
+This class is adapted from the \doxyref{Hcal\-Tile\-Index.\-hh}{p.}{HcalTileIndex_8hh_source} class in order to make it flexible for different Cell\-I\-D encodings
+
+\begin{DoxyAuthor}{Author}
+Christian Graf 
+\end{DoxyAuthor}
+\begin{DoxyDate}{Date}
+2018, Jan 
+\end{DoxyDate}
+\begin{DoxyVersion}{Version}
+1.\-0 
+\end{DoxyVersion}
+
+
+Definition at line 29 of file Ahc2\-Tile\-Index.\-hh.
+
+
+
+\subsection{Constructor \& Destructor Documentation}
+\index{C\-A\-L\-I\-C\-E\-::\-Ahc2\-Tile\-Index@{C\-A\-L\-I\-C\-E\-::\-Ahc2\-Tile\-Index}!Ahc2\-Tile\-Index@{Ahc2\-Tile\-Index}}
+\index{Ahc2\-Tile\-Index@{Ahc2\-Tile\-Index}!CALICE::Ahc2TileIndex@{C\-A\-L\-I\-C\-E\-::\-Ahc2\-Tile\-Index}}
+\subsubsection[{Ahc2\-Tile\-Index}]{\setlength{\rightskip}{0pt plus 5cm}C\-A\-L\-I\-C\-E\-::\-Ahc2\-Tile\-Index\-::\-Ahc2\-Tile\-Index (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\label{classCALICE_1_1Ahc2TileIndex_a0e21744b89c397cd9e94fc6e78f8c8dd}
+
+
+Empty constructor. 
+
+All parameters default to zero. 
+
+Definition at line 33 of file Ahc2\-Tile\-Index.\-hh.
+
+
+
+References set\-Channel(), set\-Chip(), set\-Module(), set\-Module\-Encoding\-String(), and set\-Sipm().
+
+\index{C\-A\-L\-I\-C\-E\-::\-Ahc2\-Tile\-Index@{C\-A\-L\-I\-C\-E\-::\-Ahc2\-Tile\-Index}!Ahc2\-Tile\-Index@{Ahc2\-Tile\-Index}}
+\index{Ahc2\-Tile\-Index@{Ahc2\-Tile\-Index}!CALICE::Ahc2TileIndex@{C\-A\-L\-I\-C\-E\-::\-Ahc2\-Tile\-Index}}
+\subsubsection[{Ahc2\-Tile\-Index}]{\setlength{\rightskip}{0pt plus 5cm}C\-A\-L\-I\-C\-E\-::\-Ahc2\-Tile\-Index\-::\-Ahc2\-Tile\-Index (
+\begin{DoxyParamCaption}
+\item[{short}]{mod, }
+\item[{short}]{chip, }
+\item[{short}]{chan, }
+\item[{std\-::string}]{module\-Encoding\-String = {\ttfamily \char`\"{}\char`\"{}}}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\label{classCALICE_1_1Ahc2TileIndex_a82fbf0f8e0ff26830f90d4efcfb83c60}
+
+
+Constructor from the minimum set of parameters required for unique identification. 
+
+The Si\-P\-M number defaults to zero.
+
+
+\begin{DoxyParams}{Parameters}
+{\em mod} & Module identifier \\
+\hline
+{\em chip} & A\-S\-I\-C chip identifier \\
+\hline
+{\em chan} & Multiplex channel identifier \\
+\hline
+{\em module\-Encoding\-String} & encoding string \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 90 of file Ahc2\-Tile\-Index.\-hh.
+
+
+
+References set\-Channel(), set\-Chip(), set\-Module(), set\-Module\-Encoding\-String(), and set\-Sipm().
+
+\index{C\-A\-L\-I\-C\-E\-::\-Ahc2\-Tile\-Index@{C\-A\-L\-I\-C\-E\-::\-Ahc2\-Tile\-Index}!Ahc2\-Tile\-Index@{Ahc2\-Tile\-Index}}
+\index{Ahc2\-Tile\-Index@{Ahc2\-Tile\-Index}!CALICE::Ahc2TileIndex@{C\-A\-L\-I\-C\-E\-::\-Ahc2\-Tile\-Index}}
+\subsubsection[{Ahc2\-Tile\-Index}]{\setlength{\rightskip}{0pt plus 5cm}C\-A\-L\-I\-C\-E\-::\-Ahc2\-Tile\-Index\-::\-Ahc2\-Tile\-Index (
+\begin{DoxyParamCaption}
+\item[{short}]{mod, }
+\item[{short}]{chip, }
+\item[{short}]{chan, }
+\item[{short}]{sipm, }
+\item[{std\-::string}]{module\-Encoding\-String = {\ttfamily \char`\"{}\char`\"{}}}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\label{classCALICE_1_1Ahc2TileIndex_a6694fcab6ea3d79fc0254c45ba91fca6}
+
+
+Constructor from the full set of parameters. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em mod} & Module identifier \\
+\hline
+{\em chip} & A\-S\-I\-C chip identifier \\
+\hline
+{\em chan} & Multiplex channel identifier \\
+\hline
+{\em sipm} & Si\-P\-M identifier \\
+\hline
+{\em module\-Encoding\-String} & encoding string \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 113 of file Ahc2\-Tile\-Index.\-hh.
+
+
+
+References set\-Channel(), set\-Chip(), set\-Module(), set\-Module\-Encoding\-String(), and set\-Sipm().
+
+
+
+The documentation for this class was generated from the following file\-:\begin{DoxyCompactItemize}
+\item 
+Ahc2\-Tile\-Index.\-hh\end{DoxyCompactItemize}

@@ -1,0 +1,84 @@
+\section{C\-A\-L\-I\-C\-E\-:\-:Apply\-Threshold\-Cut Class Reference}
+\label{classCALICE_1_1ApplyThresholdCut}\index{C\-A\-L\-I\-C\-E\-::\-Apply\-Threshold\-Cut@{C\-A\-L\-I\-C\-E\-::\-Apply\-Threshold\-Cut}}
+
+
+{\ttfamily \#include $<$Apply\-Threshold\-Cut.\-hh$>$}
+
+Inheritance diagram for C\-A\-L\-I\-C\-E\-:\-:Apply\-Threshold\-Cut\-:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classCALICE_1_1ApplyThresholdCut}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+Processor $\ast$ {\bfseries new\-Processor} ()\label{classCALICE_1_1ApplyThresholdCut_a186bcbb2561cf335e460c21bdc0eefe7}
+
+\item 
+void {\bf init} ()
+\item 
+void {\bf process\-Run\-Header} (L\-C\-Run\-Header $\ast$run)
+\item 
+void {\bf process\-Event} (L\-C\-Event $\ast$evt)
+\item 
+void {\bf end} ()
+\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+std\-::string {\bfseries \-\_\-ahc\-Hit\-Col\-Name\-\_\-no\-Cut}\label{classCALICE_1_1ApplyThresholdCut_a844fedf3de23644cf4db571eae6371aa}
+
+\item 
+std\-::string {\bfseries \-\_\-ahc\-Hit\-Col\-Name\-\_\-w\-Cut}\label{classCALICE_1_1ApplyThresholdCut_a1879defe52c594609139e00e879cad16}
+
+\item 
+float {\bfseries \-\_\-mip\-Cut}\label{classCALICE_1_1ApplyThresholdCut_ae80630b09af37e6284350c7a85ca4d0f}
+
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Processor which drops all hits below energy threshold from hit collection. \begin{DoxyAuthor}{Author}
+N. Feege 
+\end{DoxyAuthor}
+\begin{DoxyDate}{Date}
+Aug 2009 
+\end{DoxyDate}
+
+
+\subsection{Member Function Documentation}
+\index{C\-A\-L\-I\-C\-E\-::\-Apply\-Threshold\-Cut@{C\-A\-L\-I\-C\-E\-::\-Apply\-Threshold\-Cut}!end@{end}}
+\index{end@{end}!CALICE::ApplyThresholdCut@{C\-A\-L\-I\-C\-E\-::\-Apply\-Threshold\-Cut}}
+\subsubsection[{end}]{\setlength{\rightskip}{0pt plus 5cm}void C\-A\-L\-I\-C\-E\-::\-Apply\-Threshold\-Cut\-::end (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{classCALICE_1_1ApplyThresholdCut_ad825513827e95fa0df396780b3d05821}
+Called after data processing for clean up. \index{C\-A\-L\-I\-C\-E\-::\-Apply\-Threshold\-Cut@{C\-A\-L\-I\-C\-E\-::\-Apply\-Threshold\-Cut}!init@{init}}
+\index{init@{init}!CALICE::ApplyThresholdCut@{C\-A\-L\-I\-C\-E\-::\-Apply\-Threshold\-Cut}}
+\subsubsection[{init}]{\setlength{\rightskip}{0pt plus 5cm}void C\-A\-L\-I\-C\-E\-::\-Apply\-Threshold\-Cut\-::init (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{classCALICE_1_1ApplyThresholdCut_ab53ec0d15116404ea639ba029fbef85b}
+Called at the begin of the job before anything is read. Use to initialize the processor, e.\-g. book histograms. \index{C\-A\-L\-I\-C\-E\-::\-Apply\-Threshold\-Cut@{C\-A\-L\-I\-C\-E\-::\-Apply\-Threshold\-Cut}!process\-Event@{process\-Event}}
+\index{process\-Event@{process\-Event}!CALICE::ApplyThresholdCut@{C\-A\-L\-I\-C\-E\-::\-Apply\-Threshold\-Cut}}
+\subsubsection[{process\-Event}]{\setlength{\rightskip}{0pt plus 5cm}void C\-A\-L\-I\-C\-E\-::\-Apply\-Threshold\-Cut\-::process\-Event (
+\begin{DoxyParamCaption}
+\item[{L\-C\-Event $\ast$}]{evt}
+\end{DoxyParamCaption}
+)}\label{classCALICE_1_1ApplyThresholdCut_ae2614ec21f7d006f3631ae6791f3ce1c}
+Called for every event -\/ this is where the real action is taking place. \index{C\-A\-L\-I\-C\-E\-::\-Apply\-Threshold\-Cut@{C\-A\-L\-I\-C\-E\-::\-Apply\-Threshold\-Cut}!process\-Run\-Header@{process\-Run\-Header}}
+\index{process\-Run\-Header@{process\-Run\-Header}!CALICE::ApplyThresholdCut@{C\-A\-L\-I\-C\-E\-::\-Apply\-Threshold\-Cut}}
+\subsubsection[{process\-Run\-Header}]{\setlength{\rightskip}{0pt plus 5cm}void C\-A\-L\-I\-C\-E\-::\-Apply\-Threshold\-Cut\-::process\-Run\-Header (
+\begin{DoxyParamCaption}
+\item[{L\-C\-Run\-Header $\ast$}]{run}
+\end{DoxyParamCaption}
+)}\label{classCALICE_1_1ApplyThresholdCut_ae55688cdf7c7f933d64d8ca952ed3943}
+Called for every run, e.\-g. overwrite to initialize run dependent histograms. 
+
+The documentation for this class was generated from the following files\-:\begin{DoxyCompactItemize}
+\item 
+/nfs/dust/ilc/user/marquezh/\-Calice\-Soft\-\_\-w\-\_\-\-I\-L\-C\-Soft\-\_\-v02-\/03-\/02/calice\-\_\-analysis/addon\-Procs/include/Apply\-Threshold\-Cut.\-hh\item 
+/nfs/dust/ilc/user/marquezh/\-Calice\-Soft\-\_\-w\-\_\-\-I\-L\-C\-Soft\-\_\-v02-\/03-\/02/calice\-\_\-analysis/addon\-Procs/src/Apply\-Threshold\-Cut.\-cc\end{DoxyCompactItemize}

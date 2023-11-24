@@ -1,0 +1,92 @@
+\section{C\-A\-L\-I\-C\-E\-:\-:M\-I\-P\-Constants Class Reference}
+\label{classCALICE_1_1MIPConstants}\index{C\-A\-L\-I\-C\-E\-::\-M\-I\-P\-Constants@{C\-A\-L\-I\-C\-E\-::\-M\-I\-P\-Constants}}
+
+
+Class to store the results of a M\-I\-P calibration measurement, i.\-e.  
+
+
+
+
+{\ttfamily \#include $<$M\-I\-P\-Constants.\-hh$>$}
+
+Inheritance diagram for C\-A\-L\-I\-C\-E\-:\-:M\-I\-P\-Constants\-:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=3.000000cm]{classCALICE_1_1MIPConstants}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+{\bfseries M\-I\-P\-Constants} (unsigned chip, unsigned channel, float value, float error)\label{classCALICE_1_1MIPConstants_a00df4532d023e4daad39bcc0ee5538f4}
+
+\item 
+{\bfseries M\-I\-P\-Constants} (L\-C\-Object $\ast${\bf obj})\label{classCALICE_1_1MIPConstants_aec5ab4aecbf0d776c678ec1faee7eb6c}
+
+\item 
+float {\bf get\-M\-I\-P\-Value} () const \label{classCALICE_1_1MIPConstants_a81e18faa3e81f04034e750b2db519521}
+
+\begin{DoxyCompactList}\small\item\em get channels/\-M\-I\-P value \end{DoxyCompactList}\item 
+float {\bf get\-M\-I\-P\-Error} () const \label{classCALICE_1_1MIPConstants_a518c72090d9dd86b3c14d94c62967d13}
+
+\begin{DoxyCompactList}\small\item\em get channels/\-M\-I\-P error \end{DoxyCompactList}\item 
+float {\bf apply\-Calibration} (float input\-Value) const \label{classCALICE_1_1MIPConstants_a1ce8759ffdc72c9975ef2705c08fc4d7}
+
+\begin{DoxyCompactList}\small\item\em apply calibration to energy value \end{DoxyCompactList}\item 
+float {\bf cancel\-Calibration} (float output\-Value) const \label{classCALICE_1_1MIPConstants_a601776b7a8e8558d4b54a00ecc981f0f}
+
+\begin{DoxyCompactList}\small\item\em cancel an applied calibration from energy value \end{DoxyCompactList}\item 
+float {\bf apply\-Calibration\-Error} (float input\-Value, float input\-Error) const \label{classCALICE_1_1MIPConstants_a7beb08be64e40e822288cf285b5601e0}
+
+\begin{DoxyCompactList}\small\item\em apply calibration error to current error \end{DoxyCompactList}\item 
+float {\bf cancel\-Calibration\-Error} (float output\-Value, float output\-Error) const \label{classCALICE_1_1MIPConstants_acf2c408c31f28ed72e2513361ec545c6}
+
+\begin{DoxyCompactList}\small\item\em apply error due to canceling a calibration to current error \end{DoxyCompactList}\item 
+bool {\bf calibration\-Valid} () const \label{classCALICE_1_1MIPConstants_aba936e2505ba100025495dded661ccb0}
+
+\begin{DoxyCompactList}\small\item\em check if a valid calibration is available \end{DoxyCompactList}\item 
+bool {\bf keep\-Event} (float result\-Value, float result\-Error) const \label{classCALICE_1_1MIPConstants_a11232a43c70405ef3f8c4cc88641de6a}
+
+\begin{DoxyCompactList}\small\item\em no cut for the moment \end{DoxyCompactList}\item 
+float {\bfseries get\-Param} (unsigned param\-Index)\label{classCALICE_1_1MIPConstants_a08aee0fbd46dc239bbdba46da0d7c8e5}
+
+\item 
+void {\bfseries set\-Param} (unsigned param\-Index, float param\-Value)\label{classCALICE_1_1MIPConstants_a0a107c4475947a8870b1c3735a52531d}
+
+\item 
+void {\bf print} (std\-::ostream \&os)\label{classCALICE_1_1MIPConstants_a11a113f9b833cdc4d5e1055459b9e384}
+
+\begin{DoxyCompactList}\small\item\em convenient print method \end{DoxyCompactList}\item 
+const std\-::string {\bf get\-Type\-Name} () const \label{classCALICE_1_1MIPConstants_a353fcaec4088c1dcb1e6e76f746654cc}
+
+\begin{DoxyCompactList}\small\item\em return type of the class \end{DoxyCompactList}\item 
+const std\-::string {\bf get\-Data\-Description} () const \label{classCALICE_1_1MIPConstants_a9019cd10f06227d6ef9b3b35262741cd}
+
+\begin{DoxyCompactList}\small\item\em return a brief description of the data member \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+float {\bfseries \-\_\-cut\-Value}\label{classCALICE_1_1MIPConstants_a80a22d8587d8511b6badaf9dd1107b0e}
+
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Class to store the results of a M\-I\-P calibration measurement, i.\-e. 
+
+channels/\-M\-I\-P plus the error of it for a certain chip/channel for a fixed module\-I\-D \begin{DoxyAuthor}{Author}
+S. Schmidt D\-E\-S\-Y 
+\end{DoxyAuthor}
+\begin{DoxyDate}{Date}
+Aug 11 2006 
+\end{DoxyDate}
+
+
+Definition at line 25 of file M\-I\-P\-Constants.\-hh.
+
+
+
+The documentation for this class was generated from the following files\-:\begin{DoxyCompactItemize}
+\item 
+M\-I\-P\-Constants.\-hh\item 
+M\-I\-P\-Constants.\-cc\end{DoxyCompactItemize}

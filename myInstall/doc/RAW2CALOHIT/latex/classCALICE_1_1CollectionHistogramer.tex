@@ -1,0 +1,189 @@
+\section{C\-A\-L\-I\-C\-E\-:\-:Collection\-Histogramer Class Reference}
+\label{classCALICE_1_1CollectionHistogramer}\index{C\-A\-L\-I\-C\-E\-::\-Collection\-Histogramer@{C\-A\-L\-I\-C\-E\-::\-Collection\-Histogramer}}
+
+
+Collect the names of all collections which appear in the L\-C\-I\-O stream.  
+
+
+
+
+{\ttfamily \#include $<$Collection\-Histogramer.\-hh$>$}
+
+Inheritance diagram for C\-A\-L\-I\-C\-E\-:\-:Collection\-Histogramer\-:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classCALICE_1_1CollectionHistogramer}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+Processor $\ast$ {\bfseries new\-Processor} ()\label{classCALICE_1_1CollectionHistogramer_ab0f528c9dbae6df5c5daad1c4a79fdce}
+
+\item 
+void {\bf init} ()
+\begin{DoxyCompactList}\small\item\em Called at the begin of the job before anything is read. \end{DoxyCompactList}\item 
+void {\bf process\-Run\-Header} (L\-C\-Run\-Header $\ast$run)
+\begin{DoxyCompactList}\small\item\em Called for every run, e.\-g. \end{DoxyCompactList}\item 
+void {\bf process\-Event} (L\-C\-Event $\ast$evt\-P)\label{classCALICE_1_1CollectionHistogramer_a35914ac7c3eb21bcb71c09ca1ae011f5}
+
+\begin{DoxyCompactList}\small\item\em Called for every event -\/ the working horse. \end{DoxyCompactList}\item 
+void {\bfseries end} ()\label{classCALICE_1_1CollectionHistogramer_a59fc5c8e1e396b6bd4268549181b2035}
+
+\end{DoxyCompactItemize}
+\subsection*{Protected Types}
+\begin{DoxyCompactItemize}
+\item 
+enum {\bf E\-Par\-Maps} \{ \\*
+{\bf k\-Collection\-Map}, 
+{\bf k\-Transient\-Collection\-Map}, 
+{\bf k\-Int\-Par\-Map}, 
+{\bf k\-Float\-Par\-Map}, 
+\\*
+{\bf k\-String\-Par\-Map}, 
+{\bfseries k\-N\-Par\-Maps}
+ \}
+\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+int {\bf \-\_\-histogram\-Parameters}
+\begin{DoxyCompactList}\small\item\em Set to !=0 to also histogram event parameters. \end{DoxyCompactList}\item 
+std\-::map$<$ std\-::string, Average\-\_\-t $>$ {\bf \-\_\-hist} [k\-N\-Par\-Maps]
+\begin{DoxyCompactList}\small\item\em collection, parameter histograms. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Static Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+static const char $\ast$ {\bf \-\_\-\-\_\-histogram\-Type\-Name} [k\-N\-Par\-Maps]
+\begin{DoxyCompactList}\small\item\em Names for the histrogams. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Collect the names of all collections which appear in the L\-C\-I\-O stream. 
+
+Moreover some statistics are gathered about the number of elements of all the collections. 
+
+Definition at line 16 of file Collection\-Histogramer.\-hh.
+
+
+
+\subsection{Member Enumeration Documentation}
+\index{C\-A\-L\-I\-C\-E\-::\-Collection\-Histogramer@{C\-A\-L\-I\-C\-E\-::\-Collection\-Histogramer}!E\-Par\-Maps@{E\-Par\-Maps}}
+\index{E\-Par\-Maps@{E\-Par\-Maps}!CALICE::CollectionHistogramer@{C\-A\-L\-I\-C\-E\-::\-Collection\-Histogramer}}
+\subsubsection[{E\-Par\-Maps}]{\setlength{\rightskip}{0pt plus 5cm}enum {\bf C\-A\-L\-I\-C\-E\-::\-Collection\-Histogramer\-::\-E\-Par\-Maps}\hspace{0.3cm}{\ttfamily [protected]}}\label{classCALICE_1_1CollectionHistogramer_aa8e603a270748b41657cbdfc32a26f19}
+\begin{Desc}
+\item[Enumerator]\par
+\begin{description}
+\index{k\-Collection\-Map@{k\-Collection\-Map}!C\-A\-L\-I\-C\-E\-::\-Collection\-Histogramer@{C\-A\-L\-I\-C\-E\-::\-Collection\-Histogramer}}\index{C\-A\-L\-I\-C\-E\-::\-Collection\-Histogramer@{C\-A\-L\-I\-C\-E\-::\-Collection\-Histogramer}!k\-Collection\-Map@{k\-Collection\-Map}}\item[{\em 
+k\-Collection\-Map\label{classCALICE_1_1CollectionHistogramer_aa8e603a270748b41657cbdfc32a26f19ab623283b54710c255031397d08b2873b}
+}]Normal collections. \index{k\-Transient\-Collection\-Map@{k\-Transient\-Collection\-Map}!C\-A\-L\-I\-C\-E\-::\-Collection\-Histogramer@{C\-A\-L\-I\-C\-E\-::\-Collection\-Histogramer}}\index{C\-A\-L\-I\-C\-E\-::\-Collection\-Histogramer@{C\-A\-L\-I\-C\-E\-::\-Collection\-Histogramer}!k\-Transient\-Collection\-Map@{k\-Transient\-Collection\-Map}}\item[{\em 
+k\-Transient\-Collection\-Map\label{classCALICE_1_1CollectionHistogramer_aa8e603a270748b41657cbdfc32a26f19a89b047498083c3856b872694aab339d9}
+}]Transient collections. \index{k\-Int\-Par\-Map@{k\-Int\-Par\-Map}!C\-A\-L\-I\-C\-E\-::\-Collection\-Histogramer@{C\-A\-L\-I\-C\-E\-::\-Collection\-Histogramer}}\index{C\-A\-L\-I\-C\-E\-::\-Collection\-Histogramer@{C\-A\-L\-I\-C\-E\-::\-Collection\-Histogramer}!k\-Int\-Par\-Map@{k\-Int\-Par\-Map}}\item[{\em 
+k\-Int\-Par\-Map\label{classCALICE_1_1CollectionHistogramer_aa8e603a270748b41657cbdfc32a26f19a54df6edc6ca90f387fc046e5528c1c2a}
+}]int parameters. \index{k\-Float\-Par\-Map@{k\-Float\-Par\-Map}!C\-A\-L\-I\-C\-E\-::\-Collection\-Histogramer@{C\-A\-L\-I\-C\-E\-::\-Collection\-Histogramer}}\index{C\-A\-L\-I\-C\-E\-::\-Collection\-Histogramer@{C\-A\-L\-I\-C\-E\-::\-Collection\-Histogramer}!k\-Float\-Par\-Map@{k\-Float\-Par\-Map}}\item[{\em 
+k\-Float\-Par\-Map\label{classCALICE_1_1CollectionHistogramer_aa8e603a270748b41657cbdfc32a26f19aae5db92e092f27c75ae0fe2a9a159eba}
+}]float parameters. \index{k\-String\-Par\-Map@{k\-String\-Par\-Map}!C\-A\-L\-I\-C\-E\-::\-Collection\-Histogramer@{C\-A\-L\-I\-C\-E\-::\-Collection\-Histogramer}}\index{C\-A\-L\-I\-C\-E\-::\-Collection\-Histogramer@{C\-A\-L\-I\-C\-E\-::\-Collection\-Histogramer}!k\-String\-Par\-Map@{k\-String\-Par\-Map}}\item[{\em 
+k\-String\-Par\-Map\label{classCALICE_1_1CollectionHistogramer_aa8e603a270748b41657cbdfc32a26f19a0da7715bd0efd6aca685b31e3516f34c}
+}]string parameters. \end{description}
+\end{Desc}
+
+
+Definition at line 47 of file Collection\-Histogramer.\-hh.
+
+
+
+\subsection{Member Function Documentation}
+\index{C\-A\-L\-I\-C\-E\-::\-Collection\-Histogramer@{C\-A\-L\-I\-C\-E\-::\-Collection\-Histogramer}!init@{init}}
+\index{init@{init}!CALICE::CollectionHistogramer@{C\-A\-L\-I\-C\-E\-::\-Collection\-Histogramer}}
+\subsubsection[{init}]{\setlength{\rightskip}{0pt plus 5cm}void C\-A\-L\-I\-C\-E\-::\-Collection\-Histogramer\-::init (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{classCALICE_1_1CollectionHistogramer_acbc3acffe6b5a999540387f8afb6cb36}
+
+
+Called at the begin of the job before anything is read. 
+
+Use to initialize the processor, e.\-g. book histograms. 
+
+Definition at line 33 of file Collection\-Histogramer.\-cc.
+
+
+
+References \-\_\-hist.
+
+\index{C\-A\-L\-I\-C\-E\-::\-Collection\-Histogramer@{C\-A\-L\-I\-C\-E\-::\-Collection\-Histogramer}!process\-Run\-Header@{process\-Run\-Header}}
+\index{process\-Run\-Header@{process\-Run\-Header}!CALICE::CollectionHistogramer@{C\-A\-L\-I\-C\-E\-::\-Collection\-Histogramer}}
+\subsubsection[{process\-Run\-Header}]{\setlength{\rightskip}{0pt plus 5cm}void C\-A\-L\-I\-C\-E\-::\-Collection\-Histogramer\-::process\-Run\-Header (
+\begin{DoxyParamCaption}
+\item[{L\-C\-Run\-Header $\ast$}]{run}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\label{classCALICE_1_1CollectionHistogramer_ae055ee45bf5b4fea658805219b6cfa5c}
+
+
+Called for every run, e.\-g. 
+
+overwrite to initialize run dependent histograms. 
+
+Definition at line 35 of file Collection\-Histogramer.\-hh.
+
+
+
+\subsection{Field Documentation}
+\index{C\-A\-L\-I\-C\-E\-::\-Collection\-Histogramer@{C\-A\-L\-I\-C\-E\-::\-Collection\-Histogramer}!\-\_\-\-\_\-histogram\-Type\-Name@{\-\_\-\-\_\-histogram\-Type\-Name}}
+\index{\-\_\-\-\_\-histogram\-Type\-Name@{\-\_\-\-\_\-histogram\-Type\-Name}!CALICE::CollectionHistogramer@{C\-A\-L\-I\-C\-E\-::\-Collection\-Histogramer}}
+\subsubsection[{\-\_\-\-\_\-histogram\-Type\-Name}]{\setlength{\rightskip}{0pt plus 5cm}const char $\ast$ C\-A\-L\-I\-C\-E\-::\-Collection\-Histogramer\-::\-\_\-\-\_\-histogram\-Type\-Name\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [protected]}}\label{classCALICE_1_1CollectionHistogramer_a81e846127f3559c1e127748408ced91d}
+{\bfseries Initial value\-:}
+\begin{DoxyCode}
+=\{
+    \textcolor{stringliteral}{"Collections"}, 
+    \textcolor{stringliteral}{"Transient Collections"},
+    \textcolor{stringliteral}{"Integer Parameters"},
+    \textcolor{stringliteral}{"Float Parameters"},
+    \textcolor{stringliteral}{"String Parameters"}
+  \}
+\end{DoxyCode}
+
+
+Names for the histrogams. 
+
+
+
+Definition at line 55 of file Collection\-Histogramer.\-hh.
+
+\index{C\-A\-L\-I\-C\-E\-::\-Collection\-Histogramer@{C\-A\-L\-I\-C\-E\-::\-Collection\-Histogramer}!\-\_\-hist@{\-\_\-hist}}
+\index{\-\_\-hist@{\-\_\-hist}!CALICE::CollectionHistogramer@{C\-A\-L\-I\-C\-E\-::\-Collection\-Histogramer}}
+\subsubsection[{\-\_\-hist}]{\setlength{\rightskip}{0pt plus 5cm}std\-::map$<$std\-::string,Average\-\_\-t$>$ C\-A\-L\-I\-C\-E\-::\-Collection\-Histogramer\-::\-\_\-hist[k\-N\-Par\-Maps]\hspace{0.3cm}{\ttfamily [protected]}}\label{classCALICE_1_1CollectionHistogramer_a9f492bba67d841ac03bdf3beeb646d8e}
+
+
+collection, parameter histograms. 
+
+
+
+Definition at line 54 of file Collection\-Histogramer.\-hh.
+
+
+
+Referenced by init(), and process\-Event().
+
+\index{C\-A\-L\-I\-C\-E\-::\-Collection\-Histogramer@{C\-A\-L\-I\-C\-E\-::\-Collection\-Histogramer}!\-\_\-histogram\-Parameters@{\-\_\-histogram\-Parameters}}
+\index{\-\_\-histogram\-Parameters@{\-\_\-histogram\-Parameters}!CALICE::CollectionHistogramer@{C\-A\-L\-I\-C\-E\-::\-Collection\-Histogramer}}
+\subsubsection[{\-\_\-histogram\-Parameters}]{\setlength{\rightskip}{0pt plus 5cm}int C\-A\-L\-I\-C\-E\-::\-Collection\-Histogramer\-::\-\_\-histogram\-Parameters\hspace{0.3cm}{\ttfamily [protected]}}\label{classCALICE_1_1CollectionHistogramer_ac12fee356ac0d035722040ca71751aa1}
+
+
+Set to !=0 to also histogram event parameters. 
+
+
+
+Definition at line 45 of file Collection\-Histogramer.\-hh.
+
+
+
+Referenced by process\-Event().
+
+
+
+The documentation for this class was generated from the following files\-:\begin{DoxyCompactItemize}
+\item 
+Collection\-Histogramer.\-hh\item 
+Collection\-Histogramer.\-cc\end{DoxyCompactItemize}

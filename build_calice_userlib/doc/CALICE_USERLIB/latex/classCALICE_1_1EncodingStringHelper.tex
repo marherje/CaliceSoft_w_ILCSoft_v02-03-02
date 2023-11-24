@@ -1,0 +1,69 @@
+\section{C\-A\-L\-I\-C\-E\-:\-:Encoding\-String\-Helper Class Reference}
+\label{classCALICE_1_1EncodingStringHelper}\index{C\-A\-L\-I\-C\-E\-::\-Encoding\-String\-Helper@{C\-A\-L\-I\-C\-E\-::\-Encoding\-String\-Helper}}
+
+
+Utility class to get the field description according to an lcio Bit\-Field64.  
+
+
+
+
+{\ttfamily \#include $<$Encoding\-String\-Helper.\-hh$>$}
+
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static std\-::string {\bf Get\-Field\-Desc} (const std\-::string Field\-Name, const unsigned int Field\-Mask, const unsigned int Field\-Shift, const unsigned int startbit)
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Utility class to get the field description according to an lcio Bit\-Field64. 
+
+\begin{DoxyAuthor}{Author}
+S. Richter (D\-E\-S\-Y) 
+\end{DoxyAuthor}
+\begin{DoxyDate}{Date}
+March 13 2007 
+\end{DoxyDate}
+
+
+Definition at line 13 of file Encoding\-String\-Helper.\-hh.
+
+
+
+\subsection{Member Function Documentation}
+\index{C\-A\-L\-I\-C\-E\-::\-Encoding\-String\-Helper@{C\-A\-L\-I\-C\-E\-::\-Encoding\-String\-Helper}!Get\-Field\-Desc@{Get\-Field\-Desc}}
+\index{Get\-Field\-Desc@{Get\-Field\-Desc}!CALICE::EncodingStringHelper@{C\-A\-L\-I\-C\-E\-::\-Encoding\-String\-Helper}}
+\subsubsection[{Get\-Field\-Desc}]{\setlength{\rightskip}{0pt plus 5cm}std\-::string C\-A\-L\-I\-C\-E\-::\-Encoding\-String\-Helper\-::\-Get\-Field\-Desc (
+\begin{DoxyParamCaption}
+\item[{const std\-::string}]{Field\-Name, }
+\item[{const unsigned int}]{Field\-Mask, }
+\item[{const unsigned int}]{Field\-Shift, }
+\item[{const unsigned int}]{startbit}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}\label{classCALICE_1_1EncodingStringHelper_acf70b62844698b1cc0fb9e04531d5ba4}
+
+\begin{DoxyParams}{Parameters}
+{\em Field\-Name} & -\/ the identifier of the field, e.\-g. \char`\"{}module\char`\"{} \\
+\hline
+{\em Field\-Mask} & -\/ the bitmask which specifies the bits used for this field \\
+\hline
+{\em Field\-Shift} & -\/ using the shift together with the mask you get field at the lowest bits \\
+\hline
+{\em startbit} & -\/ an overall shift of all fields \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 7 of file Encoding\-String\-Helper.\-cc.
+
+
+
+Referenced by C\-A\-L\-I\-C\-E\-::\-Hcal\-Cell\-Index\-::get\-Encoding\-String(), and C\-A\-L\-I\-C\-E\-::\-Hcal\-Tile\-Index\-::get\-Encoding\-String().
+
+
+
+The documentation for this class was generated from the following files\-:\begin{DoxyCompactItemize}
+\item 
+Encoding\-String\-Helper.\-hh\item 
+Encoding\-String\-Helper.\-cc\end{DoxyCompactItemize}

@@ -1,0 +1,85 @@
+\section{C\-A\-L\-I\-C\-E\-:\-:Run\-Offset\-Value Class Reference}
+\label{classCALICE_1_1RunOffsetValue}\index{C\-A\-L\-I\-C\-E\-::\-Run\-Offset\-Value@{C\-A\-L\-I\-C\-E\-::\-Run\-Offset\-Value}}
+
+
+Class to store float value, its error, and status flag plus integer index in L\-C\-I\-O.  
+
+
+
+
+{\ttfamily \#include $<$Run\-Offset\-Value.\-hh$>$}
+
+Inheritance diagram for C\-A\-L\-I\-C\-E\-:\-:Run\-Offset\-Value\-:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classCALICE_1_1RunOffsetValue}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+{\bf Run\-Offset\-Value} ()\label{classCALICE_1_1RunOffsetValue_a517572572b09fe390afa822b4b2e36da}
+
+\begin{DoxyCompactList}\small\item\em Empty constructor. \end{DoxyCompactList}\item 
+{\bf Run\-Offset\-Value} (const int run, const int val, const int stat)\label{classCALICE_1_1RunOffsetValue_a390d8358343142cda18df2a1c3cb80ce}
+
+\begin{DoxyCompactList}\small\item\em Constructor with initial values. \end{DoxyCompactList}\item 
+{\bf Run\-Offset\-Value} (E\-V\-E\-N\-T\-::\-L\-C\-Object $\ast$obj)\label{classCALICE_1_1RunOffsetValue_ad13d5040f0a1f3ec4c2ef8073750a50c}
+
+\begin{DoxyCompactList}\small\item\em Constructor from L\-C\-Object. \end{DoxyCompactList}\item 
+{\bf $\sim$\-Run\-Offset\-Value} ()\label{classCALICE_1_1RunOffsetValue_a151924c2a22ec15fa7cd9ca4981693b3}
+
+\begin{DoxyCompactList}\small\item\em Destructor. \end{DoxyCompactList}\item 
+int {\bf get\-Run\-Number} () const \label{classCALICE_1_1RunOffsetValue_a4bb52e1aa16e222296a12e652342c858}
+
+\begin{DoxyCompactList}\small\item\em Return run number. \end{DoxyCompactList}\item 
+float {\bf get\-Value} () const \label{classCALICE_1_1RunOffsetValue_a05caee90e3ec4f970f16cd8bf9ca147c}
+
+\begin{DoxyCompactList}\small\item\em Return the value. \end{DoxyCompactList}\item 
+int {\bf get\-Status} () const \label{classCALICE_1_1RunOffsetValue_af268d8401105be029f271674e5933c83}
+
+\begin{DoxyCompactList}\small\item\em Return the status. \end{DoxyCompactList}\item 
+void {\bf set\-Run\-Number} (const int run)\label{classCALICE_1_1RunOffsetValue_ad3b48a77544acad7227e6992f177ad75}
+
+\begin{DoxyCompactList}\small\item\em set index identifier \end{DoxyCompactList}\item 
+void {\bf set\-Value} (const int value)\label{classCALICE_1_1RunOffsetValue_a0a9c3a458e313503b7875a46d3a1a875}
+
+\begin{DoxyCompactList}\small\item\em set the value \end{DoxyCompactList}\item 
+void {\bf set\-Status} (const int status)\label{classCALICE_1_1RunOffsetValue_ad65076338d1c17ecec01fcf7539224cf}
+
+\begin{DoxyCompactList}\small\item\em set the status \end{DoxyCompactList}\item 
+virtual const std\-::string {\bf get\-Type\-Name} () const \label{classCALICE_1_1RunOffsetValue_ad42aa202ea6b9663c29d8531e11bbbf5}
+
+\begin{DoxyCompactList}\small\item\em Implementation of L\-C\-Generic\-Object\-::get\-Type\-Name. \end{DoxyCompactList}\item 
+virtual const std\-::string {\bf get\-Data\-Description} () const \label{classCALICE_1_1RunOffsetValue_a20f2ca602be47ac344ef7c6701095ecc}
+
+\begin{DoxyCompactList}\small\item\em Implementation of L\-C\-Generic\-Object\-::get\-Data\-Description. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Class to store float value, its error, and status flag plus integer index in L\-C\-I\-O. 
+
+Adapted from \doxyref{Simple\-Value.\-hh}{p.}{SimpleValue_8hh_source}
+
+This class provides an interface to store four numbers inside an L\-C\-I\-O object\-:
+\begin{DoxyItemize}
+\item an integer identifier, e.\-g. the run number
+\item a int value, e.\-g. an offset
+\item an integer status flag, e.\-g. to tell default from measured constants
+\end{DoxyItemize}
+
+\begin{DoxyAuthor}{Author}
+{\tt cgraf@mpp.\-mpg.\-de} 
+\end{DoxyAuthor}
+\begin{DoxyDate}{Date}
+January 2019 
+\end{DoxyDate}
+
+
+Definition at line 24 of file Run\-Offset\-Value.\-hh.
+
+
+
+The documentation for this class was generated from the following file\-:\begin{DoxyCompactItemize}
+\item 
+Run\-Offset\-Value.\-hh\end{DoxyCompactItemize}

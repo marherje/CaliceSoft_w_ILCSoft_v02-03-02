@@ -1,0 +1,194 @@
+\section{marlin\-:\-:Dwc\-Write\-Engine Class Reference}
+\label{classmarlin_1_1DwcWriteEngine}\index{marlin\-::\-Dwc\-Write\-Engine@{marlin\-::\-Dwc\-Write\-Engine}}
+
+
+Inheritance diagram for marlin\-:\-:Dwc\-Write\-Engine\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=178pt]{classmarlin_1_1DwcWriteEngine__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for marlin\-:\-:Dwc\-Write\-Engine\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=188pt]{classmarlin_1_1DwcWriteEngine__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+{\bfseries Dwc\-Write\-Engine} ({\bf Root\-Tree\-Writer} $\ast$host)\label{classmarlin_1_1DwcWriteEngine_af86226abe92e4c30035c4a6faa4936a5}
+
+\item 
+virtual const std\-::string \& {\bf get\-Engine\-Name} ()
+\item 
+virtual void {\bf register\-Parameters} ()
+\item 
+virtual void {\bf register\-Branches} (T\-Tree $\ast$host\-Tree)
+\item 
+virtual void {\bf fill\-Variables} (E\-V\-E\-N\-T\-::\-L\-C\-Event $\ast$)
+\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\begin{tabbing}
+xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=\kill
+struct \{\\
+\>int {\bf nTrack}\\
+\>float {\bf segmentX} [MAXTRACKS]\\
+\>float {\bf segmentY} [MAXTRACKS]\\
+\>float {\bf slopeX} [MAXTRACKS]\\
+\>float {\bf slopeY} [MAXTRACKS]\\
+\} {\bfseries \_dwcFill}\label{classmarlin_1_1DwcWriteEngine_a0f4f1e5a5c0c95073227cd260375e418}
+\\
+
+\end{tabbing}\end{DoxyCompactItemize}
+\subsection*{Static Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+static const unsigned int {\bfseries M\-A\-X\-T\-R\-A\-C\-K\-S} = 100\label{classmarlin_1_1DwcWriteEngine_a48c4d4216973edf54418448e018535b6}
+
+\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Detailed Description}
+
+
+Definition at line 14 of file Dwc\-Write\-Engine.\-hh.
+
+
+
+\subsection{Member Function Documentation}
+\index{marlin\-::\-Dwc\-Write\-Engine@{marlin\-::\-Dwc\-Write\-Engine}!fill\-Variables@{fill\-Variables}}
+\index{fill\-Variables@{fill\-Variables}!marlin::DwcWriteEngine@{marlin\-::\-Dwc\-Write\-Engine}}
+\subsubsection[{fill\-Variables}]{\setlength{\rightskip}{0pt plus 5cm}void marlin\-::\-Dwc\-Write\-Engine\-::fill\-Variables (
+\begin{DoxyParamCaption}
+\item[{E\-V\-E\-N\-T\-::\-L\-C\-Event $\ast$}]{evt}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}\label{classmarlin_1_1DwcWriteEngine_ae5df4fef72e8c2a778ab623fb61d7c5d}
+Implement this to extract the variables which you want to fill into the {\itshape R\-O\-O\-T} tree from the event. Write the value of the variables you want to add to the tree to the member variables, which you registered to the {\itshape R\-O\-O\-T} tree. The \doxyref{Root\-Tree\-Writer}{p.}{classmarlin_1_1RootTreeWriter} will call T\-Tree\-::\-Fill() for you. 
+\begin{DoxyParams}{Parameters}
+{\em evt} & the current event \\
+\hline
+\end{DoxyParams}
+
+
+Implements {\bf marlin\-::\-Root\-Write\-Engine} \doxyref{}{p.}{classmarlin_1_1RootWriteEngine_ace823bd839cee7e8c8755e60c4cc7134}.
+
+
+
+Definition at line 88 of file Dwc\-Write\-Engine.\-cc.
+
+\index{marlin\-::\-Dwc\-Write\-Engine@{marlin\-::\-Dwc\-Write\-Engine}!get\-Engine\-Name@{get\-Engine\-Name}}
+\index{get\-Engine\-Name@{get\-Engine\-Name}!marlin::DwcWriteEngine@{marlin\-::\-Dwc\-Write\-Engine}}
+\subsubsection[{get\-Engine\-Name}]{\setlength{\rightskip}{0pt plus 5cm}virtual const std\-::string\& marlin\-::\-Dwc\-Write\-Engine\-::get\-Engine\-Name (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}\label{classmarlin_1_1DwcWriteEngine_aef117e3b99d708b6d5b6653c15a13019}
+Returns the name of the engine to the \doxyref{Root\-Tree\-Writer}{p.}{classmarlin_1_1RootTreeWriter} processor. \begin{DoxyReturn}{Returns}
+Must return a string with the engine name. 
+\end{DoxyReturn}
+\begin{DoxyRefDesc}{Todo}
+\item[{\bf Todo}]fixme\-: should be const, but must be declared const in implementations too. Need to fix all existing engines?!? \end{DoxyRefDesc}
+
+
+Implements {\bf marlin\-::\-Root\-Write\-Engine} \doxyref{}{p.}{classmarlin_1_1RootWriteEngine_a31e38120fe60efcb15666fd569ba5862}.
+
+
+
+Definition at line 23 of file Dwc\-Write\-Engine.\-hh.
+
+\index{marlin\-::\-Dwc\-Write\-Engine@{marlin\-::\-Dwc\-Write\-Engine}!register\-Branches@{register\-Branches}}
+\index{register\-Branches@{register\-Branches}!marlin::DwcWriteEngine@{marlin\-::\-Dwc\-Write\-Engine}}
+\subsubsection[{register\-Branches}]{\setlength{\rightskip}{0pt plus 5cm}void marlin\-::\-Dwc\-Write\-Engine\-::register\-Branches (
+\begin{DoxyParamCaption}
+\item[{T\-Tree $\ast$}]{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}\label{classmarlin_1_1DwcWriteEngine_a1fc343056118664c22bdfcbb675310ec}
+\begin{DoxyVerb}Implement to register local variables to the output tree
+\param pointer to the \a ROOT tree, which the RootTreeWriter processor fills at the
+end of each event.
+Usually the implementation looks like@verbatim 
+\end{DoxyVerb}
+ /// host\-Tree-\/$>$Branch(\char`\"{}variable\char`\"{},\&\-\_\-variable\char`\"{} ,\char`\"{}variable/\-F" ); /// . But you can add any type of branch you like. 
+
+Implements {\bf marlin\-::\-Root\-Write\-Engine} \doxyref{}{p.}{classmarlin_1_1RootWriteEngine_ad467dc6e73fdd9fd4311f7277fd02a89}.
+
+
+
+Definition at line 64 of file Dwc\-Write\-Engine.\-cc.
+
+\index{marlin\-::\-Dwc\-Write\-Engine@{marlin\-::\-Dwc\-Write\-Engine}!register\-Parameters@{register\-Parameters}}
+\index{register\-Parameters@{register\-Parameters}!marlin::DwcWriteEngine@{marlin\-::\-Dwc\-Write\-Engine}}
+\subsubsection[{register\-Parameters}]{\setlength{\rightskip}{0pt plus 5cm}void marlin\-::\-Dwc\-Write\-Engine\-::register\-Parameters (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}\label{classmarlin_1_1DwcWriteEngine_a2a1d2aba7182e23d085f46ac1d6d8937}
+\begin{DoxyVerb}Used to register steering parameters.
+Implement to register \a marlin steering file parameters. Use \a marlin syntax
+to register parameters for the calling RootTreeWriter processor. 
+
+use@verbatim 
+\end{DoxyVerb}
+ /// \-\_\-host\-Proc.\-relay\-Register\-Processor\-Parameter(...) /// \-\_\-host\-Proc.\-relay\-Register...() ///  instead of {\itshape marlin} processors\begin{DoxyVerb}register...() \end{DoxyVerb}
+ methods 
+
+Implements {\bf marlin\-::\-Root\-Write\-Engine} \doxyref{}{p.}{classmarlin_1_1RootWriteEngine_ae12b70923768043fa5c1438f078c41d3}.
+
+
+
+Definition at line 33 of file Dwc\-Write\-Engine.\-cc.
+
+
+
+\subsection{Member Data Documentation}
+\index{marlin\-::\-Dwc\-Write\-Engine@{marlin\-::\-Dwc\-Write\-Engine}!n\-Track@{n\-Track}}
+\index{n\-Track@{n\-Track}!marlin::DwcWriteEngine@{marlin\-::\-Dwc\-Write\-Engine}}
+\subsubsection[{n\-Track}]{\setlength{\rightskip}{0pt plus 5cm}int marlin\-::\-Dwc\-Write\-Engine\-::n\-Track}\label{classmarlin_1_1DwcWriteEngine_ac514a3622656e57fed29e8ee5606840e}
+Number of D\-W\-C Tracks 
+
+Definition at line 36 of file Dwc\-Write\-Engine.\-hh.
+
+\index{marlin\-::\-Dwc\-Write\-Engine@{marlin\-::\-Dwc\-Write\-Engine}!segment\-X@{segment\-X}}
+\index{segment\-X@{segment\-X}!marlin::DwcWriteEngine@{marlin\-::\-Dwc\-Write\-Engine}}
+\subsubsection[{segment\-X}]{\setlength{\rightskip}{0pt plus 5cm}float marlin\-::\-Dwc\-Write\-Engine\-::segment\-X[M\-A\-X\-T\-R\-A\-C\-K\-S]}\label{classmarlin_1_1DwcWriteEngine_afc61311a6219e4f3ddd3378a42742c01}
+x-\/axis segment of the track 
+
+Definition at line 37 of file Dwc\-Write\-Engine.\-hh.
+
+\index{marlin\-::\-Dwc\-Write\-Engine@{marlin\-::\-Dwc\-Write\-Engine}!segment\-Y@{segment\-Y}}
+\index{segment\-Y@{segment\-Y}!marlin::DwcWriteEngine@{marlin\-::\-Dwc\-Write\-Engine}}
+\subsubsection[{segment\-Y}]{\setlength{\rightskip}{0pt plus 5cm}float marlin\-::\-Dwc\-Write\-Engine\-::segment\-Y[M\-A\-X\-T\-R\-A\-C\-K\-S]}\label{classmarlin_1_1DwcWriteEngine_ab4f7801aa80954b879ee927617e8dca3}
+y-\/axis segment of the track 
+
+Definition at line 38 of file Dwc\-Write\-Engine.\-hh.
+
+\index{marlin\-::\-Dwc\-Write\-Engine@{marlin\-::\-Dwc\-Write\-Engine}!slope\-X@{slope\-X}}
+\index{slope\-X@{slope\-X}!marlin::DwcWriteEngine@{marlin\-::\-Dwc\-Write\-Engine}}
+\subsubsection[{slope\-X}]{\setlength{\rightskip}{0pt plus 5cm}float marlin\-::\-Dwc\-Write\-Engine\-::slope\-X[M\-A\-X\-T\-R\-A\-C\-K\-S]}\label{classmarlin_1_1DwcWriteEngine_a716c7f2af92289e98a5288723b982772}
+x-\/axis slope of the track 
+
+Definition at line 39 of file Dwc\-Write\-Engine.\-hh.
+
+\index{marlin\-::\-Dwc\-Write\-Engine@{marlin\-::\-Dwc\-Write\-Engine}!slope\-Y@{slope\-Y}}
+\index{slope\-Y@{slope\-Y}!marlin::DwcWriteEngine@{marlin\-::\-Dwc\-Write\-Engine}}
+\subsubsection[{slope\-Y}]{\setlength{\rightskip}{0pt plus 5cm}float marlin\-::\-Dwc\-Write\-Engine\-::slope\-Y[M\-A\-X\-T\-R\-A\-C\-K\-S]}\label{classmarlin_1_1DwcWriteEngine_a67b6f647f5ab284362fcc161d9cc5fc5}
+y-\/axis slope of the track 
+
+Definition at line 40 of file Dwc\-Write\-Engine.\-hh.
+
+
+
+The documentation for this class was generated from the following files\-:\begin{DoxyCompactItemize}
+\item 
+Dwc\-Write\-Engine.\-hh\item 
+Dwc\-Write\-Engine.\-cc\end{DoxyCompactItemize}

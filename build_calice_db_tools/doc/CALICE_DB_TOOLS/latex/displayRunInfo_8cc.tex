@@ -1,0 +1,76 @@
+\section{/nfs/dust/ilc/user/marquezh/\-Calice\-Soft\-\_\-w\-\_\-\-I\-L\-C\-Soft\-\_\-v02-\/03-\/02/calice\-\_\-db\-\_\-tools/src/display\-Run\-Info.cc File Reference}
+\label{displayRunInfo_8cc}\index{/nfs/dust/ilc/user/marquezh/\-Calice\-Soft\-\_\-w\-\_\-\-I\-L\-C\-Soft\-\_\-v02-\/03-\/02/calice\-\_\-db\-\_\-tools/src/display\-Run\-Info.\-cc@{/nfs/dust/ilc/user/marquezh/\-Calice\-Soft\-\_\-w\-\_\-\-I\-L\-C\-Soft\-\_\-v02-\/03-\/02/calice\-\_\-db\-\_\-tools/src/display\-Run\-Info.\-cc}}
+{\ttfamily \#include \char`\"{}lcio.\-h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}E\-V\-E\-N\-T/\-L\-C\-Collection.\-h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}I\-M\-P\-L/\-L\-C\-Collection\-Vec.\-h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}I\-M\-P\-L/\-L\-C\-Event\-Impl.\-h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}I\-M\-P\-L/\-L\-C\-Parameters\-Impl.\-h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}I\-M\-P\-L/\-L\-C\-Run\-Header\-Impl.\-h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}U\-T\-I\-L/\-L\-C\-Time.\-h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}U\-T\-I\-L/\-L\-C\-T\-O\-O\-L\-S.\-h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}Run\-Time\-Info.\-hh\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}Daq\-Run\-Summary\-Block.\-hh\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}Ahc\-Slow\-Readout\-Block.\-hh\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}Ahc\-Slow\-Readout\-Mod\-Block.\-hh\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}Ahc\-Slow\-Readout\-Mod\-Mapper.\-hh\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}Ahc\-Temp\-Provider.\-hh\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}Ahc\-Simple\-Temp\-Provider.\-hh\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}Ahc\-Cern2010\-Temp\-Provider.\-hh\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}Ahc\-Median\-Filter\-Temp\-Provider.\-hh\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}Bml\-Slow\-Run\-Data\-Block.\-hh\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}Beam\-Momentum.\-hh\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}Detector\-Transformation.\-hh\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}Ahc\-Mapper.\-hh\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}lccd.\-h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}lccd/\-D\-B\-Interface.\-hh\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}Conditions\-D\-B/\-I\-Cond\-D\-B\-Mgr.\-h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}Conditions\-D\-B/\-I\-Cond\-D\-B\-Data\-Access.\-h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}Conditions\-D\-B/\-I\-Cond\-D\-B\-Data\-Iterator.\-h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}Conditions\-D\-B/\-Cond\-D\-B\-Obj\-Factory.\-h\char`\"{}}\\*
+{\ttfamily \#include $<$algorithm$>$}\\*
+{\ttfamily \#include $<$functional$>$}\\*
+{\ttfamily \#include $<$sstream$>$}\\*
+{\ttfamily \#include $<$string$>$}\\*
+{\ttfamily \#include $<$map$>$}\\*
+{\ttfamily \#include $<$utility$>$}\\*
+{\ttfamily \#include $<$iomanip$>$}\\*
+{\ttfamily \#include \char`\"{}Veto\-Threshold.\-hh\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}Veto\-Fraction.\-hh\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}Calice\-D\-B\-Init\-Helper.\-hh\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}D\-B\-Folder\-Finder.\-hh\char`\"{}}\\*
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+struct {\bf s\-Voltages}
+\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+void {\bfseries print\-Run\-Infos} (unsigned int runnumber, unsigned int temperature\-Provider)\label{displayRunInfo_8cc_a720d130f047b6e6f3429d0f37af442c3}
+
+\item 
+int {\bfseries main} (int argc, char $\ast$$\ast$argv)\label{displayRunInfo_8cc_a3c04138a5bfe5d72780bb7e82a18e627}
+
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+This tool displays information like temperature, beam energy calculated from magnet currents, veto threshold, ... for a single run.
+
+Usage\-:
+
+
+\begin{DoxyCode}
+displayRunInfo <runnum>
+\end{DoxyCode}
+
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em $<$runnum$>$} & run number \\
+\hline
+\end{DoxyParams}
+
+
+Definition in file {\bf display\-Run\-Info.\-cc}.
+

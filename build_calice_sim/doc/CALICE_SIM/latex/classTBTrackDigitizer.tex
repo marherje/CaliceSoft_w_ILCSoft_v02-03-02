@@ -1,0 +1,159 @@
+\section{T\-B\-Track\-Digitizer Class Reference}
+\label{classTBTrackDigitizer}\index{T\-B\-Track\-Digitizer@{T\-B\-Track\-Digitizer}}
+Inheritance diagram for T\-B\-Track\-Digitizer\-:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classTBTrackDigitizer}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+Processor $\ast$ {\bfseries new\-Processor} ()\label{classTBTrackDigitizer_a9b01b1d99677e61a302f5062511fdf03}
+
+\item 
+void {\bf Init} ()
+\begin{DoxyCompactList}\small\item\em Called at the begin of the job before anything is read. \end{DoxyCompactList}\item 
+void {\bf Process\-Run\-Header} (L\-C\-Run\-Header $\ast$run)
+\begin{DoxyCompactList}\small\item\em Called for every run, e.\-g. \end{DoxyCompactList}\item 
+void {\bf Process\-Event} (L\-C\-Event $\ast$evt\-P)\label{classTBTrackDigitizer_a026ff71a374a92b9f6ace5b858273896}
+
+\begin{DoxyCompactList}\small\item\em Called for every event. \end{DoxyCompactList}\item 
+void {\bfseries End} ()\label{classTBTrackDigitizer_a0a87ca69cc91c18f86b8f980c5b4e793}
+
+\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+std\-::string {\bf \-\_\-dc1\-Col\-Name}
+\begin{DoxyCompactList}\small\item\em name of the D\-C1 collection (parameter). \end{DoxyCompactList}\item 
+std\-::string {\bf \-\_\-dc2\-Col\-Name}
+\begin{DoxyCompactList}\small\item\em name of the D\-C2 collection (parameter). \end{DoxyCompactList}\item 
+std\-::string {\bf \-\_\-dc3\-Col\-Name}
+\begin{DoxyCompactList}\small\item\em name of the D\-C3 collection (parameter). \end{DoxyCompactList}\item 
+std\-::string {\bf \-\_\-dc4\-Col\-Name}
+\begin{DoxyCompactList}\small\item\em name of the D\-C4 collection (parameter). \end{DoxyCompactList}\item 
+std\-::string {\bf \-\_\-tracker\-Hit\-Col\-Name}
+\begin{DoxyCompactList}\small\item\em if not empty a tracker hit collection of this name is added to the event. \end{DoxyCompactList}\item 
+std\-::string {\bf \-\_\-\-T\-R\-U\-E\-Tracker\-Hit\-Col\-Name}
+\begin{DoxyCompactList}\small\item\em if not empty a tracker hit collection of this name is added to the event. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+int {\bfseries \-\_\-separate\-Hits\-X\-Y}\label{classTBTrackDigitizer_a61155291cafa45d49005249498b45735}
+
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+
+
+Definition at line 65 of file T\-B\-Track\-Digitizer.\-hh.
+
+
+
+\subsection{Member Function Documentation}
+\index{T\-B\-Track\-Digitizer@{T\-B\-Track\-Digitizer}!Init@{Init}}
+\index{Init@{Init}!TBTrackDigitizer@{T\-B\-Track\-Digitizer}}
+\subsubsection[{Init}]{\setlength{\rightskip}{0pt plus 5cm}void T\-B\-Track\-Digitizer\-::\-Init (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\label{classTBTrackDigitizer_a6132a08eda7102d6bfae4a078334385e}
+
+
+Called at the begin of the job before anything is read. 
+
+Use to initialize the processor, e.\-g. book histograms. 
+
+Definition at line 77 of file T\-B\-Track\-Digitizer.\-hh.
+
+\index{T\-B\-Track\-Digitizer@{T\-B\-Track\-Digitizer}!Process\-Run\-Header@{Process\-Run\-Header}}
+\index{Process\-Run\-Header@{Process\-Run\-Header}!TBTrackDigitizer@{T\-B\-Track\-Digitizer}}
+\subsubsection[{Process\-Run\-Header}]{\setlength{\rightskip}{0pt plus 5cm}void T\-B\-Track\-Digitizer\-::\-Process\-Run\-Header (
+\begin{DoxyParamCaption}
+\item[{L\-C\-Run\-Header $\ast$}]{run}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\label{classTBTrackDigitizer_a6cbdd55dcd60a0c1e20af931dd2bc102}
+
+
+Called for every run, e.\-g. 
+
+overwrite to initialize run dependent histograms. 
+
+Definition at line 82 of file T\-B\-Track\-Digitizer.\-hh.
+
+
+
+\subsection{Field Documentation}
+\index{T\-B\-Track\-Digitizer@{T\-B\-Track\-Digitizer}!\-\_\-dc1\-Col\-Name@{\-\_\-dc1\-Col\-Name}}
+\index{\-\_\-dc1\-Col\-Name@{\-\_\-dc1\-Col\-Name}!TBTrackDigitizer@{T\-B\-Track\-Digitizer}}
+\subsubsection[{\-\_\-dc1\-Col\-Name}]{\setlength{\rightskip}{0pt plus 5cm}std\-::string T\-B\-Track\-Digitizer\-::\-\_\-dc1\-Col\-Name\hspace{0.3cm}{\ttfamily [protected]}}\label{classTBTrackDigitizer_ac1c60667782d5da7c3133fb8bc2a0fe6}
+
+
+name of the D\-C1 collection (parameter). 
+
+
+
+Definition at line 93 of file T\-B\-Track\-Digitizer.\-hh.
+
+\index{T\-B\-Track\-Digitizer@{T\-B\-Track\-Digitizer}!\-\_\-dc2\-Col\-Name@{\-\_\-dc2\-Col\-Name}}
+\index{\-\_\-dc2\-Col\-Name@{\-\_\-dc2\-Col\-Name}!TBTrackDigitizer@{T\-B\-Track\-Digitizer}}
+\subsubsection[{\-\_\-dc2\-Col\-Name}]{\setlength{\rightskip}{0pt plus 5cm}std\-::string T\-B\-Track\-Digitizer\-::\-\_\-dc2\-Col\-Name\hspace{0.3cm}{\ttfamily [protected]}}\label{classTBTrackDigitizer_a072d9fc3b2b51490f107f92c08cfd583}
+
+
+name of the D\-C2 collection (parameter). 
+
+
+
+Definition at line 94 of file T\-B\-Track\-Digitizer.\-hh.
+
+\index{T\-B\-Track\-Digitizer@{T\-B\-Track\-Digitizer}!\-\_\-dc3\-Col\-Name@{\-\_\-dc3\-Col\-Name}}
+\index{\-\_\-dc3\-Col\-Name@{\-\_\-dc3\-Col\-Name}!TBTrackDigitizer@{T\-B\-Track\-Digitizer}}
+\subsubsection[{\-\_\-dc3\-Col\-Name}]{\setlength{\rightskip}{0pt plus 5cm}std\-::string T\-B\-Track\-Digitizer\-::\-\_\-dc3\-Col\-Name\hspace{0.3cm}{\ttfamily [protected]}}\label{classTBTrackDigitizer_a371d605e218ee547903748baab348c60}
+
+
+name of the D\-C3 collection (parameter). 
+
+
+
+Definition at line 95 of file T\-B\-Track\-Digitizer.\-hh.
+
+\index{T\-B\-Track\-Digitizer@{T\-B\-Track\-Digitizer}!\-\_\-dc4\-Col\-Name@{\-\_\-dc4\-Col\-Name}}
+\index{\-\_\-dc4\-Col\-Name@{\-\_\-dc4\-Col\-Name}!TBTrackDigitizer@{T\-B\-Track\-Digitizer}}
+\subsubsection[{\-\_\-dc4\-Col\-Name}]{\setlength{\rightskip}{0pt plus 5cm}std\-::string T\-B\-Track\-Digitizer\-::\-\_\-dc4\-Col\-Name\hspace{0.3cm}{\ttfamily [protected]}}\label{classTBTrackDigitizer_af81e1cc15ed1b7a95601f4531e0407e2}
+
+
+name of the D\-C4 collection (parameter). 
+
+
+
+Definition at line 96 of file T\-B\-Track\-Digitizer.\-hh.
+
+\index{T\-B\-Track\-Digitizer@{T\-B\-Track\-Digitizer}!\-\_\-tracker\-Hit\-Col\-Name@{\-\_\-tracker\-Hit\-Col\-Name}}
+\index{\-\_\-tracker\-Hit\-Col\-Name@{\-\_\-tracker\-Hit\-Col\-Name}!TBTrackDigitizer@{T\-B\-Track\-Digitizer}}
+\subsubsection[{\-\_\-tracker\-Hit\-Col\-Name}]{\setlength{\rightskip}{0pt plus 5cm}std\-::string T\-B\-Track\-Digitizer\-::\-\_\-tracker\-Hit\-Col\-Name\hspace{0.3cm}{\ttfamily [protected]}}\label{classTBTrackDigitizer_a89170451358f13de1fb6391f8c16e3be}
+
+
+if not empty a tracker hit collection of this name is added to the event. 
+
+
+
+Definition at line 97 of file T\-B\-Track\-Digitizer.\-hh.
+
+\index{T\-B\-Track\-Digitizer@{T\-B\-Track\-Digitizer}!\-\_\-\-T\-R\-U\-E\-Tracker\-Hit\-Col\-Name@{\-\_\-\-T\-R\-U\-E\-Tracker\-Hit\-Col\-Name}}
+\index{\-\_\-\-T\-R\-U\-E\-Tracker\-Hit\-Col\-Name@{\-\_\-\-T\-R\-U\-E\-Tracker\-Hit\-Col\-Name}!TBTrackDigitizer@{T\-B\-Track\-Digitizer}}
+\subsubsection[{\-\_\-\-T\-R\-U\-E\-Tracker\-Hit\-Col\-Name}]{\setlength{\rightskip}{0pt plus 5cm}std\-::string T\-B\-Track\-Digitizer\-::\-\_\-\-T\-R\-U\-E\-Tracker\-Hit\-Col\-Name\hspace{0.3cm}{\ttfamily [protected]}}\label{classTBTrackDigitizer_a05101ed4c3f17c4c75b6386eab702b39}
+
+
+if not empty a tracker hit collection of this name is added to the event. 
+
+
+
+Definition at line 98 of file T\-B\-Track\-Digitizer.\-hh.
+
+
+
+The documentation for this class was generated from the following file\-:\begin{DoxyCompactItemize}
+\item 
+T\-B\-Track\-Digitizer.\-hh\end{DoxyCompactItemize}

@@ -1,0 +1,336 @@
+\section{C\-A\-L\-I\-C\-E\-:\-:Ahc2\-Si\-P\-M\-Statistic\-Processor Class Reference}
+\label{classCALICE_1_1Ahc2SiPMStatisticProcessor}\index{C\-A\-L\-I\-C\-E\-::\-Ahc2\-Si\-P\-M\-Statistic\-Processor@{C\-A\-L\-I\-C\-E\-::\-Ahc2\-Si\-P\-M\-Statistic\-Processor}}
+
+
+Class for doing the \doxyref{A\-H\-C\-A\-L}{p.}{namespaceCALICE_1_1AHCAL} digitisation (Si\-P\-M treatment)  
+
+
+
+
+{\ttfamily \#include $<$Ahc2\-Si\-P\-M\-Statistic\-Processor.\-hh$>$}
+
+Inheritance diagram for C\-A\-L\-I\-C\-E\-:\-:Ahc2\-Si\-P\-M\-Statistic\-Processor\-:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classCALICE_1_1Ahc2SiPMStatisticProcessor}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+virtual Processor $\ast$ {\bfseries new\-Processor} ()\label{classCALICE_1_1Ahc2SiPMStatisticProcessor_a5cdbdcc8e47117d48748d8cb74360424}
+
+\item 
+{\bf Ahc2\-Si\-P\-M\-Statistic\-Processor} ()\label{classCALICE_1_1Ahc2SiPMStatisticProcessor_ad4c7742312464d70b606da147004d605}
+
+\begin{DoxyCompactList}\small\item\em Constructor. \end{DoxyCompactList}\item 
+{\bf $\sim$\-Ahc2\-Si\-P\-M\-Statistic\-Processor} ()\label{classCALICE_1_1Ahc2SiPMStatisticProcessor_aad2ee5462a90fd49e0691d5030b7ca65}
+
+\begin{DoxyCompactList}\small\item\em Destructor. \end{DoxyCompactList}\item 
+virtual void {\bf init} ()\label{classCALICE_1_1Ahc2SiPMStatisticProcessor_a1a7b89745d394e9dd21ea63a9ec4a65d}
+
+\begin{DoxyCompactList}\small\item\em Initialise. \end{DoxyCompactList}\item 
+virtual void {\bf process\-Run\-Header} (L\-C\-Run\-Header $\ast$run)\label{classCALICE_1_1Ahc2SiPMStatisticProcessor_a7471c1f70ce311f477d65417eb0fc5c3}
+
+\begin{DoxyCompactList}\small\item\em Process header. \end{DoxyCompactList}\item 
+virtual void {\bf process\-Event} (L\-C\-Event $\ast$evt)\label{classCALICE_1_1Ahc2SiPMStatisticProcessor_a33f43727632ea28b5a7b2ede4b150b98}
+
+\begin{DoxyCompactList}\small\item\em Process event (the working horse) \end{DoxyCompactList}\item 
+virtual void {\bf check} (L\-C\-Event $\ast$evt)\label{classCALICE_1_1Ahc2SiPMStatisticProcessor_abea612c24758ae2a02567e2371997c40}
+
+\begin{DoxyCompactList}\small\item\em Check. \end{DoxyCompactList}\item 
+virtual void {\bf end} ()\label{classCALICE_1_1Ahc2SiPMStatisticProcessor_a8622faa7bfb96508f729051441dfd9b7}
+
+\begin{DoxyCompactList}\small\item\em End of processing. \end{DoxyCompactList}\item 
+virtual void {\bf print\-Parameters} ()\label{classCALICE_1_1Ahc2SiPMStatisticProcessor_a0c2c57c22063af53ee5254e8748ee235}
+
+\begin{DoxyCompactList}\small\item\em Print Parameters. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void {\bf fill\-Container} (L\-C\-Collection $\ast$input\-Col)
+\begin{DoxyCompactList}\small\item\em Fill a mapped container with the \doxyref{A\-H\-C\-A\-L}{p.}{namespaceCALICE_1_1AHCAL} cells. \end{DoxyCompactList}\item 
+void {\bf simulate\-Optical\-Cross\-Talk} ()
+\begin{DoxyCompactList}\small\item\em Simulate the optical cross-\/talk (i.\-e. \end{DoxyCompactList}\item 
+void {\bf simulate\-Si\-P\-M\-Behaviour} ()\label{classCALICE_1_1Ahc2SiPMStatisticProcessor_a1ea294fe0b73c43d266d90b3fd53e814}
+
+\begin{DoxyCompactList}\small\item\em Simulate the Si\-P\-M binomial behaviour. \end{DoxyCompactList}\item 
+void {\bf add\-Noise} (L\-C\-Collection $\ast$noise\-Col)
+\begin{DoxyCompactList}\small\item\em Add noise events from data. \end{DoxyCompactList}\item 
+void {\bf create\-Output\-Collection} (L\-C\-Event $\ast$evt, const std\-::string col\-Name)
+\begin{DoxyCompactList}\small\item\em Create output collection of digitised \doxyref{A\-H\-C\-A\-L}{p.}{namespaceCALICE_1_1AHCAL} hits. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+std\-::string {\bf \-\_\-calorim\-Inp\-Collection}\label{classCALICE_1_1Ahc2SiPMStatisticProcessor_ad6530c343634aced1a4f4266a56dde52}
+
+\begin{DoxyCompactList}\small\item\em input collection name \end{DoxyCompactList}\item 
+std\-::string {\bf \-\_\-calorim\-Out\-Collection}\label{classCALICE_1_1Ahc2SiPMStatisticProcessor_a60e53201d752c229ae0c975705fbe788}
+
+\begin{DoxyCompactList}\small\item\em output collection name \end{DoxyCompactList}\item 
+vector$<$ std\-::string $>$ {\bf \-\_\-calorim\-Inp\-Collections}\label{classCALICE_1_1Ahc2SiPMStatisticProcessor_a6b0870b2c909736c0c309596c1fce428}
+
+\begin{DoxyCompactList}\small\item\em input collection name \end{DoxyCompactList}\item 
+vector$<$ std\-::string $>$ {\bf \-\_\-calorim\-Out\-Collections}\label{classCALICE_1_1Ahc2SiPMStatisticProcessor_a5fe5d1f4b1894ad2076869da5dda5596}
+
+\begin{DoxyCompactList}\small\item\em output collection name \end{DoxyCompactList}\item 
+std\-::string {\bf \-\_\-noise\-Col\-Name}\label{classCALICE_1_1Ahc2SiPMStatisticProcessor_a9f31e354c2eabd530855f62f167b9c3b}
+
+\begin{DoxyCompactList}\small\item\em Noise collection name. \end{DoxyCompactList}\item 
+std\-::string {\bf \-\_\-mapping\-Processor\-Name}\label{classCALICE_1_1Ahc2SiPMStatisticProcessor_a7e45dfe6f71626a4625267db08ddb37b}
+
+\begin{DoxyCompactList}\small\item\em Mapping Processor Name. \end{DoxyCompactList}\item 
+std\-::string {\bf \-\_\-cell\-Neighbours\-Processor\-Name}\label{classCALICE_1_1Ahc2SiPMStatisticProcessor_af07d7359686fceae4c364931c6fd2770}
+
+\begin{DoxyCompactList}\small\item\em name of the processor which provides the cells neighbours \end{DoxyCompactList}\item 
+std\-::string {\bf \-\_\-cell\-Description\-Processor\-Name}\label{classCALICE_1_1Ahc2SiPMStatisticProcessor_a98b7f1328a0ed947f7e4b214d8bf9a6d}
+
+\begin{DoxyCompactList}\small\item\em Cell\-Description Processor name. \end{DoxyCompactList}\item 
+std\-::string {\bf \-\_\-calib\-Processor\-Name}\label{classCALICE_1_1Ahc2SiPMStatisticProcessor_a1fab5b178e9d23ecbf4ef2e5c313e6b1}
+
+\begin{DoxyCompactList}\small\item\em Calibration Processor Name. \end{DoxyCompactList}\item 
+bool {\bf \-\_\-filter\-Dead\-Cells}\label{classCALICE_1_1Ahc2SiPMStatisticProcessor_a3d56d73f8743287f0c2193a6422816aa}
+
+\begin{DoxyCompactList}\small\item\em filter dead cells \end{DoxyCompactList}\item 
+bool {\bf \-\_\-do\-Mip\-Temp\-Corr}\label{classCALICE_1_1Ahc2SiPMStatisticProcessor_a5bfa570dd84ee9f442b7331c7ba0613f}
+
+\begin{DoxyCompactList}\small\item\em do M\-I\-P temperature correction \end{DoxyCompactList}\item 
+bool {\bf \-\_\-do\-Gain\-Temp\-Corr}\label{classCALICE_1_1Ahc2SiPMStatisticProcessor_a9b03e178918d2da408f338066339e681}
+
+\begin{DoxyCompactList}\small\item\em do Gain temperature correction \end{DoxyCompactList}\item 
+bool {\bf \-\_\-filter\-Default\-Cells}\label{classCALICE_1_1Ahc2SiPMStatisticProcessor_a104e829016f18843af1f2e24a1e0fe67}
+
+\begin{DoxyCompactList}\small\item\em filter cells with default values \end{DoxyCompactList}\item 
+bool {\bf \-\_\-do\-Saturation}\label{classCALICE_1_1Ahc2SiPMStatisticProcessor_a501fd0b4f0be7cc8b2f07e009c810723}
+
+\begin{DoxyCompactList}\small\item\em do Si\-P\-M Saturation \end{DoxyCompactList}\item 
+bool {\bf \-\_\-do\-Binomial\-Smearing}\label{classCALICE_1_1Ahc2SiPMStatisticProcessor_af1a2f795b7ee8a7ada9c2f3cbc46b1cb}
+
+\begin{DoxyCompactList}\small\item\em do Binomial Smearing \end{DoxyCompactList}\item 
+bool {\bf \-\_\-do\-Additional\-Smearing}\label{classCALICE_1_1Ahc2SiPMStatisticProcessor_ae5ab393998c69f316573f53d15d2e726}
+
+\begin{DoxyCompactList}\small\item\em do additional Smearing \end{DoxyCompactList}\item 
+bool {\bf \-\_\-do\-Add\-Noise}\label{classCALICE_1_1Ahc2SiPMStatisticProcessor_aba121a447270df73fe8e671ca646a072}
+
+\begin{DoxyCompactList}\small\item\em Add Noise. \end{DoxyCompactList}\item 
+float {\bf \-\_\-pix\-Spread}\label{classCALICE_1_1Ahc2SiPMStatisticProcessor_a524477012ed19fae02c7a8a3dfc98f5c}
+
+\begin{DoxyCompactList}\small\item\em value in pixel spread \end{DoxyCompactList}\item 
+bool {\bf \-\_\-correct\-Default\-Gain\-To\-L\-Y}\label{classCALICE_1_1Ahc2SiPMStatisticProcessor_a96b097630abf3c89a62ed0ed147834f2}
+
+\begin{DoxyCompactList}\small\item\em Correct L\-Y if default gain. \end{DoxyCompactList}\item 
+bool {\bf \-\_\-physics\-Mode}\label{classCALICE_1_1Ahc2SiPMStatisticProcessor_a11224fa3815f8ea0853176100b15a743}
+
+\begin{DoxyCompactList}\small\item\em physics mode for new I\-T\-E\-P \end{DoxyCompactList}\item 
+bool {\bf \-\_\-noise\-Energy\-M\-I\-P}\label{classCALICE_1_1Ahc2SiPMStatisticProcessor_a995e60f3eb2e0b01aafad937de175fb2}
+
+\begin{DoxyCompactList}\small\item\em energy of noise hits are in M\-I\-P \end{DoxyCompactList}\item 
+bool {\bf \-\_\-do\-Optical\-Cross\-Talk}\label{classCALICE_1_1Ahc2SiPMStatisticProcessor_a55138f5ef338a7e63d6aa5d86a4947b3}
+
+\begin{DoxyCompactList}\small\item\em flag to disable/enable optical cross talk among neighbour tiles \end{DoxyCompactList}\item 
+float {\bf \-\_\-fixed\-L\-Y}\label{classCALICE_1_1Ahc2SiPMStatisticProcessor_a20d4a2d56dd0bab777ad261f2dbbca6b}
+
+\begin{DoxyCompactList}\small\item\em fix light yield if default gain \end{DoxyCompactList}\item 
+String\-Vec {\bf \-\_\-light\-Leakage}\label{classCALICE_1_1Ahc2SiPMStatisticProcessor_a53b1d594f36a7fbaa24d9b39d23c15e9}
+
+\begin{DoxyCompactList}\small\item\em light leakage factor vector \end{DoxyCompactList}\item 
+std\-::map$<$ int, float $>$ {\bf m\-\_\-leakage}\label{classCALICE_1_1Ahc2SiPMStatisticProcessor_a0842cee9ffb02d1efb3fad1c6afe41c1}
+
+\begin{DoxyCompactList}\small\item\em map containing ight leakage factor for each layer \end{DoxyCompactList}\item 
+T\-Random3 $\ast$ {\bf \-\_\-random\-Generator}\label{classCALICE_1_1Ahc2SiPMStatisticProcessor_a9cb302dd9327d40a9e6817289e1f74b4}
+
+\begin{DoxyCompactList}\small\item\em pointer to R\-O\-O\-Ts random generator for pixel statistics \end{DoxyCompactList}\item 
+int {\bf \-\_\-random\-Seed}
+\begin{DoxyCompactList}\small\item\em random seed for the random generator. \end{DoxyCompactList}\item 
+std\-::string {\bf \-\_\-mokka\-Encoding\-String}\label{classCALICE_1_1Ahc2SiPMStatisticProcessor_aa02958354565b3d5ed9b449642984c48}
+
+\begin{DoxyCompactList}\small\item\em the Mokka encoding string \end{DoxyCompactList}\item 
+const Ahc2\-Mapper $\ast$ {\bf \-\_\-mapper}\label{classCALICE_1_1Ahc2SiPMStatisticProcessor_ad4e91d1ff807766f225acb8687f5c3eb}
+
+\begin{DoxyCompactList}\small\item\em pointer to the used mapped \end{DoxyCompactList}\item 
+unsigned int {\bf \-\_\-mapper\-Version}\label{classCALICE_1_1Ahc2SiPMStatisticProcessor_ad79e48205a744237759c542513956619}
+
+\begin{DoxyCompactList}\small\item\em mapper version \end{DoxyCompactList}\item 
+Mapped\-Container\\*
+$<$ C\-A\-L\-I\-C\-E\-::\-Cell\-Description $>$ $\ast$ {\bf \-\_\-cell\-Descriptions}\label{classCALICE_1_1Ahc2SiPMStatisticProcessor_ab4db21c796e4acb08c76df5b180411b8}
+
+\begin{DoxyCompactList}\small\item\em mapped container of cells description \end{DoxyCompactList}\item 
+Mapped\-Container\\*
+$<$ C\-A\-L\-I\-C\-E\-::\-Cell\-Neighbours $>$ $\ast$ {\bf \-\_\-cell\-Neighbours}\label{classCALICE_1_1Ahc2SiPMStatisticProcessor_aaa69b840289e408c755c0120b3fc84ad}
+
+\begin{DoxyCompactList}\small\item\em mapped container of cells neighbours \end{DoxyCompactList}\item 
+Mapped\-Container\\*
+$<$ Ahc2\-Calibrations $>$ $\ast$ {\bf \-\_\-calib\-Container}\label{classCALICE_1_1Ahc2SiPMStatisticProcessor_a57b732c8fb88b7e1ee0402236b910c65}
+
+\begin{DoxyCompactList}\small\item\em mapped container of Si\-P\-M calibrations \end{DoxyCompactList}\item 
+Mapped\-Container\\*
+$<$ Calorimeter\-Hit\-Impl $>$ $\ast$ {\bf \-\_\-\-Hit\-Container}\label{classCALICE_1_1Ahc2SiPMStatisticProcessor_a93b8261f0541bdb89fe3bd1c34a9bbb5}
+
+\begin{DoxyCompactList}\small\item\em mapped container of \doxyref{A\-H\-C\-A\-L}{p.}{namespaceCALICE_1_1AHCAL} cells \end{DoxyCompactList}\item 
+int {\bfseries \-\_\-n\-Run}\label{classCALICE_1_1Ahc2SiPMStatisticProcessor_aee588a97b13de6aa776b51638edccf6d}
+
+\item 
+int {\bfseries \-\_\-n\-Evt}\label{classCALICE_1_1Ahc2SiPMStatisticProcessor_a32f9509156a900a8206c47e3cacf4b07}
+
+\end{DoxyCompactItemize}
+\subsection*{Static Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+static const unsigned int {\bf M\-A\-X\-A\-D\-C} = 4096\label{classCALICE_1_1Ahc2SiPMStatisticProcessor_a04a802ac94bbe8809bcb9f00debe998b}
+
+\begin{DoxyCompactList}\small\item\em Max A\-D\-C for High Gain. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Class for doing the \doxyref{A\-H\-C\-A\-L}{p.}{namespaceCALICE_1_1AHCAL} digitisation (Si\-P\-M treatment) 
+
+\begin{DoxyAuthor}{Author}
+{\tt eldwan.\-brianne@desy.\-de} 
+\end{DoxyAuthor}
+\begin{DoxyVersion}{Version}
+1.\-0 
+\end{DoxyVersion}
+\begin{DoxyDate}{Date}
+December 2015 
+\end{DoxyDate}
+
+
+Definition at line 43 of file Ahc2\-Si\-P\-M\-Statistic\-Processor.\-hh.
+
+
+
+\subsection{Member Function Documentation}
+\index{C\-A\-L\-I\-C\-E\-::\-Ahc2\-Si\-P\-M\-Statistic\-Processor@{C\-A\-L\-I\-C\-E\-::\-Ahc2\-Si\-P\-M\-Statistic\-Processor}!add\-Noise@{add\-Noise}}
+\index{add\-Noise@{add\-Noise}!CALICE::Ahc2SiPMStatisticProcessor@{C\-A\-L\-I\-C\-E\-::\-Ahc2\-Si\-P\-M\-Statistic\-Processor}}
+\subsubsection[{add\-Noise}]{\setlength{\rightskip}{0pt plus 5cm}void C\-A\-L\-I\-C\-E\-::\-Ahc2\-Si\-P\-M\-Statistic\-Processor\-::add\-Noise (
+\begin{DoxyParamCaption}
+\item[{L\-C\-Collection $\ast$}]{noise\-Col}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}}\label{classCALICE_1_1Ahc2SiPMStatisticProcessor_aafa4b11452ff498ec4ef84dceeb93e6d}
+
+
+Add noise events from data. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em noise\-Col} & the noise collection \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 791 of file Ahc2\-Si\-P\-M\-Statistic\-Processor.\-cc.
+
+
+
+References \-\_\-calib\-Container, \-\_\-do\-Add\-Noise, \-\_\-do\-Saturation, \-\_\-\-Hit\-Container, \-\_\-mokka\-Encoding\-String, \-\_\-noise\-Energy\-M\-I\-P, and M\-A\-X\-A\-D\-C.
+
+
+
+Referenced by process\-Event().
+
+\index{C\-A\-L\-I\-C\-E\-::\-Ahc2\-Si\-P\-M\-Statistic\-Processor@{C\-A\-L\-I\-C\-E\-::\-Ahc2\-Si\-P\-M\-Statistic\-Processor}!create\-Output\-Collection@{create\-Output\-Collection}}
+\index{create\-Output\-Collection@{create\-Output\-Collection}!CALICE::Ahc2SiPMStatisticProcessor@{C\-A\-L\-I\-C\-E\-::\-Ahc2\-Si\-P\-M\-Statistic\-Processor}}
+\subsubsection[{create\-Output\-Collection}]{\setlength{\rightskip}{0pt plus 5cm}void C\-A\-L\-I\-C\-E\-::\-Ahc2\-Si\-P\-M\-Statistic\-Processor\-::create\-Output\-Collection (
+\begin{DoxyParamCaption}
+\item[{L\-C\-Event $\ast$}]{evt, }
+\item[{const std\-::string}]{col\-Name}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}}\label{classCALICE_1_1Ahc2SiPMStatisticProcessor_a72667f16ab7399f08fd1bdfb8b394234}
+
+
+Create output collection of digitised \doxyref{A\-H\-C\-A\-L}{p.}{namespaceCALICE_1_1AHCAL} hits. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em evt} & L\-C\-Event to which the collection will be added \\
+\hline
+{\em col\-Name} & name of the output collection \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 870 of file Ahc2\-Si\-P\-M\-Statistic\-Processor.\-cc.
+
+
+
+References \-\_\-\-Hit\-Container, and \-\_\-mokka\-Encoding\-String.
+
+
+
+Referenced by process\-Event().
+
+\index{C\-A\-L\-I\-C\-E\-::\-Ahc2\-Si\-P\-M\-Statistic\-Processor@{C\-A\-L\-I\-C\-E\-::\-Ahc2\-Si\-P\-M\-Statistic\-Processor}!fill\-Container@{fill\-Container}}
+\index{fill\-Container@{fill\-Container}!CALICE::Ahc2SiPMStatisticProcessor@{C\-A\-L\-I\-C\-E\-::\-Ahc2\-Si\-P\-M\-Statistic\-Processor}}
+\subsubsection[{fill\-Container}]{\setlength{\rightskip}{0pt plus 5cm}void C\-A\-L\-I\-C\-E\-::\-Ahc2\-Si\-P\-M\-Statistic\-Processor\-::fill\-Container (
+\begin{DoxyParamCaption}
+\item[{L\-C\-Collection $\ast$}]{input\-Col}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}}\label{classCALICE_1_1Ahc2SiPMStatisticProcessor_a7fa64a083d999a8cdb7660cd5d0289af}
+
+
+Fill a mapped container with the \doxyref{A\-H\-C\-A\-L}{p.}{namespaceCALICE_1_1AHCAL} cells. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em input\-Col} & the input collection, with the \doxyref{A\-H\-C\-A\-L}{p.}{namespaceCALICE_1_1AHCAL} Mokka hits \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 358 of file Ahc2\-Si\-P\-M\-Statistic\-Processor.\-cc.
+
+
+
+References \-\_\-\-Hit\-Container, \-\_\-mapper, and \-\_\-mokka\-Encoding\-String.
+
+
+
+Referenced by process\-Event().
+
+\index{C\-A\-L\-I\-C\-E\-::\-Ahc2\-Si\-P\-M\-Statistic\-Processor@{C\-A\-L\-I\-C\-E\-::\-Ahc2\-Si\-P\-M\-Statistic\-Processor}!simulate\-Optical\-Cross\-Talk@{simulate\-Optical\-Cross\-Talk}}
+\index{simulate\-Optical\-Cross\-Talk@{simulate\-Optical\-Cross\-Talk}!CALICE::Ahc2SiPMStatisticProcessor@{C\-A\-L\-I\-C\-E\-::\-Ahc2\-Si\-P\-M\-Statistic\-Processor}}
+\subsubsection[{simulate\-Optical\-Cross\-Talk}]{\setlength{\rightskip}{0pt plus 5cm}void C\-A\-L\-I\-C\-E\-::\-Ahc2\-Si\-P\-M\-Statistic\-Processor\-::simulate\-Optical\-Cross\-Talk (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}}\label{classCALICE_1_1Ahc2SiPMStatisticProcessor_afa269ae00bbf2f185e154a0464bf972d}
+
+
+Simulate the optical cross-\/talk (i.\-e. 
+
+light leakage) between the tiles 
+
+Definition at line 406 of file Ahc2\-Si\-P\-M\-Statistic\-Processor.\-cc.
+
+
+
+References \-\_\-cell\-Descriptions, \-\_\-cell\-Neighbours, \-\_\-cell\-Neighbours\-Processor\-Name, \-\_\-\-Hit\-Container, \-\_\-mokka\-Encoding\-String, and m\-\_\-leakage.
+
+
+
+Referenced by process\-Event().
+
+
+
+\subsection{Field Documentation}
+\index{C\-A\-L\-I\-C\-E\-::\-Ahc2\-Si\-P\-M\-Statistic\-Processor@{C\-A\-L\-I\-C\-E\-::\-Ahc2\-Si\-P\-M\-Statistic\-Processor}!\-\_\-random\-Seed@{\-\_\-random\-Seed}}
+\index{\-\_\-random\-Seed@{\-\_\-random\-Seed}!CALICE::Ahc2SiPMStatisticProcessor@{C\-A\-L\-I\-C\-E\-::\-Ahc2\-Si\-P\-M\-Statistic\-Processor}}
+\subsubsection[{\-\_\-random\-Seed}]{\setlength{\rightskip}{0pt plus 5cm}int C\-A\-L\-I\-C\-E\-::\-Ahc2\-Si\-P\-M\-Statistic\-Processor\-::\-\_\-random\-Seed\hspace{0.3cm}{\ttfamily [private]}}\label{classCALICE_1_1Ahc2SiPMStatisticProcessor_ac53cdf42123fe76fe1e633fb923652ab}
+
+
+random seed for the random generator. 
+
+Steerable. 
+
+Definition at line 141 of file Ahc2\-Si\-P\-M\-Statistic\-Processor.\-hh.
+
+
+
+Referenced by Ahc2\-Si\-P\-M\-Statistic\-Processor(), and init().
+
+
+
+The documentation for this class was generated from the following files\-:\begin{DoxyCompactItemize}
+\item 
+Ahc2\-Si\-P\-M\-Statistic\-Processor.\-hh\item 
+Ahc2\-Si\-P\-M\-Statistic\-Processor.\-cc\end{DoxyCompactItemize}

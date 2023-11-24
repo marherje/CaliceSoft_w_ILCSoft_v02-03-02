@@ -1,0 +1,127 @@
+\section{C\-A\-L\-I\-C\-E\-:\-:Si\-P\-M\-Calibrations Class Reference}
+\label{classCALICE_1_1SiPMCalibrations}\index{C\-A\-L\-I\-C\-E\-::\-Si\-P\-M\-Calibrations@{C\-A\-L\-I\-C\-E\-::\-Si\-P\-M\-Calibrations}}
+
+
+storing all informations necessary to calibrate a Si\-P\-M read channel  
+
+
+
+
+{\ttfamily \#include $<$Si\-P\-M\-Calibrations.\-hh$>$}
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+{\bfseries Si\-P\-M\-Calibrations} ({\bf Linear\-Fit\-Compound} $\ast$M\-I\-P, {\bf Linear\-Fit\-Compound} $\ast$gain, {\bf Simple\-Value} $\ast$pedestal, {\bf Simple\-Value} $\ast$inter\-Calibration, {\bf Simple\-Value} $\ast$temperature, {\bf Sat\-Corr\-Function} $\ast$saturation\-Correction\-Function, const int status, const int cell\-I\-D, const std\-::string \&cell\-I\-D\-Encoding)\label{classCALICE_1_1SiPMCalibrations_aa851b0593a6873a0b15c7cabb609c0d1}
+
+\item 
+{\bf Linear\-Fit\-Compound} $\ast$ {\bfseries get\-M\-I\-P} () const \label{classCALICE_1_1SiPMCalibrations_abbbfbe24d17669c8badb66334dfcb30a}
+
+\item 
+{\bf Linear\-Fit\-Compound} $\ast$ {\bfseries get\-Gain} () const \label{classCALICE_1_1SiPMCalibrations_a2a6c2d617c1b12c6ab7fa9459c0d1166}
+
+\item 
+{\bf Simple\-Value} $\ast$ {\bfseries get\-Pedestal} () const \label{classCALICE_1_1SiPMCalibrations_ab991691f092599c9bc9feb2b08eb1784}
+
+\item 
+{\bf Simple\-Value} $\ast$ {\bfseries get\-Inter\-Calibration} () const \label{classCALICE_1_1SiPMCalibrations_a94c9c1935c779fbcc6b65b731e03ff68}
+
+\item 
+{\bf Simple\-Value} $\ast$ {\bfseries get\-Temperature} () const \label{classCALICE_1_1SiPMCalibrations_ac9d5379fab77f2f0fd9f75bccd1eeded}
+
+\item 
+{\bf Sat\-Corr\-Function} $\ast$ {\bfseries get\-Saturation\-Correction} () const \label{classCALICE_1_1SiPMCalibrations_a95242064de5a4de8bb853241207ee8e3}
+
+\item 
+int {\bfseries get\-Status} () const \label{classCALICE_1_1SiPMCalibrations_a07dc84745b2abc8b62f1cf4e8d4dfcba}
+
+\item 
+int {\bfseries get\-Cell\-I\-D} () const \label{classCALICE_1_1SiPMCalibrations_ad1a56fb77672a410a74683387d272df8}
+
+\item 
+const std\-::string \& {\bfseries get\-Cell\-I\-D\-Encoding} () const \label{classCALICE_1_1SiPMCalibrations_a2e47289adf02e1a3bc9e6bf370af482b}
+
+\item 
+void {\bfseries set\-M\-I\-P} ({\bf Linear\-Fit\-Compound} $\ast$M\-I\-P)\label{classCALICE_1_1SiPMCalibrations_a65a73bf83bd8ddbf12914224ad411fde}
+
+\item 
+void {\bfseries set\-Gain} ({\bf Linear\-Fit\-Compound} $\ast$gain)\label{classCALICE_1_1SiPMCalibrations_adfe30ac03bc761995768880d3c2c7fe1}
+
+\item 
+void {\bfseries set\-Pedestal} ({\bf Simple\-Value} $\ast$pedestal)\label{classCALICE_1_1SiPMCalibrations_a911776115060e391a15023a2f5112141}
+
+\item 
+void {\bfseries set\-Inter\-Calibration} ({\bf Simple\-Value} $\ast$inter\-Calibration)\label{classCALICE_1_1SiPMCalibrations_a0b3a0b17dd35f9c11281b5e49f904bd3}
+
+\item 
+void {\bfseries set\-Temperature} ({\bf Simple\-Value} $\ast$temperature)\label{classCALICE_1_1SiPMCalibrations_a56bb99f016beaed0a30fbf4d2ef14aec}
+
+\item 
+void {\bfseries set\-Saturation\-Correction} ({\bf Sat\-Corr\-Function} $\ast$function)\label{classCALICE_1_1SiPMCalibrations_aa139e8d1a5abf52a870c3ceb4919eaf0}
+
+\item 
+void {\bfseries set\-Status} (const int status)\label{classCALICE_1_1SiPMCalibrations_a6e17f6b346fe518ec0a3ec55300f27e2}
+
+\item 
+void {\bfseries set\-Cell\-I\-D} (const int cell\-I\-D)\label{classCALICE_1_1SiPMCalibrations_ac28a91931ad9ff90727485c9fb4a7d99}
+
+\item 
+void {\bfseries set\-Cell\-I\-D\-Encoding} (const std\-::string \&encoding)\label{classCALICE_1_1SiPMCalibrations_a11b1859ce44b828770402889145500c9}
+
+\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+{\bf Linear\-Fit\-Compound} $\ast$ {\bfseries \-\_\-gain}\label{classCALICE_1_1SiPMCalibrations_a3487c9a49073fdfb6afe4879e0cf15db}
+
+\item 
+{\bf Linear\-Fit\-Compound} $\ast$ {\bfseries \-\_\-\-M\-I\-P}\label{classCALICE_1_1SiPMCalibrations_a4fd6f4b21695c5b3afc4128fc35f7f14}
+
+\item 
+{\bf Simple\-Value} $\ast$ {\bfseries \-\_\-pedestal}\label{classCALICE_1_1SiPMCalibrations_a3f8891bfab0556bc6b57f638e6d0420d}
+
+\item 
+{\bf Simple\-Value} $\ast$ {\bfseries \-\_\-inter\-Calibration}\label{classCALICE_1_1SiPMCalibrations_a477b60d50dfc0d15154ebaa2fc16541f}
+
+\item 
+{\bf Simple\-Value} $\ast$ {\bfseries \-\_\-temperature}\label{classCALICE_1_1SiPMCalibrations_a6357cdc449fb2e4f66d024b0e7714fc2}
+
+\item 
+{\bf Sat\-Corr\-Function} $\ast$ {\bfseries \-\_\-saturation\-Correction\-Function}\label{classCALICE_1_1SiPMCalibrations_afd20038e0a15996ee606085a9ec7364a}
+
+\item 
+int {\bfseries \-\_\-status}\label{classCALICE_1_1SiPMCalibrations_aaee2e7f5bc2735e5c33691c05ec81901}
+
+\item 
+int {\bfseries \-\_\-cell\-I\-D}\label{classCALICE_1_1SiPMCalibrations_a5a4013b442b06dc92252bf997cc43c3a}
+
+\item 
+std\-::string {\bfseries \-\_\-cell\-I\-D\-Encoding}\label{classCALICE_1_1SiPMCalibrations_ac5d7b1a33ddde18f2c3670fae10e2191}
+
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+storing all informations necessary to calibrate a Si\-P\-M read channel 
+
+This class is meant as central holder of all necessary informations to calibrate a Si\-P\-M. Currently, following informations are stored\-: \begin{DoxyItemize}
+\item {\ttfamily M\-I\-P} calibration in form of a {\bfseries \doxyref{Linear\-Fit\-Result}{p.}{classCALICE_1_1LinearFitResult}} \item {\ttfamily gain} calibration in form of a {\bfseries \doxyref{Linear\-Fit\-Result}{p.}{classCALICE_1_1LinearFitResult}} \item {\ttfamily pedestal} calibration in form of a {\bfseries \doxyref{Simple\-Value}{p.}{classCALICE_1_1SimpleValue}} \item {\ttfamily inter} {\ttfamily calibration} in form of a {\bfseries \doxyref{Simple\-Value}{p.}{classCALICE_1_1SimpleValue}} \item {\ttfamily saturation} {\ttfamily correction} {\ttfamily function} in form of a {\bfseries \doxyref{Sat\-Corr\-Itep}{p.}{classCALICE_1_1SatCorrItep}} \item {\ttfamily status} in form of an {\bfseries integer} \end{DoxyItemize}
+\begin{DoxyAuthor}{Author}
+{\tt Benjamin.\-Lutz@desy.\-de} 
+\end{DoxyAuthor}
+\begin{DoxyVersion}{Version}
+0.\-1 
+\end{DoxyVersion}
+\begin{DoxyDate}{Date}
+October 2009 
+\end{DoxyDate}
+
+
+Definition at line 28 of file Si\-P\-M\-Calibrations.\-hh.
+
+
+
+The documentation for this class was generated from the following files\-:\begin{DoxyCompactItemize}
+\item 
+Si\-P\-M\-Calibrations.\-hh\item 
+Si\-P\-M\-Calibrations.\-cc\end{DoxyCompactItemize}

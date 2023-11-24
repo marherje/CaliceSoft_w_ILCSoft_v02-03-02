@@ -1,0 +1,78 @@
+\section{Average$<$ T $>$ Class Template Reference}
+\label{classAverage}\index{Average$<$ T $>$@{Average$<$ T $>$}}
+
+
+{\ttfamily \#include $<$Average.\-hh$>$}
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+{\bf Average} \& {\bfseries add\-Value} (T e)\label{classAverage_a64c7ca209a62c3924c39b4164aa867d0}
+
+\item 
+{\bf Average} \& {\bfseries reset} ()\label{classAverage_a838a42f6d0f3cf73165309f02b094e9b}
+
+\item 
+const unsigned int {\bfseries get\-Number\-Of\-Values} () const \label{classAverage_a2ee713a278aefaef90584bbf73596edf}
+
+\item 
+const T {\bfseries get\-Sum} () const \label{classAverage_a560bb0d9ca4b0f40fcae27223aae0a90}
+
+\item 
+const T {\bfseries get\-Sum\-Of\-Squares} () const \label{classAverage_af6dfd62fc21b2df27ac5dfbaa4ad1d83}
+
+\item 
+const T {\bfseries get\-Mean} () const \label{classAverage_a61076cc700c867dfb4f3219b00e70c6e}
+
+\item 
+const T {\bfseries get\-Mean\-Uncertainty} () const \label{classAverage_a457c11776ddaa9774dded83e548bb57b}
+
+\item 
+const T {\bfseries get\-R\-M\-S} () const \label{classAverage_a19cd90c555f3b31e217dd01c2d076581}
+
+\item 
+const T {\bfseries get\-R\-M\-S\-Uncertainty} () const \label{classAverage_a6295f4a7c39dc1b659d917839e2c705f}
+
+\item 
+const T {\bfseries get\-Min} () const \label{classAverage_a94b13ed6b3b4e09ffc783246c8951469}
+
+\item 
+const T {\bfseries get\-Max} () const \label{classAverage_ab3da04cdf4d87f82c0a5f1dc1310d414}
+
+\end{DoxyCompactItemize}
+\subsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+const double {\bfseries get\-Sum\-Squared} () const \label{classAverage_a4de86661fad1773ebbd9dfe21fe01e42}
+
+\item 
+const double {\bfseries get\-Mean\-Squared} () const \label{classAverage_aefc203610b1934156db3dbd4f0686410}
+
+\item 
+const double {\bfseries get\-Mean\-Of\-Squares} () const \label{classAverage_a2a846d87e98b5adfb14e2ce37008e076}
+
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+\subsubsection*{template$<$class T$>$class Average$<$ T $>$}
+
+Collect input values and calculate mean/\-R\-M\-S upon request
+
+This class keeps sum, sum-\/of-\/squares and number of input values to calculate mean/\-R\-M\-S. Templated value data type allows for flexible memory managemant, while internal calculations are done in double precision to avoid numerical cut-\/offs.
+
+\begin{DoxyAuthor}{Author}
+{\tt Niels.\-Meyer@desy.\-de} 
+\end{DoxyAuthor}
+\begin{DoxyDate}{Date}
+January 2008 
+\end{DoxyDate}
+
+
+Definition at line 19 of file Average.\-hh.
+
+
+
+The documentation for this class was generated from the following file\-:\begin{DoxyCompactItemize}
+\item 
+/nfs/dust/ilc/user/marquezh/\-Calice\-Soft\-\_\-w\-\_\-\-I\-L\-C\-Soft\-\_\-v02-\/03-\/02/calice\-\_\-db\-\_\-tools/include/Average.\-hh\end{DoxyCompactItemize}

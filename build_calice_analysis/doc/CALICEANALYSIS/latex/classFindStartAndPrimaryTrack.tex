@@ -1,0 +1,141 @@
+\section{Find\-Start\-And\-Primary\-Track Class Reference}
+\label{classFindStartAndPrimaryTrack}\index{Find\-Start\-And\-Primary\-Track@{Find\-Start\-And\-Primary\-Track}}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+{\bf Find\-Start\-And\-Primary\-Track} (float, int, float)
+\begin{DoxyCompactList}\small\item\em First interaction layer and primary track finder. \end{DoxyCompactList}\item 
+{\bf $\sim$\-Find\-Start\-And\-Primary\-Track} ()
+\item 
+float {\bf dist\-X\-Y} (float, float, float, float)
+\item 
+int {\bf get\-Start\-Layer\-Mip} (std\-::vector$<$ {\bf C\-Layer} $>$, int, int, float, int)
+\item 
+int {\bf get\-Start\-Layer\-Nei} (std\-::vector$<$ {\bf C\-Layer} $>$, int)
+\item 
+int {\bf Find\-Track} (int, float, float, bool, int, int, int, int, {\bf C\-Layer} $\ast$, bool)
+\item 
+bool {\bf get\-Number\-Of\-Neighbors} ({\bf C\-Hit}, std\-::vector$<$ {\bf C\-Layer} $>$, int $\ast$)
+\item 
+void {\bf get\-Max\-Neighbors} ({\bf C\-Layer}, int $\ast$)
+\item 
+{\bf Point2\-D} $\ast$ {\bfseries get\-Track\-X\-Y} ()\label{classFindStartAndPrimaryTrack_ac6a96daf75c9048d59806992b452cf48}
+
+\item 
+std\-::vector$<$ {\bf C\-Hit} $\ast$ $>$ {\bfseries get\-Final\-Track} ()\label{classFindStartAndPrimaryTrack_a4c081a24bd15d913dd1fe1291501822b}
+
+\item 
+void {\bfseries clear\-Track} ()\label{classFindStartAndPrimaryTrack_a77cbb39675a7c208028a99d311468cf8}
+
+\end{DoxyCompactItemize}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\index{Find\-Start\-And\-Primary\-Track@{Find\-Start\-And\-Primary\-Track}!Find\-Start\-And\-Primary\-Track@{Find\-Start\-And\-Primary\-Track}}
+\index{Find\-Start\-And\-Primary\-Track@{Find\-Start\-And\-Primary\-Track}!FindStartAndPrimaryTrack@{Find\-Start\-And\-Primary\-Track}}
+\subsubsection[{Find\-Start\-And\-Primary\-Track}]{\setlength{\rightskip}{0pt plus 5cm}Find\-Start\-And\-Primary\-Track\-::\-Find\-Start\-And\-Primary\-Track (
+\begin{DoxyParamCaption}
+\item[{float}]{beam\-Energy, }
+\item[{int}]{min\-Abs\-Length, }
+\item[{float}]{min\-Rel\-Length}
+\end{DoxyParamCaption}
+)}\label{classFindStartAndPrimaryTrack_a4971620a878d1eaa2130bd64a8a1f512}
+
+
+First interaction layer and primary track finder. 
+
+Constructor
+
+\begin{DoxyAuthor}{Author}
+M.\-V. Chadeeva @ date December 2016 
+\end{DoxyAuthor}
+\index{Find\-Start\-And\-Primary\-Track@{Find\-Start\-And\-Primary\-Track}!$\sim$\-Find\-Start\-And\-Primary\-Track@{$\sim$\-Find\-Start\-And\-Primary\-Track}}
+\index{$\sim$\-Find\-Start\-And\-Primary\-Track@{$\sim$\-Find\-Start\-And\-Primary\-Track}!FindStartAndPrimaryTrack@{Find\-Start\-And\-Primary\-Track}}
+\subsubsection[{$\sim$\-Find\-Start\-And\-Primary\-Track}]{\setlength{\rightskip}{0pt plus 5cm}Find\-Start\-And\-Primary\-Track\-::$\sim$\-Find\-Start\-And\-Primary\-Track (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\label{classFindStartAndPrimaryTrack_a416fdf20a245a8029eb3413f6d96662a}
+Destructor 
+
+\subsection{Member Function Documentation}
+\index{Find\-Start\-And\-Primary\-Track@{Find\-Start\-And\-Primary\-Track}!dist\-X\-Y@{dist\-X\-Y}}
+\index{dist\-X\-Y@{dist\-X\-Y}!FindStartAndPrimaryTrack@{Find\-Start\-And\-Primary\-Track}}
+\subsubsection[{dist\-X\-Y}]{\setlength{\rightskip}{0pt plus 5cm}float Find\-Start\-And\-Primary\-Track\-::dist\-X\-Y (
+\begin{DoxyParamCaption}
+\item[{float}]{x1, }
+\item[{float}]{y1, }
+\item[{float}]{x2, }
+\item[{float}]{y2}
+\end{DoxyParamCaption}
+)}\label{classFindStartAndPrimaryTrack_aa26cdd8d3a689e4e571c26f7db377583}
+Calculates and returns distance between two hits in X\-Y-\/plane \index{Find\-Start\-And\-Primary\-Track@{Find\-Start\-And\-Primary\-Track}!Find\-Track@{Find\-Track}}
+\index{Find\-Track@{Find\-Track}!FindStartAndPrimaryTrack@{Find\-Start\-And\-Primary\-Track}}
+\subsubsection[{Find\-Track}]{\setlength{\rightskip}{0pt plus 5cm}int Find\-Start\-And\-Primary\-Track\-::\-Find\-Track (
+\begin{DoxyParamCaption}
+\item[{int}]{nevt, }
+\item[{float}]{xcg, }
+\item[{float}]{ycg, }
+\item[{bool}]{is\-Side, }
+\item[{int}]{first\-Layer\-To\-Start, }
+\item[{int}]{last\-Layer\-To\-Start, }
+\item[{int}]{layer\-To\-Stop, }
+\item[{int}]{gap, }
+\item[{{\bf C\-Layer} $\ast$}]{lr, }
+\item[{bool}]{f\-Print}
+\end{DoxyParamCaption}
+)}\label{classFindStartAndPrimaryTrack_a561ebefafa0eac67786bd05f0bf07941}
+Finds hits belonging to primary track taking in account the earlier found shower starting layer. The \char`\"{}nearest neighbour\char`\"{} criteria is used. Maximum distance parameters are defined taking in account the cell size. First parameter is the number of shower starting layer. Second parameter is an array with of objects \doxyref{C\-Layer}{p.}{classCLayer} that contain layer parameters. 0-\/ no track found; 1-\/ single primary track found; $>$1-\/ parallel tracks 
+
+References C\-Hit\-::r, C\-Hit\-::x, and C\-Hit\-::y.
+
+\index{Find\-Start\-And\-Primary\-Track@{Find\-Start\-And\-Primary\-Track}!get\-Max\-Neighbors@{get\-Max\-Neighbors}}
+\index{get\-Max\-Neighbors@{get\-Max\-Neighbors}!FindStartAndPrimaryTrack@{Find\-Start\-And\-Primary\-Track}}
+\subsubsection[{get\-Max\-Neighbors}]{\setlength{\rightskip}{0pt plus 5cm}void Find\-Start\-And\-Primary\-Track\-::get\-Max\-Neighbors (
+\begin{DoxyParamCaption}
+\item[{{\bf C\-Layer}}]{lr, }
+\item[{int $\ast$}]{nmax}
+\end{DoxyParamCaption}
+)}\label{classFindStartAndPrimaryTrack_a09a926690f5d1a44095bca860e2c0750}
+Calculates sums for two hits in the given layer of the following values\-: 1) maximum number of neighbors per hit in volume; 2) maximum number of neighbors in the same layer; 3) maximum number of neighbors in the same and previous layers. \index{Find\-Start\-And\-Primary\-Track@{Find\-Start\-And\-Primary\-Track}!get\-Number\-Of\-Neighbors@{get\-Number\-Of\-Neighbors}}
+\index{get\-Number\-Of\-Neighbors@{get\-Number\-Of\-Neighbors}!FindStartAndPrimaryTrack@{Find\-Start\-And\-Primary\-Track}}
+\subsubsection[{get\-Number\-Of\-Neighbors}]{\setlength{\rightskip}{0pt plus 5cm}bool Find\-Start\-And\-Primary\-Track\-::get\-Number\-Of\-Neighbors (
+\begin{DoxyParamCaption}
+\item[{{\bf C\-Hit}}]{hcur, }
+\item[{std\-::vector$<$ {\bf C\-Layer} $>$}]{lr, }
+\item[{int $\ast$}]{nsum}
+\end{DoxyParamCaption}
+)}\label{classFindStartAndPrimaryTrack_a4c9d59091622b3a06bc06e5e80a531fa}
+True for isolated hits. Calculates number of neighbors per hit\-: 1) in the same layer; 2) in the previous and same layers; 3) in the previous, same and next layers. 
+
+References C\-Hit\-::l, C\-Hit\-::r, C\-Hit\-::x, and C\-Hit\-::y.
+
+\index{Find\-Start\-And\-Primary\-Track@{Find\-Start\-And\-Primary\-Track}!get\-Start\-Layer\-Mip@{get\-Start\-Layer\-Mip}}
+\index{get\-Start\-Layer\-Mip@{get\-Start\-Layer\-Mip}!FindStartAndPrimaryTrack@{Find\-Start\-And\-Primary\-Track}}
+\subsubsection[{get\-Start\-Layer\-Mip}]{\setlength{\rightskip}{0pt plus 5cm}int Find\-Start\-And\-Primary\-Track\-::get\-Start\-Layer\-Mip (
+\begin{DoxyParamCaption}
+\item[{std\-::vector$<$ {\bf C\-Layer} $>$}]{lr, }
+\item[{int}]{window, }
+\item[{int}]{layer0, }
+\item[{float}]{mip\-Criterium, }
+\item[{int}]{hit\-Criterium}
+\end{DoxyParamCaption}
+)}\label{classFindStartAndPrimaryTrack_a4609be368566e344c84866a954f90647}
+Finds and returns the number of layer where shower started using the following criteria\-:
+\begin{DoxyEnumerate}
+\item Moving average sum of M\-I\-Ps inside the window = 10 layers for two successive layers is greater than miplim value.
+\item Number of hits in two successive layers is greater than hitlim value. They are energy dependent and similar for E\-C\-A\-L and H\-C\-A\-L. 
+\end{DoxyEnumerate}\index{Find\-Start\-And\-Primary\-Track@{Find\-Start\-And\-Primary\-Track}!get\-Start\-Layer\-Nei@{get\-Start\-Layer\-Nei}}
+\index{get\-Start\-Layer\-Nei@{get\-Start\-Layer\-Nei}!FindStartAndPrimaryTrack@{Find\-Start\-And\-Primary\-Track}}
+\subsubsection[{get\-Start\-Layer\-Nei}]{\setlength{\rightskip}{0pt plus 5cm}int Find\-Start\-And\-Primary\-Track\-::get\-Start\-Layer\-Nei (
+\begin{DoxyParamCaption}
+\item[{std\-::vector$<$ {\bf C\-Layer} $>$}]{lr, }
+\item[{int}]{crit}
+\end{DoxyParamCaption}
+)}\label{classFindStartAndPrimaryTrack_a9d7074e805019e8ee416008e2097cede}
+Finds and returns the number of layer where shower started using criterion based on max \# of (3\-D) neighbors per hit for two hits in layer. 
+
+The documentation for this class was generated from the following files\-:\begin{DoxyCompactItemize}
+\item 
+/nfs/dust/ilc/user/marquezh/\-Calice\-Soft\-\_\-w\-\_\-\-I\-L\-C\-Soft\-\_\-v02-\/03-\/02/calice\-\_\-analysis/addon\-Procs/include/Find\-Start\-And\-Primary\-Track.\-h\item 
+/nfs/dust/ilc/user/marquezh/\-Calice\-Soft\-\_\-w\-\_\-\-I\-L\-C\-Soft\-\_\-v02-\/03-\/02/calice\-\_\-analysis/addon\-Procs/src/Find\-Start\-And\-Primary\-Track.\-cc\end{DoxyCompactItemize}

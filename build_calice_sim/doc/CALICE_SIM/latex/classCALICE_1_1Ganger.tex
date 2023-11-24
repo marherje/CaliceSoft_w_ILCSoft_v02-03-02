@@ -1,0 +1,85 @@
+\section{C\-A\-L\-I\-C\-E\-:\-:Ganger Class Reference}
+\label{classCALICE_1_1Ganger}\index{C\-A\-L\-I\-C\-E\-::\-Ganger@{C\-A\-L\-I\-C\-E\-::\-Ganger}}
+
+
+The work horse.  
+
+
+
+
+{\ttfamily \#include $<$Ahc2\-Ganging\-Processor.\-hh$>$}
+
+Inheritance diagram for C\-A\-L\-I\-C\-E\-:\-:Ganger\-:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classCALICE_1_1Ganger}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+{\bf Ganger} (int cs, int off\-\_\-\-I, int off\-\_\-\-J, {\bf Contribution\-Map} $\ast$cm, float factor)\label{classCALICE_1_1Ganger_a314c60c0d692daed1d584ae5564d3928}
+
+\begin{DoxyCompactList}\small\item\em The \doxyref{Ganger}{p.}{classCALICE_1_1Ganger} is constructed with all information needed for a region to perform the ganging. \end{DoxyCompactList}\item 
+virtual bool {\bf responsible} ({\bf geometrical\-Indices} indices)=0\label{classCALICE_1_1Ganger_a57c5a2b853fec48755bfc12dd04ddfe8}
+
+\begin{DoxyCompactList}\small\item\em Implementations have to implement where in I/\-J they are responsible. \end{DoxyCompactList}\item 
+bool {\bf add\-Hit} ({\bf geometrical\-Indices} indices, Calorimeter\-Hit $\ast$hit)\label{classCALICE_1_1Ganger_a81b20222abc63c26b674ac9c7cefef0f}
+
+\begin{DoxyCompactList}\small\item\em Function which return true if the ganger is responsible for this region and adds the hit to the Contribution\-Map. \end{DoxyCompactList}\item 
+{\bf geometrical\-Indices} {\bf coarsen} ({\bf geometrical\-Indices} ijk)\label{classCALICE_1_1Ganger_ac7ca6e5fc4c8c7ffd45e6e03f7532b2a}
+
+\begin{DoxyCompactList}\small\item\em Function which returns the ganged index according to the constants defined at construction. \end{DoxyCompactList}\item 
+int {\bf coarsen\-Single\-Index} (int index, int offset)
+\begin{DoxyCompactList}\small\item\em Performs mapping from Mokka indices to ganged indices. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+int {\bf \-\_\-cell\-Size}\label{classCALICE_1_1Ganger_a815ccc10d250555de9ba6cc6af4f1765}
+
+\begin{DoxyCompactList}\small\item\em Quadratic side length of the cells in the region the \doxyref{Ganger}{p.}{classCALICE_1_1Ganger} is responsible. \end{DoxyCompactList}\item 
+int {\bf \-\_\-offset\-\_\-\-I}\label{classCALICE_1_1Ganger_a17e539b19b90e2c1104423fd157cde55}
+
+\begin{DoxyCompactList}\small\item\em Offset with respect to starting counting at 1 for I. \end{DoxyCompactList}\item 
+int {\bf \-\_\-offset\-\_\-\-J}\label{classCALICE_1_1Ganger_a721d1e57bd481872d8f39f2bd172c609}
+
+\begin{DoxyCompactList}\small\item\em Offset with respect to starting counting at 1 for J. \end{DoxyCompactList}\item 
+{\bf Contribution\-Map} $\ast$ {\bf \-\_\-contribution\-Map}\label{classCALICE_1_1Ganger_a653c4bbdb6e77cf562afba8c82a2dec9}
+
+\begin{DoxyCompactList}\small\item\em Pointer to map which stores all ganged indices and Sim\-Calorimeter\-Hits. \end{DoxyCompactList}\item 
+float {\bfseries \-\_\-tile\-Border\-Attenuation\-Factor}\label{classCALICE_1_1Ganger_a771cf6d407f49a4bf4b15d1fc1276b06}
+
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+The work horse. 
+
+A ganger holds all information for a region to perform the ganging. 
+
+Definition at line 119 of file Ahc2\-Ganging\-Processor.\-hh.
+
+
+
+\subsection{Member Function Documentation}
+\index{C\-A\-L\-I\-C\-E\-::\-Ganger@{C\-A\-L\-I\-C\-E\-::\-Ganger}!coarsen\-Single\-Index@{coarsen\-Single\-Index}}
+\index{coarsen\-Single\-Index@{coarsen\-Single\-Index}!CALICE::Ganger@{C\-A\-L\-I\-C\-E\-::\-Ganger}}
+\subsubsection[{coarsen\-Single\-Index}]{\setlength{\rightskip}{0pt plus 5cm}int C\-A\-L\-I\-C\-E\-::\-Ganger\-::coarsen\-Single\-Index (
+\begin{DoxyParamCaption}
+\item[{int}]{index, }
+\item[{int}]{offset}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\label{classCALICE_1_1Ganger_ae004d5984d63181208c71c7dbc347d0c}
+
+
+Performs mapping from Mokka indices to ganged indices. 
+
+The main \char`\"{}algorithm\char`\"{}. 
+
+Definition at line 200 of file Ahc2\-Ganging\-Processor.\-hh.
+
+
+
+The documentation for this class was generated from the following file\-:\begin{DoxyCompactItemize}
+\item 
+Ahc2\-Ganging\-Processor.\-hh\end{DoxyCompactItemize}

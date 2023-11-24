@@ -1,0 +1,69 @@
+\section{/nfs/dust/ilc/user/marquezh/\-Calice\-Soft\-\_\-w\-\_\-\-I\-L\-C\-Soft\-\_\-v02-\/03-\/02/calice\-\_\-db\-\_\-tools/src/write\-Detector\-Transformation.cc File Reference}
+\label{writeDetectorTransformation_8cc}\index{/nfs/dust/ilc/user/marquezh/\-Calice\-Soft\-\_\-w\-\_\-\-I\-L\-C\-Soft\-\_\-v02-\/03-\/02/calice\-\_\-db\-\_\-tools/src/write\-Detector\-Transformation.\-cc@{/nfs/dust/ilc/user/marquezh/\-Calice\-Soft\-\_\-w\-\_\-\-I\-L\-C\-Soft\-\_\-v02-\/03-\/02/calice\-\_\-db\-\_\-tools/src/write\-Detector\-Transformation.\-cc}}
+{\ttfamily \#include \char`\"{}Detector\-Transformation.\-hh\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}lcio.\-h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}I\-M\-P\-L/\-L\-C\-Collection\-Vec.\-h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}D\-B\-Cond\-Writer.\-hh\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}Simple\-File\-Writer.\-hh\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}Calice\-Run\-Time.\-hh\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}Time\-String.\-hh\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}Calice\-D\-B\-Init\-Helper.\-hh\char`\"{}}\\*
+{\ttfamily \#include $<$string$>$}\\*
+{\ttfamily \#include $<$unistd.\-h$>$}\\*
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+lcio\-::long64 {\bfseries interprete\-Time} (const char $\ast$arg, bool from=true)\label{writeDetectorTransformation_8cc_ad4bc1ee6b3bcb259bd28bb7963f34db0}
+
+\item 
+void {\bfseries print\-Help} (int argc, char $\ast$$\ast$argv)\label{writeDetectorTransformation_8cc_a1b5a1d3071ab7a7222af534a20a6aba6}
+
+\item 
+int {\bfseries main} (int argc, char $\ast$$\ast$argv)\label{writeDetectorTransformation_8cc_a3c04138a5bfe5d72780bb7e82a18e627}
+
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+This tool creates a C\-A\-L\-I\-C\-E\-::\-Detector\-Transformation object and writes it to an L\-C\-C\-D conditions database. Input values have to be given as command line arguments and default to zero.
+
+Usage\-:
+
+
+\begin{DoxyCode}
+writeDetectorTransformation [-l <folder>] [-f <from>] [-u <until>] [-d <descr>] [-w] [-a <angle>] [-x <x>] 
+      [-y <y>] [-z <z>] [-c]
+\end{DoxyCode}
+
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt out}  & {\em $<$folder$>$} & database folder the collection is written to \\
+\hline
+\mbox{\tt out}  & {\em $<$from$>$} & D\-B entry will be valid from this run or point in time \\
+\hline
+\mbox{\tt out}  & {\em $<$until$>$} & D\-B entry will be valid until this run or point in time \\
+\hline
+\mbox{\tt out}  & {\em $<$descr$>$} & description of D\-B entry \\
+\hline
+ & {\em $<$-\/w$>$} & switch\-: nothing is written without -\/w (test run)\\
+\hline
+\mbox{\tt in}  & {\em $<$angle$>$} & rotation angle \\
+\hline
+\mbox{\tt in}  & {\em $<$x$>$} & x-\/position \\
+\hline
+\mbox{\tt in}  & {\em $<$y$>$} & y-\/position \\
+\hline
+\mbox{\tt in}  & {\em $<$z$>$} & z-\/position \\
+\hline
+ & {\em $<$-\/c$>$} & switch\-: units are given in cm instead of mm\\
+\hline
+\end{DoxyParams}
+Any time string has to have the format Y\-Y\-Y\-Y-\/\-M\-M-\/\-D\-D-\/hh-\/mm-\/ss.\-sss
+
+\begin{DoxyRefDesc}{Todo}
+\item[{\bf Todo}]move this tool to calice\-\_\-cddata\end{DoxyRefDesc}
+
+
+Definition in file {\bf write\-Detector\-Transformation.\-cc}.
+

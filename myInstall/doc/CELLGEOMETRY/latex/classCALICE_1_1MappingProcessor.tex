@@ -1,0 +1,86 @@
+\section{C\-A\-L\-I\-C\-E\-:\-:Mapping\-Processor Class Reference}
+\label{classCALICE_1_1MappingProcessor}\index{C\-A\-L\-I\-C\-E\-::\-Mapping\-Processor@{C\-A\-L\-I\-C\-E\-::\-Mapping\-Processor}}
+
+
+{\ttfamily \#include $<$Mapping\-Processor.\-hh$>$}
+
+Inheritance diagram for C\-A\-L\-I\-C\-E\-:\-:Mapping\-Processor\-:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classCALICE_1_1MappingProcessor}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+virtual Processor $\ast$ {\bfseries new\-Processor} ()\label{classCALICE_1_1MappingProcessor_a7e51a6ba3abaf252cc5734ff9f192c43}
+
+\item 
+virtual void {\bfseries init} ()\label{classCALICE_1_1MappingProcessor_a8260b005f18c7d7dd26f78fca7c5f901}
+
+\item 
+virtual void {\bfseries process\-Event} (L\-C\-Event $\ast$evt)\label{classCALICE_1_1MappingProcessor_afd6f7befe771c3e261b3eb3033ccba0c}
+
+\item 
+virtual void {\bfseries end} ()\label{classCALICE_1_1MappingProcessor_abcc44104c737ea4dc9b8e40121391df4}
+
+\end{DoxyCompactItemize}
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static const Mapper $\ast$ {\bf get\-Mapper} (const std\-::string \&processor\-Name)
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Processor that provides a C\-A\-L\-I\-C\-E Mapper object.
+
+The processor generates and updates a C\-A\-L\-I\-C\-E Mapper object from the conditions data. To obtain the object in other processors use\-: \doxyref{Mapping\-Processor\-::get\-Mapper}{p.}{classCALICE_1_1MappingProcessor_a0ab9895933daf9f277135afb8aa24376}( \char`\"{}mapping processor name\char`\"{} )
+
+\begin{DoxyAuthor}{Author}
+{\tt Benjamin.\-Lutz@desy.\-de} 
+\end{DoxyAuthor}
+\begin{DoxyVersion}{Version}
+0.\-2 
+\end{DoxyVersion}
+\begin{DoxyDate}{Date}
+November 2009 
+\end{DoxyDate}
+
+
+Definition at line 32 of file Mapping\-Processor.\-hh.
+
+
+
+\subsection{Member Function Documentation}
+\index{C\-A\-L\-I\-C\-E\-::\-Mapping\-Processor@{C\-A\-L\-I\-C\-E\-::\-Mapping\-Processor}!get\-Mapper@{get\-Mapper}}
+\index{get\-Mapper@{get\-Mapper}!CALICE::MappingProcessor@{C\-A\-L\-I\-C\-E\-::\-Mapping\-Processor}}
+\subsubsection[{get\-Mapper}]{\setlength{\rightskip}{0pt plus 5cm}const Mapper $\ast$ C\-A\-L\-I\-C\-E\-::\-Mapping\-Processor\-::get\-Mapper (
+\begin{DoxyParamCaption}
+\item[{const std\-::string \&}]{processor\-Name}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}\label{classCALICE_1_1MappingProcessor_a0ab9895933daf9f277135afb8aa24376}
+static function to obtain mapper
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em processor\-Name} & name of the \doxyref{Mapping\-Processor}{p.}{classCALICE_1_1MappingProcessor} that takes care of this Mapper. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+pointer to the mapper 
+\end{DoxyReturn}
+
+
+Definition at line 24 of file Mapping\-Processor.\-cc.
+
+
+
+Referenced by C\-A\-L\-I\-C\-E\-::\-Correct\-Position\-Processor\-::init().
+
+
+
+The documentation for this class was generated from the following files\-:\begin{DoxyCompactItemize}
+\item 
+Mapping\-Processor.\-hh\item 
+Mapping\-Processor.\-cc\end{DoxyCompactItemize}

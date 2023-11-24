@@ -1,0 +1,77 @@
+\section{C\-A\-L\-I\-C\-E\-:\-:Ahc2\-Append\-Processor Class Reference}
+\label{classCALICE_1_1Ahc2AppendProcessor}\index{C\-A\-L\-I\-C\-E\-::\-Ahc2\-Append\-Processor@{C\-A\-L\-I\-C\-E\-::\-Ahc2\-Append\-Processor}}
+
+
+Processor which allows to append events from additional L\-C\-I\-O files.  
+
+
+
+
+{\ttfamily \#include $<$Ahc2\-Append\-Processor.\-hh$>$}
+
+Inheritance diagram for C\-A\-L\-I\-C\-E\-:\-:Ahc2\-Append\-Processor\-:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classCALICE_1_1Ahc2AppendProcessor}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+virtual Processor $\ast$ {\bfseries new\-Processor} ()\label{classCALICE_1_1Ahc2AppendProcessor_a5008f6b9bfc17a27630f14764a2746d2}
+
+\item 
+{\bf Ahc2\-Append\-Processor} ()\label{classCALICE_1_1Ahc2AppendProcessor_ae2d1110a71e12f08ba04ddd44db765de}
+
+\begin{DoxyCompactList}\small\item\em Constructor. \end{DoxyCompactList}\item 
+{\bf $\sim$\-Ahc2\-Append\-Processor} ()\label{classCALICE_1_1Ahc2AppendProcessor_ae2e9652363dfc5fcf5c95e34e731e7b5}
+
+\begin{DoxyCompactList}\small\item\em Destructor. \end{DoxyCompactList}\item 
+virtual void {\bf init} ()\label{classCALICE_1_1Ahc2AppendProcessor_a1bd0b7774d169ebcc9f5387df38d09c2}
+
+\begin{DoxyCompactList}\small\item\em Initialise. \end{DoxyCompactList}\item 
+virtual void {\bf process\-Event} (lcio\-::\-L\-C\-Event $\ast$evt)\label{classCALICE_1_1Ahc2AppendProcessor_ac818e075407b86aff4d03fb9a4edfe6e}
+
+\begin{DoxyCompactList}\small\item\em Process event (the working horse) \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+lcio\-::\-String\-Vec {\bf \-\_\-append\-File\-Names}\label{classCALICE_1_1Ahc2AppendProcessor_a20d46a95a43820da5b94ef213d78740c}
+
+\begin{DoxyCompactList}\small\item\em vector of names of input files \end{DoxyCompactList}\item 
+lcio\-::\-String\-Vec {\bf \-\_\-append\-Collection\-Input\-Names}\label{classCALICE_1_1Ahc2AppendProcessor_a630978ff6d3a72e76b38cda94d5ac7b2}
+
+\begin{DoxyCompactList}\small\item\em name of the input collection to append \end{DoxyCompactList}\item 
+lcio\-::\-String\-Vec {\bf \-\_\-append\-Collection\-Output\-Names}\label{classCALICE_1_1Ahc2AppendProcessor_acaef8b9543548dd47d24dff92b39d517}
+
+\begin{DoxyCompactList}\small\item\em name of the output collection after appending \end{DoxyCompactList}\item 
+lcio\-::\-L\-C\-Reader $\ast$ {\bf \-\_\-lc\-Reader}\label{classCALICE_1_1Ahc2AppendProcessor_a5339bbd6d833f8ba7d24ce45304965b0}
+
+\begin{DoxyCompactList}\small\item\em Reader in L\-C\-I\-O to open a file. \end{DoxyCompactList}\item 
+bool {\bf \-\_\-append\-Repeat\-Collections}\label{classCALICE_1_1Ahc2AppendProcessor_af4ac88f656de0d4b35f96c360e3d4a25}
+
+\begin{DoxyCompactList}\small\item\em continue appending after end of appending file (loop again over events) \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Processor which allows to append events from additional L\-C\-I\-O files. 
+
+\begin{DoxyAuthor}{Author}
+{\tt eldwan.\-brianne@desy.\-de} 
+\end{DoxyAuthor}
+\begin{DoxyVersion}{Version}
+1.\-0 
+\end{DoxyVersion}
+\begin{DoxyDate}{Date}
+Decmeber 2015 
+\end{DoxyDate}
+
+
+Definition at line 17 of file Ahc2\-Append\-Processor.\-hh.
+
+
+
+The documentation for this class was generated from the following files\-:\begin{DoxyCompactItemize}
+\item 
+Ahc2\-Append\-Processor.\-hh\item 
+Ahc2\-Append\-Processor.\-cc\end{DoxyCompactItemize}

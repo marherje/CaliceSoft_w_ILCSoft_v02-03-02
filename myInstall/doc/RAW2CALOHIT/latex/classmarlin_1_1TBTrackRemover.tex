@@ -1,0 +1,81 @@
+\section{marlin\-:\-:T\-B\-Track\-Remover Class Reference}
+\label{classmarlin_1_1TBTrackRemover}\index{marlin\-::\-T\-B\-Track\-Remover@{marlin\-::\-T\-B\-Track\-Remover}}
+
+
+Preprocessor which is supposed to run at the !very! beginning of the processor chain.  
+
+
+
+
+{\ttfamily \#include $<$T\-B\-Track\-Remover.\-hh$>$}
+
+Inheritance diagram for marlin\-:\-:T\-B\-Track\-Remover\-:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classmarlin_1_1TBTrackRemover}
+\end{center}
+\end{figure}
+\subsection*{Data Structures}
+\begin{DoxyCompactItemize}
+\item 
+class {\bf L\-C\-Event\-Modifier}
+\begin{DoxyCompactList}\small\item\em Helper class to for the modification of the Event Header. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+virtual Processor $\ast$ {\bfseries new\-Processor} ()\label{classmarlin_1_1TBTrackRemover_aabd6f4686ad80cd4dc5c00ad485532ab}
+
+\item 
+virtual void {\bf init} ()
+\begin{DoxyCompactList}\small\item\em Called at the begin of the job before anything is read. \end{DoxyCompactList}\item 
+virtual void {\bf process\-Run\-Header} (L\-C\-Run\-Header $\ast$run)\label{classmarlin_1_1TBTrackRemover_a7a4a783bba99c63bf4dfd424a39b461a}
+
+\begin{DoxyCompactList}\small\item\em Called for every run. \end{DoxyCompactList}\item 
+virtual void {\bf process\-Event} (L\-C\-Event $\ast$evt)\label{classmarlin_1_1TBTrackRemover_a6a9ccb473b3383d1ccb978e3ba8a7760}
+
+\begin{DoxyCompactList}\small\item\em Called for every event -\/ the working horse. \end{DoxyCompactList}\item 
+virtual void {\bfseries check} (L\-C\-Event $\ast$evt)\label{classmarlin_1_1TBTrackRemover_a24007dc2befc665be3688fc38683e002}
+
+\item 
+virtual void {\bf end} ()\label{classmarlin_1_1TBTrackRemover_af53b200afa75c5e10cc2fe2ccb19672b}
+
+\begin{DoxyCompactList}\small\item\em Called after data processing for clean up. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Preprocessor which is supposed to run at the !very! beginning of the processor chain. 
+
+Adding information to the Run and Event\-Header.\-for data and M\-C. In partcular the beam energy is extracted from the database for a given run and the M\-C events get assigned a timestamp. \begin{DoxyAuthor}{Author}
+\-: A.\-M. Magnan Imperial College, modifs R.\-Poeschl L\-A\-L
+\end{DoxyAuthor}
+\begin{DoxyDate}{Date}
+Apr 2007 
+\end{DoxyDate}
+
+
+Definition at line 38 of file T\-B\-Track\-Remover.\-hh.
+
+
+
+\subsection{Member Function Documentation}
+\index{marlin\-::\-T\-B\-Track\-Remover@{marlin\-::\-T\-B\-Track\-Remover}!init@{init}}
+\index{init@{init}!marlin::TBTrackRemover@{marlin\-::\-T\-B\-Track\-Remover}}
+\subsubsection[{init}]{\setlength{\rightskip}{0pt plus 5cm}void marlin\-::\-T\-B\-Track\-Remover\-::init (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}\label{classmarlin_1_1TBTrackRemover_a48e9f5ce74d8a9798a533dd276c988c0}
+
+
+Called at the begin of the job before anything is read. 
+
+Use to initialize the processor, e.\-g. book histograms. 
+
+Definition at line 82 of file T\-B\-Track\-Remover.\-cc.
+
+
+
+The documentation for this class was generated from the following files\-:\begin{DoxyCompactItemize}
+\item 
+T\-B\-Track\-Remover.\-hh\item 
+T\-B\-Track\-Remover.\-cc\end{DoxyCompactItemize}

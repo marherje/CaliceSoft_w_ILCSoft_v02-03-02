@@ -1,0 +1,113 @@
+\section{Calibration\-Factory Class Reference}
+\label{classCalibrationFactory}\index{Calibration\-Factory@{Calibration\-Factory}}
+
+
+Return a calibration object of the given name.  
+
+
+
+
+{\ttfamily \#include $<$Calibration\-Factory.\-hh$>$}
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void {\bf register\-Calibration\-Kit} (const std\-::string \&kit\-\_\-name, {\bf Calibration\-Kit} $\ast$a\-\_\-kit)\label{classCalibrationFactory_ae3f5c6f7204526d98c753dac871e8217}
+
+\begin{DoxyCompactList}\small\item\em Register a \doxyref{Calibration}{p.}{classCalibration} object kit. \end{DoxyCompactList}\item 
+{\bf Calibration} $\ast$ {\bf create\-Calibration\-Object} (const std\-::string \&name, const std\-::string \&module\-\_\-type\-\_\-col\-\_\-name, const std\-::string \&module\-\_\-calibration\-\_\-col\-\_\-name) noexcept(false)\label{classCalibrationFactory_a1682bde6eef1a7ff023421abc8bf4534}
+
+\begin{DoxyCompactList}\small\item\em Get an object for the calibration. \end{DoxyCompactList}\item 
+void {\bf list\-Kits} ()
+\begin{DoxyCompactList}\small\item\em Show all registered kits. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static {\bf Calibration\-Factory} $\ast$ {\bf get\-Instance} ()\label{classCalibrationFactory_a5efb95a0d951b8da5a8bdb5832a9831d}
+
+\begin{DoxyCompactList}\small\item\em Get the global instance of the \doxyref{Calibration}{p.}{classCalibration} Object Factory. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+std\-::map$<$ std\-::string, \\*
+{\bf Calibration\-Kit} $\ast$ $>$ {\bf \-\_\-kits}
+\begin{DoxyCompactList}\small\item\em List of registered \doxyref{Calibration}{p.}{classCalibration} kits. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Static Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+static {\bf Calibration\-Factory} $\ast$ {\bf \-\_\-\-\_\-instance} =0
+\begin{DoxyCompactList}\small\item\em Pointer to the global \doxyref{Calibration\-Factory}{p.}{classCalibrationFactory} instance. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Return a calibration object of the given name. 
+
+\doxyref{Calibration}{p.}{classCalibration} kits are registered with a certain name. This name which is for example specified by a Marlin parameter can than be used to create the actual calibration object. 
+
+Definition at line 16 of file Calibration\-Factory.\-hh.
+
+
+
+\subsection{Member Function Documentation}
+\index{Calibration\-Factory@{Calibration\-Factory}!list\-Kits@{list\-Kits}}
+\index{list\-Kits@{list\-Kits}!CalibrationFactory@{Calibration\-Factory}}
+\subsubsection[{list\-Kits}]{\setlength{\rightskip}{0pt plus 5cm}void Calibration\-Factory\-::list\-Kits (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{classCalibrationFactory_a8ec8e4dacbc4b38c7fd760b7b00857d3}
+
+
+Show all registered kits. 
+
+For debugging. 
+
+Definition at line 6 of file Calibration\-Factory.\-cc.
+
+
+
+References \-\_\-kits.
+
+
+
+Referenced by C\-A\-L\-I\-C\-E\-::\-Calibrate\-And\-Apply\-Threshold\-::init(), and C\-A\-L\-I\-C\-E\-::\-Simple\-Hit\-Search\-::init().
+
+
+
+\subsection{Field Documentation}
+\index{Calibration\-Factory@{Calibration\-Factory}!\-\_\-\-\_\-instance@{\-\_\-\-\_\-instance}}
+\index{\-\_\-\-\_\-instance@{\-\_\-\-\_\-instance}!CalibrationFactory@{Calibration\-Factory}}
+\subsubsection[{\-\_\-\-\_\-instance}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Calibration\-Factory} $\ast$ Calibration\-Factory\-::\-\_\-\-\_\-instance =0\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [private]}}\label{classCalibrationFactory_a19b2dfab32cd94981a00a8f39e9b028b}
+
+
+Pointer to the global \doxyref{Calibration\-Factory}{p.}{classCalibrationFactory} instance. 
+
+
+
+Definition at line 64 of file Calibration\-Factory.\-hh.
+
+
+
+Referenced by get\-Instance().
+
+\index{Calibration\-Factory@{Calibration\-Factory}!\-\_\-kits@{\-\_\-kits}}
+\index{\-\_\-kits@{\-\_\-kits}!CalibrationFactory@{Calibration\-Factory}}
+\subsubsection[{\-\_\-kits}]{\setlength{\rightskip}{0pt plus 5cm}std\-::map$<$std\-::string, {\bf Calibration\-Kit} $\ast$$>$ Calibration\-Factory\-::\-\_\-kits\hspace{0.3cm}{\ttfamily [private]}}\label{classCalibrationFactory_a2ff2373b183b599ef137ee6f19e1fa6e}
+
+
+List of registered \doxyref{Calibration}{p.}{classCalibration} kits. 
+
+
+
+Definition at line 63 of file Calibration\-Factory.\-hh.
+
+
+
+Referenced by create\-Calibration\-Object(), list\-Kits(), and register\-Calibration\-Kit().
+
+
+
+The documentation for this class was generated from the following files\-:\begin{DoxyCompactItemize}
+\item 
+Calibration\-Factory.\-hh\item 
+Calibration\-Factory.\-cc\end{DoxyCompactItemize}

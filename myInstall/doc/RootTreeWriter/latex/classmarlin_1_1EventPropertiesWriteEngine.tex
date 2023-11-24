@@ -1,0 +1,154 @@
+\section{marlin\-:\-:Event\-Properties\-Write\-Engine Class Reference}
+\label{classmarlin_1_1EventPropertiesWriteEngine}\index{marlin\-::\-Event\-Properties\-Write\-Engine@{marlin\-::\-Event\-Properties\-Write\-Engine}}
+
+
+{\ttfamily \#include $<$Event\-Properties\-Write\-Engine.\-hh$>$}
+
+
+
+Inheritance diagram for marlin\-:\-:Event\-Properties\-Write\-Engine\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=200pt]{classmarlin_1_1EventPropertiesWriteEngine__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for marlin\-:\-:Event\-Properties\-Write\-Engine\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=200pt]{classmarlin_1_1EventPropertiesWriteEngine__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+{\bfseries Event\-Properties\-Write\-Engine} ({\bf Root\-Tree\-Writer} $\ast$host, std\-::string engine\-Name=\char`\"{}Event\-Properties\-Write\-Engine\char`\"{})\label{classmarlin_1_1EventPropertiesWriteEngine_adf1d487fbe4021fab6ac24507c47e1c7}
+
+\item 
+virtual const std\-::string \& {\bf get\-Engine\-Name} ()
+\item 
+virtual void {\bf register\-Parameters} ()
+\item 
+virtual void {\bf register\-Branches} (T\-Tree $\ast$host\-Tree)
+\item 
+virtual void {\bf fill\-Variables} (E\-V\-E\-N\-T\-::\-L\-C\-Event $\ast$)
+\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\begin{tabbing}
+xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=\kill
+struct \{\\
+\>double {\bfseries sumE}\\
+\>double {\bfseries sumP} [3]\\
+\>double {\bfseries sqrtS}\\
+\} {\bfseries \_eventKin}\label{classmarlin_1_1EventPropertiesWriteEngine_a22350369142a4afbe4c57a6c4b363114}
+\\
+
+\end{tabbing}\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Detailed Description}
+This \doxyref{Root\-Tree\-Writer}{p.}{classmarlin_1_1RootTreeWriter} engine calculates basic event properties and adds them to the output tree. \begin{DoxyRefDesc}{Todo}
+\item[{\bf Todo}]description of event properties calculated in this processor \end{DoxyRefDesc}
+
+
+Definition at line 18 of file Event\-Properties\-Write\-Engine.\-hh.
+
+
+
+\subsection{Member Function Documentation}
+\index{marlin\-::\-Event\-Properties\-Write\-Engine@{marlin\-::\-Event\-Properties\-Write\-Engine}!fill\-Variables@{fill\-Variables}}
+\index{fill\-Variables@{fill\-Variables}!marlin::EventPropertiesWriteEngine@{marlin\-::\-Event\-Properties\-Write\-Engine}}
+\subsubsection[{fill\-Variables}]{\setlength{\rightskip}{0pt plus 5cm}void marlin\-::\-Event\-Properties\-Write\-Engine\-::fill\-Variables (
+\begin{DoxyParamCaption}
+\item[{E\-V\-E\-N\-T\-::\-L\-C\-Event $\ast$}]{evt}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}\label{classmarlin_1_1EventPropertiesWriteEngine_abc2305e78939db762a4c83bf669fe952}
+Implement this to extract the variables which you want to fill into the {\itshape R\-O\-O\-T} tree from the event. Write the value of the variables you want to add to the tree to the member variables, which you registered to the {\itshape R\-O\-O\-T} tree. The \doxyref{Root\-Tree\-Writer}{p.}{classmarlin_1_1RootTreeWriter} will call T\-Tree\-::\-Fill() for you. 
+\begin{DoxyParams}{Parameters}
+{\em evt} & the current event \\
+\hline
+\end{DoxyParams}
+
+
+Implements {\bf marlin\-::\-Root\-Write\-Engine} \doxyref{}{p.}{classmarlin_1_1RootWriteEngine_ace823bd839cee7e8c8755e60c4cc7134}.
+
+
+
+Definition at line 36 of file Event\-Properties\-Write\-Engine.\-cc.
+
+\index{marlin\-::\-Event\-Properties\-Write\-Engine@{marlin\-::\-Event\-Properties\-Write\-Engine}!get\-Engine\-Name@{get\-Engine\-Name}}
+\index{get\-Engine\-Name@{get\-Engine\-Name}!marlin::EventPropertiesWriteEngine@{marlin\-::\-Event\-Properties\-Write\-Engine}}
+\subsubsection[{get\-Engine\-Name}]{\setlength{\rightskip}{0pt plus 5cm}virtual const std\-::string\& marlin\-::\-Event\-Properties\-Write\-Engine\-::get\-Engine\-Name (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}\label{classmarlin_1_1EventPropertiesWriteEngine_ad264b9da6bc60ebd375faa319689941a}
+Returns the name of the engine to the \doxyref{Root\-Tree\-Writer}{p.}{classmarlin_1_1RootTreeWriter} processor. \begin{DoxyReturn}{Returns}
+Must return a string with the engine name. 
+\end{DoxyReturn}
+\begin{DoxyRefDesc}{Todo}
+\item[{\bf Todo}]fixme\-: should be const, but must be declared const in implementations too. Need to fix all existing engines?!? \end{DoxyRefDesc}
+
+
+Implements {\bf marlin\-::\-Root\-Write\-Engine} \doxyref{}{p.}{classmarlin_1_1RootWriteEngine_a31e38120fe60efcb15666fd569ba5862}.
+
+
+
+Definition at line 26 of file Event\-Properties\-Write\-Engine.\-hh.
+
+\index{marlin\-::\-Event\-Properties\-Write\-Engine@{marlin\-::\-Event\-Properties\-Write\-Engine}!register\-Branches@{register\-Branches}}
+\index{register\-Branches@{register\-Branches}!marlin::EventPropertiesWriteEngine@{marlin\-::\-Event\-Properties\-Write\-Engine}}
+\subsubsection[{register\-Branches}]{\setlength{\rightskip}{0pt plus 5cm}void marlin\-::\-Event\-Properties\-Write\-Engine\-::register\-Branches (
+\begin{DoxyParamCaption}
+\item[{T\-Tree $\ast$}]{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}\label{classmarlin_1_1EventPropertiesWriteEngine_a4c1282d1d34392d66b56de4d7efc6be8}
+\begin{DoxyVerb}Implement to register local variables to the output tree
+\param pointer to the \a ROOT tree, which the RootTreeWriter processor fills at the
+end of each event.
+Usually the implementation looks like@verbatim 
+\end{DoxyVerb}
+ /// host\-Tree-\/$>$Branch(\char`\"{}variable\char`\"{},\&\-\_\-variable\char`\"{} ,\char`\"{}variable/\-F" ); /// . But you can add any type of branch you like. 
+
+Implements {\bf marlin\-::\-Root\-Write\-Engine} \doxyref{}{p.}{classmarlin_1_1RootWriteEngine_ad467dc6e73fdd9fd4311f7277fd02a89}.
+
+
+
+Definition at line 29 of file Event\-Properties\-Write\-Engine.\-cc.
+
+\index{marlin\-::\-Event\-Properties\-Write\-Engine@{marlin\-::\-Event\-Properties\-Write\-Engine}!register\-Parameters@{register\-Parameters}}
+\index{register\-Parameters@{register\-Parameters}!marlin::EventPropertiesWriteEngine@{marlin\-::\-Event\-Properties\-Write\-Engine}}
+\subsubsection[{register\-Parameters}]{\setlength{\rightskip}{0pt plus 5cm}void marlin\-::\-Event\-Properties\-Write\-Engine\-::register\-Parameters (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}\label{classmarlin_1_1EventPropertiesWriteEngine_a9394c4461b767c0f763d087988e8c854}
+\begin{DoxyVerb}Used to register steering parameters.
+Implement to register \a marlin steering file parameters. Use \a marlin syntax
+to register parameters for the calling RootTreeWriter processor. 
+
+use@verbatim 
+\end{DoxyVerb}
+ /// \-\_\-host\-Proc.\-relay\-Register\-Processor\-Parameter(...) /// \-\_\-host\-Proc.\-relay\-Register...() ///  instead of {\itshape marlin} processors\begin{DoxyVerb}register...() \end{DoxyVerb}
+ methods 
+
+Implements {\bf marlin\-::\-Root\-Write\-Engine} \doxyref{}{p.}{classmarlin_1_1RootWriteEngine_ae12b70923768043fa5c1438f078c41d3}.
+
+
+
+Definition at line 20 of file Event\-Properties\-Write\-Engine.\-cc.
+
+
+
+The documentation for this class was generated from the following files\-:\begin{DoxyCompactItemize}
+\item 
+Event\-Properties\-Write\-Engine.\-hh\item 
+Event\-Properties\-Write\-Engine.\-cc\end{DoxyCompactItemize}

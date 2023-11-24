@@ -1,0 +1,98 @@
+\section{C\-A\-L\-I\-C\-E\-:\-:Ahc2\-Triggered\-Channels Class Reference}
+\label{classCALICE_1_1Ahc2TriggeredChannels}\index{C\-A\-L\-I\-C\-E\-::\-Ahc2\-Triggered\-Channels@{C\-A\-L\-I\-C\-E\-::\-Ahc2\-Triggered\-Channels}}
+
+
+Class for counting the number of triggered channels per Chip (rejecting dead channels) used for time smearing.  
+
+
+
+
+{\ttfamily \#include $<$Ahc2\-Triggered\-Channels.\-hh$>$}
+
+Inheritance diagram for C\-A\-L\-I\-C\-E\-:\-:Ahc2\-Triggered\-Channels\-:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classCALICE_1_1Ahc2TriggeredChannels}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+virtual Processor $\ast$ {\bfseries new\-Processor} ()\label{classCALICE_1_1Ahc2TriggeredChannels_a5dbc7143416c6a9105d4f0cde5cb663c}
+
+\item 
+{\bf Ahc2\-Triggered\-Channels} ()\label{classCALICE_1_1Ahc2TriggeredChannels_ae335b3372bd597849b7a36feb252de57}
+
+\begin{DoxyCompactList}\small\item\em Constructor. \end{DoxyCompactList}\item 
+{\bf $\sim$\-Ahc2\-Triggered\-Channels} ()\label{classCALICE_1_1Ahc2TriggeredChannels_a97364f50d9ee2398bac43362b20ce35d}
+
+\begin{DoxyCompactList}\small\item\em Destructor. \end{DoxyCompactList}\item 
+virtual void {\bf init} ()\label{classCALICE_1_1Ahc2TriggeredChannels_ab1480e85ecfefd73ecbf31e2defb3f9e}
+
+\begin{DoxyCompactList}\small\item\em Initialise. \end{DoxyCompactList}\item 
+virtual void {\bf process\-Run\-Header} (L\-C\-Run\-Header $\ast$run)\label{classCALICE_1_1Ahc2TriggeredChannels_a98fc8cd1bf9f7e259fc8829c6ddb13df}
+
+\begin{DoxyCompactList}\small\item\em Process header. \end{DoxyCompactList}\item 
+virtual void {\bf process\-Event} (L\-C\-Event $\ast$evt)\label{classCALICE_1_1Ahc2TriggeredChannels_a22b08792663ee91bcdf0b0a1787a3282}
+
+\begin{DoxyCompactList}\small\item\em Process event (the working horse) \end{DoxyCompactList}\item 
+virtual void {\bf check} (L\-C\-Event $\ast$evt)\label{classCALICE_1_1Ahc2TriggeredChannels_a229ebbf2ec8d18654edaca15f0636e38}
+
+\begin{DoxyCompactList}\small\item\em Check. \end{DoxyCompactList}\item 
+virtual void {\bf end} ()\label{classCALICE_1_1Ahc2TriggeredChannels_a2679e163d4ccf1caea0b41a88676e419}
+
+\begin{DoxyCompactList}\small\item\em End of processing. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+std\-::string {\bf \-\_\-calorim\-Inp\-Collection}\label{classCALICE_1_1Ahc2TriggeredChannels_a19d95908c195bb589969afd9d048f6a7}
+
+\begin{DoxyCompactList}\small\item\em input collection name \end{DoxyCompactList}\item 
+std\-::string {\bf \-\_\-calorim\-Out\-Collection}\label{classCALICE_1_1Ahc2TriggeredChannels_a294266c133fee81756d0f9527674bfd0}
+
+\begin{DoxyCompactList}\small\item\em output collection name \end{DoxyCompactList}\item 
+std\-::string {\bf \-\_\-mapping\-Processor\-Name}\label{classCALICE_1_1Ahc2TriggeredChannels_a2f22fbbf8a80f45c129b0f320de3ab3f}
+
+\begin{DoxyCompactList}\small\item\em name of the processor which provides the mapping \end{DoxyCompactList}\item 
+std\-::string {\bfseries \-\_\-encoding}\label{classCALICE_1_1Ahc2TriggeredChannels_a319667772397941987ed6bc4076b224f}
+
+\item 
+int {\bf \-\_\-n\-Run}\label{classCALICE_1_1Ahc2TriggeredChannels_acabca64049bc0ceadd8df49e73296e57}
+
+\begin{DoxyCompactList}\small\item\em run number \end{DoxyCompactList}\item 
+int {\bf \-\_\-n\-Evt}\label{classCALICE_1_1Ahc2TriggeredChannels_a5aa48858e4e0f6c4c0dc055b103181d0}
+
+\begin{DoxyCompactList}\small\item\em event number \end{DoxyCompactList}\item 
+const Ahc2\-Mapper $\ast$ {\bf \-\_\-mapper}\label{classCALICE_1_1Ahc2TriggeredChannels_a793ad95889916074bce275e4671f58b5}
+
+\begin{DoxyCompactList}\small\item\em the mapper \end{DoxyCompactList}\item 
+std\-::map$<$ int, int $>$ {\bf m\-\_\-\-Chip\-Trigger}\label{classCALICE_1_1Ahc2TriggeredChannels_a5f84dbcf33ef3f3ffb49b0877e6c7e42}
+
+\begin{DoxyCompactList}\small\item\em map with number of triggered channels per chip for pedestal shift \end{DoxyCompactList}\item 
+Int\-Vec {\bf n\-Hits\-Per\-Chip\-Above\-Thr}\label{classCALICE_1_1Ahc2TriggeredChannels_a417a5839a46ab815251b3cea17efb0a0}
+
+\begin{DoxyCompactList}\small\item\em vector to store the number of hits per Chips per event \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Class for counting the number of triggered channels per Chip (rejecting dead channels) used for time smearing. 
+
+\begin{DoxyAuthor}{Author}
+{\tt eldwan.\-brianne@desy.\-de} 
+\end{DoxyAuthor}
+\begin{DoxyVersion}{Version}
+2.\-0 
+\end{DoxyVersion}
+\begin{DoxyDate}{Date}
+November 2016 
+\end{DoxyDate}
+
+
+Definition at line 32 of file Ahc2\-Triggered\-Channels.\-hh.
+
+
+
+The documentation for this class was generated from the following files\-:\begin{DoxyCompactItemize}
+\item 
+Ahc2\-Triggered\-Channels.\-hh\item 
+Ahc2\-Triggered\-Channels.\-cpp\end{DoxyCompactItemize}

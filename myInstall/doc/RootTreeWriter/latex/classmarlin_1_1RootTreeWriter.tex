@@ -1,0 +1,182 @@
+\section{marlin\-:\-:Root\-Tree\-Writer Class Reference}
+\label{classmarlin_1_1RootTreeWriter}\index{marlin\-::\-Root\-Tree\-Writer@{marlin\-::\-Root\-Tree\-Writer}}
+
+
+{\ttfamily \#include $<$Root\-Tree\-Writer.\-hh$>$}
+
+
+
+Inheritance diagram for marlin\-:\-:Root\-Tree\-Writer\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=168pt]{classmarlin_1_1RootTreeWriter__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for marlin\-:\-:Root\-Tree\-Writer\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=168pt]{classmarlin_1_1RootTreeWriter__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+{\bf Root\-Tree\-Writer} ()
+\item 
+virtual Processor $\ast$ {\bfseries new\-Processor} ()\label{classmarlin_1_1RootTreeWriter_a8e807c71f6bde6eb70cfbce66026f4d1}
+
+\item 
+virtual void {\bf init} ()
+\item 
+virtual void {\bfseries process\-Event} (E\-V\-E\-N\-T\-::\-L\-C\-Event $\ast$evt)\label{classmarlin_1_1RootTreeWriter_ab95d9fb229b0d75797177d1ae2c8c0c0}
+
+\item 
+virtual void {\bfseries end} ()\label{classmarlin_1_1RootTreeWriter_afe88cc9b0bf5a577c9993f7b23ad024a}
+
+\item 
+{\footnotesize template$<$class T $>$ }\\void {\bf relay\-Register\-Processor\-Parameter} (const std\-::string \&name, const std\-::string \&description, T \&parameter, const T \&default\-Val, int set\-Size=0)\label{classmarlin_1_1RootTreeWriter_a510c787ba37e20d6f635fe7f9600d71d}
+
+\begin{DoxyCompactList}\small\item\em proxy member to allow engines to register processor parameters \end{DoxyCompactList}\item 
+{\footnotesize template$<$class T $>$ }\\void {\bf relay\-Register\-Optional\-Parameter} (const std\-::string \&name, const std\-::string \&description, T \&parameter, const T \&default\-Val, int set\-Size=0)\label{classmarlin_1_1RootTreeWriter_a5d5cdf3d03a0aa3138d36dd2680f9c91}
+
+\begin{DoxyCompactList}\small\item\em proxy member to allow engines to register processor parameters \end{DoxyCompactList}\item 
+void {\bf relay\-Register\-Input\-Collection} (const std\-::string \&type, const std\-::string \&name, const std\-::string \&description, std\-::string \&parameter, const std\-::string \&default\-Val, int set\-Size=0)\label{classmarlin_1_1RootTreeWriter_a1e9325c96e8886c32bc09ce95dfc9b8a}
+
+\begin{DoxyCompactList}\small\item\em proxy member to allow engines to register processor parameters \end{DoxyCompactList}\item 
+void {\bf relay\-Register\-Output\-Collection} (const std\-::string \&type, const std\-::string \&name, const std\-::string \&description, std\-::string \&parameter, const std\-::string \&default\-Val, int set\-Size=0)\label{classmarlin_1_1RootTreeWriter_a85bf3e8ce12dadbe5355c14dd2b5474c}
+
+\begin{DoxyCompactList}\small\item\em proxy member to allow engines to register processor parameters \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+std\-::string {\bf \-\_\-col\-Name}
+\item 
+int {\bfseries \-\_\-current\-Run\-Number}\label{classmarlin_1_1RootTreeWriter_ad7aa464390a62382d10119673bd13858}
+
+\item 
+int {\bfseries \-\_\-offset\-Value} = 0\label{classmarlin_1_1RootTreeWriter_a1d9fa60cc3a47f9b7e0a78771e6a09d9}
+
+\item 
+L\-C\-Collection $\ast$ {\bfseries \-\_\-\-H\-G\-Cal\-Offset\-Col} = N\-U\-L\-L\label{classmarlin_1_1RootTreeWriter_a5e0b6d7aedf565965f0b51f1abcee100}
+
+\item 
+std\-::string {\bfseries \-\_\-\-H\-G\-Cal\-Offset\-Name} = \char`\"{}\char`\"{}\label{classmarlin_1_1RootTreeWriter_a0f30c81c32d5a9a4193dde7c73dfc5aa}
+
+\item 
+std\-::map$<$ int, std\-::pair$<$ int, \\*
+int $>$ $>$ {\bfseries \-\_\-\-H\-G\-Cal\-Offset\-Container}\label{classmarlin_1_1RootTreeWriter_a43836ceb8200d2a140eb4cff532cb6a2}
+
+\item 
+bool {\bfseries is\-First\-Event} = true\label{classmarlin_1_1RootTreeWriter_a348fd0ba74a0865ee85f8d0003699166}
+
+\item 
+int {\bfseries \-\_\-n\-Run}\label{classmarlin_1_1RootTreeWriter_a9ba42b8c4f6e57e1316570bfa6cd7f3a}
+
+\item 
+int {\bfseries \-\_\-n\-Evt}\label{classmarlin_1_1RootTreeWriter_adbff3080ce99e2219d6cd03d001613aa}
+
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+This processor writes a {\itshape R\-O\-O\-T} tree.
+
+\subparagraph*{Extending the \doxyref{Root\-Tree\-Writer}{p.}{classmarlin_1_1RootTreeWriter}}
+
+To add additional branches (variables) to the output R\-O\-O\-T tree, you have to implement a new {\itshape writer} {\itshape engine} i.\-e. a class derived from the \doxyref{Root\-Write\-Engine}{p.}{classmarlin_1_1RootWriteEngine} class. The script \doxyref{create\-Engine\-Template.\-sh}{p.}{createEngineTemplate_8sh}, which is included in the bin/ directory of the \doxyref{Root\-Tree\-Writer}{p.}{classmarlin_1_1RootTreeWriter}, helps you to create a skeleton for a new engine. The sourcecode of the engines, including haders, must be placed into the {\itshape engines} subdirectory. \par
+ {\itshape U\-P\-D\-A\-T\-E\-:} (for users or \doxyref{Root\-Tree\-Writer}{p.}{classmarlin_1_1RootTreeWriter} prior to version 1.\-2.\-0) The macro R\-T\-W\-\_\-\-R\-E\-G\-I\-S\-T\-E\-R\-\_\-\-E\-N\-G\-I\-N\-E within the implementation (.cc-\/file) of an engine now activates the new engine. Activation by adding corresponding lines to the files \doxyref{engines/\-Engines\-Include.\-icc}{p.}{EnginesInclude_8icc} and \doxyref{engines/\-Engines\-Add.\-icc}{p.}{EnginesAdd_8icc} is not needed anymore for engines which are created with a recent version of the {\itshape \doxyref{create\-Engine\-Template.\-sh}{p.}{createEngineTemplate_8sh}} script. If you want to update your engine to the new activation scheme, please add the line ' {\itshape R\-T\-W\-\_\-\-R\-E\-G\-I\-S\-T\-E\-R\-\_\-\-E\-N\-G\-I\-N\-E( $<$\-Engine\-Name$>$ )};' next to the implementation of you engine (in the .cc-\/file). Please note that this line has to be within the same  namespace like the implementation of the engine. \par
+ To assure compatibility with future versions of the \doxyref{Root\-Tree\-Writer}{p.}{classmarlin_1_1RootTreeWriter}, please also change the constructor of you engine in the .hh-\/file. The constructor in the header file should look similar to this ( with \char`\"{}\-The\-Engine\-Name\char`\"{} beeing the name of your engine. 
+\begin{DoxyCode}
+TheEngineName( RootTreeWriter* host ):RootWriteEngine(host),
+                                      \_engineName(\textcolor{stringliteral}{"TheEngineName"})
+\{\}
+\end{DoxyCode}
+ Please change the constructor to this (replace \char`\"{}\-The\-Engine\-Name\char`\"{} with your ac actual engine name)\-: 
+\begin{DoxyCode}
+TheEngineName( RootTreeWriter* host, std::string engineName = \textcolor{stringliteral}{"TheEngineName"} ):
+  RootWriteEngine(host), \_engineName(engineName) \{\}
+\end{DoxyCode}
+
+
+\subparagraph*{General Options}
+
+
+\begin{DoxyParams}{Parameters}
+{\em Out\-File\-Name} & Name of the output R\-O\-O\-T file \\
+\hline
+{\em Out\-File\-Mode} & (R\-O\-O\-T) open mode for the R\-O\-O\-T file e.\-g. \char`\"{}\-R\-E\-C\-R\-A\-T\-E\char`\"{} \\
+\hline
+{\em Root\-Tree\-Name} & Name of the T\-Tree within the R\-O\-O\-T file \\
+\hline
+{\em $<$\-Engine\-Name$>$\-\_\-enable} & Switch to enable(1) or disable(0) a \doxyref{Root\-Write\-Engine}{p.}{classmarlin_1_1RootWriteEngine} build in the \doxyref{Root\-Tree\-Writer}{p.}{classmarlin_1_1RootTreeWriter}\\
+\hline
+\end{DoxyParams}
+\begin{DoxyAuthor}{Author}
+J. Samson, D\-E\-S\-Y 
+\end{DoxyAuthor}
+\begin{DoxyVersion}{Version}
+
+\end{DoxyVersion}
+\begin{DoxyParagraph}{Id\-:}
+\doxyref{Root\-Tree\-Writer.\-hh}{p.}{RootTreeWriter_8hh_source},v 1.\-8 2008/08/14 21\-:58\-:18 meyern Exp 
+\end{DoxyParagraph}
+
+
+Definition at line 71 of file Root\-Tree\-Writer.\-hh.
+
+
+
+\subsection{Constructor \& Destructor Documentation}
+\index{marlin\-::\-Root\-Tree\-Writer@{marlin\-::\-Root\-Tree\-Writer}!Root\-Tree\-Writer@{Root\-Tree\-Writer}}
+\index{Root\-Tree\-Writer@{Root\-Tree\-Writer}!marlin::RootTreeWriter@{marlin\-::\-Root\-Tree\-Writer}}
+\subsubsection[{Root\-Tree\-Writer}]{\setlength{\rightskip}{0pt plus 5cm}marlin\-::\-Root\-Tree\-Writer\-::\-Root\-Tree\-Writer (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{classmarlin_1_1RootTreeWriter_a21adc24820705aa1ab5c156766448c05}
+\begin{DoxyRefDesc}{Todo}
+\item[{\bf Todo}]\-: register enable/disable switch for each engine \end{DoxyRefDesc}
+\begin{DoxyRefDesc}{Todo}
+\item[{\bf Todo}]\-: register prefix for each engine \end{DoxyRefDesc}
+
+
+Definition at line 36 of file Root\-Tree\-Writer.\-cc.
+
+
+
+\subsection{Member Function Documentation}
+\index{marlin\-::\-Root\-Tree\-Writer@{marlin\-::\-Root\-Tree\-Writer}!init@{init}}
+\index{init@{init}!marlin::RootTreeWriter@{marlin\-::\-Root\-Tree\-Writer}}
+\subsubsection[{init}]{\setlength{\rightskip}{0pt plus 5cm}void marlin\-::\-Root\-Tree\-Writer\-::init (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}\label{classmarlin_1_1RootTreeWriter_abe95515446eddea85b34e15d1434a50c}
+\begin{DoxyRefDesc}{Todo}
+\item[{\bf Todo}]check whether file was successfully opened; \end{DoxyRefDesc}
+
+
+Definition at line 127 of file Root\-Tree\-Writer.\-cc.
+
+
+
+\subsection{Member Data Documentation}
+\index{marlin\-::\-Root\-Tree\-Writer@{marlin\-::\-Root\-Tree\-Writer}!\-\_\-col\-Name@{\-\_\-col\-Name}}
+\index{\-\_\-col\-Name@{\-\_\-col\-Name}!marlin::RootTreeWriter@{marlin\-::\-Root\-Tree\-Writer}}
+\subsubsection[{\-\_\-col\-Name}]{\setlength{\rightskip}{0pt plus 5cm}std\-::string marlin\-::\-Root\-Tree\-Writer\-::\-\_\-col\-Name\hspace{0.3cm}{\ttfamily [protected]}}\label{classmarlin_1_1RootTreeWriter_aed948dbdcc5385cf3cec526e09ac1b6c}
+Input collection name. 
+
+Definition at line 187 of file Root\-Tree\-Writer.\-hh.
+
+
+
+The documentation for this class was generated from the following files\-:\begin{DoxyCompactItemize}
+\item 
+Root\-Tree\-Writer.\-hh\item 
+Root\-Tree\-Writer.\-cc\end{DoxyCompactItemize}

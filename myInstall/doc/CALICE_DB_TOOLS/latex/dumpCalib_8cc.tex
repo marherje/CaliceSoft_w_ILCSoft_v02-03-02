@@ -1,0 +1,49 @@
+\section{/nfs/dust/ilc/user/marquezh/\-Calice\-Soft\-\_\-w\-\_\-\-I\-L\-C\-Soft\-\_\-v02-\/03-\/02/calice\-\_\-db\-\_\-tools/src/dump\-Calib.cc File Reference}
+\label{dumpCalib_8cc}\index{/nfs/dust/ilc/user/marquezh/\-Calice\-Soft\-\_\-w\-\_\-\-I\-L\-C\-Soft\-\_\-v02-\/03-\/02/calice\-\_\-db\-\_\-tools/src/dump\-Calib.\-cc@{/nfs/dust/ilc/user/marquezh/\-Calice\-Soft\-\_\-w\-\_\-\-I\-L\-C\-Soft\-\_\-v02-\/03-\/02/calice\-\_\-db\-\_\-tools/src/dump\-Calib.\-cc}}
+{\ttfamily \#include $<$iostream$>$}\\*
+{\ttfamily \#include $<$iomanip$>$}\\*
+{\ttfamily \#include $<$string$>$}\\*
+{\ttfamily \#include \char`\"{}Hcal\-Tile\-Index.\-hh\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}Linear\-Fit\-Constant.\-hh\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}Linear\-Fit\-Slope.\-hh\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}Simple\-Value.\-hh\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}Cell\-Quality.\-hh\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}Detector\-Transformation.\-hh\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}Calice\-Time.\-hh\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}lccd/\-D\-B\-Interface.\-hh\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}E\-V\-E\-N\-T/\-L\-C\-Collection.\-h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}Calice\-D\-B\-Init\-Helper.\-hh\char`\"{}}\\*
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+int {\bfseries main} (int argc, char $\ast$$\ast$argv)\label{dumpCalib_8cc_a3c04138a5bfe5d72780bb7e82a18e627}
+
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+This tool dumps the calibration parameters for each module/chip/channel from a D\-B collection to std\-::out.
+
+Usage\-:
+
+
+\begin{DoxyCode}
+dumpCalib <folder> <tag> <run> <type>
+\end{DoxyCode}
+
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em $<$folder$>$} & name of the D\-B folder that is searched for a calibration collection \\
+\hline
+\mbox{\tt in}  & {\em $<$tag$>$} & tag for the D\-B folder that is searched for a calibration collection, e.\-g. H\-E\-A\-D \\
+\hline
+\mbox{\tt in}  & {\em $<$run$>$} & the entry valid at the time of this run is searched \\
+\hline
+\mbox{\tt in}  & {\em $<$type$>$} & choose calibration data type\-: lfc (Linear\-Fit\-Constant), lfs (Linear\-Fit\-Slope), sv (Simple\-Value), cq (Cell\-Quality) or dt (Detector\-Transformation) \\
+\hline
+\end{DoxyParams}
+
+
+Definition in file {\bf dump\-Calib.\-cc}.
+

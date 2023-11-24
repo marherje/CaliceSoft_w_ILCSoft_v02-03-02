@@ -1,0 +1,270 @@
+\section{C\-A\-L\-I\-C\-E\-:\-:A\-H\-C\-A\-L\-:\-:Digitization\-:\-:Integrated\-Hcal\-Digitization\-Processor Class Reference}
+\label{classCALICE_1_1AHCAL_1_1Digitization_1_1IntegratedHcalDigitizationProcessor}\index{C\-A\-L\-I\-C\-E\-::\-A\-H\-C\-A\-L\-::\-Digitization\-::\-Integrated\-Hcal\-Digitization\-Processor@{C\-A\-L\-I\-C\-E\-::\-A\-H\-C\-A\-L\-::\-Digitization\-::\-Integrated\-Hcal\-Digitization\-Processor}}
+
+
+Processor to digitized Monte Carlo hits.  
+
+
+
+
+{\ttfamily \#include $<$Integrated\-Hcal\-Digitization\-Processor.\-hh$>$}
+
+Inheritance diagram for C\-A\-L\-I\-C\-E\-:\-:A\-H\-C\-A\-L\-:\-:Digitization\-:\-:Integrated\-Hcal\-Digitization\-Processor\-:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classCALICE_1_1AHCAL_1_1Digitization_1_1IntegratedHcalDigitizationProcessor}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+{\bf Integrated\-Hcal\-Digitization\-Processor} $\ast$ {\bfseries new\-Processor} ()\label{classCALICE_1_1AHCAL_1_1Digitization_1_1IntegratedHcalDigitizationProcessor_a4109708387041804b890e38fa84a4528}
+
+\item 
+void {\bf init} ()
+\begin{DoxyCompactList}\small\item\em Everything which has to be initialized once before the processing of the events can start goes here. \end{DoxyCompactList}\item 
+void {\bf process\-Event} (lcio\-::\-L\-C\-Event $\ast$evt)
+\begin{DoxyCompactList}\small\item\em This function is called for every event if the Digitization\-Processor is active. \end{DoxyCompactList}\item 
+void {\bf end} ()
+\begin{DoxyCompactList}\small\item\em At the very end of Marlin this function is called. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void {\bf init\-Random\-Generator} ()\label{classCALICE_1_1AHCAL_1_1Digitization_1_1IntegratedHcalDigitizationProcessor_a2db3f59f163c013fb32a9e51f0c3e9f1}
+
+\begin{DoxyCompactList}\small\item\em Initialization of the random generator for pixel statistic simulation. \end{DoxyCompactList}\item 
+void {\bf open\-Input\-Collections} (lcio\-::\-L\-C\-Event $\ast$evt)
+\begin{DoxyCompactList}\small\item\em Open the input collections\-: incoming Sim\-Calorimeter\-Hits and noise. \end{DoxyCompactList}\item 
+void {\bf simulate\-Optical\-Crosstalk} ()\label{classCALICE_1_1AHCAL_1_1Digitization_1_1IntegratedHcalDigitizationProcessor_ab412228819b6143acbde9e0ddec1303f}
+
+\begin{DoxyCompactList}\small\item\em Hits are copied to a temporary map and optical crosstalk is simulated. \end{DoxyCompactList}\item 
+void {\bf simulate\-Si\-P\-M\-Behaviour} ()\label{classCALICE_1_1AHCAL_1_1Digitization_1_1IntegratedHcalDigitizationProcessor_a41c3b67f6c7c61a7cf630f0ad59a6d67}
+
+\begin{DoxyCompactList}\small\item\em In this function saturation and pixel statistic are simulated. \end{DoxyCompactList}\item 
+void {\bf merge\-Hits\-And\-Noise} ()\label{classCALICE_1_1AHCAL_1_1Digitization_1_1IntegratedHcalDigitizationProcessor_a29bab9438d4502f55b4239d0b1da490d}
+
+\begin{DoxyCompactList}\small\item\em The digitized event is add on top of the noise event. \end{DoxyCompactList}\item 
+void {\bf create\-Output\-Collections} (lcio\-::\-L\-C\-Event $\ast$evt)\label{classCALICE_1_1AHCAL_1_1Digitization_1_1IntegratedHcalDigitizationProcessor_a6f0fb41bf2db27149a40d87e38568637}
+
+\begin{DoxyCompactList}\small\item\em Create the digitized + noise collection. \end{DoxyCompactList}\item 
+void {\bf tidy\-Up} ()\label{classCALICE_1_1AHCAL_1_1Digitization_1_1IntegratedHcalDigitizationProcessor_ab11f8e3070251f8b2441a891c2094d62}
+
+\begin{DoxyCompactList}\small\item\em Resets everything which is event specific. \end{DoxyCompactList}\item 
+double {\bf get\-Cell\-Size} (int module, int chip, int channel)
+\begin{DoxyCompactList}\small\item\em from Integrated\-Hcal\-Processor, Si\-P\-M\-Properties\-Processor \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+std\-::string {\bf \-\_\-input\-Col\-Name}\label{classCALICE_1_1AHCAL_1_1Digitization_1_1IntegratedHcalDigitizationProcessor_ae06b4559fe0be19b6821dd09c0e4ba61}
+
+\begin{DoxyCompactList}\small\item\em Name of the ganged collection which will be digitized. \end{DoxyCompactList}\item 
+std\-::string {\bf \-\_\-noise\-Col\-Name}\label{classCALICE_1_1AHCAL_1_1Digitization_1_1IntegratedHcalDigitizationProcessor_a2ef49e103b2c5b84daf7932e20a92a0e}
+
+\begin{DoxyCompactList}\small\item\em Name of the noise collection which will be overlayed. \end{DoxyCompactList}\item 
+std\-::string {\bf \-\_\-output\-Col\-Name}
+\begin{DoxyCompactList}\small\item\em Name of the digitized collection. \end{DoxyCompactList}\item 
+Neighbour\-Relations\-::\-Fine\-Module {\bf \-\_\-a\-Fine\-Module}\label{classCALICE_1_1AHCAL_1_1Digitization_1_1IntegratedHcalDigitizationProcessor_a53e7c1a392534c468c52b5362c9a3040}
+
+\begin{DoxyCompactList}\small\item\em Instance which can be asked about neighbour relations of a fine module. \end{DoxyCompactList}\item 
+Neighbour\-Relations\-::\-Coarse\-Module {\bf \-\_\-a\-Coarse\-Module}\label{classCALICE_1_1AHCAL_1_1Digitization_1_1IntegratedHcalDigitizationProcessor_ab1b07e4084157a8e75568179afd78cea}
+
+\begin{DoxyCompactList}\small\item\em Instance which can be asked about neighbour relations of a fine module. \end{DoxyCompactList}\item 
+lcio\-::\-Cell\-I\-D\-Decoder\\*
+$<$ lcio\-::\-Calorimeter\-Hit $>$ $\ast$ {\bf \-\_\-p\-Incoming\-Cell\-I\-D\-Decoder}\label{classCALICE_1_1AHCAL_1_1Digitization_1_1IntegratedHcalDigitizationProcessor_abd1eedcf23d9def06b38f1aa89cf555c}
+
+\begin{DoxyCompactList}\small\item\em To have he \doxyref{Cell\-I\-D\-Decoder}{p.}{classCellIDDecoder} available in every member function we hold a pointer of it. \end{DoxyCompactList}\item 
+lcio\-::\-Cell\-I\-D\-Encoder\\*
+$<$ lcio\-::\-Calorimeter\-Hit\-Impl $>$ $\ast$ {\bf \-\_\-p\-Outgoing\-Cell\-I\-D\-Encoder}\label{classCALICE_1_1AHCAL_1_1Digitization_1_1IntegratedHcalDigitizationProcessor_a4bd23776f39b61fb851e56c2e1af7c21}
+
+\begin{DoxyCompactList}\small\item\em To have he Cell\-I\-D\-Encoder available in every member function we hold a pointer of it. \end{DoxyCompactList}\item 
+lcio\-::\-L\-C\-Collection $\ast$ {\bf \-\_\-ganged\-M\-C\-Col}\label{classCALICE_1_1AHCAL_1_1Digitization_1_1IntegratedHcalDigitizationProcessor_a2eca1d5b8899e69dd6653732601dfca7}
+
+\begin{DoxyCompactList}\small\item\em Pointer to the incoming collection. \end{DoxyCompactList}\item 
+lcio\-::\-L\-C\-Collection $\ast$ {\bf \-\_\-noise\-Col}\label{classCALICE_1_1AHCAL_1_1Digitization_1_1IntegratedHcalDigitizationProcessor_aa40cc79bbf8ee331059d6ee02db1c131}
+
+\begin{DoxyCompactList}\small\item\em Pointer to the noise collection. \end{DoxyCompactList}\item 
+float {\bf \-\_\-leakage}
+\begin{DoxyCompactList}\small\item\em Factor of optical crosstalk/leakage. \end{DoxyCompactList}\item 
+float {\bf \-\_\-mip\-Ge\-V}
+\begin{DoxyCompactList}\small\item\em Energy per M\-I\-P. \end{DoxyCompactList}\item 
+T\-Random3 $\ast$ {\bf \-\_\-p\-Random\-Generator}\label{classCALICE_1_1AHCAL_1_1Digitization_1_1IntegratedHcalDigitizationProcessor_af9a0090b772ecce3a2b38d593111a0c8}
+
+\begin{DoxyCompactList}\small\item\em Pointer to R\-O\-O\-Ts random generator for pixel statistics. \end{DoxyCompactList}\item 
+int {\bf \-\_\-random\-Seed}
+\begin{DoxyCompactList}\small\item\em The random seed for the random generator. \end{DoxyCompactList}\item 
+std\-::map$<$ int, double $>$ {\bf \-\_\-hcal\-Tile\-Index\-To\-Amplitude}
+\begin{DoxyCompactList}\small\item\em The main map. \end{DoxyCompactList}\item 
+bool {\bf \-\_\-do\-Stat}\label{classCALICE_1_1AHCAL_1_1Digitization_1_1IntegratedHcalDigitizationProcessor_a2db3e5df11e5ef9627efe1228424074b}
+
+\begin{DoxyCompactList}\small\item\em Toggle to simulate pixel statistics. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Processor to digitized Monte Carlo hits. 
+
+This Digitization\-Processor converts the energy deposition per cell to hardware units while simulating various detector effects like\-: optical crosstalk, pixel statistic, saturation and noise.
+
+\begin{DoxyAuthor}{Authors}
+Sebastian Richter 
+\end{DoxyAuthor}
+\begin{DoxyVersion}{Version}
+1.\-0 
+\end{DoxyVersion}
+
+
+Definition at line 53 of file Integrated\-Hcal\-Digitization\-Processor.\-hh.
+
+
+
+\subsection{Member Function Documentation}
+\index{C\-A\-L\-I\-C\-E\-::\-A\-H\-C\-A\-L\-::\-Digitization\-::\-Integrated\-Hcal\-Digitization\-Processor@{C\-A\-L\-I\-C\-E\-::\-A\-H\-C\-A\-L\-::\-Digitization\-::\-Integrated\-Hcal\-Digitization\-Processor}!end@{end}}
+\index{end@{end}!CALICE::AHCAL::Digitization::IntegratedHcalDigitizationProcessor@{C\-A\-L\-I\-C\-E\-::\-A\-H\-C\-A\-L\-::\-Digitization\-::\-Integrated\-Hcal\-Digitization\-Processor}}
+\subsubsection[{end}]{\setlength{\rightskip}{0pt plus 5cm}void Integrated\-Hcal\-Digitization\-Processor\-::end (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{classCALICE_1_1AHCAL_1_1Digitization_1_1IntegratedHcalDigitizationProcessor_a7107bda788bc2a48b67bb1999f501bb3}
+
+
+At the very end of Marlin this function is called. 
+
+Think of it as the reverse of \doxyref{init()}{p.}{classCALICE_1_1AHCAL_1_1Digitization_1_1IntegratedHcalDigitizationProcessor_ab6ea84a6486d90ea84b0c41c14ef1de5}. Delete newed objects. 
+
+Definition at line 505 of file Integrated\-Hcal\-Digitization\-Processor.\-cc.
+
+\index{C\-A\-L\-I\-C\-E\-::\-A\-H\-C\-A\-L\-::\-Digitization\-::\-Integrated\-Hcal\-Digitization\-Processor@{C\-A\-L\-I\-C\-E\-::\-A\-H\-C\-A\-L\-::\-Digitization\-::\-Integrated\-Hcal\-Digitization\-Processor}!get\-Cell\-Size@{get\-Cell\-Size}}
+\index{get\-Cell\-Size@{get\-Cell\-Size}!CALICE::AHCAL::Digitization::IntegratedHcalDigitizationProcessor@{C\-A\-L\-I\-C\-E\-::\-A\-H\-C\-A\-L\-::\-Digitization\-::\-Integrated\-Hcal\-Digitization\-Processor}}
+\subsubsection[{get\-Cell\-Size}]{\setlength{\rightskip}{0pt plus 5cm}double C\-A\-L\-I\-C\-E\-::\-A\-H\-C\-A\-L\-::\-Digitization\-::\-Integrated\-Hcal\-Digitization\-Processor\-::get\-Cell\-Size (
+\begin{DoxyParamCaption}
+\item[{int}]{module, }
+\item[{int}]{chip, }
+\item[{int}]{channel}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [private]}}\label{classCALICE_1_1AHCAL_1_1Digitization_1_1IntegratedHcalDigitizationProcessor_aad3abb59471ecda56973de80d84b5780}
+
+
+from Integrated\-Hcal\-Processor, Si\-P\-M\-Properties\-Processor 
+
+from Integrated\-Hcal\-Processor, Si\-P\-M\-Properties\-Processor 
+
+Definition at line 155 of file Integrated\-Hcal\-Digitization\-Processor.\-hh.
+
+\index{C\-A\-L\-I\-C\-E\-::\-A\-H\-C\-A\-L\-::\-Digitization\-::\-Integrated\-Hcal\-Digitization\-Processor@{C\-A\-L\-I\-C\-E\-::\-A\-H\-C\-A\-L\-::\-Digitization\-::\-Integrated\-Hcal\-Digitization\-Processor}!init@{init}}
+\index{init@{init}!CALICE::AHCAL::Digitization::IntegratedHcalDigitizationProcessor@{C\-A\-L\-I\-C\-E\-::\-A\-H\-C\-A\-L\-::\-Digitization\-::\-Integrated\-Hcal\-Digitization\-Processor}}
+\subsubsection[{init}]{\setlength{\rightskip}{0pt plus 5cm}void Integrated\-Hcal\-Digitization\-Processor\-::init (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{classCALICE_1_1AHCAL_1_1Digitization_1_1IntegratedHcalDigitizationProcessor_ab6ea84a6486d90ea84b0c41c14ef1de5}
+
+
+Everything which has to be initialized once before the processing of the events can start goes here. 
+
+The init of the base class processor (Integrated\-Hcal\-Processor) is called (never forget it!).
+
+A random generator is set up\-: \doxyref{init\-Random\-Generator()}{p.}{classCALICE_1_1AHCAL_1_1Digitization_1_1IntegratedHcalDigitizationProcessor_a2db3f59f163c013fb32a9e51f0c3e9f1} 
+
+Definition at line 69 of file Integrated\-Hcal\-Digitization\-Processor.\-cc.
+
+\index{C\-A\-L\-I\-C\-E\-::\-A\-H\-C\-A\-L\-::\-Digitization\-::\-Integrated\-Hcal\-Digitization\-Processor@{C\-A\-L\-I\-C\-E\-::\-A\-H\-C\-A\-L\-::\-Digitization\-::\-Integrated\-Hcal\-Digitization\-Processor}!open\-Input\-Collections@{open\-Input\-Collections}}
+\index{open\-Input\-Collections@{open\-Input\-Collections}!CALICE::AHCAL::Digitization::IntegratedHcalDigitizationProcessor@{C\-A\-L\-I\-C\-E\-::\-A\-H\-C\-A\-L\-::\-Digitization\-::\-Integrated\-Hcal\-Digitization\-Processor}}
+\subsubsection[{open\-Input\-Collections}]{\setlength{\rightskip}{0pt plus 5cm}void Integrated\-Hcal\-Digitization\-Processor\-::open\-Input\-Collections (
+\begin{DoxyParamCaption}
+\item[{lcio\-::\-L\-C\-Event $\ast$}]{evt}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [private]}}\label{classCALICE_1_1AHCAL_1_1Digitization_1_1IntegratedHcalDigitizationProcessor_a69cae8f7f9de82e98d65a7fe5e87afac}
+
+
+Open the input collections\-: incoming Sim\-Calorimeter\-Hits and noise. 
+
+
+
+Definition at line 127 of file Integrated\-Hcal\-Digitization\-Processor.\-cc.
+
+\index{C\-A\-L\-I\-C\-E\-::\-A\-H\-C\-A\-L\-::\-Digitization\-::\-Integrated\-Hcal\-Digitization\-Processor@{C\-A\-L\-I\-C\-E\-::\-A\-H\-C\-A\-L\-::\-Digitization\-::\-Integrated\-Hcal\-Digitization\-Processor}!process\-Event@{process\-Event}}
+\index{process\-Event@{process\-Event}!CALICE::AHCAL::Digitization::IntegratedHcalDigitizationProcessor@{C\-A\-L\-I\-C\-E\-::\-A\-H\-C\-A\-L\-::\-Digitization\-::\-Integrated\-Hcal\-Digitization\-Processor}}
+\subsubsection[{process\-Event}]{\setlength{\rightskip}{0pt plus 5cm}void Integrated\-Hcal\-Digitization\-Processor\-::process\-Event (
+\begin{DoxyParamCaption}
+\item[{lcio\-::\-L\-C\-Event $\ast$}]{evt}
+\end{DoxyParamCaption}
+)}\label{classCALICE_1_1AHCAL_1_1Digitization_1_1IntegratedHcalDigitizationProcessor_afa77031d626abc734f01bc1518a12d85}
+
+
+This function is called for every event if the Digitization\-Processor is active. 
+
+It starts a couple of functions like\-:
+
+\begin{DoxyItemize}
+\item \doxyref{open\-Input\-Collections()}{p.}{classCALICE_1_1AHCAL_1_1Digitization_1_1IntegratedHcalDigitizationProcessor_a69cae8f7f9de82e98d65a7fe5e87afac} \item \doxyref{simulate\-Optical\-Crosstalk()}{p.}{classCALICE_1_1AHCAL_1_1Digitization_1_1IntegratedHcalDigitizationProcessor_ab412228819b6143acbde9e0ddec1303f} \item \doxyref{simulate\-Si\-P\-M\-Behaviour()}{p.}{classCALICE_1_1AHCAL_1_1Digitization_1_1IntegratedHcalDigitizationProcessor_a41c3b67f6c7c61a7cf630f0ad59a6d67} \item \doxyref{merge\-Hits\-And\-Noise()}{p.}{classCALICE_1_1AHCAL_1_1Digitization_1_1IntegratedHcalDigitizationProcessor_a29bab9438d4502f55b4239d0b1da490d} \item \doxyref{create\-Output\-Collections()}{p.}{classCALICE_1_1AHCAL_1_1Digitization_1_1IntegratedHcalDigitizationProcessor_a6f0fb41bf2db27149a40d87e38568637}\end{DoxyItemize}
+and at the very end to clear all non-\/temperory maps etc.\-:
+
+\begin{DoxyItemize}
+\item \doxyref{tidy\-Up()}{p.}{classCALICE_1_1AHCAL_1_1Digitization_1_1IntegratedHcalDigitizationProcessor_ab11f8e3070251f8b2441a891c2094d62}\end{DoxyItemize}
+If you want to know what's going on I suggest to go through all the functions in the given order. 
+
+Definition at line 94 of file Integrated\-Hcal\-Digitization\-Processor.\-cc.
+
+
+
+\subsection{Field Documentation}
+\index{C\-A\-L\-I\-C\-E\-::\-A\-H\-C\-A\-L\-::\-Digitization\-::\-Integrated\-Hcal\-Digitization\-Processor@{C\-A\-L\-I\-C\-E\-::\-A\-H\-C\-A\-L\-::\-Digitization\-::\-Integrated\-Hcal\-Digitization\-Processor}!\-\_\-hcal\-Tile\-Index\-To\-Amplitude@{\-\_\-hcal\-Tile\-Index\-To\-Amplitude}}
+\index{\-\_\-hcal\-Tile\-Index\-To\-Amplitude@{\-\_\-hcal\-Tile\-Index\-To\-Amplitude}!CALICE::AHCAL::Digitization::IntegratedHcalDigitizationProcessor@{C\-A\-L\-I\-C\-E\-::\-A\-H\-C\-A\-L\-::\-Digitization\-::\-Integrated\-Hcal\-Digitization\-Processor}}
+\subsubsection[{\-\_\-hcal\-Tile\-Index\-To\-Amplitude}]{\setlength{\rightskip}{0pt plus 5cm}std\-::map$<$int,double$>$ C\-A\-L\-I\-C\-E\-::\-A\-H\-C\-A\-L\-::\-Digitization\-::\-Integrated\-Hcal\-Digitization\-Processor\-::\-\_\-hcal\-Tile\-Index\-To\-Amplitude\hspace{0.3cm}{\ttfamily [private]}}\label{classCALICE_1_1AHCAL_1_1Digitization_1_1IntegratedHcalDigitizationProcessor_ae4722af37984307f7481c1b1a2deecd4}
+
+
+The main map. 
+
+This holds the current amplitude. For performance its unit change during each step of digitization. 
+
+Definition at line 220 of file Integrated\-Hcal\-Digitization\-Processor.\-hh.
+
+\index{C\-A\-L\-I\-C\-E\-::\-A\-H\-C\-A\-L\-::\-Digitization\-::\-Integrated\-Hcal\-Digitization\-Processor@{C\-A\-L\-I\-C\-E\-::\-A\-H\-C\-A\-L\-::\-Digitization\-::\-Integrated\-Hcal\-Digitization\-Processor}!\-\_\-leakage@{\-\_\-leakage}}
+\index{\-\_\-leakage@{\-\_\-leakage}!CALICE::AHCAL::Digitization::IntegratedHcalDigitizationProcessor@{C\-A\-L\-I\-C\-E\-::\-A\-H\-C\-A\-L\-::\-Digitization\-::\-Integrated\-Hcal\-Digitization\-Processor}}
+\subsubsection[{\-\_\-leakage}]{\setlength{\rightskip}{0pt plus 5cm}float C\-A\-L\-I\-C\-E\-::\-A\-H\-C\-A\-L\-::\-Digitization\-::\-Integrated\-Hcal\-Digitization\-Processor\-::\-\_\-leakage\hspace{0.3cm}{\ttfamily [private]}}\label{classCALICE_1_1AHCAL_1_1Digitization_1_1IntegratedHcalDigitizationProcessor_aa7b3a0df3a300a2d706f6ae30643470d}
+
+
+Factor of optical crosstalk/leakage. 
+
+For example 10\%. Steerable. 
+
+Definition at line 202 of file Integrated\-Hcal\-Digitization\-Processor.\-hh.
+
+\index{C\-A\-L\-I\-C\-E\-::\-A\-H\-C\-A\-L\-::\-Digitization\-::\-Integrated\-Hcal\-Digitization\-Processor@{C\-A\-L\-I\-C\-E\-::\-A\-H\-C\-A\-L\-::\-Digitization\-::\-Integrated\-Hcal\-Digitization\-Processor}!\-\_\-mip\-Ge\-V@{\-\_\-mip\-Ge\-V}}
+\index{\-\_\-mip\-Ge\-V@{\-\_\-mip\-Ge\-V}!CALICE::AHCAL::Digitization::IntegratedHcalDigitizationProcessor@{C\-A\-L\-I\-C\-E\-::\-A\-H\-C\-A\-L\-::\-Digitization\-::\-Integrated\-Hcal\-Digitization\-Processor}}
+\subsubsection[{\-\_\-mip\-Ge\-V}]{\setlength{\rightskip}{0pt plus 5cm}float C\-A\-L\-I\-C\-E\-::\-A\-H\-C\-A\-L\-::\-Digitization\-::\-Integrated\-Hcal\-Digitization\-Processor\-::\-\_\-mip\-Ge\-V\hspace{0.3cm}{\ttfamily [private]}}\label{classCALICE_1_1AHCAL_1_1Digitization_1_1IntegratedHcalDigitizationProcessor_a85c841e45fbd6f0bbae4b3b7c03c18d0}
+
+
+Energy per M\-I\-P. 
+
+Approx. 816 ke\-V. Steerable. 
+
+Definition at line 206 of file Integrated\-Hcal\-Digitization\-Processor.\-hh.
+
+\index{C\-A\-L\-I\-C\-E\-::\-A\-H\-C\-A\-L\-::\-Digitization\-::\-Integrated\-Hcal\-Digitization\-Processor@{C\-A\-L\-I\-C\-E\-::\-A\-H\-C\-A\-L\-::\-Digitization\-::\-Integrated\-Hcal\-Digitization\-Processor}!\-\_\-output\-Col\-Name@{\-\_\-output\-Col\-Name}}
+\index{\-\_\-output\-Col\-Name@{\-\_\-output\-Col\-Name}!CALICE::AHCAL::Digitization::IntegratedHcalDigitizationProcessor@{C\-A\-L\-I\-C\-E\-::\-A\-H\-C\-A\-L\-::\-Digitization\-::\-Integrated\-Hcal\-Digitization\-Processor}}
+\subsubsection[{\-\_\-output\-Col\-Name}]{\setlength{\rightskip}{0pt plus 5cm}std\-::string C\-A\-L\-I\-C\-E\-::\-A\-H\-C\-A\-L\-::\-Digitization\-::\-Integrated\-Hcal\-Digitization\-Processor\-::\-\_\-output\-Col\-Name\hspace{0.3cm}{\ttfamily [private]}}\label{classCALICE_1_1AHCAL_1_1Digitization_1_1IntegratedHcalDigitizationProcessor_aff59bdae38dda380333f8159046194a9}
+
+
+Name of the digitized collection. 
+
+Serves as an Input for the Integrated\-Hcal\-Calibration\-Processor. 
+
+Definition at line 172 of file Integrated\-Hcal\-Digitization\-Processor.\-hh.
+
+\index{C\-A\-L\-I\-C\-E\-::\-A\-H\-C\-A\-L\-::\-Digitization\-::\-Integrated\-Hcal\-Digitization\-Processor@{C\-A\-L\-I\-C\-E\-::\-A\-H\-C\-A\-L\-::\-Digitization\-::\-Integrated\-Hcal\-Digitization\-Processor}!\-\_\-random\-Seed@{\-\_\-random\-Seed}}
+\index{\-\_\-random\-Seed@{\-\_\-random\-Seed}!CALICE::AHCAL::Digitization::IntegratedHcalDigitizationProcessor@{C\-A\-L\-I\-C\-E\-::\-A\-H\-C\-A\-L\-::\-Digitization\-::\-Integrated\-Hcal\-Digitization\-Processor}}
+\subsubsection[{\-\_\-random\-Seed}]{\setlength{\rightskip}{0pt plus 5cm}int C\-A\-L\-I\-C\-E\-::\-A\-H\-C\-A\-L\-::\-Digitization\-::\-Integrated\-Hcal\-Digitization\-Processor\-::\-\_\-random\-Seed\hspace{0.3cm}{\ttfamily [private]}}\label{classCALICE_1_1AHCAL_1_1Digitization_1_1IntegratedHcalDigitizationProcessor_aa741d4964f83f095b64cb87c911e9c73}
+
+
+The random seed for the random generator. 
+
+Steerable. 
+
+Definition at line 214 of file Integrated\-Hcal\-Digitization\-Processor.\-hh.
+
+
+
+The documentation for this class was generated from the following files\-:\begin{DoxyCompactItemize}
+\item 
+Integrated\-Hcal\-Digitization\-Processor.\-hh\item 
+Integrated\-Hcal\-Digitization\-Processor.\-cc\end{DoxyCompactItemize}

@@ -1,0 +1,331 @@
+\section{C\-A\-L\-I\-C\-E\-:\-:Tcmt\-Event\-Identifier Class Reference}
+\label{classCALICE_1_1TcmtEventIdentifier}\index{C\-A\-L\-I\-C\-E\-::\-Tcmt\-Event\-Identifier@{C\-A\-L\-I\-C\-E\-::\-Tcmt\-Event\-Identifier}}
+
+
+class that can identify type of event in T\-C\-M\-T  
+
+
+
+
+{\ttfamily \#include $<$Tcmt\-Event\-Identifier.\-hh$>$}
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+{\bf Tcmt\-Event\-Identifier} (const unsigned int max\-Layer=16, const unsigned int start\-Back\-Layer=9, const std\-::string \&forced\-Encoding=\char`\"{}\char`\"{})
+\begin{DoxyCompactList}\small\item\em constructor \end{DoxyCompactList}\item 
+void {\bf process} (lcio\-::\-L\-C\-Collection $\ast$col)
+\begin{DoxyCompactList}\small\item\em function to do the calculation on a collection \end{DoxyCompactList}\item 
+void {\bf add\-Results} (lcio\-::\-L\-C\-Collection $\ast$col)
+\begin{DoxyCompactList}\small\item\em function to add the results as collection parameters \end{DoxyCompactList}\item 
+void {\bf add\-Results} (const std\-::string par\-Name\-Tcmt\-Event\-Bits, lcio\-::\-L\-C\-Event $\ast$evt)
+\begin{DoxyCompactList}\small\item\em function to add the int with the event type bits to the event \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void {\bf set\-Muon\-Thresholds} (const int layer\-Muon\-Hit\-Min\-Cut, const int layer\-Muon\-Hit\-Max\-Cut, const float layer\-Muon\-Energy\-Min\-Cut, const float layer\-Muon\-Energy\-Max\-Cut, const int sum\-Muon\-Hit\-Min\-Cut, const int sum\-Muon\-Hit\-Max\-Cut, const float sum\-Muon\-Energy\-Min\-Cut, const float sum\-Muon\-Energy\-Max\-Cut, const int tower\-Muon\-Hit\-Cut, const int number\-Towers\-Muon\-Min\-Cut, const int number\-Towers\-Muon\-Max\-Cut, const int number\-Layers\-Muon\-Cut)
+\begin{DoxyCompactList}\small\item\em internal function to set the thresholds \end{DoxyCompactList}\item 
+void {\bfseries reset} ()\label{classCALICE_1_1TcmtEventIdentifier_a6a2fad3f661fa946ccab68f51c9eb32f}
+
+\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+float {\bfseries \-\_\-energy}\label{classCALICE_1_1TcmtEventIdentifier_ae6b03a7d4ab370e9abd5bf0a7b741f21}
+
+\item 
+std\-::vector$<$ float $>$ {\bfseries \-\_\-energy\-S}\label{classCALICE_1_1TcmtEventIdentifier_aa56dd140fa309b59c7521fd02816e36a}
+
+\item 
+float {\bfseries \-\_\-rms\-E}\label{classCALICE_1_1TcmtEventIdentifier_ad627f691fdcf1a06b2eec57523efaf30}
+
+\item 
+float {\bfseries \-\_\-energy\-Back}\label{classCALICE_1_1TcmtEventIdentifier_a0db8bdb143bf7a3fa5f8ecc5f421612a}
+
+\item 
+int {\bfseries \-\_\-n\-Hits}\label{classCALICE_1_1TcmtEventIdentifier_a4ff097c2e21b1a413f07a30ee72201e0}
+
+\item 
+int {\bfseries \-\_\-n\-Hits\-Back}\label{classCALICE_1_1TcmtEventIdentifier_a2f5c62da8c575a8798f73030e8d680a6}
+
+\item 
+std\-::vector$<$ float $>$ {\bfseries \-\_\-layer\-Energy}\label{classCALICE_1_1TcmtEventIdentifier_af0039ddd3c769ec35e6ad85ad0e8f225}
+
+\item 
+std\-::vector$<$ int $>$ {\bfseries \-\_\-layer\-Hits}\label{classCALICE_1_1TcmtEventIdentifier_aa88a391c2c20a9ac24bb266eabcde082}
+
+\item 
+{\bf Binned\-Vector}$<$ float, int $>$ {\bfseries \-\_\-x\-Pos}\label{classCALICE_1_1TcmtEventIdentifier_a21edd7da30de92f5ea5c28618701c6c0}
+
+\item 
+{\bf Binned\-Vector}$<$ float, int $>$ {\bfseries \-\_\-y\-Pos}\label{classCALICE_1_1TcmtEventIdentifier_adab021ef8f1e4ad16114c1a06452a42c}
+
+\item 
+{\bf Binned\-Vector}$<$ float, int $>$ {\bfseries \-\_\-x\-Pos\-Back}\label{classCALICE_1_1TcmtEventIdentifier_a085a39377b3678adc93faae2bf406c7e}
+
+\item 
+{\bf Binned\-Vector}$<$ float, int $>$ {\bfseries \-\_\-y\-Pos\-Back}\label{classCALICE_1_1TcmtEventIdentifier_a8a7ec97f4394db11c996775f54a59aa6}
+
+\item 
+int {\bfseries \-\_\-n\-Muon\-Like\-Towers}\label{classCALICE_1_1TcmtEventIdentifier_ae6330cbed87f1af9f45a9bc8bc3193f3}
+
+\item 
+int {\bfseries \-\_\-n\-Muon\-Like\-Layers}\label{classCALICE_1_1TcmtEventIdentifier_a145e4c2ff6b1c45e0ecc0839f024c1e6}
+
+\item 
+std\-::string {\bfseries \-\_\-forced\-Encoding}\label{classCALICE_1_1TcmtEventIdentifier_aabcbdaa205ecd576fbe1a20dbdeea118}
+
+\item 
+unsigned int {\bfseries \-\_\-max\-Layer}\label{classCALICE_1_1TcmtEventIdentifier_a283273e0e1ea0ee00451c153715e07db}
+
+\item 
+unsigned int {\bfseries \-\_\-start\-Back\-Layer}\label{classCALICE_1_1TcmtEventIdentifier_aa9befb4a78dae44b3b97ef785222d790}
+
+\item 
+int {\bfseries \-\_\-layer\-Muon\-Hit\-Min\-Cut}\label{classCALICE_1_1TcmtEventIdentifier_a389204acc8ff6e35f92f23ec41950509}
+
+\item 
+int {\bfseries \-\_\-layer\-Muon\-Hit\-Max\-Cut}\label{classCALICE_1_1TcmtEventIdentifier_a5c6b28076d9c557dd953ce240a61e201}
+
+\item 
+float {\bfseries \-\_\-layer\-Muon\-Energy\-Min\-Cut}\label{classCALICE_1_1TcmtEventIdentifier_acd4d143d1c6ee366715dfff81b67f827}
+
+\item 
+float {\bfseries \-\_\-layer\-Muon\-Energy\-Max\-Cut}\label{classCALICE_1_1TcmtEventIdentifier_a03952c329c0b5c60c61b75a0f46823a1}
+
+\item 
+int {\bfseries \-\_\-sum\-Muon\-Hit\-Min\-Cut}\label{classCALICE_1_1TcmtEventIdentifier_aa4dfbfb33c1bd44d98682d7df4fdd474}
+
+\item 
+int {\bfseries \-\_\-sum\-Muon\-Hit\-Max\-Cut}\label{classCALICE_1_1TcmtEventIdentifier_a317bfe9277ffbdb0c5648367f40d405a}
+
+\item 
+float {\bfseries \-\_\-sum\-Muon\-Energy\-Min\-Cut}\label{classCALICE_1_1TcmtEventIdentifier_aaa727562bc006d05ec6a97cefeca43c2}
+
+\item 
+float {\bfseries \-\_\-sum\-Muon\-Energy\-Max\-Cut}\label{classCALICE_1_1TcmtEventIdentifier_a89a64153b02399ef8a8026843c3123e4}
+
+\item 
+float {\bfseries \-\_\-back\-Energy\-Ratio}\label{classCALICE_1_1TcmtEventIdentifier_a56aea0501edc489d64b37e601cc9a57c}
+
+\item 
+int {\bfseries \-\_\-tower\-Muon\-Hit\-Cut}\label{classCALICE_1_1TcmtEventIdentifier_a82fc8f75ea4c78b09c5b76152220a408}
+
+\item 
+int {\bfseries \-\_\-number\-Towers\-Muon\-Min\-Cut}\label{classCALICE_1_1TcmtEventIdentifier_aec4b46004d25e99f04133db405ad7de4}
+
+\item 
+int {\bfseries \-\_\-number\-Towers\-Muon\-Max\-Cut}\label{classCALICE_1_1TcmtEventIdentifier_af2cc7c96cee36a48515fcd47bc19a60b}
+
+\item 
+int {\bfseries \-\_\-number\-Layers\-Muon\-Cut}\label{classCALICE_1_1TcmtEventIdentifier_a577956739ffbf786117418e1bbe331f9}
+
+\item 
+{\bf Tcmt\-Event\-Bits} {\bfseries \-\_\-bits}\label{classCALICE_1_1TcmtEventIdentifier_a3479a31a1fff21f0ffbf8020d751e9b8}
+
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+class that can identify type of event in T\-C\-M\-T 
+
+The signal in the T\-C\-M\-T is analysed and compared to different thresholds. Following observables are used\-: \begin{DoxyItemize}
+\item {\ttfamily energy} {\ttfamily sum} compared to min and max threshold \item {\ttfamily number} {\ttfamily hits} compared to min and max threshold \item {\ttfamily number} {\ttfamily muon} {\ttfamily like} {\ttfamily layers} compared to min threshold (the hits and energy in the layer have to be in range of a M\-I\-P signal) \item {\ttfamily number} {\ttfamily muon} {\ttfamily like} {\ttfamily towers} compared to min and max threshold (the the sum of neighboring cells over consecutive layers have to exceed a certain limit)\end{DoxyItemize}
+\begin{DoxySeeAlso}{See Also}
+\doxyref{Tcmt\-Event\-Bits}{p.}{classCALICE_1_1TcmtEventBits}
+\end{DoxySeeAlso}
+\begin{DoxyRefDesc}{Todo}
+\item[{\bf Todo}]implement thresholds for T\-C\-M\-T back section 
+
+remove hardcoded thresholds\end{DoxyRefDesc}
+
+
+\begin{DoxyAuthor}{Author}
+{\tt Benjamin.\-Lutz@desy.\-de} 
+\end{DoxyAuthor}
+\begin{DoxyDate}{Date}
+November 2009 
+\end{DoxyDate}
+\begin{DoxyVersion}{Version}
+1.\-0 
+\end{DoxyVersion}
+
+
+Definition at line 37 of file Tcmt\-Event\-Identifier.\-hh.
+
+
+
+\subsection{Constructor \& Destructor Documentation}
+\index{C\-A\-L\-I\-C\-E\-::\-Tcmt\-Event\-Identifier@{C\-A\-L\-I\-C\-E\-::\-Tcmt\-Event\-Identifier}!Tcmt\-Event\-Identifier@{Tcmt\-Event\-Identifier}}
+\index{Tcmt\-Event\-Identifier@{Tcmt\-Event\-Identifier}!CALICE::TcmtEventIdentifier@{C\-A\-L\-I\-C\-E\-::\-Tcmt\-Event\-Identifier}}
+\subsubsection[{Tcmt\-Event\-Identifier}]{\setlength{\rightskip}{0pt plus 5cm}C\-A\-L\-I\-C\-E\-::\-Tcmt\-Event\-Identifier\-::\-Tcmt\-Event\-Identifier (
+\begin{DoxyParamCaption}
+\item[{const unsigned int}]{max\-Layer = {\ttfamily 16}, }
+\item[{const unsigned int}]{start\-Back\-Layer = {\ttfamily 9}, }
+\item[{const std\-::string \&}]{forced\-Encoding = {\ttfamily \char`\"{}\char`\"{}}}
+\end{DoxyParamCaption}
+)}\label{classCALICE_1_1TcmtEventIdentifier_a645b2552f15f339df4d0c0a7f03c689e}
+
+
+constructor 
+
+thresholds are set inside here, currently hardcoded
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em max\-Layer} & maximum layer index (internally layer counting starts with 1) \\
+\hline
+\mbox{\tt in}  & {\em start\-Back\-Layer} & first layer to be considered back section of T\-C\-M\-T \\
+\hline
+\mbox{\tt in}  & {\em forced\-Encoding} & can be used to overwrite the encoding string from the collection (to work around reconstruction bug) \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 12 of file Tcmt\-Event\-Identifier.\-cc.
+
+
+
+References C\-A\-L\-I\-C\-E\-::\-Binned\-Vector$<$ K, D $>$\-::set\-Binning(), and set\-Muon\-Thresholds().
+
+
+
+\subsection{Member Function Documentation}
+\index{C\-A\-L\-I\-C\-E\-::\-Tcmt\-Event\-Identifier@{C\-A\-L\-I\-C\-E\-::\-Tcmt\-Event\-Identifier}!add\-Results@{add\-Results}}
+\index{add\-Results@{add\-Results}!CALICE::TcmtEventIdentifier@{C\-A\-L\-I\-C\-E\-::\-Tcmt\-Event\-Identifier}}
+\subsubsection[{add\-Results}]{\setlength{\rightskip}{0pt plus 5cm}void C\-A\-L\-I\-C\-E\-::\-Tcmt\-Event\-Identifier\-::add\-Results (
+\begin{DoxyParamCaption}
+\item[{lcio\-::\-L\-C\-Collection $\ast$}]{col}
+\end{DoxyParamCaption}
+)}\label{classCALICE_1_1TcmtEventIdentifier_a2a6670a9484562e22393da5ac2ce74e6}
+
+
+function to add the results as collection parameters 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt out}  & {\em col} & T\-C\-M\-T collection \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 180 of file Tcmt\-Event\-Identifier.\-cc.
+
+
+
+References C\-A\-L\-I\-C\-E\-::\-Bit\-Set\-::get\-Int(), C\-A\-L\-I\-C\-E\-::\-Bit\-Set\-::get\-Int\-Vec(), and C\-A\-L\-I\-C\-E\-::\-Binned\-Vector$<$ K, D $>$\-::get\-Vector().
+
+\index{C\-A\-L\-I\-C\-E\-::\-Tcmt\-Event\-Identifier@{C\-A\-L\-I\-C\-E\-::\-Tcmt\-Event\-Identifier}!add\-Results@{add\-Results}}
+\index{add\-Results@{add\-Results}!CALICE::TcmtEventIdentifier@{C\-A\-L\-I\-C\-E\-::\-Tcmt\-Event\-Identifier}}
+\subsubsection[{add\-Results}]{\setlength{\rightskip}{0pt plus 5cm}void C\-A\-L\-I\-C\-E\-::\-Tcmt\-Event\-Identifier\-::add\-Results (
+\begin{DoxyParamCaption}
+\item[{const std\-::string}]{par\-Name\-Tcmt\-Event\-Bits, }
+\item[{lcio\-::\-L\-C\-Event $\ast$}]{evt}
+\end{DoxyParamCaption}
+)}\label{classCALICE_1_1TcmtEventIdentifier_a8a11621d9ebf73c36c7b4bccb8b09474}
+
+
+function to add the int with the event type bits to the event 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em par\-Name\-Tcmt\-Event\-Bits} & name of the parameter that should contain the bits \\
+\hline
+\mbox{\tt out}  & {\em evt} & event for which the parameter should be added \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 176 of file Tcmt\-Event\-Identifier.\-cc.
+
+
+
+References C\-A\-L\-I\-C\-E\-::\-Bit\-Set\-::get\-Int().
+
+\index{C\-A\-L\-I\-C\-E\-::\-Tcmt\-Event\-Identifier@{C\-A\-L\-I\-C\-E\-::\-Tcmt\-Event\-Identifier}!process@{process}}
+\index{process@{process}!CALICE::TcmtEventIdentifier@{C\-A\-L\-I\-C\-E\-::\-Tcmt\-Event\-Identifier}}
+\subsubsection[{process}]{\setlength{\rightskip}{0pt plus 5cm}void C\-A\-L\-I\-C\-E\-::\-Tcmt\-Event\-Identifier\-::process (
+\begin{DoxyParamCaption}
+\item[{lcio\-::\-L\-C\-Collection $\ast$}]{col}
+\end{DoxyParamCaption}
+)}\label{classCALICE_1_1TcmtEventIdentifier_aa437a88627114614385cde000d918161}
+
+
+function to do the calculation on a collection 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em col} & T\-C\-M\-T input collection \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 82 of file Tcmt\-Event\-Identifier.\-cc.
+
+
+
+References C\-A\-L\-I\-C\-E\-::\-Bit\-Set\-::clear(), C\-A\-L\-I\-C\-E\-::\-Fast\-Decoder\-::decode\-U(), C\-A\-L\-I\-C\-E\-::\-Fast\-Decoder\-::generate\-Decoder(), and C\-A\-L\-I\-C\-E\-::\-Binned\-Vector$<$ K, D $>$\-::get\-Vector().
+
+\index{C\-A\-L\-I\-C\-E\-::\-Tcmt\-Event\-Identifier@{C\-A\-L\-I\-C\-E\-::\-Tcmt\-Event\-Identifier}!set\-Muon\-Thresholds@{set\-Muon\-Thresholds}}
+\index{set\-Muon\-Thresholds@{set\-Muon\-Thresholds}!CALICE::TcmtEventIdentifier@{C\-A\-L\-I\-C\-E\-::\-Tcmt\-Event\-Identifier}}
+\subsubsection[{set\-Muon\-Thresholds}]{\setlength{\rightskip}{0pt plus 5cm}void C\-A\-L\-I\-C\-E\-::\-Tcmt\-Event\-Identifier\-::set\-Muon\-Thresholds (
+\begin{DoxyParamCaption}
+\item[{const int}]{layer\-Muon\-Hit\-Min\-Cut, }
+\item[{const int}]{layer\-Muon\-Hit\-Max\-Cut, }
+\item[{const float}]{layer\-Muon\-Energy\-Min\-Cut, }
+\item[{const float}]{layer\-Muon\-Energy\-Max\-Cut, }
+\item[{const int}]{sum\-Muon\-Hit\-Min\-Cut, }
+\item[{const int}]{sum\-Muon\-Hit\-Max\-Cut, }
+\item[{const float}]{sum\-Muon\-Energy\-Min\-Cut, }
+\item[{const float}]{sum\-Muon\-Energy\-Max\-Cut, }
+\item[{const int}]{tower\-Muon\-Hit\-Cut, }
+\item[{const int}]{number\-Towers\-Muon\-Min\-Cut, }
+\item[{const int}]{number\-Towers\-Muon\-Max\-Cut, }
+\item[{const int}]{number\-Layers\-Muon\-Cut}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [private]}}\label{classCALICE_1_1TcmtEventIdentifier_aefae0d44cec83769c90b7bff441358cb}
+
+
+internal function to set the thresholds 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em layer\-Muon\-Hit\-Min\-Cut} & min number of hits to consider layer muon like \\
+\hline
+\mbox{\tt in}  & {\em layer\-Muon\-Hit\-Max\-Cut} & max number of hits to consider layer muon like \\
+\hline
+\mbox{\tt in}  & {\em layer\-Muon\-Energy\-Min\-Cut} & min energy sum to consider layer muon like \\
+\hline
+\mbox{\tt in}  & {\em layer\-Muon\-Energy\-Max\-Cut} & max energy sum to consider layer muon like \\
+\hline
+\mbox{\tt in}  & {\em sum\-Muon\-Hit\-Min\-Cut} & min number of hits to consider signal originating from muon \\
+\hline
+\mbox{\tt in}  & {\em sum\-Muon\-Hit\-Max\-Cut} & max number of hits to consider signal originating from muon \\
+\hline
+\mbox{\tt in}  & {\em sum\-Muon\-Energy\-Min\-Cut} & min energy sum to consider signal originating from muon \\
+\hline
+\mbox{\tt in}  & {\em sum\-Muon\-Energy\-Max\-Cut} & max energy sum to consider signal originating from muon \\
+\hline
+\mbox{\tt in}  & {\em tower\-Muon\-Hit\-Cut} & min number of hits in tower to consider tower muon like \\
+\hline
+\mbox{\tt in}  & {\em number\-Towers\-Muon\-Min\-Cut} & min number of muon like tower to consider event originating from muon \\
+\hline
+\mbox{\tt in}  & {\em number\-Towers\-Muon\-Max\-Cut} & max number of muon like tower to consider event originating from muon \\
+\hline
+\mbox{\tt in}  & {\em number\-Layers\-Muon\-Cut} & min number of muon like layers to consider event originating from muon \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 27 of file Tcmt\-Event\-Identifier.\-cc.
+
+
+
+Referenced by Tcmt\-Event\-Identifier().
+
+
+
+The documentation for this class was generated from the following files\-:\begin{DoxyCompactItemize}
+\item 
+Tcmt\-Event\-Identifier.\-hh\item 
+Tcmt\-Event\-Identifier.\-cc\end{DoxyCompactItemize}

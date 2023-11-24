@@ -1,0 +1,15 @@
+This is a build using ILCSoft v02-03-02 with gcc10.3 and c++17 libraries.
+
+The bash script miraclefixing.sh checks and adapts all the code to make it work.
+Still, some errors will appear in userlib the first time you recompile, they need to be changed manually.
+This change is simply changing the explicit "throws" in the function declaration
+into a "noexcept(false)".
+
+There's some additional issues with CMAKE policies that are addressed and may not hold well with time.
+We tried this fix and didn't work:
+GET_TARGET_PROPERTY(FULL_LIBRARY_NAME ${lib1name} LOCATION)
+changed to:
+SET(FULL_LIBRARY_NAME $<TARGET_FILE:${lib1name}>)
+
+Instead, we called the old policy using: 
+cmake_policy(SET CMP0026 OLD)

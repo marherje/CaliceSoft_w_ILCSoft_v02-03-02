@@ -1,0 +1,122 @@
+\hypertarget{class_channel_expert_quality}{\section{Channel\-Expert\-Quality Class Reference}
+\label{class_channel_expert_quality}\index{Channel\-Expert\-Quality@{Channel\-Expert\-Quality}}
+}
+
+
+A class holing the constants with define the detailed (expert) channel quality flags.  
+
+
+
+
+{\ttfamily \#include $<$Channel\-Expert\-Quality.\-h$>$}
+
+\subsection*{Static Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+static const U\-Int\-\_\-t \hyperlink{class_channel_expert_quality_aabde82530d3975d698fbff3e33d7972c}{dead} = 0x1
+\begin{DoxyCompactList}\small\item\em the dead bit\-: 0x1 \end{DoxyCompactList}\item 
+static const U\-Int\-\_\-t \hyperlink{class_channel_expert_quality_a0b17164b19cdc8619c1a93fe1728c4c3}{high\-R\-M\-S} = 0x2
+\begin{DoxyCompactList}\small\item\em the righ R\-M\-S bit\-: 0x2 \end{DoxyCompactList}\item 
+static const U\-Int\-\_\-t \hyperlink{class_channel_expert_quality_a7ec5758ee03b6f11af837adad6b4a676}{high\-Noise\-Rate} = 0x4
+\begin{DoxyCompactList}\small\item\em the high noise rate bit\-: 0x4 \end{DoxyCompactList}\item 
+static const U\-Int\-\_\-t \hyperlink{class_channel_expert_quality_a13046f6e61373f907a79326530ee2e07}{multi\-Peak\-Noise} = 0x8
+\begin{DoxyCompactList}\small\item\em the multi peak noise bit\-: 0x8 \end{DoxyCompactList}\item 
+static const U\-Int\-\_\-t \hyperlink{class_channel_expert_quality_a260970cb0e2fe88bfc6cf741ca95b104}{zombie} = 0x10
+\begin{DoxyCompactList}\small\item\em the zombie bit\-: 0x10; \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+A class holing the constants with define the detailed (expert) channel quality flags. 
+
+These flags are for detailed analysis in the dead\-And\-Noisy\-Channels expert package. They are to be interpreted as a states of a bit field. Usage\-: 
+\begin{DoxyCode}
+\textcolor{comment}{// compose a quality word, use bitwise or}
+UInt\_t thisChannelQuality = \hyperlink{class_channel_expert_quality_a0b17164b19cdc8619c1a93fe1728c4c3}{ChannelExpertQuality::highRMS} | 
+      \hyperlink{class_channel_expert_quality_a13046f6e61373f907a79326530ee2e07}{ChannelExpertQuality::multiPeakNoise};
+\textcolor{comment}{// thisChannelQuality now is 0xA, bits 1 and 3 set}
+
+\textcolor{comment}{// check if a specific bit is set, use bitwise and}
+\textcolor{keywordflow}{if} ( thisChannelQuality & ChannelExpertQuality::dead ) \{\textcolor{keywordflow}{continue};\} \textcolor{comment}{// skip if dead bit is set}
+\end{DoxyCode}
+
+
+\begin{DoxyAttention}{Attention}
+These are not the flags written to the data base! These are defined in Cell\-Quality object of the userlib, which is the L\-C\-Generic\-Object written to the data base.
+\end{DoxyAttention}
+Explanation of the meaning/ current definitions (as of 12. Dec. 2010) \begin{DoxyItemize}
+\item {\ttfamily dead\-:} rms in the P\-M\-Noise spectrum is below a certain value \item {\ttfamily high\-R\-M\-S\-:} rms in the P\-M\-Noise spectrum is above a certain value \item {\ttfamily high\-Noise\-Rate\-:} (not implemented yet) channel is above M\-I\-P/noise cut in more than 10 \% of all events in an noise run \item {\ttfamily multi\-Peak\-Noise\-:} (not implemented yet) P\-M\-Noise spectrum has more than one peak \item {\ttfamily zombie\-:} (not implemented yet) Channel is dead in a certain period and sees signals again later \end{DoxyItemize}
+
+
+Definition at line 29 of file Channel\-Expert\-Quality.\-h.
+
+
+
+\subsection{Field Documentation}
+\hypertarget{class_channel_expert_quality_aabde82530d3975d698fbff3e33d7972c}{\index{Channel\-Expert\-Quality@{Channel\-Expert\-Quality}!dead@{dead}}
+\index{dead@{dead}!ChannelExpertQuality@{Channel\-Expert\-Quality}}
+\subsubsection[{dead}]{\setlength{\rightskip}{0pt plus 5cm}const U\-Int\-\_\-t Channel\-Expert\-Quality\-::dead = 0x1\hspace{0.3cm}{\ttfamily [static]}}}\label{class_channel_expert_quality_aabde82530d3975d698fbff3e33d7972c}
+
+
+the dead bit\-: 0x1 
+
+
+
+Definition at line 32 of file Channel\-Expert\-Quality.\-h.
+
+
+
+Referenced by main().
+
+\hypertarget{class_channel_expert_quality_a7ec5758ee03b6f11af837adad6b4a676}{\index{Channel\-Expert\-Quality@{Channel\-Expert\-Quality}!high\-Noise\-Rate@{high\-Noise\-Rate}}
+\index{high\-Noise\-Rate@{high\-Noise\-Rate}!ChannelExpertQuality@{Channel\-Expert\-Quality}}
+\subsubsection[{high\-Noise\-Rate}]{\setlength{\rightskip}{0pt plus 5cm}const U\-Int\-\_\-t Channel\-Expert\-Quality\-::high\-Noise\-Rate = 0x4\hspace{0.3cm}{\ttfamily [static]}}}\label{class_channel_expert_quality_a7ec5758ee03b6f11af837adad6b4a676}
+
+
+the high noise rate bit\-: 0x4 
+
+
+
+Definition at line 34 of file Channel\-Expert\-Quality.\-h.
+
+\hypertarget{class_channel_expert_quality_a0b17164b19cdc8619c1a93fe1728c4c3}{\index{Channel\-Expert\-Quality@{Channel\-Expert\-Quality}!high\-R\-M\-S@{high\-R\-M\-S}}
+\index{high\-R\-M\-S@{high\-R\-M\-S}!ChannelExpertQuality@{Channel\-Expert\-Quality}}
+\subsubsection[{high\-R\-M\-S}]{\setlength{\rightskip}{0pt plus 5cm}const U\-Int\-\_\-t Channel\-Expert\-Quality\-::high\-R\-M\-S = 0x2\hspace{0.3cm}{\ttfamily [static]}}}\label{class_channel_expert_quality_a0b17164b19cdc8619c1a93fe1728c4c3}
+
+
+the righ R\-M\-S bit\-: 0x2 
+
+
+
+Definition at line 33 of file Channel\-Expert\-Quality.\-h.
+
+
+
+Referenced by main().
+
+\hypertarget{class_channel_expert_quality_a13046f6e61373f907a79326530ee2e07}{\index{Channel\-Expert\-Quality@{Channel\-Expert\-Quality}!multi\-Peak\-Noise@{multi\-Peak\-Noise}}
+\index{multi\-Peak\-Noise@{multi\-Peak\-Noise}!ChannelExpertQuality@{Channel\-Expert\-Quality}}
+\subsubsection[{multi\-Peak\-Noise}]{\setlength{\rightskip}{0pt plus 5cm}const U\-Int\-\_\-t Channel\-Expert\-Quality\-::multi\-Peak\-Noise = 0x8\hspace{0.3cm}{\ttfamily [static]}}}\label{class_channel_expert_quality_a13046f6e61373f907a79326530ee2e07}
+
+
+the multi peak noise bit\-: 0x8 
+
+
+
+Definition at line 35 of file Channel\-Expert\-Quality.\-h.
+
+\hypertarget{class_channel_expert_quality_a260970cb0e2fe88bfc6cf741ca95b104}{\index{Channel\-Expert\-Quality@{Channel\-Expert\-Quality}!zombie@{zombie}}
+\index{zombie@{zombie}!ChannelExpertQuality@{Channel\-Expert\-Quality}}
+\subsubsection[{zombie}]{\setlength{\rightskip}{0pt plus 5cm}const U\-Int\-\_\-t Channel\-Expert\-Quality\-::zombie = 0x10\hspace{0.3cm}{\ttfamily [static]}}}\label{class_channel_expert_quality_a260970cb0e2fe88bfc6cf741ca95b104}
+
+
+the zombie bit\-: 0x10; 
+
+
+
+Definition at line 36 of file Channel\-Expert\-Quality.\-h.
+
+
+
+The documentation for this class was generated from the following file\-:\begin{DoxyCompactItemize}
+\item 
+\hyperlink{_channel_expert_quality_8h}{Channel\-Expert\-Quality.\-h}\end{DoxyCompactItemize}

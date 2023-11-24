@@ -1,0 +1,41 @@
+file(REMOVE_RECURSE
+  "../lib/libcondDataCreators_lib.pdb"
+  "../lib/libcondDataCreators_lib.so"
+  "CMakeFiles/condDataCreators_lib.dir/ReadDaqMap/ReadDaqMap.cc.o"
+  "CMakeFiles/condDataCreators_lib.dir/ReadDaqMap/ReadDaqMap.cc.o.d"
+  "CMakeFiles/condDataCreators_lib.dir/ReadDaqMap/ReadLine.cc.o"
+  "CMakeFiles/condDataCreators_lib.dir/ReadDaqMap/ReadLine.cc.o.d"
+  "CMakeFiles/condDataCreators_lib.dir/ReadDaqMap/TLineIterator.cc.o"
+  "CMakeFiles/condDataCreators_lib.dir/ReadDaqMap/TLineIterator.cc.o.d"
+  "CMakeFiles/condDataCreators_lib.dir/ReadDaqMap/getRunStartTime.cc.o"
+  "CMakeFiles/condDataCreators_lib.dir/ReadDaqMap/getRunStartTime.cc.o.d"
+  "CMakeFiles/condDataCreators_lib.dir/ReadDaqMap/parseDateTime.cc.o"
+  "CMakeFiles/condDataCreators_lib.dir/ReadDaqMap/parseDateTime.cc.o.d"
+  "CMakeFiles/condDataCreators_lib.dir/RootTools/TDirIter.cc.o"
+  "CMakeFiles/condDataCreators_lib.dir/RootTools/TDirIter.cc.o.d"
+  "CMakeFiles/condDataCreators_lib.dir/RootTools/find.cc.o"
+  "CMakeFiles/condDataCreators_lib.dir/RootTools/find.cc.o.d"
+  "CMakeFiles/condDataCreators_lib.dir/createBeamParameterConddata.cc.o"
+  "CMakeFiles/condDataCreators_lib.dir/createBeamParameterConddata.cc.o.d"
+  "CMakeFiles/condDataCreators_lib.dir/createDetectorTransformationConddata.cc.o"
+  "CMakeFiles/condDataCreators_lib.dir/createDetectorTransformationConddata.cc.o.d"
+  "CMakeFiles/condDataCreators_lib.dir/createEcalCalibrationConstantsConddata.cc.o"
+  "CMakeFiles/condDataCreators_lib.dir/createEcalCalibrationConstantsConddata.cc.o.d"
+  "CMakeFiles/condDataCreators_lib.dir/createEcalMappingConddata.cc.o"
+  "CMakeFiles/condDataCreators_lib.dir/createEcalMappingConddata.cc.o.d"
+  "CMakeFiles/condDataCreators_lib.dir/createEcalModuleDescriptionConddata.cc.o"
+  "CMakeFiles/condDataCreators_lib.dir/createEcalModuleDescriptionConddata.cc.o.d"
+  "CMakeFiles/condDataCreators_lib.dir/createEcalModuleLocationConddata.cc.o"
+  "CMakeFiles/condDataCreators_lib.dir/createEcalModuleLocationConddata.cc.o.d"
+  "CMakeFiles/condDataCreators_lib.dir/createRunLocationConddata.cc.o"
+  "CMakeFiles/condDataCreators_lib.dir/createRunLocationConddata.cc.o.d"
+  "CMakeFiles/condDataCreators_lib.dir/createTriggerAssignmentConddata.cc.o"
+  "CMakeFiles/condDataCreators_lib.dir/createTriggerAssignmentConddata.cc.o.d"
+  "CMakeFiles/condDataCreators_lib.dir/decodeCellID.cc.o"
+  "CMakeFiles/condDataCreators_lib.dir/decodeCellID.cc.o.d"
+)
+
+# Per-language clean rules from dependency scanning.
+foreach(lang CXX)
+  include(CMakeFiles/condDataCreators_lib.dir/cmake_clean_${lang}.cmake OPTIONAL)
+endforeach()

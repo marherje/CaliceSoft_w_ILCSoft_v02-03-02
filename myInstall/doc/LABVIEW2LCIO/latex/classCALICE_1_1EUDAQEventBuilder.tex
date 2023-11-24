@@ -1,0 +1,104 @@
+\section{C\-A\-L\-I\-C\-E\-:\-:E\-U\-D\-A\-Q\-Event\-Builder Class Reference}
+\label{classCALICE_1_1EUDAQEventBuilder}\index{C\-A\-L\-I\-C\-E\-::\-E\-U\-D\-A\-Q\-Event\-Builder@{C\-A\-L\-I\-C\-E\-::\-E\-U\-D\-A\-Q\-Event\-Builder}}
+
+
+Processor for reading the A\-H\-C\-A\-L E\-U\-D\-A\-Q S\-L\-C\-I\-O files.  
+
+
+
+
+{\ttfamily \#include $<$E\-U\-D\-A\-Q\-Event\-Builder.\-hh$>$}
+
+Inheritance diagram for C\-A\-L\-I\-C\-E\-:\-:E\-U\-D\-A\-Q\-Event\-Builder\-:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classCALICE_1_1EUDAQEventBuilder}
+\end{center}
+\end{figure}
+\subsection*{Data Structures}
+\begin{DoxyCompactItemize}
+\item 
+struct {\bf raw\-Data}
+\begin{DoxyCompactList}\small\item\em The slcio data format. \end{DoxyCompactList}\item 
+struct {\bf raw\-Temp}
+\begin{DoxyCompactList}\small\item\em The slcio data format for the temperature sensor. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+virtual Processor $\ast$ {\bf new\-Processor} ()\label{classCALICE_1_1EUDAQEventBuilder_aa3dc57e6961542850ee8a4690ced210c}
+
+\begin{DoxyCompactList}\small\item\em Implementation of new Processor returns pointer to processor. \end{DoxyCompactList}\item 
+void {\bf process\-Event} (L\-C\-Event $\ast$evt)\label{classCALICE_1_1EUDAQEventBuilder_ac54decb0cf83f95f25eeb56e6a68e7a1}
+
+\begin{DoxyCompactList}\small\item\em Creates events with L\-C\-Genreal\-Object collections from the E\-U\-D\-A\-Q input file and calls all active processors' \doxyref{process\-Event()}{p.}{classCALICE_1_1EUDAQEventBuilder_ac54decb0cf83f95f25eeb56e6a68e7a1} and process\-Run\-Header Method. \end{DoxyCompactList}\item 
+void {\bf write\-Slow\-Control} ()\label{classCALICE_1_1EUDAQEventBuilder_a0bda9d7aec8ee7ca6ce1c3b8dc6b9795}
+
+\begin{DoxyCompactList}\small\item\em work on slow control data, A\-S\-I\-C \end{DoxyCompactList}\item 
+virtual void {\bf init} ()
+\begin{DoxyCompactList}\small\item\em work on slow control data, Temperature \end{DoxyCompactList}\item 
+virtual void {\bf end} ()\label{classCALICE_1_1EUDAQEventBuilder_a0d15b17c115c16b310055d504ede10a4}
+
+\begin{DoxyCompactList}\small\item\em end method \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+std\-::string {\bfseries \-\_\-input\-Col\-Name}\label{classCALICE_1_1EUDAQEventBuilder_af7d60899294e8381b5d81adc95c99ac0}
+
+\item 
+std\-::string {\bfseries \-\_\-input\-Col\-Name\-Temp}\label{classCALICE_1_1EUDAQEventBuilder_a2e49295b97dea6c2bdf8edfd95186b7f}
+
+\item 
+std\-::string {\bfseries \-\_\-output\-Col\-Name\-E\-C\-A\-L}\label{classCALICE_1_1EUDAQEventBuilder_a1dde63ebdba4c9c0f22c6643f4469aa4}
+
+\item 
+std\-::string {\bfseries \-\_\-output\-Col\-Name\-H\-C\-A\-L}\label{classCALICE_1_1EUDAQEventBuilder_ac24b9dbaa1e79ba913d0ed6b74a8b272}
+
+\item 
+std\-::string {\bfseries \-\_\-output\-Col\-Name\-Temp}\label{classCALICE_1_1EUDAQEventBuilder_aadd12063b4970b51ed417c88c429ca1c}
+
+\item 
+std\-::string {\bfseries \-\_\-detector\-Type\-Name}\label{classCALICE_1_1EUDAQEventBuilder_ae35b525b53a88d398005f79c985c9bca}
+
+\item 
+int {\bf \-\_\-run\-Number}\label{classCALICE_1_1EUDAQEventBuilder_a8f4ada65b09422974d99c770bb00307b}
+
+\begin{DoxyCompactList}\small\item\em The run number. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Processor for reading the A\-H\-C\-A\-L E\-U\-D\-A\-Q S\-L\-C\-I\-O files. 
+
+It processes the input data to create events with L\-C\-I\-O collections of the A\-H\-C\-A\-L E\-U\-D\-A\-Q S\-L\-C\-I\-O output (sorted by readout cycles). Based on F. Gaede's Std\-Hep\-Reader to be found in the marlin package. \begin{DoxyAuthor}{Author}
+\-: A. Irles (D\-E\-S\-Y), based on the S. Lu's (D\-E\-S\-Y Hamburg) Labview\-Converter2 
+\end{DoxyAuthor}
+\begin{DoxyDate}{Date}
+May 20 2015 
+\end{DoxyDate}
+
+
+Definition at line 22 of file E\-U\-D\-A\-Q\-Event\-Builder.\-hh.
+
+
+
+\subsection{Member Function Documentation}
+\index{C\-A\-L\-I\-C\-E\-::\-E\-U\-D\-A\-Q\-Event\-Builder@{C\-A\-L\-I\-C\-E\-::\-E\-U\-D\-A\-Q\-Event\-Builder}!init@{init}}
+\index{init@{init}!CALICE::EUDAQEventBuilder@{C\-A\-L\-I\-C\-E\-::\-E\-U\-D\-A\-Q\-Event\-Builder}}
+\subsubsection[{init}]{\setlength{\rightskip}{0pt plus 5cm}void C\-A\-L\-I\-C\-E\-::\-E\-U\-D\-A\-Q\-Event\-Builder\-::init (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}\label{classCALICE_1_1EUDAQEventBuilder_a7a1f441b5b85da27e467689be7db0a4c}
+
+
+work on slow control data, Temperature 
+
+init method 
+
+Definition at line 85 of file E\-U\-D\-A\-Q\-Event\-Builder.\-cc.
+
+
+
+The documentation for this class was generated from the following files\-:\begin{DoxyCompactItemize}
+\item 
+E\-U\-D\-A\-Q\-Event\-Builder.\-hh\item 
+E\-U\-D\-A\-Q\-Event\-Builder.\-cc\end{DoxyCompactItemize}

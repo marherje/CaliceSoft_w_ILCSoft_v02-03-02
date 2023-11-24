@@ -1,0 +1,123 @@
+\section{C\-A\-L\-I\-C\-E\-:\-:E\-U\-D\-A\-Q\-Event\-Builder2016 Class Reference}
+\label{classCALICE_1_1EUDAQEventBuilder2016}\index{C\-A\-L\-I\-C\-E\-::\-E\-U\-D\-A\-Q\-Event\-Builder2016@{C\-A\-L\-I\-C\-E\-::\-E\-U\-D\-A\-Q\-Event\-Builder2016}}
+
+
+Processor for reading the A\-H\-C\-A\-L E\-U\-D\-A\-Q S\-L\-C\-I\-O files.  
+
+
+
+
+{\ttfamily \#include $<$E\-U\-D\-A\-Q\-Event\-Builder2016.\-hh$>$}
+
+Inheritance diagram for C\-A\-L\-I\-C\-E\-:\-:E\-U\-D\-A\-Q\-Event\-Builder2016\-:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classCALICE_1_1EUDAQEventBuilder2016}
+\end{center}
+\end{figure}
+\subsection*{Data Structures}
+\begin{DoxyCompactItemize}
+\item 
+struct {\bf raw\-Data2016}
+\begin{DoxyCompactList}\small\item\em The slcio data format. \end{DoxyCompactList}\item 
+struct {\bf raw\-Temp}
+\begin{DoxyCompactList}\small\item\em The slcio data format for the temperature sensor. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+virtual Processor $\ast$ {\bf new\-Processor} ()\label{classCALICE_1_1EUDAQEventBuilder2016_a1650bf1dce20b0a866b458e9ebdcda7e}
+
+\begin{DoxyCompactList}\small\item\em Implementation of new Processor returns pointer to processor. \end{DoxyCompactList}\item 
+void {\bf process\-Event} (L\-C\-Event $\ast$evt)\label{classCALICE_1_1EUDAQEventBuilder2016_a0bac760cc21f4b287c07da49eacc9ada}
+
+\begin{DoxyCompactList}\small\item\em Creates events with L\-C\-Genreal\-Object collections from the E\-U\-D\-A\-Q input file and calls all active processors' \doxyref{process\-Event()}{p.}{classCALICE_1_1EUDAQEventBuilder2016_a0bac760cc21f4b287c07da49eacc9ada} and process\-Run\-Header Method. \end{DoxyCompactList}\item 
+void {\bf write\-Slow\-Control} ()\label{classCALICE_1_1EUDAQEventBuilder2016_a8f1baf4f107ff927b4812c64e2b860da}
+
+\begin{DoxyCompactList}\small\item\em work on slow control data, A\-S\-I\-C \end{DoxyCompactList}\item 
+virtual void {\bf init} ()\label{classCALICE_1_1EUDAQEventBuilder2016_aa94ddbbbf8c0ab9773a401a0473c0cf1}
+
+\begin{DoxyCompactList}\small\item\em init method \end{DoxyCompactList}\item 
+virtual void {\bf end} ()\label{classCALICE_1_1EUDAQEventBuilder2016_a045d43f47db2899fc71cf1c2b2d44b61}
+
+\begin{DoxyCompactList}\small\item\em end method \end{DoxyCompactList}\item 
+void {\bf print\-Parameters} ()\label{classCALICE_1_1EUDAQEventBuilder2016_ab3c575b563f3d8d10b07d2c87eaa04e2}
+
+\begin{DoxyCompactList}\small\item\em print parameters \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+std\-::string {\bfseries \-\_\-input\-Col\-Name}\label{classCALICE_1_1EUDAQEventBuilder2016_a2f42f94af561a2fd1766aceaa7fa2528}
+
+\item 
+std\-::string {\bfseries \-\_\-input\-Col\-Name\-Temp}\label{classCALICE_1_1EUDAQEventBuilder2016_a18c69aaf8fac9eb6eeb4825dfe0e60e6}
+
+\item 
+std\-::string {\bfseries \-\_\-input\-Col\-Name\-B\-I\-F}\label{classCALICE_1_1EUDAQEventBuilder2016_a8984943e80f1c4e61c4091a637682188}
+
+\item 
+std\-::string {\bfseries \-\_\-input\-Col\-Name\-L\-D\-A}\label{classCALICE_1_1EUDAQEventBuilder2016_a54f3c2c9c78af59dd10b1c460cf07728}
+
+\item 
+std\-::string {\bfseries \-\_\-output\-Col\-Name\-E\-C\-A\-L}\label{classCALICE_1_1EUDAQEventBuilder2016_a476ebbedcca110f1666be0b2e2617680}
+
+\item 
+std\-::string {\bfseries \-\_\-output\-Col\-Name\-H\-C\-A\-L}\label{classCALICE_1_1EUDAQEventBuilder2016_a56dc8c5a54e6be562c041bb09055ab38}
+
+\item 
+std\-::string {\bfseries \-\_\-output\-Col\-Name\-B\-I\-F}\label{classCALICE_1_1EUDAQEventBuilder2016_ad0c870664ab3dfa3f87f229dfa43bba9}
+
+\item 
+std\-::string {\bfseries \-\_\-detector\-Type\-Name}\label{classCALICE_1_1EUDAQEventBuilder2016_a250584f99a8271429a73d4e954530621}
+
+\item 
+int {\bfseries \-\_\-bifoffset}\label{classCALICE_1_1EUDAQEventBuilder2016_aa6b08754345a70e2336ada9efdd17fd9}
+
+\item 
+bool {\bfseries \-\_\-only\-Validated\-Events}\label{classCALICE_1_1EUDAQEventBuilder2016_a9473af0699242f60131ca2ed2cadfa04}
+
+\item 
+int {\bf \-\_\-run\-Number}\label{classCALICE_1_1EUDAQEventBuilder2016_aa103d69ec774f576dace869104b8faef}
+
+\begin{DoxyCompactList}\small\item\em The run number. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+int {\bfseries Lcio\-Event\-Nr}\label{classCALICE_1_1EUDAQEventBuilder2016_a7573707103dd046dee93dfa0e2b1cab5}
+
+\item 
+bool {\bfseries \-\_\-do\-Evt\-Building}\label{classCALICE_1_1EUDAQEventBuilder2016_af24f21749c4d9818f22e8a525d383222}
+
+\item 
+int {\bfseries discarded\-\_\-events}\label{classCALICE_1_1EUDAQEventBuilder2016_a51f60c4d154832135bc98ea01c4208cc}
+
+\item 
+int {\bfseries all\-\_\-events}\label{classCALICE_1_1EUDAQEventBuilder2016_ae45de2261b7a553f8fd045989714d730}
+
+\item 
+bool {\bfseries temperaturecollection\-\_\-write}\label{classCALICE_1_1EUDAQEventBuilder2016_a35fe1ae4a3c82ba75b126e3c1a8025cb}
+
+\item 
+bool {\bfseries bifcollection\-\_\-write}\label{classCALICE_1_1EUDAQEventBuilder2016_af8b579cead4724009069f72686b79f4b}
+
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Processor for reading the A\-H\-C\-A\-L E\-U\-D\-A\-Q S\-L\-C\-I\-O files. 
+
+It processes the input data to create events with L\-C\-I\-O collections of the A\-H\-C\-A\-L E\-U\-D\-A\-Q S\-L\-C\-I\-O output (sorted by readout cycles). Based on F. Gaede's Std\-Hep\-Reader to be found in the marlin package. \begin{DoxyAuthor}{Author}
+\-: A. Irles (D\-E\-S\-Y), based on the S. Lu's (D\-E\-S\-Y Hamburg) Labview\-Converter2 
+\end{DoxyAuthor}
+\begin{DoxyDate}{Date}
+May 20 2015 
+\end{DoxyDate}
+
+
+Definition at line 22 of file E\-U\-D\-A\-Q\-Event\-Builder2016.\-hh.
+
+
+
+The documentation for this class was generated from the following files\-:\begin{DoxyCompactItemize}
+\item 
+E\-U\-D\-A\-Q\-Event\-Builder2016.\-hh\item 
+E\-U\-D\-A\-Q\-Event\-Builder2016.\-cc\end{DoxyCompactItemize}

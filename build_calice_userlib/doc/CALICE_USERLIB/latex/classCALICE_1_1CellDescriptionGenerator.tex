@@ -1,0 +1,112 @@
+\section{C\-A\-L\-I\-C\-E\-:\-:Cell\-Description\-Generator Class Reference}
+\label{classCALICE_1_1CellDescriptionGenerator}\index{C\-A\-L\-I\-C\-E\-::\-Cell\-Description\-Generator@{C\-A\-L\-I\-C\-E\-::\-Cell\-Description\-Generator}}
+
+
+class that generates cell descriptions objects  
+
+
+
+
+{\ttfamily \#include $<$Cell\-Description\-Generator.\-hh$>$}
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+{\bf Cell\-Description\-Generator} (const {\bf Mapper} $\ast$mapper)
+\begin{DoxyCompactList}\small\item\em constructor \end{DoxyCompactList}\item 
+void {\bf generate} (const lcio\-::\-L\-C\-Collection $\ast$mod\-Description\-Col, const lcio\-::\-L\-C\-Collection $\ast$mod\-Connection\-Col, const lcio\-::\-L\-C\-Collection $\ast$mod\-Location\-Col, const lcio\-::\-L\-C\-Collection $\ast$det\-Transformation\-Col, {\bf Mapped\-Container}$<$ {\bf Cell\-Description} $>$ $\ast$container) const 
+\begin{DoxyCompactList}\small\item\em function that updates a \doxyref{Mapped\-Container}{p.}{classCALICE_1_1MappedContainer} of \doxyref{Cell\-Description}{p.}{classCALICE_1_1CellDescription} objects \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+const {\bf Mapper} $\ast$ {\bfseries \-\_\-mapper}\label{classCALICE_1_1CellDescriptionGenerator_a612bebfd873ffb78cb9489ef14c9c6b6}
+
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+class that generates cell descriptions objects 
+
+\begin{DoxyAuthor}{Author}
+{\tt Benjamin.\-Lutz@desy.\-de} 
+\end{DoxyAuthor}
+\begin{DoxyVersion}{Version}
+0.\-1 
+\end{DoxyVersion}
+\begin{DoxyDate}{Date}
+June 2009 
+\end{DoxyDate}
+
+
+Definition at line 20 of file Cell\-Description\-Generator.\-hh.
+
+
+
+\subsection{Constructor \& Destructor Documentation}
+\index{C\-A\-L\-I\-C\-E\-::\-Cell\-Description\-Generator@{C\-A\-L\-I\-C\-E\-::\-Cell\-Description\-Generator}!Cell\-Description\-Generator@{Cell\-Description\-Generator}}
+\index{Cell\-Description\-Generator@{Cell\-Description\-Generator}!CALICE::CellDescriptionGenerator@{C\-A\-L\-I\-C\-E\-::\-Cell\-Description\-Generator}}
+\subsubsection[{Cell\-Description\-Generator}]{\setlength{\rightskip}{0pt plus 5cm}C\-A\-L\-I\-C\-E\-::\-Cell\-Description\-Generator\-::\-Cell\-Description\-Generator (
+\begin{DoxyParamCaption}
+\item[{const {\bf Mapper} $\ast$}]{mapper}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\label{classCALICE_1_1CellDescriptionGenerator_ab341ed384a42223944cd22ad60a66a3b}
+
+
+constructor 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em mapper} & mapper \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 29 of file Cell\-Description\-Generator.\-hh.
+
+
+
+\subsection{Member Function Documentation}
+\index{C\-A\-L\-I\-C\-E\-::\-Cell\-Description\-Generator@{C\-A\-L\-I\-C\-E\-::\-Cell\-Description\-Generator}!generate@{generate}}
+\index{generate@{generate}!CALICE::CellDescriptionGenerator@{C\-A\-L\-I\-C\-E\-::\-Cell\-Description\-Generator}}
+\subsubsection[{generate}]{\setlength{\rightskip}{0pt plus 5cm}void C\-A\-L\-I\-C\-E\-::\-Cell\-Description\-Generator\-::generate (
+\begin{DoxyParamCaption}
+\item[{const lcio\-::\-L\-C\-Collection $\ast$}]{mod\-Description\-Col, }
+\item[{const lcio\-::\-L\-C\-Collection $\ast$}]{mod\-Connection\-Col, }
+\item[{const lcio\-::\-L\-C\-Collection $\ast$}]{mod\-Location\-Col, }
+\item[{const lcio\-::\-L\-C\-Collection $\ast$}]{det\-Transformation\-Col, }
+\item[{{\bf Mapped\-Container}$<$ {\bf Cell\-Description} $>$ $\ast$}]{container}
+\end{DoxyParamCaption}
+) const}\label{classCALICE_1_1CellDescriptionGenerator_ac9c0e3d7554036c256892c90aca53c27}
+
+
+function that updates a \doxyref{Mapped\-Container}{p.}{classCALICE_1_1MappedContainer} of \doxyref{Cell\-Description}{p.}{classCALICE_1_1CellDescription} objects 
+
+The cell positions are calculated the following way\-: \[ r_{detector} + r_{module} \cdot M_{zshift} + r_{cell} \cdot M_{rot} \\ \quad\mathrm{where}\quad M_{rot}= \begin{array}{ccc} cos(\theta) & 0 & sin(\theta) \\ 0 & 1 & 0 \\ -sin(\theta) & 0 & cos(\theta) \end{array} \quad\mathrm{and}\quad M_{zshift}= \begin{array}{ccc} 1 & 0 & 0 \\ 0 & 1 & 0 \\ 0 & 0 & 1/cos(\theta) \end{array} \]
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em mod\-Description\-Col} & \\
+\hline
+\mbox{\tt in}  & {\em mod\-Connection\-Col} & \\
+\hline
+\mbox{\tt in}  & {\em mod\-Location\-Col} & \\
+\hline
+\mbox{\tt in}  & {\em det\-Transformation\-Col} & \\
+\hline
+\mbox{\tt out}  & {\em container} & \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 19 of file Cell\-Description\-Generator.\-cc.
+
+
+
+References C\-A\-L\-I\-C\-E\-::\-Mapped\-Container$<$ T $>$\-::clear(), C\-A\-L\-I\-C\-E\-::\-Mapped\-Container$<$ T $>$\-::fill\-By\-Cell\-I\-D(), C\-A\-L\-I\-C\-E\-::\-Module\-Location\-::get\-Cell\-Index\-Offset(), C\-A\-L\-I\-C\-E\-::\-Mapper\-::get\-Decoder(), C\-A\-L\-I\-C\-E\-::\-Detector\-Transformation\-::get\-Detector\-Angle\-Z\-X(), C\-A\-L\-I\-C\-E\-::\-Detector\-Transformation\-::get\-Detector\-X0(), C\-A\-L\-I\-C\-E\-::\-Detector\-Transformation\-::get\-Detector\-Y0(), C\-A\-L\-I\-C\-E\-::\-Detector\-Transformation\-::get\-Detector\-Z0(), C\-A\-L\-I\-C\-E\-::\-Decoder\-Set\-::get\-I\-From\-Cell\-I\-D(), C\-A\-L\-I\-C\-E\-::\-Module\-Connection\-::get\-Index\-Of\-Lower\-Left\-Cell(), C\-A\-L\-I\-C\-E\-::\-Decoder\-Set\-::get\-J\-From\-Cell\-I\-D(), C\-A\-L\-I\-C\-E\-::\-Decoder\-Set\-::get\-K\-From\-Cell\-I\-D(), C\-A\-L\-I\-C\-E\-::\-Module\-Connection\-::get\-Module\-I\-D(), C\-A\-L\-I\-C\-E\-::\-Module\-Location\-::get\-Module\-Type(), C\-A\-L\-I\-C\-E\-::\-Module\-Connection\-::get\-Module\-Type(), C\-A\-L\-I\-C\-E\-::\-Cell\-Description\-::set\-Angle(), C\-A\-L\-I\-C\-E\-::\-Cell\-Description\-::set\-Position(), and C\-A\-L\-I\-C\-E\-::\-Cell\-Description\-::set\-Size().
+
+
+
+The documentation for this class was generated from the following files\-:\begin{DoxyCompactItemize}
+\item 
+Cell\-Description\-Generator.\-hh\item 
+Cell\-Description\-Generator.\-cc\end{DoxyCompactItemize}

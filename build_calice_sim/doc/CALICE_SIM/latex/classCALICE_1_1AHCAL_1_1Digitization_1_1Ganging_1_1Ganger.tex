@@ -1,0 +1,93 @@
+\section{C\-A\-L\-I\-C\-E\-:\-:A\-H\-C\-A\-L\-:\-:Digitization\-:\-:Ganging\-:\-:Ganger Class Reference}
+\label{classCALICE_1_1AHCAL_1_1Digitization_1_1Ganging_1_1Ganger}\index{C\-A\-L\-I\-C\-E\-::\-A\-H\-C\-A\-L\-::\-Digitization\-::\-Ganging\-::\-Ganger@{C\-A\-L\-I\-C\-E\-::\-A\-H\-C\-A\-L\-::\-Digitization\-::\-Ganging\-::\-Ganger}}
+
+
+The work horse.  
+
+
+
+
+{\ttfamily \#include $<$ahcal\-Ganging\-Processor.\-hh$>$}
+
+Inheritance diagram for C\-A\-L\-I\-C\-E\-:\-:A\-H\-C\-A\-L\-:\-:Digitization\-:\-:Ganging\-:\-:Ganger\-:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=0.567376cm]{classCALICE_1_1AHCAL_1_1Digitization_1_1Ganging_1_1Ganger}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+{\bf Ganger} (int cs, int off\-\_\-\-I, int off\-\_\-\-J, {\bf Contribution\-Map} $\ast$cm, float factor)\label{classCALICE_1_1AHCAL_1_1Digitization_1_1Ganging_1_1Ganger_a3b7d24c593eb13aa8dae23e5931e936f}
+
+\begin{DoxyCompactList}\small\item\em The \doxyref{Ganger}{p.}{classCALICE_1_1AHCAL_1_1Digitization_1_1Ganging_1_1Ganger} is constructed with all information needed for a region to perform the ganging. \end{DoxyCompactList}\item 
+virtual bool {\bf responsible} ({\bf Geometrical\-Indices} indices)=0\label{classCALICE_1_1AHCAL_1_1Digitization_1_1Ganging_1_1Ganger_a58eb7020c646d0db74590858303eeeba}
+
+\begin{DoxyCompactList}\small\item\em Implementations have to implement where in I/\-J they are responsible. \end{DoxyCompactList}\item 
+bool {\bf add\-Hit} ({\bf Geometrical\-Indices} indices, Sim\-Calorimeter\-Hit $\ast$hit)\label{classCALICE_1_1AHCAL_1_1Digitization_1_1Ganging_1_1Ganger_a7024d60a5f237dc2db19e4c81c1e9a97}
+
+\begin{DoxyCompactList}\small\item\em Function which return true if the ganger is responsible for this region and adds the hit to the Contribution\-Map. \end{DoxyCompactList}\item 
+{\bf Geometrical\-Indices} {\bf coarsen} ({\bf Geometrical\-Indices} ijk)\label{classCALICE_1_1AHCAL_1_1Digitization_1_1Ganging_1_1Ganger_afffd6268f8c1458531747fa482981cdc}
+
+\begin{DoxyCompactList}\small\item\em Function which returns the ganged index according to the constants defined at construction. \end{DoxyCompactList}\item 
+int {\bf coarsen\-Single\-Index} (int index, int offset)
+\begin{DoxyCompactList}\small\item\em Performs mapping from Mokka indices to ganged indices. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+int {\bf \-\_\-cell\-Size}\label{classCALICE_1_1AHCAL_1_1Digitization_1_1Ganging_1_1Ganger_a2ffe3ad34f1abfb9d110ce3fbf4bae65}
+
+\begin{DoxyCompactList}\small\item\em Quadratic side length of the cells in the region the \doxyref{Ganger}{p.}{classCALICE_1_1AHCAL_1_1Digitization_1_1Ganging_1_1Ganger} is responsible. \end{DoxyCompactList}\item 
+int {\bf \-\_\-offset\-\_\-\-I}\label{classCALICE_1_1AHCAL_1_1Digitization_1_1Ganging_1_1Ganger_a1630400f2a2850426c19c523661d9a21}
+
+\begin{DoxyCompactList}\small\item\em Offset with respect to starting counting at 1 for I. \end{DoxyCompactList}\item 
+int {\bf \-\_\-offset\-\_\-\-J}\label{classCALICE_1_1AHCAL_1_1Digitization_1_1Ganging_1_1Ganger_a9699cfc25ea1267db7642c59b87e48e3}
+
+\begin{DoxyCompactList}\small\item\em Offset with respect to starting counting at 1 for J. \end{DoxyCompactList}\item 
+{\bf Contribution\-Map} $\ast$ {\bf \-\_\-\-C\-M}\label{classCALICE_1_1AHCAL_1_1Digitization_1_1Ganging_1_1Ganger_a46c0222468c6e579e36aa02d04064518}
+
+\begin{DoxyCompactList}\small\item\em Pointer to map which stores all ganged indices and Sim\-Calorimeter\-Hits. \end{DoxyCompactList}\item 
+float {\bfseries \-\_\-tile\-Border\-Attenuation\-Factor}\label{classCALICE_1_1AHCAL_1_1Digitization_1_1Ganging_1_1Ganger_a4e6dad3dc780014323f79f0fa2390fe1}
+
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+The work horse. 
+
+A ganger holds all information for a region to perform the ganging. 
+
+Definition at line 145 of file ahcal\-Ganging\-Processor.\-hh.
+
+
+
+\subsection{Member Function Documentation}
+\index{C\-A\-L\-I\-C\-E\-::\-A\-H\-C\-A\-L\-::\-Digitization\-::\-Ganging\-::\-Ganger@{C\-A\-L\-I\-C\-E\-::\-A\-H\-C\-A\-L\-::\-Digitization\-::\-Ganging\-::\-Ganger}!coarsen\-Single\-Index@{coarsen\-Single\-Index}}
+\index{coarsen\-Single\-Index@{coarsen\-Single\-Index}!CALICE::AHCAL::Digitization::Ganging::Ganger@{C\-A\-L\-I\-C\-E\-::\-A\-H\-C\-A\-L\-::\-Digitization\-::\-Ganging\-::\-Ganger}}
+\subsubsection[{coarsen\-Single\-Index}]{\setlength{\rightskip}{0pt plus 5cm}int C\-A\-L\-I\-C\-E\-::\-A\-H\-C\-A\-L\-::\-Digitization\-::\-Ganging\-::\-Ganger\-::coarsen\-Single\-Index (
+\begin{DoxyParamCaption}
+\item[{int}]{index, }
+\item[{int}]{offset}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\label{classCALICE_1_1AHCAL_1_1Digitization_1_1Ganging_1_1Ganger_a3b7c7319137acba5afc98ce3be336281}
+
+
+Performs mapping from Mokka indices to ganged indices. 
+
+The main \char`\"{}algorithm\char`\"{}. 
+
+Definition at line 241 of file ahcal\-Ganging\-Processor.\-hh.
+
+
+
+References \-\_\-cell\-Size.
+
+
+
+Referenced by coarsen().
+
+
+
+The documentation for this class was generated from the following file\-:\begin{DoxyCompactItemize}
+\item 
+ahcal\-Ganging\-Processor.\-hh\end{DoxyCompactItemize}

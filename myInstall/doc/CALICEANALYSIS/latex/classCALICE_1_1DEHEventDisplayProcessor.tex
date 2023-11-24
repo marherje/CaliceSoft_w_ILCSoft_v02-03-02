@@ -1,0 +1,343 @@
+\section{C\-A\-L\-I\-C\-E\-:\-:D\-E\-H\-Event\-Display\-Processor Class Reference}
+\label{classCALICE_1_1DEHEventDisplayProcessor}\index{C\-A\-L\-I\-C\-E\-::\-D\-E\-H\-Event\-Display\-Processor@{C\-A\-L\-I\-C\-E\-::\-D\-E\-H\-Event\-Display\-Processor}}
+
+
+This is a Marlin processor for displaying events with C\-E\-D.  
+
+
+
+
+{\ttfamily \#include $<$D\-E\-H\-Event\-Display\-Processor.\-hh$>$}
+
+Inheritance diagram for C\-A\-L\-I\-C\-E\-:\-:D\-E\-H\-Event\-Display\-Processor\-:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classCALICE_1_1DEHEventDisplayProcessor}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+virtual Processor $\ast$ {\bfseries new\-Processor} ()\label{classCALICE_1_1DEHEventDisplayProcessor_a7bcbd39aa9d9ea57a7c1175969cca469}
+
+\item 
+virtual void {\bf init} ()
+\item 
+virtual void {\bf process\-Run\-Header} (L\-C\-Run\-Header $\ast$run)
+\item 
+virtual void {\bf process\-Event} (L\-C\-Event $\ast$evt)
+\item 
+virtual void {\bfseries check} (L\-C\-Event $\ast$evt)\label{classCALICE_1_1DEHEventDisplayProcessor_ae42ba19ef5fa0c4c62bde36f8a40210e}
+
+\item 
+virtual void {\bf end} ()
+\item 
+virtual void {\bfseries conditions\-Changed} (L\-C\-Collection $\ast$col)\label{classCALICE_1_1DEHEventDisplayProcessor_a8230ef1e48e8ef2c3dae20ed3d009f70}
+
+\end{DoxyCompactItemize}
+\subsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void {\bfseries choose\-Color\-And\-Layer} (const float var, unsigned int \&color, unsigned int \&layer, const bool is\-Time) const \label{classCALICE_1_1DEHEventDisplayProcessor_ac3a2cd66ec049d6dc9d1be7e4829ff97}
+
+\item 
+void {\bfseries draw\-Cell} (const C\-A\-L\-I\-C\-E\-::\-Cell\-Description $\ast$description, const unsigned int color, const unsigned int layer, const bool solid=true) const \label{classCALICE_1_1DEHEventDisplayProcessor_a50d7ae11587eaffc110175b5a2ae36b0}
+
+\item 
+void {\bfseries draw\-Cell2} (const C\-A\-L\-I\-C\-E\-::\-Cell\-Description $\ast$description, const unsigned int color, const unsigned int layer, const bool solid=true) const \label{classCALICE_1_1DEHEventDisplayProcessor_a2ec7b70ac889295aebe4252d893ca824}
+
+\item 
+void {\bfseries draw\-Hit} (const Calorimeter\-Hit $\ast$hit, const unsigned int color, const unsigned int layer) const \label{classCALICE_1_1DEHEventDisplayProcessor_ad392af5f327b5237ea67100bb7ae4c08}
+
+\item 
+void {\bfseries draw\-Start\-Layer} (int st, int M\-C\-\_\-st, int n\-Layers)\label{classCALICE_1_1DEHEventDisplayProcessor_ab865f57c34a1678a857a1f0b51e0e856}
+
+\item 
+bool {\bfseries is\-T0event} (L\-C\-Event $\ast$evt)\label{classCALICE_1_1DEHEventDisplayProcessor_a90277317c86ea420cdb2134226911ce2}
+
+\item 
+void {\bfseries draw\-Module} (int module\-\_\-type, double module\-\_\-center\-\_\-pos[3])\label{classCALICE_1_1DEHEventDisplayProcessor_a418386562f71c855a4fb0e63043dc5b0}
+
+\item 
+void {\bfseries draw\-Detector\-D\-E\-H} ()\label{classCALICE_1_1DEHEventDisplayProcessor_a597cfeb5229cfecdace31719ac7ab310}
+
+\item 
+void {\bfseries draw\-Event} (L\-C\-Collection $\ast$col)\label{classCALICE_1_1DEHEventDisplayProcessor_afd7f3ba14295ded2c618286f193f7935}
+
+\item 
+void {\bfseries draw\-Track} (L\-C\-Collection $\ast$col\-D\-W\-C)\label{classCALICE_1_1DEHEventDisplayProcessor_a457826afbf89e0097d088a47a5001122}
+
+\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+std\-::string {\bfseries \-\_\-col\-Name\-Ecal}\label{classCALICE_1_1DEHEventDisplayProcessor_a3289554659565ea59fab72086c5f7262}
+
+\item 
+std\-::string {\bfseries \-\_\-col\-Name\-Hcal}\label{classCALICE_1_1DEHEventDisplayProcessor_ae846c99fb4cfdaa66b66aa97fa08c441}
+
+\item 
+std\-::string {\bfseries \-\_\-col\-Name\-T\-C}\label{classCALICE_1_1DEHEventDisplayProcessor_ac3c36067a80e698cc6c57afd080fd774}
+
+\item 
+std\-::string {\bfseries \-\_\-col\-Name\-P\-S}\label{classCALICE_1_1DEHEventDisplayProcessor_adde9c073c88b2153ea5c105d8d341cb4}
+
+\item 
+std\-::string {\bfseries \-\_\-evt\-Var\-Col\-Name}\label{classCALICE_1_1DEHEventDisplayProcessor_a2e9f79846f709e25102187f5add83f5c}
+
+\item 
+std\-::string {\bfseries \-\_\-mapping\-Processor\-Name}\label{classCALICE_1_1DEHEventDisplayProcessor_aa1134a1ba0a930a7d9cf30f3166b21ae}
+
+\item 
+std\-::string {\bfseries \-\_\-cell\-Neighbours\-Processor\-Name}\label{classCALICE_1_1DEHEventDisplayProcessor_a45d08934c78bcb6b60f083cb91ca3699}
+
+\item 
+std\-::string {\bfseries \-\_\-cell\-Description\-Processor\-Name}\label{classCALICE_1_1DEHEventDisplayProcessor_a82c342737a9c59f3a889b0b32f2526a0}
+
+\item 
+std\-::string {\bf \-\_\-calib\-Processor\-Name}
+\item 
+std\-::string {\bfseries \-\_\-col\-Name\-Module\-Location}\label{classCALICE_1_1DEHEventDisplayProcessor_a03c7635b25f7787509292ddb0bc1c8fb}
+
+\item 
+bool {\bfseries \-\_\-module\-Location\-Changed}\label{classCALICE_1_1DEHEventDisplayProcessor_a97ab7f75fca58beab3dba3fbd1c40e40}
+
+\item 
+L\-C\-Collection $\ast$ {\bfseries \-\_\-col\-Module\-Location}\label{classCALICE_1_1DEHEventDisplayProcessor_aad3d88faa8b335f007179424e6c32892}
+
+\item 
+int {\bfseries \-\_\-wait\-For\-Key\-Pressed}\label{classCALICE_1_1DEHEventDisplayProcessor_ac23ee5414f7dfee1ac7a1a964a47e43d}
+
+\item 
+int {\bfseries \-\_\-draw}\label{classCALICE_1_1DEHEventDisplayProcessor_a73cedbcb76c8729dc2505dae7ea59781}
+
+\item 
+bool {\bfseries \-\_\-drawst}\label{classCALICE_1_1DEHEventDisplayProcessor_abb9bbd4c81c80014a427d159f06ab665}
+
+\item 
+int {\bfseries \-\_\-append\-To\-Existing\-C\-E\-D}\label{classCALICE_1_1DEHEventDisplayProcessor_a065675fc34402136abccacad2972fafa}
+
+\item 
+int {\bfseries \-\_\-port\-C\-E\-D}\label{classCALICE_1_1DEHEventDisplayProcessor_a180e0db34944e7b648bf660ee8d22bef}
+
+\item 
+bool {\bfseries \-\_\-do\-T0selection}\label{classCALICE_1_1DEHEventDisplayProcessor_a4e6b1ea5cef1ae4b6fbbd6b5416f6676}
+
+\item 
+bool {\bfseries \-\_\-save\-Log\-File}\label{classCALICE_1_1DEHEventDisplayProcessor_a8212d153ec6124ecbb29e05cc606dbe2}
+
+\item 
+int {\bfseries \-\_\-n\-T0s}\label{classCALICE_1_1DEHEventDisplayProcessor_a70a1f949c685f2c50c96ba162b4ab4a9}
+
+\item 
+int {\bfseries \-\_\-min\-N\-Hits}\label{classCALICE_1_1DEHEventDisplayProcessor_a9b9bed227a184719f6bc60d5007ab93d}
+
+\item 
+bool {\bfseries \-\_\-use\-\_\-time}\label{classCALICE_1_1DEHEventDisplayProcessor_ac478a3791616d44bb295d4a362a40f34}
+
+\item 
+int {\bfseries \-\_\-n\-Hits}\label{classCALICE_1_1DEHEventDisplayProcessor_ad9e07963ec64eb57545a0d2dbc2287e1}
+
+\item 
+int {\bfseries st}\label{classCALICE_1_1DEHEventDisplayProcessor_ad0b8b037b954683d444d7380ca7e0687}
+
+\item 
+int {\bfseries M\-C\-\_\-st}\label{classCALICE_1_1DEHEventDisplayProcessor_aba9ff8366393bf786c70b55a30b3a712}
+
+\item 
+int {\bfseries n\-Layers}\label{classCALICE_1_1DEHEventDisplayProcessor_afb9e4ce990b1aa46d41b9ddbd0ac4334}
+
+\item 
+std\-::vector$<$ std\-::string $>$ {\bfseries \-\_\-input\-Collection\-Names}\label{classCALICE_1_1DEHEventDisplayProcessor_a876ee13be41fde039c633d0b95b125b1}
+
+\item 
+std\-::string {\bfseries \-\_\-input\-Collection\-Name\-D\-W\-C}\label{classCALICE_1_1DEHEventDisplayProcessor_ab7f37d394e605192982299404553f089}
+
+\item 
+int {\bfseries \-\_\-track\-Draw}\label{classCALICE_1_1DEHEventDisplayProcessor_a5d37f26bf9fc8b1797c48d0e966fb795}
+
+\item 
+float {\bfseries \-\_\-module\-Max\-Z}\label{classCALICE_1_1DEHEventDisplayProcessor_aef3e2dcfec8f27efa8d8dab1fa07b5e2}
+
+\item 
+std\-::vector$<$ float $>$ {\bfseries \-\_\-track\-Offsets}\label{classCALICE_1_1DEHEventDisplayProcessor_a2821ed36ee9cbac64300ae42cd74b1b6}
+
+\item 
+String\-Vec {\bf \-\_\-\-T0\-Vector}
+\item 
+std\-::map$<$ int, std\-::vector\\*
+$<$ std\-::pair$<$ int, int $>$ $>$ $>$ {\bf \-\_\-map\-T0s}
+\item 
+int {\bfseries \-\_\-n\-Run}\label{classCALICE_1_1DEHEventDisplayProcessor_ae190101e05f623eb201892e6e2b4a295}
+
+\item 
+int {\bfseries \-\_\-n\-Evt}\label{classCALICE_1_1DEHEventDisplayProcessor_af03c1e1ba652a7a52abf66b7a0cb0b11}
+
+\item 
+const C\-A\-L\-I\-C\-E\-::\-Ahc2\-Mapper $\ast$ {\bfseries \-\_\-mapper}\label{classCALICE_1_1DEHEventDisplayProcessor_ab73ecddabf9a09c62b9467945bc37b87}
+
+\item 
+unsigned int {\bfseries \-\_\-mapper\-Version}\label{classCALICE_1_1DEHEventDisplayProcessor_a953b0f6038741b2623287ea486c67880}
+
+\item 
+C\-A\-L\-I\-C\-E\-::\-Mapped\-Container\\*
+$<$ C\-A\-L\-I\-C\-E\-::\-Cell\-Description $>$ $\ast$ {\bfseries \-\_\-cell\-Descriptions}\label{classCALICE_1_1DEHEventDisplayProcessor_a5633bc4a5de6184583c15e6dfa3be325}
+
+\item 
+C\-A\-L\-I\-C\-E\-::\-Mapped\-Container\\*
+$<$ C\-A\-L\-I\-C\-E\-::\-Cell\-Neighbours $>$ $\ast$ {\bfseries \-\_\-cell\-Neighbours}\label{classCALICE_1_1DEHEventDisplayProcessor_aaeb9c54cefb3a9cdfb34272aecce6112}
+
+\item 
+C\-A\-L\-I\-C\-E\-::\-Mapped\-Container\\*
+$<$ C\-A\-L\-I\-C\-E\-::\-Ahc2\-Calibrations $>$ $\ast$ {\bf \-\_\-calib\-Container}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+This is a Marlin processor for displaying events with C\-E\-D. 
+
+If you want to display events with C\-E\-D, you need to start the display ({\ttfamily glced}) before running Marlin.
+
+Mouse commands that can be used within C\-E\-D\-:
+
+
+\begin{DoxyItemize}
+\item {\ttfamily  left + move } -\/$>$ rotate view
+\item {\ttfamily  right + move down/up } -\/$>$ zoom view in/out
+\item {\ttfamily  center + move } -\/$>$ shift view
+\item {\ttfamily  wheel } -\/$>$ shift view along z-\/axis
+\end{DoxyItemize}
+
+Keyboard commands that can be used within C\-E\-D\-:
+
+
+\begin{DoxyItemize}
+\item {\ttfamily  b } -\/$>$ toggle background color
+\item {\ttfamily  r } -\/$>$ got to default angular view
+\item {\ttfamily  s } -\/$>$ got to default side view
+\item {\ttfamily  f } -\/$>$ got to default front view
+\item {\ttfamily  v } -\/$>$ switch on/off fisheye view
+\item {\ttfamily  0 ... 9 } -\/$>$ switch on/off C\-E\-D display layer 0 ... 9
+\item {\ttfamily  shift + 0 ... 9 } -\/$>$ switch on/off display layer 10 ... 19
+\item {\ttfamily  t } -\/$>$ switch on/off C\-E\-D display layer 20
+\item {\ttfamily  y } -\/$>$ switch on/off C\-E\-D display layer 21
+\item {\ttfamily  u } -\/$>$ switch on/off C\-E\-D display layer 22
+\item {\ttfamily  i } -\/$>$ switch on/off C\-E\-D display layer 23
+\end{DoxyItemize}
+
+Assignment of C\-E\-D display layers\-:
+
+
+\begin{DoxyItemize}
+\item 0\-:
+\item 1\-: H\-B\-U / E\-B\-U hits ( hit energy $<$ 0.\-5 mip )
+\item 2\-: H\-B\-U / E\-B\-U hits ( 0.\-5 mip $<$= hit energy $<$ 1.\-65 mip )
+\item 3\-: H\-B\-U / E\-B\-U hits ( 1.\-65 mip $<$= hit energy $<$ 2.\-9 mip )
+\item 4\-: H\-B\-U / E\-B\-U hits ( 2.\-9 mip $<$= hit energy $<$ 5.\-4 mip )
+\item 5\-: H\-B\-U / E\-B\-U hits ( hit energy $>$= 5.\-4 mip )
+\item 6\-:
+\item 7\-:
+\item 8\-:
+\item 9\-:
+\item 10\-:
+\item 11\-:
+\item 12\-:
+\item 13\-:
+\item 14\-:
+\item 15\-:
+\item 16\-:
+\item 17\-:
+\item 18\-:
+\item 19\-:
+\item 20\-: cell frames\-: E\-B\-U strips
+\item 21\-: cell frames\-: H\-B\-U tiles 3x3 cm$^\wedge$2
+\item 22\-:
+\item 23\-:
+\end{DoxyItemize}
+
+C\-E\-D color coding for hit energies\-:
+
+ 
+\begin{DoxyImage}
+\includegraphics[width=10cm]{EventDisplayProcessor_colorCode}
+\caption{C\-E\-D color coding}
+\end{DoxyImage}
+
+
+\begin{DoxyAuthor}{Author}
+S. Lu, D\-E\-S\-Y 
+\end{DoxyAuthor}
+\begin{DoxyVersion}{Version}
+1.\-0 
+\end{DoxyVersion}
+\begin{DoxyDate}{Date}
+November 2014
+\end{DoxyDate}
+Modification \-: E. Brianne, D\-E\-S\-Y Date \-: December 2015 
+
+\subsection{Member Function Documentation}
+\index{C\-A\-L\-I\-C\-E\-::\-D\-E\-H\-Event\-Display\-Processor@{C\-A\-L\-I\-C\-E\-::\-D\-E\-H\-Event\-Display\-Processor}!end@{end}}
+\index{end@{end}!CALICE::DEHEventDisplayProcessor@{C\-A\-L\-I\-C\-E\-::\-D\-E\-H\-Event\-Display\-Processor}}
+\subsubsection[{end}]{\setlength{\rightskip}{0pt plus 5cm}void C\-A\-L\-I\-C\-E\-::\-D\-E\-H\-Event\-Display\-Processor\-::end (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}\label{classCALICE_1_1DEHEventDisplayProcessor_addaf544e8e779e5c423cabdcd7c2bd16}
+Called after data processing for clean up. \index{C\-A\-L\-I\-C\-E\-::\-D\-E\-H\-Event\-Display\-Processor@{C\-A\-L\-I\-C\-E\-::\-D\-E\-H\-Event\-Display\-Processor}!init@{init}}
+\index{init@{init}!CALICE::DEHEventDisplayProcessor@{C\-A\-L\-I\-C\-E\-::\-D\-E\-H\-Event\-Display\-Processor}}
+\subsubsection[{init}]{\setlength{\rightskip}{0pt plus 5cm}void C\-A\-L\-I\-C\-E\-::\-D\-E\-H\-Event\-Display\-Processor\-::init (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}\label{classCALICE_1_1DEHEventDisplayProcessor_aa85bc711c1158c2e6a9cccd54875aec3}
+Called at the begin of the job before anything is read. Use to initialize the processor, e.\-g. book histograms. 
+
+References \-\_\-calib\-Container, \-\_\-calib\-Processor\-Name, and \-\_\-map\-T0s.
+
+\index{C\-A\-L\-I\-C\-E\-::\-D\-E\-H\-Event\-Display\-Processor@{C\-A\-L\-I\-C\-E\-::\-D\-E\-H\-Event\-Display\-Processor}!process\-Event@{process\-Event}}
+\index{process\-Event@{process\-Event}!CALICE::DEHEventDisplayProcessor@{C\-A\-L\-I\-C\-E\-::\-D\-E\-H\-Event\-Display\-Processor}}
+\subsubsection[{process\-Event}]{\setlength{\rightskip}{0pt plus 5cm}void C\-A\-L\-I\-C\-E\-::\-D\-E\-H\-Event\-Display\-Processor\-::process\-Event (
+\begin{DoxyParamCaption}
+\item[{L\-C\-Event $\ast$}]{evt}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}\label{classCALICE_1_1DEHEventDisplayProcessor_ab10768f77362bd79f8690caf36cd3155}
+Called for every event -\/ the working horse. \index{C\-A\-L\-I\-C\-E\-::\-D\-E\-H\-Event\-Display\-Processor@{C\-A\-L\-I\-C\-E\-::\-D\-E\-H\-Event\-Display\-Processor}!process\-Run\-Header@{process\-Run\-Header}}
+\index{process\-Run\-Header@{process\-Run\-Header}!CALICE::DEHEventDisplayProcessor@{C\-A\-L\-I\-C\-E\-::\-D\-E\-H\-Event\-Display\-Processor}}
+\subsubsection[{process\-Run\-Header}]{\setlength{\rightskip}{0pt plus 5cm}void C\-A\-L\-I\-C\-E\-::\-D\-E\-H\-Event\-Display\-Processor\-::process\-Run\-Header (
+\begin{DoxyParamCaption}
+\item[{L\-C\-Run\-Header $\ast$}]{run}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}\label{classCALICE_1_1DEHEventDisplayProcessor_a7c60e85bb47247683804ebf8d190bf5a}
+Called for every run. 
+
+\subsection{Member Data Documentation}
+\index{C\-A\-L\-I\-C\-E\-::\-D\-E\-H\-Event\-Display\-Processor@{C\-A\-L\-I\-C\-E\-::\-D\-E\-H\-Event\-Display\-Processor}!\-\_\-calib\-Container@{\-\_\-calib\-Container}}
+\index{\-\_\-calib\-Container@{\-\_\-calib\-Container}!CALICE::DEHEventDisplayProcessor@{C\-A\-L\-I\-C\-E\-::\-D\-E\-H\-Event\-Display\-Processor}}
+\subsubsection[{\-\_\-calib\-Container}]{\setlength{\rightskip}{0pt plus 5cm}C\-A\-L\-I\-C\-E\-::\-Mapped\-Container$<$C\-A\-L\-I\-C\-E\-::\-Ahc2\-Calibrations$>$$\ast$ C\-A\-L\-I\-C\-E\-::\-D\-E\-H\-Event\-Display\-Processor\-::\-\_\-calib\-Container\hspace{0.3cm}{\ttfamily [protected]}}\label{classCALICE_1_1DEHEventDisplayProcessor_a6e0a57e1a933e47f300d9c9e0983b0a8}
+mapped container of Si\-P\-M calibrations 
+
+Referenced by init().
+
+\index{C\-A\-L\-I\-C\-E\-::\-D\-E\-H\-Event\-Display\-Processor@{C\-A\-L\-I\-C\-E\-::\-D\-E\-H\-Event\-Display\-Processor}!\-\_\-calib\-Processor\-Name@{\-\_\-calib\-Processor\-Name}}
+\index{\-\_\-calib\-Processor\-Name@{\-\_\-calib\-Processor\-Name}!CALICE::DEHEventDisplayProcessor@{C\-A\-L\-I\-C\-E\-::\-D\-E\-H\-Event\-Display\-Processor}}
+\subsubsection[{\-\_\-calib\-Processor\-Name}]{\setlength{\rightskip}{0pt plus 5cm}std\-::string C\-A\-L\-I\-C\-E\-::\-D\-E\-H\-Event\-Display\-Processor\-::\-\_\-calib\-Processor\-Name\hspace{0.3cm}{\ttfamily [protected]}}\label{classCALICE_1_1DEHEventDisplayProcessor_a11dd1165470ce5fd88021cb068ce75e3}
+Calibration Processor Name 
+
+Referenced by init().
+
+\index{C\-A\-L\-I\-C\-E\-::\-D\-E\-H\-Event\-Display\-Processor@{C\-A\-L\-I\-C\-E\-::\-D\-E\-H\-Event\-Display\-Processor}!\-\_\-map\-T0s@{\-\_\-map\-T0s}}
+\index{\-\_\-map\-T0s@{\-\_\-map\-T0s}!CALICE::DEHEventDisplayProcessor@{C\-A\-L\-I\-C\-E\-::\-D\-E\-H\-Event\-Display\-Processor}}
+\subsubsection[{\-\_\-map\-T0s}]{\setlength{\rightskip}{0pt plus 5cm}std\-::map$<$int, std\-::vector$<$ std\-::pair$<$int, int$>$ $>$ $>$ C\-A\-L\-I\-C\-E\-::\-D\-E\-H\-Event\-Display\-Processor\-::\-\_\-map\-T0s\hspace{0.3cm}{\ttfamily [protected]}}\label{classCALICE_1_1DEHEventDisplayProcessor_a76f178c1dd86aea8af140c2f66d7620d}
+map for T0s 
+
+Referenced by init().
+
+\index{C\-A\-L\-I\-C\-E\-::\-D\-E\-H\-Event\-Display\-Processor@{C\-A\-L\-I\-C\-E\-::\-D\-E\-H\-Event\-Display\-Processor}!\-\_\-\-T0\-Vector@{\-\_\-\-T0\-Vector}}
+\index{\-\_\-\-T0\-Vector@{\-\_\-\-T0\-Vector}!CALICE::DEHEventDisplayProcessor@{C\-A\-L\-I\-C\-E\-::\-D\-E\-H\-Event\-Display\-Processor}}
+\subsubsection[{\-\_\-\-T0\-Vector}]{\setlength{\rightskip}{0pt plus 5cm}String\-Vec C\-A\-L\-I\-C\-E\-::\-D\-E\-H\-Event\-Display\-Processor\-::\-\_\-\-T0\-Vector\hspace{0.3cm}{\ttfamily [protected]}}\label{classCALICE_1_1DEHEventDisplayProcessor_a2cd8fdfd7bdb4292a7f8e049686fa4a2}
+Vector containing T0s 
+
+The documentation for this class was generated from the following files\-:\begin{DoxyCompactItemize}
+\item 
+/nfs/dust/ilc/user/marquezh/\-Calice\-Soft\-\_\-w\-\_\-\-I\-L\-C\-Soft\-\_\-v02-\/03-\/02/calice\-\_\-analysis/addon\-Procs/include/D\-E\-H\-Event\-Display\-Processor.\-hh\item 
+/nfs/dust/ilc/user/marquezh/\-Calice\-Soft\-\_\-w\-\_\-\-I\-L\-C\-Soft\-\_\-v02-\/03-\/02/calice\-\_\-analysis/addon\-Procs/src/D\-E\-H\-Event\-Display\-Processor.\-cc\end{DoxyCompactItemize}

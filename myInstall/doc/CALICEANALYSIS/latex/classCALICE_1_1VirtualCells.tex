@@ -1,0 +1,161 @@
+\section{C\-A\-L\-I\-C\-E\-:\-:Virtual\-Cells Class Reference}
+\label{classCALICE_1_1VirtualCells}\index{C\-A\-L\-I\-C\-E\-::\-Virtual\-Cells@{C\-A\-L\-I\-C\-E\-::\-Virtual\-Cells}}
+
+
+{\ttfamily \#include $<$Virtual\-Cells.\-hh$>$}
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+{\bf Virtual\-Cells} (const int cell\-I\-D, const float angle)
+\item 
+int {\bf get\-Cell\-I\-D} () const 
+\item 
+unsigned int {\bf get\-Number\-Of\-Virtual\-Cells} () const 
+\item 
+const float $\ast$ {\bf get\-Virtual\-Cell\-Position} (unsigned int i) const 
+\item 
+void {\bf add\-Cell} (const float x, const float y, const float z)
+\item 
+void {\bf add\-Cell} (const float $\ast$position)
+\item 
+float {\bf get\-Angle} () const 
+\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+const int {\bfseries \-\_\-cell\-I\-D}\label{classCALICE_1_1VirtualCells_afa83be29e6de5c242fc8a90fff8dde5c}
+
+\item 
+const float {\bfseries \-\_\-cell\-Angle}\label{classCALICE_1_1VirtualCells_a4c57922d6b47ce4dece4d7bf6657720e}
+
+\item 
+std\-::vector$<$ const float $\ast$ $>$ {\bfseries \-\_\-cell\-Positions}\label{classCALICE_1_1VirtualCells_a939247ffe329c15b1a6530fc48407c83}
+
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+container class for virtual sub cells
+
+\begin{DoxyAuthor}{Author}
+{\tt Benjamin.\-Lutz@desy.\-de} 
+\end{DoxyAuthor}
+\begin{DoxyDate}{Date}
+July 2009 
+\end{DoxyDate}
+\begin{DoxyVersion}{Version}
+0.\-1 
+\end{DoxyVersion}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\index{C\-A\-L\-I\-C\-E\-::\-Virtual\-Cells@{C\-A\-L\-I\-C\-E\-::\-Virtual\-Cells}!Virtual\-Cells@{Virtual\-Cells}}
+\index{Virtual\-Cells@{Virtual\-Cells}!CALICE::VirtualCells@{C\-A\-L\-I\-C\-E\-::\-Virtual\-Cells}}
+\subsubsection[{Virtual\-Cells}]{\setlength{\rightskip}{0pt plus 5cm}C\-A\-L\-I\-C\-E\-::\-Virtual\-Cells\-::\-Virtual\-Cells (
+\begin{DoxyParamCaption}
+\item[{const int}]{cell\-I\-D, }
+\item[{const float}]{angle}
+\end{DoxyParamCaption}
+)}\label{classCALICE_1_1VirtualCells_ac3f91d291b715af9b9b0479e98ba63d6}
+constructor
+
+
+\begin{DoxyParams}{Parameters}
+{\em cell\-I\-D} & (Mokka) cell I\-D of the mother cell \\
+\hline
+{\em angle} & angluar orientation of mother cell \\
+\hline
+\end{DoxyParams}
+
+
+\subsection{Member Function Documentation}
+\index{C\-A\-L\-I\-C\-E\-::\-Virtual\-Cells@{C\-A\-L\-I\-C\-E\-::\-Virtual\-Cells}!add\-Cell@{add\-Cell}}
+\index{add\-Cell@{add\-Cell}!CALICE::VirtualCells@{C\-A\-L\-I\-C\-E\-::\-Virtual\-Cells}}
+\subsubsection[{add\-Cell}]{\setlength{\rightskip}{0pt plus 5cm}void C\-A\-L\-I\-C\-E\-::\-Virtual\-Cells\-::add\-Cell (
+\begin{DoxyParamCaption}
+\item[{const float}]{x, }
+\item[{const float}]{y, }
+\item[{const float}]{z}
+\end{DoxyParamCaption}
+)}\label{classCALICE_1_1VirtualCells_acf25df7941d5bf93bea069b09cb9146b}
+add sub cell
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em x} & x position of sub-\/cell \\
+\hline
+\mbox{\tt in}  & {\em y} & y position of sub-\/cell \\
+\hline
+\mbox{\tt in}  & {\em z} & z position of sub-\/cell \\
+\hline
+\end{DoxyParams}
+
+
+Referenced by C\-A\-L\-I\-C\-E\-::\-Virtual\-Cells\-Calculator\-::calculate().
+
+\index{C\-A\-L\-I\-C\-E\-::\-Virtual\-Cells@{C\-A\-L\-I\-C\-E\-::\-Virtual\-Cells}!add\-Cell@{add\-Cell}}
+\index{add\-Cell@{add\-Cell}!CALICE::VirtualCells@{C\-A\-L\-I\-C\-E\-::\-Virtual\-Cells}}
+\subsubsection[{add\-Cell}]{\setlength{\rightskip}{0pt plus 5cm}void C\-A\-L\-I\-C\-E\-::\-Virtual\-Cells\-::add\-Cell (
+\begin{DoxyParamCaption}
+\item[{const float $\ast$}]{position}
+\end{DoxyParamCaption}
+)}\label{classCALICE_1_1VirtualCells_a429c3423e4d7552359ee125f024bbc9d}
+add sub cell
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em position} & array of 3 floats (x,y,z) \\
+\hline
+\end{DoxyParams}
+\index{C\-A\-L\-I\-C\-E\-::\-Virtual\-Cells@{C\-A\-L\-I\-C\-E\-::\-Virtual\-Cells}!get\-Angle@{get\-Angle}}
+\index{get\-Angle@{get\-Angle}!CALICE::VirtualCells@{C\-A\-L\-I\-C\-E\-::\-Virtual\-Cells}}
+\subsubsection[{get\-Angle}]{\setlength{\rightskip}{0pt plus 5cm}float C\-A\-L\-I\-C\-E\-::\-Virtual\-Cells\-::get\-Angle (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}\label{classCALICE_1_1VirtualCells_a0c766d3bac6161532603da07c78debcd}
+get the angle of cells
+
+\begin{DoxyReturn}{Returns}
+angle of cells 
+\end{DoxyReturn}
+\index{C\-A\-L\-I\-C\-E\-::\-Virtual\-Cells@{C\-A\-L\-I\-C\-E\-::\-Virtual\-Cells}!get\-Cell\-I\-D@{get\-Cell\-I\-D}}
+\index{get\-Cell\-I\-D@{get\-Cell\-I\-D}!CALICE::VirtualCells@{C\-A\-L\-I\-C\-E\-::\-Virtual\-Cells}}
+\subsubsection[{get\-Cell\-I\-D}]{\setlength{\rightskip}{0pt plus 5cm}int C\-A\-L\-I\-C\-E\-::\-Virtual\-Cells\-::get\-Cell\-I\-D (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}\label{classCALICE_1_1VirtualCells_ac0a30f93a9135338f3fba5c5ecbf518c}
+get cell\-I\-D of the mother cell
+
+\begin{DoxyReturn}{Returns}
+(Mokka) cell I\-D of mother cell 
+\end{DoxyReturn}
+\index{C\-A\-L\-I\-C\-E\-::\-Virtual\-Cells@{C\-A\-L\-I\-C\-E\-::\-Virtual\-Cells}!get\-Number\-Of\-Virtual\-Cells@{get\-Number\-Of\-Virtual\-Cells}}
+\index{get\-Number\-Of\-Virtual\-Cells@{get\-Number\-Of\-Virtual\-Cells}!CALICE::VirtualCells@{C\-A\-L\-I\-C\-E\-::\-Virtual\-Cells}}
+\subsubsection[{get\-Number\-Of\-Virtual\-Cells}]{\setlength{\rightskip}{0pt plus 5cm}unsigned int C\-A\-L\-I\-C\-E\-::\-Virtual\-Cells\-::get\-Number\-Of\-Virtual\-Cells (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}\label{classCALICE_1_1VirtualCells_a302d770ababa731e3db0167f838866fd}
+get number of sub cells
+
+returns number of sub cells \index{C\-A\-L\-I\-C\-E\-::\-Virtual\-Cells@{C\-A\-L\-I\-C\-E\-::\-Virtual\-Cells}!get\-Virtual\-Cell\-Position@{get\-Virtual\-Cell\-Position}}
+\index{get\-Virtual\-Cell\-Position@{get\-Virtual\-Cell\-Position}!CALICE::VirtualCells@{C\-A\-L\-I\-C\-E\-::\-Virtual\-Cells}}
+\subsubsection[{get\-Virtual\-Cell\-Position}]{\setlength{\rightskip}{0pt plus 5cm}const float$\ast$ C\-A\-L\-I\-C\-E\-::\-Virtual\-Cells\-::get\-Virtual\-Cell\-Position (
+\begin{DoxyParamCaption}
+\item[{unsigned int}]{i}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}\label{classCALICE_1_1VirtualCells_ae4f1f3d006ba26cbf8d5abe9793f996a}
+get cell position of the i-\/th sub cell
+
+\begin{DoxyReturn}{Returns}
+array of 3 floats (x,y,z) 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following files\-:\begin{DoxyCompactItemize}
+\item 
+/nfs/dust/ilc/user/marquezh/\-Calice\-Soft\-\_\-w\-\_\-\-I\-L\-C\-Soft\-\_\-v02-\/03-\/02/calice\-\_\-analysis/addon\-Procs/include/Virtual\-Cells.\-hh\item 
+/nfs/dust/ilc/user/marquezh/\-Calice\-Soft\-\_\-w\-\_\-\-I\-L\-C\-Soft\-\_\-v02-\/03-\/02/calice\-\_\-analysis/addon\-Procs/src/Virtual\-Cells.\-cc\end{DoxyCompactItemize}

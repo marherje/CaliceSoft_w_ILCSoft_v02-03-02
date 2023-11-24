@@ -1,0 +1,119 @@
+\section{Stat\-Obj\-\_\-t Class Reference}
+\label{classStatObj__t}\index{Stat\-Obj\-\_\-t@{Stat\-Obj\-\_\-t}}
+
+
+Abstract interface of an object to collect and show some statistical data.  
+
+
+
+
+{\ttfamily \#include $<$Fe\-Stat\-List\-\_\-t.\-hh$>$}
+
+Inheritance diagram for Stat\-Obj\-\_\-t\-:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classStatObj__t}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+virtual {\bf $\sim$\-Stat\-Obj\-\_\-t} ()\label{classStatObj__t_ab5e0494d097d497d10a8896a7dae4aed}
+
+\begin{DoxyCompactList}\small\item\em objects with virtual methods should also have a virtual destructor. \end{DoxyCompactList}\item 
+virtual void {\bf finish} ()=0\label{classStatObj__t_a47e9637e59dc8e2cb5889de98160e553}
+
+\begin{DoxyCompactList}\small\item\em Method which can be used to perform some calculations just before the results are shown. \end{DoxyCompactList}\item 
+virtual void {\bf print\-Table\-Header} (std\-::ostream \&out) const =0
+\begin{DoxyCompactList}\small\item\em Print a header before printing the contents of all the objects. \end{DoxyCompactList}\item 
+virtual void {\bf print} (std\-::ostream \&out)=0
+\begin{DoxyCompactList}\small\item\em Print the statistics collected for the corresponding front-\/end to the output stream. \end{DoxyCompactList}\item 
+virtual bool {\bf has\-Info} () const =0
+\begin{DoxyCompactList}\small\item\em Return true if the statistics collected for the corresponding front-\/end should be printed. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Abstract interface of an object to collect and show some statistical data. 
+
+The idea is that one of these objects is created per Crc board front-\/end. \begin{DoxySeeAlso}{See Also}
+\doxyref{Fe\-Stat\-List\-Base\-\_\-t}{p.}{classFeStatListBase__t} 
+\end{DoxySeeAlso}
+\begin{DoxyAuthor}{Author}
+Goetz Gaycken, L\-L\-R -\/ Ecole polytechnique 
+\end{DoxyAuthor}
+\begin{DoxyDate}{Date}
+feb, 2006 
+\end{DoxyDate}
+
+
+Definition at line 21 of file Fe\-Stat\-List\-\_\-t.\-hh.
+
+
+
+\subsection{Member Function Documentation}
+\index{Stat\-Obj\-\_\-t@{Stat\-Obj\-\_\-t}!has\-Info@{has\-Info}}
+\index{has\-Info@{has\-Info}!StatObj_t@{Stat\-Obj\-\_\-t}}
+\subsubsection[{has\-Info}]{\setlength{\rightskip}{0pt plus 5cm}virtual bool Stat\-Obj\-\_\-t\-::has\-Info (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [pure virtual]}}\label{classStatObj__t_a4eb553db0bda3666cab1c390092841a1}
+
+
+Return true if the statistics collected for the corresponding front-\/end should be printed. 
+
+In \doxyref{Fe\-Stat\-List\-Base\-\_\-t\-::show}{p.}{classFeStatListBase__t_af8d07bf048c14d95c95338c3d1b10f91}, the statistics will only be printed for the corresponding front-\/end if this method returns true. 
+
+Implemented in {\bf Event\-Stat\-\_\-t} \doxyref{}{p.}{classEventStat__t_aa34365be6467dd0a2567513a3368c1f2}, and {\bf Conf\-Stat\-\_\-t} \doxyref{}{p.}{classConfStat__t_a947d830f041d2d38b9f4306d755f470a}.
+
+\index{Stat\-Obj\-\_\-t@{Stat\-Obj\-\_\-t}!print@{print}}
+\index{print@{print}!StatObj_t@{Stat\-Obj\-\_\-t}}
+\subsubsection[{print}]{\setlength{\rightskip}{0pt plus 5cm}virtual void Stat\-Obj\-\_\-t\-::print (
+\begin{DoxyParamCaption}
+\item[{std\-::ostream \&}]{out}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [pure virtual]}}\label{classStatObj__t_a2763586ba61eb2c37f076e266b0a331e}
+
+
+Print the statistics collected for the corresponding front-\/end to the output stream. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em out} & the stream to which the statistics will be written to. \\
+\hline
+\end{DoxyParams}
+\begin{DoxySeeAlso}{See Also}
+\doxyref{Fe\-Stat\-List\-Base\-\_\-t\-::show}{p.}{classFeStatListBase__t_af8d07bf048c14d95c95338c3d1b10f91} 
+\end{DoxySeeAlso}
+
+
+Implemented in {\bf Event\-Stat\-\_\-t} \doxyref{}{p.}{classEventStat__t_a518be219247fbd9108e6d186796d9b64}, and {\bf Conf\-Stat\-\_\-t} \doxyref{}{p.}{classConfStat__t_a75a769361503e4adb075bd30aef95f4d}.
+
+\index{Stat\-Obj\-\_\-t@{Stat\-Obj\-\_\-t}!print\-Table\-Header@{print\-Table\-Header}}
+\index{print\-Table\-Header@{print\-Table\-Header}!StatObj_t@{Stat\-Obj\-\_\-t}}
+\subsubsection[{print\-Table\-Header}]{\setlength{\rightskip}{0pt plus 5cm}virtual void Stat\-Obj\-\_\-t\-::print\-Table\-Header (
+\begin{DoxyParamCaption}
+\item[{std\-::ostream \&}]{out}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [pure virtual]}}\label{classStatObj__t_af2ef14d00190814696bc3bcbaf32d180}
+
+
+Print a header before printing the contents of all the objects. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em out} & the stream to which the table header will be printed. This method should rather be a static function. It is called once just before the statistics of all the objects will be printed. It can be used to print a header to the given stream. \\
+\hline
+\end{DoxyParams}
+\begin{DoxySeeAlso}{See Also}
+\doxyref{Fe\-Stat\-List\-Base\-\_\-t\-::show}{p.}{classFeStatListBase__t_af8d07bf048c14d95c95338c3d1b10f91} 
+\end{DoxySeeAlso}
+
+
+Implemented in {\bf Event\-Stat\-\_\-t} \doxyref{}{p.}{classEventStat__t_a04a45113ff065d22de59ed2ead6d773d}, and {\bf Conf\-Stat\-\_\-t} \doxyref{}{p.}{classConfStat__t_a26c1d1503dab552f275584065a39e64e}.
+
+
+
+The documentation for this class was generated from the following file\-:\begin{DoxyCompactItemize}
+\item 
+Fe\-Stat\-List\-\_\-t.\-hh\end{DoxyCompactItemize}

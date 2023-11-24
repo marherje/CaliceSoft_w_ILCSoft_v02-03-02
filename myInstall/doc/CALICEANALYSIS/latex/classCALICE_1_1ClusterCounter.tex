@@ -1,0 +1,203 @@
+\section{C\-A\-L\-I\-C\-E\-:\-:Cluster\-Counter Class Reference}
+\label{classCALICE_1_1ClusterCounter}\index{C\-A\-L\-I\-C\-E\-::\-Cluster\-Counter@{C\-A\-L\-I\-C\-E\-::\-Cluster\-Counter}}
+
+
+Processor finds detached hits in event and gives 2 collections\-: Detached hits and event w/o detached hits.  
+
+
+
+
+{\ttfamily \#include $<$Cluster\-Counter.\-hh$>$}
+
+Inheritance diagram for C\-A\-L\-I\-C\-E\-:\-:Cluster\-Counter\-:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classCALICE_1_1ClusterCounter}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+virtual Processor $\ast$ {\bfseries new\-Processor} ()\label{classCALICE_1_1ClusterCounter_a2668a900c7d219826c97540555494823}
+
+\item 
+virtual void {\bfseries init} ()\label{classCALICE_1_1ClusterCounter_ac086e9b47fc8b7006479a762cd4e5205}
+
+\item 
+virtual void {\bfseries process\-Run\-Header} (L\-C\-Run\-Header $\ast$run)\label{classCALICE_1_1ClusterCounter_abc6eae26572f0a17304cf0a00b001bff}
+
+\item 
+virtual void {\bfseries process\-Event} (L\-C\-Event $\ast$evt)\label{classCALICE_1_1ClusterCounter_a6cc282e45a6f542eff586fd06b2d2d64}
+
+\item 
+virtual void {\bfseries check} (L\-C\-Event $\ast$evt)\label{classCALICE_1_1ClusterCounter_ad8bd193bd992b3a9c1081167fcebce5d}
+
+\item 
+virtual void {\bfseries end} ()\label{classCALICE_1_1ClusterCounter_a06075c6f41de3c59af21b9b26e6a0495}
+
+\item 
+virtual void {\bfseries print\-Parameters} ()\label{classCALICE_1_1ClusterCounter_a2369f1d140ba6e4686a949362e9b089c}
+
+\item 
+int {\bfseries group2\-D\-Cluster} (std\-::map$<$ std\-::array$<$ int, 2 $>$, Calorimeter\-Hit $\ast$ $>$ $\ast$\-\_\-hitmap, std\-::map$<$ std\-::array$<$ int, 2 $>$, Calorimeter\-Hit $\ast$ $>$ $\ast$\-\_\-seedmap)\label{classCALICE_1_1ClusterCounter_ad8594e8668b029a4c21728c48e197723}
+
+\item 
+int {\bfseries group3\-D\-Cluster} (std\-::map$<$ std\-::array$<$ int, 3 $>$, Calorimeter\-Hit $\ast$ $>$ $\ast$\-\_\-hitmap, std\-::map$<$ std\-::array$<$ int, 3 $>$, Calorimeter\-Hit $\ast$ $>$ $\ast$\-\_\-seedmap)\label{classCALICE_1_1ClusterCounter_a4fb3f495fbe2f049f1f8df9fc55d0c45}
+
+\item 
+Calorimeter\-Hit\-Vec {\bfseries get\-Neighbours3\-D} (std\-::array$<$ int, 3 $>$ \-\_\-seed, std\-::map$<$ std\-::array$<$ int, 3 $>$, Calorimeter\-Hit $\ast$ $>$ $\ast$\-\_\-map, int \-\_\-vol\-Half\-Size)\label{classCALICE_1_1ClusterCounter_a48b0dc007eea02357fa6254376e01a96}
+
+\item 
+void {\bfseries get\-Track\-Candidates} (std\-::map$<$ std\-::array$<$ int, 3 $>$, Calorimeter\-Hit $\ast$ $>$ $\ast$\-\_\-hitmap, std\-::map$<$ const float $\ast$, Calorimeter\-Hit $\ast$ $>$ $\ast$\-\_\-track\-Candidates, std\-::vector$<$ const float $\ast$ $>$ $\ast$\-\_\-candpositions)\label{classCALICE_1_1ClusterCounter_a0fbc91fa8970a74c23fc3d703fb215f7}
+
+\item 
+float {\bfseries get\-Dist\-Btw\-Positions} (const float $\ast$vec1, const float $\ast$vec2)\label{classCALICE_1_1ClusterCounter_a9bcc1daafc86819a4bacb2b0627fbb47}
+
+\item 
+float {\bfseries get\-Cos\-Btw\-Vectors} (const float $\ast$vec1, const float $\ast$vec2)\label{classCALICE_1_1ClusterCounter_a50fc201fdc59707bbf6bcfdc785c3a62}
+
+\item 
+float {\bfseries get\-Tracking\-Min\-Cos} (const float $\ast$\-\_\-checkvec)\label{classCALICE_1_1ClusterCounter_a166e683a158fe2ba8896a5365d8fb8ed}
+
+\item 
+int {\bfseries get\-Closest\-Neighbour} (const float $\ast$\-\_\-seed, std\-::vector$<$ const float $\ast$ $>$ $\ast$\-\_\-candpositions)\label{classCALICE_1_1ClusterCounter_aa026f09e7f6cb1e01920104e517dd7a7}
+
+\item 
+int {\bfseries group\-Track} (const float $\ast$seedpos, std\-::vector$<$ const float $\ast$ $>$ $\ast$\-\_\-candpositions, std\-::vector$<$ const float $\ast$ $>$ $\ast$\-\_\-trackvec, int \-\_\-maxgap, int startindex)\label{classCALICE_1_1ClusterCounter_a1934fceecaaaadf6afa948159e146a66}
+
+\item 
+std\-::array$<$ float, 3 $>$ {\bfseries get2\-D\-Cluster\-Co\-G} (std\-::map$<$ std\-::array$<$ int, 2 $>$, Calorimeter\-Hit $\ast$ $>$ $\ast$\-\_\-map)\label{classCALICE_1_1ClusterCounter_a5aeb7163d4ef3b7d6446fd333cfb0c0a}
+
+\item 
+void {\bfseries add2\-D\-Map\-To\-Cluster} (I\-M\-P\-L\-::\-Cluster\-Impl $\ast$\-\_\-cluster, std\-::map$<$ std\-::array$<$ int, 2 $>$, Calorimeter\-Hit $\ast$ $>$ $\ast$\-\_\-map)\label{classCALICE_1_1ClusterCounter_a73014ac09605de1878969ce20c04b725}
+
+\item 
+void {\bfseries add3\-D\-Map\-To\-Cluster} (I\-M\-P\-L\-::\-Cluster\-Impl $\ast$\-\_\-cluster, std\-::map$<$ std\-::array$<$ int, 3 $>$, Calorimeter\-Hit $\ast$ $>$ $\ast$\-\_\-map)\label{classCALICE_1_1ClusterCounter_a3a1f9e8010caabbd2aa65a60b91eb9e0}
+
+\end{DoxyCompactItemize}
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static bool {\bfseries comparison} (const float $\ast$pos1, const float $\ast$pos2)\label{classCALICE_1_1ClusterCounter_a6eff0a034511d76aa5dde76768b03698}
+
+\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+std\-::string {\bfseries \-\_\-evt\-Var\-Col\-Name}\label{classCALICE_1_1ClusterCounter_a982f03b5d49994d25198f88f6ad0cdab}
+
+\item 
+std\-::string {\bfseries \-\_\-lay\-Var\-Col\-Name}\label{classCALICE_1_1ClusterCounter_a0bc5b4e964e43d7db247693efdd2ca66}
+
+\item 
+std\-::string {\bfseries \-\_\-layer2hit\-Relations\-Col\-Name}\label{classCALICE_1_1ClusterCounter_a32a906dfc1fc61780f63ff0ee99dcb62}
+
+\item 
+std\-::string {\bfseries \-\_\-hit2hit\-Var\-Relations\-Col\-Name}\label{classCALICE_1_1ClusterCounter_a48af01e6e60fad4b4e49b7a32922d5c8}
+
+\item 
+std\-::string {\bfseries \-\_\-2\-D\-Cluster\-Out\-Col\-Name}\label{classCALICE_1_1ClusterCounter_ada733e376dc13e11c75d7928b8afa4b4}
+
+\item 
+std\-::string {\bfseries \-\_\-3\-D\-Cluster\-Out\-Col\-Name}\label{classCALICE_1_1ClusterCounter_a94e01f495efc808b0b93ab15a3ecce1d}
+
+\item 
+std\-::string {\bfseries \-\_\-\-L2\-C\-Out\-Rel\-Col\-Name}\label{classCALICE_1_1ClusterCounter_adac38a6a8d9dd38e9a5b65f4d2f324b4}
+
+\item 
+bool {\bfseries \-\_\-write\-Root\-File}\label{classCALICE_1_1ClusterCounter_ac73b4352462fa9c65685758db2fc330d}
+
+\item 
+std\-::string {\bfseries \-\_\-\-Root\-Output}\label{classCALICE_1_1ClusterCounter_aaba2acfb9913b2a6a13891c59656053a}
+
+\item 
+int {\bfseries \-\_\-min\-Hitst\-In2\-D\-Cluster}\label{classCALICE_1_1ClusterCounter_afa8b19f9538e5f67619b6b2f9da26eef}
+
+\item 
+int {\bfseries \-\_\-min\-Hitst\-In3\-D\-Cluster}\label{classCALICE_1_1ClusterCounter_af26ed7b753085b8d18c291866a01641d}
+
+\item 
+int {\bfseries \-\_\-\-Kmax\-For3\-D\-Cluster}\label{classCALICE_1_1ClusterCounter_a34a45c42488d5fb2b42d064b1001896d}
+
+\item 
+int {\bfseries \-\_\-volume\-Tsize}\label{classCALICE_1_1ClusterCounter_a9d7ee1bd08670973f52411830c558b51}
+
+\item 
+int {\bfseries \-\_\-volume\-Lsize}\label{classCALICE_1_1ClusterCounter_a1d36c4726d82e0dcd6f62e565565f3a5}
+
+\item 
+bool {\bfseries \-\_\-filter\-Hits}\label{classCALICE_1_1ClusterCounter_a24eea26f3210c9e6b3d645c5da02094b}
+
+\item 
+std\-::array$<$ float, 3 $>$ {\bfseries Co\-G}\label{classCALICE_1_1ClusterCounter_a24adb4a8cb17221b9824af53e990c587}
+
+\item 
+int {\bfseries n2\-D\-Clusters}\label{classCALICE_1_1ClusterCounter_a5a60f78ab7d7420fb40ef88071d83685}
+
+\item 
+int {\bfseries n3\-D\-Clusters}\label{classCALICE_1_1ClusterCounter_a56495d0202d0c80204f07e092152b6a1}
+
+\item 
+int {\bf \-\_\-n\-Run}
+\item 
+int {\bf \-\_\-n\-Evt}
+\item 
+float {\bfseries cos\-To\-Beam} = -\/2.\label{classCALICE_1_1ClusterCounter_a52a7998cbc4329982ec23b26bdececcc}
+
+\item 
+std\-::array$<$ float, 3 $>$ {\bfseries trackdr}\label{classCALICE_1_1ClusterCounter_a7f6731c5a090d8460117a94e02c944f0}
+
+\item 
+std\-::array$<$ float, 3 $>$ {\bfseries mu}\label{classCALICE_1_1ClusterCounter_a873256023111e24ee3a5caee51e04b3f}
+
+\item 
+float {\bfseries w\-\_\-x}\label{classCALICE_1_1ClusterCounter_a51e43848f80981936b3a4140b2d6f001}
+
+\item 
+float {\bfseries w\-\_\-y}\label{classCALICE_1_1ClusterCounter_a197cfacf40a5cd66331d278237e0f396}
+
+\item 
+float {\bfseries denom\-\_\-w}\label{classCALICE_1_1ClusterCounter_af040902ac4a8a8c3b17e7a93708be566}
+
+\item 
+int {\bfseries n\-Track\-Hits}\label{classCALICE_1_1ClusterCounter_a9869b8046c512b783427a5bfe820b384}
+
+\item 
+int {\bfseries track\-Nr}\label{classCALICE_1_1ClusterCounter_a73fd682f635eb37e350ef447abaed972}
+
+\item 
+float {\bfseries tr\-Esum}\label{classCALICE_1_1ClusterCounter_a1a189518671f3d5b77cf08cf32ab18c0}
+
+\item 
+std\-::vector$<$ float $>$ {\bfseries hit\-Energies}\label{classCALICE_1_1ClusterCounter_ab1608ebe4c4b6e1d544f407c008cfcd0}
+
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Processor finds detached hits in event and gives 2 collections\-: Detached hits and event w/o detached hits. 
+
+\begin{DoxyAuthor}{Author}
+{\tt vladimir.\-bocharnikov@desy.\-de} 
+\end{DoxyAuthor}
+\begin{DoxyVersion}{Version}
+1.\-0 
+\end{DoxyVersion}
+\begin{DoxyDate}{Date}
+December 2018 
+\end{DoxyDate}
+
+
+\subsection{Member Data Documentation}
+\index{C\-A\-L\-I\-C\-E\-::\-Cluster\-Counter@{C\-A\-L\-I\-C\-E\-::\-Cluster\-Counter}!\-\_\-n\-Evt@{\-\_\-n\-Evt}}
+\index{\-\_\-n\-Evt@{\-\_\-n\-Evt}!CALICE::ClusterCounter@{C\-A\-L\-I\-C\-E\-::\-Cluster\-Counter}}
+\subsubsection[{\-\_\-n\-Evt}]{\setlength{\rightskip}{0pt plus 5cm}int C\-A\-L\-I\-C\-E\-::\-Cluster\-Counter\-::\-\_\-n\-Evt\hspace{0.3cm}{\ttfamily [protected]}}\label{classCALICE_1_1ClusterCounter_acd3e96d9b95b78f5902e484f20e2b9ab}
+evt number \index{C\-A\-L\-I\-C\-E\-::\-Cluster\-Counter@{C\-A\-L\-I\-C\-E\-::\-Cluster\-Counter}!\-\_\-n\-Run@{\-\_\-n\-Run}}
+\index{\-\_\-n\-Run@{\-\_\-n\-Run}!CALICE::ClusterCounter@{C\-A\-L\-I\-C\-E\-::\-Cluster\-Counter}}
+\subsubsection[{\-\_\-n\-Run}]{\setlength{\rightskip}{0pt plus 5cm}int C\-A\-L\-I\-C\-E\-::\-Cluster\-Counter\-::\-\_\-n\-Run\hspace{0.3cm}{\ttfamily [protected]}}\label{classCALICE_1_1ClusterCounter_aa839b23c89bea85c92b3cf3bbf4dd89d}
+run number 
+
+The documentation for this class was generated from the following files\-:\begin{DoxyCompactItemize}
+\item 
+/nfs/dust/ilc/user/marquezh/\-Calice\-Soft\-\_\-w\-\_\-\-I\-L\-C\-Soft\-\_\-v02-\/03-\/02/calice\-\_\-analysis/addon\-Procs/include/Cluster\-Counter.\-hh\item 
+/nfs/dust/ilc/user/marquezh/\-Calice\-Soft\-\_\-w\-\_\-\-I\-L\-C\-Soft\-\_\-v02-\/03-\/02/calice\-\_\-analysis/addon\-Procs/src/Cluster\-Counter.\-cc\end{DoxyCompactItemize}

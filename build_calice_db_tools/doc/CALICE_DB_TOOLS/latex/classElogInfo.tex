@@ -1,0 +1,136 @@
+\section{Elog\-Info Class Reference}
+\label{classElogInfo}\index{Elog\-Info@{Elog\-Info}}
+
+
+{\ttfamily \#include $<$Elog\-Info\-Reader.\-hh$>$}
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+{\bf Elog\-Info} (const unsigned int run\-Number)
+\item 
+unsigned int {\bfseries get\-Run\-Number} () const \label{classElogInfo_a52d1fea6630ad9e76b12d848fbbc7c1d}
+
+\item 
+bool {\bfseries is\-Bad} () const \label{classElogInfo_a1f318555624df3440e8ad52bdc6c0ad7}
+
+\item 
+int {\bfseries get\-Particle\-I\-D} () const \label{classElogInfo_a65a4860d6877261f3cf6f07c0427e415}
+
+\item 
+int {\bfseries get\-Trigger\-Type} () const \label{classElogInfo_ab9d441d35ba862db3a273833652cf4b2}
+
+\item 
+int {\bfseries get\-Trigger\-Setting} () const \label{classElogInfo_a8f9ff13d7751586cb9bd9990e348c841}
+
+\item 
+int {\bfseries get\-Quality\-Flag} () const \label{classElogInfo_af920505072c4457db2f369b8cd175d3c}
+
+\item 
+float {\bfseries get\-Energy} () const \label{classElogInfo_a3410b359b553cf0160713c54e626264b}
+
+\item 
+float {\bfseries get\-Cherenkov\-Pressure} () const \label{classElogInfo_a442a3f0e778df9c12d1d30bbfe827513}
+
+\item 
+float {\bfseries get\-Cherenkov2\-Pressure} () const \label{classElogInfo_a7480ac73baf5c1298732f6292f7e7392}
+
+\item 
+float {\bfseries get\-Position\-X} () const \label{classElogInfo_ae561116252b199a8179bfa64f84077a7}
+
+\item 
+float {\bfseries get\-Position\-Y} () const \label{classElogInfo_aeb9c2820182962e6cbf4948d7b499497}
+
+\item 
+float {\bfseries get\-Rotation\-Angle} () const \label{classElogInfo_a4c9048e7d39bf69f07eae7f36b2ebe18}
+
+\item 
+const std\-::string \& {\bfseries get\-Run\-Type} () const \label{classElogInfo_a37a5fe5048240fbf933d36bbcd04e06a}
+
+\item 
+const std\-::string \& {\bfseries get\-Target} () const \label{classElogInfo_a7f7fc291269b0be343d582f285de3017}
+
+\item 
+const std\-::string \& {\bfseries get\-Absorber} () const \label{classElogInfo_a3d220dc6f046cef5c011eff24d29fbf7}
+
+\item 
+const std\-::string \& {\bfseries get\-Comment} () const \label{classElogInfo_ae727cd3fc39302b75735019738f6f0de}
+
+\item 
+void {\bfseries set\-Bad} (const bool value=true)\label{classElogInfo_a36f8b7ea5380fb62126ba9044f491121}
+
+\item 
+void {\bfseries set\-Particle\-I\-D} (const int P\-D\-G)\label{classElogInfo_aa8e947cf87146fac3ca9cd84e448fc24}
+
+\item 
+void {\bfseries set\-Trigger\-Type} (const int trigger\-Type)\label{classElogInfo_ae2f30828e8745bcc295cf98db9a402cd}
+
+\item 
+void {\bfseries set\-Trigger\-Setting} (const int trigger\-Setting)\label{classElogInfo_adfa385546a2174849f6520550d8d4c88}
+
+\item 
+void {\bfseries set\-Quality\-Flag} (const int quality\-Flag)\label{classElogInfo_ac03fcea03d11f6f59decddb2f957ba6e}
+
+\item 
+void {\bfseries set\-Energy} (const float energy)\label{classElogInfo_a8695ff52afbeb10594b4304f92730ae7}
+
+\item 
+void {\bfseries set\-Cherenkov\-Pressure} (const float cherenkov\-Pressure)\label{classElogInfo_a134b756001d0af0dcc80310d3b5a603e}
+
+\item 
+void {\bfseries set\-Cherenkov2\-Pressure} (const float cherenkov2\-Pressure)\label{classElogInfo_afc2501169b05b2c69580b8937553375e}
+
+\item 
+void {\bfseries set\-Position} (const std\-::pair$<$ float, float $>$ \&position)\label{classElogInfo_aa828cb3e60d90027ec4c4f56703cc26a}
+
+\item 
+void {\bfseries set\-Rotation\-Angle} (const float rotation\-Angle)\label{classElogInfo_ae8537e6122d2d8d5dc3df90b3bde2d4b}
+
+\item 
+void {\bfseries set\-Run\-Type} (const std\-::string \&type)\label{classElogInfo_a97b06de867aee168950654a6e9d770af}
+
+\item 
+void {\bfseries set\-Target} (const std\-::string \&target)\label{classElogInfo_a58d5f086e49fbcf47841de86b73e0b08}
+
+\item 
+void {\bfseries set\-Absorber} (const std\-::string \&absorber)\label{classElogInfo_a94674b3055fba3b264dae4139ed7248a}
+
+\item 
+void {\bfseries set\-Comment} (const std\-::string \&comment)\label{classElogInfo_a12b1935c378d6bfe393de33323bd10eb}
+
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Implementation of the e-\/log information
+
+\begin{DoxyAuthor}{Author}
+{\tt Benjamin.\-Lutz@desy.\-de} 
+\end{DoxyAuthor}
+\begin{DoxyDate}{Date}
+April 2010 
+\end{DoxyDate}
+
+
+Definition at line 15 of file Elog\-Info\-Reader.\-hh.
+
+
+
+\subsection{Constructor \& Destructor Documentation}
+\index{Elog\-Info@{Elog\-Info}!Elog\-Info@{Elog\-Info}}
+\index{Elog\-Info@{Elog\-Info}!ElogInfo@{Elog\-Info}}
+\subsubsection[{Elog\-Info}]{\setlength{\rightskip}{0pt plus 5cm}Elog\-Info\-::\-Elog\-Info (
+\begin{DoxyParamCaption}
+\item[{const unsigned int}]{run\-Number}
+\end{DoxyParamCaption}
+)}\label{classElogInfo_a583e87143436d6b729e98ebac3a2a988}
+Constructor from the run number 
+
+Definition at line 17 of file Elog\-Info\-Reader.\-cc.
+
+
+
+The documentation for this class was generated from the following files\-:\begin{DoxyCompactItemize}
+\item 
+/nfs/dust/ilc/user/marquezh/\-Calice\-Soft\-\_\-w\-\_\-\-I\-L\-C\-Soft\-\_\-v02-\/03-\/02/calice\-\_\-db\-\_\-tools/include/Elog\-Info\-Reader.\-hh\item 
+/nfs/dust/ilc/user/marquezh/\-Calice\-Soft\-\_\-w\-\_\-\-I\-L\-C\-Soft\-\_\-v02-\/03-\/02/calice\-\_\-db\-\_\-tools/src/Elog\-Info\-Reader.\-cc\end{DoxyCompactItemize}

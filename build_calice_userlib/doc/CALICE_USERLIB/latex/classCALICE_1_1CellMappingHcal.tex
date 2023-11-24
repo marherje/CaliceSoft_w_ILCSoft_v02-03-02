@@ -1,0 +1,101 @@
+\section{C\-A\-L\-I\-C\-E\-:\-:Cell\-Mapping\-Hcal Class Reference}
+\label{classCALICE_1_1CellMappingHcal}\index{C\-A\-L\-I\-C\-E\-::\-Cell\-Mapping\-Hcal@{C\-A\-L\-I\-C\-E\-::\-Cell\-Mapping\-Hcal}}
+
+
+Example for a simple mapping class based on the L\-C\-Fixed\-Object template.  
+
+
+
+
+{\ttfamily \#include $<$Cell\-Mapping\-Hcal.\-hh$>$}
+
+Inheritance diagram for C\-A\-L\-I\-C\-E\-:\-:Cell\-Mapping\-Hcal\-:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classCALICE_1_1CellMappingHcal}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+{\bf Cell\-Mapping\-Hcal} (int icrate, int islot, int ife, int imul, int iadc, int icoord, int jcoord, int kcoord)\label{classCALICE_1_1CellMappingHcal_a180c0b169a7f2c69770ae551aa4c776d}
+
+\begin{DoxyCompactList}\small\item\em Convenient c'tor. \end{DoxyCompactList}\item 
+{\bf Cell\-Mapping\-Hcal} (L\-C\-Object $\ast$obj)\label{classCALICE_1_1CellMappingHcal_a0da96ba25246cd5cca90973d362e6c87}
+
+\begin{DoxyCompactList}\small\item\em 'Copy constructor' needed to interpret L\-C\-Collection read from file/database. \end{DoxyCompactList}\item 
+virtual {\bf $\sim$\-Cell\-Mapping\-Hcal} ()\label{classCALICE_1_1CellMappingHcal_a83d82878315eb6feafff6da924cb0b3e}
+
+\begin{DoxyCompactList}\small\item\em Important for memory handling. \end{DoxyCompactList}\item 
+int {\bf get\-Elec\-Channel} ()\label{classCALICE_1_1CellMappingHcal_ac7b97417224ddeba13c73d7659484ed0}
+
+\begin{DoxyCompactList}\small\item\em the class interface\-: \end{DoxyCompactList}\item 
+int {\bfseries get\-Cell\-I\-D} ()\label{classCALICE_1_1CellMappingHcal_a5e62c1a1fa22a5d93b59734f5c307fbf}
+
+\item 
+short {\bf get\-Cell\-Index} (std\-::string)\label{classCALICE_1_1CellMappingHcal_a4beaa39635a9c718ecbcb98ee336bf4e}
+
+\begin{DoxyCompactList}\small\item\em convenient getter functions \end{DoxyCompactList}\item 
+short {\bfseries get\-Crate\-I\-D} ()\label{classCALICE_1_1CellMappingHcal_a5828458b37828b0bf81007b081bdefdc}
+
+\item 
+short {\bfseries get\-Slot\-I\-D} ()\label{classCALICE_1_1CellMappingHcal_a83ae95e889acadd9e666421021fc94bd}
+
+\item 
+short {\bfseries get\-Fe\-I\-D} ()\label{classCALICE_1_1CellMappingHcal_a0a0f4e3978887fcb96c2990ad98c7ff8}
+
+\item 
+short {\bfseries get\-Mul\-I\-D} ()\label{classCALICE_1_1CellMappingHcal_ac15468dcd4948f44a67978680748aa54}
+
+\item 
+short {\bfseries get\-Adc\-I\-D} ()\label{classCALICE_1_1CellMappingHcal_a877867886306a01fe319eab0b00f7256}
+
+\item 
+void {\bf print} (std\-::ostream \&os)\label{classCALICE_1_1CellMappingHcal_a2ffe99f7db6ac95b8e972b37d189f6da}
+
+\begin{DoxyCompactList}\small\item\em Convenient print method. \end{DoxyCompactList}\item 
+const std\-::string {\bf get\-Type\-Name} () const \label{classCALICE_1_1CellMappingHcal_a03e821c39e5e6452c89954ddcc5038c8}
+
+\begin{DoxyCompactList}\small\item\em Type definition. \end{DoxyCompactList}\item 
+const std\-::string {\bf get\-Data\-Description} () const 
+\begin{DoxyCompactList}\small\item\em Data description, needed e.\-g. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+short {\bf \-\_\-index}\label{classCALICE_1_1CellMappingHcal_ac042db1cac41c0a080364c6ed8e6e4f5}
+
+\begin{DoxyCompactList}\small\item\em i,j or k Index of the cell id \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Example for a simple mapping class based on the L\-C\-Fixed\-Object template. 
+
+L\-C\-Fixed\-Object uses an instance of L\-C\-Generic\-Object\-Impl that holds the data, thus there is no overhead when the data is read from a database or file for copying it to some local structure (Decorator pattern).\par
+ 
+
+Definition at line 40 of file Cell\-Mapping\-Hcal.\-hh.
+
+
+
+\subsection{Member Function Documentation}
+\index{C\-A\-L\-I\-C\-E\-::\-Cell\-Mapping\-Hcal@{C\-A\-L\-I\-C\-E\-::\-Cell\-Mapping\-Hcal}!get\-Data\-Description@{get\-Data\-Description}}
+\index{get\-Data\-Description@{get\-Data\-Description}!CALICE::CellMappingHcal@{C\-A\-L\-I\-C\-E\-::\-Cell\-Mapping\-Hcal}}
+\subsubsection[{get\-Data\-Description}]{\setlength{\rightskip}{0pt plus 5cm}const std\-::string C\-A\-L\-I\-C\-E\-::\-Cell\-Mapping\-Hcal\-::get\-Data\-Description (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}\label{classCALICE_1_1CellMappingHcal_a703c49c4ee36f2faf9ff744afc9bf098}
+
+
+Data description, needed e.\-g. 
+
+by graphical interface to L\-C\-C\-D 
+
+Definition at line 96 of file Cell\-Mapping\-Hcal.\-hh.
+
+
+
+The documentation for this class was generated from the following files\-:\begin{DoxyCompactItemize}
+\item 
+Cell\-Mapping\-Hcal.\-hh\item 
+Cell\-Mapping\-Hcal.\-cc\end{DoxyCompactItemize}

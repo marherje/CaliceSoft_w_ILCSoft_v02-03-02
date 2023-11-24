@@ -1,0 +1,104 @@
+\section{Hcal\-Track2\-Root\-Tree Class Reference}
+\label{classHcalTrack2RootTree}\index{Hcal\-Track2\-Root\-Tree@{Hcal\-Track2\-Root\-Tree}}
+Inheritance diagram for Hcal\-Track2\-Root\-Tree\-:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classHcalTrack2RootTree}
+\end{center}
+\end{figure}
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+struct {\bf Event\-Tracks}
+\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+marlin\-::\-Processor $\ast$ {\bfseries new\-Processor} ()\label{classHcalTrack2RootTree_ad456236ad38e9e2c1be0a5a2eac93874}
+
+\item 
+virtual void {\bf init} ()
+\item 
+virtual void {\bf process\-Run\-Header} (L\-C\-Run\-Header $\ast$run)
+\item 
+virtual void {\bf process\-Event} (L\-C\-Event $\ast$evt)
+\item 
+virtual void {\bfseries check} (L\-C\-Event $\ast$evt)\label{classHcalTrack2RootTree_a29f5c20d6ec66e5f6b4921bdaa2278d4}
+
+\item 
+virtual void {\bf end} ()
+\end{DoxyCompactItemize}
+\subsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+virtual Double\-\_\-t {\bfseries get\-Sum\-Of\-Calo\-Hits} (E\-V\-E\-N\-T\-::\-L\-C\-Event $\ast$evt, std\-::string \&collection\-Name)\label{classHcalTrack2RootTree_ae11e481bdb20b591aee8c8a1ef49ab4b}
+
+\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+std\-::string {\bfseries \-\_\-lcc\-Cluster}\label{classHcalTrack2RootTree_a1071b5e6d3571ee04bc4c5ee597733b8}
+
+\item 
+std\-::string {\bfseries \-\_\-lcc\-Emc\-Calo\-Hits}\label{classHcalTrack2RootTree_a271aa3052901b369fabe54eddf6fb07d}
+
+\item 
+std\-::string {\bfseries \-\_\-lcc\-Ahc\-Calo\-Hits}\label{classHcalTrack2RootTree_a0d7cddb36e953cbc60ef5a9f79aa1048}
+
+\item 
+std\-::string {\bfseries \-\_\-lcc\-Tcmt\-Calo\-Hits}\label{classHcalTrack2RootTree_a4ab495ec4a37c4128b48912a40991208}
+
+\item 
+std\-::string {\bfseries \-\_\-root\-File\-Name}\label{classHcalTrack2RootTree_ac16f4524edd566e28cb5658c14005586}
+
+\item 
+std\-::string {\bfseries \-\_\-root\-Tree\-Name}\label{classHcalTrack2RootTree_a0c0752c793010bbab56dac4fe361434c}
+
+\item 
+T\-File $\ast$ {\bfseries \-\_\-root\-File}\label{classHcalTrack2RootTree_a0aa2b92a9093cece4b2240f61f51e3d2}
+
+\item 
+T\-Tree $\ast$ {\bfseries \-\_\-tree}\label{classHcalTrack2RootTree_a38faf7c09ec870d47739f8388bae8dd8}
+
+\item 
+struct \\*
+{\bf Hcal\-Track2\-Root\-Tree\-::\-Event\-Tracks} {\bfseries \-\_\-event}\label{classHcalTrack2RootTree_a3567110cb3b30bbbb0bb7ecc3fe260f8}
+
+\end{DoxyCompactItemize}
+
+
+\subsection{Member Function Documentation}
+\index{Hcal\-Track2\-Root\-Tree@{Hcal\-Track2\-Root\-Tree}!end@{end}}
+\index{end@{end}!HcalTrack2RootTree@{Hcal\-Track2\-Root\-Tree}}
+\subsubsection[{end}]{\setlength{\rightskip}{0pt plus 5cm}void Hcal\-Track2\-Root\-Tree\-::end (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}\label{classHcalTrack2RootTree_a9fcb338340b84484e9c81619d5a679ab}
+Called after data processing for clean up. \index{Hcal\-Track2\-Root\-Tree@{Hcal\-Track2\-Root\-Tree}!init@{init}}
+\index{init@{init}!HcalTrack2RootTree@{Hcal\-Track2\-Root\-Tree}}
+\subsubsection[{init}]{\setlength{\rightskip}{0pt plus 5cm}void Hcal\-Track2\-Root\-Tree\-::init (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}\label{classHcalTrack2RootTree_ae7829c016e9a860d8fa93c232791b56c}
+Called at the begin of the job before anything is read. Use to initialize the processor, e.\-g. book histograms. \index{Hcal\-Track2\-Root\-Tree@{Hcal\-Track2\-Root\-Tree}!process\-Event@{process\-Event}}
+\index{process\-Event@{process\-Event}!HcalTrack2RootTree@{Hcal\-Track2\-Root\-Tree}}
+\subsubsection[{process\-Event}]{\setlength{\rightskip}{0pt plus 5cm}void Hcal\-Track2\-Root\-Tree\-::process\-Event (
+\begin{DoxyParamCaption}
+\item[{L\-C\-Event $\ast$}]{evt}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}\label{classHcalTrack2RootTree_afe26e70d3e12edabd0a8117295879b80}
+Called for every event -\/ the working horse. \index{Hcal\-Track2\-Root\-Tree@{Hcal\-Track2\-Root\-Tree}!process\-Run\-Header@{process\-Run\-Header}}
+\index{process\-Run\-Header@{process\-Run\-Header}!HcalTrack2RootTree@{Hcal\-Track2\-Root\-Tree}}
+\subsubsection[{process\-Run\-Header}]{\setlength{\rightskip}{0pt plus 5cm}void Hcal\-Track2\-Root\-Tree\-::process\-Run\-Header (
+\begin{DoxyParamCaption}
+\item[{L\-C\-Run\-Header $\ast$}]{run}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}\label{classHcalTrack2RootTree_a66302b201e51a169f02f589b9dee6236}
+Called for every run. 
+
+The documentation for this class was generated from the following files\-:\begin{DoxyCompactItemize}
+\item 
+/nfs/dust/ilc/user/marquezh/\-Calice\-Soft\-\_\-w\-\_\-\-I\-L\-C\-Soft\-\_\-v02-\/03-\/02/calice\-\_\-analysis/addon\-Procs/include/Hcal\-Track2\-Root\-Tree.\-hh\item 
+/nfs/dust/ilc/user/marquezh/\-Calice\-Soft\-\_\-w\-\_\-\-I\-L\-C\-Soft\-\_\-v02-\/03-\/02/calice\-\_\-analysis/addon\-Procs/src/Hcal\-Track2\-Root\-Tree.\-cc\end{DoxyCompactItemize}

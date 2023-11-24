@@ -1,0 +1,109 @@
+\section{/nfs/dust/ilc/user/marquezh/\-Calice\-Soft\-\_\-w\-\_\-\-I\-L\-C\-Soft\-\_\-v02-\/03-\/02/calice\-\_\-db\-\_\-tools/src/extract\-Calib\-Efficiency.cc File Reference}
+\label{extractCalibEfficiency_8cc}\index{/nfs/dust/ilc/user/marquezh/\-Calice\-Soft\-\_\-w\-\_\-\-I\-L\-C\-Soft\-\_\-v02-\/03-\/02/calice\-\_\-db\-\_\-tools/src/extract\-Calib\-Efficiency.\-cc@{/nfs/dust/ilc/user/marquezh/\-Calice\-Soft\-\_\-w\-\_\-\-I\-L\-C\-Soft\-\_\-v02-\/03-\/02/calice\-\_\-db\-\_\-tools/src/extract\-Calib\-Efficiency.\-cc}}
+{\ttfamily \#include \char`\"{}T\-R\-O\-O\-T.\-h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}T\-Graph\-Errors.\-h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}T\-Axis.\-h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}T\-File.\-h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}lcio.\-h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}E\-V\-E\-N\-T/\-L\-C\-Collection.\-h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}I\-M\-P\-L/\-L\-C\-Collection\-Vec.\-h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}I\-M\-P\-L/\-L\-C\-Event\-Impl.\-h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}I\-M\-P\-L/\-L\-C\-Parameters\-Impl.\-h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}I\-M\-P\-L/\-L\-C\-Run\-Header\-Impl.\-h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}U\-T\-I\-L/\-L\-C\-Time.\-h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}U\-T\-I\-L/\-L\-C\-T\-O\-O\-L\-S.\-h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}Run\-Time\-Info.\-hh\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}Hcal\-Tile\-Index.\-hh\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}Simple\-Value.\-hh\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}lccd.\-h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}lccd/\-D\-B\-Interface.\-hh\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}Conditions\-D\-B/\-I\-Cond\-D\-B\-Mgr.\-h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}Conditions\-D\-B/\-I\-Cond\-D\-B\-Data\-Access.\-h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}Conditions\-D\-B/\-I\-Cond\-D\-B\-Data\-Iterator.\-h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}Conditions\-D\-B/\-Cond\-D\-B\-Obj\-Factory.\-h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}lccd/\-Conditions\-Map.\-hh\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}Cell\-Quality.\-hh\char`\"{}}\\*
+{\ttfamily \#include $<$algorithm$>$}\\*
+{\ttfamily \#include $<$functional$>$}\\*
+{\ttfamily \#include $<$sstream$>$}\\*
+{\ttfamily \#include $<$string$>$}\\*
+{\ttfamily \#include $<$map$>$}\\*
+{\ttfamily \#include $<$vector$>$}\\*
+{\ttfamily \#include $<$utility$>$}\\*
+{\ttfamily \#include \char`\"{}D\-B\-Interface\-Mgr.\-hh\char`\"{}}\\*
+{\ttfamily \#include $<$fstream$>$}\\*
+{\ttfamily \#include \char`\"{}Calice\-D\-B\-Init\-Helper.\-hh\char`\"{}}\\*
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+struct {\bf cell\-Data\-\_\-t}
+\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+void {\bfseries get\-Times} (const int runnumber, lccd\-::\-L\-C\-C\-D\-Time\-Stamp \&from, lccd\-::\-L\-C\-C\-D\-Time\-Stamp \&till)\label{extractCalibEfficiency_8cc_ab982c6e6c33d5f342251e84aa6afe24d}
+
+\item 
+void {\bfseries get\-Times} (const int first\-Run, const int last\-Run, lccd\-::\-L\-C\-C\-D\-Time\-Stamp \&from, lccd\-::\-L\-C\-C\-D\-Time\-Stamp \&till)\label{extractCalibEfficiency_8cc_a8a70681e88230b73098cc62aaa0b5316}
+
+\item 
+std\-::string {\bfseries get\-Base\-Folder\-Name\-Converter} (int runnumber)\label{extractCalibEfficiency_8cc_acf725fcd1fd444965590d7182b1fafc8}
+
+\item 
+void {\bfseries fill\-Values} (std\-::map$<$ unsigned int, {\bf cell\-Data\-\_\-t} $>$ \&data, lcio\-::\-L\-C\-Collection $\ast$calib\-Collection, int \&good\-Counter, lccd\-::\-Conditions\-Map$<$ const int, C\-A\-L\-I\-C\-E\-::\-Cell\-Quality $>$ cell\-Status\-Map)\label{extractCalibEfficiency_8cc_a1c6822344a9c3addc2c587a5a9fbcc0a}
+
+\item 
+void {\bfseries collect\-Values} (std\-::map$<$ unsigned int, {\bf cell\-Data\-\_\-t} $>$ \&data, const lccd\-::\-L\-C\-C\-D\-Time\-Stamp from, const lccd\-::\-L\-C\-C\-D\-Time\-Stamp till, const std\-::string calib\-Folder, const std\-::string calib\-Tag, const std\-::string cell\-Status\-Folder, const std\-::string cell\-Status\-Tag, bool check\-Cell\-Status, float min\-Eff)\label{extractCalibEfficiency_8cc_a101535bfac3453d0fdaab5e9a3589af4}
+
+\item 
+int {\bfseries main} (int argc, char $\ast$$\ast$argv)\label{extractCalibEfficiency_8cc_a3c04138a5bfe5d72780bb7e82a18e627}
+
+\end{DoxyCompactItemize}
+\subsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+std\-::string {\bfseries db\-Init} = {\bf calice\-::get\-D\-B\-Init\-String}()\label{extractCalibEfficiency_8cc_a6b6249ff0366b8a48c34dfbbf6c6fbec}
+
+\item 
+std\-::string {\bfseries time\-Folder\-Name} = \char`\"{}/cd\-\_\-calice/C\-A\-L\-D\-A\-Q\-\_\-\-Run\-Time\-Info\char`\"{}\label{extractCalibEfficiency_8cc_a4d2cd635f803f7649a78988cdd8b70b9}
+
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+This tool calculates the efficiency of calibration sets taken in a certain run range and creates T\-Graph\-Errors from these values vs. run\-Time. The total efficiency is calculated as well. Dead channels are subtracted from channel total of 7608 (A\-H\-C\-A\-L).
+
+\begin{DoxyRefDesc}{Todo}
+\item[{\bf Todo}]Tags are N\-O\-T U\-S\-E\-D Y\-E\-T!\end{DoxyRefDesc}
+
+
+Usage\-:
+
+
+\begin{DoxyCode}
+extractCalibEfficiency <dbfolder-calib> <tag-calib> <first> <last> <minium efficiency in %> [<dbfolder-
+      exclude> <tag-exclude>]
+\end{DoxyCode}
+
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em $<$dbfolder-\/calib$>$} & D\-B folder containing results from the single calib measurements (e.\-g. \char`\"{}/cd\-\_\-calice/\-Hcal/\-Calib\-\_\-\-Measurements/gain\-\_\-single\char`\"{}) \\
+\hline
+\mbox{\tt in}  & {\em $<$tag-\/calib$>$} & tag for D\-B folder containing results from the single calib measurements \\
+\hline
+\mbox{\tt in}  & {\em $<$first$>$} & first run of run range \\
+\hline
+\mbox{\tt in}  & {\em $<$last$>$} & last run of run range \\
+\hline
+\mbox{\tt in}  & {\em $<$minimum} & efficiency in \%$>$ measurements with efficiencies below this cut are negelected \\
+\hline
+\mbox{\tt in}  & {\em $<$dbfolder-\/exclude$>$} & D\-Bfolder containing list of channels to exclude from efficiency calculation (e.\-g. dead channels) \\
+\hline
+\mbox{\tt in}  & {\em $<$tag-\/exclude$>$} & tag for D\-Bfolder containing list of channels to exclude from efficiency calculation (e.\-g. dead channels) \\
+\hline
+\end{DoxyParams}
+
+
+Definition in file {\bf extract\-Calib\-Efficiency.\-cc}.
+

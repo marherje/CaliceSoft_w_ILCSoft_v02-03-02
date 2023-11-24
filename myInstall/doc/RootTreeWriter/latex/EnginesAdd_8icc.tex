@@ -1,0 +1,36 @@
+\section{Engines\-Add.\-icc File Reference}
+\label{EnginesAdd_8icc}\index{Engines\-Add.\-icc@{Engines\-Add.\-icc}}
+
+
+Edit to add new engine.  
+
+
+This graph shows which files directly or indirectly include this file\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=144pt]{EnginesAdd_8icc__dep__incl}
+\end{center}
+\end{figure}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+\-\_\-write\-Engine\-List {\bfseries push\-\_\-back} (new Hit\-Write\-Engine(this))\label{EnginesAdd_8icc_aa5bf20be1adb1c8539fd5ab29c778292}
+
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Edit to add new engine. To activate a new engine you have to add a line like the following in this file\-:
+
+
+\begin{DoxyCode}
+\_writeEngineList.push\_back( \textcolor{keyword}{new} MyNewEngineName(\textcolor{keyword}{this}) );
+\end{DoxyCode}
+
+
+{\bfseries  You also have to edit the file \doxyref{engines/\-Engines\-Include.\-icc}{p.}{EnginesInclude_8icc}.} 
+
+Definition in file {\bf Engines\-Add.\-icc}.
+

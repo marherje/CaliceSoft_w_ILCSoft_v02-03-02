@@ -1,0 +1,31 @@
+\section{/nfs/dust/ilc/user/marquezh/\-Calice\-Soft\-\_\-w\-\_\-\-I\-L\-C\-Soft\-\_\-v02-\/03-\/02/calice\-\_\-db\-\_\-tools/include/\-Absolute\-Slopes\-Calculator.hh File Reference}
+\label{AbsoluteSlopesCalculator_8hh}\index{/nfs/dust/ilc/user/marquezh/\-Calice\-Soft\-\_\-w\-\_\-\-I\-L\-C\-Soft\-\_\-v02-\/03-\/02/calice\-\_\-db\-\_\-tools/include/\-Absolute\-Slopes\-Calculator.\-hh@{/nfs/dust/ilc/user/marquezh/\-Calice\-Soft\-\_\-w\-\_\-\-I\-L\-C\-Soft\-\_\-v02-\/03-\/02/calice\-\_\-db\-\_\-tools/include/\-Absolute\-Slopes\-Calculator.\-hh}}
+{\ttfamily \#include \char`\"{}Linear\-Fit\-Constant.\-hh\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}Access\-Linear\-Fit\-Constant.\-hh\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}lcio.\-h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}I\-M\-P\-L/\-L\-C\-Collection\-Vec.\-h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}I\-M\-P\-L/\-L\-C\-T\-O\-O\-L\-S.\-h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}I\-O/\-L\-C\-Reader.\-h\char`\"{}}\\*
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class {\bf Absolute\-Slopes\-Calculator}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+This tool calculates absolute slopes from C\-A\-L\-I\-C\-E\-::\-Linear\-Fit\-Constants
+
+Command line parameters\-: \par
+ {\itshape --rel\-\_\-slope} $<$float$>$ -\/$>$ define relative slope for all channels\par
+\par
+ {\itshape --const} -\/$>$ define input for constant \par
+\par
+ {\itshape --txt} $<$inputfile.\-txt$>$ -\/$>$ define .txt file as source (format\-: module/chip/channel/value/error...) \par
+ {\itshape --slcio} $<$inputfile.\-slcio$>$ $<$collection$>$ -\/$>$ define collection from .slcio file as source \par
+ {\itshape --db} $<$D\-Bfolder$>$ $<$time$>$ -\/$>$ define database folder at time $<$time$>$ as source, using no tag \par
+ {\itshape --db\-\_\-tag} $<$D\-Bfolder$>$ $<$time$>$ $<$tag$>$ -\/$>$ define database folder at time $<$time$>$ and tag $<$tag$>$ as source \par
+
+
+Definition in file {\bf Absolute\-Slopes\-Calculator.\-hh}.
+

@@ -1,0 +1,55 @@
+\section{/nfs/dust/ilc/user/marquezh/\-Calice\-Soft\-\_\-w\-\_\-\-I\-L\-C\-Soft\-\_\-v02-\/03-\/02/calice\-\_\-db\-\_\-tools/src/set\-Beam\-Meta\-Data.cc File Reference}
+\label{setBeamMetaData_8cc}\index{/nfs/dust/ilc/user/marquezh/\-Calice\-Soft\-\_\-w\-\_\-\-I\-L\-C\-Soft\-\_\-v02-\/03-\/02/calice\-\_\-db\-\_\-tools/src/set\-Beam\-Meta\-Data.\-cc@{/nfs/dust/ilc/user/marquezh/\-Calice\-Soft\-\_\-w\-\_\-\-I\-L\-C\-Soft\-\_\-v02-\/03-\/02/calice\-\_\-db\-\_\-tools/src/set\-Beam\-Meta\-Data.\-cc}}
+{\ttfamily \#include $<$iostream$>$}\\*
+{\ttfamily \#include $<$string$>$}\\*
+{\ttfamily \#include $<$unistd.\-h$>$}\\*
+{\ttfamily \#include \char`\"{}E\-V\-E\-N\-T/\-L\-C\-I\-O.\-h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}E\-V\-E\-N\-T/\-L\-C\-Collection.\-h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}I\-M\-P\-L/\-L\-C\-Collection\-Vec.\-h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}lccd/\-D\-B\-Interface.\-hh\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}Run\-Location.\-hh\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}Beam\-Meta\-Data.\-hh\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}Calice\-Time.\-hh\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}Calice\-D\-B\-Init\-Helper.\-hh\char`\"{}}\\*
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+void {\bfseries print\-Help} (const char $\ast$prog, std\-::ostream \&out)\label{setBeamMetaData_8cc_a916a9682d2523299f47f4ac23e667f0e}
+
+\item 
+int {\bfseries pdg\-Code} (const std\-::string \&particle)\label{setBeamMetaData_8cc_abe678018135d49693e872c96684df4d4}
+
+\item 
+int {\bfseries main} (int argc, char $\ast$$\ast$argv)\label{setBeamMetaData_8cc_a3c04138a5bfe5d72780bb7e82a18e627}
+
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+This tool stores the Beam\-Meta\-Data information for one run in the database.
+
+Usage\-:
+
+
+\begin{DoxyCode}
+setBeamMetaData [-e <energy>] [-t <particle>] [-l <folder>] <run>
+\end{DoxyCode}
+
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em $<$run$>$} & run number \\
+\hline
+\mbox{\tt in}  & {\em $<$energy$>$} & beam energy \\
+\hline
+\mbox{\tt in}  & {\em $<$particle$>$} & beam particle type \\
+\hline
+\mbox{\tt out}  & {\em $<$folder$>$} & D\-B folder the Beam\-Meta\-Data information is stored in (default\-: \char`\"{}cd\-\_\-calice\-\_\-$<$beam location$>$/\-Beam\-Meta\-Data\char`\"{})\\
+\hline
+\end{DoxyParams}
+\begin{DoxyRefDesc}{Todo}
+\item[{\bf Todo}]move this tool to calice\-\_\-cddata \end{DoxyRefDesc}
+
+
+Definition in file {\bf set\-Beam\-Meta\-Data.\-cc}.
+

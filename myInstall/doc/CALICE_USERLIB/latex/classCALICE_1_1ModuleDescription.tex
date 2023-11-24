@@ -1,0 +1,423 @@
+\section{C\-A\-L\-I\-C\-E\-:\-:Module\-Description Class Reference}
+\label{classCALICE_1_1ModuleDescription}\index{C\-A\-L\-I\-C\-E\-::\-Module\-Description@{C\-A\-L\-I\-C\-E\-::\-Module\-Description}}
+
+
+Description of Calice (E\-C\-A\-L) detector modules.  
+
+
+
+
+{\ttfamily \#include $<$Module\-Description.\-hh$>$}
+
+Inheritance diagram for C\-A\-L\-I\-C\-E\-:\-:Module\-Description\-:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classCALICE_1_1ModuleDescription}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+{\bf Module\-Description} ()\label{classCALICE_1_1ModuleDescription_aac493042cd3e0949ab704ae3d2570666}
+
+\begin{DoxyCompactList}\small\item\em Default c'tor. \end{DoxyCompactList}\item 
+{\bfseries Module\-Description} (const {\bf Module\-Description} \&a)\label{classCALICE_1_1ModuleDescription_ae690509af5821f5376eca1978010dca2}
+
+\item 
+{\bf Module\-Description} (U\-Char\-\_\-t module\-\_\-type, U\-Int\-\_\-t n\-\_\-cells, const std\-::string \&name, E\-Module\-Description\-Options options=k\-Module\-Description\-Normal)\label{classCALICE_1_1ModuleDescription_a183c40d064cb59b06b687266f87180d9}
+
+\begin{DoxyCompactList}\small\item\em Useful\-Constructor. \end{DoxyCompactList}\item 
+{\bf Module\-Description} \& {\bfseries set\-Module\-Type} (U\-Char\-\_\-t type)\label{classCALICE_1_1ModuleDescription_a0178590efcf2b5584f57a95c2aafa58a}
+
+\item 
+U\-Char\-\_\-t {\bfseries get\-Module\-Type} () const \label{classCALICE_1_1ModuleDescription_a79d492386c0d99b3725fd946572d4ce4}
+
+\item 
+bool {\bf is\-Valid} () const \label{classCALICE_1_1ModuleDescription_a05ba6bbaad29baf392cefbec46870a93}
+
+\begin{DoxyCompactList}\small\item\em return if the \doxyref{Module\-Description}{p.}{classCALICE_1_1ModuleDescription} object is defined. \end{DoxyCompactList}\item 
+std\-::string {\bf get\-Module\-Type\-Name} () const 
+\begin{DoxyCompactList}\small\item\em Get the name assigned to the module type. \end{DoxyCompactList}\item 
+{\bf Module\-Description} \& {\bfseries set\-Cell\-X\-Pos} (U\-Int\-\_\-t cell\-\_\-index, float x\-\_\-pos)\label{classCALICE_1_1ModuleDescription_ab2a1451b19a24800810f3ffce78bd2c4}
+
+\item 
+{\bf Module\-Description} \& {\bfseries set\-Cell\-Y\-Pos} (U\-Int\-\_\-t cell\-\_\-index, float y\-\_\-pos)\label{classCALICE_1_1ModuleDescription_a2ef6c1418eddc0a3766137763eb988cb}
+
+\item 
+{\bf Module\-Description} \& {\bfseries set\-Cell\-Pos} (U\-Int\-\_\-t cell\-\_\-index, float x\-\_\-pos, float y\-\_\-pos)\label{classCALICE_1_1ModuleDescription_ae9c708b8821ed5091de4aa6e51004246}
+
+\item 
+{\bf Module\-Description} \& {\bf set\-Cell\-Z\-Pos} (U\-Int\-\_\-t cell\-\_\-index, float z\-\_\-pos)
+\begin{DoxyCompactList}\small\item\em Set the cell z-\/position. \end{DoxyCompactList}\item 
+Float\-\_\-t {\bfseries get\-Cell\-X\-Pos} (U\-Int\-\_\-t cell\-\_\-index) const \label{classCALICE_1_1ModuleDescription_aa20f13e4e19bef6d2837c17d8b457347}
+
+\item 
+Float\-\_\-t {\bfseries get\-Cell\-Y\-Pos} (U\-Int\-\_\-t cell\-\_\-index) const \label{classCALICE_1_1ModuleDescription_ae0aeff46cb95793fe76c271433704f10}
+
+\item 
+Float\-\_\-t {\bf get\-Cell\-Z\-Pos} (U\-Int\-\_\-t cell\-\_\-index) const 
+\begin{DoxyCompactList}\small\item\em Get the z position offset of an individual cell. \end{DoxyCompactList}\item 
+U\-Int\-\_\-t {\bfseries get\-N\-Cells} () const \label{classCALICE_1_1ModuleDescription_a1481243907613ec11ce4c21e617788f3}
+
+\item 
+bool {\bf has\-Cell\-Dimensions\-Per\-Cell} () const 
+\begin{DoxyCompactList}\small\item\em Return true if there are cell dimensions (width and height) per cell. \end{DoxyCompactList}\item 
+bool {\bf has\-Cell\-Z\-Pos} () const 
+\begin{DoxyCompactList}\small\item\em Return true if the cells have also a z-\/position offset. \end{DoxyCompactList}\item 
+{\bf Module\-Description} \& {\bfseries set\-Cell\-Width} (float cell\-\_\-width)\label{classCALICE_1_1ModuleDescription_a57019acf461e74433dc6fa23a0a8f0b4}
+
+\item 
+float {\bfseries get\-Cell\-Width} () const \label{classCALICE_1_1ModuleDescription_ade84a24ceda3cfff394ac88b44438e05}
+
+\item 
+{\bf Module\-Description} \& {\bfseries set\-Cell\-Height} (float cell\-\_\-height)\label{classCALICE_1_1ModuleDescription_afe32c8b222b32f1d38f2915989379e88}
+
+\item 
+float {\bfseries get\-Cell\-Height} () const \label{classCALICE_1_1ModuleDescription_a2db9bde4ad3a7e8d6db1d3434c377675}
+
+\item 
+{\bf Module\-Description} \& {\bf set\-Individual\-Cell\-Width} (U\-Int\-\_\-t cell\-\_\-index, float cell\-\_\-width)
+\begin{DoxyCompactList}\small\item\em Set the indivual cell width. \end{DoxyCompactList}\item 
+float {\bf get\-Individual\-Cell\-Width} (U\-Int\-\_\-t cell\-\_\-index) const 
+\begin{DoxyCompactList}\small\item\em Return the width of a specific cell. \end{DoxyCompactList}\item 
+{\bf Module\-Description} \& {\bf set\-Individual\-Cell\-Height} (U\-Int\-\_\-t cell\-\_\-index, float cell\-\_\-height)
+\begin{DoxyCompactList}\small\item\em Set the indivual cell height. \end{DoxyCompactList}\item 
+float {\bf get\-Individual\-Cell\-Height} (U\-Int\-\_\-t cell\-\_\-index) const 
+\begin{DoxyCompactList}\small\item\em Return the height of a specific cell. \end{DoxyCompactList}\item 
+{\bf Module\-Description} \& {\bfseries set\-Width} (float width)\label{classCALICE_1_1ModuleDescription_a932544e2950a3351464ecf500f269ef9}
+
+\item 
+float {\bfseries get\-Width} () const \label{classCALICE_1_1ModuleDescription_ae3b141f355ef64c993d0bb3cee17cb10}
+
+\item 
+{\bf Module\-Description} \& {\bfseries set\-Height} (float height)\label{classCALICE_1_1ModuleDescription_a14290106b15a178bab895b60849d1b1a}
+
+\item 
+float {\bfseries get\-Height} () const \label{classCALICE_1_1ModuleDescription_a7bf2a936a1b727e80556dd136c637385}
+
+\item 
+{\bf Module\-Description} \& {\bf set\-Geometrical\-Cell\-Index} (U\-Int\-\_\-t cell\-\_\-index, U\-Int\-\_\-t geometrical\-\_\-cell\-\_\-index)
+\begin{DoxyCompactList}\small\item\em Set the geometrical cell index of the specified cell. \end{DoxyCompactList}\item 
+U\-Int\-\_\-t {\bf get\-Geometrical\-Cell\-Index} (U\-Int\-\_\-t cell\-\_\-index) const 
+\begin{DoxyCompactList}\small\item\em Get the geometrical cell index of the specified cell which respects the Mokka notation. \end{DoxyCompactList}\item 
+const std\-::string {\bf get\-Type\-Name} () const \label{classCALICE_1_1ModuleDescription_ab00584c46e168d308d2ee96257eab926}
+
+\begin{DoxyCompactList}\small\item\em Return the type of the class. \end{DoxyCompactList}\item 
+const std\-::string {\bf get\-Data\-Description} () const \label{classCALICE_1_1ModuleDescription_a42873456df6406e7e596f91bc6cccdfb}
+
+\begin{DoxyCompactList}\small\item\em Return a brief description of the data members. \end{DoxyCompactList}\item 
+{\bf Module\-Description} (L\-C\-Object $\ast${\bf obj})
+\begin{DoxyCompactList}\small\item\em C'tor to be used for elements of L\-C\-Generic\-Objects read from an L\-C\-I\-O file or the database. \end{DoxyCompactList}\item 
+L\-C\-Generic\-Object\-Impl $\ast$ {\bf obj} ()
+\begin{DoxyCompactList}\small\item\em The L\-C\-Generic\-Object\-Impl . \end{DoxyCompactList}\item 
+virtual {\bf $\sim$\-Module\-Description} ()\label{classCALICE_1_1ModuleDescription_a5442b0006680c6e26255c42f7852be0d}
+
+\begin{DoxyCompactList}\small\item\em Clean up if we created a new L\-C\-Generic\-Object\-Impl. \end{DoxyCompactList}\item 
+virtual int {\bf id} ()\label{classCALICE_1_1ModuleDescription_a41a5415f8d31692ce56dd7eccf553e84}
+
+\begin{DoxyCompactList}\small\item\em Return the id of the underlying L\-C\-Generic\-Object\-Impl. \end{DoxyCompactList}\item 
+int {\bfseries get\-N\-Int} () const \label{classCALICE_1_1ModuleDescription_a942da789986f53a013860fe874a0c4ad}
+
+\item 
+int {\bfseries get\-N\-Float} () const \label{classCALICE_1_1ModuleDescription_a8122ee93d9dc0644dc62b6e1d37123d2}
+
+\item 
+int {\bfseries get\-N\-Double} () const \label{classCALICE_1_1ModuleDescription_a201264d64f32e6dcc4cf74c301126dc4}
+
+\item 
+int {\bfseries get\-Int\-Val} (int index) const \label{classCALICE_1_1ModuleDescription_ac86cb41d3d1b451e9ee7f27d83de33fa}
+
+\item 
+float {\bfseries get\-Float\-Val} (int index) const \label{classCALICE_1_1ModuleDescription_afa9cbc30e44e8cfaaaad0c708d995917}
+
+\item 
+double {\bfseries get\-Double\-Val} (int index) const \label{classCALICE_1_1ModuleDescription_a08aaf6d0a9db0b157813e3be51fe2de2}
+
+\item 
+bool {\bfseries is\-Fixed\-Size} () const \label{classCALICE_1_1ModuleDescription_aab86d7e5191f2e14ed870641435c9bcf}
+
+\end{DoxyCompactItemize}
+\subsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void {\bfseries init} () noexcept(false)\label{classCALICE_1_1ModuleDescription_ab7952a3c16c2db1687ee10a7c4895271}
+
+\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+L\-C\-Generic\-Object\-Impl $\ast$ {\bfseries \-\_\-obj}\label{classCALICE_1_1ModuleDescription_a6e897f0d32766b0bf356479d6663b5a8}
+
+\item 
+bool {\bfseries \-\_\-created\-Object}\label{classCALICE_1_1ModuleDescription_a318dff8d4126488abf18d2a2f53ad951}
+
+\item 
+unsigned int {\bfseries \-\_\-n\-Cells}\label{classCALICE_1_1ModuleDescription_a6bdb497b22efb39250336922228795ec}
+
+\item 
+unsigned int {\bfseries \-\_\-cell\-Index\-Start}\label{classCALICE_1_1ModuleDescription_a1928949683e58b738d5324d82c60ebd4}
+
+\item 
+unsigned int {\bfseries \-\_\-cell\-Dimension\-Start}\label{classCALICE_1_1ModuleDescription_ae654784efd06b82f358109d0902b2b0d}
+
+\item 
+unsigned int {\bfseries \-\_\-cell\-Z\-Pos\-Start}\label{classCALICE_1_1ModuleDescription_a1588a4adbd5a0de1094216818415a088}
+
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Description of Calice (E\-C\-A\-L) detector modules. 
+
+Based on L\-C\-Fixed\-Object. \begin{DoxyAuthor}{Author}
+Goetz Gayckem, L\-L\-R -\/ ecole polytechnique) 
+\end{DoxyAuthor}
+\begin{DoxyVersion}{Version}
+
+\end{DoxyVersion}
+\begin{DoxyParagraph}{Id\-:}
+\doxyref{Module\-Description.\-hh}{p.}{ModuleDescription_8hh_source},v 1.\-7 2009-\/07-\/02 13\-:07\-:56 meyern Exp 
+\end{DoxyParagraph}
+
+
+Definition at line 42 of file Module\-Description.\-hh.
+
+
+
+\subsection{Constructor \& Destructor Documentation}
+\index{C\-A\-L\-I\-C\-E\-::\-Module\-Description@{C\-A\-L\-I\-C\-E\-::\-Module\-Description}!Module\-Description@{Module\-Description}}
+\index{Module\-Description@{Module\-Description}!CALICE::ModuleDescription@{C\-A\-L\-I\-C\-E\-::\-Module\-Description}}
+\subsubsection[{Module\-Description}]{\setlength{\rightskip}{0pt plus 5cm}C\-A\-L\-I\-C\-E\-::\-Module\-Description\-::\-Module\-Description (
+\begin{DoxyParamCaption}
+\item[{L\-C\-Object $\ast$}]{obj}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\label{classCALICE_1_1ModuleDescription_abd5c7b038ef0504e333bfd740b09d465}
+
+
+C'tor to be used for elements of L\-C\-Generic\-Objects read from an L\-C\-I\-O file or the database. 
+
+Subclasses should 'override' this, e.\-g.\-:\par
+ Myclass(\-L\-C\-Object$\ast$ obj) \-: Module\-Description(obj) \{\} \par
+ 
+
+Definition at line 450 of file Module\-Description.\-hh.
+
+
+
+References C\-A\-L\-I\-C\-E\-::get\-Needed\-Ints(), and obj().
+
+
+
+\subsection{Member Function Documentation}
+\index{C\-A\-L\-I\-C\-E\-::\-Module\-Description@{C\-A\-L\-I\-C\-E\-::\-Module\-Description}!get\-Cell\-Z\-Pos@{get\-Cell\-Z\-Pos}}
+\index{get\-Cell\-Z\-Pos@{get\-Cell\-Z\-Pos}!CALICE::ModuleDescription@{C\-A\-L\-I\-C\-E\-::\-Module\-Description}}
+\subsubsection[{get\-Cell\-Z\-Pos}]{\setlength{\rightskip}{0pt plus 5cm}Float\-\_\-t C\-A\-L\-I\-C\-E\-::\-Module\-Description\-::get\-Cell\-Z\-Pos (
+\begin{DoxyParamCaption}
+\item[{U\-Int\-\_\-t}]{cell\-\_\-index}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}\label{classCALICE_1_1ModuleDescription_af659552ab26c2046818385e1c5cf9ae9}
+
+
+Get the z position offset of an individual cell. 
+
+The result of this call is only defined if \doxyref{has\-Cell\-Z\-Pos}{p.}{classCALICE_1_1ModuleDescription_a5cbde68c07bc1de72bb6bc2dad802785} returns true. 
+
+Definition at line 242 of file Module\-Description.\-hh.
+
+\index{C\-A\-L\-I\-C\-E\-::\-Module\-Description@{C\-A\-L\-I\-C\-E\-::\-Module\-Description}!get\-Geometrical\-Cell\-Index@{get\-Geometrical\-Cell\-Index}}
+\index{get\-Geometrical\-Cell\-Index@{get\-Geometrical\-Cell\-Index}!CALICE::ModuleDescription@{C\-A\-L\-I\-C\-E\-::\-Module\-Description}}
+\subsubsection[{get\-Geometrical\-Cell\-Index}]{\setlength{\rightskip}{0pt plus 5cm}U\-Int\-\_\-t C\-A\-L\-I\-C\-E\-::\-Module\-Description\-::get\-Geometrical\-Cell\-Index (
+\begin{DoxyParamCaption}
+\item[{U\-Int\-\_\-t}]{cell\-\_\-index}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}\label{classCALICE_1_1ModuleDescription_a51c9bc14fff2390f99a73e154c4c4e11}
+
+
+Get the geometrical cell index of the specified cell which respects the Mokka notation. 
+
+The geometrical cell index conforms to the Mokka notation. It contains the layer index, the wafer row and column and the the pad row and column. The indices stored in the \doxyref{Module\-Description}{p.}{classCALICE_1_1ModuleDescription} object only contain the wafer row, column, pad row and column. The layer index, and on offset to the wafer column and row must be added to form an index in the notation which is Mokka conform. \begin{DoxyRefDesc}{Todo}
+\item[{\bf Todo}]I did not find a more clever way than putting this index into the database. \end{DoxyRefDesc}
+
+
+Definition at line 419 of file Module\-Description.\-hh.
+
+\index{C\-A\-L\-I\-C\-E\-::\-Module\-Description@{C\-A\-L\-I\-C\-E\-::\-Module\-Description}!get\-Individual\-Cell\-Height@{get\-Individual\-Cell\-Height}}
+\index{get\-Individual\-Cell\-Height@{get\-Individual\-Cell\-Height}!CALICE::ModuleDescription@{C\-A\-L\-I\-C\-E\-::\-Module\-Description}}
+\subsubsection[{get\-Individual\-Cell\-Height}]{\setlength{\rightskip}{0pt plus 5cm}float C\-A\-L\-I\-C\-E\-::\-Module\-Description\-::get\-Individual\-Cell\-Height (
+\begin{DoxyParamCaption}
+\item[{U\-Int\-\_\-t}]{cell\-\_\-index}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}\label{classCALICE_1_1ModuleDescription_ac20c2c284f5fa289f5291f6abf4270bc}
+
+
+Return the height of a specific cell. 
+
+This call only is defined if \doxyref{has\-Cell\-Dimensions\-Per\-Cell}{p.}{classCALICE_1_1ModuleDescription_a34110a8610a08286f8f8ebdfd3c2cabf} returns true. 
+
+Definition at line 360 of file Module\-Description.\-hh.
+
+\index{C\-A\-L\-I\-C\-E\-::\-Module\-Description@{C\-A\-L\-I\-C\-E\-::\-Module\-Description}!get\-Individual\-Cell\-Width@{get\-Individual\-Cell\-Width}}
+\index{get\-Individual\-Cell\-Width@{get\-Individual\-Cell\-Width}!CALICE::ModuleDescription@{C\-A\-L\-I\-C\-E\-::\-Module\-Description}}
+\subsubsection[{get\-Individual\-Cell\-Width}]{\setlength{\rightskip}{0pt plus 5cm}float C\-A\-L\-I\-C\-E\-::\-Module\-Description\-::get\-Individual\-Cell\-Width (
+\begin{DoxyParamCaption}
+\item[{U\-Int\-\_\-t}]{cell\-\_\-index}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}\label{classCALICE_1_1ModuleDescription_aa48a2a4e0d1d1312c666adbc83c7a7be}
+
+
+Return the width of a specific cell. 
+
+This call only is defined if \doxyref{has\-Cell\-Dimensions\-Per\-Cell}{p.}{classCALICE_1_1ModuleDescription_a34110a8610a08286f8f8ebdfd3c2cabf} returns true. 
+
+Definition at line 335 of file Module\-Description.\-hh.
+
+\index{C\-A\-L\-I\-C\-E\-::\-Module\-Description@{C\-A\-L\-I\-C\-E\-::\-Module\-Description}!get\-Module\-Type\-Name@{get\-Module\-Type\-Name}}
+\index{get\-Module\-Type\-Name@{get\-Module\-Type\-Name}!CALICE::ModuleDescription@{C\-A\-L\-I\-C\-E\-::\-Module\-Description}}
+\subsubsection[{get\-Module\-Type\-Name}]{\setlength{\rightskip}{0pt plus 5cm}std\-::string C\-A\-L\-I\-C\-E\-::\-Module\-Description\-::get\-Module\-Type\-Name (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}\label{classCALICE_1_1ModuleDescription_a8d595c654170721c3de730f63008d3b6}
+
+
+Get the name assigned to the module type. 
+
+The module type number is generally considered to be unique. It should not be necessary to query the name and map type numbers to module names. Due to the character encoding in an integer array, the function may perform slowly. 
+
+Definition at line 167 of file Module\-Description.\-hh.
+
+
+
+References C\-A\-L\-I\-C\-E\-::get\-String\-From\-Ints().
+
+
+
+Referenced by C\-A\-L\-I\-C\-E\-::\-Mapping\-And\-Alignment\-::correct\-Full\-Half\-Connector\-Errors().
+
+\index{C\-A\-L\-I\-C\-E\-::\-Module\-Description@{C\-A\-L\-I\-C\-E\-::\-Module\-Description}!has\-Cell\-Dimensions\-Per\-Cell@{has\-Cell\-Dimensions\-Per\-Cell}}
+\index{has\-Cell\-Dimensions\-Per\-Cell@{has\-Cell\-Dimensions\-Per\-Cell}!CALICE::ModuleDescription@{C\-A\-L\-I\-C\-E\-::\-Module\-Description}}
+\subsubsection[{has\-Cell\-Dimensions\-Per\-Cell}]{\setlength{\rightskip}{0pt plus 5cm}bool C\-A\-L\-I\-C\-E\-::\-Module\-Description\-::has\-Cell\-Dimensions\-Per\-Cell (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}\label{classCALICE_1_1ModuleDescription_a34110a8610a08286f8f8ebdfd3c2cabf}
+
+
+Return true if there are cell dimensions (width and height) per cell. 
+
+if there are no cell dimensions per cell the result of the calls \doxyref{get\-Individual\-Cell\-Width}{p.}{classCALICE_1_1ModuleDescription_aa48a2a4e0d1d1312c666adbc83c7a7be} and \doxyref{get\-Individual\-Cell\-Height}{p.}{classCALICE_1_1ModuleDescription_ac20c2c284f5fa289f5291f6abf4270bc} will be undefined (most likely this will cause a segmentation violation). If there are cell dimensions per cell then the calls get\-Cell\-Width() and get\-Cell\-Height will cause an exception. 
+
+Definition at line 276 of file Module\-Description.\-hh.
+
+\index{C\-A\-L\-I\-C\-E\-::\-Module\-Description@{C\-A\-L\-I\-C\-E\-::\-Module\-Description}!has\-Cell\-Z\-Pos@{has\-Cell\-Z\-Pos}}
+\index{has\-Cell\-Z\-Pos@{has\-Cell\-Z\-Pos}!CALICE::ModuleDescription@{C\-A\-L\-I\-C\-E\-::\-Module\-Description}}
+\subsubsection[{has\-Cell\-Z\-Pos}]{\setlength{\rightskip}{0pt plus 5cm}bool C\-A\-L\-I\-C\-E\-::\-Module\-Description\-::has\-Cell\-Z\-Pos (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}\label{classCALICE_1_1ModuleDescription_a5cbde68c07bc1de72bb6bc2dad802785}
+
+
+Return true if the cells have also a z-\/position offset. 
+
+If the cells do not have a z-\/position offset then the result of the call get\-Z\-Pos will be undefined (i.\-e. most likely will cause a segmentation vaiolation). 
+
+Definition at line 284 of file Module\-Description.\-hh.
+
+\index{C\-A\-L\-I\-C\-E\-::\-Module\-Description@{C\-A\-L\-I\-C\-E\-::\-Module\-Description}!obj@{obj}}
+\index{obj@{obj}!CALICE::ModuleDescription@{C\-A\-L\-I\-C\-E\-::\-Module\-Description}}
+\subsubsection[{obj}]{\setlength{\rightskip}{0pt plus 5cm}L\-C\-Generic\-Object\-Impl$\ast$ C\-A\-L\-I\-C\-E\-::\-Module\-Description\-::obj (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\label{classCALICE_1_1ModuleDescription_aa8f8f570fa25a5e016cc19c7cb7d853e}
+
+
+The L\-C\-Generic\-Object\-Impl . 
+
+Sublcasses use this to access their data. 
+
+Definition at line 534 of file Module\-Description.\-hh.
+
+
+
+Referenced by Module\-Description().
+
+\index{C\-A\-L\-I\-C\-E\-::\-Module\-Description@{C\-A\-L\-I\-C\-E\-::\-Module\-Description}!set\-Cell\-Z\-Pos@{set\-Cell\-Z\-Pos}}
+\index{set\-Cell\-Z\-Pos@{set\-Cell\-Z\-Pos}!CALICE::ModuleDescription@{C\-A\-L\-I\-C\-E\-::\-Module\-Description}}
+\subsubsection[{set\-Cell\-Z\-Pos}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Module\-Description}\& C\-A\-L\-I\-C\-E\-::\-Module\-Description\-::set\-Cell\-Z\-Pos (
+\begin{DoxyParamCaption}
+\item[{U\-Int\-\_\-t}]{cell\-\_\-index, }
+\item[{float}]{z\-\_\-pos}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\label{classCALICE_1_1ModuleDescription_a46348a50de62620467bdf1711915aafe}
+
+
+Set the cell z-\/position. 
+
+The result of this call is only defined if \doxyref{has\-Cell\-Z\-Pos}{p.}{classCALICE_1_1ModuleDescription_a5cbde68c07bc1de72bb6bc2dad802785} returns true. 
+
+Definition at line 204 of file Module\-Description.\-hh.
+
+\index{C\-A\-L\-I\-C\-E\-::\-Module\-Description@{C\-A\-L\-I\-C\-E\-::\-Module\-Description}!set\-Geometrical\-Cell\-Index@{set\-Geometrical\-Cell\-Index}}
+\index{set\-Geometrical\-Cell\-Index@{set\-Geometrical\-Cell\-Index}!CALICE::ModuleDescription@{C\-A\-L\-I\-C\-E\-::\-Module\-Description}}
+\subsubsection[{set\-Geometrical\-Cell\-Index}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Module\-Description}\& C\-A\-L\-I\-C\-E\-::\-Module\-Description\-::set\-Geometrical\-Cell\-Index (
+\begin{DoxyParamCaption}
+\item[{U\-Int\-\_\-t}]{cell\-\_\-index, }
+\item[{U\-Int\-\_\-t}]{geometrical\-\_\-cell\-\_\-index}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\label{classCALICE_1_1ModuleDescription_a3e14b75a948febdb14e7e5f394609c59}
+
+
+Set the geometrical cell index of the specified cell. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em cell\-\_\-index} & the cell index (zero to n) which reflects the A\-D\-C read order\-: line zero to line 12 (6 for half equipped lines) of the first sample (each line is connected to one readout chip), then the next sample which is multiplexed on the same 12(6 for half equipped modules) lines. In total 18 samples are read i.\-e. the index runs from 0 to 215 or from 0 to 107. \\
+\hline
+{\em geometrical\-\_\-cell\-\_\-index} & the Mokka conform geometrical cell index. The geometrical cell index (should) respects the Mokka notation. It contains the layer index, the wafer row and column and the the pad row and column. The indices stored in the \doxyref{Module\-Description}{p.}{classCALICE_1_1ModuleDescription} object only contain the wafer row, column, pad row and column. The layer index, and on offset to the wafer column and row must be added to form an index in the notation which is conforming to Mokka. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyRefDesc}{Todo}
+\item[{\bf Todo}]I did not find a more clever way than putting this index into the database. \end{DoxyRefDesc}
+
+
+Definition at line 398 of file Module\-Description.\-hh.
+
+\index{C\-A\-L\-I\-C\-E\-::\-Module\-Description@{C\-A\-L\-I\-C\-E\-::\-Module\-Description}!set\-Individual\-Cell\-Height@{set\-Individual\-Cell\-Height}}
+\index{set\-Individual\-Cell\-Height@{set\-Individual\-Cell\-Height}!CALICE::ModuleDescription@{C\-A\-L\-I\-C\-E\-::\-Module\-Description}}
+\subsubsection[{set\-Individual\-Cell\-Height}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Module\-Description}\& C\-A\-L\-I\-C\-E\-::\-Module\-Description\-::set\-Individual\-Cell\-Height (
+\begin{DoxyParamCaption}
+\item[{U\-Int\-\_\-t}]{cell\-\_\-index, }
+\item[{float}]{cell\-\_\-height}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\label{classCALICE_1_1ModuleDescription_a030177a9616c951edfeafc08eefccf4b}
+
+
+Set the indivual cell height. 
+
+The result of the call will be undefined if \doxyref{has\-Cell\-Dimensions\-Per\-Cell}{p.}{classCALICE_1_1ModuleDescription_a34110a8610a08286f8f8ebdfd3c2cabf} is not true. 
+
+Definition at line 346 of file Module\-Description.\-hh.
+
+\index{C\-A\-L\-I\-C\-E\-::\-Module\-Description@{C\-A\-L\-I\-C\-E\-::\-Module\-Description}!set\-Individual\-Cell\-Width@{set\-Individual\-Cell\-Width}}
+\index{set\-Individual\-Cell\-Width@{set\-Individual\-Cell\-Width}!CALICE::ModuleDescription@{C\-A\-L\-I\-C\-E\-::\-Module\-Description}}
+\subsubsection[{set\-Individual\-Cell\-Width}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Module\-Description}\& C\-A\-L\-I\-C\-E\-::\-Module\-Description\-::set\-Individual\-Cell\-Width (
+\begin{DoxyParamCaption}
+\item[{U\-Int\-\_\-t}]{cell\-\_\-index, }
+\item[{float}]{cell\-\_\-width}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\label{classCALICE_1_1ModuleDescription_aa88e5221ff0dacbf0371cf2a79ab65c9}
+
+
+Set the indivual cell width. 
+
+The result of the call will be undefined if \doxyref{has\-Cell\-Dimensions\-Per\-Cell}{p.}{classCALICE_1_1ModuleDescription_a34110a8610a08286f8f8ebdfd3c2cabf} is not true. 
+
+Definition at line 321 of file Module\-Description.\-hh.
+
+
+
+The documentation for this class was generated from the following file\-:\begin{DoxyCompactItemize}
+\item 
+Module\-Description.\-hh\end{DoxyCompactItemize}

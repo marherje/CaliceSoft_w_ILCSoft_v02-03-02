@@ -1,0 +1,82 @@
+\hypertarget{create_bad_channels_list_8cpp}{\section{create\-Bad\-Channels\-List.\-cpp File Reference}
+\label{create_bad_channels_list_8cpp}\index{create\-Bad\-Channels\-List.\-cpp@{create\-Bad\-Channels\-List.\-cpp}}
+}
+{\ttfamily \#include \char`\"{}Spectrum\-Properties\-Run\-Info.\-h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}Channel\-Expert\-Quality.\-h\char`\"{}}\\*
+{\ttfamily \#include $<$cstdlib$>$}\\*
+{\ttfamily \#include $<$iostream$>$}\\*
+{\ttfamily \#include $<$fstream$>$}\\*
+{\ttfamily \#include $<$sstream$>$}\\*
+{\ttfamily \#include $<$vector$>$}\\*
+{\ttfamily \#include $<$T\-Graph.\-h$>$}\\*
+{\ttfamily \#include $<$T\-Vector.\-h$>$}\\*
+{\ttfamily \#include $<$T\-Canvas.\-h$>$}\\*
+{\ttfamily \#include $<$T\-Legend.\-h$>$}\\*
+{\ttfamily \#include $<$T\-Style.\-h$>$}\\*
+{\ttfamily \#include $<$T\-Tree.\-h$>$}\\*
+{\ttfamily \#include $<$T\-Directory.\-h$>$}\\*
+{\ttfamily \#include $<$T\-R\-O\-O\-T.\-h$>$}\\*
+{\ttfamily \#include $<$T\-File.\-h$>$}\\*
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{create_bad_channels_list_8cpp_a6c144793f464f5d739a3f6409653db66}{print\-Usage} (void)
+\item 
+void \hyperlink{create_bad_channels_list_8cpp_a1f8e5e6ed3679bbb4b70c661327c4f94}{print\-Channel\-Status\-Map} (std\-::map$<$ int, int $>$ const \&channel\-Status\-Map, std\-::ostream \&s=std\-::cout)
+\item 
+int \hyperlink{create_bad_channels_list_8cpp_a0ddf1224851353fc92bfbff6f499fa97}{main} (int argc, char $\ast$argv\mbox{[}$\,$\mbox{]})
+\end{DoxyCompactItemize}
+
+
+\subsection{Function Documentation}
+\hypertarget{create_bad_channels_list_8cpp_a0ddf1224851353fc92bfbff6f499fa97}{\index{create\-Bad\-Channels\-List.\-cpp@{create\-Bad\-Channels\-List.\-cpp}!main@{main}}
+\index{main@{main}!createBadChannelsList.cpp@{create\-Bad\-Channels\-List.\-cpp}}
+\subsubsection[{main}]{\setlength{\rightskip}{0pt plus 5cm}int main (
+\begin{DoxyParamCaption}
+\item[{int}]{argc, }
+\item[{char $\ast$}]{argv\mbox{[}$\,$\mbox{]}}
+\end{DoxyParamCaption}
+)}}\label{create_bad_channels_list_8cpp_a0ddf1224851353fc92bfbff6f499fa97}
+
+
+Definition at line 58 of file create\-Bad\-Channels\-List.\-cpp.
+
+
+
+References Channel\-Expert\-Quality\-::dead, Spectrum\-Properties\-Run\-Info\-::get\-Global\-Channel\-Number(), Channel\-Expert\-Quality\-::high\-R\-M\-S, print\-Channel\-Status\-Map(), and print\-Usage().
+
+\hypertarget{create_bad_channels_list_8cpp_a1f8e5e6ed3679bbb4b70c661327c4f94}{\index{create\-Bad\-Channels\-List.\-cpp@{create\-Bad\-Channels\-List.\-cpp}!print\-Channel\-Status\-Map@{print\-Channel\-Status\-Map}}
+\index{print\-Channel\-Status\-Map@{print\-Channel\-Status\-Map}!createBadChannelsList.cpp@{create\-Bad\-Channels\-List.\-cpp}}
+\subsubsection[{print\-Channel\-Status\-Map}]{\setlength{\rightskip}{0pt plus 5cm}void print\-Channel\-Status\-Map (
+\begin{DoxyParamCaption}
+\item[{std\-::map$<$ int, int $>$ const \&}]{channel\-Status\-Map, }
+\item[{std\-::ostream \&}]{s = {\ttfamily std\-:\-:cout}}
+\end{DoxyParamCaption}
+)}}\label{create_bad_channels_list_8cpp_a1f8e5e6ed3679bbb4b70c661327c4f94}
+
+
+Definition at line 39 of file create\-Bad\-Channels\-List.\-cpp.
+
+
+
+References Spectrum\-Properties\-Run\-Info\-::\-Channel\-I\-D\-::\-\_\-channel, Spectrum\-Properties\-Run\-Info\-::\-Channel\-I\-D\-::\-\_\-chip, Spectrum\-Properties\-Run\-Info\-::\-Channel\-I\-D\-::\-\_\-module, and Spectrum\-Properties\-Run\-Info\-::get\-Channel\-I\-D().
+
+
+
+Referenced by main().
+
+\hypertarget{create_bad_channels_list_8cpp_a6c144793f464f5d739a3f6409653db66}{\index{create\-Bad\-Channels\-List.\-cpp@{create\-Bad\-Channels\-List.\-cpp}!print\-Usage@{print\-Usage}}
+\index{print\-Usage@{print\-Usage}!createBadChannelsList.cpp@{create\-Bad\-Channels\-List.\-cpp}}
+\subsubsection[{print\-Usage}]{\setlength{\rightskip}{0pt plus 5cm}void print\-Usage (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+)}}\label{create_bad_channels_list_8cpp_a6c144793f464f5d739a3f6409653db66}
+
+
+Definition at line 19 of file create\-Bad\-Channels\-List.\-cpp.
+
+
+
+Referenced by main().
+

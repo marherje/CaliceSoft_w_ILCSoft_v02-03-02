@@ -1,0 +1,882 @@
+\section{Functions for D\-A\-Q channel I\-D}
+\label{group__DAQgroup}\index{Functions for D\-A\-Q channel I\-D@{Functions for D\-A\-Q channel I\-D}}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+unsigned int {\bf C\-A\-L\-I\-C\-E\-::\-Ahc2\-Mapper\-::get\-Module\-From\-D\-A\-Q\-I\-D} (const int D\-A\-Qchannel) const 
+\begin{DoxyCompactList}\small\item\em module number from D\-A\-Q channel I\-D \end{DoxyCompactList}\item 
+unsigned int {\bf C\-A\-L\-I\-C\-E\-::\-Ahc2\-Mapper\-::get\-Module\-From\-D\-A\-Q\-I\-D} (const int D\-A\-Qchannel, bool \&valid) const 
+\begin{DoxyCompactList}\small\item\em get module (number) in which this (D\-A\-Q) channel is included \end{DoxyCompactList}\item 
+unsigned int {\bf C\-A\-L\-I\-C\-E\-::\-Ahc2\-Mapper\-::get\-I\-From\-D\-A\-Q\-I\-D} (const int D\-A\-Qchannel) const 
+\begin{DoxyCompactList}\small\item\em I of (Mokka) cell\-I\-D. \end{DoxyCompactList}\item 
+unsigned int {\bf C\-A\-L\-I\-C\-E\-::\-Ahc2\-Mapper\-::get\-J\-From\-D\-A\-Q\-I\-D} (const int D\-A\-Qchannel) const 
+\begin{DoxyCompactList}\small\item\em J of (Mokka) cell\-I\-D. \end{DoxyCompactList}\item 
+unsigned int {\bf C\-A\-L\-I\-C\-E\-::\-Ahc2\-Mapper\-::get\-K\-From\-D\-A\-Q\-I\-D} (const int D\-A\-Qchannel) const 
+\begin{DoxyCompactList}\small\item\em K of (Mokka) cell\-I\-D. \end{DoxyCompactList}\item 
+unsigned int {\bf C\-A\-L\-I\-C\-E\-::\-Ahc2\-Mapper\-::get\-I\-Size\-From\-D\-A\-Q\-I\-D} (const int D\-A\-Qchannel) const 
+\begin{DoxyCompactList}\small\item\em get cell size in I direction of (Mokka) Cell\-I\-D coordinate \end{DoxyCompactList}\item 
+unsigned int {\bf C\-A\-L\-I\-C\-E\-::\-Ahc2\-Mapper\-::get\-J\-Size\-From\-D\-A\-Q\-I\-D} (const int D\-A\-Qchannel) const 
+\begin{DoxyCompactList}\small\item\em get cell size in J direction of (Mokka) Cell\-I\-D coordinate \end{DoxyCompactList}\item 
+unsigned int {\bf C\-A\-L\-I\-C\-E\-::\-Ahc\-Mapper\-::get\-Module\-From\-D\-A\-Q\-I\-D} (const int D\-A\-Qchannel) const 
+\begin{DoxyCompactList}\small\item\em module number from D\-A\-Q channel I\-D \end{DoxyCompactList}\item 
+unsigned int {\bf C\-A\-L\-I\-C\-E\-::\-Ahc\-Mapper\-::get\-Module\-From\-D\-A\-Q\-I\-D} (const int D\-A\-Qchannel, bool \&valid) const 
+\begin{DoxyCompactList}\small\item\em get module (number) in which this (D\-A\-Q) channel is included \end{DoxyCompactList}\item 
+unsigned int {\bf C\-A\-L\-I\-C\-E\-::\-Ahc\-Mapper\-::get\-I\-From\-D\-A\-Q\-I\-D} (const int D\-A\-Qchannel) const 
+\begin{DoxyCompactList}\small\item\em I of (Mokka) cell\-I\-D. \end{DoxyCompactList}\item 
+unsigned int {\bf C\-A\-L\-I\-C\-E\-::\-Ahc\-Mapper\-::get\-J\-From\-D\-A\-Q\-I\-D} (const int D\-A\-Qchannel) const 
+\begin{DoxyCompactList}\small\item\em J of (Mokka) cell\-I\-D. \end{DoxyCompactList}\item 
+unsigned int {\bf C\-A\-L\-I\-C\-E\-::\-Ahc\-Mapper\-::get\-K\-From\-D\-A\-Q\-I\-D} (const int D\-A\-Qchannel) const 
+\begin{DoxyCompactList}\small\item\em K of (Mokka) cell\-I\-D. \end{DoxyCompactList}\item 
+unsigned int {\bf C\-A\-L\-I\-C\-E\-::\-Ahc\-Mapper\-::get\-I\-Size\-From\-D\-A\-Q\-I\-D} (const int D\-A\-Qchannel) const 
+\begin{DoxyCompactList}\small\item\em get cell size in I direction of (Mokka) Cell\-I\-D coordinate \end{DoxyCompactList}\item 
+unsigned int {\bf C\-A\-L\-I\-C\-E\-::\-Ahc\-Mapper\-::get\-J\-Size\-From\-D\-A\-Q\-I\-D} (const int D\-A\-Qchannel) const 
+\begin{DoxyCompactList}\small\item\em get cell size in J direction of (Mokka) Cell\-I\-D coordinate \end{DoxyCompactList}\item 
+void {\bf C\-A\-L\-I\-C\-E\-::\-Decoder\-Set\-::set\-D\-A\-Q\-Encoding} (const std\-::string \&encoding)
+\begin{DoxyCompactList}\small\item\em set a new D\-A\-Q channel I\-D encoding string if an empty string is given the function will use the default encoding string \end{DoxyCompactList}\item 
+const std\-::string \& {\bf C\-A\-L\-I\-C\-E\-::\-Decoder\-Set\-::get\-D\-A\-Q\-Encoding} () const 
+\begin{DoxyCompactList}\small\item\em get the current D\-A\-Q channel I\-D encoding string \end{DoxyCompactList}\item 
+unsigned int {\bf C\-A\-L\-I\-C\-E\-::\-Decoder\-Set\-::get\-Channel\-From\-D\-A\-Q\-I\-D} (const int D\-A\-Qconnection) const 
+\begin{DoxyCompactList}\small\item\em get channel from D\-A\-Q channel I\-D The right encoding string has to be set before. \end{DoxyCompactList}\item 
+unsigned int {\bf C\-A\-L\-I\-C\-E\-::\-Decoder\-Set\-::get\-Chip\-From\-D\-A\-Q\-I\-D} (const int D\-A\-Qconnection) const 
+\begin{DoxyCompactList}\small\item\em get chip from D\-A\-Q channel I\-D The right encoding string has to be set before. \end{DoxyCompactList}\item 
+unsigned int {\bf C\-A\-L\-I\-C\-E\-::\-Decoder\-Set\-::get\-Fe\-From\-D\-A\-Q\-I\-D} (const int D\-A\-Qconnection) const 
+\begin{DoxyCompactList}\small\item\em get fe from D\-A\-Q channel I\-D The right encoding string has to be set before. \end{DoxyCompactList}\item 
+unsigned int {\bf C\-A\-L\-I\-C\-E\-::\-Decoder\-Set\-::get\-Slot\-From\-D\-A\-Q\-I\-D} (const int D\-A\-Qconnection) const 
+\begin{DoxyCompactList}\small\item\em get slot from D\-A\-Q channel I\-D The right encoding string has to be set before. \end{DoxyCompactList}\item 
+unsigned int {\bf C\-A\-L\-I\-C\-E\-::\-Decoder\-Set\-::get\-Crate\-From\-D\-A\-Q\-I\-D} (const int D\-A\-Qconnection) const 
+\begin{DoxyCompactList}\small\item\em get crate from D\-A\-Q channel I\-D The right encoding string has to be set before. \end{DoxyCompactList}\item 
+int {\bf C\-A\-L\-I\-C\-E\-::\-Decoder\-Set\-::get\-D\-A\-Q\-I\-D} (const unsigned int crate, const unsigned int slot, const unsigned int fe, const unsigned int chip, const unsigned int channel) const 
+\begin{DoxyCompactList}\small\item\em get D\-A\-Q channel I\-D from crate, slot, fe, chip, channel \end{DoxyCompactList}\item 
+virtual unsigned int {\bf C\-A\-L\-I\-C\-E\-::\-Mapper\-::get\-Module\-From\-D\-A\-Q\-I\-D} (const int D\-A\-Qchannel) const =0
+\begin{DoxyCompactList}\small\item\em get module (number) in which this (D\-A\-Q) channel is included \end{DoxyCompactList}\item 
+virtual unsigned int {\bf C\-A\-L\-I\-C\-E\-::\-Mapper\-::get\-Module\-From\-D\-A\-Q\-I\-D} (const int D\-A\-Qchannel, bool \&valid) const =0
+\begin{DoxyCompactList}\small\item\em get module (number) in which this (D\-A\-Q) channel is included \end{DoxyCompactList}\item 
+virtual unsigned int {\bf C\-A\-L\-I\-C\-E\-::\-Mapper\-::get\-Index\-By\-D\-A\-Q\-I\-D} (const int I\-D) const =0
+\begin{DoxyCompactList}\small\item\em get a compact index for storing data in vectors \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+
+
+\subsection{Function Documentation}
+\index{Functions for D\-A\-Q channel I\-D@{Functions for D\-A\-Q channel I\-D}!get\-Channel\-From\-D\-A\-Q\-I\-D@{get\-Channel\-From\-D\-A\-Q\-I\-D}}
+\index{get\-Channel\-From\-D\-A\-Q\-I\-D@{get\-Channel\-From\-D\-A\-Q\-I\-D}!Functions for DAQ channel ID@{Functions for D\-A\-Q channel I\-D}}
+\subsubsection[{get\-Channel\-From\-D\-A\-Q\-I\-D}]{\setlength{\rightskip}{0pt plus 5cm}unsigned int C\-A\-L\-I\-C\-E\-::\-Decoder\-Set\-::get\-Channel\-From\-D\-A\-Q\-I\-D (
+\begin{DoxyParamCaption}
+\item[{const int}]{D\-A\-Qconnection}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}\label{group__DAQgroup_ga2d7b8b445a2dcfe82b091a5dc9ceaa33}
+
+
+get channel from D\-A\-Q channel I\-D The right encoding string has to be set before. 
+
+\begin{DoxySeeAlso}{See Also}
+\doxyref{set\-D\-A\-Q\-Encoding}{p.}{group__DAQgroup_gaa376e69167322f7502bc8573d2e96b9a} 
+\end{DoxySeeAlso}
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em \doxyref{D\-A\-Qconnection}{p.}{classCALICE_1_1DAQconnection}} & D\-A\-Q connection I\-D to decode \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+channel 
+\end{DoxyReturn}
+
+
+Definition at line 169 of file Decoder\-Set.\-hh.
+
+
+
+References C\-A\-L\-I\-C\-E\-::\-Fast\-Decoder\-::decode\-U().
+
+
+
+Referenced by C\-A\-L\-I\-C\-E\-::\-Ahc\-Mapper\-::get\-Index\-By\-D\-A\-Q\-I\-D(), and C\-A\-L\-I\-C\-E\-::\-Ahc2\-Mapper\-::get\-Index\-By\-D\-A\-Q\-I\-D().
+
+\index{Functions for D\-A\-Q channel I\-D@{Functions for D\-A\-Q channel I\-D}!get\-Chip\-From\-D\-A\-Q\-I\-D@{get\-Chip\-From\-D\-A\-Q\-I\-D}}
+\index{get\-Chip\-From\-D\-A\-Q\-I\-D@{get\-Chip\-From\-D\-A\-Q\-I\-D}!Functions for DAQ channel ID@{Functions for D\-A\-Q channel I\-D}}
+\subsubsection[{get\-Chip\-From\-D\-A\-Q\-I\-D}]{\setlength{\rightskip}{0pt plus 5cm}unsigned int C\-A\-L\-I\-C\-E\-::\-Decoder\-Set\-::get\-Chip\-From\-D\-A\-Q\-I\-D (
+\begin{DoxyParamCaption}
+\item[{const int}]{D\-A\-Qconnection}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}\label{group__DAQgroup_ga64c278c9712e9417cddbf50f549e3ee4}
+
+
+get chip from D\-A\-Q channel I\-D The right encoding string has to be set before. 
+
+\begin{DoxySeeAlso}{See Also}
+\doxyref{set\-D\-A\-Q\-Encoding}{p.}{group__DAQgroup_gaa376e69167322f7502bc8573d2e96b9a} 
+\end{DoxySeeAlso}
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em \doxyref{D\-A\-Qconnection}{p.}{classCALICE_1_1DAQconnection}} & D\-A\-Q connection I\-D to decode \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+chip 
+\end{DoxyReturn}
+
+
+Definition at line 179 of file Decoder\-Set.\-hh.
+
+
+
+References C\-A\-L\-I\-C\-E\-::\-Fast\-Decoder\-::decode\-U().
+
+
+
+Referenced by C\-A\-L\-I\-C\-E\-::\-Ahc\-Mapper\-::get\-Index\-By\-D\-A\-Q\-I\-D(), and C\-A\-L\-I\-C\-E\-::\-Ahc2\-Mapper\-::get\-Index\-By\-D\-A\-Q\-I\-D().
+
+\index{Functions for D\-A\-Q channel I\-D@{Functions for D\-A\-Q channel I\-D}!get\-Crate\-From\-D\-A\-Q\-I\-D@{get\-Crate\-From\-D\-A\-Q\-I\-D}}
+\index{get\-Crate\-From\-D\-A\-Q\-I\-D@{get\-Crate\-From\-D\-A\-Q\-I\-D}!Functions for DAQ channel ID@{Functions for D\-A\-Q channel I\-D}}
+\subsubsection[{get\-Crate\-From\-D\-A\-Q\-I\-D}]{\setlength{\rightskip}{0pt plus 5cm}unsigned int C\-A\-L\-I\-C\-E\-::\-Decoder\-Set\-::get\-Crate\-From\-D\-A\-Q\-I\-D (
+\begin{DoxyParamCaption}
+\item[{const int}]{D\-A\-Qconnection}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}\label{group__DAQgroup_ga25aea4dafa082da6847d988952710259}
+
+
+get crate from D\-A\-Q channel I\-D The right encoding string has to be set before. 
+
+\begin{DoxySeeAlso}{See Also}
+\doxyref{set\-D\-A\-Q\-Encoding}{p.}{group__DAQgroup_gaa376e69167322f7502bc8573d2e96b9a} 
+\end{DoxySeeAlso}
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em \doxyref{D\-A\-Qconnection}{p.}{classCALICE_1_1DAQconnection}} & D\-A\-Q connection I\-D to decode \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+crate 
+\end{DoxyReturn}
+
+
+Definition at line 209 of file Decoder\-Set.\-hh.
+
+
+
+References C\-A\-L\-I\-C\-E\-::\-Fast\-Decoder\-::decode\-U().
+
+
+
+Referenced by C\-A\-L\-I\-C\-E\-::\-Ahc\-Mapper\-::get\-Index\-By\-D\-A\-Q\-I\-D(), and C\-A\-L\-I\-C\-E\-::\-Ahc2\-Mapper\-::get\-Index\-By\-D\-A\-Q\-I\-D().
+
+\index{Functions for D\-A\-Q channel I\-D@{Functions for D\-A\-Q channel I\-D}!get\-D\-A\-Q\-Encoding@{get\-D\-A\-Q\-Encoding}}
+\index{get\-D\-A\-Q\-Encoding@{get\-D\-A\-Q\-Encoding}!Functions for DAQ channel ID@{Functions for D\-A\-Q channel I\-D}}
+\subsubsection[{get\-D\-A\-Q\-Encoding}]{\setlength{\rightskip}{0pt plus 5cm}const std\-::string\& C\-A\-L\-I\-C\-E\-::\-Decoder\-Set\-::get\-D\-A\-Q\-Encoding (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}\label{group__DAQgroup_gac47e035c59d0c01c48d149b9127320a4}
+
+
+get the current D\-A\-Q channel I\-D encoding string 
+
+\begin{DoxyReturn}{Returns}
+D\-A\-Q channel I\-D encoding string 
+\end{DoxyReturn}
+
+
+Definition at line 98 of file Decoder\-Set.\-hh.
+
+\index{Functions for D\-A\-Q channel I\-D@{Functions for D\-A\-Q channel I\-D}!get\-D\-A\-Q\-I\-D@{get\-D\-A\-Q\-I\-D}}
+\index{get\-D\-A\-Q\-I\-D@{get\-D\-A\-Q\-I\-D}!Functions for DAQ channel ID@{Functions for D\-A\-Q channel I\-D}}
+\subsubsection[{get\-D\-A\-Q\-I\-D}]{\setlength{\rightskip}{0pt plus 5cm}int C\-A\-L\-I\-C\-E\-::\-Decoder\-Set\-::get\-D\-A\-Q\-I\-D (
+\begin{DoxyParamCaption}
+\item[{const unsigned int}]{crate, }
+\item[{const unsigned int}]{slot, }
+\item[{const unsigned int}]{fe, }
+\item[{const unsigned int}]{chip, }
+\item[{const unsigned int}]{channel}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}\label{group__DAQgroup_ga1958abb33537f6bac5a967dbb1f75c2a}
+
+
+get D\-A\-Q channel I\-D from crate, slot, fe, chip, channel 
+
+The right encoding string has to be set before.
+
+\begin{DoxyWarning}{Warning}
+This D\-A\-Q channel I\-D will only contain information about crate, slot, fe, chip and channel. If the encoding string contains additional fields this will have value 0.
+\end{DoxyWarning}
+\begin{DoxySeeAlso}{See Also}
+\doxyref{set\-D\-A\-Q\-Encoding}{p.}{group__DAQgroup_gaa376e69167322f7502bc8573d2e96b9a} 
+\end{DoxySeeAlso}
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em crate} & crate of this channel \\
+\hline
+\mbox{\tt in}  & {\em slot} & slot of this channel \\
+\hline
+\mbox{\tt in}  & {\em fe} & frontend of this channel \\
+\hline
+\mbox{\tt in}  & {\em chip} & chip of this channel \\
+\hline
+\mbox{\tt in}  & {\em channel} & hardware channel of this channel \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+D\-A\-Q channel I\-D 
+\end{DoxyReturn}
+
+
+Definition at line 269 of file Decoder\-Set.\-hh.
+
+
+
+References C\-A\-L\-I\-C\-E\-::\-Fast\-Decoder\-::encode\-U().
+
+\index{Functions for D\-A\-Q channel I\-D@{Functions for D\-A\-Q channel I\-D}!get\-Fe\-From\-D\-A\-Q\-I\-D@{get\-Fe\-From\-D\-A\-Q\-I\-D}}
+\index{get\-Fe\-From\-D\-A\-Q\-I\-D@{get\-Fe\-From\-D\-A\-Q\-I\-D}!Functions for DAQ channel ID@{Functions for D\-A\-Q channel I\-D}}
+\subsubsection[{get\-Fe\-From\-D\-A\-Q\-I\-D}]{\setlength{\rightskip}{0pt plus 5cm}unsigned int C\-A\-L\-I\-C\-E\-::\-Decoder\-Set\-::get\-Fe\-From\-D\-A\-Q\-I\-D (
+\begin{DoxyParamCaption}
+\item[{const int}]{D\-A\-Qconnection}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}\label{group__DAQgroup_ga175464940f15c89b46495bff3c4537fa}
+
+
+get fe from D\-A\-Q channel I\-D The right encoding string has to be set before. 
+
+\begin{DoxySeeAlso}{See Also}
+\doxyref{set\-D\-A\-Q\-Encoding}{p.}{group__DAQgroup_gaa376e69167322f7502bc8573d2e96b9a} 
+\end{DoxySeeAlso}
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em \doxyref{D\-A\-Qconnection}{p.}{classCALICE_1_1DAQconnection}} & D\-A\-Q connection I\-D to decode \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+fe 
+\end{DoxyReturn}
+
+
+Definition at line 189 of file Decoder\-Set.\-hh.
+
+
+
+References C\-A\-L\-I\-C\-E\-::\-Fast\-Decoder\-::decode\-U().
+
+
+
+Referenced by C\-A\-L\-I\-C\-E\-::\-Ahc\-Mapper\-::get\-Index\-By\-D\-A\-Q\-I\-D(), and C\-A\-L\-I\-C\-E\-::\-Ahc2\-Mapper\-::get\-Index\-By\-D\-A\-Q\-I\-D().
+
+\index{Functions for D\-A\-Q channel I\-D@{Functions for D\-A\-Q channel I\-D}!get\-I\-From\-D\-A\-Q\-I\-D@{get\-I\-From\-D\-A\-Q\-I\-D}}
+\index{get\-I\-From\-D\-A\-Q\-I\-D@{get\-I\-From\-D\-A\-Q\-I\-D}!Functions for DAQ channel ID@{Functions for D\-A\-Q channel I\-D}}
+\subsubsection[{get\-I\-From\-D\-A\-Q\-I\-D}]{\setlength{\rightskip}{0pt plus 5cm}unsigned int C\-A\-L\-I\-C\-E\-::\-Ahc\-Mapper\-::get\-I\-From\-D\-A\-Q\-I\-D (
+\begin{DoxyParamCaption}
+\item[{const int}]{D\-A\-Qchannel}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}\label{group__DAQgroup_gaf6567eaf2887f9ef4d1e6a12b40b71fb}
+
+
+I of (Mokka) cell\-I\-D. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em D\-A\-Qchannel} & D\-A\-Q channel I\-D\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+I
+\end{DoxyReturn}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em \doxyref{Bad\-Data\-Exception}{p.}{classCALICE_1_1BadDataException}} & if lookup fails \\
+\hline
+\end{DoxyExceptions}
+
+
+Definition at line 421 of file Ahc\-Mapper.\-hh.
+
+
+
+References C\-A\-L\-I\-C\-E\-::\-Mapper\-::get\-Decoder(), C\-A\-L\-I\-C\-E\-::\-Ahc\-Mapper\-::get\-I(), and C\-A\-L\-I\-C\-E\-::\-Ahc\-Mapper\-::get\-Module\-From\-D\-A\-Q\-I\-D().
+
+\index{Functions for D\-A\-Q channel I\-D@{Functions for D\-A\-Q channel I\-D}!get\-I\-From\-D\-A\-Q\-I\-D@{get\-I\-From\-D\-A\-Q\-I\-D}}
+\index{get\-I\-From\-D\-A\-Q\-I\-D@{get\-I\-From\-D\-A\-Q\-I\-D}!Functions for DAQ channel ID@{Functions for D\-A\-Q channel I\-D}}
+\subsubsection[{get\-I\-From\-D\-A\-Q\-I\-D}]{\setlength{\rightskip}{0pt plus 5cm}unsigned int C\-A\-L\-I\-C\-E\-::\-Ahc2\-Mapper\-::get\-I\-From\-D\-A\-Q\-I\-D (
+\begin{DoxyParamCaption}
+\item[{const int}]{D\-A\-Qchannel}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}\label{group__DAQgroup_gafd7ca491e5a37cc2c180eb4c0d2a835e}
+
+
+I of (Mokka) cell\-I\-D. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em D\-A\-Qchannel} & D\-A\-Q channel I\-D\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+I
+\end{DoxyReturn}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em \doxyref{Bad\-Data\-Exception}{p.}{classCALICE_1_1BadDataException}} & if lookup fails \\
+\hline
+\end{DoxyExceptions}
+
+
+Definition at line 430 of file Ahc2\-Mapper.\-hh.
+
+
+
+References C\-A\-L\-I\-C\-E\-::\-Mapper\-::get\-Decoder(), C\-A\-L\-I\-C\-E\-::\-Ahc2\-Mapper\-::get\-I(), and C\-A\-L\-I\-C\-E\-::\-Ahc2\-Mapper\-::get\-Module\-From\-D\-A\-Q\-I\-D().
+
+\index{Functions for D\-A\-Q channel I\-D@{Functions for D\-A\-Q channel I\-D}!get\-Index\-By\-D\-A\-Q\-I\-D@{get\-Index\-By\-D\-A\-Q\-I\-D}}
+\index{get\-Index\-By\-D\-A\-Q\-I\-D@{get\-Index\-By\-D\-A\-Q\-I\-D}!Functions for DAQ channel ID@{Functions for D\-A\-Q channel I\-D}}
+\subsubsection[{get\-Index\-By\-D\-A\-Q\-I\-D}]{\setlength{\rightskip}{0pt plus 5cm}virtual unsigned int C\-A\-L\-I\-C\-E\-::\-Mapper\-::get\-Index\-By\-D\-A\-Q\-I\-D (
+\begin{DoxyParamCaption}
+\item[{const int}]{I\-D}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [protected]}, {\ttfamily [pure virtual]}}\label{group__DAQgroup_ga4c00b2760cd3e935bed9db2f3fd28b06}
+
+
+get a compact index for storing data in vectors 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em I\-D} & D\-A\-Q channel I\-D \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+compact index 
+\end{DoxyReturn}
+
+
+Implemented in {\bf C\-A\-L\-I\-C\-E\-::\-Ahc2\-Mapper} \doxyref{}{p.}{classCALICE_1_1Ahc2Mapper_a8503c24f6eab43e134845efc48654908}, and {\bf C\-A\-L\-I\-C\-E\-::\-Ahc\-Mapper} \doxyref{}{p.}{classCALICE_1_1AhcMapper_a54a30bb2306d44a9ab0240593c7425a8}.
+
+
+
+Referenced by C\-A\-L\-I\-C\-E\-::\-Mapped\-Container$<$ T $>$\-::delete\-By\-D\-A\-Q\-I\-D(), C\-A\-L\-I\-C\-E\-::\-Mapped\-Container$<$ T $>$\-::get\-By\-D\-A\-Q\-I\-D(), and C\-A\-L\-I\-C\-E\-::\-Mapped\-Container$<$ T $>$\-::remove\-By\-D\-A\-Q\-I\-D().
+
+\index{Functions for D\-A\-Q channel I\-D@{Functions for D\-A\-Q channel I\-D}!get\-I\-Size\-From\-D\-A\-Q\-I\-D@{get\-I\-Size\-From\-D\-A\-Q\-I\-D}}
+\index{get\-I\-Size\-From\-D\-A\-Q\-I\-D@{get\-I\-Size\-From\-D\-A\-Q\-I\-D}!Functions for DAQ channel ID@{Functions for D\-A\-Q channel I\-D}}
+\subsubsection[{get\-I\-Size\-From\-D\-A\-Q\-I\-D}]{\setlength{\rightskip}{0pt plus 5cm}unsigned int C\-A\-L\-I\-C\-E\-::\-Ahc\-Mapper\-::get\-I\-Size\-From\-D\-A\-Q\-I\-D (
+\begin{DoxyParamCaption}
+\item[{const int}]{D\-A\-Qchannel}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}\label{group__DAQgroup_ga9ad7b1101e956ae5110a6f2646addcfe}
+
+
+get cell size in I direction of (Mokka) Cell\-I\-D coordinate 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em D\-A\-Qchannel} & D\-A\-Q channel I\-D\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+size in I
+\end{DoxyReturn}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em \doxyref{Bad\-Data\-Exception}{p.}{classCALICE_1_1BadDataException}} & if lookup fails \\
+\hline
+\end{DoxyExceptions}
+
+
+Definition at line 577 of file Ahc\-Mapper.\-hh.
+
+
+
+References C\-A\-L\-I\-C\-E\-::\-Mapper\-::get\-Decoder(), C\-A\-L\-I\-C\-E\-::\-Ahc\-Mapper\-::get\-I\-Size(), and C\-A\-L\-I\-C\-E\-::\-Ahc\-Mapper\-::get\-Module\-From\-D\-A\-Q\-I\-D().
+
+\index{Functions for D\-A\-Q channel I\-D@{Functions for D\-A\-Q channel I\-D}!get\-I\-Size\-From\-D\-A\-Q\-I\-D@{get\-I\-Size\-From\-D\-A\-Q\-I\-D}}
+\index{get\-I\-Size\-From\-D\-A\-Q\-I\-D@{get\-I\-Size\-From\-D\-A\-Q\-I\-D}!Functions for DAQ channel ID@{Functions for D\-A\-Q channel I\-D}}
+\subsubsection[{get\-I\-Size\-From\-D\-A\-Q\-I\-D}]{\setlength{\rightskip}{0pt plus 5cm}unsigned int C\-A\-L\-I\-C\-E\-::\-Ahc2\-Mapper\-::get\-I\-Size\-From\-D\-A\-Q\-I\-D (
+\begin{DoxyParamCaption}
+\item[{const int}]{D\-A\-Qchannel}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}\label{group__DAQgroup_gaf3628cbe2a8211ed24550ec01704d1d5}
+
+
+get cell size in I direction of (Mokka) Cell\-I\-D coordinate 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em D\-A\-Qchannel} & D\-A\-Q channel I\-D\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+size in I
+\end{DoxyReturn}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em \doxyref{Bad\-Data\-Exception}{p.}{classCALICE_1_1BadDataException}} & if lookup fails \\
+\hline
+\end{DoxyExceptions}
+
+
+Definition at line 586 of file Ahc2\-Mapper.\-hh.
+
+
+
+References C\-A\-L\-I\-C\-E\-::\-Mapper\-::get\-Decoder(), C\-A\-L\-I\-C\-E\-::\-Ahc2\-Mapper\-::get\-I\-Size(), and C\-A\-L\-I\-C\-E\-::\-Ahc2\-Mapper\-::get\-Module\-From\-D\-A\-Q\-I\-D().
+
+\index{Functions for D\-A\-Q channel I\-D@{Functions for D\-A\-Q channel I\-D}!get\-J\-From\-D\-A\-Q\-I\-D@{get\-J\-From\-D\-A\-Q\-I\-D}}
+\index{get\-J\-From\-D\-A\-Q\-I\-D@{get\-J\-From\-D\-A\-Q\-I\-D}!Functions for DAQ channel ID@{Functions for D\-A\-Q channel I\-D}}
+\subsubsection[{get\-J\-From\-D\-A\-Q\-I\-D}]{\setlength{\rightskip}{0pt plus 5cm}unsigned int C\-A\-L\-I\-C\-E\-::\-Ahc\-Mapper\-::get\-J\-From\-D\-A\-Q\-I\-D (
+\begin{DoxyParamCaption}
+\item[{const int}]{D\-A\-Qchannel}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}\label{group__DAQgroup_gaa7ce70dc7852b7141c01fbeb5db57c07}
+
+
+J of (Mokka) cell\-I\-D. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em D\-A\-Qchannel} & D\-A\-Q channel I\-D\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+J
+\end{DoxyReturn}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em \doxyref{Bad\-Data\-Exception}{p.}{classCALICE_1_1BadDataException}} & if lookup fails \\
+\hline
+\end{DoxyExceptions}
+
+
+Definition at line 470 of file Ahc\-Mapper.\-hh.
+
+
+
+References C\-A\-L\-I\-C\-E\-::\-Mapper\-::get\-Decoder(), C\-A\-L\-I\-C\-E\-::\-Ahc\-Mapper\-::get\-J(), and C\-A\-L\-I\-C\-E\-::\-Ahc\-Mapper\-::get\-Module\-From\-D\-A\-Q\-I\-D().
+
+\index{Functions for D\-A\-Q channel I\-D@{Functions for D\-A\-Q channel I\-D}!get\-J\-From\-D\-A\-Q\-I\-D@{get\-J\-From\-D\-A\-Q\-I\-D}}
+\index{get\-J\-From\-D\-A\-Q\-I\-D@{get\-J\-From\-D\-A\-Q\-I\-D}!Functions for DAQ channel ID@{Functions for D\-A\-Q channel I\-D}}
+\subsubsection[{get\-J\-From\-D\-A\-Q\-I\-D}]{\setlength{\rightskip}{0pt plus 5cm}unsigned int C\-A\-L\-I\-C\-E\-::\-Ahc2\-Mapper\-::get\-J\-From\-D\-A\-Q\-I\-D (
+\begin{DoxyParamCaption}
+\item[{const int}]{D\-A\-Qchannel}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}\label{group__DAQgroup_ga191d48405470d3204fe6cd89dec6a9e9}
+
+
+J of (Mokka) cell\-I\-D. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em D\-A\-Qchannel} & D\-A\-Q channel I\-D\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+J
+\end{DoxyReturn}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em \doxyref{Bad\-Data\-Exception}{p.}{classCALICE_1_1BadDataException}} & if lookup fails \\
+\hline
+\end{DoxyExceptions}
+
+
+Definition at line 479 of file Ahc2\-Mapper.\-hh.
+
+
+
+References C\-A\-L\-I\-C\-E\-::\-Mapper\-::get\-Decoder(), C\-A\-L\-I\-C\-E\-::\-Ahc2\-Mapper\-::get\-J(), and C\-A\-L\-I\-C\-E\-::\-Ahc2\-Mapper\-::get\-Module\-From\-D\-A\-Q\-I\-D().
+
+\index{Functions for D\-A\-Q channel I\-D@{Functions for D\-A\-Q channel I\-D}!get\-J\-Size\-From\-D\-A\-Q\-I\-D@{get\-J\-Size\-From\-D\-A\-Q\-I\-D}}
+\index{get\-J\-Size\-From\-D\-A\-Q\-I\-D@{get\-J\-Size\-From\-D\-A\-Q\-I\-D}!Functions for DAQ channel ID@{Functions for D\-A\-Q channel I\-D}}
+\subsubsection[{get\-J\-Size\-From\-D\-A\-Q\-I\-D}]{\setlength{\rightskip}{0pt plus 5cm}unsigned int C\-A\-L\-I\-C\-E\-::\-Ahc\-Mapper\-::get\-J\-Size\-From\-D\-A\-Q\-I\-D (
+\begin{DoxyParamCaption}
+\item[{const int}]{D\-A\-Qchannel}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}\label{group__DAQgroup_gaf41ef2f4b72038f18378413b5b76c6cd}
+
+
+get cell size in J direction of (Mokka) Cell\-I\-D coordinate 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em D\-A\-Qchannel} & D\-A\-Q channel I\-D\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+size in J
+\end{DoxyReturn}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em \doxyref{Bad\-Data\-Exception}{p.}{classCALICE_1_1BadDataException}} & if lookup fails \\
+\hline
+\end{DoxyExceptions}
+
+
+Definition at line 655 of file Ahc\-Mapper.\-hh.
+
+
+
+References C\-A\-L\-I\-C\-E\-::\-Mapper\-::get\-Decoder(), C\-A\-L\-I\-C\-E\-::\-Ahc\-Mapper\-::get\-J\-Size(), and C\-A\-L\-I\-C\-E\-::\-Ahc\-Mapper\-::get\-Module\-From\-D\-A\-Q\-I\-D().
+
+\index{Functions for D\-A\-Q channel I\-D@{Functions for D\-A\-Q channel I\-D}!get\-J\-Size\-From\-D\-A\-Q\-I\-D@{get\-J\-Size\-From\-D\-A\-Q\-I\-D}}
+\index{get\-J\-Size\-From\-D\-A\-Q\-I\-D@{get\-J\-Size\-From\-D\-A\-Q\-I\-D}!Functions for DAQ channel ID@{Functions for D\-A\-Q channel I\-D}}
+\subsubsection[{get\-J\-Size\-From\-D\-A\-Q\-I\-D}]{\setlength{\rightskip}{0pt plus 5cm}unsigned int C\-A\-L\-I\-C\-E\-::\-Ahc2\-Mapper\-::get\-J\-Size\-From\-D\-A\-Q\-I\-D (
+\begin{DoxyParamCaption}
+\item[{const int}]{D\-A\-Qchannel}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}\label{group__DAQgroup_gac4441dbb533aeab4e86b0fc4fd1b9d41}
+
+
+get cell size in J direction of (Mokka) Cell\-I\-D coordinate 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em D\-A\-Qchannel} & D\-A\-Q channel I\-D\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+size in J
+\end{DoxyReturn}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em \doxyref{Bad\-Data\-Exception}{p.}{classCALICE_1_1BadDataException}} & if lookup fails \\
+\hline
+\end{DoxyExceptions}
+
+
+Definition at line 664 of file Ahc2\-Mapper.\-hh.
+
+
+
+References C\-A\-L\-I\-C\-E\-::\-Mapper\-::get\-Decoder(), C\-A\-L\-I\-C\-E\-::\-Ahc2\-Mapper\-::get\-J\-Size(), and C\-A\-L\-I\-C\-E\-::\-Ahc2\-Mapper\-::get\-Module\-From\-D\-A\-Q\-I\-D().
+
+\index{Functions for D\-A\-Q channel I\-D@{Functions for D\-A\-Q channel I\-D}!get\-K\-From\-D\-A\-Q\-I\-D@{get\-K\-From\-D\-A\-Q\-I\-D}}
+\index{get\-K\-From\-D\-A\-Q\-I\-D@{get\-K\-From\-D\-A\-Q\-I\-D}!Functions for DAQ channel ID@{Functions for D\-A\-Q channel I\-D}}
+\subsubsection[{get\-K\-From\-D\-A\-Q\-I\-D}]{\setlength{\rightskip}{0pt plus 5cm}unsigned int C\-A\-L\-I\-C\-E\-::\-Ahc\-Mapper\-::get\-K\-From\-D\-A\-Q\-I\-D (
+\begin{DoxyParamCaption}
+\item[{const int}]{D\-A\-Qchannel}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}\label{group__DAQgroup_gaf91e48220e82bf1d71f3c1dac8e22111}
+
+
+K of (Mokka) cell\-I\-D. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em D\-A\-Qchannel} & D\-A\-Q channel I\-D\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+K
+\end{DoxyReturn}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em \doxyref{Bad\-Data\-Exception}{p.}{classCALICE_1_1BadDataException}} & if lookup fails \\
+\hline
+\end{DoxyExceptions}
+
+
+Definition at line 519 of file Ahc\-Mapper.\-hh.
+
+
+
+References C\-A\-L\-I\-C\-E\-::\-Ahc\-Mapper\-::get\-K(), and C\-A\-L\-I\-C\-E\-::\-Ahc\-Mapper\-::get\-Module\-From\-D\-A\-Q\-I\-D().
+
+\index{Functions for D\-A\-Q channel I\-D@{Functions for D\-A\-Q channel I\-D}!get\-K\-From\-D\-A\-Q\-I\-D@{get\-K\-From\-D\-A\-Q\-I\-D}}
+\index{get\-K\-From\-D\-A\-Q\-I\-D@{get\-K\-From\-D\-A\-Q\-I\-D}!Functions for DAQ channel ID@{Functions for D\-A\-Q channel I\-D}}
+\subsubsection[{get\-K\-From\-D\-A\-Q\-I\-D}]{\setlength{\rightskip}{0pt plus 5cm}unsigned int C\-A\-L\-I\-C\-E\-::\-Ahc2\-Mapper\-::get\-K\-From\-D\-A\-Q\-I\-D (
+\begin{DoxyParamCaption}
+\item[{const int}]{D\-A\-Qchannel}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}\label{group__DAQgroup_ga59ffe1cd3d129e428cf654ff12ce8a4b}
+
+
+K of (Mokka) cell\-I\-D. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em D\-A\-Qchannel} & D\-A\-Q channel I\-D\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+K
+\end{DoxyReturn}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em \doxyref{Bad\-Data\-Exception}{p.}{classCALICE_1_1BadDataException}} & if lookup fails \\
+\hline
+\end{DoxyExceptions}
+
+
+Definition at line 528 of file Ahc2\-Mapper.\-hh.
+
+
+
+References C\-A\-L\-I\-C\-E\-::\-Ahc2\-Mapper\-::get\-K(), and C\-A\-L\-I\-C\-E\-::\-Ahc2\-Mapper\-::get\-Module\-From\-D\-A\-Q\-I\-D().
+
+\index{Functions for D\-A\-Q channel I\-D@{Functions for D\-A\-Q channel I\-D}!get\-Module\-From\-D\-A\-Q\-I\-D@{get\-Module\-From\-D\-A\-Q\-I\-D}}
+\index{get\-Module\-From\-D\-A\-Q\-I\-D@{get\-Module\-From\-D\-A\-Q\-I\-D}!Functions for DAQ channel ID@{Functions for D\-A\-Q channel I\-D}}
+\subsubsection[{get\-Module\-From\-D\-A\-Q\-I\-D}]{\setlength{\rightskip}{0pt plus 5cm}virtual unsigned int C\-A\-L\-I\-C\-E\-::\-Mapper\-::get\-Module\-From\-D\-A\-Q\-I\-D (
+\begin{DoxyParamCaption}
+\item[{const int}]{D\-A\-Qchannel}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [pure virtual]}}\label{group__DAQgroup_ga0ebc7a42e53df3e79f32608403349f30}
+
+
+get module (number) in which this (D\-A\-Q) channel is included 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em D\-A\-Qchannel} & D\-A\-Q channel I\-D\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+module
+\end{DoxyReturn}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em \doxyref{Bad\-Data\-Exception}{p.}{classCALICE_1_1BadDataException}} & if some error is detected, but no full verification is performed \\
+\hline
+\end{DoxyExceptions}
+\begin{DoxySeeAlso}{See Also}
+get\-Module\-From\-D\-A\-Q\-I\-D(const int D\-A\-Qchannel, bool \&valid) 
+\end{DoxySeeAlso}
+
+
+Implemented in {\bf C\-A\-L\-I\-C\-E\-::\-Ahc2\-Mapper} \doxyref{}{p.}{group__DAQgroup_ga4f88e701c504dfe819b67142247ebd1d}, and {\bf C\-A\-L\-I\-C\-E\-::\-Ahc\-Mapper} \doxyref{}{p.}{group__DAQgroup_gafe0b15ff8622a671237999286b92c7dc}.
+
+\index{Functions for D\-A\-Q channel I\-D@{Functions for D\-A\-Q channel I\-D}!get\-Module\-From\-D\-A\-Q\-I\-D@{get\-Module\-From\-D\-A\-Q\-I\-D}}
+\index{get\-Module\-From\-D\-A\-Q\-I\-D@{get\-Module\-From\-D\-A\-Q\-I\-D}!Functions for DAQ channel ID@{Functions for D\-A\-Q channel I\-D}}
+\subsubsection[{get\-Module\-From\-D\-A\-Q\-I\-D}]{\setlength{\rightskip}{0pt plus 5cm}unsigned int C\-A\-L\-I\-C\-E\-::\-Ahc\-Mapper\-::get\-Module\-From\-D\-A\-Q\-I\-D (
+\begin{DoxyParamCaption}
+\item[{const int}]{D\-A\-Qchannel}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}\label{group__DAQgroup_gafe0b15ff8622a671237999286b92c7dc}
+
+
+module number from D\-A\-Q channel I\-D 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em D\-A\-Qchannel} & D\-A\-Q channel I\-D\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+module number
+\end{DoxyReturn}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em \doxyref{Bad\-Data\-Exception}{p.}{classCALICE_1_1BadDataException}} & if lookup fails \\
+\hline
+\end{DoxyExceptions}
+
+
+Implements {\bf C\-A\-L\-I\-C\-E\-::\-Mapper} \doxyref{}{p.}{group__DAQgroup_ga0ebc7a42e53df3e79f32608403349f30}.
+
+
+
+Definition at line 104 of file Ahc\-Mapper.\-hh.
+
+
+
+References C\-A\-L\-I\-C\-E\-::\-Mapper\-::get\-Decoder(), and C\-A\-L\-I\-C\-E\-::\-Ahc\-Mapper\-::get\-Module().
+
+
+
+Referenced by C\-A\-L\-I\-C\-E\-::\-Ahc\-Mapper\-::get\-I\-From\-D\-A\-Q\-I\-D(), C\-A\-L\-I\-C\-E\-::\-Ahc\-Mapper\-::get\-I\-Size\-From\-D\-A\-Q\-I\-D(), C\-A\-L\-I\-C\-E\-::\-Ahc\-Mapper\-::get\-J\-From\-D\-A\-Q\-I\-D(), C\-A\-L\-I\-C\-E\-::\-Ahc\-Mapper\-::get\-J\-Size\-From\-D\-A\-Q\-I\-D(), and C\-A\-L\-I\-C\-E\-::\-Ahc\-Mapper\-::get\-K\-From\-D\-A\-Q\-I\-D().
+
+\index{Functions for D\-A\-Q channel I\-D@{Functions for D\-A\-Q channel I\-D}!get\-Module\-From\-D\-A\-Q\-I\-D@{get\-Module\-From\-D\-A\-Q\-I\-D}}
+\index{get\-Module\-From\-D\-A\-Q\-I\-D@{get\-Module\-From\-D\-A\-Q\-I\-D}!Functions for DAQ channel ID@{Functions for D\-A\-Q channel I\-D}}
+\subsubsection[{get\-Module\-From\-D\-A\-Q\-I\-D}]{\setlength{\rightskip}{0pt plus 5cm}virtual unsigned int C\-A\-L\-I\-C\-E\-::\-Mapper\-::get\-Module\-From\-D\-A\-Q\-I\-D (
+\begin{DoxyParamCaption}
+\item[{const int}]{D\-A\-Qchannel, }
+\item[{bool \&}]{valid}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [pure virtual]}}\label{group__DAQgroup_ga16bb145f33d7e74f86a4ad508c1edac2}
+
+
+get module (number) in which this (D\-A\-Q) channel is included 
+
+Checks if the channel exists. No exception is thrown.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em D\-A\-Qchannel} & D\-A\-Q channel I\-D \\
+\hline
+\mbox{\tt out}  & {\em valid} & false if a non valid cell is queried\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+module 
+\end{DoxyReturn}
+
+
+Implemented in {\bf C\-A\-L\-I\-C\-E\-::\-Ahc2\-Mapper} \doxyref{}{p.}{group__DAQgroup_ga1665e9e58c886d9506773a7f6964f7eb}, and {\bf C\-A\-L\-I\-C\-E\-::\-Ahc\-Mapper} \doxyref{}{p.}{group__DAQgroup_gaa605e0ab6e665a41fa7aa30674592a99}.
+
+\index{Functions for D\-A\-Q channel I\-D@{Functions for D\-A\-Q channel I\-D}!get\-Module\-From\-D\-A\-Q\-I\-D@{get\-Module\-From\-D\-A\-Q\-I\-D}}
+\index{get\-Module\-From\-D\-A\-Q\-I\-D@{get\-Module\-From\-D\-A\-Q\-I\-D}!Functions for DAQ channel ID@{Functions for D\-A\-Q channel I\-D}}
+\subsubsection[{get\-Module\-From\-D\-A\-Q\-I\-D}]{\setlength{\rightskip}{0pt plus 5cm}unsigned int C\-A\-L\-I\-C\-E\-::\-Ahc2\-Mapper\-::get\-Module\-From\-D\-A\-Q\-I\-D (
+\begin{DoxyParamCaption}
+\item[{const int}]{D\-A\-Qchannel}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}\label{group__DAQgroup_ga4f88e701c504dfe819b67142247ebd1d}
+
+
+module number from D\-A\-Q channel I\-D 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em D\-A\-Qchannel} & D\-A\-Q channel I\-D\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+module number
+\end{DoxyReturn}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em \doxyref{Bad\-Data\-Exception}{p.}{classCALICE_1_1BadDataException}} & if lookup fails \\
+\hline
+\end{DoxyExceptions}
+
+
+Implements {\bf C\-A\-L\-I\-C\-E\-::\-Mapper} \doxyref{}{p.}{group__DAQgroup_ga0ebc7a42e53df3e79f32608403349f30}.
+
+
+
+Definition at line 110 of file Ahc2\-Mapper.\-hh.
+
+
+
+References C\-A\-L\-I\-C\-E\-::\-Mapper\-::get\-Decoder(), and C\-A\-L\-I\-C\-E\-::\-Ahc2\-Mapper\-::get\-Module().
+
+
+
+Referenced by C\-A\-L\-I\-C\-E\-::\-Ahc2\-Mapper\-::get\-I\-From\-D\-A\-Q\-I\-D(), C\-A\-L\-I\-C\-E\-::\-Ahc2\-Mapper\-::get\-I\-Size\-From\-D\-A\-Q\-I\-D(), C\-A\-L\-I\-C\-E\-::\-Ahc2\-Mapper\-::get\-J\-From\-D\-A\-Q\-I\-D(), C\-A\-L\-I\-C\-E\-::\-Ahc2\-Mapper\-::get\-J\-Size\-From\-D\-A\-Q\-I\-D(), and C\-A\-L\-I\-C\-E\-::\-Ahc2\-Mapper\-::get\-K\-From\-D\-A\-Q\-I\-D().
+
+\index{Functions for D\-A\-Q channel I\-D@{Functions for D\-A\-Q channel I\-D}!get\-Module\-From\-D\-A\-Q\-I\-D@{get\-Module\-From\-D\-A\-Q\-I\-D}}
+\index{get\-Module\-From\-D\-A\-Q\-I\-D@{get\-Module\-From\-D\-A\-Q\-I\-D}!Functions for DAQ channel ID@{Functions for D\-A\-Q channel I\-D}}
+\subsubsection[{get\-Module\-From\-D\-A\-Q\-I\-D}]{\setlength{\rightskip}{0pt plus 5cm}unsigned int C\-A\-L\-I\-C\-E\-::\-Ahc\-Mapper\-::get\-Module\-From\-D\-A\-Q\-I\-D (
+\begin{DoxyParamCaption}
+\item[{const int}]{D\-A\-Qchannel, }
+\item[{bool \&}]{valid}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}\label{group__DAQgroup_gaa605e0ab6e665a41fa7aa30674592a99}
+
+
+get module (number) in which this (D\-A\-Q) channel is included 
+
+Checks if the channel exists. No exception is thrown.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em D\-A\-Qchannel} & D\-A\-Q channel I\-D \\
+\hline
+\mbox{\tt out}  & {\em valid} & false if a non valid cell is queried\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+module 
+\end{DoxyReturn}
+
+
+Implements {\bf C\-A\-L\-I\-C\-E\-::\-Mapper} \doxyref{}{p.}{group__DAQgroup_ga16bb145f33d7e74f86a4ad508c1edac2}.
+
+
+
+Definition at line 173 of file Ahc\-Mapper.\-hh.
+
+
+
+References C\-A\-L\-I\-C\-E\-::\-Ahc\-Mapper\-::get\-Index\-By\-D\-A\-Q\-I\-D().
+
+\index{Functions for D\-A\-Q channel I\-D@{Functions for D\-A\-Q channel I\-D}!get\-Module\-From\-D\-A\-Q\-I\-D@{get\-Module\-From\-D\-A\-Q\-I\-D}}
+\index{get\-Module\-From\-D\-A\-Q\-I\-D@{get\-Module\-From\-D\-A\-Q\-I\-D}!Functions for DAQ channel ID@{Functions for D\-A\-Q channel I\-D}}
+\subsubsection[{get\-Module\-From\-D\-A\-Q\-I\-D}]{\setlength{\rightskip}{0pt plus 5cm}unsigned int C\-A\-L\-I\-C\-E\-::\-Ahc2\-Mapper\-::get\-Module\-From\-D\-A\-Q\-I\-D (
+\begin{DoxyParamCaption}
+\item[{const int}]{D\-A\-Qchannel, }
+\item[{bool \&}]{valid}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}\label{group__DAQgroup_ga1665e9e58c886d9506773a7f6964f7eb}
+
+
+get module (number) in which this (D\-A\-Q) channel is included 
+
+Checks if the channel exists. No exception is thrown.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em D\-A\-Qchannel} & D\-A\-Q channel I\-D \\
+\hline
+\mbox{\tt out}  & {\em valid} & false if a non valid cell is queried\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+module 
+\end{DoxyReturn}
+
+
+Implements {\bf C\-A\-L\-I\-C\-E\-::\-Mapper} \doxyref{}{p.}{group__DAQgroup_ga16bb145f33d7e74f86a4ad508c1edac2}.
+
+
+
+Definition at line 179 of file Ahc2\-Mapper.\-hh.
+
+
+
+References C\-A\-L\-I\-C\-E\-::\-Ahc2\-Mapper\-::get\-Index\-By\-D\-A\-Q\-I\-D().
+
+\index{Functions for D\-A\-Q channel I\-D@{Functions for D\-A\-Q channel I\-D}!get\-Slot\-From\-D\-A\-Q\-I\-D@{get\-Slot\-From\-D\-A\-Q\-I\-D}}
+\index{get\-Slot\-From\-D\-A\-Q\-I\-D@{get\-Slot\-From\-D\-A\-Q\-I\-D}!Functions for DAQ channel ID@{Functions for D\-A\-Q channel I\-D}}
+\subsubsection[{get\-Slot\-From\-D\-A\-Q\-I\-D}]{\setlength{\rightskip}{0pt plus 5cm}unsigned int C\-A\-L\-I\-C\-E\-::\-Decoder\-Set\-::get\-Slot\-From\-D\-A\-Q\-I\-D (
+\begin{DoxyParamCaption}
+\item[{const int}]{D\-A\-Qconnection}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}\label{group__DAQgroup_gae695d7a267bbde471feeac8b1899b873}
+
+
+get slot from D\-A\-Q channel I\-D The right encoding string has to be set before. 
+
+\begin{DoxySeeAlso}{See Also}
+\doxyref{set\-D\-A\-Q\-Encoding}{p.}{group__DAQgroup_gaa376e69167322f7502bc8573d2e96b9a} 
+\end{DoxySeeAlso}
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em \doxyref{D\-A\-Qconnection}{p.}{classCALICE_1_1DAQconnection}} & D\-A\-Q connection I\-D to decode \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+slot 
+\end{DoxyReturn}
+
+
+Definition at line 199 of file Decoder\-Set.\-hh.
+
+
+
+References C\-A\-L\-I\-C\-E\-::\-Fast\-Decoder\-::decode\-U().
+
+
+
+Referenced by C\-A\-L\-I\-C\-E\-::\-Ahc\-Mapper\-::get\-Index\-By\-D\-A\-Q\-I\-D(), and C\-A\-L\-I\-C\-E\-::\-Ahc2\-Mapper\-::get\-Index\-By\-D\-A\-Q\-I\-D().
+
+\index{Functions for D\-A\-Q channel I\-D@{Functions for D\-A\-Q channel I\-D}!set\-D\-A\-Q\-Encoding@{set\-D\-A\-Q\-Encoding}}
+\index{set\-D\-A\-Q\-Encoding@{set\-D\-A\-Q\-Encoding}!Functions for DAQ channel ID@{Functions for D\-A\-Q channel I\-D}}
+\subsubsection[{set\-D\-A\-Q\-Encoding}]{\setlength{\rightskip}{0pt plus 5cm}void C\-A\-L\-I\-C\-E\-::\-Decoder\-Set\-::set\-D\-A\-Q\-Encoding (
+\begin{DoxyParamCaption}
+\item[{const std\-::string \&}]{encoding}
+\end{DoxyParamCaption}
+)}\label{group__DAQgroup_gaa376e69167322f7502bc8573d2e96b9a}
+
+
+set a new D\-A\-Q channel I\-D encoding string if an empty string is given the function will use the default encoding string 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em encoding} & encoding string \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 77 of file Decoder\-Set.\-cc.
+
+
+
+References C\-A\-L\-I\-C\-E\-::\-Fast\-Decoder\-::generate\-Decoder().
+
+
+
+Referenced by C\-A\-L\-I\-C\-E\-::\-Decoder\-Set\-::\-Decoder\-Set().
+

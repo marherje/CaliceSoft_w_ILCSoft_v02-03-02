@@ -1,0 +1,192 @@
+\section{C\-A\-L\-I\-C\-E\-Overlay\-Preparation Class Reference}
+\label{classCALICEOverlayPreparation}\index{C\-A\-L\-I\-C\-E\-Overlay\-Preparation@{C\-A\-L\-I\-C\-E\-Overlay\-Preparation}}
+
+
+{\ttfamily \#include $<$C\-A\-L\-I\-C\-E\-Overlay\-Preparation.\-hh$>$}
+
+Inheritance diagram for C\-A\-L\-I\-C\-E\-Overlay\-Preparation\-:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classCALICEOverlayPreparation}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+{\bf C\-A\-L\-I\-C\-E\-Overlay\-Preparation} ()
+\item 
+virtual {\bf $\sim$\-C\-A\-L\-I\-C\-E\-Overlay\-Preparation} ()
+\item 
+{\bf C\-A\-L\-I\-C\-E\-Overlay\-Preparation} $\ast$ {\bfseries new\-Processor} ()\label{classCALICEOverlayPreparation_a0198d93bc883b43dc38259ab6a94f284}
+
+\item 
+virtual void {\bf init} ()
+\item 
+virtual void {\bf process\-Run\-Header} (L\-C\-Run\-Header $\ast$run)
+\item 
+virtual void {\bf process\-Event} (lcio\-::\-L\-C\-Event $\ast$)
+\item 
+virtual void {\bf end} ()
+\item 
+unsigned {\bf get\-Starting\-Layer} ({\bf C\-Layer} $\ast$)
+\begin{DoxyCompactList}\small\item\em First interaction layer and primary track finder. \end{DoxyCompactList}\item 
+bool {\bf Find\-Track} (unsigned, {\bf C\-Layer} $\ast$)
+\item 
+bool {\bf is\-Muon} (float, float)
+\item 
+bool {\bf is\-Trash} (unsigned, float)
+\begin{DoxyCompactList}\small\item\em C\-A\-L\-I\-C\-E event selection (muon and trash) \end{DoxyCompactList}\item 
+float {\bf dist\-X\-Y} ({\bf C\-Hit} $\ast$, {\bf C\-Hit} $\ast$)
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+\doxyref{C\-A\-L\-I\-C\-E\-Overlay\-Preparation}{p.}{classCALICEOverlayPreparation} processor class 
+
+\subsection{Constructor \& Destructor Documentation}
+\index{C\-A\-L\-I\-C\-E\-Overlay\-Preparation@{C\-A\-L\-I\-C\-E\-Overlay\-Preparation}!C\-A\-L\-I\-C\-E\-Overlay\-Preparation@{C\-A\-L\-I\-C\-E\-Overlay\-Preparation}}
+\index{C\-A\-L\-I\-C\-E\-Overlay\-Preparation@{C\-A\-L\-I\-C\-E\-Overlay\-Preparation}!CALICEOverlayPreparation@{C\-A\-L\-I\-C\-E\-Overlay\-Preparation}}
+\subsubsection[{C\-A\-L\-I\-C\-E\-Overlay\-Preparation}]{\setlength{\rightskip}{0pt plus 5cm}C\-A\-L\-I\-C\-E\-Overlay\-Preparation\-::\-C\-A\-L\-I\-C\-E\-Overlay\-Preparation (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{classCALICEOverlayPreparation_a6325cb0f466f43c21161a0bdc6fc0a04}
+Default constructor \index{C\-A\-L\-I\-C\-E\-Overlay\-Preparation@{C\-A\-L\-I\-C\-E\-Overlay\-Preparation}!$\sim$\-C\-A\-L\-I\-C\-E\-Overlay\-Preparation@{$\sim$\-C\-A\-L\-I\-C\-E\-Overlay\-Preparation}}
+\index{$\sim$\-C\-A\-L\-I\-C\-E\-Overlay\-Preparation@{$\sim$\-C\-A\-L\-I\-C\-E\-Overlay\-Preparation}!CALICEOverlayPreparation@{C\-A\-L\-I\-C\-E\-Overlay\-Preparation}}
+\subsubsection[{$\sim$\-C\-A\-L\-I\-C\-E\-Overlay\-Preparation}]{\setlength{\rightskip}{0pt plus 5cm}C\-A\-L\-I\-C\-E\-Overlay\-Preparation\-::$\sim$\-C\-A\-L\-I\-C\-E\-Overlay\-Preparation (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}\label{classCALICEOverlayPreparation_a5fac9b3ffd811224012ea3143c67dfca}
+Default destructor 
+
+\subsection{Member Function Documentation}
+\index{C\-A\-L\-I\-C\-E\-Overlay\-Preparation@{C\-A\-L\-I\-C\-E\-Overlay\-Preparation}!dist\-X\-Y@{dist\-X\-Y}}
+\index{dist\-X\-Y@{dist\-X\-Y}!CALICEOverlayPreparation@{C\-A\-L\-I\-C\-E\-Overlay\-Preparation}}
+\subsubsection[{dist\-X\-Y}]{\setlength{\rightskip}{0pt plus 5cm}float C\-A\-L\-I\-C\-E\-Overlay\-Preparation\-::dist\-X\-Y (
+\begin{DoxyParamCaption}
+\item[{{\bf C\-Hit} $\ast$}]{h1, }
+\item[{{\bf C\-Hit} $\ast$}]{h2}
+\end{DoxyParamCaption}
+)}\label{classCALICEOverlayPreparation_a34c5ffe86d2fa90a21513612a1d036ad}
+Calculates and returns distance between two hits in X\-Y-\/plane 
+
+References C\-Hit\-::x, and C\-Hit\-::y.
+
+
+
+Referenced by Find\-Track().
+
+\index{C\-A\-L\-I\-C\-E\-Overlay\-Preparation@{C\-A\-L\-I\-C\-E\-Overlay\-Preparation}!end@{end}}
+\index{end@{end}!CALICEOverlayPreparation@{C\-A\-L\-I\-C\-E\-Overlay\-Preparation}}
+\subsubsection[{end}]{\setlength{\rightskip}{0pt plus 5cm}void C\-A\-L\-I\-C\-E\-Overlay\-Preparation\-::end (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}\label{classCALICEOverlayPreparation_a2d8e0b68e0e5c573dfdc63755a7c9ad6}
+Function to close root-\/file and print some statistic results \index{C\-A\-L\-I\-C\-E\-Overlay\-Preparation@{C\-A\-L\-I\-C\-E\-Overlay\-Preparation}!Find\-Track@{Find\-Track}}
+\index{Find\-Track@{Find\-Track}!CALICEOverlayPreparation@{C\-A\-L\-I\-C\-E\-Overlay\-Preparation}}
+\subsubsection[{Find\-Track}]{\setlength{\rightskip}{0pt plus 5cm}bool C\-A\-L\-I\-C\-E\-Overlay\-Preparation\-::\-Find\-Track (
+\begin{DoxyParamCaption}
+\item[{unsigned}]{start, }
+\item[{{\bf C\-Layer} $\ast$}]{lr}
+\end{DoxyParamCaption}
+)}\label{classCALICEOverlayPreparation_a1536aa77e504e4e32fd0477010519946}
+Finds hits belonging to primary track taking in account the earlier found shower starting point. The \char`\"{}nearest neighbour\char`\"{} criteria is used. Maximum distance parameters are defined taking in account the cell size. First parameter is the number of shower starting layer. Second parameter is an array with objects \doxyref{C\-Layer}{p.}{classCLayer} that contain layer parameters. 
+
+References C\-Hit\-::b, dist\-X\-Y(), C\-Hit\-::l, C\-Hit\-::r, C\-Hit\-::x, C\-Hit\-::y, and C\-Hit\-::z.
+
+
+
+Referenced by process\-Event().
+
+\index{C\-A\-L\-I\-C\-E\-Overlay\-Preparation@{C\-A\-L\-I\-C\-E\-Overlay\-Preparation}!get\-Starting\-Layer@{get\-Starting\-Layer}}
+\index{get\-Starting\-Layer@{get\-Starting\-Layer}!CALICEOverlayPreparation@{C\-A\-L\-I\-C\-E\-Overlay\-Preparation}}
+\subsubsection[{get\-Starting\-Layer}]{\setlength{\rightskip}{0pt plus 5cm}unsigned C\-A\-L\-I\-C\-E\-Overlay\-Preparation\-::get\-Starting\-Layer (
+\begin{DoxyParamCaption}
+\item[{{\bf C\-Layer} $\ast$}]{lr}
+\end{DoxyParamCaption}
+)}\label{classCALICEOverlayPreparation_af24a0d57bdbaed18214f7fe98bf58e0b}
+
+
+First interaction layer and primary track finder. 
+
+Finds and returns the number of layer where shower started using the following criteria\-:
+\begin{DoxyEnumerate}
+\item Moving average sum of M\-I\-Ps inside the window = 10 layers for two successive layers is greater than \-\_\-av\-M\-I\-Pxxxx value.
+\item Number of hits in two consequent layers is greater than \-\_\-hit\-Limxxx value. Both constraints are energy dependent.
+\end{DoxyEnumerate}
+
+\begin{DoxyAuthor}{Author}
+M.\-V. Chadeeva @ date November 2010 
+\end{DoxyAuthor}
+
+
+Referenced by process\-Event().
+
+\index{C\-A\-L\-I\-C\-E\-Overlay\-Preparation@{C\-A\-L\-I\-C\-E\-Overlay\-Preparation}!init@{init}}
+\index{init@{init}!CALICEOverlayPreparation@{C\-A\-L\-I\-C\-E\-Overlay\-Preparation}}
+\subsubsection[{init}]{\setlength{\rightskip}{0pt plus 5cm}void C\-A\-L\-I\-C\-E\-Overlay\-Preparation\-::init (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}\label{classCALICEOverlayPreparation_a367c344c2f1d5e5ed2056a0aad7c7c2b}
+Initialization of class members,root-\/file opening and histogramm booking \index{C\-A\-L\-I\-C\-E\-Overlay\-Preparation@{C\-A\-L\-I\-C\-E\-Overlay\-Preparation}!is\-Muon@{is\-Muon}}
+\index{is\-Muon@{is\-Muon}!CALICEOverlayPreparation@{C\-A\-L\-I\-C\-E\-Overlay\-Preparation}}
+\subsubsection[{is\-Muon}]{\setlength{\rightskip}{0pt plus 5cm}bool C\-A\-L\-I\-C\-E\-Overlay\-Preparation\-::is\-Muon (
+\begin{DoxyParamCaption}
+\item[{float}]{e\-\_\-eh, }
+\item[{float}]{e\-\_\-t}
+\end{DoxyParamCaption}
+)}\label{classCALICEOverlayPreparation_aa654b6ca1c4ba5057b1eeb7f1abb1e65}
+Finds muon-\/like events 
+
+Referenced by process\-Event().
+
+\index{C\-A\-L\-I\-C\-E\-Overlay\-Preparation@{C\-A\-L\-I\-C\-E\-Overlay\-Preparation}!is\-Trash@{is\-Trash}}
+\index{is\-Trash@{is\-Trash}!CALICEOverlayPreparation@{C\-A\-L\-I\-C\-E\-Overlay\-Preparation}}
+\subsubsection[{is\-Trash}]{\setlength{\rightskip}{0pt plus 5cm}bool C\-A\-L\-I\-C\-E\-Overlay\-Preparation\-::is\-Trash (
+\begin{DoxyParamCaption}
+\item[{unsigned}]{start, }
+\item[{float}]{esum}
+\end{DoxyParamCaption}
+)}\label{classCALICEOverlayPreparation_a99e9d901210c68691ba199f7cbdc6201}
+
+
+C\-A\-L\-I\-C\-E event selection (muon and trash) 
+
+Selects trash events (including multiparticle)
+
+\begin{DoxyAuthor}{Author}
+M.\-V. Chadeeva @ date November 2010 
+\end{DoxyAuthor}
+
+
+Referenced by process\-Event().
+
+\index{C\-A\-L\-I\-C\-E\-Overlay\-Preparation@{C\-A\-L\-I\-C\-E\-Overlay\-Preparation}!process\-Event@{process\-Event}}
+\index{process\-Event@{process\-Event}!CALICEOverlayPreparation@{C\-A\-L\-I\-C\-E\-Overlay\-Preparation}}
+\subsubsection[{process\-Event}]{\setlength{\rightskip}{0pt plus 5cm}void C\-A\-L\-I\-C\-E\-Overlay\-Preparation\-::process\-Event (
+\begin{DoxyParamCaption}
+\item[{lcio\-::\-L\-C\-Event $\ast$}]{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}\label{classCALICEOverlayPreparation_a621961e9cb9ce790aa61fe5c77586fd3}
+Mail function to loop over events from which all other functions are called for every event 
+
+References C\-A\-L\-I\-C\-E\-::\-C\-Layer\-::emip, Find\-Track(), get\-Starting\-Layer(), is\-Muon(), is\-Trash(), C\-A\-L\-I\-C\-E\-::\-C\-Hit\-::r, C\-A\-L\-I\-C\-E\-::\-C\-Hit\-::x, C\-A\-L\-I\-C\-E\-::\-C\-Hit\-::y, and C\-A\-L\-I\-C\-E\-::\-C\-Hit\-::z.
+
+\index{C\-A\-L\-I\-C\-E\-Overlay\-Preparation@{C\-A\-L\-I\-C\-E\-Overlay\-Preparation}!process\-Run\-Header@{process\-Run\-Header}}
+\index{process\-Run\-Header@{process\-Run\-Header}!CALICEOverlayPreparation@{C\-A\-L\-I\-C\-E\-Overlay\-Preparation}}
+\subsubsection[{process\-Run\-Header}]{\setlength{\rightskip}{0pt plus 5cm}void C\-A\-L\-I\-C\-E\-Overlay\-Preparation\-::process\-Run\-Header (
+\begin{DoxyParamCaption}
+\item[{L\-C\-Run\-Header $\ast$}]{run}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}\label{classCALICEOverlayPreparation_ace1f247715ebdf1f5333ef0baa6ba716}
+Get run information 
+
+The documentation for this class was generated from the following files\-:\begin{DoxyCompactItemize}
+\item 
+/nfs/dust/ilc/user/marquezh/\-Calice\-Soft\-\_\-w\-\_\-\-I\-L\-C\-Soft\-\_\-v02-\/03-\/02/calice\-\_\-analysis/addon\-Procs/include/C\-A\-L\-I\-C\-E\-Overlay\-Preparation.\-hh\item 
+/nfs/dust/ilc/user/marquezh/\-Calice\-Soft\-\_\-w\-\_\-\-I\-L\-C\-Soft\-\_\-v02-\/03-\/02/calice\-\_\-analysis/addon\-Procs/include/Select.\-hh\item 
+/nfs/dust/ilc/user/marquezh/\-Calice\-Soft\-\_\-w\-\_\-\-I\-L\-C\-Soft\-\_\-v02-\/03-\/02/calice\-\_\-analysis/addon\-Procs/include/Start\-And\-Track.\-hh\item 
+/nfs/dust/ilc/user/marquezh/\-Calice\-Soft\-\_\-w\-\_\-\-I\-L\-C\-Soft\-\_\-v02-\/03-\/02/calice\-\_\-analysis/addon\-Procs/src/C\-A\-L\-I\-C\-E\-Overlay\-Preparation.\-cc\end{DoxyCompactItemize}

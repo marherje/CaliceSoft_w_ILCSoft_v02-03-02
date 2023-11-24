@@ -1,0 +1,267 @@
+\section{C\-A\-L\-I\-C\-E\-:\-:L\-C\-Hcal\-Calibration\-Object Class Reference}
+\label{classCALICE_1_1LCHcalCalibrationObject}\index{C\-A\-L\-I\-C\-E\-::\-L\-C\-Hcal\-Calibration\-Object@{C\-A\-L\-I\-C\-E\-::\-L\-C\-Hcal\-Calibration\-Object}}
+
+
+Object to store information about arbitrary cell wise calibration of the H\-C\-A\-L in L\-C Objects.  
+
+
+
+
+{\ttfamily \#include $<$L\-C\-Hcal\-Calibration\-Object.\-hh$>$}
+
+Inheritance diagram for C\-A\-L\-I\-C\-E\-:\-:L\-C\-Hcal\-Calibration\-Object\-:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=1.409692cm]{classCALICE_1_1LCHcalCalibrationObject}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+{\bf L\-C\-Hcal\-Calibration\-Object} ()\label{classCALICE_1_1LCHcalCalibrationObject_acb284f567fd1d0ad6ffe21b30f21cdaa}
+
+\begin{DoxyCompactList}\small\item\em Default c'tor. \end{DoxyCompactList}\item 
+{\bfseries L\-C\-Hcal\-Calibration\-Object} (L\-C\-Object $\ast${\bf obj})\label{classCALICE_1_1LCHcalCalibrationObject_ac550a3a93ec37a835ebf980cd17f8d09}
+
+\item 
+L\-C\-Generic\-Object\-Impl $\ast$ {\bf obj} ()
+\begin{DoxyCompactList}\small\item\em The L\-C\-Generic\-Object\-Impl . \end{DoxyCompactList}\item 
+virtual {\bf $\sim$\-L\-C\-Hcal\-Calibration\-Object} ()\label{classCALICE_1_1LCHcalCalibrationObject_a2fdfef9c05ed0c8d69be6a6ac7e879d3}
+
+\begin{DoxyCompactList}\small\item\em Clean up if we created a new L\-C\-Generic\-Object\-Impl. \end{DoxyCompactList}\item 
+virtual int {\bf id} ()\label{classCALICE_1_1LCHcalCalibrationObject_adfd871bb200ee6edc74e77ab99cd64cf}
+
+\begin{DoxyCompactList}\small\item\em Return the id of the underlying L\-C\-Generic\-Object\-Impl. \end{DoxyCompactList}\item 
+int {\bfseries get\-N\-Int} () const \label{classCALICE_1_1LCHcalCalibrationObject_ab05f6cd6a589c3ce40d502b5789de97b}
+
+\item 
+int {\bfseries get\-N\-Float} () const \label{classCALICE_1_1LCHcalCalibrationObject_ab0b0edbc06b75b1f79b7418f5a800bf5}
+
+\item 
+int {\bfseries get\-N\-Double} () const \label{classCALICE_1_1LCHcalCalibrationObject_a8c3aebde0329827bed1847c06420ce36}
+
+\item 
+int {\bfseries get\-Int\-Val} (int index) const \label{classCALICE_1_1LCHcalCalibrationObject_a2dba956b310465eddc44d69ae8355277}
+
+\item 
+float {\bfseries get\-Float\-Val} (int index) const \label{classCALICE_1_1LCHcalCalibrationObject_a37c7ae04e24cb2b923d765123d149b5b}
+
+\item 
+double {\bfseries get\-Double\-Val} (int index) const \label{classCALICE_1_1LCHcalCalibrationObject_a231f2119fb380bc4278227d6f1a7ca16}
+
+\item 
+bool {\bfseries is\-Fixed\-Size} () const \label{classCALICE_1_1LCHcalCalibrationObject_a399a467018ef0e400cfaed6bc164f5e7}
+
+\item 
+float {\bfseries get\-Constant} ()\label{classCALICE_1_1LCHcalCalibrationObject_a9b41090c53867d347adecaad4dbb642c}
+
+\item 
+float {\bfseries get\-Constant\-Error} ()\label{classCALICE_1_1LCHcalCalibrationObject_acc1cde393ee9e7bf8e7cf8c7de367366}
+
+\item 
+void {\bfseries set\-Constant} (float c)\label{classCALICE_1_1LCHcalCalibrationObject_a0b9f775ebdfe811203943fc88fa53747}
+
+\item 
+void {\bfseries set\-Constant\-Error} (float ce)\label{classCALICE_1_1LCHcalCalibrationObject_aef6d9550f34c29a260ec80ecc3816550}
+
+\item 
+unsigned {\bf get\-Cell\-Key} () const \label{classCALICE_1_1LCHcalCalibrationObject_ade3cd1a7657d6f0b759a814d884e74a7}
+
+\begin{DoxyCompactList}\small\item\em get cell key of cell \end{DoxyCompactList}\item 
+void {\bf set\-Cell\-Key} (unsigned cell\-Key)\label{classCALICE_1_1LCHcalCalibrationObject_acefb80d278a76b9ee117de5f52274e4c}
+
+\begin{DoxyCompactList}\small\item\em set cell key of cell \end{DoxyCompactList}\item 
+unsigned {\bf get\-Chip} () const \label{classCALICE_1_1LCHcalCalibrationObject_abf8d38197f79027123cc991c122472ec}
+
+\begin{DoxyCompactList}\small\item\em get chip number of cell \end{DoxyCompactList}\item 
+unsigned {\bf get\-Channel} () const \label{classCALICE_1_1LCHcalCalibrationObject_a6ec29045e1d20f2a0fb4169a4e017b12}
+
+\begin{DoxyCompactList}\small\item\em get channel number of cell \end{DoxyCompactList}\item 
+virtual float {\bf apply\-Calibration} (float input\-Value) const 
+\begin{DoxyCompactList}\small\item\em let the object apply the calibration stored in the object \end{DoxyCompactList}\item 
+virtual float {\bf cancel\-Calibration} (float output\-Value) const \label{classCALICE_1_1LCHcalCalibrationObject_a77e8c36b4989d3c378bce8c16ddbb2a9}
+
+\begin{DoxyCompactList}\small\item\em cancel an applied calibration from energy value \end{DoxyCompactList}\item 
+virtual float {\bf apply\-Calibration\-Error} (float input\-Value, float input\-Error) const 
+\begin{DoxyCompactList}\small\item\em let the object calculate the error after applying the calibration stored in the object \end{DoxyCompactList}\item 
+virtual float {\bf cancel\-Calibration\-Error} (float output\-Value, float output\-Error) const \label{classCALICE_1_1LCHcalCalibrationObject_abca1f2e349d568bc41f5576d7dc00f93}
+
+\begin{DoxyCompactList}\small\item\em apply error due to canceling a calibration to current error \end{DoxyCompactList}\item 
+virtual bool {\bf calibration\-Valid} () const 
+\begin{DoxyCompactList}\small\item\em is the calibration stored in the object valid? \end{DoxyCompactList}\item 
+virtual bool {\bf keep\-Event} (float result\-Value, float result\-Error) const 
+\begin{DoxyCompactList}\small\item\em should the cell been kept in the cell selection after the calibration has been performed? \end{DoxyCompactList}\item 
+virtual float {\bfseries get\-Param} (unsigned param\-Index) const \label{classCALICE_1_1LCHcalCalibrationObject_a9187cdf6f753d71c5f6753b90eb806c4}
+
+\item 
+virtual void {\bfseries set\-Param} (unsigned param\-Index)\label{classCALICE_1_1LCHcalCalibrationObject_a1fdd053f46ff8a7b21ff64232d4fcfcb}
+
+\item 
+virtual void {\bfseries set\-Cell\-Temp} (float temp\-Value, float temp\-Error)\label{classCALICE_1_1LCHcalCalibrationObject_a617cffebc3dd06251a671d77dc4df9b0}
+
+\item 
+virtual float {\bfseries get\-Cell\-Temp} ()\label{classCALICE_1_1LCHcalCalibrationObject_a04d3b21769fcca6a86d2029c7f400f43}
+
+\item 
+virtual float {\bfseries get\-Cell\-Temp\-Error} ()\label{classCALICE_1_1LCHcalCalibrationObject_a5178c01f738484bc55c49677a5476588}
+
+\item 
+const std\-::string {\bf get\-Type\-Name} () const \label{classCALICE_1_1LCHcalCalibrationObject_ace5c8bbdd0437badd08b6d09dfd75ae9}
+
+\begin{DoxyCompactList}\small\item\em return type of the class \end{DoxyCompactList}\item 
+const std\-::string {\bf get\-Data\-Description} () const \label{classCALICE_1_1LCHcalCalibrationObject_a56c472a25d3146e4b152ce52116e44b9}
+
+\begin{DoxyCompactList}\small\item\em return a brief description of the data member \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+L\-C\-Generic\-Object\-Impl $\ast$ {\bfseries \-\_\-obj}\label{classCALICE_1_1LCHcalCalibrationObject_a89c0628c58561dc3a036c1cce0d0d6ba}
+
+\item 
+bool {\bfseries \-\_\-created\-Object}\label{classCALICE_1_1LCHcalCalibrationObject_a315d971845a1d05206d4502a141b5aba}
+
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Object to store information about arbitrary cell wise calibration of the H\-C\-A\-L in L\-C Objects. 
+
+\begin{DoxyAuthor}{Author}
+S. Schmidt D\-E\-S\-Y 
+\end{DoxyAuthor}
+\begin{DoxyDate}{Date}
+Jul 2006 
+\end{DoxyDate}
+
+
+Definition at line 20 of file L\-C\-Hcal\-Calibration\-Object.\-hh.
+
+
+
+\subsection{Member Function Documentation}
+\index{C\-A\-L\-I\-C\-E\-::\-L\-C\-Hcal\-Calibration\-Object@{C\-A\-L\-I\-C\-E\-::\-L\-C\-Hcal\-Calibration\-Object}!apply\-Calibration@{apply\-Calibration}}
+\index{apply\-Calibration@{apply\-Calibration}!CALICE::LCHcalCalibrationObject@{C\-A\-L\-I\-C\-E\-::\-L\-C\-Hcal\-Calibration\-Object}}
+\subsubsection[{apply\-Calibration}]{\setlength{\rightskip}{0pt plus 5cm}virtual float C\-A\-L\-I\-C\-E\-::\-L\-C\-Hcal\-Calibration\-Object\-::apply\-Calibration (
+\begin{DoxyParamCaption}
+\item[{float}]{input\-Value}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}\label{classCALICE_1_1LCHcalCalibrationObject_a763f1cf5b9c372fdde268d79b789adcc}
+
+
+let the object apply the calibration stored in the object 
+
+
+\begin{DoxyParams}{Parameters}
+{\em input\-Value} & \char`\"{}energy\char`\"{} value of the cell before the calibration \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\char`\"{}energy\char`\"{} value of the cell after the calibration 
+\end{DoxyReturn}
+
+
+Reimplemented in {\bf C\-A\-L\-I\-C\-E\-::\-Temp\-Gain\-Constants} \doxyref{}{p.}{classCALICE_1_1TempGainConstants_ae2278e77d19368d5fb1ec5fb1eecef44}, {\bf C\-A\-L\-I\-C\-E\-::\-Dead\-Noise\-Constants} \doxyref{}{p.}{classCALICE_1_1DeadNoiseConstants_a117a93e472c84e57b805de35e12b6e29}, {\bf C\-A\-L\-I\-C\-E\-::\-Gain\-Constants} \doxyref{}{p.}{classCALICE_1_1GainConstants_aeb089dc140f6e63d2f0a4746ecdd5cbb}, {\bf C\-A\-L\-I\-C\-E\-::\-Tcmt\-Saturation\-Constants} \doxyref{}{p.}{classCALICE_1_1TcmtSaturationConstants_a7a6e4f80607f938d3a739bf2527f3a56}, {\bf C\-A\-L\-I\-C\-E\-::\-Inter\-Constants} \doxyref{}{p.}{classCALICE_1_1InterConstants_ac4e54f423b0048db8e79b745a53a5209}, {\bf C\-A\-L\-I\-C\-E\-::\-M\-I\-P\-Constants} \doxyref{}{p.}{classCALICE_1_1MIPConstants_a1ce8759ffdc72c9975ef2705c08fc4d7}, {\bf C\-A\-L\-I\-C\-E\-::\-Pedestal\-Constants} \doxyref{}{p.}{classCALICE_1_1PedestalConstants_abbcc4190367b281e817a54467f7d7ed2}, and {\bf C\-A\-L\-I\-C\-E\-::\-L\-C\-Hcal\-Calibration\-Object2\-D} \doxyref{}{p.}{classCALICE_1_1LCHcalCalibrationObject2D_ad805292313b3bb8fe8a3008a3f285b10}.
+
+
+
+Definition at line 131 of file L\-C\-Hcal\-Calibration\-Object.\-hh.
+
+\index{C\-A\-L\-I\-C\-E\-::\-L\-C\-Hcal\-Calibration\-Object@{C\-A\-L\-I\-C\-E\-::\-L\-C\-Hcal\-Calibration\-Object}!apply\-Calibration\-Error@{apply\-Calibration\-Error}}
+\index{apply\-Calibration\-Error@{apply\-Calibration\-Error}!CALICE::LCHcalCalibrationObject@{C\-A\-L\-I\-C\-E\-::\-L\-C\-Hcal\-Calibration\-Object}}
+\subsubsection[{apply\-Calibration\-Error}]{\setlength{\rightskip}{0pt plus 5cm}virtual float C\-A\-L\-I\-C\-E\-::\-L\-C\-Hcal\-Calibration\-Object\-::apply\-Calibration\-Error (
+\begin{DoxyParamCaption}
+\item[{float}]{input\-Value, }
+\item[{float}]{input\-Error}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}\label{classCALICE_1_1LCHcalCalibrationObject_a16d9de9567f68d7784a2daa4d2821341}
+
+
+let the object calculate the error after applying the calibration stored in the object 
+
+
+\begin{DoxyParams}{Parameters}
+{\em input\-Value} & \char`\"{}energy\char`\"{} value of the cell stored before the calibration \\
+\hline
+{\em input\-Error} & error of the \char`\"{}energy\char`\"{} value of the cell before the calibration \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+error of the \char`\"{}energy\char`\"{} value of the cell after the calibration taking into account the error of the \char`\"{}energy\char`\"{} value of the cell before the calibration and the error of the calibration itself 
+\end{DoxyReturn}
+
+
+Reimplemented in {\bf C\-A\-L\-I\-C\-E\-::\-Temp\-Gain\-Constants} \doxyref{}{p.}{classCALICE_1_1TempGainConstants_a4319810d19fd6bb61de44faec1f56226}, {\bf C\-A\-L\-I\-C\-E\-::\-Gain\-Constants} \doxyref{}{p.}{classCALICE_1_1GainConstants_a669886b01357faa0b2173384be3a60d3}, {\bf C\-A\-L\-I\-C\-E\-::\-Dead\-Noise\-Constants} \doxyref{}{p.}{classCALICE_1_1DeadNoiseConstants_a1c5558e71e236dabf1e54f54a87162f0}, {\bf C\-A\-L\-I\-C\-E\-::\-Tcmt\-Saturation\-Constants} \doxyref{}{p.}{classCALICE_1_1TcmtSaturationConstants_a256def068f131f98cb3a62669cc4dcaa}, {\bf C\-A\-L\-I\-C\-E\-::\-Inter\-Constants} \doxyref{}{p.}{classCALICE_1_1InterConstants_ad102c242709f9229f3936d04bb356be7}, {\bf C\-A\-L\-I\-C\-E\-::\-M\-I\-P\-Constants} \doxyref{}{p.}{classCALICE_1_1MIPConstants_a7beb08be64e40e822288cf285b5601e0}, {\bf C\-A\-L\-I\-C\-E\-::\-Pedestal\-Constants} \doxyref{}{p.}{classCALICE_1_1PedestalConstants_ac2c94c3d42b510de4c973ffb4a463469}, and {\bf C\-A\-L\-I\-C\-E\-::\-L\-C\-Hcal\-Calibration\-Object2\-D} \doxyref{}{p.}{classCALICE_1_1LCHcalCalibrationObject2D_a5a73278000f9d13e19969bc229fe18f3}.
+
+
+
+Definition at line 148 of file L\-C\-Hcal\-Calibration\-Object.\-hh.
+
+\index{C\-A\-L\-I\-C\-E\-::\-L\-C\-Hcal\-Calibration\-Object@{C\-A\-L\-I\-C\-E\-::\-L\-C\-Hcal\-Calibration\-Object}!calibration\-Valid@{calibration\-Valid}}
+\index{calibration\-Valid@{calibration\-Valid}!CALICE::LCHcalCalibrationObject@{C\-A\-L\-I\-C\-E\-::\-L\-C\-Hcal\-Calibration\-Object}}
+\subsubsection[{calibration\-Valid}]{\setlength{\rightskip}{0pt plus 5cm}virtual bool C\-A\-L\-I\-C\-E\-::\-L\-C\-Hcal\-Calibration\-Object\-::calibration\-Valid (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}\label{classCALICE_1_1LCHcalCalibrationObject_abbb1fce81f41a89147b721d593bbc734}
+
+
+is the calibration stored in the object valid? 
+
+\begin{DoxyReturn}{Returns}
+true if the calibration is valid, false if no valid calibration is available 
+\end{DoxyReturn}
+
+
+Reimplemented in {\bf C\-A\-L\-I\-C\-E\-::\-Temp\-Gain\-Constants} \doxyref{}{p.}{classCALICE_1_1TempGainConstants_a132d04dd01b328d85857bda95baf000b}, {\bf C\-A\-L\-I\-C\-E\-::\-Tcmt\-Saturation\-Constants} \doxyref{}{p.}{classCALICE_1_1TcmtSaturationConstants_aa2b6117fdcb356a8af69f54a2944a0af}, {\bf C\-A\-L\-I\-C\-E\-::\-Gain\-Constants} \doxyref{}{p.}{classCALICE_1_1GainConstants_a37c5d66f2537eee42e259147856e86a7}, {\bf C\-A\-L\-I\-C\-E\-::\-Dead\-Noise\-Constants} \doxyref{}{p.}{classCALICE_1_1DeadNoiseConstants_ad7e3bc3298b47d8fa31a43c160a8a45b}, {\bf C\-A\-L\-I\-C\-E\-::\-Inter\-Constants} \doxyref{}{p.}{classCALICE_1_1InterConstants_ab184f4d15b941b5ac67474b02eaab138}, {\bf C\-A\-L\-I\-C\-E\-::\-M\-I\-P\-Constants} \doxyref{}{p.}{classCALICE_1_1MIPConstants_aba936e2505ba100025495dded661ccb0}, {\bf C\-A\-L\-I\-C\-E\-::\-Saturation\-Constants} \doxyref{}{p.}{classCALICE_1_1SaturationConstants_a7fdebcaa3ebf3b099aa11524e347ace3}, and {\bf C\-A\-L\-I\-C\-E\-::\-Pedestal\-Constants} \doxyref{}{p.}{classCALICE_1_1PedestalConstants_a6cfd6a82fa83433d2abe95b830ae164d}.
+
+
+
+Definition at line 161 of file L\-C\-Hcal\-Calibration\-Object.\-hh.
+
+\index{C\-A\-L\-I\-C\-E\-::\-L\-C\-Hcal\-Calibration\-Object@{C\-A\-L\-I\-C\-E\-::\-L\-C\-Hcal\-Calibration\-Object}!keep\-Event@{keep\-Event}}
+\index{keep\-Event@{keep\-Event}!CALICE::LCHcalCalibrationObject@{C\-A\-L\-I\-C\-E\-::\-L\-C\-Hcal\-Calibration\-Object}}
+\subsubsection[{keep\-Event}]{\setlength{\rightskip}{0pt plus 5cm}virtual bool C\-A\-L\-I\-C\-E\-::\-L\-C\-Hcal\-Calibration\-Object\-::keep\-Event (
+\begin{DoxyParamCaption}
+\item[{float}]{result\-Value, }
+\item[{float}]{result\-Error}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}\label{classCALICE_1_1LCHcalCalibrationObject_a59f14a6b83e77717751ae4e7213e8d09}
+
+
+should the cell been kept in the cell selection after the calibration has been performed? 
+
+
+\begin{DoxyParams}{Parameters}
+{\em result\-Value} & \char`\"{}energy\char`\"{} value of the cell after the calibration \\
+\hline
+{\em result\-Error} & error on the \char`\"{}energy\char`\"{} value of the cell after the calibration \\
+\hline
+\end{DoxyParams}
+
+
+Reimplemented in {\bf C\-A\-L\-I\-C\-E\-::\-Tcmt\-Saturation\-Constants} \doxyref{}{p.}{classCALICE_1_1TcmtSaturationConstants_adb8d6310076d321706941a73904e4f02}, {\bf C\-A\-L\-I\-C\-E\-::\-Gain\-Constants} \doxyref{}{p.}{classCALICE_1_1GainConstants_a18c349f2f60b6f2d5d387fe386c63ebc}, {\bf C\-A\-L\-I\-C\-E\-::\-Dead\-Noise\-Constants} \doxyref{}{p.}{classCALICE_1_1DeadNoiseConstants_af4318e256ff1466682855553d5ba453e}, {\bf C\-A\-L\-I\-C\-E\-::\-Inter\-Constants} \doxyref{}{p.}{classCALICE_1_1InterConstants_a919e037d3e03029486c2a3c9713e772a}, {\bf C\-A\-L\-I\-C\-E\-::\-M\-I\-P\-Constants} \doxyref{}{p.}{classCALICE_1_1MIPConstants_a11232a43c70405ef3f8c4cc88641de6a}, {\bf C\-A\-L\-I\-C\-E\-::\-Saturation\-Constants} \doxyref{}{p.}{classCALICE_1_1SaturationConstants_a4df07d49bfccab7e7586bffddee8583c}, and {\bf C\-A\-L\-I\-C\-E\-::\-Pedestal\-Constants} \doxyref{}{p.}{classCALICE_1_1PedestalConstants_a5296ca6178fa8cebd290bcae2f39a86f}.
+
+
+
+Definition at line 169 of file L\-C\-Hcal\-Calibration\-Object.\-hh.
+
+\index{C\-A\-L\-I\-C\-E\-::\-L\-C\-Hcal\-Calibration\-Object@{C\-A\-L\-I\-C\-E\-::\-L\-C\-Hcal\-Calibration\-Object}!obj@{obj}}
+\index{obj@{obj}!CALICE::LCHcalCalibrationObject@{C\-A\-L\-I\-C\-E\-::\-L\-C\-Hcal\-Calibration\-Object}}
+\subsubsection[{obj}]{\setlength{\rightskip}{0pt plus 5cm}L\-C\-Generic\-Object\-Impl$\ast$ C\-A\-L\-I\-C\-E\-::\-L\-C\-Hcal\-Calibration\-Object\-::obj (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\label{classCALICE_1_1LCHcalCalibrationObject_a3d930fab870a493259f89039a2716bf9}
+
+
+The L\-C\-Generic\-Object\-Impl . 
+
+Sublcasses use this to access their data. 
+
+Definition at line 64 of file L\-C\-Hcal\-Calibration\-Object.\-hh.
+
+
+
+The documentation for this class was generated from the following file\-:\begin{DoxyCompactItemize}
+\item 
+L\-C\-Hcal\-Calibration\-Object.\-hh\end{DoxyCompactItemize}

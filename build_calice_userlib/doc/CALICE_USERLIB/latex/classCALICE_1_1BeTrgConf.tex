@@ -1,0 +1,247 @@
+\section{C\-A\-L\-I\-C\-E\-:\-:Be\-Trg\-Conf Class Reference}
+\label{classCALICE_1_1BeTrgConf}\index{C\-A\-L\-I\-C\-E\-::\-Be\-Trg\-Conf@{C\-A\-L\-I\-C\-E\-::\-Be\-Trg\-Conf}}
+
+
+Stores the configuration data of the trigger.  
+
+
+
+
+{\ttfamily \#include $<$Be\-Trg\-Conf.\-hh$>$}
+
+Inheritance diagram for C\-A\-L\-I\-C\-E\-:\-:Be\-Trg\-Conf\-:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=3.000000cm]{classCALICE_1_1BeTrgConf}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+{\bf Be\-Trg\-Conf} ()\label{classCALICE_1_1BeTrgConf_a8c09539bda8db3784aae4fbcbcb0ec3f}
+
+\begin{DoxyCompactList}\small\item\em Default Constructor. \end{DoxyCompactList}\item 
+{\bf Be\-Trg\-Conf} (int board\-I\-D)
+\begin{DoxyCompactList}\small\item\em Ctor. \end{DoxyCompactList}\item 
+{\bf Be\-Trg\-Conf} (L\-C\-Object $\ast${\bf obj})\label{classCALICE_1_1BeTrgConf_aa6bbe7ee49bfb432a38a8425fddd3c45}
+
+\begin{DoxyCompactList}\small\item\em 'Copy constructor' needed to interpret L\-C\-Collection read from file/database. \end{DoxyCompactList}\item 
+{\bf Be\-Trg\-Conf} \& {\bf set\-Board\-I\-D} (int board\-I\-D)
+\begin{DoxyCompactList}\small\item\em set the packed board id. \end{DoxyCompactList}\item 
+int {\bf get\-Board\-I\-D} () const \label{classCALICE_1_1BeTrgConf_a332e453076685a181fc82b50782a89f2}
+
+\begin{DoxyCompactList}\small\item\em Information on the F\-E chip the data was received. \end{DoxyCompactList}\item 
+void {\bf set\-Record\-Label} (int label)\label{classCALICE_1_1BeTrgConf_a75c2b5f2bdf803500688e0e427545ac5}
+
+\begin{DoxyCompactList}\small\item\em Set the Record Label. \end{DoxyCompactList}\item 
+short {\bf get\-Record\-Label} () const \label{classCALICE_1_1BeTrgConf_a3a35836bbb8aa32bcba88d0bbbed2686}
+
+\begin{DoxyCompactList}\small\item\em Return the Record Label. \end{DoxyCompactList}\item 
+{\bf Be\-Trg\-Conf} \& {\bf set\-Input\-Enable\-Mask} (int input\-\_\-enable)
+\begin{DoxyCompactList}\small\item\em Set the trigger enable bit mask. \end{DoxyCompactList}\item 
+int {\bf get\-Input\-Enable\-Mask} () const 
+\begin{DoxyCompactList}\small\item\em Get the trigger enable bit mask. \end{DoxyCompactList}\item 
+{\bf Be\-Trg\-Conf} \& {\bf set\-Oscillator\-Enable} (int osc\-\_\-enable)\label{classCALICE_1_1BeTrgConf_ac5c442bfe4a6d5d8da543c5444453491}
+
+\begin{DoxyCompactList}\small\item\em Set Oscillator Enable. \end{DoxyCompactList}\item 
+int {\bf get\-Oscillator\-Enable} () const \label{classCALICE_1_1BeTrgConf_a786f6d987d88cfff6be350d8d2da72b6}
+
+\begin{DoxyCompactList}\small\item\em Get Oscillator Enable. \end{DoxyCompactList}\item 
+{\bf Be\-Trg\-Conf} \& {\bf set\-General\-Enable} (int gen\-\_\-enable)\label{classCALICE_1_1BeTrgConf_a0ec05d6c7bcff2ba528ecbfd3ba02c1e}
+
+\begin{DoxyCompactList}\small\item\em Set General Enable. \end{DoxyCompactList}\item 
+int {\bf get\-General\-Enable} () const \label{classCALICE_1_1BeTrgConf_a4c4a9313bba8a0ed7f81092c8f6f1fec}
+
+\begin{DoxyCompactList}\small\item\em Get General Enable. \end{DoxyCompactList}\item 
+{\bf Be\-Trg\-Conf} \& {\bf set\-Oscillation\-Period} (int oscillation\-\_\-period)\label{classCALICE_1_1BeTrgConf_a03be1fd0409f19b3bf6b237a4b551e4e}
+
+\begin{DoxyCompactList}\small\item\em Set the oscillation period. \end{DoxyCompactList}\item 
+int {\bf get\-Oscillation\-Period} () const \label{classCALICE_1_1BeTrgConf_ac84ad8d502d2306e9380666a870c60ae}
+
+\begin{DoxyCompactList}\small\item\em Get the oscillation period. \end{DoxyCompactList}\item 
+{\bf Be\-Trg\-Conf} \& {\bf set\-Burst\-Counter} (int burst\-\_\-count)\label{classCALICE_1_1BeTrgConf_a9ffc7c295209cf416ed76e3e161f5ad2}
+
+\begin{DoxyCompactList}\small\item\em Set the burst counter. \end{DoxyCompactList}\item 
+int {\bf get\-Burst\-Counter} () const \label{classCALICE_1_1BeTrgConf_af28d7356fda3f116f34dabd50d52f798}
+
+\begin{DoxyCompactList}\small\item\em Get the burst counter. \end{DoxyCompactList}\item 
+{\bf Be\-Trg\-Conf} \& {\bf set\-Configuration} (int config)\label{classCALICE_1_1BeTrgConf_acec95f60250ce4a5d42f9aa7e58db7a7}
+
+\begin{DoxyCompactList}\small\item\em Set the configuration word. \end{DoxyCompactList}\item 
+int {\bf get\-Configuration} () const \label{classCALICE_1_1BeTrgConf_a4da9e0491cd18b711e110fc90cabbd57}
+
+\begin{DoxyCompactList}\small\item\em Get the configuration word. \end{DoxyCompactList}\item 
+{\bf Be\-Trg\-Conf} \& {\bf set\-Fifo\-Idle\-Depth} (int fifo\-\_\-idle\-\_\-depth)\label{classCALICE_1_1BeTrgConf_ac8baef28684cbcd0a2ffcf4238262d78}
+
+\begin{DoxyCompactList}\small\item\em Set the fifo idle depth. \end{DoxyCompactList}\item 
+int {\bf get\-Fifo\-Idle\-Depth} () const \label{classCALICE_1_1BeTrgConf_a2285119c2c7c779f80cfade5ddbd6873}
+
+\begin{DoxyCompactList}\small\item\em Get the fifo idle depth. \end{DoxyCompactList}\item 
+{\bf Be\-Trg\-Conf} \& {\bf set\-Busy\-Timeout} (int busy\-\_\-timeout)\label{classCALICE_1_1BeTrgConf_ac4796b32d11183db7c4c26cc27068b04}
+
+\begin{DoxyCompactList}\small\item\em Set the busy time out. \end{DoxyCompactList}\item 
+int {\bf get\-Busy\-Timeout} () const \label{classCALICE_1_1BeTrgConf_a92ccb523a8c71cbd92bdd2377120331a}
+
+\begin{DoxyCompactList}\small\item\em Get the busy time out. \end{DoxyCompactList}\item 
+{\bf Be\-Trg\-Conf} \& {\bf set\-Burst\-Timeout} (int burst\-\_\-timeout)\label{classCALICE_1_1BeTrgConf_ad1fd90e88ae2d537566b7626fe20f91b}
+
+\begin{DoxyCompactList}\small\item\em Set the burst time out. \end{DoxyCompactList}\item 
+int {\bf get\-Burst\-Timeout} () const \label{classCALICE_1_1BeTrgConf_ab7dc9b50b96c180c995e16a0a264acdb}
+
+\begin{DoxyCompactList}\small\item\em Get the burst time out. \end{DoxyCompactList}\item 
+{\bf Be\-Trg\-Conf} \& {\bf set\-And\-Enable} (int and\-\_\-enable, int pos)\label{classCALICE_1_1BeTrgConf_a3030bed7c53e0be53ffe16ade5551c8b}
+
+\begin{DoxyCompactList}\small\item\em Set the and\-Enable. \end{DoxyCompactList}\item 
+int {\bf get\-And\-Enable} (int pos) const \label{classCALICE_1_1BeTrgConf_a5eff0a3b3e4cc9d68b1de91fd91ed519}
+
+\begin{DoxyCompactList}\small\item\em Get the and Enable. \end{DoxyCompactList}\item 
+{\bf Be\-Trg\-Conf} \& {\bf set\-Ext\-Beam\-Mode} (int ext\-\_\-beammode)\label{classCALICE_1_1BeTrgConf_a2d67e0ec00b152680779250acccb556b}
+
+\begin{DoxyCompactList}\small\item\em Set the ext\-Beam Mode. \end{DoxyCompactList}\item 
+int {\bf get\-Ext\-Beam\-Mode} () const \label{classCALICE_1_1BeTrgConf_a3c292917f3b29f5ef1a771ad8f1f4f7b}
+
+\begin{DoxyCompactList}\small\item\em Get the ext\-Beam Mode. \end{DoxyCompactList}\item 
+{\bf Be\-Trg\-Conf} \& {\bf set\-Input\-Invert} (int input\-\_\-invert)\label{classCALICE_1_1BeTrgConf_aada94ccc553d5cda4b6cf1a2cf173601}
+
+\begin{DoxyCompactList}\small\item\em Set the input invert. \end{DoxyCompactList}\item 
+int {\bf get\-Input\-Invert} () const \label{classCALICE_1_1BeTrgConf_a3b4aeee59a32fda0efa23fcfa3327f77}
+
+\begin{DoxyCompactList}\small\item\em Get the input invert. \end{DoxyCompactList}\item 
+{\bf Be\-Trg\-Conf} \& {\bf set\-Qdr\-Configuration} (int qdr\-\_\-config)\label{classCALICE_1_1BeTrgConf_a9b707b4d34d920e835988e48ded4cc37}
+
+\begin{DoxyCompactList}\small\item\em Set the qdr configuration. \end{DoxyCompactList}\item 
+int {\bf get\-Qdr\-Configuration} () const \label{classCALICE_1_1BeTrgConf_a8879baa5b1fc4d073b11d6b065a73e7d}
+
+\begin{DoxyCompactList}\small\item\em Get the qdr configuration. \end{DoxyCompactList}\item 
+{\bf Be\-Trg\-Conf} \& {\bf set\-Sequencer\-Control} (int sequence\-\_\-contr)\label{classCALICE_1_1BeTrgConf_a4583754d7a4cf65c1fb86d29ea836cac}
+
+\begin{DoxyCompactList}\small\item\em Set the sequencer control. \end{DoxyCompactList}\item 
+int {\bf get\-Sequencer\-Control} () const \label{classCALICE_1_1BeTrgConf_adb6f6981514a038e70c2e479240fdb3f}
+
+\begin{DoxyCompactList}\small\item\em Get the sequencer control. \end{DoxyCompactList}\item 
+void {\bf print} (std\-::ostream \&os)\label{classCALICE_1_1BeTrgConf_a986684df66d456e9275f711d59c913ed}
+
+\begin{DoxyCompactList}\small\item\em Convenient print method. \end{DoxyCompactList}\item 
+const std\-::string {\bf get\-Type\-Name} () const \label{classCALICE_1_1BeTrgConf_ab51e1dcd328cea0821792d00e49ef504}
+
+\begin{DoxyCompactList}\small\item\em Return the type of the class. \end{DoxyCompactList}\item 
+const std\-::string {\bf get\-Data\-Description} () const \label{classCALICE_1_1BeTrgConf_a396979e8da1cf0d9e19930e75fd8c858}
+
+\begin{DoxyCompactList}\small\item\em Return a brief description of the data members. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Detailed Description}
+Stores the configuration data of the trigger. 
+
+To acces the configuration\-: 
+\begin{DoxyPre}
+  void BrTrgCondChangeListener(LCCollection *col)  \{
+       assert (col->getNumberOfElements()==1)
+       \doxyref{BeTrgConf}{p.}{classCALICE_1_1BeTrgConf} conf(col->getElementAt(0));\end{DoxyPre}
+
+
+
+\begin{DoxyPre}       UInt\_t enable\_mask=conf.getEnableMask();
+  \}
+\end{DoxyPre}
+
+
+\begin{DoxySeeAlso}{See Also}
+\doxyref{Conditions\-Change\-Delegator}{p.}{classCALICE_1_1ConditionsChangeDelegator} 
+\end{DoxySeeAlso}
+\begin{DoxyAuthor}{Author}
+Götz Gaycken L\-L\-R (Ecole Polytechnique) 
+\end{DoxyAuthor}
+\begin{DoxyDate}{Date}
+Sep 2005 
+\end{DoxyDate}
+
+
+Definition at line 76 of file Be\-Trg\-Conf.\-hh.
+
+
+
+\subsection{Constructor \& Destructor Documentation}
+\index{C\-A\-L\-I\-C\-E\-::\-Be\-Trg\-Conf@{C\-A\-L\-I\-C\-E\-::\-Be\-Trg\-Conf}!Be\-Trg\-Conf@{Be\-Trg\-Conf}}
+\index{Be\-Trg\-Conf@{Be\-Trg\-Conf}!CALICE::BeTrgConf@{C\-A\-L\-I\-C\-E\-::\-Be\-Trg\-Conf}}
+\subsubsection[{Be\-Trg\-Conf}]{\setlength{\rightskip}{0pt plus 5cm}C\-A\-L\-I\-C\-E\-::\-Be\-Trg\-Conf\-::\-Be\-Trg\-Conf (
+\begin{DoxyParamCaption}
+\item[{int}]{board\-I\-D}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\label{classCALICE_1_1BeTrgConf_a5af9732e0e1783bfc26a513911e9d85e}
+
+
+Ctor. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em board\-I\-D} & the packed board id (\doxyref{Board\-I\-D}{p.}{classCALICE_1_1BoardID}). \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 86 of file Be\-Trg\-Conf.\-hh.
+
+
+
+\subsection{Member Function Documentation}
+\index{C\-A\-L\-I\-C\-E\-::\-Be\-Trg\-Conf@{C\-A\-L\-I\-C\-E\-::\-Be\-Trg\-Conf}!get\-Input\-Enable\-Mask@{get\-Input\-Enable\-Mask}}
+\index{get\-Input\-Enable\-Mask@{get\-Input\-Enable\-Mask}!CALICE::BeTrgConf@{C\-A\-L\-I\-C\-E\-::\-Be\-Trg\-Conf}}
+\subsubsection[{get\-Input\-Enable\-Mask}]{\setlength{\rightskip}{0pt plus 5cm}int C\-A\-L\-I\-C\-E\-::\-Be\-Trg\-Conf\-::get\-Input\-Enable\-Mask (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}\label{classCALICE_1_1BeTrgConf_ac38488bad25a502a3b0c15d0b5030efc}
+
+
+Get the trigger enable bit mask. 
+
+For each aenabled trigger a bit is set. The meaning of the bits is defined by conditions data. \begin{DoxySeeAlso}{See Also}
+Trigger\-Mask. 
+\end{DoxySeeAlso}
+
+
+Definition at line 128 of file Be\-Trg\-Conf.\-hh.
+
+\index{C\-A\-L\-I\-C\-E\-::\-Be\-Trg\-Conf@{C\-A\-L\-I\-C\-E\-::\-Be\-Trg\-Conf}!set\-Board\-I\-D@{set\-Board\-I\-D}}
+\index{set\-Board\-I\-D@{set\-Board\-I\-D}!CALICE::BeTrgConf@{C\-A\-L\-I\-C\-E\-::\-Be\-Trg\-Conf}}
+\subsubsection[{set\-Board\-I\-D}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Be\-Trg\-Conf}\& C\-A\-L\-I\-C\-E\-::\-Be\-Trg\-Conf\-::set\-Board\-I\-D (
+\begin{DoxyParamCaption}
+\item[{int}]{board\-I\-D}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\label{classCALICE_1_1BeTrgConf_aebabae2847b682da59cb5e2f5ec15141}
+
+
+set the packed board id. 
+
+\begin{DoxySeeAlso}{See Also}
+\doxyref{Board\-I\-D}{p.}{classCALICE_1_1BoardID} 
+\end{DoxySeeAlso}
+
+
+Definition at line 97 of file Be\-Trg\-Conf.\-hh.
+
+\index{C\-A\-L\-I\-C\-E\-::\-Be\-Trg\-Conf@{C\-A\-L\-I\-C\-E\-::\-Be\-Trg\-Conf}!set\-Input\-Enable\-Mask@{set\-Input\-Enable\-Mask}}
+\index{set\-Input\-Enable\-Mask@{set\-Input\-Enable\-Mask}!CALICE::BeTrgConf@{C\-A\-L\-I\-C\-E\-::\-Be\-Trg\-Conf}}
+\subsubsection[{set\-Input\-Enable\-Mask}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Be\-Trg\-Conf}\& C\-A\-L\-I\-C\-E\-::\-Be\-Trg\-Conf\-::set\-Input\-Enable\-Mask (
+\begin{DoxyParamCaption}
+\item[{int}]{input\-\_\-enable}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\label{classCALICE_1_1BeTrgConf_a4adeeec5eb99fe7b5bba2e12cb525c38}
+
+
+Set the trigger enable bit mask. 
+
+For each aenabled trigger a bit is set. The meaning of the bits is defined by conditions data. \begin{DoxySeeAlso}{See Also}
+Trigger\-Mask. 
+\end{DoxySeeAlso}
+
+
+Definition at line 118 of file Be\-Trg\-Conf.\-hh.
+
+
+
+The documentation for this class was generated from the following file\-:\begin{DoxyCompactItemize}
+\item 
+Be\-Trg\-Conf.\-hh\end{DoxyCompactItemize}

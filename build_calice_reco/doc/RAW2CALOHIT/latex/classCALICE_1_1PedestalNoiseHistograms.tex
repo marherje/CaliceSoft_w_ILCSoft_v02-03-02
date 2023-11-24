@@ -1,0 +1,142 @@
+\section{C\-A\-L\-I\-C\-E\-:\-:Pedestal\-Noise\-Histograms Class Reference}
+\label{classCALICE_1_1PedestalNoiseHistograms}\index{C\-A\-L\-I\-C\-E\-::\-Pedestal\-Noise\-Histograms@{C\-A\-L\-I\-C\-E\-::\-Pedestal\-Noise\-Histograms}}
+Inheritance diagram for C\-A\-L\-I\-C\-E\-:\-:Pedestal\-Noise\-Histograms\-:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=3.000000cm]{classCALICE_1_1PedestalNoiseHistograms}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+Processor $\ast$ {\bfseries new\-Processor} ()\label{classCALICE_1_1PedestalNoiseHistograms_ae5a513bca3d9c3fa642c3006723a3c40}
+
+\item 
+void {\bf init} ()
+\begin{DoxyCompactList}\small\item\em Called at the begin of the job before anything is read. \end{DoxyCompactList}\item 
+void {\bf process\-Run\-Header} (L\-C\-Run\-Header $\ast$run)
+\begin{DoxyCompactList}\small\item\em Called for every run, e.\-g. \end{DoxyCompactList}\item 
+void {\bf process\-Event} (L\-C\-Event $\ast$evt\-P)
+\begin{DoxyCompactList}\small\item\em Called for every event -\/ the working horse. \end{DoxyCompactList}\item 
+void {\bfseries end} ()\label{classCALICE_1_1PedestalNoiseHistograms_a0b92f798c4e9e32ffb7e938136db8e20}
+
+\end{DoxyCompactItemize}
+\subsection*{Protected Types}
+\begin{DoxyCompactItemize}
+\item 
+enum {\bfseries E\-H1\-Type} \{ {\bfseries k\-H1\-Noise}, 
+{\bfseries k\-H1\-Pedestal}, 
+{\bfseries k\-N\-H1}
+ \}
+\end{DoxyCompactItemize}
+\subsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void {\bfseries module\-Type\-Changed} (lcio\-::\-L\-C\-Collection $\ast$col)\label{classCALICE_1_1PedestalNoiseHistograms_a2e3c07637bf5c56983d397633da2088c}
+
+\item 
+void {\bfseries module\-Location\-Changed} (lcio\-::\-L\-C\-Collection $\ast$col)\label{classCALICE_1_1PedestalNoiseHistograms_a19422319fb37675b47ed8b75c751c518}
+
+\item 
+void {\bfseries module\-Connection\-Changed} (lcio\-::\-L\-C\-Collection $\ast$col)\label{classCALICE_1_1PedestalNoiseHistograms_a45a6819f1ecd53413ea4c3384130f956}
+
+\item 
+void {\bfseries detector\-Changed} ()\label{classCALICE_1_1PedestalNoiseHistograms_a9c381457a97f7d6a5719c106cfe22470}
+
+\item 
+void {\bfseries create\-Histograms} ()\label{classCALICE_1_1PedestalNoiseHistograms_a12ca8d443b6eaaaabdf30d6ab744cd77}
+
+\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+std\-::string {\bfseries \-\_\-cell\-Parameter\-Collection\-Name}\label{classCALICE_1_1PedestalNoiseHistograms_abaadb2fa0bbd710ae117f584641b8fdb}
+
+\item 
+Int\-Vec {\bfseries \-\_\-event\-Par}\label{classCALICE_1_1PedestalNoiseHistograms_ae861039b81067ae12a5dea74318f8435}
+
+\item 
+{\bf histmgr\-::\-Key\-\_\-t} {\bfseries \-\_\-histogram\-Group\-Key}\label{classCALICE_1_1PedestalNoiseHistograms_af57634693e902aa26716096d357796fe}
+
+\item 
+lcio\-::\-Float\-Vec {\bfseries \-\_\-noise\-Hist\-Par}\label{classCALICE_1_1PedestalNoiseHistograms_a5e6e5886b0245d89be77ccc0f116fecb}
+
+\item 
+lcio\-::\-Float\-Vec {\bfseries \-\_\-adc\-Hist\-Par}\label{classCALICE_1_1PedestalNoiseHistograms_a79d98a735280c78211ffcb464cd1173a}
+
+\item 
+{\bf histmgr\-::\-Key\-\_\-t} {\bfseries \-\_\-hist\-Key} [k\-N\-H1]\label{classCALICE_1_1PedestalNoiseHistograms_a24c5e21337d538e38f8f53d1219bdd91}
+
+\item 
+U\-Int\-\_\-t {\bfseries \-\_\-missing\-Cell\-Parameters}\label{classCALICE_1_1PedestalNoiseHistograms_a6e32fc4df33029b95b827bbee5700046}
+
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+
+
+Definition at line 14 of file Pedestal\-Noise\-Histograms.\-hh.
+
+
+
+\subsection{Member Function Documentation}
+\index{C\-A\-L\-I\-C\-E\-::\-Pedestal\-Noise\-Histograms@{C\-A\-L\-I\-C\-E\-::\-Pedestal\-Noise\-Histograms}!init@{init}}
+\index{init@{init}!CALICE::PedestalNoiseHistograms@{C\-A\-L\-I\-C\-E\-::\-Pedestal\-Noise\-Histograms}}
+\subsubsection[{init}]{\setlength{\rightskip}{0pt plus 5cm}void C\-A\-L\-I\-C\-E\-::\-Pedestal\-Noise\-Histograms\-::init (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{classCALICE_1_1PedestalNoiseHistograms_a1558ef3262c57736081abced8094309e}
+
+
+Called at the begin of the job before anything is read. 
+
+Use to initialize the processor, e.\-g. book histograms. 
+
+Definition at line 76 of file Pedestal\-Noise\-Histograms.\-cc.
+
+
+
+References histmgr\-::\-Hist\-Mgr\-::create\-Histogram\-Group().
+
+\index{C\-A\-L\-I\-C\-E\-::\-Pedestal\-Noise\-Histograms@{C\-A\-L\-I\-C\-E\-::\-Pedestal\-Noise\-Histograms}!process\-Event@{process\-Event}}
+\index{process\-Event@{process\-Event}!CALICE::PedestalNoiseHistograms@{C\-A\-L\-I\-C\-E\-::\-Pedestal\-Noise\-Histograms}}
+\subsubsection[{process\-Event}]{\setlength{\rightskip}{0pt plus 5cm}void C\-A\-L\-I\-C\-E\-::\-Pedestal\-Noise\-Histograms\-::process\-Event (
+\begin{DoxyParamCaption}
+\item[{L\-C\-Event $\ast$}]{evt\-P}
+\end{DoxyParamCaption}
+)}\label{classCALICE_1_1PedestalNoiseHistograms_ac566102ce7a3f344a139d470e184dc17}
+
+
+Called for every event -\/ the working horse. 
+
+
+
+Definition at line 89 of file Pedestal\-Noise\-Histograms.\-cc.
+
+
+
+References histmgr\-::\-Float\-Histogram1\-D\-::fill(), C\-A\-L\-I\-C\-E\-::\-Cell\-Parameter\-Access\-::get\-Cell\-Parameter(), histmgr\-::\-Hist\-Mgr\-::get\-Histogram\-Collection(), C\-A\-L\-I\-C\-E\-::\-Cell\-Parameter\-::get\-Noise(), C\-A\-L\-I\-C\-E\-::\-Cell\-Parameter\-::get\-Pedestal(), and histmgr\-::\-Histogram\-Collection\-\_\-t\-::histogram().
+
+\index{C\-A\-L\-I\-C\-E\-::\-Pedestal\-Noise\-Histograms@{C\-A\-L\-I\-C\-E\-::\-Pedestal\-Noise\-Histograms}!process\-Run\-Header@{process\-Run\-Header}}
+\index{process\-Run\-Header@{process\-Run\-Header}!CALICE::PedestalNoiseHistograms@{C\-A\-L\-I\-C\-E\-::\-Pedestal\-Noise\-Histograms}}
+\subsubsection[{process\-Run\-Header}]{\setlength{\rightskip}{0pt plus 5cm}void C\-A\-L\-I\-C\-E\-::\-Pedestal\-Noise\-Histograms\-::process\-Run\-Header (
+\begin{DoxyParamCaption}
+\item[{L\-C\-Run\-Header $\ast$}]{run}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\label{classCALICE_1_1PedestalNoiseHistograms_aabc18a7d7cd2fd0e96030c16aa4d10bd}
+
+
+Called for every run, e.\-g. 
+
+overwrite to initialize run dependent histograms. 
+
+Definition at line 31 of file Pedestal\-Noise\-Histograms.\-hh.
+
+
+
+The documentation for this class was generated from the following files\-:\begin{DoxyCompactItemize}
+\item 
+Pedestal\-Noise\-Histograms.\-hh\item 
+Pedestal\-Noise\-Histograms.\-cc\end{DoxyCompactItemize}

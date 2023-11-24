@@ -1,0 +1,116 @@
+\section{C\-A\-L\-I\-C\-E Namespace Reference}
+\label{namespaceCALICE}\index{C\-A\-L\-I\-C\-E@{C\-A\-L\-I\-C\-E}}
+
+
+The namespace \doxyref{C\-A\-L\-I\-C\-E}{p.}{namespaceCALICE} contains calice specific software needed for the processing of \doxyref{C\-A\-L\-I\-C\-E}{p.}{namespaceCALICE} data including the interface classes to the \doxyref{C\-A\-L\-I\-C\-E}{p.}{namespaceCALICE} Raw Data and convenient M\-A\-R\-L\-I\-N processors.  
+
+
+\subsection*{Namespaces}
+\begin{DoxyCompactItemize}
+\item 
+{\bf A\-H\-C\-A\-L}
+\begin{DoxyCompactList}\small\item\em namespace for A\-Hcal \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Data Structures}
+\begin{DoxyCompactItemize}
+\item 
+class {\bf Ahc\-Digitisation\-Processor}
+\begin{DoxyCompactList}\small\item\em Class for doing the \doxyref{A\-H\-C\-A\-L}{p.}{namespaceCALICE_1_1AHCAL} digitisation. \end{DoxyCompactList}\item 
+class {\bf Append\-Processor}
+\begin{DoxyCompactList}\small\item\em Processor which allows to append events from additional L\-C\-I\-O files. \end{DoxyCompactList}\item 
+class {\bf Error\-Missing\-Conditions\-Data\-Handler}
+\item 
+class {\bf fast\-Mapping\-M\-C\-Processor}
+\begin{DoxyCompactList}\small\item\em A class which converts M\-C Calorimeter\-Hits to Calice\-Hits according to the hardware conditions. \end{DoxyCompactList}\item 
+class {\bf T\-B\-Ecal\-Digitisation}
+\begin{DoxyCompactList}\small\item\em File\-: T\-B\-Ecal\-Digitisation.\-hpp. \end{DoxyCompactList}\item 
+struct {\bf geometrical\-Indices}
+\begin{DoxyCompactList}\small\item\em Helper class to store I, J, K. \end{DoxyCompactList}\item 
+class {\bf Ahc2\-Ganging\-Processor}
+\begin{DoxyCompactList}\small\item\em The processor performing the ganging. \end{DoxyCompactList}\item 
+class {\bf Ganger}
+\begin{DoxyCompactList}\small\item\em The work horse. \end{DoxyCompactList}\item 
+class {\bf Ahc\-Ganging\-Processor}
+\begin{DoxyCompactList}\small\item\em Class for doing the A\-H\-Cal ganging. \end{DoxyCompactList}\item 
+class {\bf Ahc2\-Append\-Processor}
+\begin{DoxyCompactList}\small\item\em Processor which allows to append events from additional L\-C\-I\-O files. \end{DoxyCompactList}\item 
+class {\bf Ahc2\-Collection\-Merger}
+\begin{DoxyCompactList}\small\item\em Processor which allows to merge collections from the same event (use for D\-D4\-H\-E\-P). \end{DoxyCompactList}\item 
+class {\bf Ahc2\-M\-I\-P2\-Ge\-V\-Processor}
+\begin{DoxyCompactList}\small\item\em Class doing the conversion between Ge\-V and M\-I\-P + Correction of K layer (not smart!!) \end{DoxyCompactList}\item 
+class {\bf Ahc2\-R\-O\-C\-Threshold\-Processor}
+\begin{DoxyCompactList}\small\item\em Class for doing the \doxyref{A\-H\-C\-A\-L}{p.}{namespaceCALICE_1_1AHCAL} R\-O\-C Simulating behavior. \end{DoxyCompactList}\item 
+class {\bf Ahc2\-Si\-P\-M\-Statistic\-Processor}
+\begin{DoxyCompactList}\small\item\em Class for doing the \doxyref{A\-H\-C\-A\-L}{p.}{namespaceCALICE_1_1AHCAL} digitisation (Si\-P\-M treatment) \end{DoxyCompactList}\item 
+class {\bf Ahc2\-Time\-Smearing\-Processor}
+\begin{DoxyCompactList}\small\item\em Class for doing the \doxyref{A\-H\-C\-A\-L}{p.}{namespaceCALICE_1_1AHCAL} digitisation (Time Smearing) \end{DoxyCompactList}\item 
+class {\bf Ahc2\-Triggered\-Channels}
+\begin{DoxyCompactList}\small\item\em Class for counting the number of triggered channels per Chip (rejecting dead channels) used for time smearing. \end{DoxyCompactList}\item 
+class {\bf Ahc2\-Trigger\-Sim}
+\begin{DoxyCompactList}\small\item\em Class for setting trigger bits in the event for M\-C. \end{DoxyCompactList}\item 
+class {\bf Ahc2\-Trigger\-Bits}
+\begin{DoxyCompactList}\small\item\em A small class which allow for the easy analysis of core trigger information. \end{DoxyCompactList}\item 
+class {\bf tokyo\-\_\-layer}
+\begin{DoxyCompactList}\small\item\em Implementation of ganger in T\-O\-K\-Y\-O Layer. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Typedefs}
+\begin{DoxyCompactItemize}
+\item 
+typedef std\-::map\\*
+$<$ {\bf geometrical\-Indices}, \\*
+std\-::pair$<$ float, float $>$ $>$ {\bf Contribution\-Map}\label{namespaceCALICE_a19c5c6511272aecc2d1ec825b63593bf}
+
+\begin{DoxyCompactList}\small\item\em A Contribution\-Map maps a ganged index to all its contributing Sim\-Calorimeter\-Hits. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+bool {\bf operator$<$} (const {\bf geometrical\-Indices} \&lhs, const {\bf geometrical\-Indices} \&rhs)\label{namespaceCALICE_a3dfac20cb11053743babdfc887e97715}
+
+\begin{DoxyCompactList}\small\item\em Needed to fill the \doxyref{geometrical\-Indices}{p.}{structCALICE_1_1geometricalIndices} struct in a map. \end{DoxyCompactList}\item 
+std\-::ostream \& {\bfseries operator$<$$<$} (std\-::ostream \&out, const {\bf geometrical\-Indices} \&ijk)\label{namespaceCALICE_ab6f00c4b7c023326d7379936452b26ba}
+
+\end{DoxyCompactItemize}
+\subsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+{\bf Ahc\-Digitisation\-Processor} {\bfseries a\-Ahc\-Digitisation\-Processor}\label{namespaceCALICE_a6d00c1422a371b0665f03f0b1661c27f}
+
+\item 
+{\bf Append\-Processor} {\bfseries a\-Append\-Processor}\label{namespaceCALICE_aecc2c76d97a8631784c209e4d39675d3}
+
+\item 
+{\bf fast\-Mapping\-M\-C\-Processor} {\bfseries a\-Fast\-Mapping\-M\-C\-Processor}\label{namespaceCALICE_a08be73f082807b7e336c359ca5e57bf4}
+
+\item 
+{\bf Ahc2\-Ganging\-Processor} {\bfseries Ahc2\-Ganging\-Processor}\label{namespaceCALICE_ae29c20c129907fcb3d34058498908065}
+
+\item 
+{\bf Ahc\-Ganging\-Processor} {\bfseries a\-Ahc\-Ganging\-Processor}\label{namespaceCALICE_ae3b9611ea235dfda1008d9fbb9801b68}
+
+\item 
+{\bf Ahc2\-Append\-Processor} {\bfseries a\-Ahc2\-Append\-Processor}\label{namespaceCALICE_a00c3291ed926b4f15178e7ea87daae77}
+
+\item 
+{\bf Ahc2\-Collection\-Merger} {\bfseries a\-Ahc2\-Collection\-Merger}\label{namespaceCALICE_aec9f6bcdc574cb76432965117802a1f2}
+
+\item 
+{\bf Ahc2\-M\-I\-P2\-Ge\-V\-Processor} {\bfseries a\-Ahc2\-M\-I\-P2\-Ge\-V\-Processor}\label{namespaceCALICE_a8efc1080407eacd5c31608f7784e1544}
+
+\item 
+{\bf Ahc2\-R\-O\-C\-Threshold\-Processor} {\bfseries a\-Ahc2\-R\-O\-C\-Threshold\-Processor}\label{namespaceCALICE_aa84467101890be121ca0ed2c82b1fdbb}
+
+\item 
+{\bf Ahc2\-Si\-P\-M\-Statistic\-Processor} {\bfseries a\-Ahc2\-Si\-P\-M\-Statistic\-Processor}\label{namespaceCALICE_ac863db22c03a803572e65fe9ff00dffb}
+
+\item 
+{\bf Ahc2\-Time\-Smearing\-Processor} {\bfseries a\-Ahc2\-Time\-Smearing\-Processor}\label{namespaceCALICE_a32eba9308280d05eb6948106464e46b3}
+
+\item 
+{\bf Ahc2\-Triggered\-Channels} {\bfseries a\-Ahc2\-Triggered\-Channels}\label{namespaceCALICE_aad2d1c413bbe38cee4049ad1b4a68414}
+
+\item 
+{\bf Ahc2\-Trigger\-Sim} {\bfseries a\-Ahc2\-Trigger\-Sim}\label{namespaceCALICE_a12d756a0110d7327aff0dfff372ae6ed}
+
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+The namespace \doxyref{C\-A\-L\-I\-C\-E}{p.}{namespaceCALICE} contains calice specific software needed for the processing of \doxyref{C\-A\-L\-I\-C\-E}{p.}{namespaceCALICE} data including the interface classes to the \doxyref{C\-A\-L\-I\-C\-E}{p.}{namespaceCALICE} Raw Data and convenient M\-A\-R\-L\-I\-N processors. The \doxyref{C\-A\-L\-I\-C\-E}{p.}{namespaceCALICE} namespace. 

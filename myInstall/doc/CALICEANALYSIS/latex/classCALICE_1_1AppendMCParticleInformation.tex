@@ -1,0 +1,113 @@
+\section{C\-A\-L\-I\-C\-E\-:\-:Append\-M\-C\-Particle\-Information Class Reference}
+\label{classCALICE_1_1AppendMCParticleInformation}\index{C\-A\-L\-I\-C\-E\-::\-Append\-M\-C\-Particle\-Information@{C\-A\-L\-I\-C\-E\-::\-Append\-M\-C\-Particle\-Information}}
+
+
+Processor for appending information about the M\-C-\/\-Particle to the event as event parameter.  
+
+
+
+
+{\ttfamily \#include $<$Append\-M\-C\-Particle\-Information.\-hh$>$}
+
+Inheritance diagram for C\-A\-L\-I\-C\-E\-:\-:Append\-M\-C\-Particle\-Information\-:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classCALICE_1_1AppendMCParticleInformation}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+virtual Processor $\ast$ {\bfseries new\-Processor} ()\label{classCALICE_1_1AppendMCParticleInformation_a960af39ab4aec5c86924c8d0ced063dc}
+
+\item 
+virtual void {\bf init} ()
+\item 
+virtual void {\bf process\-Run\-Header} (L\-C\-Run\-Header $\ast$run)
+\item 
+virtual void {\bf process\-Event} (L\-C\-Event $\ast$evt)
+\item 
+virtual void {\bfseries check} (L\-C\-Event $\ast$evt)\label{classCALICE_1_1AppendMCParticleInformation_accaf96eba448c6c9005f329e8d1aa10c}
+
+\item 
+virtual void {\bf end} ()
+\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+std\-::string {\bfseries \-\_\-col\-Name\-In}\label{classCALICE_1_1AppendMCParticleInformation_a7166f2cbd6aeccb317131f1b6578f945}
+
+\item 
+std\-::string {\bfseries \-\_\-cell\-I\-D\-Encoding}\label{classCALICE_1_1AppendMCParticleInformation_a6bb63d9cf269d9a4211a76ceff5fd32e}
+
+\item 
+std\-::string {\bfseries \-\_\-mapping\-Processor\-Name}\label{classCALICE_1_1AppendMCParticleInformation_ad1b80810b8e0de330676044e0c6e4fd6}
+
+\item 
+std\-::string {\bfseries \-\_\-cell\-Description\-Processor\-Name}\label{classCALICE_1_1AppendMCParticleInformation_a94201a45224b1c6817cefcae24f58d12}
+
+\item 
+int {\bfseries \-\_\-n\-Run}\label{classCALICE_1_1AppendMCParticleInformation_a261e3260ab61279cbc74c61c7103c098}
+
+\item 
+int {\bfseries \-\_\-n\-Evt}\label{classCALICE_1_1AppendMCParticleInformation_a94b6171871d2e0f4d1833c89b7a54d93}
+
+\item 
+const C\-A\-L\-I\-C\-E\-::\-Mapper $\ast$ {\bfseries \-\_\-mapper}\label{classCALICE_1_1AppendMCParticleInformation_af50d0e10a2da2aed02d51b4bc19817c5}
+
+\item 
+unsigned int {\bfseries \-\_\-mapper\-Version}\label{classCALICE_1_1AppendMCParticleInformation_a9b5d220515549d9b7989e9c7fd7d74c1}
+
+\item 
+C\-A\-L\-I\-C\-E\-::\-Mapped\-Container\\*
+$<$ C\-A\-L\-I\-C\-E\-::\-Cell\-Description $>$ $\ast$ {\bfseries \-\_\-cell\-Descriptions}\label{classCALICE_1_1AppendMCParticleInformation_ae56390007bed950d4bb042c41dcf258e}
+
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Processor for appending information about the M\-C-\/\-Particle to the event as event parameter. 
+
+\begin{DoxyAuthor}{Author}
+N. Feege, University of Hamburg 
+\end{DoxyAuthor}
+\begin{DoxyDate}{Date}
+Dec 2010 
+\end{DoxyDate}
+
+
+\subsection{Member Function Documentation}
+\index{C\-A\-L\-I\-C\-E\-::\-Append\-M\-C\-Particle\-Information@{C\-A\-L\-I\-C\-E\-::\-Append\-M\-C\-Particle\-Information}!end@{end}}
+\index{end@{end}!CALICE::AppendMCParticleInformation@{C\-A\-L\-I\-C\-E\-::\-Append\-M\-C\-Particle\-Information}}
+\subsubsection[{end}]{\setlength{\rightskip}{0pt plus 5cm}void C\-A\-L\-I\-C\-E\-::\-Append\-M\-C\-Particle\-Information\-::end (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}\label{classCALICE_1_1AppendMCParticleInformation_a565be189df44151356a5f4ac62dba2c7}
+Called after data processing for clean up. \index{C\-A\-L\-I\-C\-E\-::\-Append\-M\-C\-Particle\-Information@{C\-A\-L\-I\-C\-E\-::\-Append\-M\-C\-Particle\-Information}!init@{init}}
+\index{init@{init}!CALICE::AppendMCParticleInformation@{C\-A\-L\-I\-C\-E\-::\-Append\-M\-C\-Particle\-Information}}
+\subsubsection[{init}]{\setlength{\rightskip}{0pt plus 5cm}void C\-A\-L\-I\-C\-E\-::\-Append\-M\-C\-Particle\-Information\-::init (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}\label{classCALICE_1_1AppendMCParticleInformation_ab9a34c59f29849b089ce3609deb43854}
+Called at the begin of the job before anything is read. Use to initialize the processor, e.\-g. book histograms. \index{C\-A\-L\-I\-C\-E\-::\-Append\-M\-C\-Particle\-Information@{C\-A\-L\-I\-C\-E\-::\-Append\-M\-C\-Particle\-Information}!process\-Event@{process\-Event}}
+\index{process\-Event@{process\-Event}!CALICE::AppendMCParticleInformation@{C\-A\-L\-I\-C\-E\-::\-Append\-M\-C\-Particle\-Information}}
+\subsubsection[{process\-Event}]{\setlength{\rightskip}{0pt plus 5cm}void C\-A\-L\-I\-C\-E\-::\-Append\-M\-C\-Particle\-Information\-::process\-Event (
+\begin{DoxyParamCaption}
+\item[{L\-C\-Event $\ast$}]{evt}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}\label{classCALICE_1_1AppendMCParticleInformation_a76a94373b910848b9faccb5f3699b424}
+Called for every event -\/ the working horse. \index{C\-A\-L\-I\-C\-E\-::\-Append\-M\-C\-Particle\-Information@{C\-A\-L\-I\-C\-E\-::\-Append\-M\-C\-Particle\-Information}!process\-Run\-Header@{process\-Run\-Header}}
+\index{process\-Run\-Header@{process\-Run\-Header}!CALICE::AppendMCParticleInformation@{C\-A\-L\-I\-C\-E\-::\-Append\-M\-C\-Particle\-Information}}
+\subsubsection[{process\-Run\-Header}]{\setlength{\rightskip}{0pt plus 5cm}void C\-A\-L\-I\-C\-E\-::\-Append\-M\-C\-Particle\-Information\-::process\-Run\-Header (
+\begin{DoxyParamCaption}
+\item[{L\-C\-Run\-Header $\ast$}]{run}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}\label{classCALICE_1_1AppendMCParticleInformation_a80c4d2d1823898eba05bd031694aa7d3}
+Called for every run. 
+
+The documentation for this class was generated from the following files\-:\begin{DoxyCompactItemize}
+\item 
+/nfs/dust/ilc/user/marquezh/\-Calice\-Soft\-\_\-w\-\_\-\-I\-L\-C\-Soft\-\_\-v02-\/03-\/02/calice\-\_\-analysis/addon\-Procs/include/Append\-M\-C\-Particle\-Information.\-hh\item 
+/nfs/dust/ilc/user/marquezh/\-Calice\-Soft\-\_\-w\-\_\-\-I\-L\-C\-Soft\-\_\-v02-\/03-\/02/calice\-\_\-analysis/addon\-Procs/src/Append\-M\-C\-Particle\-Information.\-cc\end{DoxyCompactItemize}

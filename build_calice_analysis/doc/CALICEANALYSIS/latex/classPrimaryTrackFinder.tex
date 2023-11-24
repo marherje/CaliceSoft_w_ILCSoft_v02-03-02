@@ -1,0 +1,176 @@
+\section{Primary\-Track\-Finder Class Reference}
+\label{classPrimaryTrackFinder}\index{Primary\-Track\-Finder@{Primary\-Track\-Finder}}
+
+
+Marlin processor that finds shower start and primary track.  
+
+
+
+
+{\ttfamily \#include $<$Primary\-Track\-Finder.\-hh$>$}
+
+Inheritance diagram for Primary\-Track\-Finder\-:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classPrimaryTrackFinder}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+{\bf Primary\-Track\-Finder} ()
+\item 
+virtual {\bf $\sim$\-Primary\-Track\-Finder} ()
+\item 
+{\bf Primary\-Track\-Finder} $\ast$ {\bfseries new\-Processor} ()\label{classPrimaryTrackFinder_a5138e4436f12055e84179818ec2ac9e8}
+
+\item 
+virtual void {\bf init} ()
+\item 
+virtual void {\bf process\-Run\-Header} (L\-C\-Run\-Header $\ast$)
+\item 
+virtual void {\bf process\-Event} (lcio\-::\-L\-C\-Event $\ast$)
+\item 
+virtual void {\bf end} ()
+\item 
+float {\bf dist\-X\-Y} ({\bf C\-Hit} $\ast$, {\bf C\-Hit} $\ast$)
+\item 
+unsigned {\bf get\-Starting\-Layer} ({\bf C\-Layer} $\ast$)
+\item 
+bool {\bf Find\-Track} (unsigned, {\bf C\-Layer} $\ast$)
+\item 
+bool {\bf is\-Muon} (float, float)
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Marlin processor that finds shower start and primary track. 
+
+In this processor Calorimeter\-Hit collections for E\-C\-A\-L and H\-C\-A\-L are used to find shower starting layer and hits belonging to ingoing track, these hits are then put into output collection of class Calorimeter\-Hit. In track output collection the following class members are set\-: Type -\/ hit layer number, Position -\/ X\-Y\-Z hit coordinates, Energy -\/ deposited energy in M\-I\-Ps. For shower starting layer, L\-C\-Generic\-Object collection has two integer members\-: calorimeter type (0 -\/ E\-C\-A\-L, 1 -\/ first 30 H\-C\-A\-L layers, 2 -\/ last coarse part of H\-C\-A\-L) shower starting layer number (in each calorimeter) and two float members\-: weighted average of x coordinate of track hits weighted average of y coordinate of track hits
+
+\begin{DoxyVersion}{Version}
+4.\-01 
+\end{DoxyVersion}
+\begin{DoxyAuthor}{Author}
+M.\-V. Chadeeva 
+\end{DoxyAuthor}
+\begin{DoxyDate}{Date}
+November 2010 
+\end{DoxyDate}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\index{Primary\-Track\-Finder@{Primary\-Track\-Finder}!Primary\-Track\-Finder@{Primary\-Track\-Finder}}
+\index{Primary\-Track\-Finder@{Primary\-Track\-Finder}!PrimaryTrackFinder@{Primary\-Track\-Finder}}
+\subsubsection[{Primary\-Track\-Finder}]{\setlength{\rightskip}{0pt plus 5cm}Primary\-Track\-Finder\-::\-Primary\-Track\-Finder (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{classPrimaryTrackFinder_ad80886cf9c522adf66e28e7556d33027}
+Default constructor \index{Primary\-Track\-Finder@{Primary\-Track\-Finder}!$\sim$\-Primary\-Track\-Finder@{$\sim$\-Primary\-Track\-Finder}}
+\index{$\sim$\-Primary\-Track\-Finder@{$\sim$\-Primary\-Track\-Finder}!PrimaryTrackFinder@{Primary\-Track\-Finder}}
+\subsubsection[{$\sim$\-Primary\-Track\-Finder}]{\setlength{\rightskip}{0pt plus 5cm}Primary\-Track\-Finder\-::$\sim$\-Primary\-Track\-Finder (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}\label{classPrimaryTrackFinder_afbf250d7baa1b884f2b07beda7e3e94f}
+Default destructor 
+
+\subsection{Member Function Documentation}
+\index{Primary\-Track\-Finder@{Primary\-Track\-Finder}!dist\-X\-Y@{dist\-X\-Y}}
+\index{dist\-X\-Y@{dist\-X\-Y}!PrimaryTrackFinder@{Primary\-Track\-Finder}}
+\subsubsection[{dist\-X\-Y}]{\setlength{\rightskip}{0pt plus 5cm}float Primary\-Track\-Finder\-::dist\-X\-Y (
+\begin{DoxyParamCaption}
+\item[{{\bf C\-Hit} $\ast$}]{h1, }
+\item[{{\bf C\-Hit} $\ast$}]{h2}
+\end{DoxyParamCaption}
+)}\label{classPrimaryTrackFinder_ac53641accf71821b0cf3361c835b1db9}
+Calculates and returns distance between two hits in X\-Y-\/plane 
+
+References C\-A\-L\-I\-C\-E\-::\-C\-Hit\-::x, and C\-A\-L\-I\-C\-E\-::\-C\-Hit\-::y.
+
+
+
+Referenced by Find\-Track().
+
+\index{Primary\-Track\-Finder@{Primary\-Track\-Finder}!end@{end}}
+\index{end@{end}!PrimaryTrackFinder@{Primary\-Track\-Finder}}
+\subsubsection[{end}]{\setlength{\rightskip}{0pt plus 5cm}void Primary\-Track\-Finder\-::end (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}\label{classPrimaryTrackFinder_acd180f6ae6a0925be6cbdb06524c300c}
+Function to close root-\/file and print some statistic results \index{Primary\-Track\-Finder@{Primary\-Track\-Finder}!Find\-Track@{Find\-Track}}
+\index{Find\-Track@{Find\-Track}!PrimaryTrackFinder@{Primary\-Track\-Finder}}
+\subsubsection[{Find\-Track}]{\setlength{\rightskip}{0pt plus 5cm}bool Primary\-Track\-Finder\-::\-Find\-Track (
+\begin{DoxyParamCaption}
+\item[{unsigned}]{start, }
+\item[{{\bf C\-Layer} $\ast$}]{lr}
+\end{DoxyParamCaption}
+)}\label{classPrimaryTrackFinder_a22924bae502da65b35257062f6230957}
+Finds hits belonging to primary track taking in account the earlier found shower starting layer. The \char`\"{}nearest neighbour\char`\"{} criteria is used. Maximum distance parameters are defined taking in account the cell size. First parameter is the number of shower starting layer. Second parameter is an array with of objects \doxyref{C\-Layer}{p.}{classCLayer} that contain layer parameters. 
+
+References dist\-X\-Y(), C\-A\-L\-I\-C\-E\-::\-C\-Hit\-::r, C\-A\-L\-I\-C\-E\-::\-C\-Hit\-::x, C\-A\-L\-I\-C\-E\-::\-C\-Hit\-::y, and C\-A\-L\-I\-C\-E\-::\-C\-Hit\-::z.
+
+
+
+Referenced by process\-Event().
+
+\index{Primary\-Track\-Finder@{Primary\-Track\-Finder}!get\-Starting\-Layer@{get\-Starting\-Layer}}
+\index{get\-Starting\-Layer@{get\-Starting\-Layer}!PrimaryTrackFinder@{Primary\-Track\-Finder}}
+\subsubsection[{get\-Starting\-Layer}]{\setlength{\rightskip}{0pt plus 5cm}unsigned Primary\-Track\-Finder\-::get\-Starting\-Layer (
+\begin{DoxyParamCaption}
+\item[{{\bf C\-Layer} $\ast$}]{lr}
+\end{DoxyParamCaption}
+)}\label{classPrimaryTrackFinder_ac8929b71212ea8cda3fae0fbb4fe77ab}
+Finds and returns the number of layer where shower started using the following criteria\-:
+\begin{DoxyEnumerate}
+\item Moving average sum of M\-I\-Ps inside the window = 10 layers for two successive layers is greater than \-\_\-av\-M\-I\-Pxxxx value.
+\item Number of hits in two successive layers is greater than \-\_\-hit\-Limxxx value. Both constraints are set in steering file. They are energy dependent and similar for E\-C\-A\-L and H\-C\-A\-L. 
+\end{DoxyEnumerate}
+
+Referenced by process\-Event().
+
+\index{Primary\-Track\-Finder@{Primary\-Track\-Finder}!init@{init}}
+\index{init@{init}!PrimaryTrackFinder@{Primary\-Track\-Finder}}
+\subsubsection[{init}]{\setlength{\rightskip}{0pt plus 5cm}void Primary\-Track\-Finder\-::init (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}\label{classPrimaryTrackFinder_ad43a3f0087edc87883b15e41cd942ba7}
+Initialization of class members,root-\/file opening and histogramm booking \index{Primary\-Track\-Finder@{Primary\-Track\-Finder}!is\-Muon@{is\-Muon}}
+\index{is\-Muon@{is\-Muon}!PrimaryTrackFinder@{Primary\-Track\-Finder}}
+\subsubsection[{is\-Muon}]{\setlength{\rightskip}{0pt plus 5cm}bool Primary\-Track\-Finder\-::is\-Muon (
+\begin{DoxyParamCaption}
+\item[{float}]{e\-\_\-eh, }
+\item[{float}]{e\-\_\-t}
+\end{DoxyParamCaption}
+)}\label{classPrimaryTrackFinder_a143621618d51ea987b1ce48532893c36}
+Indentifies event as muon-\/like according to criterium proposed by Vasiliy Morgunov and based on low amount of total deposited energy\-: E1$<$first parameter$<$E2 \&\& E3$<$second parameter$<$E4 first parameter = Esum(\-E\-C\-A\-L)+\-Esum(H\-C\-A\-L) second parameter = Esum(\-T\-C\-M\-T) values E1, E2, E3 and E4 are taken from run data 
+
+Referenced by process\-Event().
+
+\index{Primary\-Track\-Finder@{Primary\-Track\-Finder}!process\-Event@{process\-Event}}
+\index{process\-Event@{process\-Event}!PrimaryTrackFinder@{Primary\-Track\-Finder}}
+\subsubsection[{process\-Event}]{\setlength{\rightskip}{0pt plus 5cm}void Primary\-Track\-Finder\-::process\-Event (
+\begin{DoxyParamCaption}
+\item[{lcio\-::\-L\-C\-Event $\ast$}]{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}\label{classPrimaryTrackFinder_a6f46f99fc7a7d58841c402abaf099276}
+Base function to loop over events from which all other functions are called for every event 
+
+References C\-A\-L\-I\-C\-E\-::\-C\-Hit\-::c, C\-A\-L\-I\-C\-E\-::\-C\-Hit\-::e, C\-A\-L\-I\-C\-E\-::\-C\-Layer\-::emip, Find\-Track(), get\-Starting\-Layer(), is\-Muon(), C\-A\-L\-I\-C\-E\-::\-C\-Hit\-::r, C\-A\-L\-I\-C\-E\-::\-C\-Hit\-::x, C\-A\-L\-I\-C\-E\-::\-C\-Hit\-::y, and C\-A\-L\-I\-C\-E\-::\-C\-Hit\-::z.
+
+\index{Primary\-Track\-Finder@{Primary\-Track\-Finder}!process\-Run\-Header@{process\-Run\-Header}}
+\index{process\-Run\-Header@{process\-Run\-Header}!PrimaryTrackFinder@{Primary\-Track\-Finder}}
+\subsubsection[{process\-Run\-Header}]{\setlength{\rightskip}{0pt plus 5cm}void Primary\-Track\-Finder\-::process\-Run\-Header (
+\begin{DoxyParamCaption}
+\item[{L\-C\-Run\-Header $\ast$}]{run}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}\label{classPrimaryTrackFinder_ae673540a7999deb4e6445b9c075930e0}
+Processing of run header 
+
+The documentation for this class was generated from the following files\-:\begin{DoxyCompactItemize}
+\item 
+/nfs/dust/ilc/user/marquezh/\-Calice\-Soft\-\_\-w\-\_\-\-I\-L\-C\-Soft\-\_\-v02-\/03-\/02/calice\-\_\-analysis/addon\-Procs/include/Primary\-Track\-Finder.\-hh\item 
+/nfs/dust/ilc/user/marquezh/\-Calice\-Soft\-\_\-w\-\_\-\-I\-L\-C\-Soft\-\_\-v02-\/03-\/02/calice\-\_\-analysis/addon\-Procs/src/Primary\-Track\-Finder.\-cc\end{DoxyCompactItemize}

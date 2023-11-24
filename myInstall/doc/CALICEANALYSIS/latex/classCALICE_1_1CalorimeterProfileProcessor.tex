@@ -1,0 +1,81 @@
+\section{C\-A\-L\-I\-C\-E\-:\-:Calorimeter\-Profile\-Processor Class Reference}
+\label{classCALICE_1_1CalorimeterProfileProcessor}\index{C\-A\-L\-I\-C\-E\-::\-Calorimeter\-Profile\-Processor@{C\-A\-L\-I\-C\-E\-::\-Calorimeter\-Profile\-Processor}}
+
+
+{\ttfamily \#include $<$Calorimeter\-Profile\-Processor.\-hh$>$}
+
+Inheritance diagram for C\-A\-L\-I\-C\-E\-:\-:Calorimeter\-Profile\-Processor\-:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classCALICE_1_1CalorimeterProfileProcessor}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+virtual Processor $\ast$ {\bfseries new\-Processor} ()\label{classCALICE_1_1CalorimeterProfileProcessor_a9d924ca43abcbc887cba141381994aa2}
+
+\item 
+virtual void {\bfseries init} ()\label{classCALICE_1_1CalorimeterProfileProcessor_a82d456c3810e6142cd4b21fd0778245a}
+
+\item 
+virtual void {\bfseries process\-Event} (E\-V\-E\-N\-T\-::\-L\-C\-Event $\ast$evt)\label{classCALICE_1_1CalorimeterProfileProcessor_af622a71001b865c1df94369ee3116b84}
+
+\item 
+virtual void {\bfseries end} ()\label{classCALICE_1_1CalorimeterProfileProcessor_a9d5115ea8f88980722c655010eb2f271}
+
+\end{DoxyCompactItemize}
+\subsection*{Static Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+static float {\bfseries \-\_\-debug\-S\-S\-Z}\label{classCALICE_1_1CalorimeterProfileProcessor_a329b77d1f703b4c44f68b7bb51fd919d}
+
+\end{DoxyCompactItemize}
+\subsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+unsigned int {\bfseries get\-Index\-For\-Value} (const std\-::map$<$ float, unsigned int $>$ \&lookup, const float value) const \label{classCALICE_1_1CalorimeterProfileProcessor_a2e904d60f12b437d8d963251e2620de9}
+
+\item 
+void {\bfseries calculate\-Norm} (Float\-Vec \&r\-Norm, Float\-Vec \&l\-Norm, const std\-::map$<$ float, unsigned int $>$ \&r\-Index, const std\-::map$<$ float, unsigned int $>$ \&l\-Index, float x\-Offset=0, float y\-Offset=0, float z\-Offset=0)\label{classCALICE_1_1CalorimeterProfileProcessor_acdd500419ed31f6605a0fc2983ab6a08}
+
+\item 
+void {\bfseries calculate\-Norm} (Binned\-Vector$<$ float, Binned\-Vector$<$ float, float $>$ $>$ \&norm, Binned\-Vector$<$ float, Binned\-Vector$<$ float, float $>$ $>$ \&norm\-Low\-Bound, Binned\-Vector$<$ float, Binned\-Vector$<$ float, float $>$ $>$ \&norm\-High\-Bound, Binned\-Vector$<$ float, float $>$ \&r\-Norm, Binned\-Vector$<$ float, float $>$ \&l\-Norm, const float x\-Offset=0, const float y\-Offset=0, const float z\-Offset=0, const float low\-Bound\-Offset=0, const float high\-Bound\-Offset=0, bool calculate\-Bounds=false)\label{classCALICE_1_1CalorimeterProfileProcessor_a5efb4ffaaaa2532f72e3fd4170c32e57}
+
+\item 
+void {\bfseries fill\-Linear\-Float\-Vec} (const Binned\-Vector$<$ float, Binned\-Vector$<$ float, float $>$ $>$ \&input, Float\-Vec \&output) const \label{classCALICE_1_1CalorimeterProfileProcessor_afead74966f6ed0eeedbfcf82f2576742}
+
+\item 
+void {\bfseries fill\-Linear\-Center\-Float\-Vec} (const Binned\-Vector$<$ float, Binned\-Vector$<$ float, float $>$ $>$ \&input, Float\-Vec \&output\-\_\-center1, Float\-Vec \&output\-\_\-center2) const \label{classCALICE_1_1CalorimeterProfileProcessor_a938047f4934d3127e5381eefe63bdd92}
+
+\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+const Mapper $\ast$ {\bfseries \-\_\-mapper}\label{classCALICE_1_1CalorimeterProfileProcessor_a180872f0576cba660651644d8afd3c70}
+
+\item 
+Mapped\-Container$<$ {\bf Virtual\-Cells} $>$ $\ast$ {\bfseries \-\_\-virtual\-Cells}\label{classCALICE_1_1CalorimeterProfileProcessor_ae4628e74d54c7e3a4c9f0f8153641893}
+
+\item 
+Mapped\-Container\\*
+$<$ Cell\-Description $>$ $\ast$ {\bfseries \-\_\-cell\-Descriptions}\label{classCALICE_1_1CalorimeterProfileProcessor_adac04f1d0b6c152dd47b33850c7e2897}
+
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Processor to generate 3\-D shower profiles and to calculate the correct normalization.
+
+\begin{DoxyAuthor}{Author}
+B. Lutz 
+\end{DoxyAuthor}
+\begin{DoxyDate}{Date}
+2010 
+\end{DoxyDate}
+
+
+The documentation for this class was generated from the following files\-:\begin{DoxyCompactItemize}
+\item 
+/nfs/dust/ilc/user/marquezh/\-Calice\-Soft\-\_\-w\-\_\-\-I\-L\-C\-Soft\-\_\-v02-\/03-\/02/calice\-\_\-analysis/addon\-Procs/include/Calorimeter\-Profile\-Processor.\-hh\item 
+/nfs/dust/ilc/user/marquezh/\-Calice\-Soft\-\_\-w\-\_\-\-I\-L\-C\-Soft\-\_\-v02-\/03-\/02/calice\-\_\-analysis/addon\-Procs/src/Calorimeter\-Profile\-Processor.\-cc\end{DoxyCompactItemize}

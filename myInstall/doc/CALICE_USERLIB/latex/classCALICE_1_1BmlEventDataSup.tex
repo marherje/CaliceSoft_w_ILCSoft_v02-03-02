@@ -1,0 +1,185 @@
+\section{C\-A\-L\-I\-C\-E\-:\-:Bml\-Event\-Data\-Sup Class Reference}
+\label{classCALICE_1_1BmlEventDataSup}\index{C\-A\-L\-I\-C\-E\-::\-Bml\-Event\-Data\-Sup@{C\-A\-L\-I\-C\-E\-::\-Bml\-Event\-Data\-Sup}}
+
+
+Class to store supplementary \doxyref{Bml\-Event\-Data}{p.}{classCALICE_1_1BmlEventData}.  
+
+
+
+
+{\ttfamily \#include $<$Bml\-Event\-Data\-Sup.\-hh$>$}
+
+Inheritance diagram for C\-A\-L\-I\-C\-E\-:\-:Bml\-Event\-Data\-Sup\-:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=3.000000cm]{classCALICE_1_1BmlEventDataSup}
+\end{center}
+\end{figure}
+\subsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+{\bf Bml\-Event\-Data\-Sup} ()\label{classCALICE_1_1BmlEventDataSup_a1b777ba65db201936af16ba56dc197de}
+
+\begin{DoxyCompactList}\small\item\em Default Constructor. \end{DoxyCompactList}\item 
+{\bf Bml\-Event\-Data\-Sup} (L\-C\-Object $\ast${\bf obj})\label{classCALICE_1_1BmlEventDataSup_ababa5fa292e17ad8181dd30149f4d87e}
+
+\begin{DoxyCompactList}\small\item\em A copy constructor. \end{DoxyCompactList}\item 
+virtual {\bf $\sim$\-Bml\-Event\-Data\-Sup} ()\label{classCALICE_1_1BmlEventDataSup_a8b5715bd0afdd93a7a5573bede6c047a}
+
+\begin{DoxyCompactList}\small\item\em The destructor. \end{DoxyCompactList}\item 
+{\bf Bml\-Event\-Data\-Sup} \& {\bf set\-T\-D\-C\-Type} (std\-::string type\-Str)
+\begin{DoxyCompactList}\small\item\em set the tdc type \end{DoxyCompactList}\item 
+void {\bfseries set\-Pointer\-To\-Index\-Of\-Int\-Type\-Names} (int nameind)\label{classCALICE_1_1BmlEventDataSup_a9fa4191baf23435b722322fb1ca8b56e}
+
+\item 
+void {\bfseries set\-Length\-Index\-Of\-Int\-Type\-Names} (int lengthindex)\label{classCALICE_1_1BmlEventDataSup_ad5cfea715dbde1072b8c8a47f61c656e}
+
+\item 
+int {\bf get\-Length\-Index\-Of\-Int\-Type\-Names} () const \label{classCALICE_1_1BmlEventDataSup_a21ebe68dd1e819533a2af15879b1653d}
+
+\begin{DoxyCompactList}\small\item\em Retrieve the index at which the lengths of the names of the int data types do start. \end{DoxyCompactList}\item 
+int {\bf get\-Pointer\-To\-Index\-Of\-Int\-Type\-Names} () const \label{classCALICE_1_1BmlEventDataSup_afc31491a2fe74e80c3bf4b98b1a6ec1c}
+
+\begin{DoxyCompactList}\small\item\em Retrieve the index at which the pointer to the names of int data types do start. \end{DoxyCompactList}\item 
+void {\bf set\-Type\-Index} (int pos, int value)\label{classCALICE_1_1BmlEventDataSup_afeadf8495ac708b6eb4f372e262b4115}
+
+\begin{DoxyCompactList}\small\item\em Set the index of a given data type name. \end{DoxyCompactList}\item 
+std\-::string {\bf get\-T\-D\-C\-Type} () const 
+\begin{DoxyCompactList}\small\item\em get the tdc type \end{DoxyCompactList}\item 
+{\bf Bml\-Event\-Data\-Sup} \& {\bf set\-Event\-Fifo\-Cont} (int fifocont)\label{classCALICE_1_1BmlEventDataSup_ac3263e6f4c8a3be3b1ca36308b0f32c8}
+
+\begin{DoxyCompactList}\small\item\em Store the F\-I\-F\-O content. \end{DoxyCompactList}\item 
+unsigned short {\bf get\-Event\-Count} () const \label{classCALICE_1_1BmlEventDataSup_a1284d5d9b342180a65d3aef2cd593a50}
+
+\begin{DoxyCompactList}\small\item\em get the event count \end{DoxyCompactList}\item 
+unsigned short {\bf get\-Word\-Count} () const \label{classCALICE_1_1BmlEventDataSup_a75f899e45c6c056103e25fce6acb0851}
+
+\begin{DoxyCompactList}\small\item\em get the word count \end{DoxyCompactList}\item 
+{\bf Bml\-Event\-Data\-Sup} \& {\bf set\-Bunch\-I\-D} (int bunchid)\label{classCALICE_1_1BmlEventDataSup_acef67a0bc90854904fb4382501ecaf8d}
+
+\begin{DoxyCompactList}\small\item\em set the bunch id \end{DoxyCompactList}\item 
+int {\bf get\-Bunch\-I\-D} () const \label{classCALICE_1_1BmlEventDataSup_a402a35429e1fb4cefc030246d6a7dc8d}
+
+\begin{DoxyCompactList}\small\item\em get the bunch id \end{DoxyCompactList}\item 
+{\bf Bml\-Event\-Data\-Sup} \& {\bf set\-Event\-I\-D\-Trailer} (int event\-I\-D\-Trailer)\label{classCALICE_1_1BmlEventDataSup_ac1a762c3a809585cb908e1f9edce15ac}
+
+\begin{DoxyCompactList}\small\item\em Set the eventid from the T\-D\-C trailer. \end{DoxyCompactList}\item 
+short {\bf get\-Event\-I\-D\-Trailer} () const \label{classCALICE_1_1BmlEventDataSup_af98ba50b8fb39a943bc35067ffaf337b}
+
+\begin{DoxyCompactList}\small\item\em Return the eventid from the T\-D\-C trailer. \end{DoxyCompactList}\item 
+{\bf Bml\-Event\-Data\-Sup} \& {\bf set\-T\-D\-C\-Errors} (int tdc\-Errors)\label{classCALICE_1_1BmlEventDataSup_a812f9190cf1962203e1588669fc98f25}
+
+\begin{DoxyCompactList}\small\item\em Set the T\-D\-C errors. \end{DoxyCompactList}\item 
+int {\bf get\-T\-D\-C\-Errors} () const \label{classCALICE_1_1BmlEventDataSup_a53367b022e3100a0e3bd613ef2b70935}
+
+\begin{DoxyCompactList}\small\item\em Get the T\-D\-C errors. \end{DoxyCompactList}\item 
+{\bf Bml\-Event\-Data\-Sup} \& {\bf set\-Buffer\-Overflow} (int buffer\-Overflow)\label{classCALICE_1_1BmlEventDataSup_a90c7ac60defd7bb8a827f1aea40aedc6}
+
+\begin{DoxyCompactList}\small\item\em Set the buffer overflow. \end{DoxyCompactList}\item 
+int {\bf get\-Buffer\-Overflow} () const \label{classCALICE_1_1BmlEventDataSup_a5d6652dad161f253768ae01418d2c669}
+
+\begin{DoxyCompactList}\small\item\em Get the buffer overflow. \end{DoxyCompactList}\item 
+{\bf Bml\-Event\-Data\-Sup} \& {\bf set\-Trigger\-Lost} (int triggerlost)\label{classCALICE_1_1BmlEventDataSup_ad432619ccacb13abb181a12ab4662822}
+
+\begin{DoxyCompactList}\small\item\em Set the number of words in the trailer. \end{DoxyCompactList}\item 
+int {\bf get\-Trigger\-Lost} () const \label{classCALICE_1_1BmlEventDataSup_a7110357892a453499f8e3bbd2b0ff535}
+
+\begin{DoxyCompactList}\small\item\em Get the number of lost triggers. \end{DoxyCompactList}\item 
+{\bf Bml\-Event\-Data\-Sup} \& {\bf set\-T\-D\-C\-Word\-Count\-Trailer} (int numwords)\label{classCALICE_1_1BmlEventDataSup_aa8e12d29d2060db9c3657a6e4f9d8ac7}
+
+\begin{DoxyCompactList}\small\item\em Set the number of lost triggers. \end{DoxyCompactList}\item 
+int {\bf get\-T\-D\-C\-Word\-Count\-Trailer} () const \label{classCALICE_1_1BmlEventDataSup_a688bc2f933ce1011e4a03ca904539f3c}
+
+\begin{DoxyCompactList}\small\item\em Get the number of words in the trailer. \end{DoxyCompactList}\item 
+const std\-::string {\bf get\-Type\-Name} () const \label{classCALICE_1_1BmlEventDataSup_a075786d44470d270e1e931bcfa896394}
+
+\begin{DoxyCompactList}\small\item\em returns the the type name \end{DoxyCompactList}\item 
+const std\-::string {\bf get\-Data\-Description} () const \label{classCALICE_1_1BmlEventDataSup_acebe6fba59eced039cc6bad225e9bc71}
+
+\begin{DoxyCompactList}\small\item\em returns a brief description of the data stored \end{DoxyCompactList}\item 
+std\-::ostream \& {\bf print} (std\-::ostream \&ostrmsup)\label{classCALICE_1_1BmlEventDataSup_ae4684c1d74d640dd5b4258d1af5d2e70}
+
+\begin{DoxyCompactList}\small\item\em dumps data content \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Friends}
+\begin{DoxyCompactItemize}
+\item 
+class {\bfseries Bml\-Event\-Data}\label{classCALICE_1_1BmlEventDataSup_af03b3108e540123cf6fb29facde51e29}
+
+\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Detailed Description}
+Class to store supplementary \doxyref{Bml\-Event\-Data}{p.}{classCALICE_1_1BmlEventData}. 
+
+This is tailored to the data extracted from the Caen T\-D\-Cs in extension of the actual class \doxyref{Bml\-Event\-Data}{p.}{classCALICE_1_1BmlEventData} This class is written such that it should be only accessed via the aforementioned class The user is strongly discouraged to instantiate by him/herself. It has only private functions and declares \doxyref{Bml\-Event\-Data}{p.}{classCALICE_1_1BmlEventData} to be its friend. \begin{DoxyAuthor}{Author}
+R. Pöschl (L\-A\-L Orsay) 
+\end{DoxyAuthor}
+\begin{DoxyDate}{Date}
+Oct 13 2010 
+\end{DoxyDate}
+
+
+Definition at line 52 of file Bml\-Event\-Data\-Sup.\-hh.
+
+
+
+\subsection{Member Function Documentation}
+\index{C\-A\-L\-I\-C\-E\-::\-Bml\-Event\-Data\-Sup@{C\-A\-L\-I\-C\-E\-::\-Bml\-Event\-Data\-Sup}!get\-T\-D\-C\-Type@{get\-T\-D\-C\-Type}}
+\index{get\-T\-D\-C\-Type@{get\-T\-D\-C\-Type}!CALICE::BmlEventDataSup@{C\-A\-L\-I\-C\-E\-::\-Bml\-Event\-Data\-Sup}}
+\subsubsection[{get\-T\-D\-C\-Type}]{\setlength{\rightskip}{0pt plus 5cm}std\-::string C\-A\-L\-I\-C\-E\-::\-Bml\-Event\-Data\-Sup\-::get\-T\-D\-C\-Type (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [private]}}\label{classCALICE_1_1BmlEventDataSup_a2e28417799fb6b46b4fd5bd798bffed3}
+
+
+get the tdc type 
+
+Currently since only one string in object -\/$>$ to be modified if more strings 
+
+Definition at line 144 of file Bml\-Event\-Data\-Sup.\-hh.
+
+
+
+References C\-A\-L\-I\-C\-E\-::get\-String\-From\-Ints().
+
+
+
+Referenced by print().
+
+\index{C\-A\-L\-I\-C\-E\-::\-Bml\-Event\-Data\-Sup@{C\-A\-L\-I\-C\-E\-::\-Bml\-Event\-Data\-Sup}!set\-T\-D\-C\-Type@{set\-T\-D\-C\-Type}}
+\index{set\-T\-D\-C\-Type@{set\-T\-D\-C\-Type}!CALICE::BmlEventDataSup@{C\-A\-L\-I\-C\-E\-::\-Bml\-Event\-Data\-Sup}}
+\subsubsection[{set\-T\-D\-C\-Type}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Bml\-Event\-Data\-Sup}\& C\-A\-L\-I\-C\-E\-::\-Bml\-Event\-Data\-Sup\-::set\-T\-D\-C\-Type (
+\begin{DoxyParamCaption}
+\item[{std\-::string}]{type\-Str}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [private]}}\label{classCALICE_1_1BmlEventDataSup_ab3677309acfd81396e1333ff9b967f2a}
+
+
+set the tdc type 
+
+Store the index at which the pointer to the names of the int data data types do start
+
+This written such that it can be extended in case more strings need to be stored
+
+Would however trigger a bit of re-\/writing but at least it {\itshape sure} that it remains always
+
+compatible and flexible
+
+We use the same ugly but successful technique as in \doxyref{Daq\-Type\-Data\-Block}{p.}{classCALICE_1_1DaqTypeDataBlock} (we may even be able to inherit from it
+
+now we've simply copied a few useful methods -\/$>$ to be checked 
+
+Definition at line 94 of file Bml\-Event\-Data\-Sup.\-hh.
+
+
+
+References C\-A\-L\-I\-C\-E\-::convert\-String\-To\-Ints().
+
+
+
+The documentation for this class was generated from the following files\-:\begin{DoxyCompactItemize}
+\item 
+Bml\-Event\-Data\-Sup.\-hh\item 
+Bml\-Event\-Data\-Sup.\-cc\end{DoxyCompactItemize}

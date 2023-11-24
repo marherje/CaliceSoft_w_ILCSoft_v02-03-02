@@ -1,0 +1,73 @@
+\section{lccd\-:\-:D\-B\-Interface\-Mgr Class Reference}
+\label{classlccd_1_1DBInterfaceMgr}\index{lccd\-::\-D\-B\-Interface\-Mgr@{lccd\-::\-D\-B\-Interface\-Mgr}}
+
+
+singelton that manages lccd\-::\-D\-B\-Interface classes on the basis of D\-B\-Init string and database folder  
+
+
+
+
+{\ttfamily \#include $<$D\-B\-Interface\-Mgr.\-hh$>$}
+
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static D\-B\-Interface $\ast$ {\bf get\-D\-B\-Interface} (const std\-::string D\-B\-Init, const std\-::string folder)
+\begin{DoxyCompactList}\small\item\em Get a suitable D\-B\-Interface. \end{DoxyCompactList}\item 
+static void {\bf clear} ()
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+singelton that manages lccd\-::\-D\-B\-Interface classes on the basis of D\-B\-Init string and database folder 
+
+The class holds a map of D\-B\-Interfaces. When a D\-B\-Interface is requested it is checked if a suitable D\-B\-Interface is already available. If not the D\-B\-Interface is generated. 
+
+Definition at line 17 of file D\-B\-Interface\-Mgr.\-hh.
+
+
+
+\subsection{Member Function Documentation}
+\index{lccd\-::\-D\-B\-Interface\-Mgr@{lccd\-::\-D\-B\-Interface\-Mgr}!clear@{clear}}
+\index{clear@{clear}!lccd::DBInterfaceMgr@{lccd\-::\-D\-B\-Interface\-Mgr}}
+\subsubsection[{clear}]{\setlength{\rightskip}{0pt plus 5cm}void lccd\-::\-D\-B\-Interface\-Mgr\-::clear (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}\label{classlccd_1_1DBInterfaceMgr_a06a309e78c2563f80ddc1cca91181f34}
+clean up the database connections and memory 
+
+Definition at line 19 of file D\-B\-Interface\-Mgr.\-cc.
+
+\index{lccd\-::\-D\-B\-Interface\-Mgr@{lccd\-::\-D\-B\-Interface\-Mgr}!get\-D\-B\-Interface@{get\-D\-B\-Interface}}
+\index{get\-D\-B\-Interface@{get\-D\-B\-Interface}!lccd::DBInterfaceMgr@{lccd\-::\-D\-B\-Interface\-Mgr}}
+\subsubsection[{get\-D\-B\-Interface}]{\setlength{\rightskip}{0pt plus 5cm}D\-B\-Interface $\ast$ lccd\-::\-D\-B\-Interface\-Mgr\-::get\-D\-B\-Interface (
+\begin{DoxyParamCaption}
+\item[{const std\-::string}]{D\-B\-Init, }
+\item[{const std\-::string}]{folder}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}\label{classlccd_1_1DBInterfaceMgr_ac123ab09d4992de2b873a3f7e5018f0d}
+
+
+Get a suitable D\-B\-Interface. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em D\-B\-Init} & database init string \\
+\hline
+\mbox{\tt in}  & {\em folder} & database folder \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+a pointer to a suitable D\-B\-Interface 
+\end{DoxyReturn}
+
+
+Definition at line 8 of file D\-B\-Interface\-Mgr.\-cc.
+
+
+
+The documentation for this class was generated from the following files\-:\begin{DoxyCompactItemize}
+\item 
+/nfs/dust/ilc/user/marquezh/\-Calice\-Soft\-\_\-w\-\_\-\-I\-L\-C\-Soft\-\_\-v02-\/03-\/02/calice\-\_\-db\-\_\-tools/include/D\-B\-Interface\-Mgr.\-hh\item 
+/nfs/dust/ilc/user/marquezh/\-Calice\-Soft\-\_\-w\-\_\-\-I\-L\-C\-Soft\-\_\-v02-\/03-\/02/calice\-\_\-db\-\_\-tools/src/D\-B\-Interface\-Mgr.\-cc\end{DoxyCompactItemize}

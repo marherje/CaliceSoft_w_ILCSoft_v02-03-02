@@ -1,0 +1,43 @@
+file(REMOVE_RECURSE
+  "../lib/libcalice_db_tools.pdb"
+  "../lib/libcalice_db_tools.so"
+  "../lib/libcalice_db_tools.so.1"
+  "../lib/libcalice_db_tools.so.1.2.1"
+  "CMakeFiles/calice_db_tools.dir/AccessLinearFitConstant.cc.o"
+  "CMakeFiles/calice_db_tools.dir/AccessLinearFitConstant.cc.o.d"
+  "CMakeFiles/calice_db_tools.dir/AccessLinearFitSlope.cc.o"
+  "CMakeFiles/calice_db_tools.dir/AccessLinearFitSlope.cc.o.d"
+  "CMakeFiles/calice_db_tools.dir/AccessSimpleValue.cc.o"
+  "CMakeFiles/calice_db_tools.dir/AccessSimpleValue.cc.o.d"
+  "CMakeFiles/calice_db_tools.dir/CaliceDBHelper.cc.o"
+  "CMakeFiles/calice_db_tools.dir/CaliceDBHelper.cc.o.d"
+  "CMakeFiles/calice_db_tools.dir/CaliceRunTime.cc.o"
+  "CMakeFiles/calice_db_tools.dir/CaliceRunTime.cc.o.d"
+  "CMakeFiles/calice_db_tools.dir/CaliceTime.cc.o"
+  "CMakeFiles/calice_db_tools.dir/CaliceTime.cc.o.d"
+  "CMakeFiles/calice_db_tools.dir/DBCondWriter.cc.o"
+  "CMakeFiles/calice_db_tools.dir/DBCondWriter.cc.o.d"
+  "CMakeFiles/calice_db_tools.dir/DBFolderFinder.cc.o"
+  "CMakeFiles/calice_db_tools.dir/DBFolderFinder.cc.o.d"
+  "CMakeFiles/calice_db_tools.dir/DBInterfaceMgr.cc.o"
+  "CMakeFiles/calice_db_tools.dir/DBInterfaceMgr.cc.o.d"
+  "CMakeFiles/calice_db_tools.dir/ElogInfoReader.cc.o"
+  "CMakeFiles/calice_db_tools.dir/ElogInfoReader.cc.o.d"
+  "CMakeFiles/calice_db_tools.dir/HcalSlopesPerLayerCalculator.cc.o"
+  "CMakeFiles/calice_db_tools.dir/HcalSlopesPerLayerCalculator.cc.o.d"
+  "CMakeFiles/calice_db_tools.dir/LCCondObjectMgr.cc.o"
+  "CMakeFiles/calice_db_tools.dir/LCCondObjectMgr.cc.o.d"
+  "CMakeFiles/calice_db_tools.dir/SimpleFileWriter.cc.o"
+  "CMakeFiles/calice_db_tools.dir/SimpleFileWriter.cc.o.d"
+  "CMakeFiles/calice_db_tools.dir/TimeString.cc.o"
+  "CMakeFiles/calice_db_tools.dir/TimeString.cc.o.d"
+  "CMakeFiles/calice_db_tools.dir/TriggerInput.cc.o"
+  "CMakeFiles/calice_db_tools.dir/TriggerInput.cc.o.d"
+  "CMakeFiles/calice_db_tools.dir/TriggerMap.cc.o"
+  "CMakeFiles/calice_db_tools.dir/TriggerMap.cc.o.d"
+)
+
+# Per-language clean rules from dependency scanning.
+foreach(lang CXX)
+  include(CMakeFiles/calice_db_tools.dir/cmake_clean_${lang}.cmake OPTIONAL)
+endforeach()

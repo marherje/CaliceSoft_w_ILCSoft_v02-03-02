@@ -1,0 +1,94 @@
+\section{C\-A\-L\-I\-C\-E\-:\-:Cell\-Neighbours\-Processor Class Reference}
+\label{classCALICE_1_1CellNeighboursProcessor}\index{C\-A\-L\-I\-C\-E\-::\-Cell\-Neighbours\-Processor@{C\-A\-L\-I\-C\-E\-::\-Cell\-Neighbours\-Processor}}
+
+
+{\ttfamily \#include $<$Cell\-Neighbours\-Processor.\-hh$>$}
+
+Inheritance diagram for C\-A\-L\-I\-C\-E\-:\-:Cell\-Neighbours\-Processor\-:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classCALICE_1_1CellNeighboursProcessor}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+virtual Processor $\ast$ {\bfseries new\-Processor} ()\label{classCALICE_1_1CellNeighboursProcessor_a5d8124b69f81b41bee91e95b96996b52}
+
+\item 
+virtual void {\bfseries init} ()\label{classCALICE_1_1CellNeighboursProcessor_acf6e2a5cc1d4592d1e49ab7f03b219e9}
+
+\item 
+virtual void {\bfseries process\-Event} (L\-C\-Event $\ast$evt)\label{classCALICE_1_1CellNeighboursProcessor_a07e3fc15bdb5db75f978e2bee0eb57a1}
+
+\item 
+virtual void {\bfseries end} ()\label{classCALICE_1_1CellNeighboursProcessor_adea30d7fda35bdfc4de28600f2ee40b3}
+
+\end{DoxyCompactItemize}
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static Mapped\-Container\\*
+$<$ Cell\-Neighbours $>$ $\ast$ {\bf get\-Neighbours} (const std\-::string \&processor\-Name)
+\item 
+static const std\-::string \& {\bfseries get\-Encoding\-String} (const std\-::string \&processor\-Name)\label{classCALICE_1_1CellNeighboursProcessor_ad963125fee09e610050846bace559a10}
+
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Processor that provides cell neighbours information
+
+To obtain the object in other processors use\-: \doxyref{Cell\-Neighbours\-Processor\-::get\-Neighbours}{p.}{classCALICE_1_1CellNeighboursProcessor_a9385534f41a3c60a91ba6cde01289f40}( \char`\"{}cell\-Neighbours processor name\char`\"{} )
+
+\begin{DoxyParagraph}{processor parameters}
+\begin{TabularC}{2}
+\hline
+steering file parameter name &description  \\\cline{1-2}
+{\bfseries {\itshape  Mapping\-Processor\-Name }}&name of the mapping processor that provides the necessary Mapper class \\\cline{1-2}
+\end{TabularC}
+
+\end{DoxyParagraph}
+\begin{DoxyAuthor}{Author}
+{\tt Benjamin.\-Lutz@desy.\-de} 
+\end{DoxyAuthor}
+\begin{DoxyVersion}{Version}
+0.\-1 
+\end{DoxyVersion}
+\begin{DoxyDate}{Date}
+June 2009 
+\end{DoxyDate}
+
+
+Definition at line 41 of file Cell\-Neighbours\-Processor.\-hh.
+
+
+
+\subsection{Member Function Documentation}
+\index{C\-A\-L\-I\-C\-E\-::\-Cell\-Neighbours\-Processor@{C\-A\-L\-I\-C\-E\-::\-Cell\-Neighbours\-Processor}!get\-Neighbours@{get\-Neighbours}}
+\index{get\-Neighbours@{get\-Neighbours}!CALICE::CellNeighboursProcessor@{C\-A\-L\-I\-C\-E\-::\-Cell\-Neighbours\-Processor}}
+\subsubsection[{get\-Neighbours}]{\setlength{\rightskip}{0pt plus 5cm}Mapped\-Container$<$ Cell\-Neighbours $>$ $\ast$ C\-A\-L\-I\-C\-E\-::\-Cell\-Neighbours\-Processor\-::get\-Neighbours (
+\begin{DoxyParamCaption}
+\item[{const std\-::string \&}]{processor\-Name}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}\label{classCALICE_1_1CellNeighboursProcessor_a9385534f41a3c60a91ba6cde01289f40}
+static function to obtain a Mapped\-Container with cell neighbours
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em processor\-Name} & name of the \doxyref{Cell\-Neighbours\-Processor}{p.}{classCALICE_1_1CellNeighboursProcessor} that takes care of this Cell\-Neighbours. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+pointer to the Mapped\-Container including Cell\-Neighbours 
+\end{DoxyReturn}
+
+
+Definition at line 17 of file Cell\-Neighbours\-Processor.\-cc.
+
+
+
+The documentation for this class was generated from the following files\-:\begin{DoxyCompactItemize}
+\item 
+Cell\-Neighbours\-Processor.\-hh\item 
+Cell\-Neighbours\-Processor.\-cc\end{DoxyCompactItemize}

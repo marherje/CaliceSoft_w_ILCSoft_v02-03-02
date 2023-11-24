@@ -1,0 +1,68 @@
+\section{digisim\-:\-:Cal\-Hit\-Map\-Processor Class Reference}
+\label{classdigisim_1_1CalHitMapProcessor}\index{digisim\-::\-Cal\-Hit\-Map\-Processor@{digisim\-::\-Cal\-Hit\-Map\-Processor}}
+Inheritance diagram for digisim\-:\-:Cal\-Hit\-Map\-Processor\-:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classdigisim_1_1CalHitMapProcessor}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+virtual Processor $\ast$ {\bfseries new\-Processor} ()\label{classdigisim_1_1CalHitMapProcessor_ab73604653fce83a5209b3155f971a266}
+
+\item 
+virtual void {\bf init} ()
+\begin{DoxyCompactList}\small\item\em Called at the begin of the job before anything is read. \end{DoxyCompactList}\item 
+virtual void {\bf process\-Run\-Header} (L\-C\-Run\-Header $\ast$run)\label{classdigisim_1_1CalHitMapProcessor_a9493177bc62f7a9489fc24230776617d}
+
+\begin{DoxyCompactList}\small\item\em Called for every run. \end{DoxyCompactList}\item 
+virtual void {\bf process\-Event} (L\-C\-Event $\ast$evt)\label{classdigisim_1_1CalHitMapProcessor_a9bfab5f8e22f049d0aae224e1cb862dd}
+
+\begin{DoxyCompactList}\small\item\em Called for every event -\/ the working horse. \end{DoxyCompactList}\item 
+virtual void {\bf end} ()\label{classdigisim_1_1CalHitMapProcessor_a7ed5be820bbe9b75023a173dadd41143}
+
+\begin{DoxyCompactList}\small\item\em Called after data processing for clean up. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+int {\bfseries \-\_\-n\-Run}\label{classdigisim_1_1CalHitMapProcessor_a0b8bc56d5be22a8591a6364053a15d74}
+
+\item 
+int {\bfseries \-\_\-n\-Evt}\label{classdigisim_1_1CalHitMapProcessor_a3d9382829ccd70fab182453fb20f8ea7}
+
+\item 
+{\bf Cal\-Hit\-Map\-Mgr} $\ast$ {\bfseries \-\_\-mgr}\label{classdigisim_1_1CalHitMapProcessor_a361ac885c84aab286722fb9f3357c1ed}
+
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+
+
+Definition at line 30 of file Cal\-Hit\-Map\-Processor.\-hpp.
+
+
+
+\subsection{Member Function Documentation}
+\index{digisim\-::\-Cal\-Hit\-Map\-Processor@{digisim\-::\-Cal\-Hit\-Map\-Processor}!init@{init}}
+\index{init@{init}!digisim::CalHitMapProcessor@{digisim\-::\-Cal\-Hit\-Map\-Processor}}
+\subsubsection[{init}]{\setlength{\rightskip}{0pt plus 5cm}virtual void digisim\-::\-Cal\-Hit\-Map\-Processor\-::init (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}\label{classdigisim_1_1CalHitMapProcessor_a8709fbee06c74874da1850bc01e05765}
+
+
+Called at the begin of the job before anything is read. 
+
+Use to initialize the processor, e.\-g. book histograms. 
+
+Definition at line 44 of file Cal\-Hit\-Map\-Processor.\-hpp.
+
+
+
+The documentation for this class was generated from the following files\-:\begin{DoxyCompactItemize}
+\item 
+Cal\-Hit\-Map\-Processor.\-hpp\item 
+Cal\-Hit\-Map\-Processor.\-cpp\end{DoxyCompactItemize}

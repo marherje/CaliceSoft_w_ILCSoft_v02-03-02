@@ -1,0 +1,128 @@
+\section{Sc\-E\-C\-A\-L\-Digitizer Class Reference}
+\label{classScECALDigitizer}\index{Sc\-E\-C\-A\-L\-Digitizer@{Sc\-E\-C\-A\-L\-Digitizer}}
+
+
+Example processor for marlin.  
+
+
+
+
+{\ttfamily \#include $<$Sc\-E\-C\-A\-L\-Digitizer.\-hh$>$}
+
+Inheritance diagram for Sc\-E\-C\-A\-L\-Digitizer\-:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classScECALDigitizer}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+virtual Processor $\ast$ {\bfseries new\-Processor} ()\label{classScECALDigitizer_afc1b1dc86364bd86e8434521f0d14a8e}
+
+\item 
+virtual void {\bf init} ()
+\begin{DoxyCompactList}\small\item\em Called at the begin of the job before anything is read. \end{DoxyCompactList}\item 
+virtual void {\bf process\-Run\-Header} (L\-C\-Run\-Header $\ast$run)\label{classScECALDigitizer_adf8adb4733c400a5ceb5f345d2b00058}
+
+\begin{DoxyCompactList}\small\item\em Called for every run. \end{DoxyCompactList}\item 
+virtual void {\bf process\-Event} (L\-C\-Event $\ast$evt)\label{classScECALDigitizer_a68882c5b15e60cef5cb8524e5c14c1fb}
+
+\begin{DoxyCompactList}\small\item\em Called for every event -\/ the working horse. \end{DoxyCompactList}\item 
+virtual void {\bfseries check} (L\-C\-Event $\ast$evt)\label{classScECALDigitizer_afe24458ee3d08501d2ceb7e60a262f21}
+
+\item 
+virtual void {\bf end} ()\label{classScECALDigitizer_a8194e795626a3b1b85c792d9333485a3}
+
+\begin{DoxyCompactList}\small\item\em Called after data processing for clean up. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+std\-::string {\bf \-\_\-col\-Name}\label{classScECALDigitizer_a3caef161c2472e7a6fea690ebd012f09}
+
+\begin{DoxyCompactList}\small\item\em Input collection name. \end{DoxyCompactList}\item 
+int {\bfseries \-\_\-n\-Run}\label{classScECALDigitizer_a8ddac6c05e16590e133456f5943d0cb7}
+
+\item 
+int {\bfseries \-\_\-n\-Evt}\label{classScECALDigitizer_a9a3a3d29ed875c5c574758478e22c073}
+
+\item 
+std\-::vector$<$ std\-::string $>$ {\bfseries \-\_\-ecal\-Collections}\label{classScECALDigitizer_aa50779725972af8eca079f0f387d7ada}
+
+\item 
+std\-::vector$<$ std\-::string $>$ {\bfseries \-\_\-output\-Ecal\-Collections}\label{classScECALDigitizer_a6d5c0ffec0c55841a3babfcface65562}
+
+\item 
+std\-::string {\bfseries \-\_\-root\-File\-Name}\label{classScECALDigitizer_ac8773de7d9ebb49cf5325649c61efcbd}
+
+\item 
+T\-File $\ast$ {\bfseries f\-File}\label{classScECALDigitizer_aa733d8db74513188e98a19f702edbc59}
+
+\item 
+T\-H1\-D $\ast$ {\bfseries f\-Hist}\label{classScECALDigitizer_a85dc4831515dc7e435c29e952ece8c3a}
+
+\item 
+T\-Ntuple $\ast$ {\bfseries f\-N\-Events}\label{classScECALDigitizer_a3689782b7b5a2c3fa02171dd14a54042}
+
+\item 
+T\-Ntuple $\ast$ {\bfseries f\-N\-Hits}\label{classScECALDigitizer_a1bd33e27ad6c92e30d3f4c5affa159a4}
+
+\item 
+float {\bfseries \-\_\-threshold\-Ecal}\label{classScECALDigitizer_abd2bd9a8ff79b668e2c4f058f762e0aa}
+
+\item 
+float {\bfseries \-\_\-calibr\-Coeff\-Ecal}\label{classScECALDigitizer_a1b592b3432ee22760a31f2701edec4ed}
+
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Example processor for marlin. 
+
+If compiled with M\-A\-R\-L\-I\-N\-\_\-\-U\-S\-E\-\_\-\-A\-I\-D\-A it creates a histogram (cloud) of the M\-C\-Particle energies.
+
+\subparagraph*{Input -\/ Prerequisites}
+
+Needs the collection of M\-C\-Particles.
+
+\subparagraph*{Output}
+
+A histogram.
+
+
+\begin{DoxyParams}{Parameters}
+{\em Collection\-Name} & Name of the M\-C\-Particle collection\\
+\hline
+\end{DoxyParams}
+\begin{DoxyAuthor}{Author}
+F. Gaede, D\-E\-S\-Y 
+\end{DoxyAuthor}
+\begin{DoxyVersion}{Version}
+
+\end{DoxyVersion}
+\begin{DoxyParagraph}{Id\-:}
+My\-Processor.\-h,v 1.\-4 2005/10/11 12\-:57\-:39 gaede Exp 
+\end{DoxyParagraph}
+
+
+Definition at line 33 of file Sc\-E\-C\-A\-L\-Digitizer.\-hh.
+
+
+
+\subsection{Member Function Documentation}
+\index{Sc\-E\-C\-A\-L\-Digitizer@{Sc\-E\-C\-A\-L\-Digitizer}!init@{init}}
+\index{init@{init}!ScECALDigitizer@{Sc\-E\-C\-A\-L\-Digitizer}}
+\subsubsection[{init}]{\setlength{\rightskip}{0pt plus 5cm}virtual void Sc\-E\-C\-A\-L\-Digitizer\-::init (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}\label{classScECALDigitizer_a58e026eb43e35501805e3f3d0e7f3786}
+
+
+Called at the begin of the job before anything is read. 
+
+Use to initialize the processor, e.\-g. book histograms. 
+
+The documentation for this class was generated from the following file\-:\begin{DoxyCompactItemize}
+\item 
+Sc\-E\-C\-A\-L\-Digitizer.\-hh\end{DoxyCompactItemize}

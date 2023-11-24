@@ -1,0 +1,99 @@
+\section{C\-A\-L\-I\-C\-E\-:\-:Hit\-Classification\-Processor Class Reference}
+\label{classCALICE_1_1HitClassificationProcessor}\index{C\-A\-L\-I\-C\-E\-::\-Hit\-Classification\-Processor@{C\-A\-L\-I\-C\-E\-::\-Hit\-Classification\-Processor}}
+
+
+Processor finds detached hits in event and gives 2 collections\-: Detached hits and event w/o detached hits.  
+
+
+
+
+{\ttfamily \#include $<$Hit\-Classification\-Processor.\-hh$>$}
+
+Inheritance diagram for C\-A\-L\-I\-C\-E\-:\-:Hit\-Classification\-Processor\-:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classCALICE_1_1HitClassificationProcessor}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+virtual Processor $\ast$ {\bfseries new\-Processor} ()\label{classCALICE_1_1HitClassificationProcessor_a955e933140dd61e6872006ae87b03dbb}
+
+\item 
+virtual void {\bfseries init} ()\label{classCALICE_1_1HitClassificationProcessor_aa32a1e394d3603fb4f3bb5f53e6ed763}
+
+\item 
+virtual void {\bfseries process\-Run\-Header} (L\-C\-Run\-Header $\ast$run)\label{classCALICE_1_1HitClassificationProcessor_a5c3bcde173f33d807daefb887bbae3b9}
+
+\item 
+virtual void {\bfseries process\-Event} (L\-C\-Event $\ast$evt)\label{classCALICE_1_1HitClassificationProcessor_ad4f0b48757846cfd3124daac76b60e5a}
+
+\item 
+virtual void {\bfseries check} (L\-C\-Event $\ast$evt)\label{classCALICE_1_1HitClassificationProcessor_a96bed7213ac43218cc0d4244e2080820}
+
+\item 
+virtual void {\bfseries end} ()\label{classCALICE_1_1HitClassificationProcessor_ab2715b8619f2fa7209df2a3a8032ff4e}
+
+\item 
+virtual void {\bfseries print\-Parameters} ()\label{classCALICE_1_1HitClassificationProcessor_addd70f96ba47f8df876699d21e5425ff}
+
+\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+std\-::string {\bfseries \-\_\-hit\-In\-Col\-Name}\label{classCALICE_1_1HitClassificationProcessor_a9728f3e9e72130b73d912cf0c50f67fd}
+
+\item 
+std\-::string {\bfseries \-\_\-hit\-Relations\-Col\-Name}\label{classCALICE_1_1HitClassificationProcessor_ae8898cde95f25d829d49fbfc25f158d3}
+
+\item 
+std\-::string {\bfseries \-\_\-no\-Det\-Hit\-Out\-Col\-Name}\label{classCALICE_1_1HitClassificationProcessor_a5d892bf0f032d14513034fb5470da211}
+
+\item 
+std\-::string {\bfseries \-\_\-det\-Hit\-Out\-Col\-Name}\label{classCALICE_1_1HitClassificationProcessor_ad63846abd41321ab0e718fb7bccb35ef}
+
+\item 
+std\-::string {\bfseries \-\_\-cluster\-Hit\-Out\-Col\-Name}\label{classCALICE_1_1HitClassificationProcessor_a11a0cfe83fb04d23b2d4434f30fcff4f}
+
+\item 
+std\-::string {\bfseries \-\_\-track\-Cand\-Hit\-Out\-Col\-Name}\label{classCALICE_1_1HitClassificationProcessor_adbf54b9e59ea5311843ede08b66f76b3}
+
+\item 
+C\-A\-L\-I\-C\-E\-::\-Mapped\-Container\\*
+$<$ C\-A\-L\-I\-C\-E\-::\-Cell\-Description $>$ $\ast$ {\bfseries \-\_\-cell\-Descriptions}\label{classCALICE_1_1HitClassificationProcessor_a8714c1e9a48c7adf16095118edbd7550}
+
+\item 
+int {\bf \-\_\-n\-Run}
+\item 
+int {\bf \-\_\-n\-Evt}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Processor finds detached hits in event and gives 2 collections\-: Detached hits and event w/o detached hits. 
+
+\begin{DoxyAuthor}{Author}
+{\tt vladimir.\-bocharnikov@desy.\-de} 
+\end{DoxyAuthor}
+\begin{DoxyVersion}{Version}
+1.\-0 
+\end{DoxyVersion}
+\begin{DoxyDate}{Date}
+December 2018 
+\end{DoxyDate}
+
+
+\subsection{Member Data Documentation}
+\index{C\-A\-L\-I\-C\-E\-::\-Hit\-Classification\-Processor@{C\-A\-L\-I\-C\-E\-::\-Hit\-Classification\-Processor}!\-\_\-n\-Evt@{\-\_\-n\-Evt}}
+\index{\-\_\-n\-Evt@{\-\_\-n\-Evt}!CALICE::HitClassificationProcessor@{C\-A\-L\-I\-C\-E\-::\-Hit\-Classification\-Processor}}
+\subsubsection[{\-\_\-n\-Evt}]{\setlength{\rightskip}{0pt plus 5cm}int C\-A\-L\-I\-C\-E\-::\-Hit\-Classification\-Processor\-::\-\_\-n\-Evt\hspace{0.3cm}{\ttfamily [protected]}}\label{classCALICE_1_1HitClassificationProcessor_a425a88c89bb0546481dd56f01665a798}
+evt number \index{C\-A\-L\-I\-C\-E\-::\-Hit\-Classification\-Processor@{C\-A\-L\-I\-C\-E\-::\-Hit\-Classification\-Processor}!\-\_\-n\-Run@{\-\_\-n\-Run}}
+\index{\-\_\-n\-Run@{\-\_\-n\-Run}!CALICE::HitClassificationProcessor@{C\-A\-L\-I\-C\-E\-::\-Hit\-Classification\-Processor}}
+\subsubsection[{\-\_\-n\-Run}]{\setlength{\rightskip}{0pt plus 5cm}int C\-A\-L\-I\-C\-E\-::\-Hit\-Classification\-Processor\-::\-\_\-n\-Run\hspace{0.3cm}{\ttfamily [protected]}}\label{classCALICE_1_1HitClassificationProcessor_afa543d42f857d926cdcb12055738f82a}
+run number 
+
+The documentation for this class was generated from the following files\-:\begin{DoxyCompactItemize}
+\item 
+/nfs/dust/ilc/user/marquezh/\-Calice\-Soft\-\_\-w\-\_\-\-I\-L\-C\-Soft\-\_\-v02-\/03-\/02/calice\-\_\-analysis/addon\-Procs/include/Hit\-Classification\-Processor.\-hh\item 
+/nfs/dust/ilc/user/marquezh/\-Calice\-Soft\-\_\-w\-\_\-\-I\-L\-C\-Soft\-\_\-v02-\/03-\/02/calice\-\_\-analysis/addon\-Procs/src/Hit\-Classification\-Processor.\-cc\end{DoxyCompactItemize}

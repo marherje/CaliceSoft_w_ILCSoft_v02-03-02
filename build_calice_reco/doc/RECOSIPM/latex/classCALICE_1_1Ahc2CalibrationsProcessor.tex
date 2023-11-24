@@ -1,0 +1,496 @@
+\section{C\-A\-L\-I\-C\-E\-:\-:Ahc2\-Calibrations\-Processor Class Reference}
+\label{classCALICE_1_1Ahc2CalibrationsProcessor}\index{C\-A\-L\-I\-C\-E\-::\-Ahc2\-Calibrations\-Processor@{C\-A\-L\-I\-C\-E\-::\-Ahc2\-Calibrations\-Processor}}
+
+
+Processor that provides Ahc2 prototype calibration information to other processors.  
+
+
+
+
+{\ttfamily \#include $<$Ahc2\-Calibrations\-Processor.\-hh$>$}
+
+Inheritance diagram for C\-A\-L\-I\-C\-E\-:\-:Ahc2\-Calibrations\-Processor\-:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classCALICE_1_1Ahc2CalibrationsProcessor}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+virtual Processor $\ast$ {\bfseries new\-Processor} ()\label{classCALICE_1_1Ahc2CalibrationsProcessor_aa6634c358a285cfccf3c226e4b2aba44}
+
+\item 
+virtual void {\bfseries init} ()\label{classCALICE_1_1Ahc2CalibrationsProcessor_a51c5ec4099919e164ddbf819249c68f8}
+
+\item 
+virtual void {\bfseries process\-Event} (L\-C\-Event $\ast$evt)\label{classCALICE_1_1Ahc2CalibrationsProcessor_a0fa7ec48d16b46b6446dd7d44bcf718a}
+
+\item 
+virtual void {\bfseries end} ()\label{classCALICE_1_1Ahc2CalibrationsProcessor_a39d7ee9421e4859533f3d136e0b09c58}
+
+\item 
+virtual void {\bfseries conditions\-Changed} (L\-C\-Collection $\ast$col)\label{classCALICE_1_1Ahc2CalibrationsProcessor_ace470f4ce9130dfca7cac9319e4b2930}
+
+\end{DoxyCompactItemize}
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static Mapped\-Container\\*
+$<$ Ahc2\-Calibrations $>$ $\ast$ {\bf get\-Calibrations} (const std\-::string \&processor\-Name)
+\begin{DoxyCompactList}\small\item\em static function to obtain a Mapped\-Container with cell neighbours \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void {\bfseries update\-Mapping} ()\label{classCALICE_1_1Ahc2CalibrationsProcessor_a657ac692143a138582df4586cfaebf7b}
+
+\item 
+void {\bfseries update\-M\-I\-P\-Calibration} ()\label{classCALICE_1_1Ahc2CalibrationsProcessor_ae53f7d493e2355d86f8ba57bf26b5e34}
+
+\item 
+void {\bfseries update\-Gain\-Calibration} ()\label{classCALICE_1_1Ahc2CalibrationsProcessor_a0b6289d487354620a8a79885c7979b48}
+
+\item 
+void {\bfseries update\-Pedestal} ()\label{classCALICE_1_1Ahc2CalibrationsProcessor_ac52f352570f32ee3df3b63fcf46891ac}
+
+\item 
+void {\bfseries update\-Low\-Gain\-Pedestal} ()\label{classCALICE_1_1Ahc2CalibrationsProcessor_a880a5ba65d6bfe9e7ff260b6db190fa1}
+
+\item 
+void {\bfseries update\-Pedestal\-Memory\-Cell\-Offset} ()\label{classCALICE_1_1Ahc2CalibrationsProcessor_aae98b664197540cc0068842de310ae7f}
+
+\item 
+void {\bfseries update\-Low\-Gain\-Pedestal\-Memory\-Cell\-Offset} ()\label{classCALICE_1_1Ahc2CalibrationsProcessor_adde02bccc6fc6f4705a3644b9c53199f}
+
+\item 
+void {\bfseries update\-Temperature} ()\label{classCALICE_1_1Ahc2CalibrationsProcessor_a46bc7e0dee10380b0e0aca96e62386e9}
+
+\item 
+void {\bfseries update\-Inter\-Calibration} ()\label{classCALICE_1_1Ahc2CalibrationsProcessor_a5f9c37499166c12365d6232b46c390a1}
+
+\item 
+void {\bfseries update\-Physics\-Calib\-I\-C} ()\label{classCALICE_1_1Ahc2CalibrationsProcessor_ad2b787969eddcf1c9ebb4446c3b36c32}
+
+\item 
+void {\bfseries update\-Saturation\-Parameters} ()\label{classCALICE_1_1Ahc2CalibrationsProcessor_a564b256fc9d0eb1b95028269f9e55853}
+
+\item 
+void {\bfseries update\-Time\-Slopes\-Parameters} ()\label{classCALICE_1_1Ahc2CalibrationsProcessor_a3922efdd9d5bec20724fb4ebec6d35a6}
+
+\item 
+void {\bfseries update\-Time\-Offset\-Parameters} ()\label{classCALICE_1_1Ahc2CalibrationsProcessor_a80bfc72b1b6d14ccddbd48a7a9bab8fd}
+
+\item 
+void {\bfseries update\-Time\-Offset\-Mem\-Cell\-Even\-Parameters} ()\label{classCALICE_1_1Ahc2CalibrationsProcessor_af7c510882ffaff05d91d581a095ed2ce}
+
+\item 
+void {\bfseries update\-Time\-Offset\-Mem\-Cell\-Odd\-Parameters} ()\label{classCALICE_1_1Ahc2CalibrationsProcessor_ab29ff09c1cb8b2ed092924e089ccfa4f}
+
+\item 
+void {\bfseries update\-Time\-Offset\-Mem\-Cell\-Even\-Buffer\-Even\-Event\-Even\-Parameters} ()\label{classCALICE_1_1Ahc2CalibrationsProcessor_a06824d23f67a292834fe3dec4a5865a8}
+
+\item 
+void {\bfseries update\-Time\-Offset\-Mem\-Cell\-Odd\-Buffer\-Even\-Event\-Odd\-Parameters} ()\label{classCALICE_1_1Ahc2CalibrationsProcessor_a4f9e888b8b80adbaed2fafc8f5246ea5}
+
+\item 
+void {\bfseries update\-Time\-Offset\-Mem\-Cell\-Even\-Buffer\-Odd\-Event\-Even\-Parameters} ()\label{classCALICE_1_1Ahc2CalibrationsProcessor_ac024962693135181be10780bdf49fd86}
+
+\item 
+void {\bfseries update\-Time\-Offset\-Mem\-Cell\-Odd\-Buffer\-Odd\-Event\-Odd\-Parameters} ()\label{classCALICE_1_1Ahc2CalibrationsProcessor_a994f55c48904be6d97d9c7e63ae68e93}
+
+\item 
+void {\bfseries update\-Occupancy\-Bxid\-Even\-High\-Gain\-Parameters} ()\label{classCALICE_1_1Ahc2CalibrationsProcessor_ae21d5ec42eaa934545d0250478471d0e}
+
+\item 
+void {\bfseries update\-Occupancy\-Bxid\-Even\-Low\-Gain\-Parameters} ()\label{classCALICE_1_1Ahc2CalibrationsProcessor_aa93e030e73b7d28b4e729bded9f7869a}
+
+\item 
+void {\bfseries update\-Occupancy\-Bxid\-Odd\-High\-Gain\-Parameters} ()\label{classCALICE_1_1Ahc2CalibrationsProcessor_a95e4ce302109eaab9b887c619c045c71}
+
+\item 
+void {\bfseries update\-Occupancy\-Bxid\-Odd\-Low\-Gain\-Parameters} ()\label{classCALICE_1_1Ahc2CalibrationsProcessor_ac3116911c9d038af272736216a716213}
+
+\item 
+void {\bfseries update\-Cell\-Quality} ()\label{classCALICE_1_1Ahc2CalibrationsProcessor_ab9278b6dd3733e2c48d85e76786960bd}
+
+\item 
+void {\bfseries update\-Module\-Encoding\-String\-From\-D\-B} (L\-C\-Collection $\ast$col, Decoder\-Set $\ast$decoder)\label{classCALICE_1_1Ahc2CalibrationsProcessor_ac210e973bf0996f2db99636c445b9191}
+
+\item 
+bool {\bfseries is\-Module\-Encoding\-String\-Valid} (std\-::string module\-Encoding\-String)\label{classCALICE_1_1Ahc2CalibrationsProcessor_ac5e275a92989804a26737ae527f38d03}
+
+\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+Mapped\-Container\\*
+$<$ Ahc2\-Calibrations $>$ $\ast$ {\bfseries \-\_\-container}\label{classCALICE_1_1Ahc2CalibrationsProcessor_aeaef0bab14c19834840e2633b4f5d858}
+
+\item 
+std\-::vector$<$ Ahc2\-Calibrations $\ast$ $>$ {\bfseries \-\_\-all\-Calibrations}\label{classCALICE_1_1Ahc2CalibrationsProcessor_ad412992a7bbd961b8336be89fcac337a}
+
+\item 
+std\-::string {\bfseries \-\_\-module\-Encoding\-String}\label{classCALICE_1_1Ahc2CalibrationsProcessor_a5b91132b3f78fc93e1c13d23df72b037}
+
+\item 
+std\-::string {\bfseries \-\_\-mapping\-Processor\-Name}\label{classCALICE_1_1Ahc2CalibrationsProcessor_a23d71b66f35914b756f49eb1e4aff6ef}
+
+\item 
+std\-::string {\bfseries \-\_\-\-E4\-D\-Mapper\-Col\-Name}\label{classCALICE_1_1Ahc2CalibrationsProcessor_ade555589de87ce42ad5dd8b31e84e25b}
+
+\item 
+std\-::string {\bfseries \-\_\-\-M\-I\-P\-Constant\-Col\-Name}\label{classCALICE_1_1Ahc2CalibrationsProcessor_a37f15328faa5231abb27b03b32d518f9}
+
+\item 
+std\-::string {\bfseries \-\_\-\-M\-I\-P\-Slope\-Col\-Name}\label{classCALICE_1_1Ahc2CalibrationsProcessor_a658922d38003bbfa9b3e272f21470533}
+
+\item 
+std\-::string {\bfseries \-\_\-gain\-Constant\-Col\-Name}\label{classCALICE_1_1Ahc2CalibrationsProcessor_a969e32fb8ce307d657440a5e079b63f0}
+
+\item 
+std\-::string {\bfseries \-\_\-gain\-Slope\-Col\-Name}\label{classCALICE_1_1Ahc2CalibrationsProcessor_af5870e7f9df7a9546cbe3f245d5c50aa}
+
+\item 
+std\-::string {\bfseries \-\_\-inter\-Calibration\-Col\-Name}\label{classCALICE_1_1Ahc2CalibrationsProcessor_a3d850731299639d9a1f9a13b4063a2f4}
+
+\item 
+std\-::string {\bfseries \-\_\-\-Physics\-Calib\-I\-C\-Col\-Name}\label{classCALICE_1_1Ahc2CalibrationsProcessor_aab920d306e59f70262c7d5eddae09e2f}
+
+\item 
+std\-::string {\bfseries \-\_\-pedestal\-Col\-Name}\label{classCALICE_1_1Ahc2CalibrationsProcessor_a1e096b845c6c4ec79fa9b55d8a836f63}
+
+\item 
+std\-::string {\bfseries \-\_\-low\-Gain\-Pedestal\-Col\-Name}\label{classCALICE_1_1Ahc2CalibrationsProcessor_a7a5b484a532ab700082a885f2ef85c4e}
+
+\item 
+std\-::string {\bfseries \-\_\-pedestal\-Memory\-Cell\-Offset\-Col\-Name}\label{classCALICE_1_1Ahc2CalibrationsProcessor_af954c57e514a1313cc4aeb4b17c8e698}
+
+\item 
+std\-::string {\bfseries \-\_\-low\-Gain\-Pedestal\-Memory\-Cell\-Offset\-Col\-Name}\label{classCALICE_1_1Ahc2CalibrationsProcessor_a546f9a5a91829338127c4e119e011388}
+
+\item 
+std\-::string {\bfseries \-\_\-temperature\-Col\-Name}\label{classCALICE_1_1Ahc2CalibrationsProcessor_a1550307968315d0308613e1840af70d7}
+
+\item 
+std\-::string {\bfseries \-\_\-saturation\-Parameters\-Col\-Name}\label{classCALICE_1_1Ahc2CalibrationsProcessor_ae71cd63d436ed4f645b13d1071411b01}
+
+\item 
+std\-::string {\bfseries \-\_\-time\-Slopes\-Parameters\-Col\-Name}\label{classCALICE_1_1Ahc2CalibrationsProcessor_a3c9a4f1c5e75c82e7e1e1a7a02c9dce1}
+
+\item 
+std\-::string {\bfseries \-\_\-time\-Offset\-Parameters\-Col\-Name}\label{classCALICE_1_1Ahc2CalibrationsProcessor_a35bb47e065ab2a711c7b2a1b20eb0877}
+
+\item 
+std\-::string {\bfseries \-\_\-time\-Offset\-Mem\-Cell\-Even\-Parameters\-Col\-Name}\label{classCALICE_1_1Ahc2CalibrationsProcessor_a59ae9442d7ebd3da64794c11ef0985f8}
+
+\item 
+std\-::string {\bfseries \-\_\-time\-Offset\-Mem\-Cell\-Odd\-Parameters\-Col\-Name}\label{classCALICE_1_1Ahc2CalibrationsProcessor_aef8f9816233d4ce9cb039cc1a1b1b627}
+
+\item 
+std\-::string {\bfseries \-\_\-time\-Offset\-Mem\-Cell\-Even\-Buffer\-Even\-Event\-Even\-Parameters\-Col\-Name}\label{classCALICE_1_1Ahc2CalibrationsProcessor_a234a134d3d68248033fadcfd9f1deff2}
+
+\item 
+std\-::string {\bfseries \-\_\-time\-Offset\-Mem\-Cell\-Odd\-Buffer\-Even\-Event\-Odd\-Parameters\-Col\-Name}\label{classCALICE_1_1Ahc2CalibrationsProcessor_a04b275eb495cb5604b231839a20283bc}
+
+\item 
+std\-::string {\bfseries \-\_\-time\-Offset\-Mem\-Cell\-Even\-Buffer\-Odd\-Event\-Even\-Parameters\-Col\-Name}\label{classCALICE_1_1Ahc2CalibrationsProcessor_ad7d7b17901f5c1b6e980bba81bc10c06}
+
+\item 
+std\-::string {\bfseries \-\_\-time\-Offset\-Mem\-Cell\-Odd\-Buffer\-Odd\-Event\-Odd\-Parameters\-Col\-Name}\label{classCALICE_1_1Ahc2CalibrationsProcessor_a5187ff2a965498fd93aff337fe1b68be}
+
+\item 
+std\-::string {\bfseries \-\_\-\-Occupancy\-Bxid\-Even\-High\-Gain\-Parameters\-Col\-Name}\label{classCALICE_1_1Ahc2CalibrationsProcessor_a79e8c84a537b73e02fd107abb892ffeb}
+
+\item 
+std\-::string {\bfseries \-\_\-\-Occupancy\-Bxid\-Even\-Low\-Gain\-Parameters\-Col\-Name}\label{classCALICE_1_1Ahc2CalibrationsProcessor_adb42513dab8255b1f1a9622070856823}
+
+\item 
+std\-::string {\bfseries \-\_\-\-Occupancy\-Bxid\-Odd\-High\-Gain\-Parameters\-Col\-Name}\label{classCALICE_1_1Ahc2CalibrationsProcessor_aae456e27f91ea369ab33937b53211b41}
+
+\item 
+std\-::string {\bfseries \-\_\-\-Occupancy\-Bxid\-Odd\-Low\-Gain\-Parameters\-Col\-Name}\label{classCALICE_1_1Ahc2CalibrationsProcessor_aa402b142c9b9c84024b97bc016e9d31b}
+
+\item 
+std\-::string {\bfseries \-\_\-cell\-Quality\-Col\-Name}\label{classCALICE_1_1Ahc2CalibrationsProcessor_a4f86dc624210d2b80067a267f2112367}
+
+\item 
+L\-C\-Collection $\ast$ {\bfseries \-\_\-\-E4\-D\-Mapper\-Col}\label{classCALICE_1_1Ahc2CalibrationsProcessor_a8e5253174aabd0ebebf8a7d709e0b43e}
+
+\item 
+L\-C\-Collection $\ast$ {\bfseries \-\_\-\-M\-I\-P\-Constant\-Col}\label{classCALICE_1_1Ahc2CalibrationsProcessor_a5ec3439e0a6716a3262510e678f98789}
+
+\item 
+L\-C\-Collection $\ast$ {\bfseries \-\_\-\-M\-I\-P\-Slope\-Col}\label{classCALICE_1_1Ahc2CalibrationsProcessor_addc2a8fe5bff9b7b16ddc50bd8fdb245}
+
+\item 
+L\-C\-Collection $\ast$ {\bfseries \-\_\-gain\-Constant\-Col}\label{classCALICE_1_1Ahc2CalibrationsProcessor_a74e33507c5f4d7d9b16603835d381ef0}
+
+\item 
+L\-C\-Collection $\ast$ {\bfseries \-\_\-gain\-Slope\-Col}\label{classCALICE_1_1Ahc2CalibrationsProcessor_af9303081cdaa45e793dbb5c4ed68c933}
+
+\item 
+L\-C\-Collection $\ast$ {\bfseries \-\_\-inter\-Calibration\-Col}\label{classCALICE_1_1Ahc2CalibrationsProcessor_a572c6374b74c9d250dbdb0abf109595d}
+
+\item 
+L\-C\-Collection $\ast$ {\bfseries \-\_\-\-Physics\-Calib\-I\-C\-Col}\label{classCALICE_1_1Ahc2CalibrationsProcessor_a7534c9d91bbb0c58f135e69384344f37}
+
+\item 
+L\-C\-Collection $\ast$ {\bfseries \-\_\-pedestal\-Col}\label{classCALICE_1_1Ahc2CalibrationsProcessor_ae150a0d45e11c2c4f6ce07f479ada8b0}
+
+\item 
+L\-C\-Collection $\ast$ {\bfseries \-\_\-low\-Gain\-Pedestal\-Col}\label{classCALICE_1_1Ahc2CalibrationsProcessor_a785a8f5c067d4eec82e91c50f3be343b}
+
+\item 
+L\-C\-Collection $\ast$ {\bfseries \-\_\-pedestal\-Memory\-Cell\-Offset\-Col}\label{classCALICE_1_1Ahc2CalibrationsProcessor_a72e27f1de40abe570d78b435d59e237f}
+
+\item 
+L\-C\-Collection $\ast$ {\bfseries \-\_\-low\-Gain\-Pedestal\-Memory\-Cell\-Offset\-Col}\label{classCALICE_1_1Ahc2CalibrationsProcessor_a2dc98afc06490e6e3b210833b67f05d3}
+
+\item 
+L\-C\-Collection $\ast$ {\bfseries \-\_\-temperature\-Col}\label{classCALICE_1_1Ahc2CalibrationsProcessor_aa219003f8cbfe58b6bf9b45ee9636437}
+
+\item 
+L\-C\-Collection $\ast$ {\bfseries \-\_\-saturation\-Parameters\-Col}\label{classCALICE_1_1Ahc2CalibrationsProcessor_a306a43df8fc9cb84c4e4069ff7c8d2f1}
+
+\item 
+L\-C\-Collection $\ast$ {\bfseries \-\_\-time\-Slopes\-Parameters\-Col}\label{classCALICE_1_1Ahc2CalibrationsProcessor_a611275318f6e7ad6799eac941b3b4d6b}
+
+\item 
+L\-C\-Collection $\ast$ {\bfseries \-\_\-time\-Offset\-Parameters\-Col}\label{classCALICE_1_1Ahc2CalibrationsProcessor_acbfec942e148883b15ce206992cb2f1f}
+
+\item 
+L\-C\-Collection $\ast$ {\bfseries \-\_\-time\-Offset\-Mem\-Cell\-Even\-Parameters\-Col}\label{classCALICE_1_1Ahc2CalibrationsProcessor_a71e971985c7b37ac0202b3a338ad854a}
+
+\item 
+L\-C\-Collection $\ast$ {\bfseries \-\_\-time\-Offset\-Mem\-Cell\-Odd\-Parameters\-Col}\label{classCALICE_1_1Ahc2CalibrationsProcessor_afbf3fec4d9ce36c1c9c5e76193085f4b}
+
+\item 
+L\-C\-Collection $\ast$ {\bfseries \-\_\-time\-Offset\-Mem\-Cell\-Even\-Buffer\-Even\-Event\-Even\-Parameters\-Col}\label{classCALICE_1_1Ahc2CalibrationsProcessor_aa21eb1278283dacd26bcf05716700d26}
+
+\item 
+L\-C\-Collection $\ast$ {\bfseries \-\_\-time\-Offset\-Mem\-Cell\-Odd\-Buffer\-Even\-Event\-Odd\-Parameters\-Col}\label{classCALICE_1_1Ahc2CalibrationsProcessor_ae44b5d30d19f65a658380340b25e1e90}
+
+\item 
+L\-C\-Collection $\ast$ {\bfseries \-\_\-time\-Offset\-Mem\-Cell\-Even\-Buffer\-Odd\-Event\-Even\-Parameters\-Col}\label{classCALICE_1_1Ahc2CalibrationsProcessor_aae89f20dd3332110abeefaee429fab36}
+
+\item 
+L\-C\-Collection $\ast$ {\bfseries \-\_\-time\-Offset\-Mem\-Cell\-Odd\-Buffer\-Odd\-Event\-Odd\-Parameters\-Col}\label{classCALICE_1_1Ahc2CalibrationsProcessor_a5c96aed5a622dc2c6deb32b5b5426f5e}
+
+\item 
+L\-C\-Collection $\ast$ {\bfseries \-\_\-\-Occupancy\-Bxid\-Even\-High\-Gain\-Parameters\-Col}\label{classCALICE_1_1Ahc2CalibrationsProcessor_a5155ec83b6865e7f728a4f05e582025c}
+
+\item 
+L\-C\-Collection $\ast$ {\bfseries \-\_\-\-Occupancy\-Bxid\-Even\-Low\-Gain\-Parameters\-Col}\label{classCALICE_1_1Ahc2CalibrationsProcessor_aabd876ae2bef96e85a61c3655f47224b}
+
+\item 
+L\-C\-Collection $\ast$ {\bfseries \-\_\-\-Occupancy\-Bxid\-Odd\-High\-Gain\-Parameters\-Col}\label{classCALICE_1_1Ahc2CalibrationsProcessor_abbdaa7b95bd8505ff644b46d80f25727}
+
+\item 
+L\-C\-Collection $\ast$ {\bfseries \-\_\-\-Occupancy\-Bxid\-Odd\-Low\-Gain\-Parameters\-Col}\label{classCALICE_1_1Ahc2CalibrationsProcessor_a1ee40e1eda4e4b01f6050b9a450d8935}
+
+\item 
+L\-C\-Collection $\ast$ {\bfseries \-\_\-cell\-Quality\-Col}\label{classCALICE_1_1Ahc2CalibrationsProcessor_af5eee39f06b27a9f3ebb9a82705b05f9}
+
+\item 
+bool {\bfseries \-\_\-\-E4\-D\-Mapper\-Changed}\label{classCALICE_1_1Ahc2CalibrationsProcessor_a0849fba95890f27f0875320c5da5ea06}
+
+\item 
+bool {\bfseries \-\_\-\-M\-I\-P\-Constant\-Changed}\label{classCALICE_1_1Ahc2CalibrationsProcessor_ae940128be9e0e2554a1042034f726f3a}
+
+\item 
+bool {\bfseries \-\_\-\-M\-I\-P\-Slope\-Changed}\label{classCALICE_1_1Ahc2CalibrationsProcessor_ac2f78af7fb5676854f860e818da02bd5}
+
+\item 
+bool {\bfseries \-\_\-gain\-Constant\-Changed}\label{classCALICE_1_1Ahc2CalibrationsProcessor_a61a4ef1b69de5196205e6c4daa9f31a5}
+
+\item 
+bool {\bfseries \-\_\-gain\-Slope\-Changed}\label{classCALICE_1_1Ahc2CalibrationsProcessor_afc35c0f92c08eeffcfe941a429c1fe71}
+
+\item 
+bool {\bfseries \-\_\-inter\-Calibration\-Changed}\label{classCALICE_1_1Ahc2CalibrationsProcessor_ab855dae51cc8647606b0cf6fdc2a191e}
+
+\item 
+bool {\bfseries \-\_\-\-Physics\-Calib\-I\-C\-Changed}\label{classCALICE_1_1Ahc2CalibrationsProcessor_abaafd4c212b1b401f6553fb2944e82e5}
+
+\item 
+bool {\bfseries \-\_\-pedestal\-Changed}\label{classCALICE_1_1Ahc2CalibrationsProcessor_a42022638b9b84f13b786c64885a1c9f6}
+
+\item 
+bool {\bfseries \-\_\-low\-Gain\-Pedestal\-Changed}\label{classCALICE_1_1Ahc2CalibrationsProcessor_a880c0a6fffff1a87e6257b89be25a21e}
+
+\item 
+bool {\bfseries \-\_\-pedestal\-Memory\-Cell\-Offset\-Changed}\label{classCALICE_1_1Ahc2CalibrationsProcessor_ae65f258dd5f3962aa82a4941ee911ff2}
+
+\item 
+bool {\bfseries \-\_\-low\-Gain\-Pedestal\-Memory\-Cell\-Offset\-Changed}\label{classCALICE_1_1Ahc2CalibrationsProcessor_a84bac84c7832403d07096b039ea97f8c}
+
+\item 
+bool {\bfseries \-\_\-temperature\-Changed}\label{classCALICE_1_1Ahc2CalibrationsProcessor_a5c90fad3b22edd95242ee34abc0ab388}
+
+\item 
+bool {\bfseries \-\_\-saturation\-Parameters\-Changed}\label{classCALICE_1_1Ahc2CalibrationsProcessor_a9bdd269df77282d9c8e6b4c77f604475}
+
+\item 
+bool {\bfseries \-\_\-time\-Slopes\-Parameters\-Changed}\label{classCALICE_1_1Ahc2CalibrationsProcessor_a498dd9b3fa8b2f48d12adb19fdcd6c3b}
+
+\item 
+bool {\bfseries \-\_\-time\-Offset\-Parameters\-Changed}\label{classCALICE_1_1Ahc2CalibrationsProcessor_ac1a042b7dc8892fd5648d2113734249b}
+
+\item 
+bool {\bfseries \-\_\-time\-Offset\-Mem\-Cell\-Even\-Parameters\-Changed}\label{classCALICE_1_1Ahc2CalibrationsProcessor_ac8d7b82d0fa4fb5ea6a72e93305c495c}
+
+\item 
+bool {\bfseries \-\_\-time\-Offset\-Mem\-Cell\-Odd\-Parameters\-Changed}\label{classCALICE_1_1Ahc2CalibrationsProcessor_a90b8afc94256ac4bb6a4a2f1f191f303}
+
+\item 
+bool {\bfseries \-\_\-time\-Offset\-Mem\-Cell\-Even\-Buffer\-Even\-Event\-Even\-Parameters\-Col\-Changed}\label{classCALICE_1_1Ahc2CalibrationsProcessor_a37aa455c8ae4e2593b7212c7d1822820}
+
+\item 
+bool {\bfseries \-\_\-time\-Offset\-Mem\-Cell\-Odd\-Buffer\-Even\-Event\-Odd\-Parameters\-Col\-Changed}\label{classCALICE_1_1Ahc2CalibrationsProcessor_adf951c1986d3f21c25c0a537c5b5e91f}
+
+\item 
+bool {\bfseries \-\_\-time\-Offset\-Mem\-Cell\-Even\-Buffer\-Odd\-Event\-Even\-Parameters\-Col\-Changed}\label{classCALICE_1_1Ahc2CalibrationsProcessor_a294f01498a84477c5e0269fd5aecc650}
+
+\item 
+bool {\bfseries \-\_\-time\-Offset\-Mem\-Cell\-Odd\-Buffer\-Odd\-Event\-Odd\-Parameters\-Col\-Changed}\label{classCALICE_1_1Ahc2CalibrationsProcessor_ae12569fa4ba2e497055985d2ed8cadfc}
+
+\item 
+bool {\bfseries \-\_\-\-Occupancy\-Bxid\-Even\-High\-Gain\-Parameters\-Col\-Changed}\label{classCALICE_1_1Ahc2CalibrationsProcessor_ae5daa0b7715aae1bc5060ab55682cbc2}
+
+\item 
+bool {\bfseries \-\_\-\-Occupancy\-Bxid\-Even\-Low\-Gain\-Parameters\-Col\-Changed}\label{classCALICE_1_1Ahc2CalibrationsProcessor_a8c4f0548a6f4a4fb79907ff157a37d73}
+
+\item 
+bool {\bfseries \-\_\-\-Occupancy\-Bxid\-Odd\-High\-Gain\-Parameters\-Col\-Changed}\label{classCALICE_1_1Ahc2CalibrationsProcessor_af0fa9255b41292d3e7f79f8d58e57b09}
+
+\item 
+bool {\bfseries \-\_\-\-Occupancy\-Bxid\-Odd\-Low\-Gain\-Parameters\-Col\-Changed}\label{classCALICE_1_1Ahc2CalibrationsProcessor_ac61e9964bf68140d3a98d05b39c0bc73}
+
+\item 
+bool {\bfseries \-\_\-cell\-Quality\-Changed}\label{classCALICE_1_1Ahc2CalibrationsProcessor_af2fe562a0bc8eabc864c8ea71b8d93d4}
+
+\item 
+float {\bfseries \-\_\-global\-Pixel\-Scale\-Factor}\label{classCALICE_1_1Ahc2CalibrationsProcessor_ae0013a828607f480c2575fe6a25b2c52}
+
+\item 
+bool {\bfseries \-\_\-\-M\-I\-P\-Constant\-Scaled}\label{classCALICE_1_1Ahc2CalibrationsProcessor_ac36a61c2c1f52fe36b17a0b158d03e69}
+
+\item 
+bool {\bfseries \-\_\-\-M\-I\-P\-Slope\-Scaled}\label{classCALICE_1_1Ahc2CalibrationsProcessor_af5e80fad34c209c1765b80486762e012}
+
+\item 
+bool {\bfseries \-\_\-gain\-Constant\-Scaled}\label{classCALICE_1_1Ahc2CalibrationsProcessor_a6db8f6f1b1f26f5ec71e0a160b7b4cad}
+
+\item 
+bool {\bfseries \-\_\-gain\-Slope\-Scaled}\label{classCALICE_1_1Ahc2CalibrationsProcessor_a14fd7b81ea366e9c812e557ea53b8c54}
+
+\item 
+bool {\bfseries \-\_\-inter\-Calibration\-Scaled}\label{classCALICE_1_1Ahc2CalibrationsProcessor_a17c3b220c769b795d7a1a94af6a3c5fd}
+
+\item 
+bool {\bfseries \-\_\-\-Physics\-Calib\-I\-C\-Scaled}\label{classCALICE_1_1Ahc2CalibrationsProcessor_a61a602f7adbf9d3a0b20efa5d1fc623f}
+
+\item 
+float {\bfseries \-\_\-\-M\-I\-P\-Constant\-Scale\-Factor}\label{classCALICE_1_1Ahc2CalibrationsProcessor_a888e81f95e2371e85123739eda30e3f3}
+
+\item 
+float {\bfseries \-\_\-\-M\-I\-P\-Slope\-Scale\-Factor}\label{classCALICE_1_1Ahc2CalibrationsProcessor_a43d3f25063cf1681f3b92b26c87f3c84}
+
+\item 
+float {\bfseries \-\_\-gain\-Constant\-Scale\-Factor}\label{classCALICE_1_1Ahc2CalibrationsProcessor_a76055de9faebcfd1c46406293c218779}
+
+\item 
+float {\bfseries \-\_\-gain\-Slope\-Scale\-Factor}\label{classCALICE_1_1Ahc2CalibrationsProcessor_a956b9241e62ac83ceee8c9fd87fb2017}
+
+\item 
+float {\bfseries \-\_\-inter\-Calibration\-Scale\-Factor}\label{classCALICE_1_1Ahc2CalibrationsProcessor_a4de92b2ef11f86dff4cb1a789fa05e47}
+
+\item 
+float {\bfseries \-\_\-\-Physics\-Calib\-I\-C\-Scale\-Factor}\label{classCALICE_1_1Ahc2CalibrationsProcessor_ac14aa96530dd469d1b991affd9eaccee}
+
+\item 
+const Mapper $\ast$ {\bfseries \-\_\-mapper}\label{classCALICE_1_1Ahc2CalibrationsProcessor_a6f062e170f84713ec8f4e06507093e44}
+
+\item 
+unsigned int {\bfseries \-\_\-mapper\-Version}\label{classCALICE_1_1Ahc2CalibrationsProcessor_a6b3a5423f070321bf660836f352c15e6}
+
+\end{DoxyCompactItemize}
+\subsection*{Static Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+static std\-::map$<$ std\-::string, \\*
+Mapped\-Container\\*
+$<$ Ahc2\-Calibrations $>$ $\ast$ $>$ {\bfseries \-\_\-\-Ahc2\-Calibrations\-Container\-Map}\label{classCALICE_1_1Ahc2CalibrationsProcessor_add637c60e0d65cc1f405cc13dae113bd}
+
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Processor that provides Ahc2 prototype calibration information to other processors. 
+
+To obtain the object in other processors use\-: \doxyref{Ahc2\-Calibrations\-Processor\-::get\-Calibrations}{p.}{classCALICE_1_1Ahc2CalibrationsProcessor_ae40adce445cfbd5dc4f426b1b99b9d8b}( \char`\"{}\-Ahc2\-Si\-P\-M\-Calibrations processor name\char`\"{} )
+
+\begin{DoxyParagraph}{processor parameters}
+\begin{TabularC}{2}
+\hline
+steering file parameter name &description  \\\cline{1-2}
+{\bfseries {\itshape  Mapping\-Processor\-Name }}&name of the mapping processor that provides the necessary Mapper class \\\cline{1-2}
+{\bfseries {\itshape  Mip\-Constant\-Collection }}&name of the M\-I\-P constants collection \\\cline{1-2}
+{\bfseries {\itshape  Mip\-Slopes\-Collection }}&name of the M\-I\-P slopes collection \\\cline{1-2}
+{\bfseries {\itshape  Gain\-Constant\-Collection }}&name of the gain constants collection \\\cline{1-2}
+{\bfseries {\itshape  Gain\-Slope\-Collection }}&name of the gain slopes collection \\\cline{1-2}
+{\bfseries {\itshape  Pedestal\-Collection }}&name of the pedestal collection \\\cline{1-2}
+{\bfseries {\itshape  Saturation\-Parameters\-Collection }}&name of the saturation parameters collection \\\cline{1-2}
+{\bfseries {\itshape  Time\-Slopes\-Parameters\-Collection }}&name of the timeslopes parameters collection \\\cline{1-2}
+{\bfseries {\itshape  Time\-Ped\-Parameters\-Collection }}&name of the time pedestal parameters collection$<$/tr \\\cline{1-2}
+{\bfseries {\itshape  Pixel\-Scale\-Factors\-Collection }}&name of the pixel scale factors collection \\\cline{1-2}
+{\bfseries {\itshape  Global\-Pixel\-Scale\-Factor }}&global value for the pixel scale factor \\\cline{1-2}
+{\bfseries {\itshape  Cell\-Quality\-Collection }}&name of the saturation collection \\\cline{1-2}
+\end{TabularC}
+
+\end{DoxyParagraph}
+\begin{DoxyAuthor}{Author}
+{\tt Shaojun.\-lu@desy.\-de} 
+\end{DoxyAuthor}
+\begin{DoxyVersion}{Version}
+0.\-1 
+\end{DoxyVersion}
+\begin{DoxyDate}{Date}
+January 2013 
+\end{DoxyDate}
+
+
+Definition at line 57 of file Ahc2\-Calibrations\-Processor.\-hh.
+
+
+
+\subsection{Member Function Documentation}
+\index{C\-A\-L\-I\-C\-E\-::\-Ahc2\-Calibrations\-Processor@{C\-A\-L\-I\-C\-E\-::\-Ahc2\-Calibrations\-Processor}!get\-Calibrations@{get\-Calibrations}}
+\index{get\-Calibrations@{get\-Calibrations}!CALICE::Ahc2CalibrationsProcessor@{C\-A\-L\-I\-C\-E\-::\-Ahc2\-Calibrations\-Processor}}
+\subsubsection[{get\-Calibrations}]{\setlength{\rightskip}{0pt plus 5cm}Mapped\-Container$<$ Ahc2\-Calibrations $>$ $\ast$ C\-A\-L\-I\-C\-E\-::\-Ahc2\-Calibrations\-Processor\-::get\-Calibrations (
+\begin{DoxyParamCaption}
+\item[{const std\-::string \&}]{processor\-Name}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}\label{classCALICE_1_1Ahc2CalibrationsProcessor_ae40adce445cfbd5dc4f426b1b99b9d8b}
+
+
+static function to obtain a Mapped\-Container with cell neighbours 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em processor\-Name} & name of the \doxyref{Ahc2\-Calibrations\-Processor}{p.}{classCALICE_1_1Ahc2CalibrationsProcessor} that takes care of this Ahc2\-Calibrations. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+pointer to the Mapped\-Container including Si\-P\-M\-Calibrations 
+\end{DoxyReturn}
+
+
+Definition at line 36 of file Ahc2\-Calibrations\-Processor.\-cc.
+
+
+
+The documentation for this class was generated from the following files\-:\begin{DoxyCompactItemize}
+\item 
+Ahc2\-Calibrations\-Processor.\-hh\item 
+Ahc2\-Calibrations\-Processor.\-cc\end{DoxyCompactItemize}

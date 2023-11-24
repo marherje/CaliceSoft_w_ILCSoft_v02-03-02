@@ -1,0 +1,35 @@
+\section{/nfs/dust/ilc/user/marquezh/\-Calice\-Soft\-\_\-w\-\_\-\-I\-L\-C\-Soft\-\_\-v02-\/03-\/02/calice\-\_\-db\-\_\-tools/include/\-Shift\-Linear\-Fit\-Constants.hh File Reference}
+\label{ShiftLinearFitConstants_8hh}\index{/nfs/dust/ilc/user/marquezh/\-Calice\-Soft\-\_\-w\-\_\-\-I\-L\-C\-Soft\-\_\-v02-\/03-\/02/calice\-\_\-db\-\_\-tools/include/\-Shift\-Linear\-Fit\-Constants.\-hh@{/nfs/dust/ilc/user/marquezh/\-Calice\-Soft\-\_\-w\-\_\-\-I\-L\-C\-Soft\-\_\-v02-\/03-\/02/calice\-\_\-db\-\_\-tools/include/\-Shift\-Linear\-Fit\-Constants.\-hh}}
+{\ttfamily \#include \char`\"{}Linear\-Fit\-Constant.\-hh\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}Access\-Linear\-Fit\-Constant.\-hh\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}Access\-Linear\-Fit\-Slope.\-hh\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}Access\-Simple\-Value.\-hh\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}lcio.\-h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}I\-M\-P\-L/\-L\-C\-Collection\-Vec.\-h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}I\-M\-P\-L/\-L\-C\-T\-O\-O\-L\-S.\-h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}I\-O/\-L\-C\-Reader.\-h\char`\"{}}\\*
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class {\bf Shift\-Linear\-Fit\-Constants}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+This tool evaluates Linear\-Fit\-Constants at a certain temperature T\-\_\-ref.
+
+Command line parameters\-: \begin{DoxyVerb}\e --tref \<T_ref\> -\> define one fixed reference temperature for all channels \n
+\end{DoxyVerb}
+ \par
+ {\itshape --values} -\/$>$ define Linear\-Fit\-Constant input\par
+ {\itshape --slopes} -\/$>$ define input for Linear\-Fit\-Slopes\par
+ {\itshape --fref} -\/$>$ define input for channelwise reference temperature \par
+\par
+ {\itshape --txt} $<$inputfile.\-txt$>$ -\/$>$ define .txt file as source (format\-: module/chip/channel/value/error...)\par
+ {\itshape --slcio} $<$inputfile.\-slcio$>$ $<$collection$>$ -\/$>$ define collection from .slcio file as source\par
+ {\itshape --db} $<$D\-Bfolder$>$ $<$time$>$ -\/$>$ define database folder at time $<$time$>$ as source, using no tag\par
+ {\itshape --db\-\_\-tag} $<$D\-Bfolder$>$ $<$time$>$ $<$tag$>$ -\/$>$ define database folder at time $<$time$>$ and tag $<$tag$>$ as source\par
+
+
+Definition in file {\bf Shift\-Linear\-Fit\-Constants.\-hh}.
+

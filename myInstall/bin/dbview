@@ -1,0 +1,48 @@
+#!/bin/bash
+
+source /cvmfs/ilc.desy.de/sw/x86_64_gcc49_sl6/v02-00-01/init_ilcsoft.sh
+
+#############################################################################
+#
+#   DBVIEW -- simple installation and run script for conddbview
+#
+#   author: Niels.Meyer@desy.de
+#   date:   March 2008
+#
+#############################################################################
+
+PATH=`dirname $0`:$PATH
+
+if [ "$1" == "--help" ] || [ "$1" == "-h" ] || [ "$1" == "-?" ] || [ "$1" == "" ] ; then
+    echo
+    echo "dbview - simple installation and run script for conddbview"
+    echo
+    echo "usage: $0 <option>"
+    echo
+    echo "possible options (exclusive):"
+    echo " --help, -h, -?   print this message"
+    echo " --view, -v       start viewer (read-only)"
+    echo
+    echo "for admin mode set export DBInit to an init string with admin rights"
+    echo "for displaying /test_user folder set export DBTestFld=/test_user"
+    exit 0
+fi
+
+if [ $1 == "--view" ] || [ $1 == "-v" ] ; then
+
+    if [ "${DBInit}" == "" ]; then
+        export DBInit="flccaldb02.desy.de:calice:caliceon:Delice.1:3306"
+    fi
+#
+# By default only display the official folders
+# no test folders to be displayed
+#
+    if [ "${DBTestFld}" == "" ]; then
+        export DBTestFld="cd_calice_Ahc2"
+    fi
+    tcl/conddbview.tcl
+    exit 0
+fi
+
+echo "Unknown option $1"
+exit 1

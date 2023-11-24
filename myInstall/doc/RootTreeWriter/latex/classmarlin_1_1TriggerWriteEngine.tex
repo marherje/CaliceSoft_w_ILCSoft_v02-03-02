@@ -1,0 +1,149 @@
+\section{marlin\-:\-:Trigger\-Write\-Engine Class Reference}
+\label{classmarlin_1_1TriggerWriteEngine}\index{marlin\-::\-Trigger\-Write\-Engine@{marlin\-::\-Trigger\-Write\-Engine}}
+
+
+Inheritance diagram for marlin\-:\-:Trigger\-Write\-Engine\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=190pt]{classmarlin_1_1TriggerWriteEngine__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for marlin\-:\-:Trigger\-Write\-Engine\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=342pt]{classmarlin_1_1TriggerWriteEngine__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+struct {\bf Trig\-Bits\-\_\-t}
+\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+{\bfseries Trigger\-Write\-Engine} ({\bf Root\-Tree\-Writer} $\ast$host)\label{classmarlin_1_1TriggerWriteEngine_ab394a14b4af1c33b81de34a778caf206}
+
+\item 
+virtual const std\-::string \& {\bf get\-Engine\-Name} ()
+\item 
+virtual void {\bf register\-Parameters} ()
+\item 
+virtual void {\bf register\-Branches} (T\-Tree $\ast$)
+\item 
+virtual void {\bf fill\-Variables} (E\-V\-E\-N\-T\-::\-L\-C\-Event $\ast$)
+\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+struct \\*
+{\bf marlin\-::\-Trigger\-Write\-Engine\-::\-Trig\-Bits\-\_\-t} {\bfseries \-\_\-trig\-Bits}\label{classmarlin_1_1TriggerWriteEngine_a44589cff8ff3238b168163903c09deed}
+
+\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Detailed Description}
+
+
+Definition at line 18 of file Trigger\-Write\-Engine.\-hh.
+
+
+
+\subsection{Member Function Documentation}
+\index{marlin\-::\-Trigger\-Write\-Engine@{marlin\-::\-Trigger\-Write\-Engine}!fill\-Variables@{fill\-Variables}}
+\index{fill\-Variables@{fill\-Variables}!marlin::TriggerWriteEngine@{marlin\-::\-Trigger\-Write\-Engine}}
+\subsubsection[{fill\-Variables}]{\setlength{\rightskip}{0pt plus 5cm}void marlin\-::\-Trigger\-Write\-Engine\-::fill\-Variables (
+\begin{DoxyParamCaption}
+\item[{E\-V\-E\-N\-T\-::\-L\-C\-Event $\ast$}]{evt}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}\label{classmarlin_1_1TriggerWriteEngine_a6b1216c91a9acbd4f4e09b7d45f3c8f7}
+Implement this to extract the variables which you want to fill into the {\itshape R\-O\-O\-T} tree from the event. Write the value of the variables you want to add to the tree to the member variables, which you registered to the {\itshape R\-O\-O\-T} tree. The \doxyref{Root\-Tree\-Writer}{p.}{classmarlin_1_1RootTreeWriter} will call T\-Tree\-::\-Fill() for you. 
+\begin{DoxyParams}{Parameters}
+{\em evt} & the current event \\
+\hline
+\end{DoxyParams}
+\begin{DoxyRefDesc}{Todo}
+\item[{\bf Todo}]fixme\-: check whether tigger paramter is attached to the event. \end{DoxyRefDesc}
+
+
+Implements {\bf marlin\-::\-Root\-Write\-Engine} \doxyref{}{p.}{classmarlin_1_1RootWriteEngine_ace823bd839cee7e8c8755e60c4cc7134}.
+
+
+
+Definition at line 72 of file Trigger\-Write\-Engine.\-cc.
+
+\index{marlin\-::\-Trigger\-Write\-Engine@{marlin\-::\-Trigger\-Write\-Engine}!get\-Engine\-Name@{get\-Engine\-Name}}
+\index{get\-Engine\-Name@{get\-Engine\-Name}!marlin::TriggerWriteEngine@{marlin\-::\-Trigger\-Write\-Engine}}
+\subsubsection[{get\-Engine\-Name}]{\setlength{\rightskip}{0pt plus 5cm}virtual const std\-::string\& marlin\-::\-Trigger\-Write\-Engine\-::get\-Engine\-Name (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}\label{classmarlin_1_1TriggerWriteEngine_a6401f2bbd2a05725c55c851a0e4fcf39}
+Returns the name of the engine to the \doxyref{Root\-Tree\-Writer}{p.}{classmarlin_1_1RootTreeWriter} processor. \begin{DoxyReturn}{Returns}
+Must return a string with the engine name. 
+\end{DoxyReturn}
+\begin{DoxyRefDesc}{Todo}
+\item[{\bf Todo}]fixme\-: should be const, but must be declared const in implementations too. Need to fix all existing engines?!? \end{DoxyRefDesc}
+
+
+Implements {\bf marlin\-::\-Root\-Write\-Engine} \doxyref{}{p.}{classmarlin_1_1RootWriteEngine_a31e38120fe60efcb15666fd569ba5862}.
+
+
+
+Definition at line 25 of file Trigger\-Write\-Engine.\-hh.
+
+\index{marlin\-::\-Trigger\-Write\-Engine@{marlin\-::\-Trigger\-Write\-Engine}!register\-Branches@{register\-Branches}}
+\index{register\-Branches@{register\-Branches}!marlin::TriggerWriteEngine@{marlin\-::\-Trigger\-Write\-Engine}}
+\subsubsection[{register\-Branches}]{\setlength{\rightskip}{0pt plus 5cm}void marlin\-::\-Trigger\-Write\-Engine\-::register\-Branches (
+\begin{DoxyParamCaption}
+\item[{T\-Tree $\ast$}]{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}\label{classmarlin_1_1TriggerWriteEngine_aa83e89d82bb8bc208b02d12d227e2bcb}
+\begin{DoxyVerb}Implement to register local variables to the output tree
+\param pointer to the \a ROOT tree, which the RootTreeWriter processor fills at the
+end of each event.
+Usually the implementation looks like@verbatim 
+\end{DoxyVerb}
+ /// host\-Tree-\/$>$Branch(\char`\"{}variable\char`\"{},\&\-\_\-variable\char`\"{} ,\char`\"{}variable/\-F" ); /// . But you can add any type of branch you like. 
+
+Implements {\bf marlin\-::\-Root\-Write\-Engine} \doxyref{}{p.}{classmarlin_1_1RootWriteEngine_ad467dc6e73fdd9fd4311f7277fd02a89}.
+
+
+
+Definition at line 46 of file Trigger\-Write\-Engine.\-cc.
+
+\index{marlin\-::\-Trigger\-Write\-Engine@{marlin\-::\-Trigger\-Write\-Engine}!register\-Parameters@{register\-Parameters}}
+\index{register\-Parameters@{register\-Parameters}!marlin::TriggerWriteEngine@{marlin\-::\-Trigger\-Write\-Engine}}
+\subsubsection[{register\-Parameters}]{\setlength{\rightskip}{0pt plus 5cm}void marlin\-::\-Trigger\-Write\-Engine\-::register\-Parameters (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}\label{classmarlin_1_1TriggerWriteEngine_ae39e2db93985319eb4e8db5c1f6946b1}
+\begin{DoxyVerb}Used to register steering parameters.
+Implement to register \a marlin steering file parameters. Use \a marlin syntax
+to register parameters for the calling RootTreeWriter processor. 
+
+use@verbatim 
+\end{DoxyVerb}
+ /// \-\_\-host\-Proc.\-relay\-Register\-Processor\-Parameter(...) /// \-\_\-host\-Proc.\-relay\-Register...() ///  instead of {\itshape marlin} processors\begin{DoxyVerb}register...() \end{DoxyVerb}
+ methods 
+
+Implements {\bf marlin\-::\-Root\-Write\-Engine} \doxyref{}{p.}{classmarlin_1_1RootWriteEngine_ae12b70923768043fa5c1438f078c41d3}.
+
+
+
+Definition at line 21 of file Trigger\-Write\-Engine.\-cc.
+
+
+
+The documentation for this class was generated from the following files\-:\begin{DoxyCompactItemize}
+\item 
+Trigger\-Write\-Engine.\-hh\item 
+Trigger\-Write\-Engine.\-cc\end{DoxyCompactItemize}

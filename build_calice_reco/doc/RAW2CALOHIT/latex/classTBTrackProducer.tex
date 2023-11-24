@@ -1,0 +1,49 @@
+\section{T\-B\-Track\-Producer Class Reference}
+\label{classTBTrackProducer}\index{T\-B\-Track\-Producer@{T\-B\-Track\-Producer}}
+Inheritance diagram for T\-B\-Track\-Producer\-:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=3.000000cm]{classTBTrackProducer}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+virtual marlin\-::\-Processor $\ast$ {\bfseries new\-Processor} ()\label{classTBTrackProducer_a5159c5af2b5661e0e0a7bfc7591217a9}
+
+\item 
+virtual void {\bf Init} ()\label{classTBTrackProducer_a261213eb92718b68b315253b056be414}
+
+\begin{DoxyCompactList}\small\item\em Called at the begin of the job before anything is read. \end{DoxyCompactList}\item 
+virtual void {\bf Process\-Run\-Header} (L\-C\-Run\-Header $\ast$run)\label{classTBTrackProducer_ac8c608a27e729c78ced0ec8b1969ca24}
+
+\begin{DoxyCompactList}\small\item\em Called for every run. \end{DoxyCompactList}\item 
+virtual void {\bf Process\-Event} (L\-C\-Event $\ast$evt)\label{classTBTrackProducer_a4aabdb65ff27029731aa3ce567ed528c}
+
+\begin{DoxyCompactList}\small\item\em Called for every event -\/ the working horse. \end{DoxyCompactList}\item 
+virtual void {\bf End} ()\label{classTBTrackProducer_a0294d07e812929d30d0797a15de7958b}
+
+\begin{DoxyCompactList}\small\item\em Called after data processing for clean up. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+{\bf T\-B\-Track\-::\-Track\-Finder} {\bfseries \-\_\-finder}\label{classTBTrackProducer_af6ef70618261f9e609a35018aba95110}
+
+\item 
+std\-::string {\bf \-\_\-\-T\-D\-C\-Hit\-Col\-Name}\label{classTBTrackProducer_aaa9b990c825fb14a9b0a16254dc65cea}
+
+\begin{DoxyCompactList}\small\item\em name of the Track output collection \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Detailed Description}
+
+
+Definition at line 13 of file T\-B\-Track\-Producer.\-hh.
+
+
+
+The documentation for this class was generated from the following files\-:\begin{DoxyCompactItemize}
+\item 
+T\-B\-Track\-Producer.\-hh\item 
+T\-B\-Track\-Producer.\-cc\end{DoxyCompactItemize}

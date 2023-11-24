@@ -1,0 +1,56 @@
+\section{H\-Cal\-Tracking\-N\-N\-Processor\-:\-:H\-Cal\-Tracked\-Hit Class Reference}
+\label{classHCalTrackingNNProcessor_1_1HCalTrackedHit}\index{H\-Cal\-Tracking\-N\-N\-Processor\-::\-H\-Cal\-Tracked\-Hit@{H\-Cal\-Tracking\-N\-N\-Processor\-::\-H\-Cal\-Tracked\-Hit}}
+
+
+{\ttfamily \#include $<$Hcal\-Tracking\-N\-N.\-hh$>$}
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+{\bfseries H\-Cal\-Tracked\-Hit} (E\-V\-E\-N\-T\-::\-Calorimeter\-Hit $\ast$h)\label{classHCalTrackingNNProcessor_1_1HCalTrackedHit_afb2399747fbd27bdb23cd2f7cca9693a}
+
+\item 
+E\-V\-E\-N\-T\-::\-Calorimeter\-Hit $\ast$ {\bfseries get\-Hit} ()\label{classHCalTrackingNNProcessor_1_1HCalTrackedHit_ac05da13ef1a516b815bd06597c640cae}
+
+\item 
+void {\bfseries add\-Neighbour} ({\bf H\-Cal\-Tracked\-Hit} $\ast$h)\label{classHCalTrackingNNProcessor_1_1HCalTrackedHit_a797b4a358484166656c9eb85d5bee3de}
+
+\item 
+const std\-::list$<$ {\bf H\-Cal\-Tracked\-Hit} $\ast$ $>$ {\bfseries get\-Neighbours} ()\label{classHCalTrackingNNProcessor_1_1HCalTrackedHit_a8e78d13b8ecf48433ca0a9d96d4f5bb1}
+
+\item 
+const unsigned {\bfseries get\-K} ()\label{classHCalTrackingNNProcessor_1_1HCalTrackedHit_ad873e2e7992a314249ae6ea3bba4b1f4}
+
+\item 
+const bool {\bfseries is\-Isolated} ()\label{classHCalTrackingNNProcessor_1_1HCalTrackedHit_a9988328d20aa514fc0d8bac745d9078f}
+
+\item 
+void {\bfseries set\-Track} (E\-V\-E\-N\-T\-::\-Cluster $\ast$track)\label{classHCalTrackingNNProcessor_1_1HCalTrackedHit_a4954bee012a96567e9e3d7d3dfc01ddb}
+
+\item 
+const bool {\bfseries has\-Track} ()\label{classHCalTrackingNNProcessor_1_1HCalTrackedHit_aa2a18fd5aaa2fb7aefa14b94807efff3}
+
+\item 
+const E\-V\-E\-N\-T\-::\-Cluster $\ast$ {\bfseries get\-Track} ()\label{classHCalTrackingNNProcessor_1_1HCalTrackedHit_a9d088a7c2bcf5ad3aeeeed748568c210}
+
+\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+E\-V\-E\-N\-T\-::\-Calorimeter\-Hit $\ast$ {\bfseries \-\_\-hit}\label{classHCalTrackingNNProcessor_1_1HCalTrackedHit_a256ad292c6ca6640e1930a9150811068}
+
+\item 
+std\-::list$<$ {\bf H\-Cal\-Tracked\-Hit} $\ast$ $>$ {\bfseries \-\_\-neighbours}\label{classHCalTrackingNNProcessor_1_1HCalTrackedHit_ae82af8afc010694eed261e0fbf0bebc1}
+
+\item 
+E\-V\-E\-N\-T\-::\-Cluster $\ast$ {\bfseries \-\_\-track}\label{classHCalTrackingNNProcessor_1_1HCalTrackedHit_ae36cf46d6ede64087b3f83da3bd97c88}
+
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Wrapper around the actual Calorimeter\-Hit, s.\-t. we can add additional information like the neighbors 
+
+The documentation for this class was generated from the following file\-:\begin{DoxyCompactItemize}
+\item 
+/nfs/dust/ilc/user/marquezh/\-Calice\-Soft\-\_\-w\-\_\-\-I\-L\-C\-Soft\-\_\-v02-\/03-\/02/calice\-\_\-analysis/addon\-Procs/include/Hcal\-Tracking\-N\-N.\-hh\end{DoxyCompactItemize}

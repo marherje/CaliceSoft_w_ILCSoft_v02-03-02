@@ -1,0 +1,45 @@
+\section{/nfs/dust/ilc/user/marquezh/\-Calice\-Soft\-\_\-w\-\_\-\-I\-L\-C\-Soft\-\_\-v02-\/03-\/02/calice\-\_\-db\-\_\-tools/src/hti2sipm.cc File Reference}
+\label{hti2sipm_8cc}\index{/nfs/dust/ilc/user/marquezh/\-Calice\-Soft\-\_\-w\-\_\-\-I\-L\-C\-Soft\-\_\-v02-\/03-\/02/calice\-\_\-db\-\_\-tools/src/hti2sipm.\-cc@{/nfs/dust/ilc/user/marquezh/\-Calice\-Soft\-\_\-w\-\_\-\-I\-L\-C\-Soft\-\_\-v02-\/03-\/02/calice\-\_\-db\-\_\-tools/src/hti2sipm.\-cc}}
+{\ttfamily \#include \char`\"{}Calice\-Time.\-hh\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}Calice\-D\-B\-Init\-Helper.\-hh\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}Tiles\-Production.\-hh\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}Hcal\-Tile\-Index.\-hh\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}lccd/\-D\-B\-Interface.\-hh\char`\"{}}\\*
+{\ttfamily \#include $<$iostream$>$}\\*
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+int {\bfseries main} (int argc, char $\ast$$\ast$argv)\label{hti2sipm_8cc_a3c04138a5bfe5d72780bb7e82a18e627}
+
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+This tool returns the Si\-P\-M number for a given channel (identified by Hcal\-Tile\-Index or module/chip/channel).
+
+Usage\-:
+
+
+\begin{DoxyCode}
+hti2sipm <hti> [<time>]
+hti2sipm <mod> <chip> <chan> [<time>]
+\end{DoxyCode}
+
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em $<$hti$>$} & Hcal\-Tile\-Index \\
+\hline
+\mbox{\tt in}  & {\em $<$mod$>$} & module \\
+\hline
+\mbox{\tt in}  & {\em $<$chip$>$} & chip \\
+\hline
+\mbox{\tt in}  & {\em $<$chan$>$} & channel \\
+\hline
+\mbox{\tt in}  & {\em $<$time$>$} & can be time string or run number, default is 2007-\/07-\/01\-\_\-00\-:00\-:00 \\
+\hline
+\end{DoxyParams}
+
+
+Definition in file {\bf hti2sipm.\-cc}.
+

@@ -1,0 +1,198 @@
+\section{C\-A\-L\-I\-C\-E\-:\-:Mapper Class Reference}
+\label{classCALICE_1_1Mapper}\index{C\-A\-L\-I\-C\-E\-::\-Mapper@{C\-A\-L\-I\-C\-E\-::\-Mapper}}
+
+
+Mapping for \doxyref{C\-A\-L\-I\-C\-E}{p.}{namespaceCALICE} detectors (currently\-: H\-C\-A\-L support only)  
+
+
+
+
+{\ttfamily \#include $<$Mapper.\-hh$>$}
+
+Inheritance diagram for C\-A\-L\-I\-C\-E\-:\-:Mapper\-:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classCALICE_1_1Mapper}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+{\bf Mapper} ()\label{classCALICE_1_1Mapper_a4ba6fed133ff6a41f0faf11c9417309f}
+
+\begin{DoxyCompactList}\small\item\em constructor (default encoding strings) \end{DoxyCompactList}\item 
+{\bf Mapper} (const std\-::string \&cell\-I\-Dencoding, const std\-::string \&module\-Encoding, const std\-::string \&D\-A\-Qencoding)
+\begin{DoxyCompactList}\small\item\em constructor that takes encoding strings \end{DoxyCompactList}\item 
+{\bf Decoder\-Set} $\ast$ {\bf get\-Decoder} () const 
+\begin{DoxyCompactList}\small\item\em get class which handles the bit en/decoding of the different I\-Ds \end{DoxyCompactList}\item 
+virtual unsigned int {\bf get\-Module\-From\-Cell\-I\-D} (const int cell\-I\-D) const =0
+\begin{DoxyCompactList}\small\item\em get module (number) in which this cell is included from (Mokka) cell\-I\-D \end{DoxyCompactList}\item 
+virtual unsigned int {\bf get\-Module\-From\-D\-A\-Q\-I\-D} (const int D\-A\-Qchannel) const =0
+\begin{DoxyCompactList}\small\item\em get module (number) in which this (D\-A\-Q) channel is included \end{DoxyCompactList}\item 
+virtual unsigned int {\bf get\-Module\-From\-Cell\-I\-D} (const int cell\-I\-D, bool \&valid) const =0
+\begin{DoxyCompactList}\small\item\em get module (number) in which this cell is included from (Mokka) cell\-I\-D \end{DoxyCompactList}\item 
+virtual unsigned int {\bf get\-Module\-From\-D\-A\-Q\-I\-D} (const int D\-A\-Qchannel, bool \&valid) const =0
+\begin{DoxyCompactList}\small\item\em get module (number) in which this (D\-A\-Q) channel is included \end{DoxyCompactList}\item 
+virtual unsigned int {\bf get\-Module\-From\-Module\-I\-D} (const int module\-I\-D, bool \&valid) const =0
+\begin{DoxyCompactList}\small\item\em get module (number) from this (module) channel I\-D \end{DoxyCompactList}\item 
+virtual unsigned int {\bf get\-I\-Size\-From\-Cell\-I\-D} (const int cell\-I\-D) const =0
+\begin{DoxyCompactList}\small\item\em get cell size in I direction of (Mokka) Cell\-I\-D coordinate \end{DoxyCompactList}\item 
+virtual unsigned int {\bf get\-J\-Size\-From\-Cell\-I\-D} (const int cell\-I\-D) const =0
+\begin{DoxyCompactList}\small\item\em get cell size in J direction of (Mokka) Cell\-I\-D coordinate \end{DoxyCompactList}\item 
+virtual int {\bf get\-True\-Cell\-I\-D} (const int virtual\-Cell\-Index) const =0
+\begin{DoxyCompactList}\small\item\em return identifying index of cell \end{DoxyCompactList}\item 
+{\bf Cell\-Iterator} {\bf begin} () const 
+\begin{DoxyCompactList}\small\item\em get an iterator to the first (Mokka) cell I\-D \end{DoxyCompactList}\item 
+{\bf Cell\-Iterator} {\bf end} () const 
+\begin{DoxyCompactList}\small\item\em get an iterator one after the last (Mokka) cell I\-D \end{DoxyCompactList}\item 
+unsigned int {\bf get\-Version} () const 
+\end{DoxyCompactItemize}
+\subsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void {\bf mapping\-Modified} ()\label{classCALICE_1_1Mapper_a79b01e5b51d0c1cdf5d2eb4605eed916}
+
+\begin{DoxyCompactList}\small\item\em If this function is called the version will be increased to indicate a change in the mapping. \end{DoxyCompactList}\item 
+virtual unsigned int {\bf get\-Index\-By\-Cell\-I\-D} (const int cell\-I\-D) const =0
+\begin{DoxyCompactList}\small\item\em get a compact index for storing data in vectors \end{DoxyCompactList}\item 
+virtual unsigned int {\bf get\-Index\-By\-D\-A\-Q\-I\-D} (const int I\-D) const =0
+\begin{DoxyCompactList}\small\item\em get a compact index for storing data in vectors \end{DoxyCompactList}\item 
+virtual unsigned int {\bf get\-Index\-By\-Module\-I\-D} (const int I\-D) const =0
+\begin{DoxyCompactList}\small\item\em get a compact index for storing data in vectors \end{DoxyCompactList}\item 
+virtual unsigned int {\bf get\-Max\-Index} () const =0
+\begin{DoxyCompactList}\small\item\em get the maximum value of the compact index for storing data in vectors \end{DoxyCompactList}\item 
+virtual int {\bf get\-Cell\-I\-D\-Of\-Index} (unsigned int index) const =0
+\begin{DoxyCompactList}\small\item\em get the cell I\-D of a certain compact index \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+unsigned int {\bfseries \-\_\-version}\label{classCALICE_1_1Mapper_a5f295c0c602899957663bd5bc51a689d}
+
+\item 
+{\bf Decoder\-Set} $\ast$ {\bfseries \-\_\-decoder\-Set}\label{classCALICE_1_1Mapper_ac511da0c8982d94ac4d34d67daf81ba1}
+
+\end{DoxyCompactItemize}
+\subsection*{Friends}
+\begin{DoxyCompactItemize}
+\item 
+{\footnotesize template$<$class T $>$ }\\class {\bfseries Mapped\-Container}\label{classCALICE_1_1Mapper_ad4a920638be8cc9407437304b54c7a60}
+
+\item 
+class {\bfseries Cell\-Iterator}\label{classCALICE_1_1Mapper_a80561741e66173db4e12554c3740d185}
+
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Mapping for \doxyref{C\-A\-L\-I\-C\-E}{p.}{namespaceCALICE} detectors (currently\-: H\-C\-A\-L support only) 
+
+\begin{DoxyAuthor}{Author}
+{\tt Benjamin.\-Lutz@desy.\-de} 
+\end{DoxyAuthor}
+\begin{DoxyVersion}{Version}
+0.\-4 
+\end{DoxyVersion}
+\begin{DoxyDate}{Date}
+January 2010 
+\end{DoxyDate}
+
+
+Definition at line 19 of file Mapper.\-hh.
+
+
+
+\subsection{Constructor \& Destructor Documentation}
+\index{C\-A\-L\-I\-C\-E\-::\-Mapper@{C\-A\-L\-I\-C\-E\-::\-Mapper}!Mapper@{Mapper}}
+\index{Mapper@{Mapper}!CALICE::Mapper@{C\-A\-L\-I\-C\-E\-::\-Mapper}}
+\subsubsection[{Mapper}]{\setlength{\rightskip}{0pt plus 5cm}C\-A\-L\-I\-C\-E\-::\-Mapper\-::\-Mapper (
+\begin{DoxyParamCaption}
+\item[{const std\-::string \&}]{cell\-I\-Dencoding, }
+\item[{const std\-::string \&}]{module\-Encoding, }
+\item[{const std\-::string \&}]{D\-A\-Qencoding}
+\end{DoxyParamCaption}
+)}\label{classCALICE_1_1Mapper_aec489612321d2a1cd619012cc7246e21}
+
+
+constructor that takes encoding strings 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em cell\-I\-Dencoding} & encoding string for (Mokka) cell I\-Ds \\
+\hline
+\mbox{\tt in}  & {\em module\-Encoding} & encoding string for module channel I\-D \\
+\hline
+\mbox{\tt in}  & {\em D\-A\-Qencoding} & encoding string for D\-A\-Q channel I\-D \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 11 of file Mapper.\-cc.
+
+
+
+\subsection{Member Function Documentation}
+\index{C\-A\-L\-I\-C\-E\-::\-Mapper@{C\-A\-L\-I\-C\-E\-::\-Mapper}!get\-Decoder@{get\-Decoder}}
+\index{get\-Decoder@{get\-Decoder}!CALICE::Mapper@{C\-A\-L\-I\-C\-E\-::\-Mapper}}
+\subsubsection[{get\-Decoder}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Decoder\-Set}$\ast$ C\-A\-L\-I\-C\-E\-::\-Mapper\-::get\-Decoder (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}\label{classCALICE_1_1Mapper_ac5989c1b376d938897806ee197f68375}
+
+
+get class which handles the bit en/decoding of the different I\-Ds 
+
+The encoding strings can be set there. 
+
+Definition at line 45 of file Mapper.\-hh.
+
+
+
+Referenced by C\-A\-L\-I\-C\-E\-::\-Cell\-Description\-Generator\-::generate(), C\-A\-L\-I\-C\-E\-::\-Ahc\-Mapper\-::get\-Cell\-I\-D\-From\-Mod\-Chip\-Chan(), C\-A\-L\-I\-C\-E\-::\-Ahc2\-Mapper\-::get\-Cell\-I\-D\-From\-Mod\-Chip\-Chan(), C\-A\-L\-I\-C\-E\-::\-Ahc\-Mapper\-::get\-Cell\-I\-D\-Of\-Index(), C\-A\-L\-I\-C\-E\-::\-Ahc2\-Mapper\-::get\-Cell\-I\-D\-Of\-Index(), C\-A\-L\-I\-C\-E\-::\-Ahc\-Mapper\-::get\-Chan\-From\-Cell\-I\-D(), C\-A\-L\-I\-C\-E\-::\-Ahc2\-Mapper\-::get\-Chan\-From\-Cell\-I\-D(), C\-A\-L\-I\-C\-E\-::\-Ahc\-Mapper\-::get\-Chip\-From\-Cell\-I\-D(), C\-A\-L\-I\-C\-E\-::\-Ahc2\-Mapper\-::get\-Chip\-From\-Cell\-I\-D(), C\-A\-L\-I\-C\-E\-::\-Ahc\-Mapper\-::get\-Crate\-From\-Module\-I\-D(), C\-A\-L\-I\-C\-E\-::\-Ahc2\-Mapper\-::get\-Crate\-From\-Module\-I\-D(), C\-A\-L\-I\-C\-E\-::\-Mapped\-Container$<$ T $>$\-::get\-Decoder(), C\-A\-L\-I\-C\-E\-::\-Ahc\-Mapper\-::get\-Fe\-From\-Module\-I\-D(), C\-A\-L\-I\-C\-E\-::\-Ahc2\-Mapper\-::get\-Fe\-From\-Module\-I\-D(), C\-A\-L\-I\-C\-E\-::\-Ahc\-Mapper\-::get\-I\-From\-D\-A\-Q\-I\-D(), C\-A\-L\-I\-C\-E\-::\-Ahc2\-Mapper\-::get\-I\-From\-D\-A\-Q\-I\-D(), C\-A\-L\-I\-C\-E\-::\-Ahc\-Mapper\-::get\-I\-From\-Module\-I\-D(), C\-A\-L\-I\-C\-E\-::\-Ahc2\-Mapper\-::get\-I\-From\-Module\-I\-D(), C\-A\-L\-I\-C\-E\-::\-Ahc\-Mapper\-::get\-Index\-By\-Cell\-I\-D(), C\-A\-L\-I\-C\-E\-::\-Ahc2\-Mapper\-::get\-Index\-By\-Cell\-I\-D(), C\-A\-L\-I\-C\-E\-::\-Ahc\-Mapper\-::get\-Index\-By\-D\-A\-Q\-I\-D(), C\-A\-L\-I\-C\-E\-::\-Ahc2\-Mapper\-::get\-Index\-By\-D\-A\-Q\-I\-D(), C\-A\-L\-I\-C\-E\-::\-Ahc\-Mapper\-::get\-Index\-By\-Module\-I\-D(), C\-A\-L\-I\-C\-E\-::\-Ahc2\-Mapper\-::get\-Index\-By\-Module\-I\-D(), C\-A\-L\-I\-C\-E\-::\-Ahc\-Mapper\-::get\-I\-Size\-From\-Cell\-I\-D(), C\-A\-L\-I\-C\-E\-::\-Ahc2\-Mapper\-::get\-I\-Size\-From\-Cell\-I\-D(), C\-A\-L\-I\-C\-E\-::\-Ahc\-Mapper\-::get\-I\-Size\-From\-D\-A\-Q\-I\-D(), C\-A\-L\-I\-C\-E\-::\-Ahc2\-Mapper\-::get\-I\-Size\-From\-D\-A\-Q\-I\-D(), C\-A\-L\-I\-C\-E\-::\-Ahc\-Mapper\-::get\-I\-Size\-From\-Module\-I\-D(), C\-A\-L\-I\-C\-E\-::\-Ahc2\-Mapper\-::get\-I\-Size\-From\-Module\-I\-D(), C\-A\-L\-I\-C\-E\-::\-Ahc\-Mapper\-::get\-J\-From\-D\-A\-Q\-I\-D(), C\-A\-L\-I\-C\-E\-::\-Ahc2\-Mapper\-::get\-J\-From\-D\-A\-Q\-I\-D(), C\-A\-L\-I\-C\-E\-::\-Ahc\-Mapper\-::get\-J\-From\-Module\-I\-D(), C\-A\-L\-I\-C\-E\-::\-Ahc2\-Mapper\-::get\-J\-From\-Module\-I\-D(), C\-A\-L\-I\-C\-E\-::\-Ahc\-Mapper\-::get\-J\-Size\-From\-Cell\-I\-D(), C\-A\-L\-I\-C\-E\-::\-Ahc2\-Mapper\-::get\-J\-Size\-From\-Cell\-I\-D(), C\-A\-L\-I\-C\-E\-::\-Ahc\-Mapper\-::get\-J\-Size\-From\-D\-A\-Q\-I\-D(), C\-A\-L\-I\-C\-E\-::\-Ahc2\-Mapper\-::get\-J\-Size\-From\-D\-A\-Q\-I\-D(), C\-A\-L\-I\-C\-E\-::\-Ahc\-Mapper\-::get\-J\-Size\-From\-Module\-I\-D(), C\-A\-L\-I\-C\-E\-::\-Ahc2\-Mapper\-::get\-J\-Size\-From\-Module\-I\-D(), C\-A\-L\-I\-C\-E\-::\-Ahc\-Mapper\-::get\-K\-From\-Module\-I\-D(), C\-A\-L\-I\-C\-E\-::\-Ahc2\-Mapper\-::get\-K\-From\-Module\-I\-D(), C\-A\-L\-I\-C\-E\-::\-Ahc\-Mapper\-::get\-Module(), C\-A\-L\-I\-C\-E\-::\-Ahc2\-Mapper\-::get\-Module(), C\-A\-L\-I\-C\-E\-::\-Ahc\-Mapper\-::get\-Module\-From\-Cell\-I\-D(), C\-A\-L\-I\-C\-E\-::\-Ahc2\-Mapper\-::get\-Module\-From\-Cell\-I\-D(), C\-A\-L\-I\-C\-E\-::\-Ahc\-Mapper\-::get\-Module\-From\-D\-A\-Q\-I\-D(), C\-A\-L\-I\-C\-E\-::\-Ahc2\-Mapper\-::get\-Module\-From\-D\-A\-Q\-I\-D(), C\-A\-L\-I\-C\-E\-::\-Ahc\-Mapper\-::get\-Slot\-From\-Module\-I\-D(), C\-A\-L\-I\-C\-E\-::\-Ahc2\-Mapper\-::get\-Slot\-From\-Module\-I\-D(), C\-A\-L\-I\-C\-E\-::\-Ahc\-Mapper\-::get\-True\-Cell\-I\-D(), C\-A\-L\-I\-C\-E\-::\-Ahc2\-Mapper\-::get\-True\-Cell\-I\-D(), C\-A\-L\-I\-C\-E\-::\-Ahc\-Mapper\-::get\-True\-I\-From\-Cell\-I\-D(), C\-A\-L\-I\-C\-E\-::\-Ahc2\-Mapper\-::get\-True\-I\-From\-Cell\-I\-D(), C\-A\-L\-I\-C\-E\-::\-Ahc\-Mapper\-::get\-True\-J\-From\-Cell\-I\-D(), and C\-A\-L\-I\-C\-E\-::\-Ahc2\-Mapper\-::get\-True\-J\-From\-Cell\-I\-D().
+
+\index{C\-A\-L\-I\-C\-E\-::\-Mapper@{C\-A\-L\-I\-C\-E\-::\-Mapper}!get\-Max\-Index@{get\-Max\-Index}}
+\index{get\-Max\-Index@{get\-Max\-Index}!CALICE::Mapper@{C\-A\-L\-I\-C\-E\-::\-Mapper}}
+\subsubsection[{get\-Max\-Index}]{\setlength{\rightskip}{0pt plus 5cm}virtual unsigned int C\-A\-L\-I\-C\-E\-::\-Mapper\-::get\-Max\-Index (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [protected]}, {\ttfamily [pure virtual]}}\label{classCALICE_1_1Mapper_a34292aca2d87f6fc7f10094b5f7cab0e}
+
+
+get the maximum value of the compact index for storing data in vectors 
+
+\begin{DoxyReturn}{Returns}
+maximum compact index 
+\end{DoxyReturn}
+
+
+Implemented in {\bf C\-A\-L\-I\-C\-E\-::\-Ahc2\-Mapper} \doxyref{}{p.}{classCALICE_1_1Ahc2Mapper_a628441b11caa652f1d13599675b8da6d}, and {\bf C\-A\-L\-I\-C\-E\-::\-Ahc\-Mapper} \doxyref{}{p.}{classCALICE_1_1AhcMapper_a9b0644605c525dd581d8d8098764120e}.
+
+
+
+Referenced by C\-A\-L\-I\-C\-E\-::\-Mapped\-Container$<$ T $>$\-::clear(), end(), C\-A\-L\-I\-C\-E\-::\-Mapped\-Container$<$ T $>$\-::\-Mapped\-Container(), and C\-A\-L\-I\-C\-E\-::\-Cell\-Iterator\-::operator++().
+
+\index{C\-A\-L\-I\-C\-E\-::\-Mapper@{C\-A\-L\-I\-C\-E\-::\-Mapper}!get\-Version@{get\-Version}}
+\index{get\-Version@{get\-Version}!CALICE::Mapper@{C\-A\-L\-I\-C\-E\-::\-Mapper}}
+\subsubsection[{get\-Version}]{\setlength{\rightskip}{0pt plus 5cm}unsigned int C\-A\-L\-I\-C\-E\-::\-Mapper\-::get\-Version (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}\label{classCALICE_1_1Mapper_a378ddc78df439bcc38f0400ae5989d77}
+\begin{DoxyReturn}{Returns}
+a version number that increases with changes in the mapping 
+\end{DoxyReturn}
+
+
+Definition at line 187 of file Mapper.\-hh.
+
+
+
+Referenced by C\-A\-L\-I\-C\-E\-::\-Mapped\-Container$<$ T $>$\-::\-Mapped\-Container().
+
+
+
+The documentation for this class was generated from the following files\-:\begin{DoxyCompactItemize}
+\item 
+Mapper.\-hh\item 
+Mapper.\-cc\end{DoxyCompactItemize}

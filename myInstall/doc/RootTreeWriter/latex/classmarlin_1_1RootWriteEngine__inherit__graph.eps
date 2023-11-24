@@ -1,0 +1,1126 @@
+%!PS-Adobe-3.0
+%%Creator: graphviz version 2.30.1 (20201013.1554)
+%%Title: marlin::RootWriteEngine
+%%Pages: (atend)
+%%BoundingBox: (atend)
+%%EndComments
+save
+%%BeginProlog
+/DotDict 200 dict def
+DotDict begin
+
+/setupLatin1 {
+mark
+/EncodingVector 256 array def
+ EncodingVector 0
+
+ISOLatin1Encoding 0 255 getinterval putinterval
+EncodingVector 45 /hyphen put
+
+% Set up ISO Latin 1 character encoding
+/starnetISO {
+        dup dup findfont dup length dict begin
+        { 1 index /FID ne { def }{ pop pop } ifelse
+        } forall
+        /Encoding EncodingVector def
+        currentdict end definefont
+} def
+/Times-Roman starnetISO def
+/Times-Italic starnetISO def
+/Times-Bold starnetISO def
+/Times-BoldItalic starnetISO def
+/Helvetica starnetISO def
+/Helvetica-Oblique starnetISO def
+/Helvetica-Bold starnetISO def
+/Helvetica-BoldOblique starnetISO def
+/Courier starnetISO def
+/Courier-Oblique starnetISO def
+/Courier-Bold starnetISO def
+/Courier-BoldOblique starnetISO def
+cleartomark
+} bind def
+
+%%BeginResource: procset graphviz 0 0
+/coord-font-family /Times-Roman def
+/default-font-family /Times-Roman def
+/coordfont coord-font-family findfont 8 scalefont def
+
+/InvScaleFactor 1.0 def
+/set_scale {
+       dup 1 exch div /InvScaleFactor exch def
+       scale
+} bind def
+
+% styles
+/solid { [] 0 setdash } bind def
+/dashed { [9 InvScaleFactor mul dup ] 0 setdash } bind def
+/dotted { [1 InvScaleFactor mul 6 InvScaleFactor mul] 0 setdash } bind def
+/invis {/fill {newpath} def /stroke {newpath} def /show {pop newpath} def} bind def
+/bold { 2 setlinewidth } bind def
+/filled { } bind def
+/unfilled { } bind def
+/rounded { } bind def
+/diagonals { } bind def
+/tapered { } bind def
+
+% hooks for setting color 
+/nodecolor { sethsbcolor } bind def
+/edgecolor { sethsbcolor } bind def
+/graphcolor { sethsbcolor } bind def
+/nopcolor {pop pop pop} bind def
+
+/beginpage {	% i j npages
+	/npages exch def
+	/j exch def
+	/i exch def
+	/str 10 string def
+	npages 1 gt {
+		gsave
+			coordfont setfont
+			0 0 moveto
+			(\() show i str cvs show (,) show j str cvs show (\)) show
+		grestore
+	} if
+} bind def
+
+/set_font {
+	findfont exch
+	scalefont setfont
+} def
+
+% draw text fitted to its expected width
+/alignedtext {			% width text
+	/text exch def
+	/width exch def
+	gsave
+		width 0 gt {
+			[] 0 setdash
+			text stringwidth pop width exch sub text length div 0 text ashow
+		} if
+	grestore
+} def
+
+/boxprim {				% xcorner ycorner xsize ysize
+		4 2 roll
+		moveto
+		2 copy
+		exch 0 rlineto
+		0 exch rlineto
+		pop neg 0 rlineto
+		closepath
+} bind def
+
+/ellipse_path {
+	/ry exch def
+	/rx exch def
+	/y exch def
+	/x exch def
+	matrix currentmatrix
+	newpath
+	x y translate
+	rx ry scale
+	0 0 1 0 360 arc
+	setmatrix
+} bind def
+
+/endpage { showpage } bind def
+/showpage { } def
+
+/layercolorseq
+	[	% layer color sequence - darkest to lightest
+		[0 0 0]
+		[.2 .8 .8]
+		[.4 .8 .8]
+		[.6 .8 .8]
+		[.8 .8 .8]
+	]
+def
+
+/layerlen layercolorseq length def
+
+/setlayer {/maxlayer exch def /curlayer exch def
+	layercolorseq curlayer 1 sub layerlen mod get
+	aload pop sethsbcolor
+	/nodecolor {nopcolor} def
+	/edgecolor {nopcolor} def
+	/graphcolor {nopcolor} def
+} bind def
+
+/onlayer { curlayer ne {invis} if } def
+
+/onlayers {
+	/myupper exch def
+	/mylower exch def
+	curlayer mylower lt
+	curlayer myupper gt
+	or
+	{invis} if
+} def
+
+/curlayer 0 def
+
+%%EndResource
+%%EndProlog
+%%BeginSetup
+14 default-font-family set_font
+1 setmiterlimit
+% /arrowlength 10 def
+% /arrowwidth 5 def
+
+% make sure pdfmark is harmless for PS-interpreters other than Distiller
+/pdfmark where {pop} {userdict /pdfmark /cleartomark load put} ifelse
+% make '<<' and '>>' safe on PS Level 1 devices
+/languagelevel where {pop languagelevel}{1} ifelse
+2 lt {
+    userdict (<<) cvn ([) cvn load put
+    userdict (>>) cvn ([) cvn load put
+} if
+
+%%EndSetup
+setupLatin1
+%%Page: 1 1
+%%PageBoundingBox: 36 36 382 819
+%%PageOrientation: Portrait
+0 0 1 beginpage
+gsave
+36 36 346 783 boxprim clip newpath
+1 1 set_scale 0 rotate 40 41 translate
+% Node1
+gsave
+0 0 0.74902 nodecolor
+newpath 0 354.5 moveto
+0 373.5 lineto
+134 373.5 lineto
+134 354.5 lineto
+closepath fill
+1 setlinewidth
+filled
+0 0 0 nodecolor
+newpath 0 354.5 moveto
+0 373.5 lineto
+134 373.5 lineto
+134 354.5 lineto
+closepath stroke
+0 0 0 nodecolor
+10 /Helvetica set_font
+8 361.5 moveto 118 (marlin::RootWriteEngine) alignedtext
+grestore
+% Node2
+gsave
+[ /Rect [ 177 755 331 775 ]
+  /Border [ 0 0 0 ]
+  /Action << /Subtype /URI /URI ($classmarlin_1_1ASICInfoWriteEngine.html) >>
+  /Subtype /Link
+/ANN pdfmark
+0 0 1 nodecolor
+newpath 177 755.5 moveto
+177 774.5 lineto
+331 774.5 lineto
+331 755.5 lineto
+closepath fill
+1 setlinewidth
+filled
+0 0 0 nodecolor
+newpath 177 755.5 moveto
+177 774.5 lineto
+331 774.5 lineto
+331 755.5 lineto
+closepath stroke
+0 0 0 nodecolor
+10 /Helvetica set_font
+185 762.5 moveto 138 (marlin::ASICInfoWriteEngine) alignedtext
+grestore
+% Node1->Node2
+gsave
+1 setlinewidth
+solid
+0.66667 0.77647 0.43922 edgecolor
+newpath 70.62 383.83 moveto
+80.37 454.57 116.71 693.03 170 745 curveto
+174.35 749.24 179.44 752.64 184.91 755.35 curveto
+stroke
+0.66667 0.77647 0.43922 edgecolor
+newpath 74.05 383.08 moveto
+69.24 373.64 lineto
+67.12 384.02 lineto
+closepath fill
+1 setlinewidth
+solid
+0.66667 0.77647 0.43922 edgecolor
+newpath 74.05 383.08 moveto
+69.24 373.64 lineto
+67.12 384.02 lineto
+closepath stroke
+grestore
+% Node3
+gsave
+[ /Rect [ 178 705.5 330 736.5 ]
+  /Border [ 0 0 0 ]
+  /Action << /Subtype /URI /URI ($classmarlin_1_1ASimCalorimeterHitWriteEngine.html) >>
+  /Subtype /Link
+/ANN pdfmark
+0 0 1 nodecolor
+newpath 178 706 moveto
+178 736 lineto
+330 736 lineto
+330 706 lineto
+closepath fill
+1 setlinewidth
+filled
+0 0 0 nodecolor
+newpath 178 706 moveto
+178 736 lineto
+330 736 lineto
+330 706 lineto
+closepath stroke
+0 0 0 nodecolor
+10 /Helvetica set_font
+186 724 moveto 136 (marlin::ASimCalorimeterHit) alignedtext
+0 0 0 nodecolor
+10 /Helvetica set_font
+224.5 713 moveto 59 (WriteEngine) alignedtext
+grestore
+% Node1->Node3
+gsave
+1 setlinewidth
+solid
+0.66667 0.77647 0.43922 edgecolor
+newpath 68 383.63 moveto
+69.09 440.46 80.2 606.7 170 696 curveto
+173.84 699.82 178.24 703.06 182.97 705.81 curveto
+stroke
+0.66667 0.77647 0.43922 edgecolor
+newpath 71.5 383.47 moveto
+67.89 373.51 lineto
+64.5 383.54 lineto
+closepath fill
+1 setlinewidth
+solid
+0.66667 0.77647 0.43922 edgecolor
+newpath 71.5 383.47 moveto
+67.89 373.51 lineto
+64.5 383.54 lineto
+closepath stroke
+grestore
+% Node4
+gsave
+[ /Rect [ 191 667 317 687 ]
+  /Border [ 0 0 0 ]
+  /Action << /Subtype /URI /URI ($classmarlin_1_1BifWriteEngine.html) >>
+  /Subtype /Link
+/ANN pdfmark
+0 0 1 nodecolor
+newpath 191 667.5 moveto
+191 686.5 lineto
+317 686.5 lineto
+317 667.5 lineto
+closepath fill
+1 setlinewidth
+filled
+0 0 0 nodecolor
+newpath 191 667.5 moveto
+191 686.5 lineto
+317 686.5 lineto
+317 667.5 lineto
+closepath stroke
+0 0 0 nodecolor
+10 /Helvetica set_font
+199 674.5 moveto 110 (marlin::BifWriteEngine) alignedtext
+grestore
+% Node1->Node4
+gsave
+1 setlinewidth
+solid
+0.66667 0.77647 0.43922 edgecolor
+newpath 68.69 383.64 moveto
+71.64 436.36 87.26 582.04 170 657 curveto
+175.93 662.37 183.05 666.37 190.6 669.33 curveto
+stroke
+0.66667 0.77647 0.43922 edgecolor
+newpath 72.18 383.43 moveto
+68.22 373.61 lineto
+65.19 383.76 lineto
+closepath fill
+1 setlinewidth
+solid
+0.66667 0.77647 0.43922 edgecolor
+newpath 72.18 383.43 moveto
+68.22 373.61 lineto
+65.19 383.76 lineto
+closepath stroke
+grestore
+% Node5
+gsave
+[ /Rect [ 177.5 617.5 330.5 648.5 ]
+  /Border [ 0 0 0 ]
+  /Action << /Subtype /URI /URI ($classmarlin_1_1CollectionParameterWriteEngine.html) >>
+  /Subtype /Link
+/ANN pdfmark
+0 0 1 nodecolor
+newpath 177.5 618 moveto
+177.5 648 lineto
+330.5 648 lineto
+330.5 618 lineto
+closepath fill
+1 setlinewidth
+filled
+0 0 0 nodecolor
+newpath 177.5 618 moveto
+177.5 648 lineto
+330.5 648 lineto
+330.5 618 lineto
+closepath stroke
+0 0 0 nodecolor
+10 /Helvetica set_font
+185.5 636 moveto 137 (marlin::CollectionParameter) alignedtext
+0 0 0 nodecolor
+10 /Helvetica set_font
+224.5 625 moveto 59 (WriteEngine) alignedtext
+grestore
+% Node1->Node5
+gsave
+1 setlinewidth
+solid
+0.66667 0.77647 0.43922 edgecolor
+newpath 70.52 383.78 moveto
+77.46 430.01 101.16 545.93 170 608 curveto
+174.25 611.83 179.06 615.07 184.18 617.82 curveto
+stroke
+0.66667 0.77647 0.43922 edgecolor
+newpath 73.95 383.02 moveto
+69.1 373.6 lineto
+67.01 383.99 lineto
+closepath fill
+1 setlinewidth
+solid
+0.66667 0.77647 0.43922 edgecolor
+newpath 73.95 383.02 moveto
+69.1 373.6 lineto
+67.01 383.99 lineto
+closepath stroke
+grestore
+% Node6
+gsave
+[ /Rect [ 175.5 579 332.5 599 ]
+  /Border [ 0 0 0 ]
+  /Action << /Subtype /URI /URI ($classmarlin_1_1DeepAnaWriteEngine.html) >>
+  /Subtype /Link
+/ANN pdfmark
+0 0 1 nodecolor
+newpath 175.5 579.5 moveto
+175.5 598.5 lineto
+332.5 598.5 lineto
+332.5 579.5 lineto
+closepath fill
+1 setlinewidth
+filled
+0 0 0 nodecolor
+newpath 175.5 579.5 moveto
+175.5 598.5 lineto
+332.5 598.5 lineto
+332.5 579.5 lineto
+closepath stroke
+0 0 0 nodecolor
+10 /Helvetica set_font
+183.5 586.5 moveto 141 (marlin::DeepAnaWriteEngine) alignedtext
+grestore
+% Node1->Node6
+gsave
+1 setlinewidth
+solid
+0.66667 0.77647 0.43922 edgecolor
+newpath 71.87 383.33 moveto
+81.13 424.28 108.49 519.99 170 569 curveto
+175.45 573.34 181.69 576.76 188.26 579.46 curveto
+stroke
+0.66667 0.77647 0.43922 edgecolor
+newpath 75.29 382.58 moveto
+69.77 373.53 lineto
+68.45 384.04 lineto
+closepath fill
+1 setlinewidth
+solid
+0.66667 0.77647 0.43922 edgecolor
+newpath 75.29 382.58 moveto
+69.77 373.53 lineto
+68.45 384.04 lineto
+closepath stroke
+grestore
+% Node7
+gsave
+[ /Rect [ 181 529.5 327 560.5 ]
+  /Border [ 0 0 0 ]
+  /Action << /Subtype /URI /URI ($classmarlin_1_1DriftChamberWriteEngine.html) >>
+  /Subtype /Link
+/ANN pdfmark
+0 0 1 nodecolor
+newpath 181 530 moveto
+181 560 lineto
+327 560 lineto
+327 530 lineto
+closepath fill
+1 setlinewidth
+filled
+0 0 0 nodecolor
+newpath 181 530 moveto
+181 560 lineto
+327 560 lineto
+327 530 lineto
+closepath stroke
+0 0 0 nodecolor
+10 /Helvetica set_font
+189 548 moveto 130 (marlin::DriftChamberWrite) alignedtext
+0 0 0 nodecolor
+10 /Helvetica set_font
+237 537 moveto 34 (Engine) alignedtext
+grestore
+% Node1->Node7
+gsave
+1 setlinewidth
+solid
+0.66667 0.77647 0.43922 edgecolor
+newpath 75.33 383.15 moveto
+88.91 416.09 121.13 483.45 170 520 curveto
+175.18 523.88 180.97 527.15 187 529.93 curveto
+stroke
+0.66667 0.77647 0.43922 edgecolor
+newpath 78.53 381.74 moveto
+71.58 373.75 lineto
+72.03 384.33 lineto
+closepath fill
+1 setlinewidth
+solid
+0.66667 0.77647 0.43922 edgecolor
+newpath 78.53 381.74 moveto
+71.58 373.75 lineto
+72.03 384.33 lineto
+closepath stroke
+grestore
+% Node8
+gsave
+[ /Rect [ 187 491 321 511 ]
+  /Border [ 0 0 0 ]
+  /Action << /Subtype /URI /URI ($classmarlin_1_1DwcWriteEngine.html) >>
+  /Subtype /Link
+/ANN pdfmark
+0 0 1 nodecolor
+newpath 187 491.5 moveto
+187 510.5 lineto
+321 510.5 lineto
+321 491.5 lineto
+closepath fill
+1 setlinewidth
+filled
+0 0 0 nodecolor
+newpath 187 491.5 moveto
+187 510.5 lineto
+321 510.5 lineto
+321 491.5 lineto
+closepath stroke
+0 0 0 nodecolor
+10 /Helvetica set_font
+195 498.5 moveto 118 (marlin::DwcWriteEngine) alignedtext
+grestore
+% Node1->Node8
+gsave
+1 setlinewidth
+solid
+0.66667 0.77647 0.43922 edgecolor
+newpath 78.69 382.2 moveto
+94.98 408.27 128.55 455.86 170 481 curveto
+177.22 485.38 185.35 488.8 193.61 491.47 curveto
+stroke
+0.66667 0.77647 0.43922 edgecolor
+newpath 81.68 380.38 moveto
+73.49 373.65 lineto
+75.7 384.02 lineto
+closepath fill
+1 setlinewidth
+solid
+0.66667 0.77647 0.43922 edgecolor
+newpath 81.68 380.38 moveto
+73.49 373.65 lineto
+75.7 384.02 lineto
+closepath stroke
+grestore
+% Node9
+gsave
+[ /Rect [ 175 441.5 333 472.5 ]
+  /Border [ 0 0 0 ]
+  /Action << /Subtype /URI /URI ($classmarlin_1_1EventParameterWriteEngine.html) >>
+  /Subtype /Link
+/ANN pdfmark
+0 0 1 nodecolor
+newpath 175 442 moveto
+175 472 lineto
+333 472 lineto
+333 442 lineto
+closepath fill
+1 setlinewidth
+filled
+0 0 0 nodecolor
+newpath 175 442 moveto
+175 472 lineto
+333 472 lineto
+333 442 lineto
+closepath stroke
+0 0 0 nodecolor
+10 /Helvetica set_font
+183 460 moveto 142 (marlin::EventParameterWrite) alignedtext
+0 0 0 nodecolor
+10 /Helvetica set_font
+237 449 moveto 34 (Engine) alignedtext
+grestore
+% Node1->Node9
+gsave
+1 setlinewidth
+solid
+0.66667 0.77647 0.43922 edgecolor
+newpath 87.82 379.81 moveto
+107.64 394.97 139.48 417.62 170 432 curveto
+177.9 435.72 186.47 439.04 195.02 441.94 curveto
+stroke
+0.66667 0.77647 0.43922 edgecolor
+newpath 89.9 376.99 moveto
+79.86 373.62 lineto
+85.61 382.52 lineto
+closepath fill
+1 setlinewidth
+solid
+0.66667 0.77647 0.43922 edgecolor
+newpath 89.9 376.99 moveto
+79.86 373.62 lineto
+85.61 382.52 lineto
+closepath stroke
+grestore
+% Node10
+gsave
+[ /Rect [ 175.5 392.5 332.5 423.5 ]
+  /Border [ 0 0 0 ]
+  /Action << /Subtype /URI /URI ($classmarlin_1_1EventPropertiesWriteEngine.html) >>
+  /Subtype /Link
+/ANN pdfmark
+0 0 1 nodecolor
+newpath 175.5 393 moveto
+175.5 423 lineto
+332.5 423 lineto
+332.5 393 lineto
+closepath fill
+1 setlinewidth
+filled
+0 0 0 nodecolor
+newpath 175.5 393 moveto
+175.5 423 lineto
+332.5 423 lineto
+332.5 393 lineto
+closepath stroke
+0 0 0 nodecolor
+10 /Helvetica set_font
+183.5 411 moveto 141 (marlin::EventPropertiesWrite) alignedtext
+0 0 0 nodecolor
+10 /Helvetica set_font
+237 400 moveto 34 (Engine) alignedtext
+grestore
+% Node1->Node10
+gsave
+1 setlinewidth
+solid
+0.66667 0.77647 0.43922 edgecolor
+newpath 117.97 375.88 moveto
+140.04 381.13 166.24 387.36 189.66 392.93 curveto
+stroke
+0.66667 0.77647 0.43922 edgecolor
+newpath 118.68 372.46 moveto
+108.14 373.55 lineto
+117.06 379.27 lineto
+closepath fill
+1 setlinewidth
+solid
+0.66667 0.77647 0.43922 edgecolor
+newpath 118.68 372.46 moveto
+108.14 373.55 lineto
+117.06 379.27 lineto
+closepath stroke
+grestore
+% Node11
+gsave
+[ /Rect [ 176.5 354 331.5 374 ]
+  /Border [ 0 0 0 ]
+  /Action << /Subtype /URI /URI ($classmarlin_1_1HcalTrackLarsEngine.html) >>
+  /Subtype /Link
+/ANN pdfmark
+0 0 1 nodecolor
+newpath 176.5 354.5 moveto
+176.5 373.5 lineto
+331.5 373.5 lineto
+331.5 354.5 lineto
+closepath fill
+1 setlinewidth
+filled
+0 0 0 nodecolor
+newpath 176.5 354.5 moveto
+176.5 373.5 lineto
+331.5 373.5 lineto
+331.5 354.5 lineto
+closepath stroke
+0 0 0 nodecolor
+10 /Helvetica set_font
+184.5 361.5 moveto 139 (marlin::HcalTrackLarsEngine) alignedtext
+grestore
+% Node1->Node11
+gsave
+1 setlinewidth
+solid
+0.66667 0.77647 0.43922 edgecolor
+newpath 144.09 364 moveto
+154.72 364 165.65 364 176.29 364 curveto
+stroke
+0.66667 0.77647 0.43922 edgecolor
+newpath 144.01 360.5 moveto
+134.01 364 lineto
+144.01 367.5 lineto
+closepath fill
+1 setlinewidth
+solid
+0.66667 0.77647 0.43922 edgecolor
+newpath 144.01 360.5 moveto
+134.01 364 lineto
+144.01 367.5 lineto
+closepath stroke
+grestore
+% Node12
+gsave
+[ /Rect [ 190.5 316 317.5 336 ]
+  /Border [ 0 0 0 ]
+  /Action << /Subtype /URI /URI ($classmarlin_1_1HitWriteEngine.html) >>
+  /Subtype /Link
+/ANN pdfmark
+0 0 1 nodecolor
+newpath 190.5 316.5 moveto
+190.5 335.5 lineto
+317.5 335.5 lineto
+317.5 316.5 lineto
+closepath fill
+1 setlinewidth
+filled
+0 0 0 nodecolor
+newpath 190.5 316.5 moveto
+190.5 335.5 lineto
+317.5 335.5 lineto
+317.5 316.5 lineto
+closepath stroke
+0 0 0 nodecolor
+10 /Helvetica set_font
+198.5 323.5 moveto 111 (marlin::HitWriteEngine) alignedtext
+grestore
+% Node1->Node12
+gsave
+1 setlinewidth
+solid
+0.66667 0.77647 0.43922 edgecolor
+newpath 124.52 352.39 moveto
+150.83 346.99 181.74 340.64 206.65 335.52 curveto
+stroke
+0.66667 0.77647 0.43922 edgecolor
+newpath 123.77 348.97 moveto
+114.68 354.41 lineto
+125.18 355.83 lineto
+closepath fill
+1 setlinewidth
+solid
+0.66667 0.77647 0.43922 edgecolor
+newpath 123.77 348.97 moveto
+114.68 354.41 lineto
+125.18 355.83 lineto
+closepath stroke
+grestore
+% Node13
+gsave
+[ /Rect [ 170.5 278 337.5 298 ]
+  /Border [ 0 0 0 ]
+  /Action << /Subtype /URI /URI ($classmarlin_1_1HodoscopeWriteEngine.html) >>
+  /Subtype /Link
+/ANN pdfmark
+0 0 1 nodecolor
+newpath 170.5 278.5 moveto
+170.5 297.5 lineto
+337.5 297.5 lineto
+337.5 278.5 lineto
+closepath fill
+1 setlinewidth
+filled
+0 0 0 nodecolor
+newpath 170.5 278.5 moveto
+170.5 297.5 lineto
+337.5 297.5 lineto
+337.5 278.5 lineto
+closepath stroke
+0 0 0 nodecolor
+10 /Helvetica set_font
+178.5 285.5 moveto 151 (marlin::HodoscopeWriteEngine) alignedtext
+grestore
+% Node1->Node13
+gsave
+1 setlinewidth
+solid
+0.66667 0.77647 0.43922 edgecolor
+newpath 90.67 348.84 moveto
+110.76 336.03 141.27 318.06 170 307 curveto
+179.8 303.23 190.54 300.09 200.96 297.52 curveto
+stroke
+0.66667 0.77647 0.43922 edgecolor
+newpath 88.71 345.94 moveto
+82.22 354.32 lineto
+92.52 351.82 lineto
+closepath fill
+1 setlinewidth
+solid
+0.66667 0.77647 0.43922 edgecolor
+newpath 88.71 345.94 moveto
+82.22 354.32 lineto
+92.52 351.82 lineto
+closepath stroke
+grestore
+% Node14
+gsave
+[ /Rect [ 189 240 319 260 ]
+  /Border [ 0 0 0 ]
+  /Action << /Subtype /URI /URI ($classmarlin_1_1LdaWriteEngine.html) >>
+  /Subtype /Link
+/ANN pdfmark
+0 0 1 nodecolor
+newpath 189 240.5 moveto
+189 259.5 lineto
+319 259.5 lineto
+319 240.5 lineto
+closepath fill
+1 setlinewidth
+filled
+0 0 0 nodecolor
+newpath 189 240.5 moveto
+189 259.5 lineto
+319 259.5 lineto
+319 240.5 lineto
+closepath stroke
+0 0 0 nodecolor
+10 /Helvetica set_font
+197 247.5 moveto 114 (marlin::LdaWriteEngine) alignedtext
+grestore
+% Node1->Node14
+gsave
+1 setlinewidth
+solid
+0.66667 0.77647 0.43922 edgecolor
+newpath 81.78 346.42 moveto
+99.72 324.79 133.17 288.53 170 269 curveto
+177.31 265.12 185.4 262.03 193.57 259.57 curveto
+stroke
+0.66667 0.77647 0.43922 edgecolor
+newpath 78.85 344.48 moveto
+75.28 354.45 lineto
+84.29 348.88 lineto
+closepath fill
+1 setlinewidth
+solid
+0.66667 0.77647 0.43922 edgecolor
+newpath 78.85 344.48 moveto
+75.28 354.45 lineto
+84.29 348.88 lineto
+closepath stroke
+grestore
+% Node15
+gsave
+[ /Rect [ 172 202 336 222 ]
+  /Border [ 0 0 0 ]
+  /Action << /Subtype /URI /URI ($classmarlin_1_1MCParticleWriteEngine.html) >>
+  /Subtype /Link
+/ANN pdfmark
+0 0 1 nodecolor
+newpath 172 202.5 moveto
+172 221.5 lineto
+336 221.5 lineto
+336 202.5 lineto
+closepath fill
+1 setlinewidth
+filled
+0 0 0 nodecolor
+newpath 172 202.5 moveto
+172 221.5 lineto
+336 221.5 lineto
+336 202.5 lineto
+closepath stroke
+0 0 0 nodecolor
+10 /Helvetica set_font
+180 209.5 moveto 148 (marlin::MCParticleWriteEngine) alignedtext
+grestore
+% Node1->Node15
+gsave
+1 setlinewidth
+solid
+0.66667 0.77647 0.43922 edgecolor
+newpath 76.91 345.35 moveto
+91.87 316.15 124.88 259.97 170 231 curveto
+176.1 227.09 182.9 223.97 189.91 221.5 curveto
+stroke
+0.66667 0.77647 0.43922 edgecolor
+newpath 73.69 343.95 moveto
+72.38 354.47 lineto
+79.96 347.07 lineto
+closepath fill
+1 setlinewidth
+solid
+0.66667 0.77647 0.43922 edgecolor
+newpath 73.69 343.95 moveto
+72.38 354.47 lineto
+79.96 347.07 lineto
+closepath stroke
+grestore
+% Node16
+gsave
+[ /Rect [ 187 164 321 184 ]
+  /Border [ 0 0 0 ]
+  /Action << /Subtype /URI /URI ($classmarlin_1_1ROCWriteEngine.html) >>
+  /Subtype /Link
+/ANN pdfmark
+0 0 1 nodecolor
+newpath 187 164.5 moveto
+187 183.5 lineto
+321 183.5 lineto
+321 164.5 lineto
+closepath fill
+1 setlinewidth
+filled
+0 0 0 nodecolor
+newpath 187 164.5 moveto
+187 183.5 lineto
+321 183.5 lineto
+321 164.5 lineto
+closepath stroke
+0 0 0 nodecolor
+10 /Helvetica set_font
+195 171.5 moveto 118 (marlin::ROCWriteEngine) alignedtext
+grestore
+% Node1->Node16
+gsave
+1 setlinewidth
+solid
+0.66667 0.77647 0.43922 edgecolor
+newpath 73.85 344.67 moveto
+85.75 308.81 116.3 232.07 170 193 curveto
+175.26 189.17 181.16 186.1 187.33 183.64 curveto
+stroke
+0.66667 0.77647 0.43922 edgecolor
+newpath 70.45 343.81 moveto
+70.75 354.4 lineto
+77.12 345.94 lineto
+closepath fill
+1 setlinewidth
+solid
+0.66667 0.77647 0.43922 edgecolor
+newpath 70.45 343.81 moveto
+70.75 354.4 lineto
+77.12 345.94 lineto
+closepath stroke
+grestore
+% Node17
+gsave
+[ /Rect [ 177.5 126 330.5 146 ]
+  /Border [ 0 0 0 ]
+  /Action << /Subtype /URI /URI ($classmarlin_1_1ShowerShapeEngine.html) >>
+  /Subtype /Link
+/ANN pdfmark
+0 0 1 nodecolor
+newpath 177.5 126.5 moveto
+177.5 145.5 lineto
+330.5 145.5 lineto
+330.5 126.5 lineto
+closepath fill
+1 setlinewidth
+filled
+0 0 0 nodecolor
+newpath 177.5 126.5 moveto
+177.5 145.5 lineto
+330.5 145.5 lineto
+330.5 126.5 lineto
+closepath stroke
+0 0 0 nodecolor
+10 /Helvetica set_font
+185.5 133.5 moveto 137 (marlin::ShowerShapeEngine) alignedtext
+grestore
+% Node1->Node17
+gsave
+1 setlinewidth
+solid
+0.66667 0.77647 0.43922 edgecolor
+newpath 71.71 344.24 moveto
+80.65 302.41 107.43 204.66 170 155 curveto
+174.86 151.14 180.36 148.04 186.16 145.54 curveto
+stroke
+0.66667 0.77647 0.43922 edgecolor
+newpath 68.24 343.76 moveto
+69.69 354.26 lineto
+75.1 345.15 lineto
+closepath fill
+1 setlinewidth
+solid
+0.66667 0.77647 0.43922 edgecolor
+newpath 68.24 343.76 moveto
+69.69 354.26 lineto
+75.1 345.15 lineto
+closepath stroke
+grestore
+% Node18
+gsave
+[ /Rect [ 178.5 88 329.5 108 ]
+  /Border [ 0 0 0 ]
+  /Action << /Subtype /URI /URI ($classmarlin_1_1TBTrackWriteEngine.html) >>
+  /Subtype /Link
+/ANN pdfmark
+0 0 1 nodecolor
+newpath 178.5 88.5 moveto
+178.5 107.5 lineto
+329.5 107.5 lineto
+329.5 88.5 lineto
+closepath fill
+1 setlinewidth
+filled
+0 0 0 nodecolor
+newpath 178.5 88.5 moveto
+178.5 107.5 lineto
+329.5 107.5 lineto
+329.5 88.5 lineto
+closepath stroke
+0 0 0 nodecolor
+10 /Helvetica set_font
+186.5 95.5 moveto 135 (marlin::TBTrackWriteEngine) alignedtext
+grestore
+% Node1->Node18
+gsave
+1 setlinewidth
+solid
+0.66667 0.77647 0.43922 edgecolor
+newpath 70.08 344.29 moveto
+76.14 297.24 98.17 177.76 170 117 curveto
+174.51 113.18 179.64 110.09 185.09 107.6 curveto
+stroke
+0.66667 0.77647 0.43922 edgecolor
+newpath 66.58 344.04 moveto
+68.89 354.38 lineto
+73.54 344.86 lineto
+closepath fill
+1 setlinewidth
+solid
+0.66667 0.77647 0.43922 edgecolor
+newpath 66.58 344.04 moveto
+68.89 354.38 lineto
+73.54 344.86 lineto
+closepath stroke
+grestore
+% Node19
+gsave
+[ /Rect [ 187 38.5 321 69.5 ]
+  /Border [ 0 0 0 ]
+  /Action << /Subtype /URI /URI ($classmarlin_1_1TrackFinderWriteEngine.html) >>
+  /Subtype /Link
+/ANN pdfmark
+0 0 1 nodecolor
+newpath 187 39 moveto
+187 69 lineto
+321 69 lineto
+321 39 lineto
+closepath fill
+1 setlinewidth
+filled
+0 0 0 nodecolor
+newpath 187 39 moveto
+187 69 lineto
+321 69 lineto
+321 39 lineto
+closepath stroke
+0 0 0 nodecolor
+10 /Helvetica set_font
+195 57 moveto 118 (marlin::TrackFinderWrite) alignedtext
+0 0 0 nodecolor
+10 /Helvetica set_font
+237 46 moveto 34 (Engine) alignedtext
+grestore
+% Node1->Node19
+gsave
+1 setlinewidth
+solid
+0.66667 0.77647 0.43922 edgecolor
+newpath 69.18 344.11 moveto
+73.31 292.57 91.55 153.54 170 79 curveto
+174.91 74.34 180.66 70.54 186.8 67.45 curveto
+stroke
+0.66667 0.77647 0.43922 edgecolor
+newpath 65.67 344.01 moveto
+68.46 354.24 lineto
+72.66 344.51 lineto
+closepath fill
+1 setlinewidth
+solid
+0.66667 0.77647 0.43922 edgecolor
+newpath 65.67 344.01 moveto
+68.46 354.24 lineto
+72.66 344.51 lineto
+closepath stroke
+grestore
+% Node20
+gsave
+[ /Rect [ 181 0 327 20 ]
+  /Border [ 0 0 0 ]
+  /Action << /Subtype /URI /URI ($classmarlin_1_1TriggerWriteEngine.html) >>
+  /Subtype /Link
+/ANN pdfmark
+0 0 1 nodecolor
+newpath 181 .5 moveto
+181 19.5 lineto
+327 19.5 lineto
+327 .5 lineto
+closepath fill
+1 setlinewidth
+filled
+0 0 0 nodecolor
+newpath 181 .5 moveto
+181 19.5 lineto
+327 19.5 lineto
+327 .5 lineto
+closepath stroke
+0 0 0 nodecolor
+10 /Helvetica set_font
+189 7.5 moveto 130 (marlin::TriggerWriteEngine) alignedtext
+grestore
+% Node1->Node20
+gsave
+1 setlinewidth
+solid
+0.66667 0.77647 0.43922 edgecolor
+newpath 67.72 344 moveto
+68.05 286.17 77.3 117.31 170 30 curveto
+174.53 25.73 179.81 22.33 185.47 19.61 curveto
+stroke
+0.66667 0.77647 0.43922 edgecolor
+newpath 64.22 344.32 moveto
+67.75 354.31 lineto
+71.22 344.3 lineto
+closepath fill
+1 setlinewidth
+solid
+0.66667 0.77647 0.43922 edgecolor
+newpath 64.22 344.32 moveto
+67.75 354.31 lineto
+71.22 344.3 lineto
+closepath stroke
+grestore
+endpage
+showpage
+grestore
+%%PageTrailer
+%%EndPage: 1
+%%Trailer
+%%Pages: 1
+%%BoundingBox: 36 36 382 819
+end
+restore
+%%EOF

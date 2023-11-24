@@ -1,0 +1,89 @@
+\section{C\-A\-L\-I\-C\-E\-:\-:Pedestal\-Constants Class Reference}
+\label{classCALICE_1_1PedestalConstants}\index{C\-A\-L\-I\-C\-E\-::\-Pedestal\-Constants@{C\-A\-L\-I\-C\-E\-::\-Pedestal\-Constants}}
+
+
+Class to store the results of a pedestal measurement, i.\-e.  
+
+
+
+
+{\ttfamily \#include $<$Pedestal\-Constants.\-hh$>$}
+
+Inheritance diagram for C\-A\-L\-I\-C\-E\-:\-:Pedestal\-Constants\-:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=3.000000cm]{classCALICE_1_1PedestalConstants}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+{\bfseries Pedestal\-Constants} (unsigned chip, unsigned channel, float value, float error)\label{classCALICE_1_1PedestalConstants_ae24d817e0c641d205edc72170c76768f}
+
+\item 
+{\bfseries Pedestal\-Constants} (L\-C\-Object $\ast${\bf obj})\label{classCALICE_1_1PedestalConstants_add3293c896cfe98d71dcd6587bd196b4}
+
+\item 
+float {\bf get\-Pedestal\-Value} () const \label{classCALICE_1_1PedestalConstants_a3c5742fc37c92c48163353c50b15458c}
+
+\begin{DoxyCompactList}\small\item\em get pedestial value \end{DoxyCompactList}\item 
+float {\bf get\-Pedestal\-Error} () const \label{classCALICE_1_1PedestalConstants_a34fe2cae3c531323401f9c63cb107167}
+
+\begin{DoxyCompactList}\small\item\em get pedestal error \end{DoxyCompactList}\item 
+float {\bf apply\-Calibration} (float input\-Value) const \label{classCALICE_1_1PedestalConstants_abbcc4190367b281e817a54467f7d7ed2}
+
+\begin{DoxyCompactList}\small\item\em apply calibration to energy value \end{DoxyCompactList}\item 
+float {\bf cancel\-Calibration} (float output\-Value) const \label{classCALICE_1_1PedestalConstants_aba93442424d99e1e2b2d1c53b36280f9}
+
+\begin{DoxyCompactList}\small\item\em cancel an applied calibration from energy value \end{DoxyCompactList}\item 
+float {\bf apply\-Calibration\-Error} (float input\-Value, float input\-Error) const \label{classCALICE_1_1PedestalConstants_ac2c94c3d42b510de4c973ffb4a463469}
+
+\begin{DoxyCompactList}\small\item\em apply calibration error to current error \end{DoxyCompactList}\item 
+bool {\bf calibration\-Valid} () const \label{classCALICE_1_1PedestalConstants_a6cfd6a82fa83433d2abe95b830ae164d}
+
+\begin{DoxyCompactList}\small\item\em check if a valid calibration is available \end{DoxyCompactList}\item 
+bool {\bf keep\-Event} (float result\-Value, float result\-Error) const \label{classCALICE_1_1PedestalConstants_a5296ca6178fa8cebd290bcae2f39a86f}
+
+\begin{DoxyCompactList}\small\item\em accept only events which are distinguishable from pedestals \end{DoxyCompactList}\item 
+float {\bfseries get\-Param} (unsigned param\-Index)\label{classCALICE_1_1PedestalConstants_ad432e4fbd1c354798b37fa5fc609825a}
+
+\item 
+void {\bfseries set\-Param} (unsigned param\-Index, float param\-Value)\label{classCALICE_1_1PedestalConstants_aff69422b46746ad27d06cec76dbfa3a6}
+
+\item 
+void {\bf print} (std\-::ostream \&os)\label{classCALICE_1_1PedestalConstants_a312e7cf9898d2b6540d0db552fa02416}
+
+\begin{DoxyCompactList}\small\item\em convenient print method \end{DoxyCompactList}\item 
+const std\-::string {\bf get\-Type\-Name} () const \label{classCALICE_1_1PedestalConstants_acdb7efb3b0197ff4881912b625b704c0}
+
+\begin{DoxyCompactList}\small\item\em return type of the class \end{DoxyCompactList}\item 
+const std\-::string {\bf get\-Data\-Description} () const \label{classCALICE_1_1PedestalConstants_a974f370dddb3b7989563874a0eb5e8a9}
+
+\begin{DoxyCompactList}\small\item\em return a brief description of the data member \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+float {\bfseries \-\_\-cut\-Significance}\label{classCALICE_1_1PedestalConstants_a6ceabef97402ca961f73c04a543837ed}
+
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Class to store the results of a pedestal measurement, i.\-e. 
+
+a pedestal plus the error of it for a certain chip/channel for a fixed module\-I\-D \begin{DoxyAuthor}{Author}
+S. Schmidt D\-E\-S\-Y 
+\end{DoxyAuthor}
+\begin{DoxyDate}{Date}
+Jun 16 2006 
+\end{DoxyDate}
+
+
+Definition at line 25 of file Pedestal\-Constants.\-hh.
+
+
+
+The documentation for this class was generated from the following files\-:\begin{DoxyCompactItemize}
+\item 
+Pedestal\-Constants.\-hh\item 
+Pedestal\-Constants.\-cc\end{DoxyCompactItemize}

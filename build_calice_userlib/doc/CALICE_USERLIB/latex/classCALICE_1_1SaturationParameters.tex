@@ -1,0 +1,90 @@
+\section{C\-A\-L\-I\-C\-E\-:\-:Saturation\-Parameters Class Reference}
+\label{classCALICE_1_1SaturationParameters}\index{C\-A\-L\-I\-C\-E\-::\-Saturation\-Parameters@{C\-A\-L\-I\-C\-E\-::\-Saturation\-Parameters}}
+
+
+Class to store float values for Saturation Correction Curves plus integer cell index in L\-C\-I\-O.  
+
+
+
+
+{\ttfamily \#include $<$Saturation\-Parameters.\-hh$>$}
+
+Inheritance diagram for C\-A\-L\-I\-C\-E\-:\-:Saturation\-Parameters\-:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classCALICE_1_1SaturationParameters}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+{\bf Saturation\-Parameters} ()\label{classCALICE_1_1SaturationParameters_a6bcce091aa42264d16ef47dcd08e821c}
+
+\begin{DoxyCompactList}\small\item\em Empty constructor. \end{DoxyCompactList}\item 
+{\bf Saturation\-Parameters} (const int id, const float npix, const float fraction, const float epsilon)\label{classCALICE_1_1SaturationParameters_ac81175a971ef70d31a35736b67f2bf21}
+
+\begin{DoxyCompactList}\small\item\em Constructor with initial values. \end{DoxyCompactList}\item 
+{\bf Saturation\-Parameters} (E\-V\-E\-N\-T\-::\-L\-C\-Object $\ast$obj)\label{classCALICE_1_1SaturationParameters_a0b239df29e12436f287567b36b0764c7}
+
+\begin{DoxyCompactList}\small\item\em Constructor from L\-C\-Object. \end{DoxyCompactList}\item 
+{\bf $\sim$\-Saturation\-Parameters} ()\label{classCALICE_1_1SaturationParameters_ad14c91e7e73ffb8760d28a4d03111e18}
+
+\begin{DoxyCompactList}\small\item\em Destructor. \end{DoxyCompactList}\item 
+int {\bf get\-Cell\-I\-D} () const \label{classCALICE_1_1SaturationParameters_a5c652e82d47d3d527bab74c7cfcfc33e}
+
+\begin{DoxyCompactList}\small\item\em Return index identifier. \end{DoxyCompactList}\item 
+float {\bf get\-Npix} () const \label{classCALICE_1_1SaturationParameters_a6c0537cf991175491fd93d925bbc5f39}
+
+\begin{DoxyCompactList}\small\item\em Return the value. \end{DoxyCompactList}\item 
+float {\bf get\-Fraction} () const \label{classCALICE_1_1SaturationParameters_a6a8d38ce8423fd0d339fb23199f7b39b}
+
+\begin{DoxyCompactList}\small\item\em Return the error on the value. \end{DoxyCompactList}\item 
+float {\bf get\-Epsilon} () const \label{classCALICE_1_1SaturationParameters_a8ae9b72141c04d4737efecaed397561f}
+
+\begin{DoxyCompactList}\small\item\em Return the status. \end{DoxyCompactList}\item 
+void {\bf set\-Cell\-I\-D} (const int I\-D)\label{classCALICE_1_1SaturationParameters_a18580ee23f36d2ab14f070aab1eb3b87}
+
+\begin{DoxyCompactList}\small\item\em set index identifier \end{DoxyCompactList}\item 
+void {\bf set\-Npix} (const float npix)\label{classCALICE_1_1SaturationParameters_a2a05f0a0d82bc61e6143b02d4f7413ea}
+
+\begin{DoxyCompactList}\small\item\em set the value \end{DoxyCompactList}\item 
+void {\bf set\-Fraction} (const float fraction)\label{classCALICE_1_1SaturationParameters_a7959da20d57e2d14422b6543854706c0}
+
+\begin{DoxyCompactList}\small\item\em set the error on the value \end{DoxyCompactList}\item 
+void {\bf set\-Epsilon} (const float epsilon)\label{classCALICE_1_1SaturationParameters_a30a1dfd7727fbc4d06daed2ac90cbf80}
+
+\begin{DoxyCompactList}\small\item\em set the status \end{DoxyCompactList}\item 
+virtual const std\-::string {\bf get\-Type\-Name} () const \label{classCALICE_1_1SaturationParameters_a002bce0457608d0922e5c9c8d681e780}
+
+\begin{DoxyCompactList}\small\item\em Implementation of L\-C\-Generic\-Object\-::get\-Type\-Name. \end{DoxyCompactList}\item 
+virtual const std\-::string {\bf get\-Data\-Description} () const \label{classCALICE_1_1SaturationParameters_a093e3b01f25cbb982a7ee779198e1280}
+
+\begin{DoxyCompactList}\small\item\em Implementation of L\-C\-Generic\-Object\-::get\-Data\-Description. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Class to store float values for Saturation Correction Curves plus integer cell index in L\-C\-I\-O. 
+
+This class provides an interface to store four numbers inside an L\-C\-I\-O object\-:
+\begin{DoxyItemize}
+\item an integer identifier, e.\-g. the index of a calorimeter cell
+\item a 1st float value, [0], e.\-g. a maximum number of effective Si\-P\-M pixels
+\item a 2nd float value, [1], e.\-g. a fraction of 2-\/exp function
+\item a 3rd float value, [2], e.\-g. an epsilon of 2-\/exp function The 2-\/exp function is used\-: N = [0]$\ast$([1]$\ast$(1-\/exp(-\/[2]$\ast$x/[0]))+(1-\/[1])$\ast$(1-\/exp(-\/(1-\/[2]$\ast$[1])$\ast$x/([0]$\ast$(1-\/[1]))))) where x is the unsaturated amplitude, N is the saturated amplitude
+\end{DoxyItemize}
+
+\begin{DoxyAuthor}{Author}
+Sergey Morozov 
+\end{DoxyAuthor}
+\begin{DoxyDate}{Date}
+August 2013 
+\end{DoxyDate}
+
+
+Definition at line 26 of file Saturation\-Parameters.\-hh.
+
+
+
+The documentation for this class was generated from the following file\-:\begin{DoxyCompactItemize}
+\item 
+Saturation\-Parameters.\-hh\end{DoxyCompactItemize}

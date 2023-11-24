@@ -1,0 +1,57 @@
+\section{C\-A\-L\-I\-C\-E\-:\-:Tcmt\-Event\-Type\-Processor Class Reference}
+\label{classCALICE_1_1TcmtEventTypeProcessor}\index{C\-A\-L\-I\-C\-E\-::\-Tcmt\-Event\-Type\-Processor@{C\-A\-L\-I\-C\-E\-::\-Tcmt\-Event\-Type\-Processor}}
+
+
+{\ttfamily \#include $<$Tcmt\-Event\-Type\-Processor.\-hh$>$}
+
+Inheritance diagram for C\-A\-L\-I\-C\-E\-:\-:Tcmt\-Event\-Type\-Processor\-:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classCALICE_1_1TcmtEventTypeProcessor}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+virtual Processor $\ast$ {\bfseries new\-Processor} ()\label{classCALICE_1_1TcmtEventTypeProcessor_a3bf9b0177f015c026cdaa89bdce6f597}
+
+\item 
+virtual void {\bfseries init} ()\label{classCALICE_1_1TcmtEventTypeProcessor_abc438f27b158fbaa33c64b9143396db1}
+
+\item 
+virtual void {\bfseries process\-Event} (L\-C\-Event $\ast$evt)\label{classCALICE_1_1TcmtEventTypeProcessor_a550cdda1709621ee6818c0039284f533}
+
+\item 
+virtual void {\bfseries end} ()\label{classCALICE_1_1TcmtEventTypeProcessor_abfc2f5366a03cc51aaab06eed36e28e9}
+
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Processor that analyses the T\-C\-M\-T event data and returns a bit reflecting the result
+
+\begin{DoxyParagraph}{processor parameters}
+\begin{TabularC}{2}
+\hline
+steering file parameter name &description  \\\cline{1-2}
+{\bfseries {\itshape  Input\-Collection }}&name of the input collection  \\\cline{1-2}
+{\bfseries {\itshape  Tcmt\-Event\-Bit\-Name }}&name of event parameter that will contain the output bits \\\cline{1-2}
+{\bfseries {\itshape  Overwrite\-Encoding }}&encoding string used instead of encoding string of collection (optional)  \\\cline{1-2}
+\end{TabularC}
+
+\end{DoxyParagraph}
+\begin{DoxyAuthor}{Author}
+{\tt Benjamin.\-Lutz@desy.\-de} 
+\end{DoxyAuthor}
+\begin{DoxyVersion}{Version}
+1.\-0 
+\end{DoxyVersion}
+\begin{DoxyDate}{Date}
+November 2009 
+\end{DoxyDate}
+
+
+The documentation for this class was generated from the following files\-:\begin{DoxyCompactItemize}
+\item 
+/nfs/dust/ilc/user/marquezh/\-Calice\-Soft\-\_\-w\-\_\-\-I\-L\-C\-Soft\-\_\-v02-\/03-\/02/calice\-\_\-analysis/addon\-Procs/include/Tcmt\-Event\-Type\-Processor.\-hh\item 
+/nfs/dust/ilc/user/marquezh/\-Calice\-Soft\-\_\-w\-\_\-\-I\-L\-C\-Soft\-\_\-v02-\/03-\/02/calice\-\_\-analysis/addon\-Procs/src/Tcmt\-Event\-Type\-Processor.\-cc\end{DoxyCompactItemize}

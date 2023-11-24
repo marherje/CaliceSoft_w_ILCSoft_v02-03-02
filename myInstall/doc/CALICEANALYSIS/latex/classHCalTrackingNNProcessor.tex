@@ -1,0 +1,217 @@
+\section{H\-Cal\-Tracking\-N\-N\-Processor Class Reference}
+\label{classHCalTrackingNNProcessor}\index{H\-Cal\-Tracking\-N\-N\-Processor@{H\-Cal\-Tracking\-N\-N\-Processor}}
+
+
+{\ttfamily \#include $<$Hcal\-Tracking\-N\-N.\-hh$>$}
+
+Inheritance diagram for H\-Cal\-Tracking\-N\-N\-Processor\-:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classHCalTrackingNNProcessor}
+\end{center}
+\end{figure}
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class {\bf H\-Cal\-Tracked\-Hit}
+\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+virtual {\bf $\sim$\-H\-Cal\-Tracking\-N\-N\-Processor} ()
+\item 
+marlin\-::\-Processor $\ast$ {\bfseries new\-Processor} ()\label{classHCalTrackingNNProcessor_aac4d06e41720579d7f24c0c3835c4519}
+
+\item 
+virtual void {\bf init} ()
+\item 
+virtual void {\bf process\-Run\-Header} (L\-C\-Run\-Header $\ast$run)
+\item 
+virtual void {\bf process\-Event} (L\-C\-Event $\ast$evt)
+\item 
+virtual void {\bfseries check} (L\-C\-Event $\ast$evt)\label{classHCalTrackingNNProcessor_a5c6e5cb2aa8ce74d13815641f4d3c0ca}
+
+\item 
+virtual void {\bf end} ()
+\end{DoxyCompactItemize}
+\subsection*{Protected Types}
+\begin{DoxyCompactItemize}
+\item 
+typedef boost\-::unordered\-\_\-map\\*
+$<$ unsigned, {\bf H\-Cal\-Tracked\-Hit} $\ast$ $>$ {\bfseries hash\-Map\-Hits\-\_\-t}\label{classHCalTrackingNNProcessor_a53a207437efcb088881b0b46030b6ee3}
+
+\item 
+typedef std\-::map$<$ unsigned, \\*
+hash\-Map\-Hits\-\_\-t $>$ {\bfseries map\-Hashmap\-Hits\-\_\-t}\label{classHCalTrackingNNProcessor_ac66df3d2b2f2ebc6abb91541b33c8c01}
+
+\end{DoxyCompactItemize}
+\subsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void {\bf analyze\-Single\-Event} (L\-C\-Collection $\ast$event)
+\item 
+void {\bfseries set\-Track\-Angle} (E\-V\-E\-N\-T\-::\-Cluster $\ast$track)\label{classHCalTrackingNNProcessor_ac0c71ddc6d42d008977164cbc7a630ca}
+
+\item 
+void {\bfseries print\-Status} ()\label{classHCalTrackingNNProcessor_acbc06acf8aa197f8f08564e9c8737488}
+
+\item 
+void {\bfseries fill\-Hit\-Map} (L\-C\-Collection $\ast$evt)\label{classHCalTrackingNNProcessor_a26b8b7800790dc7c92f91e760e65060f}
+
+\item 
+void {\bfseries count\-Neighbours} ()\label{classHCalTrackingNNProcessor_a5982d56f68096926ba9ffafdba6492d6}
+
+\item 
+void {\bfseries find\-Tracks} ()\label{classHCalTrackingNNProcessor_a5616071406e2c134b27708eb8ce79406}
+
+\item 
+void {\bfseries clean\-Up} ()\label{classHCalTrackingNNProcessor_a81b64e667dfb82fd618483e7622c1e54}
+
+\item 
+E\-V\-E\-N\-T\-::\-Cluster $\ast$ {\bfseries find\-Single\-Track} ({\bf H\-Cal\-Tracked\-Hit} $\ast$first\-Hit)\label{classHCalTrackingNNProcessor_a2d1fa550dd88bd44d8eba2e60e865233}
+
+\item 
+void {\bfseries add\-Track} (E\-V\-E\-N\-T\-::\-Cluster $\ast$track)\label{classHCalTrackingNNProcessor_af2f77e426981c935018fdbdeb70ebe78}
+
+\item 
+int {\bfseries get\-Track\-Layer\-Length} (E\-V\-E\-N\-T\-::\-Cluster $\ast$track)\label{classHCalTrackingNNProcessor_adfa6baef7083471ec1bd9d9eb224a825}
+
+\item 
+void {\bfseries delete\-Track} (E\-V\-E\-N\-T\-::\-Cluster $\ast$track)\label{classHCalTrackingNNProcessor_a51dd0aca10d6d787fb5d587e2169cb28}
+
+\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+C\-A\-L\-I\-C\-E\-::\-Mapped\-Container\\*
+$<$ C\-A\-L\-I\-C\-E\-::\-Cell\-Description $>$ $\ast$ {\bfseries \-\_\-cell\-Descriptions}\label{classHCalTrackingNNProcessor_ab99634a7a2381df856fc03dfc9a14746}
+
+\item 
+C\-A\-L\-I\-C\-E\-::\-Mapped\-Container\\*
+$<$ C\-A\-L\-I\-C\-E\-::\-Cell\-Neighbours $>$ $\ast$ {\bfseries \-\_\-cell\-Neighbours}\label{classHCalTrackingNNProcessor_a98c62324557cb29ccee95c4732a7ed8e}
+
+\item 
+std\-::string {\bfseries \-\_\-cell\-Description\-Processor\-Name}\label{classHCalTrackingNNProcessor_af925574ee11b92a6cb68e40a54847256}
+
+\item 
+std\-::string {\bfseries \-\_\-cell\-Neighbour\-Processor\-Name}\label{classHCalTrackingNNProcessor_a3b30cd8461ceb63cd4eaa06f72fce463}
+
+\item 
+std\-::string {\bfseries \-\_\-lcc\-Calorimeter\-Hits\-Name}\label{classHCalTrackingNNProcessor_acd02724e047ef7709b106763df328c61}
+
+\item 
+std\-::string {\bfseries \-\_\-lcc\-Track\-Cluster\-Out\-Name}\label{classHCalTrackingNNProcessor_a552a2ae2175dd0b2d25ad7614bb1b13d}
+
+\item 
+int {\bfseries \-\_\-max\-Gap\-Size}\label{classHCalTrackingNNProcessor_a5727d97f52617147f667c5687c54c4e5}
+
+\item 
+int {\bfseries \-\_\-min\-Track\-Length}\label{classHCalTrackingNNProcessor_a50f6eb654cede963c96bfc3595409ff1}
+
+\item 
+double {\bfseries \-\_\-max\-Track\-Gap\-Ratio}\label{classHCalTrackingNNProcessor_a185318818a7bf21116b05d1ed05230db}
+
+\item 
+map\-Hashmap\-Hits\-\_\-t {\bfseries \-\_\-hits}\label{classHCalTrackingNNProcessor_a5454f68399fd7edce4d63ef7d7ff2b45}
+
+\item 
+I\-M\-P\-L\-::\-L\-C\-Collection\-Vec $\ast$ {\bfseries \-\_\-tracks}\label{classHCalTrackingNNProcessor_af134797b8e36d66d70c760f313d9eed5}
+
+\item 
+int {\bfseries \-\_\-stat\-N\-Processed\-Events}\label{classHCalTrackingNNProcessor_aae2cd6cbe12f845cb18666096a4e01ef}
+
+\item 
+int {\bfseries \-\_\-stat\-N\-Empty\-Events}\label{classHCalTrackingNNProcessor_a13150263f7ac321c0198379aaae28ad7}
+
+\item 
+int {\bfseries \-\_\-stat\-N\-Runs}\label{classHCalTrackingNNProcessor_aaa8fa58d0503315e8e1a8b47bdc86da8}
+
+\item 
+int {\bfseries \-\_\-stat\-N\-Tracks}\label{classHCalTrackingNNProcessor_ae5f4d0e1feb52d0e5e6e70151f4b9b11}
+
+\item 
+int {\bfseries \-\_\-dbg\-Indent\-Size}\label{classHCalTrackingNNProcessor_aec5a1f7fbd3f4f14fd42e66ec58390cc}
+
+\end{DoxyCompactItemize}
+\subsection*{Friends}
+\begin{DoxyCompactItemize}
+\item 
+std\-::ostream \& {\bfseries operator$<$$<$} (std\-::ostream \&out, E\-V\-E\-N\-T\-::\-Cluster $\ast$track)\label{classHCalTrackingNNProcessor_ac878b174fea2efa52f499df6135324b9}
+
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+This marlin processor tries to find tracks in the calorimeter. Currently optimised for the A\-H\-Cal of C\-A\-L\-I\-C\-E.
+
+The algorithm works the following way\-:
+\begin{DoxyEnumerate}
+\item Check all hits whether they are isolated (e.\-g. have no neighbour hits in the same layer)
+\item Take an isolated hit and advance to the next layer. Check, if there is an isolated hit at the same position. If there is\-: join them together to a track.
+\item For analysis, the energy distribution for all found tracks is saved. (both total, and per tile) 
+\end{DoxyEnumerate}
+
+\subsection{Constructor \& Destructor Documentation}
+\index{H\-Cal\-Tracking\-N\-N\-Processor@{H\-Cal\-Tracking\-N\-N\-Processor}!$\sim$\-H\-Cal\-Tracking\-N\-N\-Processor@{$\sim$\-H\-Cal\-Tracking\-N\-N\-Processor}}
+\index{$\sim$\-H\-Cal\-Tracking\-N\-N\-Processor@{$\sim$\-H\-Cal\-Tracking\-N\-N\-Processor}!HCalTrackingNNProcessor@{H\-Cal\-Tracking\-N\-N\-Processor}}
+\subsubsection[{$\sim$\-H\-Cal\-Tracking\-N\-N\-Processor}]{\setlength{\rightskip}{0pt plus 5cm}H\-Cal\-Tracking\-N\-N\-Processor\-::$\sim$\-H\-Cal\-Tracking\-N\-N\-Processor (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}\label{classHCalTrackingNNProcessor_a33033b8ed04d1f3cceb3bfc96ad709ae}
+constructor 
+
+\subsection{Member Function Documentation}
+\index{H\-Cal\-Tracking\-N\-N\-Processor@{H\-Cal\-Tracking\-N\-N\-Processor}!analyze\-Single\-Event@{analyze\-Single\-Event}}
+\index{analyze\-Single\-Event@{analyze\-Single\-Event}!HCalTrackingNNProcessor@{H\-Cal\-Tracking\-N\-N\-Processor}}
+\subsubsection[{analyze\-Single\-Event}]{\setlength{\rightskip}{0pt plus 5cm}void H\-Cal\-Tracking\-N\-N\-Processor\-::analyze\-Single\-Event (
+\begin{DoxyParamCaption}
+\item[{L\-C\-Collection $\ast$}]{event}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}}\label{classHCalTrackingNNProcessor_ac418d354d37705957eb80fb1b7c11424}
+returns\-: no. of found tracks
+
+does the actual tracking gets called from process\-Event after Trigger / other options have been checked and this event considered to be ok 
+
+Referenced by process\-Event().
+
+\index{H\-Cal\-Tracking\-N\-N\-Processor@{H\-Cal\-Tracking\-N\-N\-Processor}!end@{end}}
+\index{end@{end}!HCalTrackingNNProcessor@{H\-Cal\-Tracking\-N\-N\-Processor}}
+\subsubsection[{end}]{\setlength{\rightskip}{0pt plus 5cm}void H\-Cal\-Tracking\-N\-N\-Processor\-::end (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}\label{classHCalTrackingNNProcessor_a32156c53787160c372c9ac485fa3b9da}
+Called after data processing for clean up. \index{H\-Cal\-Tracking\-N\-N\-Processor@{H\-Cal\-Tracking\-N\-N\-Processor}!init@{init}}
+\index{init@{init}!HCalTrackingNNProcessor@{H\-Cal\-Tracking\-N\-N\-Processor}}
+\subsubsection[{init}]{\setlength{\rightskip}{0pt plus 5cm}void H\-Cal\-Tracking\-N\-N\-Processor\-::init (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}\label{classHCalTrackingNNProcessor_a489c7c23d1384643705240a06f9b8fb0}
+Called at the begin of the job before anything is read. Use to initialize the processor, e.\-g. book histograms. \index{H\-Cal\-Tracking\-N\-N\-Processor@{H\-Cal\-Tracking\-N\-N\-Processor}!process\-Event@{process\-Event}}
+\index{process\-Event@{process\-Event}!HCalTrackingNNProcessor@{H\-Cal\-Tracking\-N\-N\-Processor}}
+\subsubsection[{process\-Event}]{\setlength{\rightskip}{0pt plus 5cm}void H\-Cal\-Tracking\-N\-N\-Processor\-::process\-Event (
+\begin{DoxyParamCaption}
+\item[{L\-C\-Event $\ast$}]{evt}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}\label{classHCalTrackingNNProcessor_a2e9dceeccdda57febe1bc8149b62847f}
+Called for every event -\/ the working horse.
+
+L\-C\-I\-O input\-: iterates through all events. The tracking algorithm will try to find tracks for each event. 
+
+References analyze\-Single\-Event().
+
+\index{H\-Cal\-Tracking\-N\-N\-Processor@{H\-Cal\-Tracking\-N\-N\-Processor}!process\-Run\-Header@{process\-Run\-Header}}
+\index{process\-Run\-Header@{process\-Run\-Header}!HCalTrackingNNProcessor@{H\-Cal\-Tracking\-N\-N\-Processor}}
+\subsubsection[{process\-Run\-Header}]{\setlength{\rightskip}{0pt plus 5cm}void H\-Cal\-Tracking\-N\-N\-Processor\-::process\-Run\-Header (
+\begin{DoxyParamCaption}
+\item[{L\-C\-Run\-Header $\ast$}]{run}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}\label{classHCalTrackingNNProcessor_a969e1d99c96d6220ba06324113295d35}
+Called for every run. 
+
+The documentation for this class was generated from the following files\-:\begin{DoxyCompactItemize}
+\item 
+/nfs/dust/ilc/user/marquezh/\-Calice\-Soft\-\_\-w\-\_\-\-I\-L\-C\-Soft\-\_\-v02-\/03-\/02/calice\-\_\-analysis/addon\-Procs/include/Hcal\-Tracking\-N\-N.\-hh\item 
+/nfs/dust/ilc/user/marquezh/\-Calice\-Soft\-\_\-w\-\_\-\-I\-L\-C\-Soft\-\_\-v02-\/03-\/02/calice\-\_\-analysis/addon\-Procs/src/Hcal\-Tracking\-N\-N.\-cc\end{DoxyCompactItemize}

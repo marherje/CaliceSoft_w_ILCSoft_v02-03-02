@@ -1,0 +1,62 @@
+\section{/nfs/dust/ilc/user/marquezh/\-Calice\-Soft\-\_\-w\-\_\-\-I\-L\-C\-Soft\-\_\-v02-\/03-\/02/calice\-\_\-db\-\_\-tools/src/copy\-\_\-file2dbfolder.cc File Reference}
+\label{copy__file2dbfolder_8cc}\index{/nfs/dust/ilc/user/marquezh/\-Calice\-Soft\-\_\-w\-\_\-\-I\-L\-C\-Soft\-\_\-v02-\/03-\/02/calice\-\_\-db\-\_\-tools/src/copy\-\_\-file2dbfolder.\-cc@{/nfs/dust/ilc/user/marquezh/\-Calice\-Soft\-\_\-w\-\_\-\-I\-L\-C\-Soft\-\_\-v02-\/03-\/02/calice\-\_\-db\-\_\-tools/src/copy\-\_\-file2dbfolder.\-cc}}
+{\ttfamily \#include \char`\"{}Time\-String.\-hh\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}Calice\-Time.\-hh\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}Calice\-D\-B\-Init\-Helper.\-hh\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}lccd/\-D\-B\-Interface.\-hh\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}lccd/\-Simple\-File\-Handler.\-hh\char`\"{}}\\*
+{\ttfamily \#include $<$iostream$>$}\\*
+{\ttfamily \#include $<$stdexcept$>$}\\*
+{\ttfamily \#include $<$unistd.\-h$>$}\\*
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+void {\bfseries print\-Help} (std\-::ostream \&out, const char $\ast$prog)\label{copy__file2dbfolder_8cc_adf41aee3747f1209f9db9892e021c462}
+
+\item 
+int {\bfseries main} (int argc, char $\ast$$\ast$argv)\label{copy__file2dbfolder_8cc_a3c04138a5bfe5d72780bb7e82a18e627}
+
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+This tool writes a collection from an .slcio file to a databse folder.
+
+Usage\-:
+
+
+\begin{DoxyCode}
+copy\_file2dbfolder [-t <foldername>] [-f <from>] [-u <until>] [-d <descr>] [-w] <filename> <colname>
+\end{DoxyCode}
+
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em $<$filename$>$} & file containing the input collection \\
+\hline
+\mbox{\tt in}  & {\em $<$colname$>$} & name of the input collection that is stored in the database \\
+\hline
+\mbox{\tt out}  & {\em $<$foldername$>$} & database folder the collection is written to (default\-: \char`\"{}/test\char`\"{}) \\
+\hline
+\mbox{\tt out}  & {\em $<$from$>$} & D\-B entry will be valid from this point in time valid from (default\-: earliest possible) \\
+\hline
+\mbox{\tt out}  & {\em $<$until$>$} & D\-B entry will be valid until this point in time valid from (default\-: latest possible) \\
+\hline
+\mbox{\tt out}  & {\em $<$descr$>$} & decription of D\-B entry (default\-: \char`\"{}\char`\"{}) \\
+\hline
+ & {\em -\/w} & switch\-: if this option is chosen, nothing is written to the database (test run)\\
+\hline
+\end{DoxyParams}
+\begin{DoxySeeAlso}{See Also}
+\doxyref{copy\-\_\-dbfolder2dbfile.\-cc}{p.}{copy__dbfolder2dbfile_8cc} 
+
+\doxyref{copy\-\_\-dbfolder2dump.\-cc}{p.}{copy__dbfolder2dump_8cc} 
+
+\doxyref{copy\-\_\-dbfolder2simplefile.\-cc}{p.}{copy__dbfolder2simplefile_8cc} 
+
+\doxyref{copy\-\_\-dump2dbfolder.\-cc}{p.}{copy__dump2dbfolder_8cc} 
+\end{DoxySeeAlso}
+
+
+Definition in file {\bf copy\-\_\-file2dbfolder.\-cc}.
+

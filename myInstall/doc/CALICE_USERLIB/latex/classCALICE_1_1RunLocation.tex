@@ -1,0 +1,97 @@
+\section{C\-A\-L\-I\-C\-E\-:\-:Run\-Location Class Reference}
+\label{classCALICE_1_1RunLocation}\index{C\-A\-L\-I\-C\-E\-::\-Run\-Location@{C\-A\-L\-I\-C\-E\-::\-Run\-Location}}
+
+
+run and the generic run type i.\-e.  
+
+
+
+
+{\ttfamily \#include $<$Run\-Location.\-hh$>$}
+
+Inheritance diagram for C\-A\-L\-I\-C\-E\-:\-:Run\-Location\-:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=3.000000cm]{classCALICE_1_1RunLocation}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+{\bf Run\-Location} (L\-C\-Object $\ast${\bf obj})
+\begin{DoxyCompactList}\small\item\em 'Copy constructor', create the \doxyref{Run\-Location}{p.}{classCALICE_1_1RunLocation} interface for the generic objects read from file/database. \end{DoxyCompactList}\item 
+{\bf Run\-Location} \& {\bf set\-Run\-Location\-Parameters} (std\-::string location, std\-::string runtype, std\-::string monthinfo)\label{classCALICE_1_1RunLocation_a24537e1da7fc0dcd48515c4bed1af999}
+
+\begin{DoxyCompactList}\small\item\em Set the location, generic Runtype and the monthinfo, these strings are decomposed and stored as a sequence of integer values. \end{DoxyCompactList}\item 
+std\-::string {\bf get\-Location} () const \label{classCALICE_1_1RunLocation_a3bb14e533dd6504c1ed9487fa3a3b8af}
+
+\begin{DoxyCompactList}\small\item\em Return the location. \end{DoxyCompactList}\item 
+std\-::string {\bf get\-Generic\-Run\-Type} () const \label{classCALICE_1_1RunLocation_aa86694636a4ffb6fded2d095ede4e2e0}
+
+\begin{DoxyCompactList}\small\item\em Return the generic type of the run. \end{DoxyCompactList}\item 
+std\-::string {\bf get\-Month\-Info} () const \label{classCALICE_1_1RunLocation_ae175165d62a2ddcd94db05414407c36f}
+
+\begin{DoxyCompactList}\small\item\em Return the month info for the run. \end{DoxyCompactList}\item 
+std\-::string {\bfseries get\-Conditions\-Folder} () const \label{classCALICE_1_1RunLocation_aaeea6caf75d187b4629d306a105edde4}
+
+\item 
+std\-::string {\bfseries get\-Converter\-Folder} (const std\-::string conv\-Version) const \label{classCALICE_1_1RunLocation_a13481a32f961685153bd643692242697}
+
+\item 
+void {\bfseries print} (std\-::ostream \&os)\label{classCALICE_1_1RunLocation_a4a99c97efd587d8dfaa86af280a393c9}
+
+\item 
+const std\-::string {\bf get\-Type\-Name} () const \label{classCALICE_1_1RunLocation_a1355f465c010da6afa4b7900c39c6e5c}
+
+\begin{DoxyCompactList}\small\item\em Return the type of the class. \end{DoxyCompactList}\item 
+const std\-::string {\bf get\-Data\-Description} () const \label{classCALICE_1_1RunLocation_a9d008a680839cafe025fc0799e8b92b5}
+
+\begin{DoxyCompactList}\small\item\em Return a brief description of the data members. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Detailed Description}
+run and the generic run type i.\-e. 
+
+for cases where more than one calorimenter was present In addition a generic month info is stored which indicates the main or start (of a) running period \begin{DoxyAuthor}{Author}
+Götz Gaycken L\-L\-R (Ecole Polytechnique) 
+\end{DoxyAuthor}
+\begin{DoxyDate}{Date}
+Oct 2006 
+\end{DoxyDate}
+
+
+Definition at line 36 of file Run\-Location.\-hh.
+
+
+
+\subsection{Constructor \& Destructor Documentation}
+\index{C\-A\-L\-I\-C\-E\-::\-Run\-Location@{C\-A\-L\-I\-C\-E\-::\-Run\-Location}!Run\-Location@{Run\-Location}}
+\index{Run\-Location@{Run\-Location}!CALICE::RunLocation@{C\-A\-L\-I\-C\-E\-::\-Run\-Location}}
+\subsubsection[{Run\-Location}]{\setlength{\rightskip}{0pt plus 5cm}C\-A\-L\-I\-C\-E\-::\-Run\-Location\-::\-Run\-Location (
+\begin{DoxyParamCaption}
+\item[{L\-C\-Object $\ast$}]{obj}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\label{classCALICE_1_1RunLocation_ac03ebed6f60326790b21028670b18cd8}
+
+
+'Copy constructor', create the \doxyref{Run\-Location}{p.}{classCALICE_1_1RunLocation} interface for the generic objects read from file/database. 
+
+The objects stored in the file or database are of type L\-C\-Generic\-Object. To generate the interface of the object \doxyref{Run\-Location}{p.}{classCALICE_1_1RunLocation}\-: 
+\begin{DoxyCode}
+RunLocation a\_module\_location(lc\_collection->getElementAt(index));
+\end{DoxyCode}
+ \begin{DoxyRefDesc}{Todo}
+\item[{\bf Todo}]Currenlty, there is no serious type checking. Only the number of integers, floats and doubles is used 
+
+to verify whether the L\-C\-Generic\-Object is of the type \doxyref{Run\-Location}{p.}{classCALICE_1_1RunLocation} \end{DoxyRefDesc}
+
+
+Definition at line 51 of file Run\-Location.\-hh.
+
+
+
+The documentation for this class was generated from the following files\-:\begin{DoxyCompactItemize}
+\item 
+Run\-Location.\-hh\item 
+Run\-Location.\-cc\end{DoxyCompactItemize}

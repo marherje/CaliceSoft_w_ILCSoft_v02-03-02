@@ -1,0 +1,97 @@
+\section{Deep\-Analysis\-:\-:Hit\-Group Class Reference}
+\label{classDeepAnalysis_1_1HitGroup}\index{Deep\-Analysis\-::\-Hit\-Group@{Deep\-Analysis\-::\-Hit\-Group}}
+
+
+This class is not a cluster, but this is as it said in name -- \doxyref{Group}{p.}{classDeepAnalysis_1_1Group} of Hits, that has a boundaries in 3-\/\-D cartesian coordinate system and spherical coordinate system, center of gravity and whole energy.  
+
+
+
+
+{\ttfamily \#include $<$Deep\-Analysis.\-hh$>$}
+
+Inheritance diagram for Deep\-Analysis\-:\-:Hit\-Group\-:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=3.000000cm]{classDeepAnalysis_1_1HitGroup}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+{\bf Hit\-Group} ()\label{classDeepAnalysis_1_1HitGroup_ad5d6fbecb4b545154e96c6e7645753fa}
+
+\begin{DoxyCompactList}\small\item\em Constructor. \end{DoxyCompactList}\item 
+void {\bf calc\-\_\-stat} ()\label{classDeepAnalysis_1_1HitGroup_aaf039464568eec388ec2aac8ec7de56a}
+
+\begin{DoxyCompactList}\small\item\em Calculate initial statistics of this \doxyref{Group}{p.}{classDeepAnalysis_1_1Group} of Hits. \end{DoxyCompactList}\item 
+void {\bf draw} (unsigned type, unsigned size, unsigned color)
+\begin{DoxyCompactList}\small\item\em Draw hits. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Data Fields}
+\begin{DoxyCompactItemize}
+\item 
+Vector3\-D {\bf center\-Of\-Gravity}\label{classDeepAnalysis_1_1HitGroup_a66e5d49bbb2fd5737e2b43872461d59f}
+
+\begin{DoxyCompactList}\small\item\em center of gravity (X\-\_\-clust..., xs...) \end{DoxyCompactList}\item 
+double {\bf energy\-Sum}\label{classDeepAnalysis_1_1HitGroup_a4e559ed6aea2b05f50209579ed04565f}
+
+\begin{DoxyCompactList}\small\item\em sum of energy \end{DoxyCompactList}\item 
+{\bf Min\-Max\-Range}$<$ int $>$ {\bf layer\-\_\-g}\label{classDeepAnalysis_1_1HitGroup_a7889f649bed4ae5eeabbdb6611eef5e2}
+
+\begin{DoxyCompactList}\small\item\em layer \end{DoxyCompactList}\item 
+{\bf Min\-Max\-Range}$<$ double $>$ {\bf radius\-\_\-g}\label{classDeepAnalysis_1_1HitGroup_a79beed76651f6412ede510c4d185a3ce}
+
+\begin{DoxyCompactList}\small\item\em radius \end{DoxyCompactList}\item 
+{\bf Min\-Max\-Range}$<$ double $>$ {\bf theta\-\_\-g}\label{classDeepAnalysis_1_1HitGroup_a8d1e2c21b771032f2554a68f9e6491b9}
+
+\begin{DoxyCompactList}\small\item\em theta \end{DoxyCompactList}\item 
+{\bf Min\-Max\-Range}$<$ double $>$ {\bf phi\-\_\-g}\label{classDeepAnalysis_1_1HitGroup_a82f638c2e9a04adfa458debbe6fcf4d1}
+
+\begin{DoxyCompactList}\small\item\em phi \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Static Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+static const unsigned {\bf R\-S\-\_\-\-T\-Y\-P\-E} = 2\label{classDeepAnalysis_1_1HitGroup_a71e1f65d89bff32b0729454b1027b9ea}
+
+\begin{DoxyCompactList}\small\item\em type of \doxyref{R\-S}{p.}{classRS} object \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Detailed Description}
+This class is not a cluster, but this is as it said in name -- \doxyref{Group}{p.}{classDeepAnalysis_1_1Group} of Hits, that has a boundaries in 3-\/\-D cartesian coordinate system and spherical coordinate system, center of gravity and whole energy. 
+
+Definition at line 245 of file Deep\-Analysis.\-hh.
+
+
+
+\subsection{Member Function Documentation}
+\index{Deep\-Analysis\-::\-Hit\-Group@{Deep\-Analysis\-::\-Hit\-Group}!draw@{draw}}
+\index{draw@{draw}!DeepAnalysis::HitGroup@{Deep\-Analysis\-::\-Hit\-Group}}
+\subsubsection[{draw}]{\setlength{\rightskip}{0pt plus 5cm}void Deep\-Analysis\-::\-Hit\-Group\-::draw (
+\begin{DoxyParamCaption}
+\item[{unsigned}]{type, }
+\item[{unsigned}]{size, }
+\item[{unsigned}]{color}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\label{classDeepAnalysis_1_1HitGroup_a66d1fe2165387c9b25990aa369a7bc51}
+
+
+Draw hits. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em type} & hit type \\
+\hline
+{\em size} & size of point/size of cross \\
+\hline
+{\em color} & color n R\-G\-B form (e.\-g. 0xff0000 is R\-E\-D) \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 287 of file Deep\-Analysis.\-hh.
+
+
+
+The documentation for this class was generated from the following file\-:\begin{DoxyCompactItemize}
+\item 
+Deep\-Analysis.\-hh\end{DoxyCompactItemize}

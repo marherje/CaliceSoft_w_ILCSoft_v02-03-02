@@ -1,0 +1,125 @@
+\section{C\-A\-L\-I\-C\-E\-:\-:Ahc2\-Gain\-Calibrator Class Reference}
+\label{classCALICE_1_1Ahc2GainCalibrator}\index{C\-A\-L\-I\-C\-E\-::\-Ahc2\-Gain\-Calibrator@{C\-A\-L\-I\-C\-E\-::\-Ahc2\-Gain\-Calibrator}}
+Inheritance diagram for C\-A\-L\-I\-C\-E\-:\-:Ahc2\-Gain\-Calibrator\-:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classCALICE_1_1Ahc2GainCalibrator}
+\end{center}
+\end{figure}
+\subsection*{Data Structures}
+\begin{DoxyCompactItemize}
+\item 
+class {\bf Calib\-Spectrum}
+\item 
+class {\bf Pedestal\-Calibrator}
+\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+virtual Processor $\ast$ {\bfseries new\-Processor} ()\label{classCALICE_1_1Ahc2GainCalibrator_a2cd18d77eb3800a2a283d16fe29f2c6f}
+
+\item 
+{\bf Ahc2\-Gain\-Calibrator} ()\label{classCALICE_1_1Ahc2GainCalibrator_a6320419c6cfdfdc64dd7fa96cce09d9f}
+
+\begin{DoxyCompactList}\small\item\em Default constructor. \end{DoxyCompactList}\item 
+virtual void {\bf init} ()\label{classCALICE_1_1Ahc2GainCalibrator_ac1573d5b6cad18fe1f8050d2f38c3a3f}
+
+\begin{DoxyCompactList}\small\item\em Marlin \doxyref{init()}{p.}{classCALICE_1_1Ahc2GainCalibrator_ac1573d5b6cad18fe1f8050d2f38c3a3f} function. \end{DoxyCompactList}\item 
+virtual void {\bf process\-Run\-Header} (L\-C\-Event $\ast$evt)\label{classCALICE_1_1Ahc2GainCalibrator_ac34abdc73d3b0b3386897014967eac63}
+
+\begin{DoxyCompactList}\small\item\em Marlin \doxyref{process\-Run\-Header()}{p.}{classCALICE_1_1Ahc2GainCalibrator_ac34abdc73d3b0b3386897014967eac63} function. \end{DoxyCompactList}\item 
+virtual void {\bf process\-Event} (L\-C\-Event $\ast$evt)\label{classCALICE_1_1Ahc2GainCalibrator_a72d95ed3241e4d3ef4206f45a33b33b1}
+
+\begin{DoxyCompactList}\small\item\em Marlin \doxyref{process\-Event()}{p.}{classCALICE_1_1Ahc2GainCalibrator_a72d95ed3241e4d3ef4206f45a33b33b1} function. \end{DoxyCompactList}\item 
+virtual void {\bf check} (L\-C\-Event $\ast$evt)\label{classCALICE_1_1Ahc2GainCalibrator_a5c59755e3e8a923997242ec29c277f2a}
+
+\begin{DoxyCompactList}\small\item\em Marlin \doxyref{check()}{p.}{classCALICE_1_1Ahc2GainCalibrator_a5c59755e3e8a923997242ec29c277f2a} function. \end{DoxyCompactList}\item 
+virtual void {\bf end} ()\label{classCALICE_1_1Ahc2GainCalibrator_a89ae814af7ff3c7f4eb177e1c0d17bc2}
+
+\begin{DoxyCompactList}\small\item\em Marlin \doxyref{end()}{p.}{classCALICE_1_1Ahc2GainCalibrator_a89ae814af7ff3c7f4eb177e1c0d17bc2} function. \end{DoxyCompactList}\item 
+bool {\bfseries Check\-Spectrum} (T\-Spectrum $\ast$spec)\label{classCALICE_1_1Ahc2GainCalibrator_ae25b20654d17569dbfe647fd8c16aca6}
+
+\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+{\bf Pedestal\-Calibrator} $\ast$ {\bfseries pedestal}\label{classCALICE_1_1Ahc2GainCalibrator_a7bff616a9e98da157f91629b8bf7d68d}
+
+\item 
+std\-::string {\bf \-\_\-input\-Col\-Name}\label{classCALICE_1_1Ahc2GainCalibrator_a2068e292da9d8c573029df96bec5ab4a}
+
+\begin{DoxyCompactList}\small\item\em Input L\-C\-I\-O Collection name. \end{DoxyCompactList}\item 
+std\-::string {\bf \-\_\-rootfile\-Name}\label{classCALICE_1_1Ahc2GainCalibrator_a07d0bb7b6b0e619db43e06f7402a892d}
+
+\begin{DoxyCompactList}\small\item\em Output Rootfile name. \end{DoxyCompactList}\item 
+std\-::string {\bf \-\_\-gainfile\-Name}\label{classCALICE_1_1Ahc2GainCalibrator_aaa4d9833aad27df6085dd88a9046a797}
+
+\begin{DoxyCompactList}\small\item\em Output tsv file name. \end{DoxyCompactList}\item 
+std\-::string {\bf \-\_\-input\-Mem\-Offset\-Name}\label{classCALICE_1_1Ahc2GainCalibrator_a339263877a8635af1140647fad25784a}
+
+\begin{DoxyCompactList}\small\item\em Path to the Memcell offset values. \end{DoxyCompactList}\item 
+bool {\bf \-\_\-is\-H\-G\-L\-G}\label{classCALICE_1_1Ahc2GainCalibrator_a3bfa6ec3a49a85bb22d494a88f9f9bc9}
+
+\begin{DoxyCompactList}\small\item\em Files run with A\-D\-C H\-G-\/\-L\-G? \end{DoxyCompactList}\item 
+bool {\bfseries \-\_\-\-To\-Check\-Spectrum}\label{classCALICE_1_1Ahc2GainCalibrator_ab3e2e78e39abbab307a2ca82f6f5bbeb}
+
+\item 
+bool {\bfseries \-\_\-\-To\-Check\-Mean}\label{classCALICE_1_1Ahc2GainCalibrator_a5383497661cba550f7fcf7d77bac8c25}
+
+\item 
+bool {\bf \-\_\-take\-Pedestal}\label{classCALICE_1_1Ahc2GainCalibrator_a7e2981ac6c30e1e17983cc15404d0ba2}
+
+\begin{DoxyCompactList}\small\item\em take pedestal memory cell offset \end{DoxyCompactList}\item 
+std\-::string {\bf \-\_\-v\-Calib}\label{classCALICE_1_1Ahc2GainCalibrator_ab87279a2a7077d60e14234bc53cdd222}
+
+\begin{DoxyCompactList}\small\item\em L\-E\-D calib voltage in m\-V. \end{DoxyCompactList}\item 
+float {\bfseries b\-\_\-chi2}\label{classCALICE_1_1Ahc2GainCalibrator_ad7ef3b652f31a5747995f10c72d087c4}
+
+\item 
+float {\bfseries b\-\_\-chip}\label{classCALICE_1_1Ahc2GainCalibrator_a9106a894efcf5db9ac569a880b390fe4}
+
+\item 
+float {\bfseries b\-\_\-chan}\label{classCALICE_1_1Ahc2GainCalibrator_ab60e0f696626eef745dc8132c4c9fad4}
+
+\item 
+float {\bfseries b\-\_\-\-Vcalib}\label{classCALICE_1_1Ahc2GainCalibrator_ae14581654a58c27979ec8212646dcf80}
+
+\item 
+T\-File $\ast$ {\bf output\-\_\-file}\label{classCALICE_1_1Ahc2GainCalibrator_aea956c36024f81e4d698757e967758b1}
+
+\begin{DoxyCompactList}\small\item\em Pointer to output rootfile. \end{DoxyCompactList}\item 
+T\-File $\ast$ {\bfseries f\-Test}\label{classCALICE_1_1Ahc2GainCalibrator_a864a38222ab9d49b9d23b34a20467f6f}
+
+\item 
+T\-Tree $\ast$ {\bfseries t\-Test}\label{classCALICE_1_1Ahc2GainCalibrator_a4b2b85b472016465f7f84442d8a77759}
+
+\item 
+T\-File $\ast$ {\bfseries f\-High\-Signal}\label{classCALICE_1_1Ahc2GainCalibrator_a6772ce33e107f907b9525734cf4ed1f3}
+
+\item 
+T\-H1\-D $\ast$ {\bf h\-Chi\-Square}\label{classCALICE_1_1Ahc2GainCalibrator_a05fb396911d9708a9a216d6f791255f7}
+
+\begin{DoxyCompactList}\small\item\em Pointer to histogram Chi\-Square all. \end{DoxyCompactList}\item 
+T\-H1\-D $\ast$ {\bfseries h\-Fit\-Over\-F\-F\-T}\label{classCALICE_1_1Ahc2GainCalibrator_ab04684225bb64e36e4fb829b23c4f326}
+
+\item 
+T\-H2\-D $\ast$ {\bfseries h\-Fit2\-F\-F\-T}\label{classCALICE_1_1Ahc2GainCalibrator_aa43b8107e142e992d5a6176d7fe7b706}
+
+\item 
+map$<$ int, std\-::vector\\*
+$<$ {\bf Calib\-Spectrum} $\ast$ $>$ $>$ {\bf histos}\label{classCALICE_1_1Ahc2GainCalibrator_a86f2bfc90b06ffeb0a0e3c3a4d933ca4}
+
+\begin{DoxyCompactList}\small\item\em map for each chip containing 36 histograms \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+
+
+Definition at line 61 of file Ahc2\-Gain\-Calibrator.\-hh.
+
+
+
+The documentation for this class was generated from the following files\-:\begin{DoxyCompactItemize}
+\item 
+Ahc2\-Gain\-Calibrator.\-hh\item 
+Ahc2\-Gain\-Calibrator.\-cc\end{DoxyCompactItemize}

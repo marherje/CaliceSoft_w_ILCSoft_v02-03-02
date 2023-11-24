@@ -1,0 +1,106 @@
+\section{C\-A\-L\-I\-C\-E\-:\-:Fast\-Calib\-Processor$<$ T, H, str, M $>$ Class Template Reference}
+\label{classCALICE_1_1FastCalibProcessor}\index{C\-A\-L\-I\-C\-E\-::\-Fast\-Calib\-Processor$<$ T, H, str, M $>$@{C\-A\-L\-I\-C\-E\-::\-Fast\-Calib\-Processor$<$ T, H, str, M $>$}}
+
+
+Class which handles the application of a certain type T\-:L\-C\-Hcal\-Calibration\-Object to an input collection of Calice\-Hit and writes an output collection of Calice\-Hit.  
+
+
+
+
+{\ttfamily \#include $<$Fast\-Calibration\-Processor.\-hh$>$}
+
+Inheritance diagram for C\-A\-L\-I\-C\-E\-:\-:Fast\-Calib\-Processor$<$ T, H, str, M $>$\-:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classCALICE_1_1FastCalibProcessor}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+virtual Processor $\ast$ {\bfseries new\-Processor} ()\label{classCALICE_1_1FastCalibProcessor_a3118254e508e231dd79614ed367b1de0}
+
+\item 
+virtual void {\bfseries init} ()\label{classCALICE_1_1FastCalibProcessor_a4b47376d1de4a95324feb266d3e04fe2}
+
+\item 
+void {\bfseries calibration\-Changed} (lcio\-::\-L\-C\-Collection $\ast$col)\label{classCALICE_1_1FastCalibProcessor_af0849f090e34dfa2a136d07188141064}
+
+\item 
+void {\bfseries ahc\-Sro\-Mod\-Data\-Col\-Changed} (lcio\-::\-L\-C\-Collection $\ast$col)\label{classCALICE_1_1FastCalibProcessor_a16d81154984d0fef91516ecc4d727a7f}
+
+\item 
+virtual void {\bfseries process\-Event} (L\-C\-Event $\ast$evt)\label{classCALICE_1_1FastCalibProcessor_a9f3a0e4a323ef030adc45d40d023ecff}
+
+\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+std\-::string {\bfseries \-\_\-input\-Col\-Name}\label{classCALICE_1_1FastCalibProcessor_a4e3450182079803160b3a3d49fe52bf5}
+
+\item 
+std\-::string {\bfseries \-\_\-output\-Col\-Name}\label{classCALICE_1_1FastCalibProcessor_a6ca793dcf8a511d5fcf2092c99592227}
+
+\item 
+std\-::string {\bfseries \-\_\-cal\-Col\-Name}\label{classCALICE_1_1FastCalibProcessor_a5bad8e294f9a71589ff02e911a789add}
+
+\item 
+std\-::string {\bfseries \-\_\-ahc\-Sro\-Mod\-Data\-Col\-Name}\label{classCALICE_1_1FastCalibProcessor_afe4587e7dccde530034ae8560295ab2a}
+
+\item 
+Int\-Vec {\bfseries \-\_\-modules}\label{classCALICE_1_1FastCalibProcessor_a279d5d4b719e274a887135f1bca70330}
+
+\item 
+bool {\bfseries \-\_\-overwrite}\label{classCALICE_1_1FastCalibProcessor_af756fa4e02404c38b78806a8333ecebd}
+
+\item 
+int {\bfseries \-\_\-zero\-Suppression}\label{classCALICE_1_1FastCalibProcessor_a579d58dc12aa93fb27a6dc7ae2b6654c}
+
+\item 
+bool {\bfseries \-\_\-do\-Mip\-Calibration}\label{classCALICE_1_1FastCalibProcessor_a396e71ec9015968a395f1d0d1727c897}
+
+\item 
+{\bf Calibration\-Set}$<$ T $>$ $\ast$ {\bfseries \-\_\-calib\-Set}\label{classCALICE_1_1FastCalibProcessor_add7475797b98bee61c39b503d5195dc5}
+
+\item 
+M $\ast$ {\bfseries \-\_\-temp\-Model}\label{classCALICE_1_1FastCalibProcessor_a6e48c942ee98efaf387e15e82c90fed7}
+
+\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+Conditions\-Change\-Delegator\\*
+$<$ {\bf Fast\-Calib\-Processor}$<$ T, H, \\*
+str, M $>$ $>$ {\bfseries \-\_\-calibration\-Change}\label{classCALICE_1_1FastCalibProcessor_ae17b4d2b8c9107594ae92e70dcf2983d}
+
+\item 
+Conditions\-Change\-Delegator\\*
+$<$ {\bf Fast\-Calib\-Processor}$<$ T, H, \\*
+str, M $>$ $>$ {\bfseries \-\_\-ahc\-Sro\-Mod\-Data\-Change}\label{classCALICE_1_1FastCalibProcessor_a132d6fff627c0b45c1e98fc9d5a28146}
+
+\item 
+lcio\-::\-L\-C\-Collection $\ast$ {\bfseries \-\_\-ahc\-Sro\-Mod\-Data\-Col}\label{classCALICE_1_1FastCalibProcessor_ad11ad45f2892496a8582b31aea2f0fcb}
+
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+\subsubsection*{template$<$class T, class H, const char $\ast$ str, class M = Temp\-Model$>$class C\-A\-L\-I\-C\-E\-::\-Fast\-Calib\-Processor$<$ T, H, str, M $>$}
+
+Class which handles the application of a certain type T\-:L\-C\-Hcal\-Calibration\-Object to an input collection of Calice\-Hit and writes an output collection of Calice\-Hit. 
+
+\begin{DoxyAuthor}{Author}
+S.\-Schmidt, D\-E\-S\-Y 
+\end{DoxyAuthor}
+\begin{DoxyDate}{Date}
+Sep 23 2006 
+\end{DoxyDate}
+
+
+Definition at line 34 of file Fast\-Calibration\-Processor.\-hh.
+
+
+
+The documentation for this class was generated from the following file\-:\begin{DoxyCompactItemize}
+\item 
+Fast\-Calibration\-Processor.\-hh\end{DoxyCompactItemize}

@@ -1,0 +1,125 @@
+\section{Cell\-I\-D\-Decoder Class Reference}
+\label{classCellIDDecoder}\index{Cell\-I\-D\-Decoder@{Cell\-I\-D\-Decoder}}
+\subsection*{Data Structures}
+\begin{DoxyCompactItemize}
+\item 
+struct {\bf cell\-I\-D}
+\item 
+class {\bf decoder}
+\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+{\bfseries Cell\-I\-D\-Decoder} (const int cell\-I\-D0, const int cell\-I\-D1, int Symmetry\-Order)\label{classCellIDDecoder_a57a59e864743d82a3f17eba130e0c158}
+
+\item 
+{\bfseries Cell\-I\-D\-Decoder} (long long {\bf cell\-I\-D}, int Symmetry\-Order, bool use\-Encoder32)\label{classCellIDDecoder_a724b4bba1fb1621ac12a0554d07c513e}
+
+\item 
+{\bfseries Cell\-I\-D\-Decoder} (int cell\-I\-D0, int Symmetry\-Order)\label{classCellIDDecoder_a6a1beb6f05b1ce3380e5b7c648171eff}
+
+\item 
+{\bfseries Cell\-I\-D\-Decoder} (int Symmetry\-Order, bool use\-Encoder32)\label{classCellIDDecoder_a7a0313f2e451e3bcea401b2c98eb28c6}
+
+\item 
+int {\bf get\-L1} () const \label{classCellIDDecoder_afa98ebb29126d5e8c98a218862fe641d}
+
+\begin{DoxyCompactList}\small\item\em Symmetry\-Order is the order of the rotational symmetry \par
+ 8 for an octagonal barrel calorimeter\par
+ 2 for an endcap calorimeter\par
+ 1 for a standalone prototype\par
+ 0 for an idealized cylindrical calorimeter. \end{DoxyCompactList}\item 
+int {\bfseries get\-L2} () const \label{classCellIDDecoder_a1a942f4c597b2ba63614fd0f5366fa26}
+
+\item 
+int {\bfseries get\-Prov} () const \label{classCellIDDecoder_ad111007ae3b5976c2c4de1641daa6120}
+
+\item 
+int {\bfseries get\-K} () const \label{classCellIDDecoder_a9b778944dc142f161a4338b883e0ae4a}
+
+\item 
+int {\bfseries get\-M} () const \label{classCellIDDecoder_af4e7450a2bde36ed410c824918327c3b}
+
+\item 
+int {\bfseries get\-S} () const \label{classCellIDDecoder_a12262c7a0ba9c0d98a30cff42fa1e86c}
+
+\item 
+int {\bfseries get\-I} () const \label{classCellIDDecoder_a7178a0e8fca513f2c63b072a7d1ef031}
+
+\item 
+int {\bfseries get\-J} () const \label{classCellIDDecoder_aa2ccda21c1eda20d8cfb49d5b095e7bb}
+
+\item 
+int {\bfseries get\-Imax} () const \label{classCellIDDecoder_ac7f29623ab8a976a2e1a3a433a386da4}
+
+\item 
+int {\bfseries get\-Jmax} () const \label{classCellIDDecoder_a75a5dadf8c8a13099078e5cc5878f763}
+
+\item 
+int {\bfseries get\-K\-S\-M} () const \label{classCellIDDecoder_a10b875d5861db0e62b01fa5d78691e82}
+
+\item 
+int {\bfseries get\-G\-R\-Zone} () const \label{classCellIDDecoder_a58d5ee7717684a20890d7cdca28b1861}
+
+\item 
+int {\bfseries is\-Same\-Wafer} (const {\bf Cell\-I\-D\-Decoder} \&neighbour)\label{classCellIDDecoder_a4297eb41dc656f43e003e71a15ca872d}
+
+\item 
+int {\bfseries get\-I} (int N\-C\-E\-L\-L\-S)\label{classCellIDDecoder_a0f1d29c476fc382f9c8d8ed66c5a9940}
+
+\item 
+int {\bfseries get\-J} (int N\-C\-E\-L\-L\-S)\label{classCellIDDecoder_ac49dea91b9e9b89aa017c57d554b6abd}
+
+\item 
+std\-::pair$<$ int, int $>$ {\bfseries Encode} ()\label{classCellIDDecoder_a6b686fd95782c17d6ac3b5e23ff78973}
+
+\item 
+std\-::pair$<$ int, int $>$ {\bfseries Encode} (int N\-C\-E\-L\-L\-S)\label{classCellIDDecoder_a985d59486ee5905edb133bc913e3b6cf}
+
+\item 
+std\-::pair$<$ int, int $>$ {\bfseries Encode} (int K, int S, int M, int I, int J)\label{classCellIDDecoder_a798ce6ff231fc70e904cd20d23a37210}
+
+\item 
+long long {\bfseries Encode\-Neigh} (int deltai, int deltaj, int N\-C\-E\-L\-L\-S)\label{classCellIDDecoder_a01a1621bdb246bbf8100d34e0ab2983e}
+
+\item 
+long long {\bfseries Encode\-Neigh} (int deltai, int deltaj)\label{classCellIDDecoder_adbeab7f1741e44595dd06616fdca8a1f}
+
+\end{DoxyCompactItemize}
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static const {\bf decoder} \& {\bfseries Get\-Decoder} ()\label{classCellIDDecoder_af27dfed8b6ba27ad29070cc709cd1dc2}
+
+\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+{\bf cell\-I\-D} {\bfseries \-\_\-mycell\-I\-D}\label{classCellIDDecoder_a80eb4e813fdba53afd6eabe36881be62}
+
+\item 
+bool {\bfseries \-\_\-is32}\label{classCellIDDecoder_a562e6de1c58e67548ab7aae2b3ab6371}
+
+\item 
+int {\bfseries \-\_\-symmetry\-Order}\label{classCellIDDecoder_a60d27aa7ada2fb0cdb35357803924f2c}
+
+\item 
+const int $\ast$ {\bfseries p\-\_\-mask}\label{classCellIDDecoder_a22de1f2756130010bd9a3aa55516cc5f}
+
+\item 
+const int $\ast$ {\bfseries p\-\_\-shift}\label{classCellIDDecoder_aa5c90c05a46e982aba9e50082239f2fc}
+
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+
+
+Definition at line 6 of file Cell\-I\-D\-Decoder.\-hpp.
+
+
+
+The documentation for this class was generated from the following files\-:\begin{DoxyCompactItemize}
+\item 
+Cell\-I\-D\-Decoder.\-hpp\item 
+Cell\-I\-D\-Decoder.\-cpp\end{DoxyCompactItemize}

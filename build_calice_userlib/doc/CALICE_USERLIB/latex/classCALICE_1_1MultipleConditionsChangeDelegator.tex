@@ -1,0 +1,89 @@
+\section{C\-A\-L\-I\-C\-E\-:\-:Multiple\-Conditions\-Change\-Delegator$<$ T $>$ Class Template Reference}
+\label{classCALICE_1_1MultipleConditionsChangeDelegator}\index{C\-A\-L\-I\-C\-E\-::\-Multiple\-Conditions\-Change\-Delegator$<$ T $>$@{C\-A\-L\-I\-C\-E\-::\-Multiple\-Conditions\-Change\-Delegator$<$ T $>$}}
+
+
+Listens for conditions data changes and delegates the information to a class.  
+
+
+
+
+{\ttfamily \#include $<$Multiple\-Conditions\-Change\-Delegator.\-hh$>$}
+
+Inheritance diagram for C\-A\-L\-I\-C\-E\-:\-:Multiple\-Conditions\-Change\-Delegator$<$ T $>$\-:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classCALICE_1_1MultipleConditionsChangeDelegator}
+\end{center}
+\end{figure}
+\subsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+typedef void(T\-::$\ast$ {\bfseries Conditions\-Change\-Handle\-Func\-\_\-t} )(lcio\-::\-L\-C\-Collection $\ast$col, unsigned int index)\label{classCALICE_1_1MultipleConditionsChangeDelegator_af8e908739880440829d0055c2ec360fa}
+
+\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+{\bfseries Multiple\-Conditions\-Change\-Delegator} (T $\ast$responsible, Conditions\-Change\-Handle\-Func\-\_\-t a\-\_\-func, unsigned int index)\label{classCALICE_1_1MultipleConditionsChangeDelegator_a90c159262e4f9ef11d0c3ede5d90516c}
+
+\item 
+void {\bf conditions\-Changed} (lcio\-::\-L\-C\-Collection $\ast$col)
+\begin{DoxyCompactList}\small\item\em Be notified if conditions data changes and redirect changes to responsible class. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+Conditions\-Change\-Handle\-Func\-\_\-t {\bf \-\_\-func\-P}\label{classCALICE_1_1MultipleConditionsChangeDelegator_a4a645a8a5db35c8c8841a770c0a64188}
+
+\begin{DoxyCompactList}\small\item\em method to be called if the conditions data changed \end{DoxyCompactList}\item 
+T $\ast$ {\bf \-\_\-responsible}\label{classCALICE_1_1MultipleConditionsChangeDelegator_a64d4deb6c673f64dfe2c1be72543714a}
+
+\begin{DoxyCompactList}\small\item\em the object which will take care of the change \end{DoxyCompactList}\item 
+unsigned int {\bfseries \-\_\-index}\label{classCALICE_1_1MultipleConditionsChangeDelegator_a3a49a4d76e2e0f374b4c526339ac970b}
+
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+\subsubsection*{template$<$class T$>$class C\-A\-L\-I\-C\-E\-::\-Multiple\-Conditions\-Change\-Delegator$<$ T $>$}
+
+Listens for conditions data changes and delegates the information to a class. 
+
+a class can redirect several conditions data changes to itself. \begin{DoxySeeAlso}{See Also}
+test\-Conditions\-Data\-Delegator.\-cc 
+\end{DoxySeeAlso}
+
+
+Definition at line 14 of file Multiple\-Conditions\-Change\-Delegator.\-hh.
+
+
+
+\subsection{Member Function Documentation}
+\index{C\-A\-L\-I\-C\-E\-::\-Multiple\-Conditions\-Change\-Delegator@{C\-A\-L\-I\-C\-E\-::\-Multiple\-Conditions\-Change\-Delegator}!conditions\-Changed@{conditions\-Changed}}
+\index{conditions\-Changed@{conditions\-Changed}!CALICE::MultipleConditionsChangeDelegator@{C\-A\-L\-I\-C\-E\-::\-Multiple\-Conditions\-Change\-Delegator}}
+\subsubsection[{conditions\-Changed}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class T $>$ void {\bf C\-A\-L\-I\-C\-E\-::\-Multiple\-Conditions\-Change\-Delegator}$<$ T $>$\-::conditions\-Changed (
+\begin{DoxyParamCaption}
+\item[{lcio\-::\-L\-C\-Collection $\ast$}]{col}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\label{classCALICE_1_1MultipleConditionsChangeDelegator_a90d8bb55cc290174c0d5ae842af37225}
+
+
+Be notified if conditions data changes and redirect changes to responsible class. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em col} & the collection containing the new conditions data \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 28 of file Multiple\-Conditions\-Change\-Delegator.\-hh.
+
+
+
+References C\-A\-L\-I\-C\-E\-::\-Multiple\-Conditions\-Change\-Delegator$<$ T $>$\-::\-\_\-func\-P, and C\-A\-L\-I\-C\-E\-::\-Multiple\-Conditions\-Change\-Delegator$<$ T $>$\-::\-\_\-responsible.
+
+
+
+The documentation for this class was generated from the following file\-:\begin{DoxyCompactItemize}
+\item 
+Multiple\-Conditions\-Change\-Delegator.\-hh\end{DoxyCompactItemize}

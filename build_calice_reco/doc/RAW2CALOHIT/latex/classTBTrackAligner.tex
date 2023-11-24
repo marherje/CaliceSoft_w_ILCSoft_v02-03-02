@@ -1,0 +1,124 @@
+\section{T\-B\-Track\-Aligner Class Reference}
+\label{classTBTrackAligner}\index{T\-B\-Track\-Aligner@{T\-B\-Track\-Aligner}}
+Inheritance diagram for T\-B\-Track\-Aligner\-:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=3.000000cm]{classTBTrackAligner}
+\end{center}
+\end{figure}
+\subsection*{Data Structures}
+\begin{DoxyCompactItemize}
+\item 
+class {\bf Event\-Hits}
+\begin{DoxyCompactList}\small\item\em Method to write the histograms in a R\-O\-O\-T file. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+virtual Processor $\ast$ {\bfseries new\-Processor} ()\label{classTBTrackAligner_ab27cfabdbaac3f2f51abc8be398b0c3e}
+
+\item 
+virtual void {\bf Init} ()
+\begin{DoxyCompactList}\small\item\em Called at the begin of the job before anything is read. \end{DoxyCompactList}\item 
+virtual void {\bfseries init\-Hists} (unsigned p, bool t)\label{classTBTrackAligner_a57dd9a9703c4733f868294e6e93897cc}
+
+\item 
+virtual void {\bf Process\-Run\-Header} (L\-C\-Run\-Header $\ast$run)\label{classTBTrackAligner_a0ac4e729acb1e02c52f6ece3bc8b8b47}
+
+\begin{DoxyCompactList}\small\item\em Called for every run. \end{DoxyCompactList}\item 
+virtual void {\bf Process\-Event} (L\-C\-Event $\ast$evt)\label{classTBTrackAligner_a496379cef405a24bc80d8ec7a70686fb}
+
+\begin{DoxyCompactList}\small\item\em Called for every event -\/ the working horse. \end{DoxyCompactList}\item 
+virtual void {\bf End} ()\label{classTBTrackAligner_a6070161df8594c662cb572b8f4edd93a}
+
+\begin{DoxyCompactList}\small\item\em Called after data processing for clean up. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+unsigned {\bfseries \-\_\-high\-Prob} [2][17]\label{classTBTrackAligner_a84b06cd379973894683c4ff5149184dd}
+
+\item 
+std\-::vector$<$ {\bf Event\-Hits} $>$ {\bfseries \-\_\-v\-Event\-Hits}\label{classTBTrackAligner_a5c6ddddba21085e33d42b11e2d422bfc}
+
+\item 
+T\-H1\-F $\ast$ {\bfseries h\-Numb} [2][17]\label{classTBTrackAligner_ad3bc07a2152a746a4c9b0421ca9726db}
+
+\item 
+T\-H1\-F $\ast$ {\bfseries h\-Patt} [2][17]\label{classTBTrackAligner_ac4e1e6d6e4713df266dad1dcb1d21ee0}
+
+\item 
+T\-H1\-F $\ast$ {\bfseries h\-Par0} [2][17]\label{classTBTrackAligner_a9f650a0b52fc7310e40f585528ae4493}
+
+\item 
+T\-H1\-F $\ast$ {\bfseries h\-Par1} [2][17]\label{classTBTrackAligner_a5e2a1d7b0ccf41fbc7688dd30f3c8a8e}
+
+\item 
+T\-H1\-F $\ast$ {\bfseries h\-Err0} [2][17]\label{classTBTrackAligner_a01fc9327217160b2156e70bdb92aff42}
+
+\item 
+T\-H1\-F $\ast$ {\bfseries h\-Err1} [2][17]\label{classTBTrackAligner_ac65bf51d7bd36288095648af52fa1f1d}
+
+\item 
+T\-H1\-F $\ast$ {\bfseries h\-Corr} [2][17]\label{classTBTrackAligner_a73a3c754d6cad7cbd808eb5eb774af3c}
+
+\item 
+T\-H1\-F $\ast$ {\bfseries h\-Prob} [2][17]\label{classTBTrackAligner_a210d71981fd2c6458373af716c51be86}
+
+\item 
+T\-H2\-F $\ast$ {\bfseries h\-Nmb2} [2][17]\label{classTBTrackAligner_aa9da39c486f6eca63b73f4493dde371a}
+
+\item 
+T\-H2\-F $\ast$ {\bfseries h\-Prb2} [2][17]\label{classTBTrackAligner_adb4cdb6ce68506ed205d38ad5e6fbf7f}
+
+\item 
+T\-H1\-F $\ast$ {\bfseries h\-M\-Pr0} [2][17]\label{classTBTrackAligner_ad830dd1d1bb766c9c311096c8af640c8}
+
+\item 
+T\-H1\-F $\ast$ {\bfseries h\-M\-Pr1} [2][17]\label{classTBTrackAligner_abe3da835695654538e6dfdf8d23beecb}
+
+\item 
+T\-H1\-F $\ast$ {\bfseries h\-M\-Df0} [2][17]\label{classTBTrackAligner_a7eb3cf9ed18f91e44e53bb325033177d}
+
+\item 
+T\-H1\-F $\ast$ {\bfseries h\-M\-Df1} [2][17]\label{classTBTrackAligner_a9721cba8515c2270ef25a52eef0b764d}
+
+\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Detailed Description}
+
+
+Definition at line 17 of file T\-B\-Track\-Aligner.\-hh.
+
+
+
+\subsection{Member Function Documentation}
+\index{T\-B\-Track\-Aligner@{T\-B\-Track\-Aligner}!Init@{Init}}
+\index{Init@{Init}!TBTrackAligner@{T\-B\-Track\-Aligner}}
+\subsubsection[{Init}]{\setlength{\rightskip}{0pt plus 5cm}void T\-B\-Track\-Aligner\-::\-Init (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}\label{classTBTrackAligner_a0f999c70adb52bcb8ce25f517b5b0f70}
+
+
+Called at the begin of the job before anything is read. 
+
+Use to initialize the processor, e.\-g. book histograms. 
+
+Implements {\bf T\-B\-Track\-Base\-Processor} \doxyref{}{p.}{classTBTrackBaseProcessor}.
+
+
+
+Definition at line 94 of file T\-B\-Track\-Aligner.\-cc.
+
+
+
+Referenced by T\-B\-Track\-Base\-Processor\-::init().
+
+
+
+The documentation for this class was generated from the following files\-:\begin{DoxyCompactItemize}
+\item 
+T\-B\-Track\-Aligner.\-hh\item 
+T\-B\-Track\-Aligner.\-cc\end{DoxyCompactItemize}

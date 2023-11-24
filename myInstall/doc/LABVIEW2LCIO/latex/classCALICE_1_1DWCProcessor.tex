@@ -1,0 +1,175 @@
+\section{C\-A\-L\-I\-C\-E\-:\-:D\-W\-C\-Processor Class Reference}
+\label{classCALICE_1_1DWCProcessor}\index{C\-A\-L\-I\-C\-E\-::\-D\-W\-C\-Processor@{C\-A\-L\-I\-C\-E\-::\-D\-W\-C\-Processor}}
+Inheritance diagram for C\-A\-L\-I\-C\-E\-:\-:D\-W\-C\-Processor\-:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classCALICE_1_1DWCProcessor}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+virtual Processor $\ast$ {\bf new\-Processor} ()\label{classCALICE_1_1DWCProcessor_a007fa240c5beafc5364c733741f6a51f}
+
+\begin{DoxyCompactList}\small\item\em Implementation of new Processor returns pointer to processor. \end{DoxyCompactList}\item 
+void {\bf process\-Event} (L\-C\-Event $\ast$evt)\label{classCALICE_1_1DWCProcessor_a383de0f47632539b18b913c65cdc965e}
+
+\begin{DoxyCompactList}\small\item\em Creates events with L\-C\-Genreal\-Object collections from the E\-U\-D\-A\-Q input file and calls all active processors' \doxyref{process\-Event()}{p.}{classCALICE_1_1DWCProcessor_a383de0f47632539b18b913c65cdc965e} and process\-Run\-Header Method. \end{DoxyCompactList}\item 
+virtual void {\bf init} ()\label{classCALICE_1_1DWCProcessor_ad557578e5f28eaf5e48cb9af448d5d7c}
+
+\begin{DoxyCompactList}\small\item\em init method \end{DoxyCompactList}\item 
+virtual void {\bf end} ()\label{classCALICE_1_1DWCProcessor_a7403f807486b02347011baa13020cbbd}
+
+\begin{DoxyCompactList}\small\item\em end method \end{DoxyCompactList}\item 
+virtual void {\bfseries print\-Parameters} ()\label{classCALICE_1_1DWCProcessor_a7605fb778019459e4560b23e4767ab08}
+
+\end{DoxyCompactItemize}
+\subsection*{Protected Types}
+\begin{DoxyCompactItemize}
+\item 
+enum {\bfseries D\-W\-C\-\_\-\-M\-A\-P} \{ {\bfseries D\-W\-C\-\_\-\-A}, 
+{\bfseries D\-W\-C\-\_\-\-D}, 
+{\bfseries D\-W\-C\-\_\-\-E}, 
+{\bfseries D\-W\-C\-\_\-\-E\-X\-T}
+ \}
+\item 
+enum {\bfseries D\-W\-C\-\_\-to\-\_\-\-T\-D\-C\-\_\-\-M\-A\-P} \{ \\*
+{\bfseries D\-W\-C\-E\-\_\-\-L} = 0, 
+{\bfseries D\-W\-C\-E\-\_\-\-R} = 1, 
+{\bfseries D\-W\-C\-E\-\_\-\-D} = 2, 
+{\bfseries D\-W\-C\-E\-\_\-\-U} = 3, 
+\\*
+{\bfseries D\-W\-C\-D\-\_\-\-L} = 4, 
+{\bfseries D\-W\-C\-D\-\_\-\-R} = 5, 
+{\bfseries D\-W\-C\-D\-\_\-\-D} = 6, 
+{\bfseries D\-W\-C\-D\-\_\-\-U} = 7, 
+\\*
+{\bfseries D\-W\-C\-A\-\_\-\-L} = 9, 
+{\bfseries D\-W\-C\-A\-\_\-\-R} = 8, 
+{\bfseries D\-W\-C\-A\-\_\-\-D} = 10, 
+{\bfseries D\-W\-C\-A\-\_\-\-U} = 11, 
+\\*
+{\bfseries D\-W\-C\-E\-X\-T\-\_\-\-L} = 13, 
+{\bfseries D\-W\-C\-E\-X\-T\-\_\-\-R} = 12, 
+{\bfseries D\-W\-C\-E\-X\-T\-\_\-\-D} = 14, 
+{\bfseries D\-W\-C\-E\-X\-T\-\_\-\-U} = 15
+ \}
+\end{DoxyCompactItemize}
+\subsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+int {\bfseries load\-\_\-ahcal\-\_\-tdc} ()\label{classCALICE_1_1DWCProcessor_a8dc7ad6a9a383394675edd702759b051}
+
+\item 
+int {\bfseries load\-\_\-bif\-\_\-tdc} ()\label{classCALICE_1_1DWCProcessor_ad321c9c914af0d5bf51e3e536e65bdbe}
+
+\item 
+void {\bfseries event\-\_\-match} ()\label{classCALICE_1_1DWCProcessor_aee60b0b2be239ee0404c4f7cd0118bbc}
+
+\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+std\-::string {\bfseries \-\_\-input\-Col\-Name\-B\-I\-F}\label{classCALICE_1_1DWCProcessor_a017895c81a7349f917fab51a4e07c452}
+
+\item 
+std\-::string {\bfseries \-\_\-input\-File\-Name\-B\-I\-F}\label{classCALICE_1_1DWCProcessor_ab1502aaac0fd11abdd5c0c9b45259828}
+
+\item 
+std\-::string {\bfseries \-\_\-input\-File\-Name\-A\-H\-C\-A\-L}\label{classCALICE_1_1DWCProcessor_a674b7122596328f711d2e7c3844e1e07}
+
+\item 
+std\-::string {\bfseries \-\_\-input\-File\-Name\-D\-W\-C}\label{classCALICE_1_1DWCProcessor_a8f4eeca5ae42f2f40cfed3e75f05ce5d}
+
+\item 
+F\-I\-L\-E $\ast$ {\bfseries \-\_\-bif\-File}\label{classCALICE_1_1DWCProcessor_aabc149e980830e73711862fa353b458e}
+
+\item 
+F\-I\-L\-E $\ast$ {\bfseries \-\_\-ahcal\-File}\label{classCALICE_1_1DWCProcessor_a0d7e6e58f9b4f124f70337b83c4442af}
+
+\item 
+T\-File $\ast$ {\bfseries \-\_\-dwc\-File}\label{classCALICE_1_1DWCProcessor_a5b445b5c73a2a91b34766b6732528636}
+
+\item 
+T\-Tree $\ast$ {\bfseries \-\_\-dwc\-Tree}\label{classCALICE_1_1DWCProcessor_a1a2c2ad7e7b675b40e9f0e04ee9b6554}
+
+\item 
+std\-::string {\bfseries \-\_\-output\-Col\-Name\-D\-W\-C}\label{classCALICE_1_1DWCProcessor_a69b8d3123d50eaa2cd54ad23eaf91219}
+
+\item 
+unsigned long long int {\bfseries \-\_\-\-B\-I\-F\-T\-D\-C}\label{classCALICE_1_1DWCProcessor_ae4eef30649f5df4cf4d20a48dafc3c0c}
+
+\item 
+unsigned long long int {\bfseries \-\_\-\-A\-H\-C\-A\-L\-T\-D\-C}\label{classCALICE_1_1DWCProcessor_a75b49d844b2c3c7d050a25f55106d4dd}
+
+\item 
+std\-::vector$<$ unsigned long \\*
+long int $>$ {\bfseries \-\_\-\-B\-I\-F\-Time}\label{classCALICE_1_1DWCProcessor_ab466420698f295ef21a5db885a5dcd68}
+
+\item 
+std\-::vector$<$ unsigned long \\*
+long int $>$ {\bfseries \-\_\-\-D\-W\-C\-Time}\label{classCALICE_1_1DWCProcessor_a379f7ecee4966b7ab72530674b6ee674}
+
+\item 
+std\-::vector$<$ unsigned int $>$ {\bfseries \-\_\-\-D\-W\-C\-Trig}\label{classCALICE_1_1DWCProcessor_a29b4425aebc414dd4a1edf8519ff0175}
+
+\item 
+unsigned int {\bfseries \-\_\-index}\label{classCALICE_1_1DWCProcessor_a6a714884b6fbaf24742bb495a39c5d33}
+
+\item 
+std\-::vector$<$ int $>$ $\ast$ {\bfseries \-\_\-dwc\-Ch} [16] = \{0\}\label{classCALICE_1_1DWCProcessor_ad13b2866ef4bfb0453a8eabd26127a3c}
+
+\item 
+const int {\bfseries B\-U\-N\-C\-H\-\_\-\-T\-H\-R} = 5000\label{classCALICE_1_1DWCProcessor_ad554556b8dd863f01c86df433f1fdfda}
+
+\item 
+const int {\bfseries D\-W\-C\-\_\-\-T\-H\-R} = 4\label{classCALICE_1_1DWCProcessor_ae85ac22f0b1703dc6399a0b41a6edc22}
+
+\item 
+{\bf Line\-Fitter} {\bfseries \-\_\-track\-X}\label{classCALICE_1_1DWCProcessor_adafcec7c2d188557f96e50935aefe870}
+
+\item 
+{\bf Line\-Fitter} {\bfseries \-\_\-track\-Y}\label{classCALICE_1_1DWCProcessor_a307d2494f7fcc7fd07f2803f34af24ea}
+
+\item 
+\begin{tabbing}
+xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=\kill
+struct \{\\
+\>float {\bfseries A\_X} = -\/1.29\\
+\>float {\bfseries A\_Y} = -\/2.54\\
+\>float {\bfseries D\_X} = -\/0.56\\
+\>float {\bfseries D\_Y} = -\/7.36\\
+\>float {\bfseries E\_X} = -\/2.20\\
+\>float {\bfseries E\_Y} = -\/7.49\\
+\} {\bfseries DWC\_Offset}\label{classCALICE_1_1DWCProcessor_a385dce0ff2577432d1613a8a86e44565}
+\\
+
+\end{tabbing}\item 
+std\-::vector$<$ float $>$ {\bfseries \-\_\-\-D\-W\-C\-Offsets}\label{classCALICE_1_1DWCProcessor_a0621e94d17c76d9059c4078740243491}
+
+\item 
+const float {\bfseries D\-W\-C\-\_\-\-Z\-\_\-\-E} = -\/1090\label{classCALICE_1_1DWCProcessor_a64d00114aa1fc76520d822093aad047f}
+
+\item 
+const float {\bfseries D\-W\-C\-\_\-\-Z\-\_\-\-D} = -\/2350\label{classCALICE_1_1DWCProcessor_a183b71d4e9de86f78584fa89f2af7a0d}
+
+\item 
+const float {\bfseries D\-W\-C\-\_\-\-Z\-\_\-\-A} = -\/15090\label{classCALICE_1_1DWCProcessor_a281ba3794ef5a9f91a510a60d41616ff}
+
+\item 
+const float {\bfseries D\-W\-C\-\_\-\-Z\-\_\-\-E\-X\-T} = -\/17690\label{classCALICE_1_1DWCProcessor_a1eca5dc962b741bf8a9a98a0a6736c22}
+
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+
+
+Definition at line 24 of file D\-W\-C\-Processor.\-hh.
+
+
+
+The documentation for this class was generated from the following files\-:\begin{DoxyCompactItemize}
+\item 
+D\-W\-C\-Processor.\-hh\item 
+D\-W\-C\-Processor.\-cc\end{DoxyCompactItemize}

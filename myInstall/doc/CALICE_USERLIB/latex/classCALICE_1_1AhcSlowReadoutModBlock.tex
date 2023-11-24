@@ -1,0 +1,116 @@
+\section{C\-A\-L\-I\-C\-E\-:\-:Ahc\-Slow\-Readout\-Mod\-Block Class Reference}
+\label{classCALICE_1_1AhcSlowReadoutModBlock}\index{C\-A\-L\-I\-C\-E\-::\-Ahc\-Slow\-Readout\-Mod\-Block@{C\-A\-L\-I\-C\-E\-::\-Ahc\-Slow\-Readout\-Mod\-Block}}
+
+
+Interface Class to access the Ahc\-Slow\-Readout Data Here we handle ahc voltages, temperatures et al.  
+
+
+
+
+{\ttfamily \#include $<$Ahc\-Slow\-Readout\-Mod\-Block.\-hh$>$}
+
+Inheritance diagram for C\-A\-L\-I\-C\-E\-:\-:Ahc\-Slow\-Readout\-Mod\-Block\-:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=4.000000cm]{classCALICE_1_1AhcSlowReadoutModBlock}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+{\bf Ahc\-Slow\-Readout\-Mod\-Block} ()\label{classCALICE_1_1AhcSlowReadoutModBlock_a78919030cda78f1b40731c8124a28eac}
+
+\begin{DoxyCompactList}\small\item\em Constructor. \end{DoxyCompactList}\item 
+{\bf Ahc\-Slow\-Readout\-Mod\-Block} (L\-C\-Object $\ast${\bf obj})\label{classCALICE_1_1AhcSlowReadoutModBlock_a9a979a604c82e966f9a30ae3b55971ac}
+
+\begin{DoxyCompactList}\small\item\em 'Copy constructor' needed to interpret L\-C\-Collection read from file/database. \end{DoxyCompactList}\item 
+std\-::vector$<$ double $>$ \& {\bf get\-Cmb\-Values} ()\label{classCALICE_1_1AhcSlowReadoutModBlock_aac2c55bb18e8ca946d12c227de07d9a7}
+
+\begin{DoxyCompactList}\small\item\em Retrieve the cmb values. \end{DoxyCompactList}\item 
+std\-::vector$<$ double $>$ \& {\bf get\-Hbab\-Temperatures} ()\label{classCALICE_1_1AhcSlowReadoutModBlock_aad610827ad3485169aa9706cbc7128bb}
+
+\begin{DoxyCompactList}\small\item\em Retrieve the hbab temperatures. \end{DoxyCompactList}\item 
+void {\bf print} (std\-::ostream \&)
+\begin{DoxyCompactList}\small\item\em convenient print method \end{DoxyCompactList}\item 
+virtual const std\-::string {\bf get\-Type\-Name} () const \label{classCALICE_1_1AhcSlowReadoutModBlock_a0dc8e7472edb78736a8d740dab998e23}
+
+\begin{DoxyCompactList}\small\item\em Return the type of the class. \end{DoxyCompactList}\item 
+virtual const std\-::string {\bf get\-Data\-Description} () const \label{classCALICE_1_1AhcSlowReadoutModBlock_a8343c0f0c11517815ec3c9279cb63000}
+
+\begin{DoxyCompactList}\small\item\em Return a brief description of the data members. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void {\bf set\-Types} ()\label{classCALICE_1_1AhcSlowReadoutModBlock_a4b22eb001e649f486a88bfddb2c1ed68}
+
+\begin{DoxyCompactList}\small\item\em This method defines the (general) types of the measured values A type not present here will not be handled!!! \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+std\-::vector$<$ double $>$ {\bf \-\_\-cmb\-Values}
+\begin{DoxyCompactList}\small\item\em The output vectors. \end{DoxyCompactList}\item 
+std\-::vector$<$ double $>$ {\bf \-\_\-hbab\-Temperatures}\label{classCALICE_1_1AhcSlowReadoutModBlock_aedce23ae2abcf8741fd34ecc5d7a7e60}
+
+\begin{DoxyCompactList}\small\item\em hbab temperatures \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Detailed Description}
+Interface Class to access the Ahc\-Slow\-Readout Data Here we handle ahc voltages, temperatures et al. 
+
+when filling the class the string identifying the measured values has to be given first, a warning is issued if no identifier is given for a given datatype. On the other hand this concerns just the filler of the class, i.\-e. the conversion where it is done once for all. See the print method at the end of the class for the meaning of the fields (as of 31/7/06) Use the interface methods to retrieve the data fields \begin{DoxyAuthor}{Author}
+Roman Pöschl L\-A\-L/\-Orsay 
+\end{DoxyAuthor}
+\begin{DoxyDate}{Date}
+Aug 2006 
+\end{DoxyDate}
+
+
+Definition at line 56 of file Ahc\-Slow\-Readout\-Mod\-Block.\-hh.
+
+
+
+\subsection{Member Function Documentation}
+\index{C\-A\-L\-I\-C\-E\-::\-Ahc\-Slow\-Readout\-Mod\-Block@{C\-A\-L\-I\-C\-E\-::\-Ahc\-Slow\-Readout\-Mod\-Block}!print@{print}}
+\index{print@{print}!CALICE::AhcSlowReadoutModBlock@{C\-A\-L\-I\-C\-E\-::\-Ahc\-Slow\-Readout\-Mod\-Block}}
+\subsubsection[{print}]{\setlength{\rightskip}{0pt plus 5cm}void C\-A\-L\-I\-C\-E\-::\-Ahc\-Slow\-Readout\-Mod\-Block\-::print (
+\begin{DoxyParamCaption}
+\item[{std\-::ostream \&}]{os}
+\end{DoxyParamCaption}
+)}\label{classCALICE_1_1AhcSlowReadoutModBlock_a697eeaf3c34576c3c4541bdc3fcd35c2}
+
+
+convenient print method 
+
+Convenient print method. 
+
+Definition at line 33 of file Ahc\-Slow\-Readout\-Mod\-Block.\-cc.
+
+
+
+References C\-A\-L\-I\-C\-E\-::\-Scint\-Calo\-Slow\-Readout\-Mod\-Block\-::\-\_\-hbab\-Voltages, C\-A\-L\-I\-C\-E\-::\-Scint\-Calo\-Slow\-Readout\-Mod\-Block\-::get\-Cmb\-Height(), C\-A\-L\-I\-C\-E\-::\-Scint\-Calo\-Slow\-Readout\-Mod\-Block\-::get\-Cmb\-Temperatures(), get\-Cmb\-Values(), C\-A\-L\-I\-C\-E\-::\-Scint\-Calo\-Slow\-Readout\-Mod\-Block\-::get\-Cmb\-Voltages(), C\-A\-L\-I\-C\-E\-::\-Scint\-Calo\-Slow\-Readout\-Mod\-Block\-::get\-Cmb\-Width(), get\-Hbab\-Temperatures(), C\-A\-L\-I\-C\-E\-::\-Scint\-Calo\-Slow\-Readout\-Mod\-Block\-::get\-Hbab\-Voltages(), C\-A\-L\-I\-C\-E\-::\-Scint\-Calo\-Slow\-Readout\-Mod\-Block\-::get\-Led\-Setting(), C\-A\-L\-I\-C\-E\-::\-Scint\-Calo\-Slow\-Readout\-Mod\-Block\-::get\-Module\-Number(), C\-A\-L\-I\-C\-E\-::\-Scint\-Calo\-Slow\-Readout\-Mod\-Block\-::get\-Time\-Stamp(), C\-A\-L\-I\-C\-E\-::\-Scint\-Calo\-Slow\-Readout\-Mod\-Block\-::prepare\-Output\-Vecs(), and C\-A\-L\-I\-C\-E\-::to\-\_\-binary\-\_\-bitops().
+
+
+
+\subsection{Field Documentation}
+\index{C\-A\-L\-I\-C\-E\-::\-Ahc\-Slow\-Readout\-Mod\-Block@{C\-A\-L\-I\-C\-E\-::\-Ahc\-Slow\-Readout\-Mod\-Block}!\-\_\-cmb\-Values@{\-\_\-cmb\-Values}}
+\index{\-\_\-cmb\-Values@{\-\_\-cmb\-Values}!CALICE::AhcSlowReadoutModBlock@{C\-A\-L\-I\-C\-E\-::\-Ahc\-Slow\-Readout\-Mod\-Block}}
+\subsubsection[{\-\_\-cmb\-Values}]{\setlength{\rightskip}{0pt plus 5cm}std\-::vector$<$double$>$ C\-A\-L\-I\-C\-E\-::\-Ahc\-Slow\-Readout\-Mod\-Block\-::\-\_\-cmb\-Values\hspace{0.3cm}{\ttfamily [private]}}\label{classCALICE_1_1AhcSlowReadoutModBlock_a99517926e9ee2d071d74bfab855dfca8}
+
+
+The output vectors. 
+
+cmb values 
+
+Definition at line 120 of file Ahc\-Slow\-Readout\-Mod\-Block.\-hh.
+
+
+
+Referenced by set\-Types().
+
+
+
+The documentation for this class was generated from the following files\-:\begin{DoxyCompactItemize}
+\item 
+Ahc\-Slow\-Readout\-Mod\-Block.\-hh\item 
+Ahc\-Slow\-Readout\-Mod\-Block.\-cc\end{DoxyCompactItemize}

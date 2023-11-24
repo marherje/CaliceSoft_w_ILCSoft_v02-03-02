@@ -1,0 +1,157 @@
+\section{C\-A\-L\-I\-C\-E\-:\-:Sat\-Corr\-Function Class Reference}
+\label{classCALICE_1_1SatCorrFunction}\index{C\-A\-L\-I\-C\-E\-::\-Sat\-Corr\-Function@{C\-A\-L\-I\-C\-E\-::\-Sat\-Corr\-Function}}
+
+
+interface for a function to correct (or apply) the Si\-P\-M saturation  
+
+
+
+
+{\ttfamily \#include $<$Sat\-Corr\-Function.\-hh$>$}
+
+Inheritance diagram for C\-A\-L\-I\-C\-E\-:\-:Sat\-Corr\-Function\-:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classCALICE_1_1SatCorrFunction}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+virtual float {\bf de\-Saturate} (const float saturated\-Signal) const =0
+\begin{DoxyCompactList}\small\item\em apply saturation correction to a signal amplitude \end{DoxyCompactList}\item 
+virtual float {\bf de\-Saturated\-Error} (const float saturated\-Signal, const float saturated\-Signal\-Error) const =0
+\begin{DoxyCompactList}\small\item\em error after application of saturation correction to a signal \end{DoxyCompactList}\item 
+virtual float {\bf saturate} (const float unsaturated\-Signal) const =0
+\begin{DoxyCompactList}\small\item\em apply saturation to a signal amplitude \end{DoxyCompactList}\item 
+virtual float {\bf saturated\-Error} (const float unsaturated\-Signal, const float unsaturated\-Signal\-Error) const =0
+\begin{DoxyCompactList}\small\item\em error after application of saturation to a signal \end{DoxyCompactList}\item 
+virtual float {\bf get\-Scaling} () const =0\label{classCALICE_1_1SatCorrFunction_a6f028ada869fc313ddf96e174daa240a}
+
+\begin{DoxyCompactList}\small\item\em get the applied scaling \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+interface for a function to correct (or apply) the Si\-P\-M saturation 
+
+This function has to return a saturated or saturation corrected amplitude for a specific description of the saturation.
+
+\begin{DoxyAuthor}{Author}
+{\tt Benjamin.\-Lutz@desy.\-de} 
+\end{DoxyAuthor}
+\begin{DoxyVersion}{Version}
+0.\-1 
+\end{DoxyVersion}
+\begin{DoxyDate}{Date}
+October 2009 
+\end{DoxyDate}
+
+
+Definition at line 19 of file Sat\-Corr\-Function.\-hh.
+
+
+
+\subsection{Member Function Documentation}
+\index{C\-A\-L\-I\-C\-E\-::\-Sat\-Corr\-Function@{C\-A\-L\-I\-C\-E\-::\-Sat\-Corr\-Function}!de\-Saturate@{de\-Saturate}}
+\index{de\-Saturate@{de\-Saturate}!CALICE::SatCorrFunction@{C\-A\-L\-I\-C\-E\-::\-Sat\-Corr\-Function}}
+\subsubsection[{de\-Saturate}]{\setlength{\rightskip}{0pt plus 5cm}virtual float C\-A\-L\-I\-C\-E\-::\-Sat\-Corr\-Function\-::de\-Saturate (
+\begin{DoxyParamCaption}
+\item[{const float}]{saturated\-Signal}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [pure virtual]}}\label{classCALICE_1_1SatCorrFunction_ae71bc6eba8efc85127996112dea69aa8}
+
+
+apply saturation correction to a signal amplitude 
+
+
+\begin{DoxyParams}{Parameters}
+{\em saturated\-Signal} & saturated signal \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+unsaturated signal 
+\end{DoxyReturn}
+
+
+Implemented in {\bf C\-A\-L\-I\-C\-E\-::\-Sat\-Corr\-Itep} \doxyref{}{p.}{classCALICE_1_1SatCorrItep_a2a5321d98210f31824f04e9e5b332160}, and {\bf C\-A\-L\-I\-C\-E\-::\-Sat\-Corr\-Itep\-Cut\-Off} \doxyref{}{p.}{classCALICE_1_1SatCorrItepCutOff_a20afcca900ade6d0e34f61837db11067}.
+
+\index{C\-A\-L\-I\-C\-E\-::\-Sat\-Corr\-Function@{C\-A\-L\-I\-C\-E\-::\-Sat\-Corr\-Function}!de\-Saturated\-Error@{de\-Saturated\-Error}}
+\index{de\-Saturated\-Error@{de\-Saturated\-Error}!CALICE::SatCorrFunction@{C\-A\-L\-I\-C\-E\-::\-Sat\-Corr\-Function}}
+\subsubsection[{de\-Saturated\-Error}]{\setlength{\rightskip}{0pt plus 5cm}virtual float C\-A\-L\-I\-C\-E\-::\-Sat\-Corr\-Function\-::de\-Saturated\-Error (
+\begin{DoxyParamCaption}
+\item[{const float}]{saturated\-Signal, }
+\item[{const float}]{saturated\-Signal\-Error}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [pure virtual]}}\label{classCALICE_1_1SatCorrFunction_af31b1717f04b58362c90e091ed9ffcac}
+
+
+error after application of saturation correction to a signal 
+
+
+\begin{DoxyParams}{Parameters}
+{\em saturated\-Signal} & saturated signal \\
+\hline
+{\em saturated\-Signal\-Error} & error of the saturated signal \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+error of the unsaturated signal 
+\end{DoxyReturn}
+
+
+Implemented in {\bf C\-A\-L\-I\-C\-E\-::\-Sat\-Corr\-Itep} \doxyref{}{p.}{classCALICE_1_1SatCorrItep_a6585460faf23fbf59b80608ee1953f72}, and {\bf C\-A\-L\-I\-C\-E\-::\-Sat\-Corr\-Itep\-Cut\-Off} \doxyref{}{p.}{classCALICE_1_1SatCorrItepCutOff_abb37d82ea0cc08ae45b54f066e321b6b}.
+
+\index{C\-A\-L\-I\-C\-E\-::\-Sat\-Corr\-Function@{C\-A\-L\-I\-C\-E\-::\-Sat\-Corr\-Function}!saturate@{saturate}}
+\index{saturate@{saturate}!CALICE::SatCorrFunction@{C\-A\-L\-I\-C\-E\-::\-Sat\-Corr\-Function}}
+\subsubsection[{saturate}]{\setlength{\rightskip}{0pt plus 5cm}virtual float C\-A\-L\-I\-C\-E\-::\-Sat\-Corr\-Function\-::saturate (
+\begin{DoxyParamCaption}
+\item[{const float}]{unsaturated\-Signal}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [pure virtual]}}\label{classCALICE_1_1SatCorrFunction_a2245a5a516d3ae361af416f8dacf25f2}
+
+
+apply saturation to a signal amplitude 
+
+
+\begin{DoxyParams}{Parameters}
+{\em unsaturated\-Signal} & unsaturated signal \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+saturated signal 
+\end{DoxyReturn}
+
+
+Implemented in {\bf C\-A\-L\-I\-C\-E\-::\-Sat\-Corr\-Itep} \doxyref{}{p.}{classCALICE_1_1SatCorrItep_aaaafd96272be710ff140b1a0d6e21707}, and {\bf C\-A\-L\-I\-C\-E\-::\-Sat\-Corr\-Itep\-Cut\-Off} \doxyref{}{p.}{classCALICE_1_1SatCorrItepCutOff_addf093108885bc86a551f7e0aed71d7d}.
+
+\index{C\-A\-L\-I\-C\-E\-::\-Sat\-Corr\-Function@{C\-A\-L\-I\-C\-E\-::\-Sat\-Corr\-Function}!saturated\-Error@{saturated\-Error}}
+\index{saturated\-Error@{saturated\-Error}!CALICE::SatCorrFunction@{C\-A\-L\-I\-C\-E\-::\-Sat\-Corr\-Function}}
+\subsubsection[{saturated\-Error}]{\setlength{\rightskip}{0pt plus 5cm}virtual float C\-A\-L\-I\-C\-E\-::\-Sat\-Corr\-Function\-::saturated\-Error (
+\begin{DoxyParamCaption}
+\item[{const float}]{unsaturated\-Signal, }
+\item[{const float}]{unsaturated\-Signal\-Error}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [pure virtual]}}\label{classCALICE_1_1SatCorrFunction_a735f5369890f1ca8fa4de8153207a442}
+
+
+error after application of saturation to a signal 
+
+
+\begin{DoxyParams}{Parameters}
+{\em unsaturated\-Signal} & unsaturated signal \\
+\hline
+{\em unsaturated\-Signal\-Error} & error of the unsaturated signal \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+error of saturated signal 
+\end{DoxyReturn}
+
+
+Implemented in {\bf C\-A\-L\-I\-C\-E\-::\-Sat\-Corr\-Itep} \doxyref{}{p.}{classCALICE_1_1SatCorrItep_a2f48fa8fe8f1be17a984101b42935f72}, and {\bf C\-A\-L\-I\-C\-E\-::\-Sat\-Corr\-Itep\-Cut\-Off} \doxyref{}{p.}{classCALICE_1_1SatCorrItepCutOff_aa78edfc50df486ecebe34b88f8909fda}.
+
+
+
+The documentation for this class was generated from the following file\-:\begin{DoxyCompactItemize}
+\item 
+Sat\-Corr\-Function.\-hh\end{DoxyCompactItemize}

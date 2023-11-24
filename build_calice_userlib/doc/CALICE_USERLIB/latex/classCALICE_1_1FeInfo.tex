@@ -1,0 +1,448 @@
+\section{C\-A\-L\-I\-C\-E\-:\-:Fe\-Info Class Reference}
+\label{classCALICE_1_1FeInfo}\index{C\-A\-L\-I\-C\-E\-::\-Fe\-Info@{C\-A\-L\-I\-C\-E\-::\-Fe\-Info}}
+
+
+Stores the configuration data of the front-\/end of one C\-E\-R\-C board.  
+
+
+
+
+{\ttfamily \#include $<$Fe\-Info.\-hh$>$}
+
+Inheritance diagram for C\-A\-L\-I\-C\-E\-:\-:Fe\-Info\-:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classCALICE_1_1FeInfo}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+{\bf Fe\-Info} (int board\-I\-D)
+\begin{DoxyCompactList}\small\item\em Convenient c'tor. \end{DoxyCompactList}\item 
+int {\bf get\-Board\-I\-D} () const \label{classCALICE_1_1FeInfo_a927351eaab1c2a7281aafbdb19c7cd7a}
+
+\begin{DoxyCompactList}\small\item\em Get the Crc Board I\-D. \end{DoxyCompactList}\item 
+{\bf Fe\-Info} (L\-C\-Object $\ast$obj)\label{classCALICE_1_1FeInfo_a46b9df043d100b05f1768e8ea529bce6}
+
+\begin{DoxyCompactList}\small\item\em 'Copy constructor' needed to interpret L\-C\-Collection read from file/database. \end{DoxyCompactList}\item 
+{\bf Fe\-Info} \& {\bf set\-Label} (int label)
+\begin{DoxyCompactList}\small\item\em Set the fe link label(?). \end{DoxyCompactList}\item 
+int {\bf get\-Label} () const 
+\begin{DoxyCompactList}\small\item\em Get the Fe link label(?). \end{DoxyCompactList}\item 
+{\bf Fe\-Info} \& {\bf set\-Fe\-I\-D} (int fe\-\_\-id)
+\begin{DoxyCompactList}\small\item\em Set the front-\/end id. \end{DoxyCompactList}\item 
+int {\bf get\-Fe\-I\-D} () const 
+\begin{DoxyCompactList}\small\item\em Get the front-\/end id. \end{DoxyCompactList}\item 
+{\bf Fe\-Info} \& {\bf set\-Frame\-Sync\-Out} (int sync\-\_\-words\-\_\-01, int sync\-\_\-words\-\_\-23, int sync\-\_\-word\-\_\-4)
+\begin{DoxyCompactList}\small\item\em Set the four frame sync out half words. \end{DoxyCompactList}\item 
+int {\bf get\-Frame\-Sync\-Out} (int word\-\_\-i) const 
+\begin{DoxyCompactList}\small\item\em Get the frame sync out half words. \end{DoxyCompactList}\item 
+{\bf Fe\-Info} \& {\bf set\-Fe\-Length} (int fe\-\_\-length)
+\begin{DoxyCompactList}\small\item\em Set the fe length field (?). \end{DoxyCompactList}\item 
+int {\bf get\-Fe\-Length} () const 
+\begin{DoxyCompactList}\small\item\em Get the fe length field (?). \end{DoxyCompactList}\item 
+{\bf Fe\-Info} \& {\bf set\-Be\-Status} (int be\-\_\-status)
+\begin{DoxyCompactList}\small\item\em Set the back-\/end status word. \end{DoxyCompactList}\item 
+int {\bf get\-Be\-Status} () const 
+\begin{DoxyCompactList}\small\item\em Get the back-\/end status word. \end{DoxyCompactList}\item 
+{\bf Fe\-Info} \& {\bf set\-Trigger\-Counter} (int trigger\-\_\-counter)
+\begin{DoxyCompactList}\small\item\em Set the trigger counter. \end{DoxyCompactList}\item 
+int {\bf get\-Trigger\-Counter} () const 
+\begin{DoxyCompactList}\small\item\em Get the trigger counter. \end{DoxyCompactList}\item 
+{\bf Fe\-Info} \& {\bf set\-Fifo} (int fifo)
+\begin{DoxyCompactList}\small\item\em Set the fifo status, and the front-\/end id. \end{DoxyCompactList}\item 
+int {\bf get\-Fifo\-Fe\-I\-D} () const 
+\begin{DoxyCompactList}\small\item\em Get the front-\/end id from the fifo status word. \end{DoxyCompactList}\item 
+int {\bf get\-Fifo\-Status} () const \label{classCALICE_1_1FeInfo_a753e0ff74eafd5df42eaa0dac24b7a2b}
+
+\begin{DoxyCompactList}\small\item\em Get the fifo status (without front-\/end I\-D. \end{DoxyCompactList}\item 
+int {\bf get\-Number\-Of\-Fifo\-Words} () const \label{classCALICE_1_1FeInfo_a64f44c00899fae956886a44a8c188bdb}
+
+\begin{DoxyCompactList}\small\item\em Get number of words in the fifo. \end{DoxyCompactList}\item 
+bool {\bf is\-Fifo\-Full} () const 
+\begin{DoxyCompactList}\small\item\em Check whether the fifo is full. \end{DoxyCompactList}\item 
+bool {\bf is\-Fifo\-Empty} () const 
+\begin{DoxyCompactList}\small\item\em Check whether the fifo is empty. \end{DoxyCompactList}\item 
+void {\bf print} (std\-::ostream \&os) const \label{classCALICE_1_1FeInfo_acc7bde5bd178baec9026df6ccd7f6395}
+
+\begin{DoxyCompactList}\small\item\em Convenient print method. \end{DoxyCompactList}\item 
+const std\-::string {\bf get\-Type\-Name} () const \label{classCALICE_1_1FeInfo_a3295758439b25dc02172c78b9808e1ff}
+
+\begin{DoxyCompactList}\small\item\em Return the type of the class. \end{DoxyCompactList}\item 
+const std\-::string {\bf get\-Data\-Description} () const \label{classCALICE_1_1FeInfo_a53034de0b2da5f70227a548febe27a3c}
+
+\begin{DoxyCompactList}\small\item\em Return a brief description of the data members. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Stores the configuration data of the front-\/end of one C\-E\-R\-C board. 
+
+Based on \doxyref{Adc\-Block}{p.}{classCALICE_1_1AdcBlock}. This is just a copy of the Calice D\-A\-Q class Crc\-Fe\-Configuration\-Data. Since I don't have a profound understanding of the meaning of its members the documentation is mostly missing or at least very poor.
+
+\begin{DoxyAuthor}{Author}
+G�tz Gaycken L\-L\-R (Ecole Polytechnique) 
+\end{DoxyAuthor}
+\begin{DoxyDate}{Date}
+Apr 2005 
+\end{DoxyDate}
+
+
+Definition at line 42 of file Fe\-Info.\-hh.
+
+
+
+\subsection{Constructor \& Destructor Documentation}
+\index{C\-A\-L\-I\-C\-E\-::\-Fe\-Info@{C\-A\-L\-I\-C\-E\-::\-Fe\-Info}!Fe\-Info@{Fe\-Info}}
+\index{Fe\-Info@{Fe\-Info}!CALICE::FeInfo@{C\-A\-L\-I\-C\-E\-::\-Fe\-Info}}
+\subsubsection[{Fe\-Info}]{\setlength{\rightskip}{0pt plus 5cm}C\-A\-L\-I\-C\-E\-::\-Fe\-Info\-::\-Fe\-Info (
+\begin{DoxyParamCaption}
+\item[{int}]{board\-I\-D}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\label{classCALICE_1_1FeInfo_a4db195f856cb913c1dc1b7abe558dd07}
+
+
+Convenient c'tor. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em board\-I\-D} & Crc board I\-D (V\-M\-E crate, slot, fe)) \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 50 of file Fe\-Info.\-hh.
+
+
+
+\subsection{Member Function Documentation}
+\index{C\-A\-L\-I\-C\-E\-::\-Fe\-Info@{C\-A\-L\-I\-C\-E\-::\-Fe\-Info}!get\-Be\-Status@{get\-Be\-Status}}
+\index{get\-Be\-Status@{get\-Be\-Status}!CALICE::FeInfo@{C\-A\-L\-I\-C\-E\-::\-Fe\-Info}}
+\subsubsection[{get\-Be\-Status}]{\setlength{\rightskip}{0pt plus 5cm}int C\-A\-L\-I\-C\-E\-::\-Fe\-Info\-::get\-Be\-Status (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}\label{classCALICE_1_1FeInfo_a56f6bb4e32c6016da0cedbbc86050c1a}
+
+
+Get the back-\/end status word. 
+
+\begin{DoxyRefDesc}{Todo}
+\item[{\bf Todo}]needs better explanation. \end{DoxyRefDesc}
+
+
+Definition at line 160 of file Fe\-Info.\-hh.
+
+
+
+Referenced by print().
+
+\index{C\-A\-L\-I\-C\-E\-::\-Fe\-Info@{C\-A\-L\-I\-C\-E\-::\-Fe\-Info}!get\-Fe\-I\-D@{get\-Fe\-I\-D}}
+\index{get\-Fe\-I\-D@{get\-Fe\-I\-D}!CALICE::FeInfo@{C\-A\-L\-I\-C\-E\-::\-Fe\-Info}}
+\subsubsection[{get\-Fe\-I\-D}]{\setlength{\rightskip}{0pt plus 5cm}int C\-A\-L\-I\-C\-E\-::\-Fe\-Info\-::get\-Fe\-I\-D (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}\label{classCALICE_1_1FeInfo_a9632e47d7dad152f6b354ef9be4ba125}
+
+
+Get the front-\/end id. 
+
+This field is redundant since the front-\/end id is also encoded in the board I\-D. 
+
+Definition at line 81 of file Fe\-Info.\-hh.
+
+
+
+Referenced by print().
+
+\index{C\-A\-L\-I\-C\-E\-::\-Fe\-Info@{C\-A\-L\-I\-C\-E\-::\-Fe\-Info}!get\-Fe\-Length@{get\-Fe\-Length}}
+\index{get\-Fe\-Length@{get\-Fe\-Length}!CALICE::FeInfo@{C\-A\-L\-I\-C\-E\-::\-Fe\-Info}}
+\subsubsection[{get\-Fe\-Length}]{\setlength{\rightskip}{0pt plus 5cm}int C\-A\-L\-I\-C\-E\-::\-Fe\-Info\-::get\-Fe\-Length (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}\label{classCALICE_1_1FeInfo_a8670ba7cf2806521398a0ad5b3081889}
+
+
+Get the fe length field (?). 
+
+\begin{DoxyRefDesc}{Todo}
+\item[{\bf Todo}]needs better explanation. \end{DoxyRefDesc}
+
+
+Definition at line 139 of file Fe\-Info.\-hh.
+
+
+
+Referenced by print().
+
+\index{C\-A\-L\-I\-C\-E\-::\-Fe\-Info@{C\-A\-L\-I\-C\-E\-::\-Fe\-Info}!get\-Fifo\-Fe\-I\-D@{get\-Fifo\-Fe\-I\-D}}
+\index{get\-Fifo\-Fe\-I\-D@{get\-Fifo\-Fe\-I\-D}!CALICE::FeInfo@{C\-A\-L\-I\-C\-E\-::\-Fe\-Info}}
+\subsubsection[{get\-Fifo\-Fe\-I\-D}]{\setlength{\rightskip}{0pt plus 5cm}int C\-A\-L\-I\-C\-E\-::\-Fe\-Info\-::get\-Fifo\-Fe\-I\-D (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}\label{classCALICE_1_1FeInfo_a11143b4aea8cc4623c53a3327de74d29}
+
+
+Get the front-\/end id from the fifo status word. 
+
+If this front-\/end id does not match the result of \doxyref{get\-Fe\-I\-D}{p.}{classCALICE_1_1FeInfo_a9632e47d7dad152f6b354ef9be4ba125} then all the front-\/end data for this particular event is corrupt. 
+
+Definition at line 183 of file Fe\-Info.\-hh.
+
+
+
+Referenced by print().
+
+\index{C\-A\-L\-I\-C\-E\-::\-Fe\-Info@{C\-A\-L\-I\-C\-E\-::\-Fe\-Info}!get\-Frame\-Sync\-Out@{get\-Frame\-Sync\-Out}}
+\index{get\-Frame\-Sync\-Out@{get\-Frame\-Sync\-Out}!CALICE::FeInfo@{C\-A\-L\-I\-C\-E\-::\-Fe\-Info}}
+\subsubsection[{get\-Frame\-Sync\-Out}]{\setlength{\rightskip}{0pt plus 5cm}int C\-A\-L\-I\-C\-E\-::\-Fe\-Info\-::get\-Frame\-Sync\-Out (
+\begin{DoxyParamCaption}
+\item[{int}]{word\-\_\-i}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}\label{classCALICE_1_1FeInfo_adf4bfb5cd87315ffc2e20b1032431eee}
+
+
+Get the frame sync out half words. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em word\-\_\-i} & the index of the word (valid range 0-\/4). \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+the specified 16 bit half word. 
+\end{DoxyReturn}
+
+
+Definition at line 106 of file Fe\-Info.\-hh.
+
+
+
+Referenced by print().
+
+\index{C\-A\-L\-I\-C\-E\-::\-Fe\-Info@{C\-A\-L\-I\-C\-E\-::\-Fe\-Info}!get\-Label@{get\-Label}}
+\index{get\-Label@{get\-Label}!CALICE::FeInfo@{C\-A\-L\-I\-C\-E\-::\-Fe\-Info}}
+\subsubsection[{get\-Label}]{\setlength{\rightskip}{0pt plus 5cm}int C\-A\-L\-I\-C\-E\-::\-Fe\-Info\-::get\-Label (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}\label{classCALICE_1_1FeInfo_a67dd0f689121876bcae54f69813c29dd}
+
+
+Get the Fe link label(?). 
+
+\begin{DoxyRefDesc}{Todo}
+\item[{\bf Todo}]needs better explanation. \end{DoxyRefDesc}
+
+
+Definition at line 71 of file Fe\-Info.\-hh.
+
+
+
+Referenced by print().
+
+\index{C\-A\-L\-I\-C\-E\-::\-Fe\-Info@{C\-A\-L\-I\-C\-E\-::\-Fe\-Info}!get\-Trigger\-Counter@{get\-Trigger\-Counter}}
+\index{get\-Trigger\-Counter@{get\-Trigger\-Counter}!CALICE::FeInfo@{C\-A\-L\-I\-C\-E\-::\-Fe\-Info}}
+\subsubsection[{get\-Trigger\-Counter}]{\setlength{\rightskip}{0pt plus 5cm}int C\-A\-L\-I\-C\-E\-::\-Fe\-Info\-::get\-Trigger\-Counter (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}\label{classCALICE_1_1FeInfo_a2ed250cf245576cd1b4a13a68132f38b}
+
+
+Get the trigger counter. 
+
+The trigger counter can be used to identify front-\/end data of the same event. 
+
+Definition at line 172 of file Fe\-Info.\-hh.
+
+
+
+Referenced by print().
+
+\index{C\-A\-L\-I\-C\-E\-::\-Fe\-Info@{C\-A\-L\-I\-C\-E\-::\-Fe\-Info}!is\-Fifo\-Empty@{is\-Fifo\-Empty}}
+\index{is\-Fifo\-Empty@{is\-Fifo\-Empty}!CALICE::FeInfo@{C\-A\-L\-I\-C\-E\-::\-Fe\-Info}}
+\subsubsection[{is\-Fifo\-Empty}]{\setlength{\rightskip}{0pt plus 5cm}bool C\-A\-L\-I\-C\-E\-::\-Fe\-Info\-::is\-Fifo\-Empty (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}\label{classCALICE_1_1FeInfo_ab91279ac76ce115a090860ad8c105c5e}
+
+
+Check whether the fifo is empty. 
+
+\begin{DoxyReturn}{Returns}
+true if the fifo is empty; 
+\end{DoxyReturn}
+
+
+Definition at line 203 of file Fe\-Info.\-hh.
+
+
+
+Referenced by print().
+
+\index{C\-A\-L\-I\-C\-E\-::\-Fe\-Info@{C\-A\-L\-I\-C\-E\-::\-Fe\-Info}!is\-Fifo\-Full@{is\-Fifo\-Full}}
+\index{is\-Fifo\-Full@{is\-Fifo\-Full}!CALICE::FeInfo@{C\-A\-L\-I\-C\-E\-::\-Fe\-Info}}
+\subsubsection[{is\-Fifo\-Full}]{\setlength{\rightskip}{0pt plus 5cm}bool C\-A\-L\-I\-C\-E\-::\-Fe\-Info\-::is\-Fifo\-Full (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}\label{classCALICE_1_1FeInfo_abaf3c49388c8673c44e35de0dd2a5d7d}
+
+
+Check whether the fifo is full. 
+
+\begin{DoxyReturn}{Returns}
+true if the fifo is full; 
+\end{DoxyReturn}
+
+
+Definition at line 198 of file Fe\-Info.\-hh.
+
+
+
+Referenced by print().
+
+\index{C\-A\-L\-I\-C\-E\-::\-Fe\-Info@{C\-A\-L\-I\-C\-E\-::\-Fe\-Info}!set\-Be\-Status@{set\-Be\-Status}}
+\index{set\-Be\-Status@{set\-Be\-Status}!CALICE::FeInfo@{C\-A\-L\-I\-C\-E\-::\-Fe\-Info}}
+\subsubsection[{set\-Be\-Status}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Fe\-Info}\& C\-A\-L\-I\-C\-E\-::\-Fe\-Info\-::set\-Be\-Status (
+\begin{DoxyParamCaption}
+\item[{int}]{be\-\_\-status}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\label{classCALICE_1_1FeInfo_a04552f8e75412662946c7b3c65dad0c5}
+
+
+Set the back-\/end status word. 
+
+\begin{DoxyRefDesc}{Todo}
+\item[{\bf Todo}]needs better explanation. \end{DoxyRefDesc}
+
+
+Definition at line 148 of file Fe\-Info.\-hh.
+
+\index{C\-A\-L\-I\-C\-E\-::\-Fe\-Info@{C\-A\-L\-I\-C\-E\-::\-Fe\-Info}!set\-Fe\-I\-D@{set\-Fe\-I\-D}}
+\index{set\-Fe\-I\-D@{set\-Fe\-I\-D}!CALICE::FeInfo@{C\-A\-L\-I\-C\-E\-::\-Fe\-Info}}
+\subsubsection[{set\-Fe\-I\-D}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Fe\-Info}\& C\-A\-L\-I\-C\-E\-::\-Fe\-Info\-::set\-Fe\-I\-D (
+\begin{DoxyParamCaption}
+\item[{int}]{fe\-\_\-id}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\label{classCALICE_1_1FeInfo_a723e578651833bb2c038a95920d47da8}
+
+
+Set the front-\/end id. 
+
+This field is redundant since the front-\/end id is also encoded in the board I\-D. 
+
+Definition at line 76 of file Fe\-Info.\-hh.
+
+\index{C\-A\-L\-I\-C\-E\-::\-Fe\-Info@{C\-A\-L\-I\-C\-E\-::\-Fe\-Info}!set\-Fe\-Length@{set\-Fe\-Length}}
+\index{set\-Fe\-Length@{set\-Fe\-Length}!CALICE::FeInfo@{C\-A\-L\-I\-C\-E\-::\-Fe\-Info}}
+\subsubsection[{set\-Fe\-Length}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Fe\-Info}\& C\-A\-L\-I\-C\-E\-::\-Fe\-Info\-::set\-Fe\-Length (
+\begin{DoxyParamCaption}
+\item[{int}]{fe\-\_\-length}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\label{classCALICE_1_1FeInfo_a884328110730cf0cb15c96aed00d3930}
+
+
+Set the fe length field (?). 
+
+\begin{DoxyRefDesc}{Todo}
+\item[{\bf Todo}]needs better explanation. \end{DoxyRefDesc}
+
+
+Definition at line 130 of file Fe\-Info.\-hh.
+
+\index{C\-A\-L\-I\-C\-E\-::\-Fe\-Info@{C\-A\-L\-I\-C\-E\-::\-Fe\-Info}!set\-Fifo@{set\-Fifo}}
+\index{set\-Fifo@{set\-Fifo}!CALICE::FeInfo@{C\-A\-L\-I\-C\-E\-::\-Fe\-Info}}
+\subsubsection[{set\-Fifo}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Fe\-Info}\& C\-A\-L\-I\-C\-E\-::\-Fe\-Info\-::set\-Fifo (
+\begin{DoxyParamCaption}
+\item[{int}]{fifo}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\label{classCALICE_1_1FeInfo_a8c41e4ec923a8ac88ef4922ad6223fe4}
+
+
+Set the fifo status, and the front-\/end id. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em fifo} & the packed word which contains the front-\/end id, and the fifo status (overflow/underflow bits, fifo words). \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 177 of file Fe\-Info.\-hh.
+
+\index{C\-A\-L\-I\-C\-E\-::\-Fe\-Info@{C\-A\-L\-I\-C\-E\-::\-Fe\-Info}!set\-Frame\-Sync\-Out@{set\-Frame\-Sync\-Out}}
+\index{set\-Frame\-Sync\-Out@{set\-Frame\-Sync\-Out}!CALICE::FeInfo@{C\-A\-L\-I\-C\-E\-::\-Fe\-Info}}
+\subsubsection[{set\-Frame\-Sync\-Out}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Fe\-Info}\& C\-A\-L\-I\-C\-E\-::\-Fe\-Info\-::set\-Frame\-Sync\-Out (
+\begin{DoxyParamCaption}
+\item[{int}]{sync\-\_\-words\-\_\-01, }
+\item[{int}]{sync\-\_\-words\-\_\-23, }
+\item[{int}]{sync\-\_\-word\-\_\-4}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\label{classCALICE_1_1FeInfo_a6362120a57541cab907c7d4a7a53a6a7}
+
+
+Set the four frame sync out half words. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em sync\-\_\-words\-\_\-01} & the first and the second half word packed in one 32bit integer. \\
+\hline
+{\em sync\-\_\-words\-\_\-23} & the third and the forth half word packed in one 32bit integer. \\
+\hline
+{\em sync\-\_\-word\-\_\-4} & the fifth half word packed in the lower 16 bits of a 32bit integer.\\
+\hline
+\end{DoxyParams}
+The first word should be in the lower 16 bit of the first argument, the second word in the upper 16 bits of the first argument and so forth\-: 
+
+
+\begin{DoxyPre}
+sync\_words\_01= (word\_0 \& 0xffff) + ((word\_1 \& xffff)<<16);
+\end{DoxyPre}
+ 
+
+Definition at line 95 of file Fe\-Info.\-hh.
+
+\index{C\-A\-L\-I\-C\-E\-::\-Fe\-Info@{C\-A\-L\-I\-C\-E\-::\-Fe\-Info}!set\-Label@{set\-Label}}
+\index{set\-Label@{set\-Label}!CALICE::FeInfo@{C\-A\-L\-I\-C\-E\-::\-Fe\-Info}}
+\subsubsection[{set\-Label}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Fe\-Info}\& C\-A\-L\-I\-C\-E\-::\-Fe\-Info\-::set\-Label (
+\begin{DoxyParamCaption}
+\item[{int}]{label}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\label{classCALICE_1_1FeInfo_a30d1e319c5b493268ee8f8674a9f0f6c}
+
+
+Set the fe link label(?). 
+
+\begin{DoxyRefDesc}{Todo}
+\item[{\bf Todo}]needs better explanation. \end{DoxyRefDesc}
+
+
+Definition at line 66 of file Fe\-Info.\-hh.
+
+\index{C\-A\-L\-I\-C\-E\-::\-Fe\-Info@{C\-A\-L\-I\-C\-E\-::\-Fe\-Info}!set\-Trigger\-Counter@{set\-Trigger\-Counter}}
+\index{set\-Trigger\-Counter@{set\-Trigger\-Counter}!CALICE::FeInfo@{C\-A\-L\-I\-C\-E\-::\-Fe\-Info}}
+\subsubsection[{set\-Trigger\-Counter}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Fe\-Info}\& C\-A\-L\-I\-C\-E\-::\-Fe\-Info\-::set\-Trigger\-Counter (
+\begin{DoxyParamCaption}
+\item[{int}]{trigger\-\_\-counter}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\label{classCALICE_1_1FeInfo_ac83132aaa58beefd0c465385cdd35e75}
+
+
+Set the trigger counter. 
+
+The trigger counter can be used to identify front-\/end data of the same event. 
+
+Definition at line 167 of file Fe\-Info.\-hh.
+
+
+
+The documentation for this class was generated from the following files\-:\begin{DoxyCompactItemize}
+\item 
+Fe\-Info.\-hh\item 
+Fe\-Info.\-cc\end{DoxyCompactItemize}

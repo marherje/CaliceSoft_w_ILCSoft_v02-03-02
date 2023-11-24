@@ -1,0 +1,146 @@
+\section{C\-A\-L\-I\-C\-E\-:\-:Ahc\-Conditions Class Reference}
+\label{classCALICE_1_1AhcConditions}\index{C\-A\-L\-I\-C\-E\-::\-Ahc\-Conditions@{C\-A\-L\-I\-C\-E\-::\-Ahc\-Conditions}}
+
+
+Class for the \doxyref{C\-A\-L\-I\-C\-E}{p.}{namespaceCALICE} Ahcal conditions information during the reconstruction.  
+
+
+
+
+{\ttfamily \#include $<$Ahc\-Conditions.\-hh$>$}
+
+Inheritance diagram for C\-A\-L\-I\-C\-E\-:\-:Ahc\-Conditions\-:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=1.789137cm]{classCALICE_1_1AhcConditions}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+{\bf Ahc\-Conditions} ()\label{classCALICE_1_1AhcConditions_af6aea1e5d883dead6639e3be18b13f76}
+
+\begin{DoxyCompactList}\small\item\em default constructor \end{DoxyCompactList}\item 
+{\bf Ahc\-Conditions} (int module\-Nr, unsigned module\-I\-D, int calib\-Start, int calib\-Width, bool calib\-Enable, int hold, int hold\-Width, int multiplex, int vcalib, int verification, int sr[12])
+\begin{DoxyCompactList}\small\item\em constructor, \doxyref{Ahc\-Conditions}{p.}{classCALICE_1_1AhcConditions} is initialized with the parameters given \end{DoxyCompactList}\item 
+{\bfseries Ahc\-Conditions} (L\-C\-Object $\ast$obj)\label{classCALICE_1_1AhcConditions_ae1b844aa093496edbafaebc8f7c3e53e}
+
+\item 
+unsigned {\bf get\-Module\-I\-D} () const \label{classCALICE_1_1AhcConditions_afd54d91c0e7e95542cd9a625381c4c5a}
+
+\begin{DoxyCompactList}\small\item\em get module I\-D of config \end{DoxyCompactList}\item 
+unsigned {\bf get\-Module\-Nr} ()\label{classCALICE_1_1AhcConditions_ae8e8f7b251aa4c2d05259543b68eb774}
+
+\begin{DoxyCompactList}\small\item\em get module number of config \end{DoxyCompactList}\item 
+unsigned {\bf get\-Calib\-Start} () const \label{classCALICE_1_1AhcConditions_a2ac195704d21b51193059a17a5c2f1b4}
+
+\begin{DoxyCompactList}\small\item\em get calib start \end{DoxyCompactList}\item 
+unsigned {\bf get\-Calib\-Width} () const \label{classCALICE_1_1AhcConditions_ab2bf4d8631141459c3d7091e88a7e72c}
+
+\begin{DoxyCompactList}\small\item\em get calib width \end{DoxyCompactList}\item 
+bool {\bf is\-Calib\-Enabled} () const \label{classCALICE_1_1AhcConditions_a8456b8157c53f61749215c47f536e24e}
+
+\begin{DoxyCompactList}\small\item\em get if calib is enabled \end{DoxyCompactList}\item 
+float {\bf get\-Hold} () const \label{classCALICE_1_1AhcConditions_a725c4a0227fdb1a73859fcae2666f761}
+
+\begin{DoxyCompactList}\small\item\em get hold \end{DoxyCompactList}\item 
+unsigned {\bf get\-Hold\-Width} () const \label{classCALICE_1_1AhcConditions_a1e08962a2ddb922dbcfaf88fac024662}
+
+\begin{DoxyCompactList}\small\item\em get hold width \end{DoxyCompactList}\item 
+unsigned {\bf get\-Multiplex} () const \label{classCALICE_1_1AhcConditions_abc2849f2554962e03e62d633afaa4553}
+
+\begin{DoxyCompactList}\small\item\em get order of multiplexing \end{DoxyCompactList}\item 
+unsigned {\bf get\-Vcalib} () const \label{classCALICE_1_1AhcConditions_a7a3ebe5695fb349e015ddc12a4ab800f}
+
+\begin{DoxyCompactList}\small\item\em get vcalib \end{DoxyCompactList}\item 
+unsigned {\bf get\-Verification} () const \label{classCALICE_1_1AhcConditions_a792d5b3e5a9b31e40ffe9ea0c38a062a}
+
+\begin{DoxyCompactList}\small\item\em get verification data \end{DoxyCompactList}\item 
+unsigned {\bf get\-S\-R} (unsigned hab) const \label{classCALICE_1_1AhcConditions_a1521056060193303fb7c85657a005c1e}
+
+\begin{DoxyCompactList}\small\item\em get hab sr \end{DoxyCompactList}\item 
+void {\bf print} (std\-::ostream \&os)\label{classCALICE_1_1AhcConditions_a742f77cfa0886de4f4ff2ee0bde9900d}
+
+\begin{DoxyCompactList}\small\item\em convenient print method \end{DoxyCompactList}\item 
+const std\-::string {\bf get\-Type\-Name} () const \label{classCALICE_1_1AhcConditions_a6c7d11954356e9c4ac64a46525bb54ff}
+
+\begin{DoxyCompactList}\small\item\em return the type of the class \end{DoxyCompactList}\item 
+const std\-::string {\bf get\-Data\-Description} () const \label{classCALICE_1_1AhcConditions_a31282cd05d783c18c6593f731e9fa24d}
+
+\begin{DoxyCompactList}\small\item\em return a brief description of the data memeber \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Class for the \doxyref{C\-A\-L\-I\-C\-E}{p.}{namespaceCALICE} Ahcal conditions information during the reconstruction. 
+
+renamed from \doxyref{Calice\-Conditions}{p.}{classCALICE_1_1CaliceConditions} 2007/12/14 B.\-Lutz
+
+Information is stored module wise \begin{DoxyAuthor}{Author}
+B. Lutz D\-E\-S\-Y 
+\end{DoxyAuthor}
+\begin{DoxyDate}{Date}
+Sep 11 2006 
+\end{DoxyDate}
+
+
+Definition at line 32 of file Ahc\-Conditions.\-hh.
+
+
+
+\subsection{Constructor \& Destructor Documentation}
+\index{C\-A\-L\-I\-C\-E\-::\-Ahc\-Conditions@{C\-A\-L\-I\-C\-E\-::\-Ahc\-Conditions}!Ahc\-Conditions@{Ahc\-Conditions}}
+\index{Ahc\-Conditions@{Ahc\-Conditions}!CALICE::AhcConditions@{C\-A\-L\-I\-C\-E\-::\-Ahc\-Conditions}}
+\subsubsection[{Ahc\-Conditions}]{\setlength{\rightskip}{0pt plus 5cm}C\-A\-L\-I\-C\-E\-::\-Ahc\-Conditions\-::\-Ahc\-Conditions (
+\begin{DoxyParamCaption}
+\item[{int}]{module\-Nr, }
+\item[{unsigned}]{module\-I\-D, }
+\item[{int}]{calib\-Start, }
+\item[{int}]{calib\-Width, }
+\item[{bool}]{calib\-Enable, }
+\item[{int}]{hold, }
+\item[{int}]{hold\-Width, }
+\item[{int}]{multiplex, }
+\item[{int}]{vcalib, }
+\item[{int}]{verification, }
+\item[{int}]{sr[12]}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\label{classCALICE_1_1AhcConditions_a51eb529321a6006fb0b9d46046ba056a}
+
+
+constructor, \doxyref{Ahc\-Conditions}{p.}{classCALICE_1_1AhcConditions} is initialized with the parameters given 
+
+
+\begin{DoxyParams}{Parameters}
+{\em module\-Nr} & mdoule \char`\"{}stamp\char`\"{} \\
+\hline
+{\em module\-I\-D} & module I\-D of the module the hit is in, low byte gives upper or lower half, high byte gives module \char`\"{}stamp\char`\"{}, used to find correct calibration \\
+\hline
+{\em calib\-Start} & starting time of Tcalib signal in ticks \\
+\hline
+{\em calib\-Width} & duration of the Tcalib signal in ticks \\
+\hline
+{\em calib\-Enable} & has Tcalib signal been sent at all? \\
+\hline
+{\em hold} & starting time of the hold signal in ticks (6.\-25ns) \\
+\hline
+{\em hold\-Width} & duration of the hold signal in ticks (6.\-25ns) \\
+\hline
+{\em multiplex} & number of multiplexed signals in the acquisition cycle \\
+\hline
+{\em vcalib} & Vcalib value \\
+\hline
+{\em verification} & shift register verification pattern \\
+\hline
+{\em sr} & shift registers \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 54 of file Ahc\-Conditions.\-hh.
+
+
+
+The documentation for this class was generated from the following files\-:\begin{DoxyCompactItemize}
+\item 
+Ahc\-Conditions.\-hh\item 
+Ahc\-Conditions.\-cc\end{DoxyCompactItemize}

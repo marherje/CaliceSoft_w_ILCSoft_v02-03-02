@@ -1,0 +1,81 @@
+\section{C\-A\-L\-I\-C\-E\-:\-:Inter\-Constants Class Reference}
+\label{classCALICE_1_1InterConstants}\index{C\-A\-L\-I\-C\-E\-::\-Inter\-Constants@{C\-A\-L\-I\-C\-E\-::\-Inter\-Constants}}
+
+
+Class to store the results of a inter calibration measurement, i.\-e.  
+
+
+
+
+{\ttfamily \#include $<$Inter\-Constants.\-hh$>$}
+
+Inheritance diagram for C\-A\-L\-I\-C\-E\-:\-:Inter\-Constants\-:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=3.000000cm]{classCALICE_1_1InterConstants}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+{\bfseries Inter\-Constants} (unsigned chip, unsigned channel, float value, float error)\label{classCALICE_1_1InterConstants_a9130ab502198dc16813f62f591155900}
+
+\item 
+{\bfseries Inter\-Constants} (L\-C\-Object $\ast${\bf obj})\label{classCALICE_1_1InterConstants_a8275f0285c5080d4024de5557e0d0709}
+
+\item 
+float {\bf get\-Inter\-Value} () const \label{classCALICE_1_1InterConstants_a2da8b23255795109983569198e70bfd7}
+
+\begin{DoxyCompactList}\small\item\em get conversion factor value \end{DoxyCompactList}\item 
+float {\bf get\-Inter\-Error} () const \label{classCALICE_1_1InterConstants_a17d72b981677ced2bc941119dcd19b2f}
+
+\begin{DoxyCompactList}\small\item\em get conversion factor error \end{DoxyCompactList}\item 
+float {\bf apply\-Calibration} (float input\-Value) const \label{classCALICE_1_1InterConstants_ac4e54f423b0048db8e79b745a53a5209}
+
+\begin{DoxyCompactList}\small\item\em apply calibration to energy value \end{DoxyCompactList}\item 
+float {\bf cancel\-Calibration} (float output\-Value) const \label{classCALICE_1_1InterConstants_a2f2d1a18b5136f7e2772d25629b4ccb2}
+
+\begin{DoxyCompactList}\small\item\em cancel an applied calibration from energy value \end{DoxyCompactList}\item 
+float {\bf apply\-Calibration\-Error} (float input\-Value, float input\-Error) const \label{classCALICE_1_1InterConstants_ad102c242709f9229f3936d04bb356be7}
+
+\begin{DoxyCompactList}\small\item\em apply calibration error to current error \end{DoxyCompactList}\item 
+float {\bf cancel\-Calibration\-Error} (float output\-Value, float output\-Error) const \label{classCALICE_1_1InterConstants_a513532d0848335a04f9a58c314ff32ee}
+
+\begin{DoxyCompactList}\small\item\em apply error due to canceling a calibration to current error \end{DoxyCompactList}\item 
+bool {\bf calibration\-Valid} () const \label{classCALICE_1_1InterConstants_ab184f4d15b941b5ac67474b02eaab138}
+
+\begin{DoxyCompactList}\small\item\em check if a valid calibration is available \end{DoxyCompactList}\item 
+bool {\bf keep\-Event} (float result\-Value, float result\-Error) const \label{classCALICE_1_1InterConstants_a919e037d3e03029486c2a3c9713e772a}
+
+\begin{DoxyCompactList}\small\item\em no cut for the moment \end{DoxyCompactList}\item 
+void {\bf print} (std\-::ostream \&os)\label{classCALICE_1_1InterConstants_a8e10cd6994b21d613a8bd5e00ac3fdec}
+
+\begin{DoxyCompactList}\small\item\em convenient print method \end{DoxyCompactList}\item 
+const std\-::string {\bf get\-Type\-Name} () const \label{classCALICE_1_1InterConstants_ab8640910bfa5d47de555ab6b5f2bb8d6}
+
+\begin{DoxyCompactList}\small\item\em return type of the class \end{DoxyCompactList}\item 
+const std\-::string {\bf get\-Data\-Description} () const \label{classCALICE_1_1InterConstants_a7e992cec8e1b2c2e3914b9cb9e8c9c10}
+
+\begin{DoxyCompactList}\small\item\em return a brief description of the data member \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Detailed Description}
+Class to store the results of a inter calibration measurement, i.\-e. 
+
+conversion factor between calibration mode and physics mode plus the error of it for a certain chip/channel for a fixed module\-I\-D \begin{DoxyAuthor}{Author}
+S. Schmidt D\-E\-S\-Y 
+\end{DoxyAuthor}
+\begin{DoxyDate}{Date}
+Aug 24 2006 
+\end{DoxyDate}
+
+
+Definition at line 25 of file Inter\-Constants.\-hh.
+
+
+
+The documentation for this class was generated from the following files\-:\begin{DoxyCompactItemize}
+\item 
+Inter\-Constants.\-hh\item 
+Inter\-Constants.\-cc\end{DoxyCompactItemize}

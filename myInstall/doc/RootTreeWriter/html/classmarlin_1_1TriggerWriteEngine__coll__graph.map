@@ -1,0 +1,5 @@
+<map id="marlin::TriggerWriteEngine" name="marlin::TriggerWriteEngine">
+<area shape="rect" id="node2" href="$classmarlin_1_1RootWriteEngine.html" title="marlin::RootWriteEngine" alt="" coords="5,181,184,208"/>
+<area shape="rect" id="node3" href="$classmarlin_1_1RootTreeWriter.html" title="marlin::RootTreeWriter" alt="" coords="11,83,177,109"/>
+<area shape="rect" id="node5" href="$structmarlin_1_1TriggerWriteEngine_1_1TrigBits__t.html" title="marlin::TriggerWriteEngine\l::TrigBits_t" alt="" coords="208,174,403,215"/>
+</map>

@@ -1,0 +1,96 @@
+\section{C\-A\-L\-I\-C\-E\-:\-:Event\-Header Class Reference}
+\label{classCALICE_1_1EventHeader}\index{C\-A\-L\-I\-C\-E\-::\-Event\-Header@{C\-A\-L\-I\-C\-E\-::\-Event\-Header}}
+
+
+Class to store event header info, i.\-e.  
+
+
+
+
+{\ttfamily \#include $<$Event\-Header.\-hh$>$}
+
+Inheritance diagram for C\-A\-L\-I\-C\-E\-:\-:Event\-Header\-:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=3.000000cm]{classCALICE_1_1EventHeader}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+{\bf Event\-Header} (int event\-Number\-In\-Run, int event\-Number\-In\-Configuration, int event\-Number\-In\-Acquisition)\label{classCALICE_1_1EventHeader_a61ce4e0faf985f2d70f92c314eb3033a}
+
+\begin{DoxyCompactList}\small\item\em The costructor. \end{DoxyCompactList}\item 
+{\bf Event\-Header} (L\-C\-Object $\ast${\bf obj})\label{classCALICE_1_1EventHeader_a211f090b7c628659f5ea559fde21d95b}
+
+\begin{DoxyCompactList}\small\item\em A copy constructor. \end{DoxyCompactList}\item 
+virtual {\bf $\sim$\-Event\-Header} ()\label{classCALICE_1_1EventHeader_a2e907c74e6642601f41270e5c8d88c17}
+
+\begin{DoxyCompactList}\small\item\em The destructor. \end{DoxyCompactList}\item 
+void {\bf set\-Event\-Number\-In\-Run} (int evtnumberrun)\label{classCALICE_1_1EventHeader_ab962056e1ab5c7f89184c484b495955e}
+
+\begin{DoxyCompactList}\small\item\em sets the event number in run \end{DoxyCompactList}\item 
+int {\bf get\-Event\-Number\-In\-Run} ()\label{classCALICE_1_1EventHeader_a8f50d11349a3b8d497762ac1cae27d44}
+
+\begin{DoxyCompactList}\small\item\em returns the event number in run \end{DoxyCompactList}\item 
+void {\bf set\-Event\-Number\-In\-Configuration} (int evtnumberconfig)\label{classCALICE_1_1EventHeader_a6c40f09937e882ab0f178eee8453ad03}
+
+\begin{DoxyCompactList}\small\item\em set the event number in configuration \end{DoxyCompactList}\item 
+int {\bf get\-Event\-Number\-In\-Configuration} ()\label{classCALICE_1_1EventHeader_ac0d6b7781caddb323548dba760c2cd21}
+
+\begin{DoxyCompactList}\small\item\em returns the event number in configuration \end{DoxyCompactList}\item 
+void {\bf set\-Event\-Number\-In\-Acquisition} (int evtnumberacq)
+\begin{DoxyCompactList}\small\item\em returns the event number in spill \end{DoxyCompactList}\item 
+int {\bf get\-Event\-Number\-In\-Acquisition} ()\label{classCALICE_1_1EventHeader_aeb2022e92de4b7cc8a28912ccdd52f73}
+
+\begin{DoxyCompactList}\small\item\em returns the event number in Acquisition \end{DoxyCompactList}\item 
+const std\-::string {\bf get\-Type\-Name} () const \label{classCALICE_1_1EventHeader_a2db92906b475b2c6409c24535a00d7a6}
+
+\begin{DoxyCompactList}\small\item\em returns the the type name \end{DoxyCompactList}\item 
+const std\-::string {\bf get\-Data\-Description} () const \label{classCALICE_1_1EventHeader_a52adc9cbf4000c04b5431406f8df1d83}
+
+\begin{DoxyCompactList}\small\item\em returns a brief description of the data stored \end{DoxyCompactList}\item 
+std\-::ostream \& {\bf print} (std\-::ostream \&ostrm)\label{classCALICE_1_1EventHeader_a1067ef9c5904eb8aa9f1438136c1b5de}
+
+\begin{DoxyCompactList}\small\item\em dumps data content \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Detailed Description}
+Class to store event header info, i.\-e. 
+
+event\# in run, event\# in configuration, event\# in spill
+
+\begin{DoxyAuthor}{Author}
+G.\-Mavromanolakis 
+\end{DoxyAuthor}
+\begin{DoxyDate}{Date}
+8 Jun 2005 
+\end{DoxyDate}
+
+
+Definition at line 37 of file Event\-Header.\-hh.
+
+
+
+\subsection{Member Function Documentation}
+\index{C\-A\-L\-I\-C\-E\-::\-Event\-Header@{C\-A\-L\-I\-C\-E\-::\-Event\-Header}!set\-Event\-Number\-In\-Acquisition@{set\-Event\-Number\-In\-Acquisition}}
+\index{set\-Event\-Number\-In\-Acquisition@{set\-Event\-Number\-In\-Acquisition}!CALICE::EventHeader@{C\-A\-L\-I\-C\-E\-::\-Event\-Header}}
+\subsubsection[{set\-Event\-Number\-In\-Acquisition}]{\setlength{\rightskip}{0pt plus 5cm}void C\-A\-L\-I\-C\-E\-::\-Event\-Header\-::set\-Event\-Number\-In\-Acquisition (
+\begin{DoxyParamCaption}
+\item[{int}]{evtnumberacq}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\label{classCALICE_1_1EventHeader_abb3fb1c88ad338d9bceba1801f344acd}
+
+
+returns the event number in spill 
+
+sets the event number in Acquisition 
+
+Definition at line 107 of file Event\-Header.\-hh.
+
+
+
+The documentation for this class was generated from the following file\-:\begin{DoxyCompactItemize}
+\item 
+Event\-Header.\-hh\end{DoxyCompactItemize}

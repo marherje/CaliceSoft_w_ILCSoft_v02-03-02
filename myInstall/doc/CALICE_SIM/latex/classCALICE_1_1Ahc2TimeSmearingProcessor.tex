@@ -1,0 +1,136 @@
+\section{C\-A\-L\-I\-C\-E\-:\-:Ahc2\-Time\-Smearing\-Processor Class Reference}
+\label{classCALICE_1_1Ahc2TimeSmearingProcessor}\index{C\-A\-L\-I\-C\-E\-::\-Ahc2\-Time\-Smearing\-Processor@{C\-A\-L\-I\-C\-E\-::\-Ahc2\-Time\-Smearing\-Processor}}
+
+
+Class for doing the \doxyref{A\-H\-C\-A\-L}{p.}{namespaceCALICE_1_1AHCAL} digitisation (Time Smearing)  
+
+
+
+
+{\ttfamily \#include $<$Ahc2\-Time\-Smearing\-Processor.\-hh$>$}
+
+Inheritance diagram for C\-A\-L\-I\-C\-E\-:\-:Ahc2\-Time\-Smearing\-Processor\-:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classCALICE_1_1Ahc2TimeSmearingProcessor}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+virtual Processor $\ast$ {\bfseries new\-Processor} ()\label{classCALICE_1_1Ahc2TimeSmearingProcessor_aee39c56a0c8b2630ebb8b026028d45e1}
+
+\item 
+{\bf Ahc2\-Time\-Smearing\-Processor} ()\label{classCALICE_1_1Ahc2TimeSmearingProcessor_a33047e2c438f270c6912579711e95884}
+
+\begin{DoxyCompactList}\small\item\em Constructor. \end{DoxyCompactList}\item 
+{\bf $\sim$\-Ahc2\-Time\-Smearing\-Processor} ()\label{classCALICE_1_1Ahc2TimeSmearingProcessor_add1d7fba8570dcf282d2b47252f6463a}
+
+\begin{DoxyCompactList}\small\item\em Destructor. \end{DoxyCompactList}\item 
+virtual void {\bf init} ()\label{classCALICE_1_1Ahc2TimeSmearingProcessor_a6753a3323e61c61e40495b7f4615189a}
+
+\begin{DoxyCompactList}\small\item\em Initialise. \end{DoxyCompactList}\item 
+virtual void {\bf process\-Run\-Header} (L\-C\-Run\-Header $\ast$run)\label{classCALICE_1_1Ahc2TimeSmearingProcessor_a70ef7905e600a36a51568b096aec4ce9}
+
+\begin{DoxyCompactList}\small\item\em Process header. \end{DoxyCompactList}\item 
+virtual void {\bf process\-Event} (L\-C\-Event $\ast$evt)\label{classCALICE_1_1Ahc2TimeSmearingProcessor_ad6eb1ede3d5c9ae6bf6f81e1481ee1dc}
+
+\begin{DoxyCompactList}\small\item\em Process event (the working horse) \end{DoxyCompactList}\item 
+virtual void {\bf check} (L\-C\-Event $\ast$evt)\label{classCALICE_1_1Ahc2TimeSmearingProcessor_a3e2fa3d476464e277a155fe718ddf2f8}
+
+\begin{DoxyCompactList}\small\item\em Check. \end{DoxyCompactList}\item 
+virtual void {\bf end} ()\label{classCALICE_1_1Ahc2TimeSmearingProcessor_a148f43677d0ff3aa9bd40916da4114ad}
+
+\begin{DoxyCompactList}\small\item\em End of processing. \end{DoxyCompactList}\item 
+virtual void {\bf print\-Parameters} ()\label{classCALICE_1_1Ahc2TimeSmearingProcessor_a620da82aee6a75c88446f9c875b7a47c}
+
+\begin{DoxyCompactList}\small\item\em Print Parameters. \end{DoxyCompactList}\item 
+void {\bf Fill\-Container} (L\-C\-Event $\ast$evt)\label{classCALICE_1_1Ahc2TimeSmearingProcessor_a213695d36a37a0ba1fbb809b95be4de9}
+
+\begin{DoxyCompactList}\small\item\em Hardware Connection. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+std\-::string {\bf \-\_\-calorim\-Inp\-Collection}\label{classCALICE_1_1Ahc2TimeSmearingProcessor_a8553fe50d704d79ef994b4179171ae83}
+
+\begin{DoxyCompactList}\small\item\em input collection name \end{DoxyCompactList}\item 
+std\-::string {\bf \-\_\-calorim\-Out\-Collection}\label{classCALICE_1_1Ahc2TimeSmearingProcessor_a1ff8ef5c34a0afd7e30aeaabd331da2b}
+
+\begin{DoxyCompactList}\small\item\em output collection name \end{DoxyCompactList}\item 
+vector$<$ std\-::string $>$ {\bf \-\_\-calorim\-Inp\-Collections}\label{classCALICE_1_1Ahc2TimeSmearingProcessor_ad8d306dee8ff9e77f33db04e7c5b5533}
+
+\begin{DoxyCompactList}\small\item\em input collection name \end{DoxyCompactList}\item 
+vector$<$ std\-::string $>$ {\bf \-\_\-calorim\-Out\-Collections}\label{classCALICE_1_1Ahc2TimeSmearingProcessor_a6e996f04572594f0f7bf27753a109cd5}
+
+\begin{DoxyCompactList}\small\item\em output collection name \end{DoxyCompactList}\item 
+bool {\bf \-\_\-do\-Time\-Smearing}\label{classCALICE_1_1Ahc2TimeSmearingProcessor_a62235a91d7cbd9fa985cda87cd47ec8a}
+
+\begin{DoxyCompactList}\small\item\em do Time\-Smearing \end{DoxyCompactList}\item 
+float {\bfseries \-\_\-time\-Smearing}\label{classCALICE_1_1Ahc2TimeSmearingProcessor_a2a5a1c1e6e3229c1e954e7b231d85894}
+
+\item 
+bool {\bf \-\_\-do\-To\-F\-Shift}\label{classCALICE_1_1Ahc2TimeSmearingProcessor_a39d61eefd9e94d9662fe1345799e79f7}
+
+\begin{DoxyCompactList}\small\item\em do shift layers by time of flight \end{DoxyCompactList}\item 
+T\-Random3 $\ast$ {\bf \-\_\-random\-Generator}\label{classCALICE_1_1Ahc2TimeSmearingProcessor_a23fdda0b3cbc3a7347ac7c200c84cff4}
+
+\begin{DoxyCompactList}\small\item\em pointer to R\-O\-O\-Ts random generator for gaussian smearing \end{DoxyCompactList}\item 
+int {\bf \-\_\-random\-Seed}
+\begin{DoxyCompactList}\small\item\em random seed for the random generator. \end{DoxyCompactList}\item 
+std\-::string {\bf \-\_\-mokka\-Encoding\-String}\label{classCALICE_1_1Ahc2TimeSmearingProcessor_a2b85ba6e582f4a0b07ae8eab09e27440}
+
+\begin{DoxyCompactList}\small\item\em the Mokka encoding string \end{DoxyCompactList}\item 
+int {\bfseries \-\_\-n\-Run}\label{classCALICE_1_1Ahc2TimeSmearingProcessor_a3000c79d829b8b73ca7c4ce114da2d51}
+
+\item 
+int {\bfseries \-\_\-n\-Evt}\label{classCALICE_1_1Ahc2TimeSmearingProcessor_af8f690d9bc9acb4d1e00556aede9aadf}
+
+\item 
+std\-::string {\bf \-\_\-mapping\-Processor\-Name}\label{classCALICE_1_1Ahc2TimeSmearingProcessor_aed37f0b8fe83aa5a4073a4f33ef36cc7}
+
+\begin{DoxyCompactList}\small\item\em name of the processor which provides the mapping \end{DoxyCompactList}\item 
+const Ahc2\-Mapper $\ast$ {\bf \-\_\-mapper}\label{classCALICE_1_1Ahc2TimeSmearingProcessor_a8683e0125515b0614fa946a05e6d7bfd}
+
+\begin{DoxyCompactList}\small\item\em the mapper \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Class for doing the \doxyref{A\-H\-C\-A\-L}{p.}{namespaceCALICE_1_1AHCAL} digitisation (Time Smearing) 
+
+\begin{DoxyAuthor}{Author}
+{\tt eldwan.\-brianne@desy.\-de} 
+\end{DoxyAuthor}
+\begin{DoxyVersion}{Version}
+1.\-0 
+\end{DoxyVersion}
+\begin{DoxyDate}{Date}
+July 2016 
+\end{DoxyDate}
+
+
+Definition at line 43 of file Ahc2\-Time\-Smearing\-Processor.\-hh.
+
+
+
+\subsection{Field Documentation}
+\index{C\-A\-L\-I\-C\-E\-::\-Ahc2\-Time\-Smearing\-Processor@{C\-A\-L\-I\-C\-E\-::\-Ahc2\-Time\-Smearing\-Processor}!\-\_\-random\-Seed@{\-\_\-random\-Seed}}
+\index{\-\_\-random\-Seed@{\-\_\-random\-Seed}!CALICE::Ahc2TimeSmearingProcessor@{C\-A\-L\-I\-C\-E\-::\-Ahc2\-Time\-Smearing\-Processor}}
+\subsubsection[{\-\_\-random\-Seed}]{\setlength{\rightskip}{0pt plus 5cm}int C\-A\-L\-I\-C\-E\-::\-Ahc2\-Time\-Smearing\-Processor\-::\-\_\-random\-Seed\hspace{0.3cm}{\ttfamily [private]}}\label{classCALICE_1_1Ahc2TimeSmearingProcessor_a95eff3ff1307d2f3d304a6e9a66b4a5d}
+
+
+random seed for the random generator. 
+
+Steerable. 
+
+Definition at line 98 of file Ahc2\-Time\-Smearing\-Processor.\-hh.
+
+
+
+Referenced by Ahc2\-Time\-Smearing\-Processor(), and init().
+
+
+
+The documentation for this class was generated from the following files\-:\begin{DoxyCompactItemize}
+\item 
+Ahc2\-Time\-Smearing\-Processor.\-hh\item 
+Ahc2\-Time\-Smearing\-Processor.\-cc\end{DoxyCompactItemize}

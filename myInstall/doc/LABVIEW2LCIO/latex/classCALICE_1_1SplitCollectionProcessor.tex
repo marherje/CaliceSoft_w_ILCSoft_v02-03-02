@@ -1,0 +1,84 @@
+\section{C\-A\-L\-I\-C\-E\-:\-:Split\-Collection\-Processor Class Reference}
+\label{classCALICE_1_1SplitCollectionProcessor}\index{C\-A\-L\-I\-C\-E\-::\-Split\-Collection\-Processor@{C\-A\-L\-I\-C\-E\-::\-Split\-Collection\-Processor}}
+
+
+Processor used to split the E\-U\-D\-A\-Q Collection into 3 Collections for the May/\-June 2018 testbeam.  
+
+
+
+
+{\ttfamily \#include $<$Split\-Collection\-Processor.\-hh$>$}
+
+Inheritance diagram for C\-A\-L\-I\-C\-E\-:\-:Split\-Collection\-Processor\-:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classCALICE_1_1SplitCollectionProcessor}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+virtual Processor $\ast$ {\bf new\-Processor} ()\label{classCALICE_1_1SplitCollectionProcessor_ab2ffd856a6c36b3f38e271f6244040a1}
+
+\begin{DoxyCompactList}\small\item\em Implementation of new Processor returns pointer to processor. \end{DoxyCompactList}\item 
+void {\bf process\-Event} (L\-C\-Event $\ast$evt)\label{classCALICE_1_1SplitCollectionProcessor_ae66e904f58771b3a4c53b8c03e655847}
+
+\begin{DoxyCompactList}\small\item\em Creates events with L\-C\-Genreal\-Object collections from the E\-U\-D\-A\-Q input file and calls all active processors' \doxyref{process\-Event()}{p.}{classCALICE_1_1SplitCollectionProcessor_ae66e904f58771b3a4c53b8c03e655847} and process\-Run\-Header Method. \end{DoxyCompactList}\item 
+virtual void {\bf init} ()\label{classCALICE_1_1SplitCollectionProcessor_afdba0a3b5fde6b32bae36bd839b6fec1}
+
+\begin{DoxyCompactList}\small\item\em init method \end{DoxyCompactList}\item 
+void {\bfseries Fill\-Container} (L\-C\-Event $\ast$evt)\label{classCALICE_1_1SplitCollectionProcessor_a07834cbe177b763347e11d8765ebdd4f}
+
+\item 
+void {\bfseries Fill\-Output\-Collections} (int Chip\-I\-D, {\bf E\-U\-D\-A\-Q\-Block2016} $\ast$l\-Block, L\-C\-Collection\-Vec $\ast$\&col\-Pre\-Shower, L\-C\-Collection\-Vec $\ast$\&col\-H\-C\-A\-L, L\-C\-Collection\-Vec $\ast$\&col\-T\-C)\label{classCALICE_1_1SplitCollectionProcessor_a6955e6e8344094ddfaba11aef96e3f33}
+
+\item 
+virtual void {\bf end} ()\label{classCALICE_1_1SplitCollectionProcessor_a03a38ae1b2a40f94167669e2c9d3bd07}
+
+\begin{DoxyCompactList}\small\item\em end method \end{DoxyCompactList}\item 
+void {\bf print\-Parameters} ()\label{classCALICE_1_1SplitCollectionProcessor_a10a5ecedc95ff37323e1cbaf6cca1b61}
+
+\begin{DoxyCompactList}\small\item\em print parameters \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+std\-::string {\bfseries \-\_\-input\-Col\-Name}\label{classCALICE_1_1SplitCollectionProcessor_ac11c5e0377a6af76a9c9ce66d75eaf8a}
+
+\item 
+std\-::string {\bfseries \-\_\-output\-Col\-Name\-Pre\-Shower}\label{classCALICE_1_1SplitCollectionProcessor_a0aa714d717c7c7d31a557a64db14c4b2}
+
+\item 
+std\-::string {\bfseries \-\_\-output\-Col\-Name\-H\-C\-A\-L}\label{classCALICE_1_1SplitCollectionProcessor_a0035e1a203d75523e6f3bd39755d3915}
+
+\item 
+std\-::string {\bfseries \-\_\-output\-Col\-Name\-T\-C}\label{classCALICE_1_1SplitCollectionProcessor_a5ae3f8b018ac3cb8125ce08ca94574ee}
+
+\item 
+std\-::string {\bfseries \-\_\-\-Ahc2\-Hardware\-Connection\-Name}\label{classCALICE_1_1SplitCollectionProcessor_ad15d5840b76e734f4e88c9a95b977194}
+
+\item 
+std\-::map$<$ int, int $>$ {\bf \-\_\-\-Hardware\-Connnection\-Container}\label{classCALICE_1_1SplitCollectionProcessor_a6b02fc4ab3802c32846ae30dbab0f814}
+
+\begin{DoxyCompactList}\small\item\em map containing relationship between Chip\-I\-D and Module/\-Chip\-Nb \end{DoxyCompactList}\item 
+std\-::string {\bfseries \-\_\-detector\-Type\-Name}\label{classCALICE_1_1SplitCollectionProcessor_afc696ba6c38f9a653c7b567707890a89}
+
+\item 
+bool {\bfseries \-\_\-is\-First\-Event}\label{classCALICE_1_1SplitCollectionProcessor_a5bfe4730ea8f6cab2bf51355504d3b28}
+
+\item 
+int {\bf \-\_\-run\-Number}\label{classCALICE_1_1SplitCollectionProcessor_af0c27ecd09bfea66903fa7c902f4cee0}
+
+\begin{DoxyCompactList}\small\item\em The run number. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Processor used to split the E\-U\-D\-A\-Q Collection into 3 Collections for the May/\-June 2018 testbeam. 
+
+Definition at line 21 of file Split\-Collection\-Processor.\-hh.
+
+
+
+The documentation for this class was generated from the following files\-:\begin{DoxyCompactItemize}
+\item 
+Split\-Collection\-Processor.\-hh\item 
+Split\-Collection\-Processor.\-cc\end{DoxyCompactItemize}

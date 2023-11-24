@@ -1,0 +1,119 @@
+\section{C\-A\-L\-I\-C\-E\-:\-:Append\-Longitudinal\-Observables Class Reference}
+\label{classCALICE_1_1AppendLongitudinalObservables}\index{C\-A\-L\-I\-C\-E\-::\-Append\-Longitudinal\-Observables@{C\-A\-L\-I\-C\-E\-::\-Append\-Longitudinal\-Observables}}
+
+
+Processor for adding longitudinal observables like energy per z-\/bin to each event as event parameter.  
+
+
+
+
+{\ttfamily \#include $<$Append\-Longitudinal\-Observables.\-hh$>$}
+
+Inheritance diagram for C\-A\-L\-I\-C\-E\-:\-:Append\-Longitudinal\-Observables\-:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classCALICE_1_1AppendLongitudinalObservables}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+virtual Processor $\ast$ {\bfseries new\-Processor} ()\label{classCALICE_1_1AppendLongitudinalObservables_a184a5fed8c1f9e5a4dbc95f6fdb14719}
+
+\item 
+virtual void {\bf init} ()
+\item 
+virtual void {\bf process\-Run\-Header} (L\-C\-Run\-Header $\ast$run)
+\item 
+virtual void {\bf process\-Event} (L\-C\-Event $\ast$evt)
+\item 
+virtual void {\bfseries check} (L\-C\-Event $\ast$evt)\label{classCALICE_1_1AppendLongitudinalObservables_aecfac1c6fcaeed1f181c1e3120e0dec3}
+
+\item 
+virtual void {\bf end} ()
+\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+std\-::string {\bfseries \-\_\-col\-Name\-In}\label{classCALICE_1_1AppendLongitudinalObservables_ac54d2df825d928b37934be3934414c52}
+
+\item 
+std\-::string {\bfseries \-\_\-par\-Name\-Shower\-Start\-Pos}\label{classCALICE_1_1AppendLongitudinalObservables_a9bad51c48a3bde69262b4e638d6c81dd}
+
+\item 
+std\-::string {\bfseries \-\_\-par\-Name\-C\-O\-G}\label{classCALICE_1_1AppendLongitudinalObservables_a39e04e4a5a77c39ebd68d045e1a8013f}
+
+\item 
+std\-::string {\bfseries \-\_\-cell\-I\-D\-Encoding}\label{classCALICE_1_1AppendLongitudinalObservables_a55ef9352f95cf34642d4f305ceeffe6a}
+
+\item 
+std\-::string {\bfseries \-\_\-mapping\-Processor\-Name}\label{classCALICE_1_1AppendLongitudinalObservables_a6f5c538df04d53bbf30b9df32f67cc4e}
+
+\item 
+std\-::string {\bfseries \-\_\-cell\-Description\-Processor\-Name}\label{classCALICE_1_1AppendLongitudinalObservables_af7c86ff99ff1ba90fddde54aff75daa8}
+
+\item 
+int {\bfseries \-\_\-n\-Run}\label{classCALICE_1_1AppendLongitudinalObservables_a6c7d777eda786e1291259ee1c616475b}
+
+\item 
+int {\bfseries \-\_\-n\-Evt}\label{classCALICE_1_1AppendLongitudinalObservables_ac45ead0d4eee97d87e1a6a37b4273035}
+
+\item 
+const C\-A\-L\-I\-C\-E\-::\-Mapper $\ast$ {\bfseries \-\_\-mapper}\label{classCALICE_1_1AppendLongitudinalObservables_a399374c0a4467541baeb42870e268adb}
+
+\item 
+unsigned int {\bfseries \-\_\-mapper\-Version}\label{classCALICE_1_1AppendLongitudinalObservables_aa0c38d61ab94c36b64f61f304ad7bf35}
+
+\item 
+C\-A\-L\-I\-C\-E\-::\-Mapped\-Container\\*
+$<$ C\-A\-L\-I\-C\-E\-::\-Cell\-Description $>$ $\ast$ {\bfseries \-\_\-cell\-Descriptions}\label{classCALICE_1_1AppendLongitudinalObservables_a4d64b00da8ba4464224d89e60951503a}
+
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Processor for adding longitudinal observables like energy per z-\/bin to each event as event parameter. 
+
+\begin{DoxyAuthor}{Author}
+N. Feege, University of Hamburg 
+\end{DoxyAuthor}
+\begin{DoxyDate}{Date}
+Dec 2010 
+\end{DoxyDate}
+
+
+\subsection{Member Function Documentation}
+\index{C\-A\-L\-I\-C\-E\-::\-Append\-Longitudinal\-Observables@{C\-A\-L\-I\-C\-E\-::\-Append\-Longitudinal\-Observables}!end@{end}}
+\index{end@{end}!CALICE::AppendLongitudinalObservables@{C\-A\-L\-I\-C\-E\-::\-Append\-Longitudinal\-Observables}}
+\subsubsection[{end}]{\setlength{\rightskip}{0pt plus 5cm}void C\-A\-L\-I\-C\-E\-::\-Append\-Longitudinal\-Observables\-::end (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}\label{classCALICE_1_1AppendLongitudinalObservables_aa1c159a27af81e1ee584868c04cd822c}
+Called after data processing for clean up. \index{C\-A\-L\-I\-C\-E\-::\-Append\-Longitudinal\-Observables@{C\-A\-L\-I\-C\-E\-::\-Append\-Longitudinal\-Observables}!init@{init}}
+\index{init@{init}!CALICE::AppendLongitudinalObservables@{C\-A\-L\-I\-C\-E\-::\-Append\-Longitudinal\-Observables}}
+\subsubsection[{init}]{\setlength{\rightskip}{0pt plus 5cm}void C\-A\-L\-I\-C\-E\-::\-Append\-Longitudinal\-Observables\-::init (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}\label{classCALICE_1_1AppendLongitudinalObservables_a34a3ca7645da9f35060d542679293ce4}
+Called at the begin of the job before anything is read. Use to initialize the processor, e.\-g. book histograms. \index{C\-A\-L\-I\-C\-E\-::\-Append\-Longitudinal\-Observables@{C\-A\-L\-I\-C\-E\-::\-Append\-Longitudinal\-Observables}!process\-Event@{process\-Event}}
+\index{process\-Event@{process\-Event}!CALICE::AppendLongitudinalObservables@{C\-A\-L\-I\-C\-E\-::\-Append\-Longitudinal\-Observables}}
+\subsubsection[{process\-Event}]{\setlength{\rightskip}{0pt plus 5cm}void C\-A\-L\-I\-C\-E\-::\-Append\-Longitudinal\-Observables\-::process\-Event (
+\begin{DoxyParamCaption}
+\item[{L\-C\-Event $\ast$}]{evt}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}\label{classCALICE_1_1AppendLongitudinalObservables_a17ed8fe97f4343669969340c5844e3d9}
+Called for every event -\/ the working horse. \index{C\-A\-L\-I\-C\-E\-::\-Append\-Longitudinal\-Observables@{C\-A\-L\-I\-C\-E\-::\-Append\-Longitudinal\-Observables}!process\-Run\-Header@{process\-Run\-Header}}
+\index{process\-Run\-Header@{process\-Run\-Header}!CALICE::AppendLongitudinalObservables@{C\-A\-L\-I\-C\-E\-::\-Append\-Longitudinal\-Observables}}
+\subsubsection[{process\-Run\-Header}]{\setlength{\rightskip}{0pt plus 5cm}void C\-A\-L\-I\-C\-E\-::\-Append\-Longitudinal\-Observables\-::process\-Run\-Header (
+\begin{DoxyParamCaption}
+\item[{L\-C\-Run\-Header $\ast$}]{run}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}\label{classCALICE_1_1AppendLongitudinalObservables_ae6f2cc07f85acbf725aaf339420e6308}
+Called for every run. 
+
+The documentation for this class was generated from the following files\-:\begin{DoxyCompactItemize}
+\item 
+/nfs/dust/ilc/user/marquezh/\-Calice\-Soft\-\_\-w\-\_\-\-I\-L\-C\-Soft\-\_\-v02-\/03-\/02/calice\-\_\-analysis/addon\-Procs/include/Append\-Longitudinal\-Observables.\-hh\item 
+/nfs/dust/ilc/user/marquezh/\-Calice\-Soft\-\_\-w\-\_\-\-I\-L\-C\-Soft\-\_\-v02-\/03-\/02/calice\-\_\-analysis/addon\-Procs/src/Append\-Longitudinal\-Observables.\-cc\end{DoxyCompactItemize}

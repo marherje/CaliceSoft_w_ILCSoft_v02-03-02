@@ -1,0 +1,139 @@
+\section{C\-A\-L\-I\-C\-E\-:\-:Dhc\-Raw\-Chip\-Content Class Reference}
+\label{classCALICE_1_1DhcRawChipContent}\index{C\-A\-L\-I\-C\-E\-::\-Dhc\-Raw\-Chip\-Content@{C\-A\-L\-I\-C\-E\-::\-Dhc\-Raw\-Chip\-Content}}
+
+
+Simple class which stores the dhcal chip content Note that the dchal as it is now delivers the same time stamp for {\itshape all} 64 channels served by a chip.  
+
+
+
+
+{\ttfamily \#include $<$Dhc\-Raw\-Chip\-Content.\-hh$>$}
+
+Inheritance diagram for C\-A\-L\-I\-C\-E\-:\-:Dhc\-Raw\-Chip\-Content\-:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=3.000000cm]{classCALICE_1_1DhcRawChipContent}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+{\bf Dhc\-Raw\-Chip\-Content} ()\label{classCALICE_1_1DhcRawChipContent_a40a38cc72c861a07276425e293834915}
+
+\begin{DoxyCompactList}\small\item\em Simple Constructor. \end{DoxyCompactList}\item 
+{\bf Dhc\-Raw\-Chip\-Content} (L\-C\-Object $\ast${\bf obj})
+\begin{DoxyCompactList}\small\item\em 'Copy constructor' needed to interpret L\-C\-Collection read from file/database. \end{DoxyCompactList}\item 
+virtual {\bf $\sim$\-Dhc\-Raw\-Chip\-Content} ()\label{classCALICE_1_1DhcRawChipContent_a118479e64dcaa1578df4c2b5b5305fc5}
+
+\begin{DoxyCompactList}\small\item\em The destructor. \end{DoxyCompactList}\item 
+{\bf Dhc\-Raw\-Chip\-Content} \& {\bf set\-Crate\-Number} (unsigned int cratenr)\label{classCALICE_1_1DhcRawChipContent_ae648a73206346a7e435b190c31503533}
+
+\begin{DoxyCompactList}\small\item\em Set the high hits. \end{DoxyCompactList}\item 
+unsigned int {\bfseries get\-Crate\-Number} () const \label{classCALICE_1_1DhcRawChipContent_ac38db7829bb2e4ce117bf6bff30b5e30}
+
+\item 
+{\bf Dhc\-Raw\-Chip\-Content} \& {\bf set\-Elec\-Channel} (unsigned int vmead, unsigned int dcalad, unsigned int dcolad, unsigned int dconad)\label{classCALICE_1_1DhcRawChipContent_ad15611d95fe8f56da1df10bafd42a869}
+
+\begin{DoxyCompactList}\small\item\em Set the electronic channel number. \end{DoxyCompactList}\item 
+int {\bf get\-Elec\-Channel} () const \label{classCALICE_1_1DhcRawChipContent_a835846130132c03bd9c55a52fcca0baf}
+
+\begin{DoxyCompactList}\small\item\em Get the entire electronic channel number. \end{DoxyCompactList}\item 
+unsigned int {\bf get\-Vme\-Address} () const \label{classCALICE_1_1DhcRawChipContent_a41b24b4a3aab879318b7bb73bc0abf3d}
+
+\begin{DoxyCompactList}\small\item\em Return the addresses of individual hardware components. \end{DoxyCompactList}\item 
+unsigned int {\bfseries get\-Dcal\-Address} () const \label{classCALICE_1_1DhcRawChipContent_a7c3eeeebac537abaa903e594c2719eb5}
+
+\item 
+unsigned int {\bfseries get\-Dcol\-Address} () const \label{classCALICE_1_1DhcRawChipContent_a69c7bd11fccade453f965629bf664dd7}
+
+\item 
+unsigned int {\bfseries get\-Dcon\-Address} () const \label{classCALICE_1_1DhcRawChipContent_a17b53680be279714c856302fd1932bc0}
+
+\item 
+{\bf Dhc\-Raw\-Chip\-Content} \& {\bf set\-Hits\-Hi} (unsigned int hitshi)\label{classCALICE_1_1DhcRawChipContent_a65d1a25cfdca13308dfdd0e1b101c468}
+
+\begin{DoxyCompactList}\small\item\em Set the high hits. \end{DoxyCompactList}\item 
+unsigned int {\bfseries get\-Hits\-Hi} () const \label{classCALICE_1_1DhcRawChipContent_a154d9d95875b10420c5c3bab19098e47}
+
+\item 
+{\bf Dhc\-Raw\-Chip\-Content} \& {\bf set\-Hits\-Lo} (unsigned int hitslo)\label{classCALICE_1_1DhcRawChipContent_a8a0aa0c0b062f58866ad6d8c6d641652}
+
+\begin{DoxyCompactList}\small\item\em Set the low hits. \end{DoxyCompactList}\item 
+unsigned int {\bf get\-Hits\-Lo} () const \label{classCALICE_1_1DhcRawChipContent_a41c5e80b718bb2aaf5367c5506bf5f1d}
+
+\begin{DoxyCompactList}\small\item\em Return the low hits. \end{DoxyCompactList}\item 
+{\bf Dhc\-Raw\-Chip\-Content} \& {\bf set\-Dhc\-Time\-Stamp} (unsigned int timestamp)\label{classCALICE_1_1DhcRawChipContent_ac0e10fb580cc00b0f4b0a3efdd956b91}
+
+\begin{DoxyCompactList}\small\item\em The core, the time stamp. \end{DoxyCompactList}\item 
+unsigned int {\bf get\-Dhc\-Time\-Stamp} () const \label{classCALICE_1_1DhcRawChipContent_a784ab74d557fa360154d0116f8448d03}
+
+\begin{DoxyCompactList}\small\item\em Return the time stamp. \end{DoxyCompactList}\item 
+{\bf Dhc\-Raw\-Chip\-Content} \& {\bf set\-Misc\-Info} (bool trg, bool dbt, unsigned char err, unsigned char chksum, unsigned char versum)\label{classCALICE_1_1DhcRawChipContent_abed887f844826b95fe369701a8b6719d}
+
+\begin{DoxyCompactList}\small\item\em Set miscalleneous information. \end{DoxyCompactList}\item 
+bool {\bf get\-Trg\-Info} ()\label{classCALICE_1_1DhcRawChipContent_a7c93aa3a5eb24d81067e2d4059869435}
+
+\begin{DoxyCompactList}\small\item\em Return the trigger information. \end{DoxyCompactList}\item 
+bool {\bf get\-Dbt\-Info} ()\label{classCALICE_1_1DhcRawChipContent_a26fb65c45f4a3b07d779e442069477f2}
+
+\begin{DoxyCompactList}\small\item\em Return the dbt information. \end{DoxyCompactList}\item 
+unsigned char {\bf get\-Err\-Info} ()\label{classCALICE_1_1DhcRawChipContent_af6261bc47ae47a360632fb0079d4bc99}
+
+\begin{DoxyCompactList}\small\item\em Return the error information. \end{DoxyCompactList}\item 
+unsigned char {\bf get\-Chk\-Sum} ()\label{classCALICE_1_1DhcRawChipContent_aa9a55ba4880c7b03db55c3728980f44d}
+
+\begin{DoxyCompactList}\small\item\em Return the checksum information. \end{DoxyCompactList}\item 
+unsigned char {\bf get\-Ver\-Sum} ()\label{classCALICE_1_1DhcRawChipContent_a469cbbfed09f4f5a7e1bc3775b6240e9}
+
+\begin{DoxyCompactList}\small\item\em Return the verification sum (to check checksum) \end{DoxyCompactList}\item 
+std\-::ostream \& {\bf print} (std\-::ostream \&ostrm)\label{classCALICE_1_1DhcRawChipContent_a555dbb9e80d6bb86d0d0092231109ebe}
+
+\begin{DoxyCompactList}\small\item\em Convenient print method. \end{DoxyCompactList}\item 
+const std\-::string {\bfseries get\-Type\-Name} () const \label{classCALICE_1_1DhcRawChipContent_a3a5fd3f86e153a64edcbeb444001f5aa}
+
+\item 
+const std\-::string {\bf get\-Data\-Description} () const \label{classCALICE_1_1DhcRawChipContent_af28eebdb0ad0ce1f8be17f191b714ef0}
+
+\begin{DoxyCompactList}\small\item\em Return a brief description of the data members. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Detailed Description}
+Simple class which stores the dhcal chip content Note that the dchal as it is now delivers the same time stamp for {\itshape all} 64 channels served by a chip. 
+
+That's why the L\-C\-I\-O Raw\-Calorimeter\-Hit class is not convenient. Since it would lead to an increas of the data volume by a factor 64.
+
+\begin{DoxyAuthor}{Author}
+R. Pöschl (L\-A\-L Orsay) 
+\end{DoxyAuthor}
+\begin{DoxyDate}{Date}
+Dec 2010 
+\end{DoxyDate}
+
+
+Definition at line 56 of file Dhc\-Raw\-Chip\-Content.\-hh.
+
+
+
+\subsection{Constructor \& Destructor Documentation}
+\index{C\-A\-L\-I\-C\-E\-::\-Dhc\-Raw\-Chip\-Content@{C\-A\-L\-I\-C\-E\-::\-Dhc\-Raw\-Chip\-Content}!Dhc\-Raw\-Chip\-Content@{Dhc\-Raw\-Chip\-Content}}
+\index{Dhc\-Raw\-Chip\-Content@{Dhc\-Raw\-Chip\-Content}!CALICE::DhcRawChipContent@{C\-A\-L\-I\-C\-E\-::\-Dhc\-Raw\-Chip\-Content}}
+\subsubsection[{Dhc\-Raw\-Chip\-Content}]{\setlength{\rightskip}{0pt plus 5cm}C\-A\-L\-I\-C\-E\-::\-Dhc\-Raw\-Chip\-Content\-::\-Dhc\-Raw\-Chip\-Content (
+\begin{DoxyParamCaption}
+\item[{L\-C\-Object $\ast$}]{obj}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\label{classCALICE_1_1DhcRawChipContent_aa7c59fb4dd3447fb4968bff83ae2e72d}
+
+
+'Copy constructor' needed to interpret L\-C\-Collection read from file/database. 
+
+
+
+Definition at line 73 of file Dhc\-Raw\-Chip\-Content.\-hh.
+
+
+
+The documentation for this class was generated from the following files\-:\begin{DoxyCompactItemize}
+\item 
+Dhc\-Raw\-Chip\-Content.\-hh\item 
+Dhc\-Raw\-Chip\-Content.\-cc\end{DoxyCompactItemize}

@@ -1,0 +1,107 @@
+\section{C\-A\-L\-I\-C\-E\-:\-:L\-C\-Generic\-Object\-Impl\-Ext Class Reference}
+\label{classCALICE_1_1LCGenericObjectImplExt}\index{C\-A\-L\-I\-C\-E\-::\-L\-C\-Generic\-Object\-Impl\-Ext@{C\-A\-L\-I\-C\-E\-::\-L\-C\-Generic\-Object\-Impl\-Ext}}
+
+
+Extends functionality of the L\-C\-Generic\-Object\-Impl Class It simply adds a new constructor to the L\-C\-Generic\-Object Class such that we can construct an interface class around without being restricted by the L\-C\-Fixed\-Object It uses an instance of L\-C\-Generic\-Object\-Impl that holds the data, thus there is no overhead when the data is read from a database or file for copying it to some local structure (Decorator pattern).  
+
+
+
+
+{\ttfamily \#include $<$L\-C\-Generic\-Object\-Impl\-Ext.\-hh$>$}
+
+Inheritance diagram for C\-A\-L\-I\-C\-E\-:\-:L\-C\-Generic\-Object\-Impl\-Ext\-:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=12.000000cm]{classCALICE_1_1LCGenericObjectImplExt}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+{\bf L\-C\-Generic\-Object\-Impl\-Ext} ()\label{classCALICE_1_1LCGenericObjectImplExt_aa3a6bb969c7cc736d88587960b663cba}
+
+\begin{DoxyCompactList}\small\item\em Default c'tor. \end{DoxyCompactList}\item 
+{\bfseries L\-C\-Generic\-Object\-Impl\-Ext} (L\-C\-Object $\ast${\bf obj})\label{classCALICE_1_1LCGenericObjectImplExt_a5e58ebbd98f49efeee560fd6bda8aae4}
+
+\item 
+L\-C\-Generic\-Object\-Impl $\ast$ {\bf obj} ()
+\begin{DoxyCompactList}\small\item\em The L\-C\-Generic\-Object\-Impl . \end{DoxyCompactList}\item 
+virtual {\bf $\sim$\-L\-C\-Generic\-Object\-Impl\-Ext} ()\label{classCALICE_1_1LCGenericObjectImplExt_a6326844158718441a0e984402e9c2f8b}
+
+\begin{DoxyCompactList}\small\item\em Clean up if we created a new L\-C\-Generic\-Object\-Impl. \end{DoxyCompactList}\item 
+virtual int {\bf id} ()\label{classCALICE_1_1LCGenericObjectImplExt_a13e336bf7a902820651dadb79271cd37}
+
+\begin{DoxyCompactList}\small\item\em Return the id of the underlying L\-C\-Generic\-Object\-Impl. \end{DoxyCompactList}\item 
+int {\bfseries get\-N\-Int} () const \label{classCALICE_1_1LCGenericObjectImplExt_aee1c6e2485d45b6dcba643210f840224}
+
+\item 
+int {\bfseries get\-N\-Float} () const \label{classCALICE_1_1LCGenericObjectImplExt_a09d41f70b6a4894b0f79806c32ead2b3}
+
+\item 
+int {\bfseries get\-N\-Double} () const \label{classCALICE_1_1LCGenericObjectImplExt_aa8503a0fc8e66c4e0e374e32bb594231}
+
+\item 
+int {\bfseries get\-Int\-Val} (int index) const \label{classCALICE_1_1LCGenericObjectImplExt_a57a61745bb48cd3917ddf1ba37f8a3e0}
+
+\item 
+float {\bfseries get\-Float\-Val} (int index) const \label{classCALICE_1_1LCGenericObjectImplExt_adda599738de7681f6c0d1b2aa3b09f79}
+
+\item 
+double {\bfseries get\-Double\-Val} (int index) const \label{classCALICE_1_1LCGenericObjectImplExt_ae10468f12c1a49ce00fceeb3f6664cbe}
+
+\item 
+bool {\bfseries is\-Fixed\-Size} () const \label{classCALICE_1_1LCGenericObjectImplExt_ae546a36a343a9376e818e0b2d9a96e4d}
+
+\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+L\-C\-Generic\-Object\-Impl $\ast$ {\bfseries \-\_\-obj}\label{classCALICE_1_1LCGenericObjectImplExt_a29179cf5508768d2cdbc9e2e6997bfdf}
+
+\item 
+bool {\bfseries \-\_\-created\-Object}\label{classCALICE_1_1LCGenericObjectImplExt_a65c76ade794ece6642ce4a6fc0ed1a8f}
+
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Extends functionality of the L\-C\-Generic\-Object\-Impl Class It simply adds a new constructor to the L\-C\-Generic\-Object Class such that we can construct an interface class around without being restricted by the L\-C\-Fixed\-Object It uses an instance of L\-C\-Generic\-Object\-Impl that holds the data, thus there is no overhead when the data is read from a database or file for copying it to some local structure (Decorator pattern). 
+
+\par
+ This is still an abstract class\-: subclasses have to implement L\-C\-Generic\-Obj ect\-::get\-Type\-Name() and L\-C\-Generic\-Object\-::get\-Data\-Description(). It is basically a copy of the lcio\-::\-U\-T\-I\-L\-::\-L\-C\-Fixed\-Object class I don't know whether this is the best solution, maybe it is better to use later on a real extension of the L\-C\-Generic\-Object\-Impl \begin{DoxyAuthor}{Author}
+Roman Poeschl, L\-A\-L Orsay 
+\end{DoxyAuthor}
+\begin{DoxyDate}{Date}
+Feb. 2006 
+\end{DoxyDate}
+
+
+Definition at line 30 of file L\-C\-Generic\-Object\-Impl\-Ext.\-hh.
+
+
+
+\subsection{Member Function Documentation}
+\index{C\-A\-L\-I\-C\-E\-::\-L\-C\-Generic\-Object\-Impl\-Ext@{C\-A\-L\-I\-C\-E\-::\-L\-C\-Generic\-Object\-Impl\-Ext}!obj@{obj}}
+\index{obj@{obj}!CALICE::LCGenericObjectImplExt@{C\-A\-L\-I\-C\-E\-::\-L\-C\-Generic\-Object\-Impl\-Ext}}
+\subsubsection[{obj}]{\setlength{\rightskip}{0pt plus 5cm}L\-C\-Generic\-Object\-Impl$\ast$ C\-A\-L\-I\-C\-E\-::\-L\-C\-Generic\-Object\-Impl\-Ext\-::obj (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\label{classCALICE_1_1LCGenericObjectImplExt_a7a6258e61fee4d6c67481e9e58a6062d}
+
+
+The L\-C\-Generic\-Object\-Impl . 
+
+Sublcasses use this to access their data. 
+
+Definition at line 74 of file L\-C\-Generic\-Object\-Impl\-Ext.\-hh.
+
+
+
+Referenced by C\-A\-L\-I\-C\-E\-::\-Bml\-Event\-Data\-::add\-T\-D\-C\-Channels(), C\-A\-L\-I\-C\-E\-::\-Dhc\-Readout\-Conf\-Block\-::fill\-Method(), C\-A\-L\-I\-C\-E\-::\-Dhc\-Readout\-Conf\-Block\-::fill\-Slot\-To\-Words\-Association\-Mask(), C\-A\-L\-I\-C\-E\-::\-Daq\-Type\-Data\-Block\-::finalize(), C\-A\-L\-I\-C\-E\-::\-Daq\-Type\-Data\-Block\-::\-Restore\-Maps(), C\-A\-L\-I\-C\-E\-::\-Scint\-Calo\-Slow\-Readout\-Mod\-Block\-::set\-Dbl\-Arrays(), and C\-A\-L\-I\-C\-E\-::\-Bml\-Slow\-Run\-Data\-Block\-::set\-Dbl\-Arrays().
+
+
+
+The documentation for this class was generated from the following file\-:\begin{DoxyCompactItemize}
+\item 
+L\-C\-Generic\-Object\-Impl\-Ext.\-hh\end{DoxyCompactItemize}

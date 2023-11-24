@@ -1,0 +1,76 @@
+\section{/nfs/dust/ilc/user/marquezh/\-Calice\-Soft\-\_\-w\-\_\-\-I\-L\-C\-Soft\-\_\-v02-\/03-\/02/calice\-\_\-db\-\_\-tools/src/extract\-Gain\-Average.cc File Reference}
+\label{extractGainAverage_8cc}\index{/nfs/dust/ilc/user/marquezh/\-Calice\-Soft\-\_\-w\-\_\-\-I\-L\-C\-Soft\-\_\-v02-\/03-\/02/calice\-\_\-db\-\_\-tools/src/extract\-Gain\-Average.\-cc@{/nfs/dust/ilc/user/marquezh/\-Calice\-Soft\-\_\-w\-\_\-\-I\-L\-C\-Soft\-\_\-v02-\/03-\/02/calice\-\_\-db\-\_\-tools/src/extract\-Gain\-Average.\-cc}}
+{\ttfamily \#include \char`\"{}I\-M\-P\-L/\-L\-C\-Collection\-Vec.\-h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}U\-T\-I\-L/\-L\-C\-Time.\-h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}Run\-Time\-Info.\-hh\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}Ahc\-Slow\-Readout\-Mod\-Mapper.\-hh\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}Ahc\-Simple\-Temp\-Provider.\-hh\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}Ahc\-Cern2010\-Temp\-Provider.\-hh\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}Ahc\-Mapper.\-hh\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}Hcal\-Tile\-Index.\-hh\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}lccd/\-D\-B\-Interface.\-hh\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}lccd/\-D\-B\-Cond\-Handler.\-hh\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}Conditions\-D\-B/\-I\-Cond\-D\-B\-Mgr.\-h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}D\-B\-Interface\-Mgr.\-hh\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}Calice\-D\-B\-Helper.\-hh\char`\"{}}\\*
+{\ttfamily \#include $<$fstream$>$}\\*
+{\ttfamily \#include \char`\"{}Calice\-D\-B\-Init\-Helper.\-hh\char`\"{}}\\*
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+struct {\bf cell\-Data\-\_\-t}
+\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+void {\bfseries fill\-Values} (std\-::map$<$ unsigned int, {\bf cell\-Data\-\_\-t} $>$ \&data, lcio\-::\-L\-C\-Collection $\ast$gain\-Collection, std\-::vector$<$ C\-A\-L\-I\-C\-E\-::\-Ahc\-Temp\-Provider $\ast$ $>$ temp\-Providers)\label{extractGainAverage_8cc_a1ac5935dd79bf264db3a460c79b3b05a}
+
+\item 
+void {\bfseries collect\-Gain\-Values} (std\-::map$<$ unsigned int, {\bf cell\-Data\-\_\-t} $>$ \&data, const lccd\-::\-L\-C\-C\-D\-Time\-Stamp from, const lccd\-::\-L\-C\-C\-D\-Time\-Stamp till, const std\-::string gain\-Folder, const std\-::string temp\-Calib\-Folder, std\-::map$<$ int, bool $>$ \&excluded\-Runs, {\bf Calice\-D\-B\-Helper} \&db\-Helper, const C\-A\-L\-I\-C\-E\-::\-Ahc\-Mapper $\ast$ahc\-Mapper, std\-::string temp\-Provider\-Model)\label{extractGainAverage_8cc_a43922251ebb7273c8d4d86d26f402805}
+
+\item 
+double {\bfseries get\-Mean} (const std\-::vector$<$ double $>$ values, double \&min, double \&max)\label{extractGainAverage_8cc_afaa7d8373bf0feb2a1f23ac6ad09506b}
+
+\item 
+int {\bfseries main} (int argc, char $\ast$$\ast$argv)\label{extractGainAverage_8cc_a3c04138a5bfe5d72780bb7e82a18e627}
+
+\end{DoxyCompactItemize}
+\subsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+std\-::string {\bfseries db\-Init} = {\bf calice\-::get\-D\-B\-Init\-String}()\label{extractGainAverage_8cc_a6b6249ff0366b8a48c34dfbbf6c6fbec}
+
+\item 
+std\-::string {\bfseries time\-Folder\-Name} = \char`\"{}/cd\-\_\-calice/C\-A\-L\-D\-A\-Q\-\_\-\-Run\-Time\-Info\char`\"{}\label{extractGainAverage_8cc_a4d2cd635f803f7649a78988cdd8b70b9}
+
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+This tool averages calibration parameters (e.\-g. gain or mip) for each channel over a list of runs and dumps the results to std\-::out.
+
+Usage\-:
+
+
+\begin{DoxyCode}
+extractGainAverage <dbfolder> <temperatureCalib> <first> <last> [<exclude>]
+\end{DoxyCode}
+
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em $<$dbfolder$>$} & D\-B folder containing results from the single calibration measurements (e.\-g. \char`\"{}/cd\-\_\-calice/\-Hcal/\-Calib\-\_\-\-Measurements/gain\-\_\-single\char`\"{}) \\
+\hline
+\mbox{\tt in}  & {\em $<$temp\-Calib$>$} & D\-B folder containing calibration for temperature sensors (e.\-g. \char`\"{}/cd\-\_\-calice/\-Hcal/temp\-Sensors\char`\"{}) \\
+\hline
+\mbox{\tt in}  & {\em $<$first$>$} & first run of run range that is used for calculating the average \\
+\hline
+\mbox{\tt in}  & {\em $<$last$>$} & last run of run range that is used for calculating the average \\
+\hline
+\mbox{\tt in}  & {\em $<$exclude$>$} & (optional) .txt file with list of runs that are excluded from average \\
+\hline
+\end{DoxyParams}
+
+
+Definition in file {\bf extract\-Gain\-Average.\-cc}.
+

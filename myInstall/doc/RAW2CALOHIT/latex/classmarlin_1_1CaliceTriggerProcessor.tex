@@ -1,0 +1,201 @@
+\section{marlin\-:\-:Calice\-Trigger\-Processor Class Reference}
+\label{classmarlin_1_1CaliceTriggerProcessor}\index{marlin\-::\-Calice\-Trigger\-Processor@{marlin\-::\-Calice\-Trigger\-Processor}}
+
+
+Class which adds basic trigger information to the event parameters In order to make use of the trigger information this processor has to run {\itshape before} each other user defined processor.  
+
+
+
+
+{\ttfamily \#include $<$Calice\-Trigger\-Processor.\-hh$>$}
+
+Inheritance diagram for marlin\-:\-:Calice\-Trigger\-Processor\-:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classmarlin_1_1CaliceTriggerProcessor}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+Processor $\ast$ {\bfseries new\-Processor} ()\label{classmarlin_1_1CaliceTriggerProcessor_a8ae7d8ea18ceb4047ebe26f2475e2f3b}
+
+\item 
+void {\bfseries init} ()\label{classmarlin_1_1CaliceTriggerProcessor_ad24c5897512a53e0147b25a23276c553}
+
+\item 
+void {\bfseries process\-Event} (L\-C\-Event $\ast$evt)\label{classmarlin_1_1CaliceTriggerProcessor_a4a2144796b9fb8b27ad713a462545878}
+
+\item 
+void {\bfseries end} ()\label{classmarlin_1_1CaliceTriggerProcessor_a75426b0c47cba668cc037e6ca19cd18b}
+
+\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+std\-::string {\bf \-\_\-conf\-Trigger\-Bits\-Par\-Name}
+\begin{DoxyCompactList}\small\item\em par. \end{DoxyCompactList}\item 
+std\-::string {\bf \-\_\-event\-Trigger\-Bits\-Par\-Name}
+\begin{DoxyCompactList}\small\item\em par. \end{DoxyCompactList}\item 
+std\-::string {\bf \-\_\-par\-Name\-Trigger\-Main\-Word}
+\begin{DoxyCompactList}\small\item\em Par. \end{DoxyCompactList}\item 
+std\-::string {\bf \-\_\-par\-Name\-Trigger\-Post\-History}
+\begin{DoxyCompactList}\small\item\em Par, name of the trigger post history. \end{DoxyCompactList}\item 
+std\-::string {\bf \-\_\-par\-Name\-Trigger\-Pre\-History}
+\begin{DoxyCompactList}\small\item\em Par, name of the trigger pre history. \end{DoxyCompactList}\item 
+std\-::string {\bfseries \-\_\-par\-Name\-Trigger\-Post\-History\-Pos}\label{classmarlin_1_1CaliceTriggerProcessor_afc4b7bcc4eb2327e67df20cfedc5b668}
+
+\item 
+std\-::string {\bfseries \-\_\-par\-Name\-Trigger\-Post\-History\-Bits}\label{classmarlin_1_1CaliceTriggerProcessor_a06a31c9af414f0539c4504fa54079f67}
+
+\item 
+std\-::string {\bfseries \-\_\-par\-Name\-Trigger\-Pre\-History\-Pos}\label{classmarlin_1_1CaliceTriggerProcessor_afe63efbbcc0e17aa874778e909240ef4}
+
+\item 
+std\-::string {\bfseries \-\_\-par\-Name\-Trigger\-Pre\-History\-Bits}\label{classmarlin_1_1CaliceTriggerProcessor_a144777e561189e07ba32fb395de6daf4}
+
+\item 
+U\-Int\-\_\-t {\bf \-\_\-no\-Main\-Word}
+\begin{DoxyCompactList}\small\item\em events for which the main word was not within the valid range. \end{DoxyCompactList}\item 
+U\-Int\-\_\-t {\bf \-\_\-events\-With\-Out\-Of\-Range\-Triggers}
+\begin{DoxyCompactList}\small\item\em events for which possible trigger bits were out of range. \end{DoxyCompactList}\item 
+String\-Vec {\bf \-\_\-beam\-Trigger\-Names}
+\begin{DoxyCompactList}\small\item\em Names of all trigger which indicated physics events and which will be ignored for pedestal calculation. \end{DoxyCompactList}\item 
+unsigned int {\bf \-\_\-beam\-Trigger\-Bit\-Mask}
+\begin{DoxyCompactList}\small\item\em Bit mask of all triggers which indicated physics events and which will be ignored for pedestal calculation. \end{DoxyCompactList}\item 
+Int\-Vec {\bf \-\_\-no\-Trigger\-Activity\-Range}
+\begin{DoxyCompactList}\small\item\em The time in ns before and after the main word during which there is no beam trigger allowed. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Class which adds basic trigger information to the event parameters In order to make use of the trigger information this processor has to run {\itshape before} each other user defined processor. 
+
+It initializes the trigger handler through which the user can obtain more information on trigger issues in other processors. Here it adds the trigger which have fired the event to the event parameters. This trigger information is made persistent with the event and can be later on used in higher level analysis. \begin{DoxyAuthor}{Author}
+\-: R. Pöschl D\-E\-S\-Y 
+\end{DoxyAuthor}
+\begin{DoxyDate}{Date}
+Dec 7 2005 
+\end{DoxyDate}
+
+
+Definition at line 39 of file Calice\-Trigger\-Processor.\-hh.
+
+
+
+\subsection{Field Documentation}
+\index{marlin\-::\-Calice\-Trigger\-Processor@{marlin\-::\-Calice\-Trigger\-Processor}!\-\_\-beam\-Trigger\-Bit\-Mask@{\-\_\-beam\-Trigger\-Bit\-Mask}}
+\index{\-\_\-beam\-Trigger\-Bit\-Mask@{\-\_\-beam\-Trigger\-Bit\-Mask}!marlin::CaliceTriggerProcessor@{marlin\-::\-Calice\-Trigger\-Processor}}
+\subsubsection[{\-\_\-beam\-Trigger\-Bit\-Mask}]{\setlength{\rightskip}{0pt plus 5cm}unsigned int marlin\-::\-Calice\-Trigger\-Processor\-::\-\_\-beam\-Trigger\-Bit\-Mask\hspace{0.3cm}{\ttfamily [private]}}\label{classmarlin_1_1CaliceTriggerProcessor_a7bae04321ad0bf2fd8168bfaa2f13f52}
+
+
+Bit mask of all triggers which indicated physics events and which will be ignored for pedestal calculation. 
+
+
+
+Definition at line 65 of file Calice\-Trigger\-Processor.\-hh.
+
+\index{marlin\-::\-Calice\-Trigger\-Processor@{marlin\-::\-Calice\-Trigger\-Processor}!\-\_\-beam\-Trigger\-Names@{\-\_\-beam\-Trigger\-Names}}
+\index{\-\_\-beam\-Trigger\-Names@{\-\_\-beam\-Trigger\-Names}!marlin::CaliceTriggerProcessor@{marlin\-::\-Calice\-Trigger\-Processor}}
+\subsubsection[{\-\_\-beam\-Trigger\-Names}]{\setlength{\rightskip}{0pt plus 5cm}String\-Vec marlin\-::\-Calice\-Trigger\-Processor\-::\-\_\-beam\-Trigger\-Names\hspace{0.3cm}{\ttfamily [private]}}\label{classmarlin_1_1CaliceTriggerProcessor_ae3443ac3f3dae23e9490552cb270d5f3}
+
+
+Names of all trigger which indicated physics events and which will be ignored for pedestal calculation. 
+
+
+
+Definition at line 64 of file Calice\-Trigger\-Processor.\-hh.
+
+\index{marlin\-::\-Calice\-Trigger\-Processor@{marlin\-::\-Calice\-Trigger\-Processor}!\-\_\-conf\-Trigger\-Bits\-Par\-Name@{\-\_\-conf\-Trigger\-Bits\-Par\-Name}}
+\index{\-\_\-conf\-Trigger\-Bits\-Par\-Name@{\-\_\-conf\-Trigger\-Bits\-Par\-Name}!marlin::CaliceTriggerProcessor@{marlin\-::\-Calice\-Trigger\-Processor}}
+\subsubsection[{\-\_\-conf\-Trigger\-Bits\-Par\-Name}]{\setlength{\rightskip}{0pt plus 5cm}std\-::string marlin\-::\-Calice\-Trigger\-Processor\-::\-\_\-conf\-Trigger\-Bits\-Par\-Name\hspace{0.3cm}{\ttfamily [private]}}\label{classmarlin_1_1CaliceTriggerProcessor_a71283d68a025529d27f9b59d4939a8ff}
+
+
+par. 
+
+name of the configuration trigger bits. 
+
+Definition at line 50 of file Calice\-Trigger\-Processor.\-hh.
+
+\index{marlin\-::\-Calice\-Trigger\-Processor@{marlin\-::\-Calice\-Trigger\-Processor}!\-\_\-events\-With\-Out\-Of\-Range\-Triggers@{\-\_\-events\-With\-Out\-Of\-Range\-Triggers}}
+\index{\-\_\-events\-With\-Out\-Of\-Range\-Triggers@{\-\_\-events\-With\-Out\-Of\-Range\-Triggers}!marlin::CaliceTriggerProcessor@{marlin\-::\-Calice\-Trigger\-Processor}}
+\subsubsection[{\-\_\-events\-With\-Out\-Of\-Range\-Triggers}]{\setlength{\rightskip}{0pt plus 5cm}U\-Int\-\_\-t marlin\-::\-Calice\-Trigger\-Processor\-::\-\_\-events\-With\-Out\-Of\-Range\-Triggers\hspace{0.3cm}{\ttfamily [private]}}\label{classmarlin_1_1CaliceTriggerProcessor_a521a453cfb29f46ef79ba17121e89f6f}
+
+
+events for which possible trigger bits were out of range. 
+
+
+
+Definition at line 62 of file Calice\-Trigger\-Processor.\-hh.
+
+\index{marlin\-::\-Calice\-Trigger\-Processor@{marlin\-::\-Calice\-Trigger\-Processor}!\-\_\-event\-Trigger\-Bits\-Par\-Name@{\-\_\-event\-Trigger\-Bits\-Par\-Name}}
+\index{\-\_\-event\-Trigger\-Bits\-Par\-Name@{\-\_\-event\-Trigger\-Bits\-Par\-Name}!marlin::CaliceTriggerProcessor@{marlin\-::\-Calice\-Trigger\-Processor}}
+\subsubsection[{\-\_\-event\-Trigger\-Bits\-Par\-Name}]{\setlength{\rightskip}{0pt plus 5cm}std\-::string marlin\-::\-Calice\-Trigger\-Processor\-::\-\_\-event\-Trigger\-Bits\-Par\-Name\hspace{0.3cm}{\ttfamily [private]}}\label{classmarlin_1_1CaliceTriggerProcessor_a90f8c6f9aecafda817964a4272c1bc82}
+
+
+par. 
+
+name of the event trigger bits. 
+
+Definition at line 51 of file Calice\-Trigger\-Processor.\-hh.
+
+\index{marlin\-::\-Calice\-Trigger\-Processor@{marlin\-::\-Calice\-Trigger\-Processor}!\-\_\-no\-Main\-Word@{\-\_\-no\-Main\-Word}}
+\index{\-\_\-no\-Main\-Word@{\-\_\-no\-Main\-Word}!marlin::CaliceTriggerProcessor@{marlin\-::\-Calice\-Trigger\-Processor}}
+\subsubsection[{\-\_\-no\-Main\-Word}]{\setlength{\rightskip}{0pt plus 5cm}U\-Int\-\_\-t marlin\-::\-Calice\-Trigger\-Processor\-::\-\_\-no\-Main\-Word\hspace{0.3cm}{\ttfamily [private]}}\label{classmarlin_1_1CaliceTriggerProcessor_a08d5438ca77dc832d115d7f3f73dba59}
+
+
+events for which the main word was not within the valid range. 
+
+
+
+Definition at line 61 of file Calice\-Trigger\-Processor.\-hh.
+
+\index{marlin\-::\-Calice\-Trigger\-Processor@{marlin\-::\-Calice\-Trigger\-Processor}!\-\_\-no\-Trigger\-Activity\-Range@{\-\_\-no\-Trigger\-Activity\-Range}}
+\index{\-\_\-no\-Trigger\-Activity\-Range@{\-\_\-no\-Trigger\-Activity\-Range}!marlin::CaliceTriggerProcessor@{marlin\-::\-Calice\-Trigger\-Processor}}
+\subsubsection[{\-\_\-no\-Trigger\-Activity\-Range}]{\setlength{\rightskip}{0pt plus 5cm}Int\-Vec marlin\-::\-Calice\-Trigger\-Processor\-::\-\_\-no\-Trigger\-Activity\-Range\hspace{0.3cm}{\ttfamily [private]}}\label{classmarlin_1_1CaliceTriggerProcessor_ab54172955bbe9099625b548046dd79ea}
+
+
+The time in ns before and after the main word during which there is no beam trigger allowed. 
+
+
+
+Definition at line 66 of file Calice\-Trigger\-Processor.\-hh.
+
+\index{marlin\-::\-Calice\-Trigger\-Processor@{marlin\-::\-Calice\-Trigger\-Processor}!\-\_\-par\-Name\-Trigger\-Main\-Word@{\-\_\-par\-Name\-Trigger\-Main\-Word}}
+\index{\-\_\-par\-Name\-Trigger\-Main\-Word@{\-\_\-par\-Name\-Trigger\-Main\-Word}!marlin::CaliceTriggerProcessor@{marlin\-::\-Calice\-Trigger\-Processor}}
+\subsubsection[{\-\_\-par\-Name\-Trigger\-Main\-Word}]{\setlength{\rightskip}{0pt plus 5cm}std\-::string marlin\-::\-Calice\-Trigger\-Processor\-::\-\_\-par\-Name\-Trigger\-Main\-Word\hspace{0.3cm}{\ttfamily [private]}}\label{classmarlin_1_1CaliceTriggerProcessor_a7c9c1511a3be17e49f6f416bea095eb4}
+
+
+Par. 
+
+name of the trigger main word. 
+
+Definition at line 52 of file Calice\-Trigger\-Processor.\-hh.
+
+\index{marlin\-::\-Calice\-Trigger\-Processor@{marlin\-::\-Calice\-Trigger\-Processor}!\-\_\-par\-Name\-Trigger\-Post\-History@{\-\_\-par\-Name\-Trigger\-Post\-History}}
+\index{\-\_\-par\-Name\-Trigger\-Post\-History@{\-\_\-par\-Name\-Trigger\-Post\-History}!marlin::CaliceTriggerProcessor@{marlin\-::\-Calice\-Trigger\-Processor}}
+\subsubsection[{\-\_\-par\-Name\-Trigger\-Post\-History}]{\setlength{\rightskip}{0pt plus 5cm}std\-::string marlin\-::\-Calice\-Trigger\-Processor\-::\-\_\-par\-Name\-Trigger\-Post\-History\hspace{0.3cm}{\ttfamily [private]}}\label{classmarlin_1_1CaliceTriggerProcessor_a6a1a2c84f826a0c56c5475c4ca79794b}
+
+
+Par, name of the trigger post history. 
+
+
+
+Definition at line 53 of file Calice\-Trigger\-Processor.\-hh.
+
+\index{marlin\-::\-Calice\-Trigger\-Processor@{marlin\-::\-Calice\-Trigger\-Processor}!\-\_\-par\-Name\-Trigger\-Pre\-History@{\-\_\-par\-Name\-Trigger\-Pre\-History}}
+\index{\-\_\-par\-Name\-Trigger\-Pre\-History@{\-\_\-par\-Name\-Trigger\-Pre\-History}!marlin::CaliceTriggerProcessor@{marlin\-::\-Calice\-Trigger\-Processor}}
+\subsubsection[{\-\_\-par\-Name\-Trigger\-Pre\-History}]{\setlength{\rightskip}{0pt plus 5cm}std\-::string marlin\-::\-Calice\-Trigger\-Processor\-::\-\_\-par\-Name\-Trigger\-Pre\-History\hspace{0.3cm}{\ttfamily [private]}}\label{classmarlin_1_1CaliceTriggerProcessor_af679233aa39405f79cf03d326cd5ec95}
+
+
+Par, name of the trigger pre history. 
+
+
+
+Definition at line 54 of file Calice\-Trigger\-Processor.\-hh.
+
+
+
+The documentation for this class was generated from the following files\-:\begin{DoxyCompactItemize}
+\item 
+Calice\-Trigger\-Processor.\-hh\item 
+Calice\-Trigger\-Processor.\-cc\end{DoxyCompactItemize}

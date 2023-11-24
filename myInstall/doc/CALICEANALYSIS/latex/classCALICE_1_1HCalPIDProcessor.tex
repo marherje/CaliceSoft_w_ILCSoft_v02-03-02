@@ -1,0 +1,59 @@
+\section{C\-A\-L\-I\-C\-E\-:\-:H\-Cal\-P\-I\-D\-Processor Class Reference}
+\label{classCALICE_1_1HCalPIDProcessor}\index{C\-A\-L\-I\-C\-E\-::\-H\-Cal\-P\-I\-D\-Processor@{C\-A\-L\-I\-C\-E\-::\-H\-Cal\-P\-I\-D\-Processor}}
+
+
+{\ttfamily \#include $<$H\-Cal\-P\-I\-D\-Processor.\-hh$>$}
+
+Inheritance diagram for C\-A\-L\-I\-C\-E\-:\-:H\-Cal\-P\-I\-D\-Processor\-:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classCALICE_1_1HCalPIDProcessor}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+{\bf H\-Cal\-P\-I\-D\-Processor} $\ast$ {\bfseries new\-Processor} ()\label{classCALICE_1_1HCalPIDProcessor_a166876f43ec7460b93882ba213d0cda2}
+
+\item 
+virtual void {\bfseries init} ()\label{classCALICE_1_1HCalPIDProcessor_a04c4550bdb0d8c12c76b682b37040e51}
+
+\item 
+virtual void {\bfseries process\-Run\-Header} (L\-C\-Run\-Header $\ast$)\label{classCALICE_1_1HCalPIDProcessor_ac2e967d5379413aba6e11fa757cb7e06}
+
+\item 
+virtual void {\bfseries process\-Event} (lcio\-::\-L\-C\-Event $\ast$)\label{classCALICE_1_1HCalPIDProcessor_ae41234eddfd428a90e4cf192ce2d03e3}
+
+\item 
+virtual void {\bfseries end} ()\label{classCALICE_1_1HCalPIDProcessor_a8f03caf555f25eb7bc4171a6c6724253}
+
+\item 
+virtual void {\bf conditions\-Changed} (L\-C\-Collection $\ast$col)
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Processor to select (or veto) events from H\-Cal testbeam in P\-S T9 with the particles requested by the user. The steering parameters 'Particle' and 'Veto' define the particle species and if the particle will be selected or vetoed. The selection is based on the information given by Cherenkov counters A and B. In case the selection is not suitable for the requested particle, a warning is printed.
+
+\begin{DoxyAuthor}{Author}
+Bruno Lenzi {\tt Bruno.\-Lenzi@cern.\-ch} 
+\end{DoxyAuthor}
+\begin{DoxyDate}{Date}
+Feb 2011 
+\end{DoxyDate}
+
+
+\subsection{Member Function Documentation}
+\index{C\-A\-L\-I\-C\-E\-::\-H\-Cal\-P\-I\-D\-Processor@{C\-A\-L\-I\-C\-E\-::\-H\-Cal\-P\-I\-D\-Processor}!conditions\-Changed@{conditions\-Changed}}
+\index{conditions\-Changed@{conditions\-Changed}!CALICE::HCalPIDProcessor@{C\-A\-L\-I\-C\-E\-::\-H\-Cal\-P\-I\-D\-Processor}}
+\subsubsection[{conditions\-Changed}]{\setlength{\rightskip}{0pt plus 5cm}void C\-A\-L\-I\-C\-E\-::\-H\-Cal\-P\-I\-D\-Processor\-::conditions\-Changed (
+\begin{DoxyParamCaption}
+\item[{L\-C\-Collection $\ast$}]{col}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}\label{classCALICE_1_1HCalPIDProcessor_ae713feea6d93d385796c2d2bf2919670}
+Callback function for the condition changes 
+
+The documentation for this class was generated from the following files\-:\begin{DoxyCompactItemize}
+\item 
+/nfs/dust/ilc/user/marquezh/\-Calice\-Soft\-\_\-w\-\_\-\-I\-L\-C\-Soft\-\_\-v02-\/03-\/02/calice\-\_\-analysis/addon\-Procs/include/H\-Cal\-P\-I\-D\-Processor.\-hh\item 
+/nfs/dust/ilc/user/marquezh/\-Calice\-Soft\-\_\-w\-\_\-\-I\-L\-C\-Soft\-\_\-v02-\/03-\/02/calice\-\_\-analysis/addon\-Procs/src/H\-Cal\-P\-I\-D\-Processor.\-cc\end{DoxyCompactItemize}

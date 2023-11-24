@@ -1,0 +1,93 @@
+\section{C\-A\-L\-I\-C\-E\-:\-:Ahc\-Ganging\-Processor Class Reference}
+\label{classCALICE_1_1AhcGangingProcessor}\index{C\-A\-L\-I\-C\-E\-::\-Ahc\-Ganging\-Processor@{C\-A\-L\-I\-C\-E\-::\-Ahc\-Ganging\-Processor}}
+
+
+Class for doing the A\-H\-Cal ganging.  
+
+
+
+
+{\ttfamily \#include $<$Ahc\-Ganging\-Processor.\-hh$>$}
+
+Inheritance diagram for C\-A\-L\-I\-C\-E\-:\-:Ahc\-Ganging\-Processor\-:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classCALICE_1_1AhcGangingProcessor}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+{\bf Ahc\-Ganging\-Processor} (const std\-::string processor\-Name=\char`\"{}Ahc\-Ganging\-Processor\char`\"{})\label{classCALICE_1_1AhcGangingProcessor_ac8b6e29deceb4b308b60faa647ccc7e1}
+
+\begin{DoxyCompactList}\small\item\em Constructor. \end{DoxyCompactList}\item 
+virtual {\bf $\sim$\-Ahc\-Ganging\-Processor} ()\label{classCALICE_1_1AhcGangingProcessor_a7db28e81275a852ddf7cf10adc78551e}
+
+\begin{DoxyCompactList}\small\item\em Destructor. \end{DoxyCompactList}\item 
+{\bf Ahc\-Ganging\-Processor} $\ast$ {\bfseries new\-Processor} ()\label{classCALICE_1_1AhcGangingProcessor_a8fd201ebf38f37964a48e8a672dd8ca5}
+
+\item 
+virtual void {\bf init} ()\label{classCALICE_1_1AhcGangingProcessor_a520226589cd39a8d8a1b2160858710b7}
+
+\begin{DoxyCompactList}\small\item\em Initialise. \end{DoxyCompactList}\item 
+virtual void {\bf process\-Event} (lcio\-::\-L\-C\-Event $\ast$)\label{classCALICE_1_1AhcGangingProcessor_aaa02bbdc53f1390652d99b909e909348}
+
+\begin{DoxyCompactList}\small\item\em Process event (the working horse) \end{DoxyCompactList}\item 
+virtual void {\bf end} ()\label{classCALICE_1_1AhcGangingProcessor_aaaf48bb9209ff61e09b1522cdce9717a}
+
+\begin{DoxyCompactList}\small\item\em End of processing. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+std\-::string {\bf \-\_\-input\-Col\-Name}\label{classCALICE_1_1AhcGangingProcessor_ae262d7ff2edd810ae0cc70ab146d3391}
+
+\begin{DoxyCompactList}\small\item\em name of the input collection \end{DoxyCompactList}\item 
+std\-::string {\bf \-\_\-output\-Col\-Name}\label{classCALICE_1_1AhcGangingProcessor_a54dca9b895d4f5c53f4852d3d85b105a}
+
+\begin{DoxyCompactList}\small\item\em name of the output collection \end{DoxyCompactList}\item 
+std\-::string {\bf \-\_\-mapping\-Processor\-Name}\label{classCALICE_1_1AhcGangingProcessor_afe6bd13c1a2131da9f7d78cc10e45086}
+
+\begin{DoxyCompactList}\small\item\em name of the mapping processor name \end{DoxyCompactList}\item 
+std\-::string {\bf \-\_\-cell\-Neighbours\-Processor\-Name}\label{classCALICE_1_1AhcGangingProcessor_aa2d3fd6847cd991e38298f6fe4646e02}
+
+\begin{DoxyCompactList}\small\item\em name of the processor which provides the cells neighbours \end{DoxyCompactList}\item 
+std\-::string {\bf \-\_\-cell\-Description\-Processor\-Name}\label{classCALICE_1_1AhcGangingProcessor_ad267d00752eb45681cdd337a3c27e709}
+
+\begin{DoxyCompactList}\small\item\em name of the processor which provides the cells description \end{DoxyCompactList}\item 
+Mapped\-Container\\*
+$<$ C\-A\-L\-I\-C\-E\-::\-Cell\-Description $>$ $\ast$ {\bf \-\_\-cell\-Descriptions}\label{classCALICE_1_1AhcGangingProcessor_a78a2caa52dd8f07379cc1149bda1c569}
+
+\begin{DoxyCompactList}\small\item\em mapped container of cells description \end{DoxyCompactList}\item 
+Mapped\-Container\\*
+$<$ C\-A\-L\-I\-C\-E\-::\-Cell\-Neighbours $>$ $\ast$ {\bf \-\_\-cell\-Neighbours}\label{classCALICE_1_1AhcGangingProcessor_a5b0f853b298a53cea88ea6120b811afc}
+
+\begin{DoxyCompactList}\small\item\em mapped container of cells neighbours \end{DoxyCompactList}\item 
+const Mapper $\ast$ {\bf \-\_\-mapper}\label{classCALICE_1_1AhcGangingProcessor_acc9c305676156405e7d5e70464205d85}
+
+\begin{DoxyCompactList}\small\item\em pointer to the used mapped \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Class for doing the A\-H\-Cal ganging. 
+
+For more details, have a look here\-: {\tt http\-://www-\/flc.\-desy.\-de/hcal/documents/2008/diplom.\-2008.\-richter.\-pdf}
+
+\begin{DoxyAuthor}{Author}
+{\tt lucaci@mail.\-desy.\-de} 
+\end{DoxyAuthor}
+\begin{DoxyVersion}{Version}
+1.\-0 
+\end{DoxyVersion}
+\begin{DoxyDate}{Date}
+May 2010 
+\end{DoxyDate}
+
+
+Definition at line 25 of file Ahc\-Ganging\-Processor.\-hh.
+
+
+
+The documentation for this class was generated from the following files\-:\begin{DoxyCompactItemize}
+\item 
+Ahc\-Ganging\-Processor.\-hh\item 
+Ahc\-Ganging\-Processor.\-cc\end{DoxyCompactItemize}

@@ -1,0 +1,228 @@
+\section{C\-A\-L\-I\-C\-E\-:\-:Gain\-Constants Class Reference}
+\label{classCALICE_1_1GainConstants}\index{C\-A\-L\-I\-C\-E\-::\-Gain\-Constants@{C\-A\-L\-I\-C\-E\-::\-Gain\-Constants}}
+
+
+Class to store the results of a Gain calibration measurement, i.\-e.  
+
+
+
+
+{\ttfamily \#include $<$Gain\-Constants.\-hh$>$}
+
+Inheritance diagram for C\-A\-L\-I\-C\-E\-:\-:Gain\-Constants\-:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=4.000000cm]{classCALICE_1_1GainConstants}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+{\bf Gain\-Constants} ()\label{classCALICE_1_1GainConstants_a39dd2a091779511dace0357560720578}
+
+\begin{DoxyCompactList}\small\item\em contructor \end{DoxyCompactList}\item 
+{\bf Gain\-Constants} (unsigned chip, unsigned channel, float value, float error)
+\begin{DoxyCompactList}\small\item\em constructor, initialised by parameters \end{DoxyCompactList}\item 
+{\bfseries Gain\-Constants} (L\-C\-Object $\ast${\bf obj})\label{classCALICE_1_1GainConstants_ac092d7226de27568f20cdf941048eab8}
+
+\item 
+float {\bf get\-Gain\-Value} () const \label{classCALICE_1_1GainConstants_a77246e61085596f25500286de31b9701}
+
+\begin{DoxyCompactList}\small\item\em get channels/pixel value \end{DoxyCompactList}\item 
+float {\bf get\-Gain\-Error} () const \label{classCALICE_1_1GainConstants_a85df3d26a093d548f2ae72f161be9882}
+
+\begin{DoxyCompactList}\small\item\em get channels/pixel error \end{DoxyCompactList}\item 
+float {\bf apply\-Calibration} (float input\-Value) const 
+\begin{DoxyCompactList}\small\item\em apply gain calibration to energy value \end{DoxyCompactList}\item 
+float {\bf cancel\-Calibration} (float output\-Value) const \label{classCALICE_1_1GainConstants_a320f0ebbbfb5973adb079fcee0b75d68}
+
+\begin{DoxyCompactList}\small\item\em cancel an applied calibration from energy value \end{DoxyCompactList}\item 
+float {\bf apply\-Calibration\-Error} (float input\-Value, float input\-Error) const 
+\begin{DoxyCompactList}\small\item\em apply calibration error to current error \end{DoxyCompactList}\item 
+float {\bf cancel\-Calibration\-Error} (float output\-Value, float output\-Error) const \label{classCALICE_1_1GainConstants_ab9ad1c0318937d2ad4d1cde2564e21e6}
+
+\begin{DoxyCompactList}\small\item\em apply error due to canceling a calibration to current error \end{DoxyCompactList}\item 
+bool {\bf calibration\-Valid} () const 
+\begin{DoxyCompactList}\small\item\em check if a valid gain calibration is available \end{DoxyCompactList}\item 
+bool {\bf keep\-Event} (float result\-Value, float result\-Error) const 
+\begin{DoxyCompactList}\small\item\em no cut for the moment \end{DoxyCompactList}\item 
+void {\bf print} (std\-::ostream \&os)\label{classCALICE_1_1GainConstants_aadeeb578a162265a5303b15e8f0dc50c}
+
+\begin{DoxyCompactList}\small\item\em convenient print method \end{DoxyCompactList}\item 
+const std\-::string {\bf get\-Type\-Name} () const \label{classCALICE_1_1GainConstants_af434ce23496e1b3d56967c87de010358}
+
+\begin{DoxyCompactList}\small\item\em return type of the class \end{DoxyCompactList}\item 
+const std\-::string {\bf get\-Data\-Description} () const \label{classCALICE_1_1GainConstants_a3d8dec743df6d2d334e0ab6e3bc52e00}
+
+\begin{DoxyCompactList}\small\item\em return a brief description of the data member \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Detailed Description}
+Class to store the results of a Gain calibration measurement, i.\-e. 
+
+gain plus the error of it for a certain chip/channel for a fixed module\-I\-D \begin{DoxyAuthor}{Author}
+S. Schmidt D\-E\-S\-Y 
+\end{DoxyAuthor}
+\begin{DoxyDate}{Date}
+Aug 18 2006 
+\end{DoxyDate}
+
+
+Definition at line 25 of file Gain\-Constants.\-hh.
+
+
+
+\subsection{Constructor \& Destructor Documentation}
+\index{C\-A\-L\-I\-C\-E\-::\-Gain\-Constants@{C\-A\-L\-I\-C\-E\-::\-Gain\-Constants}!Gain\-Constants@{Gain\-Constants}}
+\index{Gain\-Constants@{Gain\-Constants}!CALICE::GainConstants@{C\-A\-L\-I\-C\-E\-::\-Gain\-Constants}}
+\subsubsection[{Gain\-Constants}]{\setlength{\rightskip}{0pt plus 5cm}C\-A\-L\-I\-C\-E\-::\-Gain\-Constants\-::\-Gain\-Constants (
+\begin{DoxyParamCaption}
+\item[{unsigned}]{chip, }
+\item[{unsigned}]{channel, }
+\item[{float}]{value, }
+\item[{float}]{error}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\label{classCALICE_1_1GainConstants_aa54fb6fbbf660c2ccb43ab9eaa8ef63c}
+
+
+constructor, initialised by parameters 
+
+
+\begin{DoxyParams}{Parameters}
+{\em chip} & chip number of the cell to be calibrated \\
+\hline
+{\em channel} & channel number of the cell to be calibrated \\
+\hline
+{\em value} & gain value \\
+\hline
+{\em error} & error on the gain value \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 39 of file Gain\-Constants.\-hh.
+
+
+
+\subsection{Member Function Documentation}
+\index{C\-A\-L\-I\-C\-E\-::\-Gain\-Constants@{C\-A\-L\-I\-C\-E\-::\-Gain\-Constants}!apply\-Calibration@{apply\-Calibration}}
+\index{apply\-Calibration@{apply\-Calibration}!CALICE::GainConstants@{C\-A\-L\-I\-C\-E\-::\-Gain\-Constants}}
+\subsubsection[{apply\-Calibration}]{\setlength{\rightskip}{0pt plus 5cm}float C\-A\-L\-I\-C\-E\-::\-Gain\-Constants\-::apply\-Calibration (
+\begin{DoxyParamCaption}
+\item[{float}]{input\-Value}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}\label{classCALICE_1_1GainConstants_aeb089dc140f6e63d2f0a4746ecdd5cbb}
+
+
+apply gain calibration to energy value 
+
+
+\begin{DoxyParams}{Parameters}
+{\em input\-Value} & \char`\"{}energy\char`\"{} value before the gain calibration \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\char`\"{}energy\char`\"{} value after the gain calibration 
+\end{DoxyReturn}
+
+
+Reimplemented from {\bf C\-A\-L\-I\-C\-E\-::\-L\-C\-Hcal\-Calibration\-Object} \doxyref{}{p.}{classCALICE_1_1LCHcalCalibrationObject_a763f1cf5b9c372fdde268d79b789adcc}.
+
+
+
+Reimplemented in {\bf C\-A\-L\-I\-C\-E\-::\-Temp\-Gain\-Constants} \doxyref{}{p.}{classCALICE_1_1TempGainConstants_ae2278e77d19368d5fb1ec5fb1eecef44}.
+
+
+
+Definition at line 66 of file Gain\-Constants.\-hh.
+
+\index{C\-A\-L\-I\-C\-E\-::\-Gain\-Constants@{C\-A\-L\-I\-C\-E\-::\-Gain\-Constants}!apply\-Calibration\-Error@{apply\-Calibration\-Error}}
+\index{apply\-Calibration\-Error@{apply\-Calibration\-Error}!CALICE::GainConstants@{C\-A\-L\-I\-C\-E\-::\-Gain\-Constants}}
+\subsubsection[{apply\-Calibration\-Error}]{\setlength{\rightskip}{0pt plus 5cm}float C\-A\-L\-I\-C\-E\-::\-Gain\-Constants\-::apply\-Calibration\-Error (
+\begin{DoxyParamCaption}
+\item[{float}]{input\-Value, }
+\item[{float}]{input\-Error}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}\label{classCALICE_1_1GainConstants_a669886b01357faa0b2173384be3a60d3}
+
+
+apply calibration error to current error 
+
+
+\begin{DoxyParams}{Parameters}
+{\em input\-Value} & \char`\"{}energy\char`\"{} value before the gain calibration \\
+\hline
+{\em input\-Error} & error on the \char`\"{}energy\char`\"{} value before the gain calibration \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+error of the \char`\"{}energy\char`\"{} value after the calibration, gained from error propagation of the error of the \char`\"{}energy\char`\"{} value before the calibration and the error of the gain calibration 
+\end{DoxyReturn}
+
+
+Reimplemented from {\bf C\-A\-L\-I\-C\-E\-::\-L\-C\-Hcal\-Calibration\-Object} \doxyref{}{p.}{classCALICE_1_1LCHcalCalibrationObject_a16d9de9567f68d7784a2daa4d2821341}.
+
+
+
+Reimplemented in {\bf C\-A\-L\-I\-C\-E\-::\-Temp\-Gain\-Constants} \doxyref{}{p.}{classCALICE_1_1TempGainConstants_a4319810d19fd6bb61de44faec1f56226}.
+
+
+
+Definition at line 82 of file Gain\-Constants.\-hh.
+
+\index{C\-A\-L\-I\-C\-E\-::\-Gain\-Constants@{C\-A\-L\-I\-C\-E\-::\-Gain\-Constants}!calibration\-Valid@{calibration\-Valid}}
+\index{calibration\-Valid@{calibration\-Valid}!CALICE::GainConstants@{C\-A\-L\-I\-C\-E\-::\-Gain\-Constants}}
+\subsubsection[{calibration\-Valid}]{\setlength{\rightskip}{0pt plus 5cm}bool C\-A\-L\-I\-C\-E\-::\-Gain\-Constants\-::calibration\-Valid (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}\label{classCALICE_1_1GainConstants_a37c5d66f2537eee42e259147856e86a7}
+
+
+check if a valid gain calibration is available 
+
+\begin{DoxyReturn}{Returns}
+true if the gain value is a valid number 
+\end{DoxyReturn}
+
+
+Reimplemented from {\bf C\-A\-L\-I\-C\-E\-::\-L\-C\-Hcal\-Calibration\-Object} \doxyref{}{p.}{classCALICE_1_1LCHcalCalibrationObject_abbb1fce81f41a89147b721d593bbc734}.
+
+
+
+Reimplemented in {\bf C\-A\-L\-I\-C\-E\-::\-Temp\-Gain\-Constants} \doxyref{}{p.}{classCALICE_1_1TempGainConstants_a132d04dd01b328d85857bda95baf000b}.
+
+
+
+Definition at line 95 of file Gain\-Constants.\-hh.
+
+\index{C\-A\-L\-I\-C\-E\-::\-Gain\-Constants@{C\-A\-L\-I\-C\-E\-::\-Gain\-Constants}!keep\-Event@{keep\-Event}}
+\index{keep\-Event@{keep\-Event}!CALICE::GainConstants@{C\-A\-L\-I\-C\-E\-::\-Gain\-Constants}}
+\subsubsection[{keep\-Event}]{\setlength{\rightskip}{0pt plus 5cm}bool C\-A\-L\-I\-C\-E\-::\-Gain\-Constants\-::keep\-Event (
+\begin{DoxyParamCaption}
+\item[{float}]{result\-Value, }
+\item[{float}]{result\-Error}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}\label{classCALICE_1_1GainConstants_a18c349f2f60b6f2d5d387fe386c63ebc}
+
+
+no cut for the moment 
+
+\begin{DoxyReturn}{Returns}
+true, as no cut on cell level is performed after applying the gain calibration 
+\end{DoxyReturn}
+
+
+Reimplemented from {\bf C\-A\-L\-I\-C\-E\-::\-L\-C\-Hcal\-Calibration\-Object} \doxyref{}{p.}{classCALICE_1_1LCHcalCalibrationObject_a59f14a6b83e77717751ae4e7213e8d09}.
+
+
+
+Definition at line 102 of file Gain\-Constants.\-hh.
+
+
+
+The documentation for this class was generated from the following files\-:\begin{DoxyCompactItemize}
+\item 
+Gain\-Constants.\-hh\item 
+Gain\-Constants.\-cc\end{DoxyCompactItemize}

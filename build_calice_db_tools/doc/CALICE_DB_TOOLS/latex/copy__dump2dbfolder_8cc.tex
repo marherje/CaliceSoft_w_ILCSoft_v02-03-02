@@ -1,0 +1,63 @@
+\section{/nfs/dust/ilc/user/marquezh/\-Calice\-Soft\-\_\-w\-\_\-\-I\-L\-C\-Soft\-\_\-v02-\/03-\/02/calice\-\_\-db\-\_\-tools/src/copy\-\_\-dump2dbfolder.cc File Reference}
+\label{copy__dump2dbfolder_8cc}\index{/nfs/dust/ilc/user/marquezh/\-Calice\-Soft\-\_\-w\-\_\-\-I\-L\-C\-Soft\-\_\-v02-\/03-\/02/calice\-\_\-db\-\_\-tools/src/copy\-\_\-dump2dbfolder.\-cc@{/nfs/dust/ilc/user/marquezh/\-Calice\-Soft\-\_\-w\-\_\-\-I\-L\-C\-Soft\-\_\-v02-\/03-\/02/calice\-\_\-db\-\_\-tools/src/copy\-\_\-dump2dbfolder.\-cc}}
+{\ttfamily \#include \char`\"{}lcio.\-h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}I\-O/\-L\-C\-Reader.\-h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}E\-V\-E\-N\-T/\-L\-C\-Collection.\-h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}E\-V\-E\-N\-T/\-L\-C\-Generic\-Object.\-h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}E\-V\-E\-N\-T/\-L\-C\-Parameters.\-h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}I\-M\-P\-L/\-L\-C\-Collection\-Vec.\-h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}U\-T\-I\-L/\-L\-C\-T\-O\-O\-L\-S.\-h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}lccd.\-h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}lccd/\-D\-B\-Interface.\-hh\char`\"{}}\\*
+{\ttfamily \#include $<$sstream$>$}\\*
+{\ttfamily \#include $<$string$>$}\\*
+{\ttfamily \#include $<$vector$>$}\\*
+{\ttfamily \#include \char`\"{}Calice\-D\-B\-Init\-Helper.\-hh\char`\"{}}\\*
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+void {\bfseries add\-Filtered\-Parameters} (lcio\-::\-L\-C\-Collection\-Vec $\ast$new\-Col, const lcio\-::\-L\-C\-Collection $\ast$old\-Col)\label{copy__dump2dbfolder_8cc_a047967f03df41b7af33447c4be54e9b1}
+
+\item 
+lccd\-::\-L\-C\-C\-D\-Time\-Stamp {\bfseries convert} (std\-::string str)\label{copy__dump2dbfolder_8cc_a3b6d1fb98d3559fd48b26cad5e672bf6}
+
+\item 
+void {\bfseries read\-File} (std\-::string filename, std\-::string folder)\label{copy__dump2dbfolder_8cc_a740c29c1c1059bd53337bc07318d77b6}
+
+\item 
+int {\bfseries main} (int argc, char $\ast$$\ast$argv)\label{copy__dump2dbfolder_8cc_a3c04138a5bfe5d72780bb7e82a18e627}
+
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+This tool copies the whole content of a D\-B folder dump file to a database folder (all layers, tags and times).
+
+Usage\-:
+
+
+\begin{DoxyCode}
+copy\_dump2dbfolder <filename> <foldername>
+\end{DoxyCode}
+
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em $<$filename$>$} & input dump file (.slcio) \\
+\hline
+\mbox{\tt out}  & {\em $<$foldername$>$} & name of the D\-B folder where the content of the input file is stored\\
+\hline
+\end{DoxyParams}
+\begin{DoxySeeAlso}{See Also}
+\doxyref{copy\-\_\-dbfolder2dbfile.\-cc}{p.}{copy__dbfolder2dbfile_8cc} 
+
+\doxyref{copy\-\_\-dbfolder2dump.\-cc}{p.}{copy__dbfolder2dump_8cc} 
+
+\doxyref{copy\-\_\-dbfolder2simplefile.\-cc}{p.}{copy__dbfolder2simplefile_8cc} 
+
+\doxyref{copy\-\_\-file2dbfolder.\-cc}{p.}{copy__file2dbfolder_8cc} 
+\end{DoxySeeAlso}
+
+
+Definition in file {\bf copy\-\_\-dump2dbfolder.\-cc}.
+

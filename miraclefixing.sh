@@ -1,0 +1,442 @@
+#!/bin/bash
+# Jesus Pedro Marquez Hernandez
+# contact: jesus.marquez@ific.uv.es
+
+home_dir="/nfs/dust/ilc/user/marquezh/CaliceSoft_w_ILCSoft_v02-03-02"
+
+bold=$(tput bold)
+normal=$(tput sgr0)
+
+echo "${bold} LET'S FIX THE CODE ${normal}"
+
+# calice_userlib
+cd calice_userlib/
+echo calice_userlib/CMakeLists.txt
+sed -i "s/c++11 and flags/c++17 and flags/g" CMakeLists.txt
+sed -i "s/-std=c++11/-std=c++17/g" CMakeLists.txt
+sed -i "s/COMPILER_SUPPORTS_CXX11/COMPILER_SUPPORTS_CXX17/g" CMakeLists.txt
+sed -i "s/Compiler does not support c++11/Compiler does not support c++17/g" CMakeLists.txt
+cd - > /dev/null
+
+cd calice_userlib/include/
+echo calice_userlib/include/
+sed -i "s/throw (Exception)/noexcept(false)/g" *.hh
+cd - > /dev/null
+
+cd calice_userlib/src/
+echo calice_userlib/src/
+sed -i "s/throw (logic_error)/noexcept(false)/g" MappingAndAlignment.cc
+#echo calice_userlib/src/md5.cc
+cd - > /dev/null
+
+# labview_converter
+cd labview_converter/
+echo labview_converter/CMakeLists.txt
+cat > ${home_dir}/labview_converter/CMakeLists.txt<<\EOF
+#################################################
+# project                                       #
+#################################################
+PROJECT( LABVIEW_CONV )
+
+###################################################
+# cmake                                           #
+###################################################
+ CMAKE_MINIMUM_REQUIRED( VERSION 2.6.2 )
+SET( CMAKE_MODULE_PATH ${LABVIEW_CONV_SOURCE_DIR}/cmake ${CMAKE_MODULE_PATH} )
+
+#################################################
+# project version                               #
+#################################################
+SET( ${PROJECT_NAME}_MAJOR_VERSION 1 )
+SET( ${PROJECT_NAME}_MINOR_VERSION 0 )
+SET( ${PROJECT_NAME}_PATCH_LEVEL   0 )
+
+# library Unix style versioning
+SET( ${PROJECT_NAME}_SOVERSION "${${PROJECT_NAME}_MAJOR_VERSION}" )
+SET( ${PROJECT_NAME}_VERSION "${${PROJECT_NAME}_MAJOR_VERSION}.${${PROJECT_NAME}_MINOR_VERSION}.${${PROJECT_NAME}_PATCH_LEVEL}" )
+
+#######################################################
+# c++17 and flags                                     #
+#######################################################
+INCLUDE( CheckCXXCompilerFlag )
+CHECK_CXX_COMPILER_FLAG("-std=c++17" COMPILER_SUPPORTS_CXX17)
+IF( COMPILER_SUPPORTS_CXX17 )
+SET (CMAKE_CXX_FLAGS "-std=c++17 -Wl,-no-undefined -pedantic -Wall -fPIC")
+ELSE()
+MESSAGE( STATUS "Compiler does not support c++17." )
+SET (CMAKE_CXX_FLAGS " -Wall -ansi")
+ENDIF()
+
+###################################################
+# subdirectories                                  #                                                                                                 
+################################################### 
+ADD_SUBDIRECTORY( raw2lcio ) 
+EOF
+cd - > /dev/null
+
+cd labview_converter/raw2lcio
+echo labview_converter/raw2lcio/CMakeLists.txt
+sed -i "s/c++11 and flags/c++17 and flags/g" CMakeLists.txt
+sed -i "s/-std=c++11/-std=c++17/g" CMakeLists.txt
+sed -i "s/COMPILER_SUPPORTS_CXX11/COMPILER_SUPPORTS_CXX17/g" CMakeLists.txt
+sed -i "s/Compiler does not support c++11/Compiler does not support c++17/g" CMakeLists.txt
+cd - > /dev/null
+
+cd labview_converter/raw2lcio/src/
+echo labview_converter/raw2lcio/src/TempRootTreeGenerator.cc
+sed -i "s/inputFile>0/mapping[i]>0/g" TempRootTreeGenerator.cc
+cd - > /dev/null
+
+# calice_reco
+cd calice_reco
+echo calice_reco/CMakeLists.txt
+sed -i "s/c++11 and flags/c++17 and flags/g" CMakeLists.txt
+sed -i "s/-std=c++11/-std=c++17/g" CMakeLists.txt
+sed -i "s/COMPILER_SUPPORTS_CXX11/COMPILER_SUPPORTS_CXX17/g" CMakeLists.txt
+sed -i "s/Compiler does not support c++11/Compiler does not support c++17/g" CMakeLists.txt
+cd - > /dev/null
+
+cd calice_reco/raw2calohit/include/
+echo calice_reco/raw2calohit/include/
+sed -i "s/throw(std::runtime_error)/noexcept(false)/g" *.hh
+cd - > /dev/null
+
+cd calice_reco/raw2calohit/src/histmgr/
+echo calice_reco/raw2calohit/src/histmgr/
+sed -i "s/throw (std::bad_alloc, std::runtime_error)/noexcept(false)/g" *.cc
+sed -i "s/throw (std::bad_alloc,std::runtime_error)/noexcept(false)/g" *.cc
+cd - > /dev/null
+
+cd calice_reco/raw2calohit/include/histmgr/
+echo calice_reco/raw2calohit/include/histmgr/
+sed -i "s/throw (std::bad_alloc, std::runtime_error)/noexcept(false)/g" *.hh
+sed -i "s/throw (std::bad_alloc,std::runtime_error)/noexcept(false)/g" *.hh
+sed -i "s/throw (std::range_error)/noexcept(false)/g" *.hh
+cd - > /dev/null
+
+cd calice_reco/raw2calohit/src/
+echo calice_reco/raw2calohit/src/CaliceEcalCalibration.cc
+sed -i "s/throw(std::runtime_error)/noexcept(false)/g" CaliceEcalCalibration.cc
+cd - > /dev/null
+
+cd calice_reco/clustering/src/
+echo calice_reco/clustering/src/CMakeLists.txt
+if grep -q "cmake_policy(SET CMP0026 OLD)" CMakeLists.txt; then
+echo "${bold}cmake policy already changed to old ${normal}"
+else
+sed -i '0,/ADD_DEFINITIONS/{s/ADD_DEFINITIONS/cmake_policy(SET CMP0026 OLD) \nADD_DEFINITIONS/}' CMakeLists.txt
+fi
+cd - > /dev/null
+
+# calice_analysis
+cd calice_analysis/
+echo calice_analysis/CMakeLists.txt
+sed -i "s/c++11 and flags/c++17 and flags/g" CMakeLists.txt
+sed -i "s/-std=c++11/-std=c++17/g" CMakeLists.txt
+sed -i "s/COMPILER_SUPPORTS_CXX11/COMPILER_SUPPORTS_CXX17/g" CMakeLists.txt
+sed -i "s/Compiler does not support c++11/Compiler does not support c++17/g" CMakeLists.txt
+cd - > /dev/null
+
+cd calice_analysis/addonProcs/src/
+echo cd calice_analysis/addonProcs/src/CMakeLists.txt
+if grep -q "cmake_policy(SET CMP0026 OLD)" CMakeLists.txt; then
+echo "${bold}cmake policy already changed to old ${normal}"
+else
+sed -i '0,/ADD_DEFINITIONS/{s/ADD_DEFINITIONS/cmake_policy(SET CMP0026 OLD) \nADD_DEFINITIONS/}' CMakeLists.txt
+fi
+cd - > /dev/null
+
+# calice_calib
+cd calice_calib
+echo calice_calib/CMakeLists.txt
+sed -i "s/c++11 and flags/c++17 and flags/g" CMakeLists.txt
+sed -i "s/-std=c++11/-std=c++17/g" CMakeLists.txt
+sed -i "s/COMPILER_SUPPORTS_CXX11/COMPILER_SUPPORTS_CXX17/g" CMakeLists.txt
+sed -i "s/Compiler does not support c++11/Compiler does not support c++17/g" CMakeLists.txt
+cd - > /dev/null
+
+cd calice_calib/calibmulti/
+echo calice_calib/calibmulti/
+sed -i "s/c++11 and flags/c++17 and flags/g" CMakeLists.txt
+sed -i "s/-std=c++11/-std=c++17/g" CMakeLists.txt
+sed -i "s/COMPILER_SUPPORTS_CXX11/COMPILER_SUPPORTS_CXX17/g" CMakeLists.txt
+sed -i "s/Compiler does not support c++11/Compiler does not support c++17/g" CMakeLists.txt
+cd - > /dev/null
+
+cd calice_calib/deadAndNoisyTools/
+echo calice_calib/deadAndNoisyTools/
+sed -i "s/c++11 and flags/c++17 and flags/g" CMakeLists.txt
+sed -i "s/-std=c++11/-std=c++17/g" CMakeLists.txt
+sed -i "s/COMPILER_SUPPORTS_CXX11/COMPILER_SUPPORTS_CXX17/g" CMakeLists.txt
+sed -i "s/Compiler does not support c++11/Compiler does not support c++17/g" CMakeLists.txt
+cd - > /dev/null
+
+cd calice_calib/fitmip/
+echo calice_calib/fitmip/
+sed -i "s/c++11 and flags/c++17 and flags/g" CMakeLists.txt
+sed -i "s/-std=c++11/-std=c++17/g" CMakeLists.txt
+sed -i "s/COMPILER_SUPPORTS_CXX11/COMPILER_SUPPORTS_CXX17/g" CMakeLists.txt
+sed -i "s/Compiler does not support c++11/Compiler does not support c++17/g" CMakeLists.txt
+cd - > /dev/null
+
+cd calice_calib/calib/
+echo calice_calib/calib/CmakeLists.txt
+cat > ${home_dir}/calice_calib/calib/CMakeLists.txt<<\EOF
+PROJECT( CALIB )
+
+####################################################
+# cmake options                                    #
+####################################################
+CMAKE_MINIMUM_REQUIRED( VERSION 2.6 )
+MARK_AS_ADVANCED(CMAKE_BACKWARDS_COMPATIBILITY)
+SET( CMAKE_ALLOW_LOOSE_LOOP_CONSTRUCTS TRUE )
+
+####################################################
+# modules/macros                                   #
+####################################################
+#add projects cmake directory to module path
+SET( CMAKE_MODULE_PATH ${${PROJECT_NAME}_SOURCE_DIR}/cmake ${CMAKE_MODULE_PATH} )
+#CALICE specific cmake macros
+INCLUDE( BUILD_FLAG )
+INCLUDE( FULL_INSTALL_PATH )
+
+####################################################
+# project version                                  #
+####################################################
+SET( ${PROJECT_NAME}_MAJOR_VERSION 1 )
+SET( ${PROJECT_NAME}_MINOR_VERSION 1 )
+SET( ${PROJECT_NAME}_PATCH_LEVEL   1 )
+# library Unix style versioning
+SET( ${PROJECT_NAME}_SOVERSION
+  "${${PROJECT_NAME}_MAJOR_VERSION}" )
+SET( ${PROJECT_NAME}_VERSION
+  "${${PROJECT_NAME}_MAJOR_VERSION}.${${PROJECT_NAME}_MINOR_VERSION}.${${PROJECT_NAME}_PATCH_LEVEL}" )
+
+###################################################
+# options                                         #
+###################################################
+# build shared library by default
+OPTION( BUILD_SHARED_LIBS "Create shared libraries" ON )
+IF(NOT CMAKE_BUILD_TYPE)
+  SET(CMAKE_BUILD_TYPE RelWithDebInfo CACHE STRING
+    "Choose the type of build, options are: None Debug Release RelWithDebInfo MinSizeRel."
+    FORCE)
+ENDIF(NOT CMAKE_BUILD_TYPE)
+
+#######################################################                                                      
+# c++17 and flags                                     #                                                       
+#######################################################                                                           
+INCLUDE( CheckCXXCompilerFlag )                                                                   
+CHECK_CXX_COMPILER_FLAG("-std=c++17" COMPILER_SUPPORTS_CXX17)                                                              
+IF( COMPILER_SUPPORTS_CXX17 )                                                                 
+SET (CMAKE_CXX_FLAGS "-std=c++17 -Wl,-no-undefined -pedantic -Wall -fPIC")                
+ELSE()                                                                                                      
+MESSAGE( STATUS "Compiler does not support c++17." )                                                                       
+SET (CMAKE_CXX_FLAGS " -Wall -ansi")                                                                                                                                             
+ENDIF() 
+
+#####################################################
+# find packages (dependencies)                      #
+#####################################################
+FIND_PACKAGE( Marlin REQUIRED )
+FIND_PACKAGE( LCIO REQUIRED )
+FIND_PACKAGE( LCCD REQUIRED )
+FIND_PACKAGE( CondDBMySQL REQUIRED )
+IF( CondDBMySQL_FOUND )
+  ADD_DEFINITIONS( "-DUSE_CONDDB" )
+ENDIF()
+
+FIND_PACKAGE( CALICE_USERLIB REQUIRED)
+IF( CMAKE_SIZEOF_VOID_P EQUAL 8 )
+    FIND_PACKAGE( streamlog REQUIRED)
+ENDIF()
+
+FIND_PACKAGE( ROOT REQUIRED Spectrum )
+FIND_PACKAGE( RAW2CALOHIT REQUIRED )
+FIND_PACKAGE( RECOSIPM REQUIRED )
+FIND_PACKAGE( CELLGEOMETRY REQUIRED )
+
+IF( RAW2CALOHIT_FOUND )
+MESSAGE( STATUS "RAW2CALOHIT_LIBRARIES = ${RAW2CALOHIT_LIBRARIES}" )
+ENDIF()
+IF( RECOSIPM_FOUND )
+MESSAGE( STATUS "RECOSIPM_LIBRARIES = ${RECOSIPM_LIBRARIES}" )
+ENDIF()
+IF( CALICE_USERLIB_FOUND )
+MESSAGE( STATUS "CALICE_USERLIB_LIBRARIES = ${CALICE_USERLIB_LIBRARIES}" )
+ENDIF()
+IF( CELLGEOMETRY_FOUND )
+MESSAGE( STATUS "CELLGEOMETRY_LIBRARIES = ${CELLGEOMETRY_LIBRARIES}" )
+ENDIF()
+
+#####################################################
+# installation options                              #
+#####################################################
+# change default install prefix
+IF( CMAKE_INSTALL_PREFIX STREQUAL "/usr/local" )
+  SET( CMAKE_INSTALL_PREFIX "${CMAKE_SOURCE_DIR}" CACHE PATH "Install prefix" FORCE )
+ENDIF( CMAKE_INSTALL_PREFIX  STREQUAL "/usr/local" )
+
+# default destination for header files: ${CMAKE_INSTALL_PREFIX}/install
+SET( INCLUDE_INSTALL_DIR "include" CACHE PATH "Directory to install the header files" )
+MARK_AS_ADVANCED( INCLUDE_INSTALL_DIR )
+
+# default destination for library files: ${CMAKE_INSTALL_PREFIX}/install
+SET( LIB_INSTALL_DIR "lib" CACHE PATH "Directory to install the header files" )
+MARK_AS_ADVANCED( LIB_INSTALL_DIR )
+
+# default destination for .cmake files: ${CMAKE_INSTALL_PREFIX}/install
+SET( CONFIG_INSTALL_DIR "cmake" CACHE PATH "Directory to install the XXXConfig.cmake files" )
+MARK_AS_ADVANCED( CONFIG_INSTALL_DIR )
+
+# append link pathes to rpath list
+SET( CMAKE_INSTALL_RPATH_USE_LINK_PATH 1 )
+MARK_AS_ADVANCED( CMAKE_INSTALL_RPATH_USE_LINK_PATH )
+
+# provide nicer directory layout in build directory
+SET( EXECUTABLE_OUTPUT_PATH "${CMAKE_BINARY_DIR}/bin" CACHE PATH
+  "EXECUTABLE_OUTPUT_PATH" FORCE )
+SET( LIBRARY_OUTPUT_PATH "${CMAKE_BINARY_DIR}/lib" CACHE PATH
+  "LIBRARY_OUTPUT_PATH" FORCE )
+MARK_AS_ADVANCED( EXECUTABLE_OUTPUT_PATH LIBRARY_OUTPUT_PATH )
+
+##################################################
+# subdirs                                        #
+##################################################
+ADD_SUBDIRECTORY( src )
+
+##################################################
+# install configuration                          #
+##################################################
+#compute install path for bin, lib and include
+FULL_INSTALL_PATH( LIB     FULL_LIB_INSTALL_DIR )
+FULL_INSTALL_PATH( INCLUDE FULL_INCLUDE_INSTALL_DIR )
+MESSAGE( STATUS "FULL_LIB_INSTALL_DIR     = ${FULL_LIB_INSTALL_DIR}" )
+MESSAGE( STATUS "FULL_INCLUDE_INSTALL_DIR = ${FULL_INCLUDE_INSTALL_DIR} ")
+
+CONFIGURE_FILE( ${${PROJECT_NAME}_SOURCE_DIR}/cmake/${PROJECT_NAME}Config.cmake.in
+  ${${PROJECT_NAME}_BINARY_DIR}/${PROJECT_NAME}Config.cmake  @ONLY   )
+
+INSTALL( FILES ${${PROJECT_NAME}_BINARY_DIR}/${PROJECT_NAME}Config.cmake
+  DESTINATION ${CONFIG_INSTALL_DIR}                               )
+
+##################################################
+# documentation                                  #
+##################################################
+INCLUDE ( DOCUMENTATION )
+
+##################################################
+# print status report                            #
+##################################################
+MESSAGE( STATUS )
+MESSAGE( STATUS "-------------------------------------------------------------------------------" )
+MESSAGE( STATUS "BUILD_SHARED_LIBS    = ${BUILD_SHARED_LIBS}" )
+MESSAGE( STATUS "CMAKE_INSTALL_PREFIX = ${CMAKE_INSTALL_PREFIX}" )
+MESSAGE( STATUS "CMAKE_BUILD_TYPE     = ${CMAKE_BUILD_TYPE}" )
+MESSAGE( STATUS "Change a value with: cmake -D<Variable>=<Value>" )
+MESSAGE( STATUS "-------------------------------------------------------------------------------" )
+MESSAGE( STATUS )
+EOF
+cd - > /dev/null
+
+# This fix the "std::acumulate" by adding <numeric>
+cd calice_calib/calib/src/
+echo calice_calib/calib/src/Ahc2OccupancyCalibrator.cc
+if grep -q "<numeric>" Ahc2OccupancyCalibrator.cc; then
+echo "${bold}<numeric> already included ${normal}"
+else
+sed -i "s/#include <sstream>/#include <sstream> \n#include <numeric>/g" Ahc2OccupancyCalibrator.cc
+fi
+cd - > /dev/null
+
+# calice_sim
+cd calice_sim/
+echo calice_sim/CMakeLists.txt
+sed -i "s/c++11 and flags/c++17 and flags/g" CMakeLists.txt
+sed -i "s/-std=c++11/-std=c++17/g" CMakeLists.txt
+sed -i "s/COMPILER_SUPPORTS_CXX11/COMPILER_SUPPORTS_CXX17/g" CMakeLists.txt
+sed -i "s/Compiler does not support c++11/Compiler does not support c++17/g" CMakeLists.txt
+cd - > /dev/null
+
+cd calice_sim/digitization/ganging/include
+echo calice_sim/digitization/ganging/include/Ahc2GangingProcessor.hh
+if grep -q "virtual void createOutputCollections" Ahc2GangingProcessor.hh; then
+    echo "${bold}ganging function already corrected in header ${normal}"
+else
+    sed -i "s/EVENT::LCCollection\\* createOutputCollections/virtual void createOutputCollections/g" Ahc2GangingProcessor.hh
+fi
+cd - > /dev/null
+
+cd calice_sim/digitization/ganging/src
+echo calice_sim/digitization/ganging/src/Ahc2GangingProcessor.cc
+if grep -q "void Ahc2GangingProcessor::createOutputCollections" Ahc2GangingProcessor.cc; then
+    echo "${bold}ganging function already corrected in header ${normal}"
+else
+    sed -i "s/LCCollection\\* Ahc2GangingProcessor::createOutputCollections/void Ahc2GangingProcessor::createOutputCollections/g" Ahc2GangingProcessor.cc
+fi
+cd - > /dev/null
+
+# calice_cddata
+cd calice_cddata/
+echo calice_cddata/CMakeLists.txt
+sed -i "s/c++11 and flags/c++17 and flags/g" CMakeLists.txt
+sed -i "s/-std=c++11/-std=c++17/g" CMakeLists.txt
+sed -i "s/COMPILER_SUPPORTS_CXX11/COMPILER_SUPPORTS_CXX17/g" CMakeLists.txt
+sed -i "s/Compiler does not support c++11/Compiler does not support c++17/g" CMakeLists.txt
+cd - > /dev/null
+
+cd calice_cddata/dbfill/ReadDaqMap/
+echo calice_cddata/dbfill/ReadDaqMap/ReadDaqMap.hh
+sed -i "s/throw(runtime_error)/noexcept(false)/g" ReadDaqMap.hh
+sed -i "s/throw (runtime_error)/noexcept(false)/g" ReadDaqMap.hh
+echo calice_cddata/dbfill/ReadDaqMap/ReadLine.hh
+sed -i "s/throw(runtime_error)/noexcept(false)/g" ReadLine.hh
+sed -i "s/throw (runtime_error)/noexcept(false)/g" ReadLine.hh
+echo calice_cddata/dbfill/ReadDaqMap/TLineIterator.hh
+sed -i "s/throw(runtime_error)/noexcept(false)/g" TLineIterator.hh
+sed -i "s/throw (runtime_error)/noexcept(false)/g" TLineIterator.hh
+cd - > /dev/null
+
+cd calice_cddata/dbfill/ReadDaqMap/
+echo calice_cddata/dbfill/ReadDaqMap/ReadDaqMap.cc
+sed -i "s/throw(runtime_error)/noexcept(false)/g" ReadDaqMap.cc
+echo calice_cddata/dbfill/ReadDaqMap/ReadLine.cc
+sed -i "s/throw(runtime_error)/noexcept(false)/g" ReadLine.cc
+sed -i "s/throw (runtime_error)/noexcept(false)/g" ReadLine.cc
+echo calice_cddata/dbfill/ReadDaqMap/TLineIterator.cc
+sed -i "s/throw(runtime_error)/noexcept(false)/g" TLineIterator.cc
+echo calice_cddata/dbfill/ReadDaqMap/getRunStartTime.hh
+sed -i "s/throw(runtime_error)/noexcept(false)/g" getRunStartTime.hh
+sed -i "s/throw(std::runtime_error)/noexcept(false)/g" getRunStartTime.hh
+echo calice_cddata/dbfill/ReadDaqMap/getRunStartTime.cc
+sed -i "s/throw(runtime_error)/noexcept(false)/g" getRunStartTime.cc
+sed -i "s/throw(std::runtime_error)/noexcept(false)/g" getRunStartTime.cc
+cd - > /dev/null
+
+cd calice_cddata/dbfill/
+echo calice_cddata/dbfill/writeLinearFitSlopes.cc
+sed -i "s/<< std::cout/<< std::endl/g" writeLinearFitSlopes.cc
+cd - > /dev/null
+
+# RootTreeWriter
+cd RootTreeWriter/
+echo RootTreeWriter/CMakeLists.txt
+sed -i "s/c++11 and flags/c++17 and flags/g" CMakeLists.txt
+sed -i "s/-std=c++11/-std=c++17/g" CMakeLists.txt
+sed -i "s/COMPILER_SUPPORTS_CXX11/COMPILER_SUPPORTS_CXX17/g" CMakeLists.txt
+sed -i "s/Compiler does not support c++11/Compiler does not support c++17/g" CMakeLists.txt
+cd - > /dev/null
+
+# calice_db_tools
+cd calice_db_tools/
+echo calice_db_tools/CMakeLists.txt
+sed -i "s/c++11 and flags/c++17 and flags/g" CMakeLists.txt
+sed -i "s/-std=c++11/-std=c++17/g" CMakeLists.txt
+sed -i "s/COMPILER_SUPPORTS_CXX11/COMPILER_SUPPORTS_CXX17/g" CMakeLists.txt
+sed -i "s/Compiler does not support c++11/Compiler does not support c++17/g" CMakeLists.txt
+cd - > /dev/null
+
+cd calice_db_tools/src/
+echo calice_db_tools/src/cdbadmin.cc
+sed -i "s/throw(CondDBException)/noexcept(false)/g" cdbadmin.cc
+cd - > /dev/null

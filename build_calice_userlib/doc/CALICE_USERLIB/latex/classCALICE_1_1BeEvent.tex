@@ -1,0 +1,167 @@
+\section{C\-A\-L\-I\-C\-E\-:\-:Be\-Event Class Reference}
+\label{classCALICE_1_1BeEvent}\index{C\-A\-L\-I\-C\-E\-::\-Be\-Event@{C\-A\-L\-I\-C\-E\-::\-Be\-Event}}
+
+
+Stores the trigger history (i.\-e.  
+
+
+
+
+{\ttfamily \#include $<$Be\-Event.\-hh$>$}
+
+Inheritance diagram for C\-A\-L\-I\-C\-E\-:\-:Be\-Event\-:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=3.000000cm]{classCALICE_1_1BeEvent}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+{\bf Be\-Event} ()\label{classCALICE_1_1BeEvent_a2097c6cad17364e073130b88759d4395}
+
+\begin{DoxyCompactList}\small\item\em Simple Constructor. \end{DoxyCompactList}\item 
+{\bf Be\-Event} (unsigned int board\-\_\-id)
+\begin{DoxyCompactList}\small\item\em Useful\-Constructor. \end{DoxyCompactList}\item 
+{\bf Be\-Event} (L\-C\-Object $\ast${\bf obj})\label{classCALICE_1_1BeEvent_aa434832dc8f050ab7d92ea2a90e3a2fa}
+
+\begin{DoxyCompactList}\small\item\em 'Copy constructor' needed to interpret L\-C\-Collection read from file/database. \end{DoxyCompactList}\item 
+{\bf Be\-Event} \& {\bf set\-Board\-I\-D} (int board\-I\-D)
+\begin{DoxyCompactList}\small\item\em Set the packed board id. \end{DoxyCompactList}\item 
+int {\bf get\-Board\-I\-D} () const \label{classCALICE_1_1BeEvent_a257d5c382c76e453d576c99b4785811d}
+
+\begin{DoxyCompactList}\small\item\em Get the board id. \end{DoxyCompactList}\item 
+{\bf Be\-Event} \& {\bf set\-Record\-Label} (int label)\label{classCALICE_1_1BeEvent_ab860bbf02c55df7b26c2e9335056a21a}
+
+\begin{DoxyCompactList}\small\item\em Set the Record Label. \end{DoxyCompactList}\item 
+short {\bf get\-Record\-Label} () const \label{classCALICE_1_1BeEvent_a9cc54e7581f285b926a192836e904e86}
+
+\begin{DoxyCompactList}\small\item\em Return the Record Label. \end{DoxyCompactList}\item 
+{\bf Be\-Event} \& {\bf set\-Status\-Word} (int status)\label{classCALICE_1_1BeEvent_a052f9cb87c190b8137d6ad09e676af1f}
+
+\begin{DoxyCompactList}\small\item\em Set the status word. \end{DoxyCompactList}\item 
+int {\bf get\-Status\-Word} () const \label{classCALICE_1_1BeEvent_afffb8609964ae7e46d4eb7c55d6cac08}
+
+\begin{DoxyCompactList}\small\item\em Get the status word. \end{DoxyCompactList}\item 
+{\bf Be\-Event} \& {\bf set\-L1a\-Counter} (int l1acounter)\label{classCALICE_1_1BeEvent_ad4dec434b6ae2f78e9db131d26b6330f}
+
+\begin{DoxyCompactList}\small\item\em Set the l1acounter This number is used to check integrity of trigger counters. \end{DoxyCompactList}\item 
+int {\bf get\-L1a\-Counter} () const \label{classCALICE_1_1BeEvent_a3bb48d738f07c16324f75e5f3f6594d6}
+
+\begin{DoxyCompactList}\small\item\em Get the l1acounter. \end{DoxyCompactList}\item 
+{\bf Be\-Event} \& {\bf set\-Bx\-Counter} (int bxcount)\label{classCALICE_1_1BeEvent_a94fe845cc1ced1dc5743f784f6092bfa}
+
+\begin{DoxyCompactList}\small\item\em Set the bxcounter (bunch crossing !?) \end{DoxyCompactList}\item 
+int {\bf get\-Bx\-Counter} () const \label{classCALICE_1_1BeEvent_a85aad5b07a8644221039c50f47c9cfe2}
+
+\begin{DoxyCompactList}\small\item\em Get the bxcounter. \end{DoxyCompactList}\item 
+{\bf Be\-Event} \& {\bf set\-Qdr\-Frame\-Counter} (int qdrframecount)\label{classCALICE_1_1BeEvent_abd097e21aaa8d7ac65f473186ec0ec6a}
+
+\begin{DoxyCompactList}\small\item\em Set the Qdr\-Frame\-Counter (Whatever this is ...) \end{DoxyCompactList}\item 
+int {\bf get\-Qdr\-Frame\-Counter} () const \label{classCALICE_1_1BeEvent_aef1af66fdeecc7b3e78b6e164681341a}
+
+\begin{DoxyCompactList}\small\item\em Get the Qdr\-Frame\-Counter. \end{DoxyCompactList}\item 
+{\bf Be\-Event} \& {\bf set\-Qdr\-Data\-Counter} (int qdrdatacount)\label{classCALICE_1_1BeEvent_ad085e6f2c86bfc12a9c450f55f6a65f6}
+
+\begin{DoxyCompactList}\small\item\em Set the Qdr\-Data\-Counter (Whatever this is ...) \end{DoxyCompactList}\item 
+int {\bf get\-Qdr\-Data\-Counter} () const \label{classCALICE_1_1BeEvent_ad917495373bd3b1f6261f0043aca87e0}
+
+\begin{DoxyCompactList}\small\item\em Get the Qdr\-Data\-Counter. \end{DoxyCompactList}\item 
+{\bf Be\-Event} \& {\bf set\-Total\-Frame\-Counter} (int totalframecount)\label{classCALICE_1_1BeEvent_accec6ea69ebb86a919ea63115ef9ee90}
+
+\begin{DoxyCompactList}\small\item\em Set the Total\-Frame\-Counter (Whatever this is ...) \end{DoxyCompactList}\item 
+int {\bf get\-Total\-Frame\-Counter} () const \label{classCALICE_1_1BeEvent_afbe2088acfa3d8d5a4301d66c9bec655}
+
+\begin{DoxyCompactList}\small\item\em Get the Total\-Frame\-Counter. \end{DoxyCompactList}\item 
+void {\bf print} (std\-::ostream \&os)\label{classCALICE_1_1BeEvent_a9554fd6824f75d8bfbfa3183ba8469b1}
+
+\begin{DoxyCompactList}\small\item\em Convenient print method. \end{DoxyCompactList}\item 
+const std\-::string {\bfseries get\-Type\-Name} () const \label{classCALICE_1_1BeEvent_a1a9609c2a147fa44055bc3aae63d64c6}
+
+\item 
+const std\-::string {\bf get\-Data\-Description} () const \label{classCALICE_1_1BeEvent_a271ed21e4fc8b27bffd8ba9cf3c7d31b}
+
+\begin{DoxyCompactList}\small\item\em Return a brief description of the data members. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Detailed Description}
+Stores the trigger history (i.\-e. 
+
+fifo content).when it appears in the front end as realized for runs starting in May 2006 (Ask Paul for firmware version) in older versions of the D\-A\-Q these data came along wiith the Be\-Trg\-Event\-Data which still contains information related to the data handled by the present interface class.
+
+To acces the configuration\-: 
+\begin{DoxyPre}
+  void processEvent(LCEvent *event)  \{
+      try \{
+       // string \_colName = "BeTrgEventData"
+       LCCollection *col=event->getCollection(\_colName);
+       for (unsigned int element\_i=0; element\_i<col->getNumberOfElements(); element\_i++) \{
+          \doxyref{BeEvent}{p.}{classCALICE_1_1BeEvent} event(col->getElementAt(element\_i));\end{DoxyPre}
+
+
+
+\begin{DoxyPre}       \}
+  \}
+\end{DoxyPre}
+
+
+\begin{DoxyAuthor}{Author}
+R. Pöschl (L\-A\-L Orsay) 
+\end{DoxyAuthor}
+\begin{DoxyDate}{Date}
+Jul 2006 
+\end{DoxyDate}
+
+
+Definition at line 58 of file Be\-Event.\-hh.
+
+
+
+\subsection{Constructor \& Destructor Documentation}
+\index{C\-A\-L\-I\-C\-E\-::\-Be\-Event@{C\-A\-L\-I\-C\-E\-::\-Be\-Event}!Be\-Event@{Be\-Event}}
+\index{Be\-Event@{Be\-Event}!CALICE::BeEvent@{C\-A\-L\-I\-C\-E\-::\-Be\-Event}}
+\subsubsection[{Be\-Event}]{\setlength{\rightskip}{0pt plus 5cm}C\-A\-L\-I\-C\-E\-::\-Be\-Event\-::\-Be\-Event (
+\begin{DoxyParamCaption}
+\item[{unsigned int}]{board\-\_\-id}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\label{classCALICE_1_1BeEvent_a52f929c3fccdded286f6bfb5f3989f09}
+
+
+Useful\-Constructor. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em board\-\_\-id} & the packed board id (\doxyref{C\-A\-L\-I\-C\-E\-::\-Board\-I\-D}{p.}{classCALICE_1_1BoardID}). \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 80 of file Be\-Event.\-hh.
+
+
+
+\subsection{Member Function Documentation}
+\index{C\-A\-L\-I\-C\-E\-::\-Be\-Event@{C\-A\-L\-I\-C\-E\-::\-Be\-Event}!set\-Board\-I\-D@{set\-Board\-I\-D}}
+\index{set\-Board\-I\-D@{set\-Board\-I\-D}!CALICE::BeEvent@{C\-A\-L\-I\-C\-E\-::\-Be\-Event}}
+\subsubsection[{set\-Board\-I\-D}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Be\-Event}\& C\-A\-L\-I\-C\-E\-::\-Be\-Event\-::set\-Board\-I\-D (
+\begin{DoxyParamCaption}
+\item[{int}]{board\-I\-D}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\label{classCALICE_1_1BeEvent_a63f17cd05b53cb5c3ec91432c54b8ccc}
+
+
+Set the packed board id. 
+
+\begin{DoxySeeAlso}{See Also}
+\doxyref{Board\-I\-D}{p.}{classCALICE_1_1BoardID} 
+\end{DoxySeeAlso}
+
+
+Definition at line 108 of file Be\-Event.\-hh.
+
+
+
+The documentation for this class was generated from the following file\-:\begin{DoxyCompactItemize}
+\item 
+Be\-Event.\-hh\end{DoxyCompactItemize}

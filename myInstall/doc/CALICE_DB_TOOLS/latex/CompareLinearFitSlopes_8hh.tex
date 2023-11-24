@@ -1,0 +1,33 @@
+\section{/nfs/dust/ilc/user/marquezh/\-Calice\-Soft\-\_\-w\-\_\-\-I\-L\-C\-Soft\-\_\-v02-\/03-\/02/calice\-\_\-db\-\_\-tools/include/\-Compare\-Linear\-Fit\-Slopes.hh File Reference}
+\label{CompareLinearFitSlopes_8hh}\index{/nfs/dust/ilc/user/marquezh/\-Calice\-Soft\-\_\-w\-\_\-\-I\-L\-C\-Soft\-\_\-v02-\/03-\/02/calice\-\_\-db\-\_\-tools/include/\-Compare\-Linear\-Fit\-Slopes.\-hh@{/nfs/dust/ilc/user/marquezh/\-Calice\-Soft\-\_\-w\-\_\-\-I\-L\-C\-Soft\-\_\-v02-\/03-\/02/calice\-\_\-db\-\_\-tools/include/\-Compare\-Linear\-Fit\-Slopes.\-hh}}
+{\ttfamily \#include \char`\"{}Linear\-Fit\-Slope.\-hh\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}Access\-Linear\-Fit\-Slope.\-hh\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}lcio.\-h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}I\-M\-P\-L/\-L\-C\-Collection\-Vec.\-h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}I\-M\-P\-L/\-L\-C\-T\-O\-O\-L\-S.\-h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}I\-O/\-L\-C\-Reader.\-h\char`\"{}}\\*
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class {\bf Compare\-Linear\-Fit\-Slopes}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+This tool compares two sets of C\-A\-L\-I\-C\-E\-::\-Linear\-Fit\-Slopes.
+
+Command line parameters\-:\par
+\par
+ {\itshape --label1} -\/$>$ define label for V\-A\-L1\par
+ {\itshape --label2} -\/$>$ define label for V\-A\-L2\par
+ {\itshape --val1} -\/$>$ define V\-A\-L1 input\par
+ {\itshape --val2} -\/$>$ define V\-A\-L2 input\par
+\par
+ {\itshape --txt} $<$inputfile.\-txt$>$ -\/$>$ define .txt file as source (format\-: module/chip/channel/value/error...)\par
+ {\itshape --slcio} $<$inputfile.\-slcio$>$ $<$collection$>$ -\/$>$ define collection from .slcio file as source\par
+ {\itshape --db} $<$D\-Bfolder$>$ $<$time$>$ -\/$>$ define database folder at time $<$time$>$ as source, using no tag\par
+ {\itshape --db\-\_\-tag} $<$D\-Bfolder$>$ $<$time$>$ $<$tag$>$ -\/$>$ define database folder at time $<$time$>$ and tag $<$tag$>$ as source\par
+
+
+Definition in file {\bf Compare\-Linear\-Fit\-Slopes.\-hh}.
+

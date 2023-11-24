@@ -1,0 +1,324 @@
+\section{C\-A\-L\-I\-C\-E\-:\-:Event\-Display\-Processor Class Reference}
+\label{classCALICE_1_1EventDisplayProcessor}\index{C\-A\-L\-I\-C\-E\-::\-Event\-Display\-Processor@{C\-A\-L\-I\-C\-E\-::\-Event\-Display\-Processor}}
+
+
+This is a Marlin processor for displaying events with C\-E\-D.  
+
+
+
+
+{\ttfamily \#include $<$Event\-Display\-Processor.\-hh$>$}
+
+Inheritance diagram for C\-A\-L\-I\-C\-E\-:\-:Event\-Display\-Processor\-:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classCALICE_1_1EventDisplayProcessor}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+virtual Processor $\ast$ {\bfseries new\-Processor} ()\label{classCALICE_1_1EventDisplayProcessor_a34077bee4a0c9c8872846638252f9bac}
+
+\item 
+virtual void {\bf init} ()
+\item 
+virtual void {\bf process\-Run\-Header} (L\-C\-Run\-Header $\ast$run)
+\item 
+virtual void {\bf process\-Event} (L\-C\-Event $\ast$evt)
+\item 
+virtual void {\bfseries check} (L\-C\-Event $\ast$evt)\label{classCALICE_1_1EventDisplayProcessor_a60086f666abafbabb0b348a46da34df6}
+
+\item 
+virtual void {\bf end} ()
+\end{DoxyCompactItemize}
+\subsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void {\bfseries choose\-Color\-And\-Layer} (const float energy, unsigned int \&color, unsigned int \&layer) const \label{classCALICE_1_1EventDisplayProcessor_a7a616a6bbaaa216e2815a3cfbddb7203}
+
+\item 
+void {\bfseries draw\-Cell} (const C\-A\-L\-I\-C\-E\-::\-Cell\-Description $\ast$description, const unsigned int color, const unsigned int layer, const bool solid=true) const \label{classCALICE_1_1EventDisplayProcessor_a8c72e4ed7e45c5126de9d0a6a935a9b6}
+
+\item 
+void {\bfseries draw\-Hit} (const Calorimeter\-Hit $\ast$hit, const unsigned int color, const unsigned int layer) const \label{classCALICE_1_1EventDisplayProcessor_ab997ab7811aec0cb61ca9a5296796ea9}
+
+\item 
+void {\bfseries draw\-Si\-W\-E\-C\-A\-L} (L\-C\-Event $\ast$evt)\label{classCALICE_1_1EventDisplayProcessor_a282a9f9031e3952e9553e22331911935}
+
+\item 
+void {\bfseries draw\-A\-H\-C\-A\-L} (L\-C\-Event $\ast$evt)\label{classCALICE_1_1EventDisplayProcessor_af954c017bda60aa0c29a56801da58237}
+
+\item 
+void {\bfseries draw\-A\-H\-C\-A\-L\-Tracks} (L\-C\-Event $\ast$evt)\label{classCALICE_1_1EventDisplayProcessor_ae42429db28c5cef293f9cda49d98832e}
+
+\item 
+void {\bfseries draw\-A\-H\-C\-A\-L\-Sim} (L\-C\-Event $\ast$evt)\label{classCALICE_1_1EventDisplayProcessor_a695ddbd7d3de1cfc87141ec2f0f98119}
+
+\item 
+void {\bfseries draw\-T\-C\-M\-T} (L\-C\-Event $\ast$evt)\label{classCALICE_1_1EventDisplayProcessor_ac6ac2a1b2dff7057d26b3b7318c594fd}
+
+\item 
+void {\bf draw\-Start\-Layer} (L\-C\-Event $\ast$evt)
+\item 
+void {\bfseries draw\-Start\-Position} (L\-C\-Event $\ast$evt)\label{classCALICE_1_1EventDisplayProcessor_a2a0448c458baa43fb23291e86f7c9e0d}
+
+\item 
+void {\bfseries draw\-M\-C\-Particle} (L\-C\-Event $\ast$evt)\label{classCALICE_1_1EventDisplayProcessor_adcd63eabf525ce9235e4f1efffe7e4c3}
+
+\item 
+void {\bfseries draw\-Detector\-Si\-W\-E\-C\-A\-L} ()\label{classCALICE_1_1EventDisplayProcessor_aac49af6eceba5d02db9d405a42f229ec}
+
+\item 
+void {\bfseries draw\-Detector\-A\-H\-C\-A\-L} ()\label{classCALICE_1_1EventDisplayProcessor_acfdc0d075c062b1da8b297e0168405ca}
+
+\item 
+void {\bfseries draw\-Detector\-T\-C\-M\-T} ()\label{classCALICE_1_1EventDisplayProcessor_ad489bc345d421518f05340e2b7268365}
+
+\item 
+int {\bfseries get\-Marina\-Shower\-Start\-Hcal\-Layer} (L\-C\-Event $\ast$evt)\label{classCALICE_1_1EventDisplayProcessor_a087a520d52e265e7e46b59b8e226028b}
+
+\item 
+void {\bfseries draw\-Primary\-Track\-Hits\-Position} (L\-C\-Event $\ast$evt)\label{classCALICE_1_1EventDisplayProcessor_a938088e50170b4c44ea47a5e0e7d2710}
+
+\item 
+void {\bfseries draw\-Shower\-Shapes} (L\-C\-Event $\ast$evt)\label{classCALICE_1_1EventDisplayProcessor_a71e596ddf97ee37c2314b474a35eb15a}
+
+\item 
+int {\bf return\-Cluster\-Size} (float ene\-Cluster, float cutoff\-\_\-min, float cutoff\-\_\-max)
+\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+std\-::string {\bfseries \-\_\-col\-Name\-Emc}\label{classCALICE_1_1EventDisplayProcessor_a1efe06a3acf7c317dcfb1d5822c03e68}
+
+\item 
+std\-::string {\bfseries \-\_\-col\-Name\-Ahc}\label{classCALICE_1_1EventDisplayProcessor_a8ff444f1b4b4e64a5ea06e30e4f8accf}
+
+\item 
+std\-::string {\bfseries \-\_\-col\-Name\-Ahc\-Sim}\label{classCALICE_1_1EventDisplayProcessor_af630ea20517ca82a2e48f59cce5eaf05}
+
+\item 
+std\-::string {\bfseries \-\_\-col\-Name\-Tcm}\label{classCALICE_1_1EventDisplayProcessor_a9a05be2ec278b8ec385b7b41957024aa}
+
+\item 
+std\-::string {\bfseries \-\_\-col\-Name\-Tcm\-Sim}\label{classCALICE_1_1EventDisplayProcessor_aa5fe137ac3cba3ee963303fc38444cca}
+
+\item 
+std\-::string {\bfseries \-\_\-col\-Name\-M\-C\-Particle}\label{classCALICE_1_1EventDisplayProcessor_a7169df856c690f8a76210cf49be08b95}
+
+\item 
+std\-::string {\bfseries \-\_\-par\-Name\-Shower\-Start\-Layer}\label{classCALICE_1_1EventDisplayProcessor_afd62efd0e2ac21fb8d69196b2ad1007c}
+
+\item 
+std\-::string {\bfseries \-\_\-par\-Name\-Shower\-Start\-Pos}\label{classCALICE_1_1EventDisplayProcessor_a5c8b338ab8395474cdfe6e1ae97828ac}
+
+\item 
+std\-::string {\bfseries \-\_\-mapping\-Processor\-Name}\label{classCALICE_1_1EventDisplayProcessor_a7e2048023fb976e1ad4595143e82c2eb}
+
+\item 
+std\-::string {\bfseries \-\_\-cell\-Neighbours\-Processor\-Name}\label{classCALICE_1_1EventDisplayProcessor_a7a6c899ee6fed94746b5bed528908523}
+
+\item 
+std\-::string {\bfseries \-\_\-cell\-Description\-Processor\-Name}\label{classCALICE_1_1EventDisplayProcessor_a28820140d1bc43b3f09f9b507f19867a}
+
+\item 
+std\-::string {\bfseries \-\_\-f\-Mokka\-Model\-Name}\label{classCALICE_1_1EventDisplayProcessor_aa5b896435eb4c373970396fac01e050c}
+
+\item 
+std\-::string {\bfseries \-\_\-shower\-Shape\-Col\-Names}\label{classCALICE_1_1EventDisplayProcessor_a4946742dffb613191debad2305a9d4be}
+
+\item 
+std\-::string {\bfseries \-\_\-track\-Col\-Name}\label{classCALICE_1_1EventDisplayProcessor_a41d1d71e48d0ff487039549ed37cfe3e}
+
+\item 
+int {\bfseries \-\_\-wait\-For\-Key\-Pressed}\label{classCALICE_1_1EventDisplayProcessor_a32366f61a3fe9a3903ecf839a64a6689}
+
+\item 
+int {\bfseries \-\_\-draw}\label{classCALICE_1_1EventDisplayProcessor_a825f3f4c242a9762e79259e885f1adb2}
+
+\item 
+int {\bfseries \-\_\-append\-To\-Existing\-C\-E\-D}\label{classCALICE_1_1EventDisplayProcessor_a687eaf39c649eee27c749b448cdaf986}
+
+\item 
+int {\bfseries \-\_\-n\-Run}\label{classCALICE_1_1EventDisplayProcessor_ae6c8eb83553b91997dbacec716e0fd4c}
+
+\item 
+int {\bfseries \-\_\-n\-Evt}\label{classCALICE_1_1EventDisplayProcessor_ac73308944a57f40de0ffa64b113cbecc}
+
+\item 
+const C\-A\-L\-I\-C\-E\-::\-Ahc\-Mapper $\ast$ {\bfseries \-\_\-mapper}\label{classCALICE_1_1EventDisplayProcessor_a2b26430df1aec866f7971e2627da8860}
+
+\item 
+unsigned int {\bfseries \-\_\-mapper\-Version}\label{classCALICE_1_1EventDisplayProcessor_a42aea5d31a52a9da2953eeb1e67862b7}
+
+\item 
+C\-A\-L\-I\-C\-E\-::\-Mapped\-Container\\*
+$<$ C\-A\-L\-I\-C\-E\-::\-Cell\-Description $>$ $\ast$ {\bfseries \-\_\-cell\-Descriptions}\label{classCALICE_1_1EventDisplayProcessor_a94ee4ec40eb5d377d15bc8239e659bb4}
+
+\item 
+C\-A\-L\-I\-C\-E\-::\-Mapped\-Container\\*
+$<$ C\-A\-L\-I\-C\-E\-::\-Cell\-Neighbours $>$ $\ast$ {\bfseries \-\_\-cell\-Neighbours}\label{classCALICE_1_1EventDisplayProcessor_a12ee00ddafb412fe4f5fffcc9c049e80}
+
+\item 
+bool {\bfseries \-\_\-draw\-Hcal\-Histos}\label{classCALICE_1_1EventDisplayProcessor_a6763de26bb6b411cbace86b1df1a6070}
+
+\item 
+bool {\bfseries \-\_\-tcmt\-Start\-Vertical}\label{classCALICE_1_1EventDisplayProcessor_a6c010062901aec5839d39d9b54e1719e}
+
+\item 
+{\bf Hcal\-Histos\-Drawer} $\ast$ {\bfseries \-\_\-the\-Hcal\-Histos\-Drawer}\label{classCALICE_1_1EventDisplayProcessor_a5b204dde67e52d9a226af122dd6e0573}
+
+\item 
+std\-::string {\bfseries \-\_\-shower\-Start\-Col\-Name}\label{classCALICE_1_1EventDisplayProcessor_a91c75bbd29a29d5cdf625a0d5e6b6fcb}
+
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+This is a Marlin processor for displaying events with C\-E\-D. 
+
+If you want to display events with C\-E\-D, you need to start the display ({\ttfamily glced}) before running Marlin.
+
+Mouse commands that can be used within C\-E\-D\-:
+
+
+\begin{DoxyItemize}
+\item {\ttfamily  left + move } -\/$>$ rotate view
+\item {\ttfamily  right + move down/up } -\/$>$ zoom view in/out
+\item {\ttfamily  center + move } -\/$>$ shift view
+\item {\ttfamily  wheel } -\/$>$ shift view along z-\/axis
+\end{DoxyItemize}
+
+Keyboard commands that can be used within C\-E\-D\-:
+
+
+\begin{DoxyItemize}
+\item {\ttfamily  b } -\/$>$ toggle background color
+\item {\ttfamily  r } -\/$>$ got to default angular view
+\item {\ttfamily  s } -\/$>$ got to default side view
+\item {\ttfamily  f } -\/$>$ got to default front view
+\item {\ttfamily  v } -\/$>$ switch on/off fisheye view
+\item {\ttfamily  0 ... 9 } -\/$>$ switch on/off C\-E\-D display layer 0 ... 9
+\item {\ttfamily  shift + 0 ... 9 } -\/$>$ switch on/off display layer 10 ... 19
+\item {\ttfamily  t } -\/$>$ switch on/off C\-E\-D display layer 20
+\item {\ttfamily  y } -\/$>$ switch on/off C\-E\-D display layer 21
+\item {\ttfamily  u } -\/$>$ switch on/off C\-E\-D display layer 22
+\item {\ttfamily  i } -\/$>$ switch on/off C\-E\-D display layer 23
+\end{DoxyItemize}
+
+Assignment of C\-E\-D display layers\-:
+
+
+\begin{DoxyItemize}
+\item 0\-:
+\item 1\-: A\-H\-C\-A\-L / E\-C\-A\-L / T\-C\-M\-T hits ( hit energy $<$ 0.\-5 mip )
+\item 2\-: A\-H\-C\-A\-L / E\-C\-A\-L / T\-C\-M\-T hits ( 0.\-5 mip $<$= hit energy $<$ 1.\-65 mip )
+\item 3\-: A\-H\-C\-A\-L / E\-C\-A\-L / T\-C\-M\-T hits ( 1.\-65 mip $<$= hit energy $<$ 2.\-9 mip )
+\item 4\-: A\-H\-C\-A\-L / E\-C\-A\-L / T\-C\-M\-T hits ( 2.\-9 mip $<$= hit energy $<$ 5.\-4 mip )
+\item 5\-: A\-H\-C\-A\-L / E\-C\-A\-L / T\-C\-M\-T hits ( hit energy $>$= 5.\-4 mip )
+\item 6\-:
+\item 7\-:
+\item 8\-:
+\item 9\-:
+\item 10\-:
+\item 11\-: M\-C particle track
+\item 12\-: shower start layer
+\item 13\-: shower start position
+\item 14\-:
+\item 15\-:
+\item 16\-:
+\item 17\-:
+\item 18\-:
+\item 19\-:
+\item 20\-: cell frames\-: A\-H\-C\-A\-L hits
+\item 21\-: cell frames\-: A\-H\-C\-A\-L tiles 3x3 cm$^\wedge$2
+\item 22\-: cell frames\-: A\-H\-C\-A\-L tiles 6x6 cm$^\wedge$2
+\item 23\-: cell frames\-: A\-H\-C\-A\-L tiles 12x12 cm$^\wedge$2
+\end{DoxyItemize}
+
+C\-E\-D color coding for hit energies\-:
+
+ 
+\begin{DoxyImage}
+\includegraphics[width=10cm]{EventDisplayProcessor_colorCode}
+\caption{C\-E\-D color coding}
+\end{DoxyImage}
+
+
+\begin{DoxyAuthor}{Author}
+B. Lutz, D\-E\-S\-Y 
+
+N. Feege, University of Hamburg 
+\end{DoxyAuthor}
+\begin{DoxyVersion}{Version}
+1.\-0 
+\end{DoxyVersion}
+\begin{DoxyDate}{Date}
+April 2010 
+\end{DoxyDate}
+
+
+\subsection{Member Function Documentation}
+\index{C\-A\-L\-I\-C\-E\-::\-Event\-Display\-Processor@{C\-A\-L\-I\-C\-E\-::\-Event\-Display\-Processor}!draw\-Start\-Layer@{draw\-Start\-Layer}}
+\index{draw\-Start\-Layer@{draw\-Start\-Layer}!CALICE::EventDisplayProcessor@{C\-A\-L\-I\-C\-E\-::\-Event\-Display\-Processor}}
+\subsubsection[{draw\-Start\-Layer}]{\setlength{\rightskip}{0pt plus 5cm}void C\-A\-L\-I\-C\-E\-::\-Event\-Display\-Processor\-::draw\-Start\-Layer (
+\begin{DoxyParamCaption}
+\item[{L\-C\-Event $\ast$}]{evt}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}}\label{classCALICE_1_1EventDisplayProcessor_aa1a31bdb7c85f8ffa5cce1b1c79d482e}
+\begin{DoxyRefDesc}{Todo}
+\item[{\bf Todo}]count layers from 1 to 38 or from 0 to 37?? \end{DoxyRefDesc}
+
+
+Referenced by process\-Event().
+
+\index{C\-A\-L\-I\-C\-E\-::\-Event\-Display\-Processor@{C\-A\-L\-I\-C\-E\-::\-Event\-Display\-Processor}!end@{end}}
+\index{end@{end}!CALICE::EventDisplayProcessor@{C\-A\-L\-I\-C\-E\-::\-Event\-Display\-Processor}}
+\subsubsection[{end}]{\setlength{\rightskip}{0pt plus 5cm}void C\-A\-L\-I\-C\-E\-::\-Event\-Display\-Processor\-::end (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}\label{classCALICE_1_1EventDisplayProcessor_ade6d63583f10ad947b415e791d3e3700}
+Called after data processing for clean up. \index{C\-A\-L\-I\-C\-E\-::\-Event\-Display\-Processor@{C\-A\-L\-I\-C\-E\-::\-Event\-Display\-Processor}!init@{init}}
+\index{init@{init}!CALICE::EventDisplayProcessor@{C\-A\-L\-I\-C\-E\-::\-Event\-Display\-Processor}}
+\subsubsection[{init}]{\setlength{\rightskip}{0pt plus 5cm}void C\-A\-L\-I\-C\-E\-::\-Event\-Display\-Processor\-::init (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}\label{classCALICE_1_1EventDisplayProcessor_a94bcb2e21a5222c264661c7183e0bfd7}
+Called at the begin of the job before anything is read. Use to initialize the processor, e.\-g. book histograms. \index{C\-A\-L\-I\-C\-E\-::\-Event\-Display\-Processor@{C\-A\-L\-I\-C\-E\-::\-Event\-Display\-Processor}!process\-Event@{process\-Event}}
+\index{process\-Event@{process\-Event}!CALICE::EventDisplayProcessor@{C\-A\-L\-I\-C\-E\-::\-Event\-Display\-Processor}}
+\subsubsection[{process\-Event}]{\setlength{\rightskip}{0pt plus 5cm}void C\-A\-L\-I\-C\-E\-::\-Event\-Display\-Processor\-::process\-Event (
+\begin{DoxyParamCaption}
+\item[{L\-C\-Event $\ast$}]{evt}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}\label{classCALICE_1_1EventDisplayProcessor_a99a35b6b752fde1e752f6d94a9c0482c}
+Called for every event -\/ the working horse. 
+
+References draw\-Start\-Layer().
+
+\index{C\-A\-L\-I\-C\-E\-::\-Event\-Display\-Processor@{C\-A\-L\-I\-C\-E\-::\-Event\-Display\-Processor}!process\-Run\-Header@{process\-Run\-Header}}
+\index{process\-Run\-Header@{process\-Run\-Header}!CALICE::EventDisplayProcessor@{C\-A\-L\-I\-C\-E\-::\-Event\-Display\-Processor}}
+\subsubsection[{process\-Run\-Header}]{\setlength{\rightskip}{0pt plus 5cm}void C\-A\-L\-I\-C\-E\-::\-Event\-Display\-Processor\-::process\-Run\-Header (
+\begin{DoxyParamCaption}
+\item[{L\-C\-Run\-Header $\ast$}]{run}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}\label{classCALICE_1_1EventDisplayProcessor_a9a1595afba6f9b8e2369e2e8561983c3}
+Called for every run. \index{C\-A\-L\-I\-C\-E\-::\-Event\-Display\-Processor@{C\-A\-L\-I\-C\-E\-::\-Event\-Display\-Processor}!return\-Cluster\-Size@{return\-Cluster\-Size}}
+\index{return\-Cluster\-Size@{return\-Cluster\-Size}!CALICE::EventDisplayProcessor@{C\-A\-L\-I\-C\-E\-::\-Event\-Display\-Processor}}
+\subsubsection[{return\-Cluster\-Size}]{\setlength{\rightskip}{0pt plus 5cm}int C\-A\-L\-I\-C\-E\-::\-Event\-Display\-Processor\-::return\-Cluster\-Size (
+\begin{DoxyParamCaption}
+\item[{float}]{ene\-Cluster, }
+\item[{float}]{cutoff\-\_\-min, }
+\item[{float}]{cutoff\-\_\-max}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}}\label{classCALICE_1_1EventDisplayProcessor_a5b91c6a831b236cda01569ef41339b8d}
+Check the input values for sanity
+
+Check the output 
+
+The documentation for this class was generated from the following files\-:\begin{DoxyCompactItemize}
+\item 
+/nfs/dust/ilc/user/marquezh/\-Calice\-Soft\-\_\-w\-\_\-\-I\-L\-C\-Soft\-\_\-v02-\/03-\/02/calice\-\_\-analysis/addon\-Procs/include/Event\-Display\-Processor.\-hh\item 
+/nfs/dust/ilc/user/marquezh/\-Calice\-Soft\-\_\-w\-\_\-\-I\-L\-C\-Soft\-\_\-v02-\/03-\/02/calice\-\_\-analysis/addon\-Procs/src/Event\-Display\-Processor.\-cc\end{DoxyCompactItemize}

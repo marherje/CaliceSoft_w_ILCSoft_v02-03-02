@@ -1,0 +1,54 @@
+\section{C\-A\-L\-I\-C\-E\-:\-:Trigger\-Handler Class Reference}
+\label{classCALICE_1_1TriggerHandler}\index{C\-A\-L\-I\-C\-E\-::\-Trigger\-Handler@{C\-A\-L\-I\-C\-E\-::\-Trigger\-Handler}}
+
+
+Base Class for the user access to trigger decisions.  
+
+
+
+
+{\ttfamily \#include $<$Trigger\-Handler.\-hh$>$}
+
+Inheritance diagram for C\-A\-L\-I\-C\-E\-:\-:Trigger\-Handler\-:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classCALICE_1_1TriggerHandler}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+virtual {\bf $\sim$\-Trigger\-Handler} ()\label{classCALICE_1_1TriggerHandler_ae815a5e2f183ac08424d831efc96f3c5}
+
+\begin{DoxyCompactList}\small\item\em Destructor. \end{DoxyCompactList}\item 
+virtual void {\bf set\-Trigger} (L\-C\-Event $\ast$)=0\label{classCALICE_1_1TriggerHandler_a913c0bd1e9547b3cbc13a3e14ec27f48}
+
+\begin{DoxyCompactList}\small\item\em This adds the trigger information to the event. \end{DoxyCompactList}\item 
+virtual bool {\bf is\-Valid\-Trigger} (const L\-C\-Event $\ast$)=0\label{classCALICE_1_1TriggerHandler_a61534e8e29aa91800110270a8b3eef75}
+
+\begin{DoxyCompactList}\small\item\em Trigger Validation. \end{DoxyCompactList}\item 
+virtual void {\bf init} ()=0\label{classCALICE_1_1TriggerHandler_a95280df98e3e2d8b883cd3c3d1c4869d}
+
+\begin{DoxyCompactList}\small\item\em A initialization method Don't know whether it will be useful. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Base Class for the user access to trigger decisions. 
+
+It defines the core interface to the trigger information. The concrete implementations have to be singletons such that the Trigger\-Handling can be plugged in anywhere in
+
+\begin{DoxyAuthor}{Author}
+R. Pöschl D\-E\-S\-Y 
+\end{DoxyAuthor}
+\begin{DoxyDate}{Date}
+May 9 2005 
+\end{DoxyDate}
+
+
+Definition at line 29 of file Trigger\-Handler.\-hh.
+
+
+
+The documentation for this class was generated from the following file\-:\begin{DoxyCompactItemize}
+\item 
+Trigger\-Handler.\-hh\end{DoxyCompactItemize}

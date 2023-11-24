@@ -1,0 +1,340 @@
+\section{C\-A\-L\-I\-C\-E\-:\-:Square\-Finder Class Reference}
+\label{classCALICE_1_1SquareFinder}\index{C\-A\-L\-I\-C\-E\-::\-Square\-Finder@{C\-A\-L\-I\-C\-E\-::\-Square\-Finder}}
+
+
+Processor to search for events where the whole border of a wafer is firing.  
+
+
+
+
+{\ttfamily \#include $<$Square\-Finder.\-hh$>$}
+
+Inheritance diagram for C\-A\-L\-I\-C\-E\-:\-:Square\-Finder\-:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classCALICE_1_1SquareFinder}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+Processor $\ast$ {\bfseries new\-Processor} ()\label{classCALICE_1_1SquareFinder_a3f2f49aba9c7f0d76d62de5a6c9e5ee1}
+
+\item 
+{\bf Square\-Finder} ()
+\begin{DoxyCompactList}\small\item\em Select Mips . \end{DoxyCompactList}\item 
+void {\bf init} ()
+\begin{DoxyCompactList}\small\item\em Called at the begin of the job before anything is read. \end{DoxyCompactList}\item 
+void {\bf process\-Run\-Header} (L\-C\-Run\-Header $\ast$run)
+\begin{DoxyCompactList}\small\item\em Called for every run, e.\-g. \end{DoxyCompactList}\item 
+void {\bf process\-Event} (L\-C\-Event $\ast$evt\-P)\label{classCALICE_1_1SquareFinder_ac15ccd383747f853c1480d687f9dba7f}
+
+\begin{DoxyCompactList}\small\item\em Called for every event -\/ the working horse. \end{DoxyCompactList}\item 
+void {\bfseries end} ()\label{classCALICE_1_1SquareFinder_a93abe832b780c7ce5616ca29d16c72ac}
+
+\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+Int\-\_\-t {\bf \-\_\-n\-Hits\-Min}\label{classCALICE_1_1SquareFinder_a2c9c17a9f50875e1762b5c2347209d3c}
+
+\begin{DoxyCompactList}\small\item\em minimum number of hits on the border of the wafer \end{DoxyCompactList}\item 
+Int\-\_\-t {\bf \-\_\-n\-Insided\-Hits\-Max}
+\begin{DoxyCompactList}\small\item\em maximum number of hits inside the wafer. \end{DoxyCompactList}\item 
+std\-::string {\bf \-\_\-col\-Name}
+\begin{DoxyCompactList}\small\item\em name of the hit input collection (Marlin processor parameter). \end{DoxyCompactList}\item 
+std\-::string {\bf \-\_\-cluster\-Col\-Name}
+\begin{DoxyCompactList}\small\item\em name of the square cluster collection. \end{DoxyCompactList}\item 
+std\-::string {\bf \-\_\-square\-Flag\-Name}
+\begin{DoxyCompactList}\small\item\em name of the event parameter which flags square events. \end{DoxyCompactList}\item 
+Float\-Vec {\bf \-\_\-signal\-Hist\-Par}
+\begin{DoxyCompactList}\small\item\em binning of the border and total border signal histograms. \end{DoxyCompactList}\item 
+U\-Int\-\_\-t {\bf \-\_\-n\-Square\-Events}
+\begin{DoxyCompactList}\small\item\em Number of square event candidates. \end{DoxyCompactList}\item 
+U\-Int\-\_\-t {\bf \-\_\-n\-Events}
+\begin{DoxyCompactList}\small\item\em Total number of events with hits. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+{\bf histmgr\-::\-Key\-\_\-t} {\bf \-\_\-hist\-Group\-Key}
+\begin{DoxyCompactList}\small\item\em Key for the histogram group. \end{DoxyCompactList}\item 
+{\bf histmgr\-::\-Key\-\_\-t} {\bf \-\_\-pad\-Index\-Hist\-Key}
+\begin{DoxyCompactList}\small\item\em Key for the pad index histograms. \end{DoxyCompactList}\item 
+{\bf histmgr\-::\-Key\-\_\-t} {\bf \-\_\-wafer\-Index\-Hist\-Key}
+\begin{DoxyCompactList}\small\item\em Key for the wafer index histograms. \end{DoxyCompactList}\item 
+{\bf histmgr\-::\-Key\-\_\-t} {\bf \-\_\-n\-Square\-Hist\-Key}
+\begin{DoxyCompactList}\small\item\em Key for the number-\/of-\/squares histogram. \end{DoxyCompactList}\item 
+{\bf histmgr\-::\-Key\-\_\-t} {\bf \-\_\-border\-Signal\-Hist\-Key}
+\begin{DoxyCompactList}\small\item\em Key for the signals on the border of the wafer histogram. \end{DoxyCompactList}\item 
+{\bf histmgr\-::\-Key\-\_\-t} {\bf \-\_\-border\-Total\-Signal\-Hist\-Key}
+\begin{DoxyCompactList}\small\item\em Histogram key for the total signal of the border. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Processor to search for events where the whole border of a wafer is firing. 
+
+Definition at line 27 of file Square\-Finder.\-hh.
+
+
+
+\subsection{Constructor \& Destructor Documentation}
+\index{C\-A\-L\-I\-C\-E\-::\-Square\-Finder@{C\-A\-L\-I\-C\-E\-::\-Square\-Finder}!Square\-Finder@{Square\-Finder}}
+\index{Square\-Finder@{Square\-Finder}!CALICE::SquareFinder@{C\-A\-L\-I\-C\-E\-::\-Square\-Finder}}
+\subsubsection[{Square\-Finder}]{\setlength{\rightskip}{0pt plus 5cm}C\-A\-L\-I\-C\-E\-::\-Square\-Finder\-::\-Square\-Finder (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{classCALICE_1_1SquareFinder_a048810eab2155fd081f4ce775c49ff11}
+
+
+Select Mips . 
+
+Mip tracks are search within the calorimeter hits. Developped for cosmics. 
+
+Definition at line 44 of file Square\-Finder.\-cc.
+
+
+
+References \-\_\-cluster\-Col\-Name, \-\_\-col\-Name, \-\_\-hist\-Group\-Key, \-\_\-n\-Hits\-Min, \-\_\-n\-Insided\-Hits\-Max, \-\_\-signal\-Hist\-Par, and \-\_\-square\-Flag\-Name.
+
+
+
+\subsection{Member Function Documentation}
+\index{C\-A\-L\-I\-C\-E\-::\-Square\-Finder@{C\-A\-L\-I\-C\-E\-::\-Square\-Finder}!init@{init}}
+\index{init@{init}!CALICE::SquareFinder@{C\-A\-L\-I\-C\-E\-::\-Square\-Finder}}
+\subsubsection[{init}]{\setlength{\rightskip}{0pt plus 5cm}void C\-A\-L\-I\-C\-E\-::\-Square\-Finder\-::init (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{classCALICE_1_1SquareFinder_aebcf72e750bcecb0304266a9a5449dba}
+
+
+Called at the begin of the job before anything is read. 
+
+Use to initialize the processor, e.\-g. book histograms. 
+
+Definition at line 112 of file Square\-Finder.\-cc.
+
+
+
+References \-\_\-border\-Signal\-Hist\-Key, \-\_\-border\-Total\-Signal\-Hist\-Key, \-\_\-cluster\-Col\-Name, \-\_\-hist\-Group\-Key, \-\_\-n\-Events, \-\_\-n\-Square\-Events, \-\_\-n\-Square\-Hist\-Key, \-\_\-pad\-Index\-Hist\-Key, \-\_\-signal\-Hist\-Par, \-\_\-wafer\-Index\-Hist\-Key, histmgr\-::\-Hist\-Mgr\-::create2\-D\-Histograms(), and histmgr\-::\-Hist\-Mgr\-::create\-Histograms().
+
+\index{C\-A\-L\-I\-C\-E\-::\-Square\-Finder@{C\-A\-L\-I\-C\-E\-::\-Square\-Finder}!process\-Run\-Header@{process\-Run\-Header}}
+\index{process\-Run\-Header@{process\-Run\-Header}!CALICE::SquareFinder@{C\-A\-L\-I\-C\-E\-::\-Square\-Finder}}
+\subsubsection[{process\-Run\-Header}]{\setlength{\rightskip}{0pt plus 5cm}void C\-A\-L\-I\-C\-E\-::\-Square\-Finder\-::process\-Run\-Header (
+\begin{DoxyParamCaption}
+\item[{L\-C\-Run\-Header $\ast$}]{run}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\label{classCALICE_1_1SquareFinder_a876db4e7ce9e481a7bba79a5c543372f}
+
+
+Called for every run, e.\-g. 
+
+overwrite to initialize run dependent histograms. 
+
+Definition at line 45 of file Square\-Finder.\-hh.
+
+
+
+\subsection{Field Documentation}
+\index{C\-A\-L\-I\-C\-E\-::\-Square\-Finder@{C\-A\-L\-I\-C\-E\-::\-Square\-Finder}!\-\_\-border\-Signal\-Hist\-Key@{\-\_\-border\-Signal\-Hist\-Key}}
+\index{\-\_\-border\-Signal\-Hist\-Key@{\-\_\-border\-Signal\-Hist\-Key}!CALICE::SquareFinder@{C\-A\-L\-I\-C\-E\-::\-Square\-Finder}}
+\subsubsection[{\-\_\-border\-Signal\-Hist\-Key}]{\setlength{\rightskip}{0pt plus 5cm}{\bf histmgr\-::\-Key\-\_\-t} C\-A\-L\-I\-C\-E\-::\-Square\-Finder\-::\-\_\-border\-Signal\-Hist\-Key\hspace{0.3cm}{\ttfamily [private]}}\label{classCALICE_1_1SquareFinder_a866b63e66d27a19c73698a32c83dc787}
+
+
+Key for the signals on the border of the wafer histogram. 
+
+
+
+Definition at line 71 of file Square\-Finder.\-hh.
+
+
+
+Referenced by init(), and process\-Event().
+
+\index{C\-A\-L\-I\-C\-E\-::\-Square\-Finder@{C\-A\-L\-I\-C\-E\-::\-Square\-Finder}!\-\_\-border\-Total\-Signal\-Hist\-Key@{\-\_\-border\-Total\-Signal\-Hist\-Key}}
+\index{\-\_\-border\-Total\-Signal\-Hist\-Key@{\-\_\-border\-Total\-Signal\-Hist\-Key}!CALICE::SquareFinder@{C\-A\-L\-I\-C\-E\-::\-Square\-Finder}}
+\subsubsection[{\-\_\-border\-Total\-Signal\-Hist\-Key}]{\setlength{\rightskip}{0pt plus 5cm}{\bf histmgr\-::\-Key\-\_\-t} C\-A\-L\-I\-C\-E\-::\-Square\-Finder\-::\-\_\-border\-Total\-Signal\-Hist\-Key\hspace{0.3cm}{\ttfamily [private]}}\label{classCALICE_1_1SquareFinder_ad5d86613cf035e9e159bf25c735d3a9e}
+
+
+Histogram key for the total signal of the border. 
+
+
+
+Definition at line 72 of file Square\-Finder.\-hh.
+
+
+
+Referenced by init(), and process\-Event().
+
+\index{C\-A\-L\-I\-C\-E\-::\-Square\-Finder@{C\-A\-L\-I\-C\-E\-::\-Square\-Finder}!\-\_\-cluster\-Col\-Name@{\-\_\-cluster\-Col\-Name}}
+\index{\-\_\-cluster\-Col\-Name@{\-\_\-cluster\-Col\-Name}!CALICE::SquareFinder@{C\-A\-L\-I\-C\-E\-::\-Square\-Finder}}
+\subsubsection[{\-\_\-cluster\-Col\-Name}]{\setlength{\rightskip}{0pt plus 5cm}std\-::string C\-A\-L\-I\-C\-E\-::\-Square\-Finder\-::\-\_\-cluster\-Col\-Name\hspace{0.3cm}{\ttfamily [protected]}}\label{classCALICE_1_1SquareFinder_ad92613a91542bc47728aa0b37b46ea09}
+
+
+name of the square cluster collection. 
+
+
+
+Definition at line 57 of file Square\-Finder.\-hh.
+
+
+
+Referenced by init(), process\-Event(), and Square\-Finder().
+
+\index{C\-A\-L\-I\-C\-E\-::\-Square\-Finder@{C\-A\-L\-I\-C\-E\-::\-Square\-Finder}!\-\_\-col\-Name@{\-\_\-col\-Name}}
+\index{\-\_\-col\-Name@{\-\_\-col\-Name}!CALICE::SquareFinder@{C\-A\-L\-I\-C\-E\-::\-Square\-Finder}}
+\subsubsection[{\-\_\-col\-Name}]{\setlength{\rightskip}{0pt plus 5cm}std\-::string C\-A\-L\-I\-C\-E\-::\-Square\-Finder\-::\-\_\-col\-Name\hspace{0.3cm}{\ttfamily [protected]}}\label{classCALICE_1_1SquareFinder_a8f394987f130f4e495032fd256257ac0}
+
+
+name of the hit input collection (Marlin processor parameter). 
+
+
+
+Definition at line 56 of file Square\-Finder.\-hh.
+
+
+
+Referenced by process\-Event(), and Square\-Finder().
+
+\index{C\-A\-L\-I\-C\-E\-::\-Square\-Finder@{C\-A\-L\-I\-C\-E\-::\-Square\-Finder}!\-\_\-hist\-Group\-Key@{\-\_\-hist\-Group\-Key}}
+\index{\-\_\-hist\-Group\-Key@{\-\_\-hist\-Group\-Key}!CALICE::SquareFinder@{C\-A\-L\-I\-C\-E\-::\-Square\-Finder}}
+\subsubsection[{\-\_\-hist\-Group\-Key}]{\setlength{\rightskip}{0pt plus 5cm}{\bf histmgr\-::\-Key\-\_\-t} C\-A\-L\-I\-C\-E\-::\-Square\-Finder\-::\-\_\-hist\-Group\-Key\hspace{0.3cm}{\ttfamily [private]}}\label{classCALICE_1_1SquareFinder_afb4241d90bc37018f6429aea7393fa90}
+
+
+Key for the histogram group. 
+
+
+
+Definition at line 67 of file Square\-Finder.\-hh.
+
+
+
+Referenced by init(), process\-Event(), and Square\-Finder().
+
+\index{C\-A\-L\-I\-C\-E\-::\-Square\-Finder@{C\-A\-L\-I\-C\-E\-::\-Square\-Finder}!\-\_\-n\-Events@{\-\_\-n\-Events}}
+\index{\-\_\-n\-Events@{\-\_\-n\-Events}!CALICE::SquareFinder@{C\-A\-L\-I\-C\-E\-::\-Square\-Finder}}
+\subsubsection[{\-\_\-n\-Events}]{\setlength{\rightskip}{0pt plus 5cm}U\-Int\-\_\-t C\-A\-L\-I\-C\-E\-::\-Square\-Finder\-::\-\_\-n\-Events\hspace{0.3cm}{\ttfamily [protected]}}\label{classCALICE_1_1SquareFinder_a5110e34b92e02a21bf870ff104e59745}
+
+
+Total number of events with hits. 
+
+
+
+Definition at line 62 of file Square\-Finder.\-hh.
+
+
+
+Referenced by init(), and process\-Event().
+
+\index{C\-A\-L\-I\-C\-E\-::\-Square\-Finder@{C\-A\-L\-I\-C\-E\-::\-Square\-Finder}!\-\_\-n\-Insided\-Hits\-Max@{\-\_\-n\-Insided\-Hits\-Max}}
+\index{\-\_\-n\-Insided\-Hits\-Max@{\-\_\-n\-Insided\-Hits\-Max}!CALICE::SquareFinder@{C\-A\-L\-I\-C\-E\-::\-Square\-Finder}}
+\subsubsection[{\-\_\-n\-Insided\-Hits\-Max}]{\setlength{\rightskip}{0pt plus 5cm}Int\-\_\-t C\-A\-L\-I\-C\-E\-::\-Square\-Finder\-::\-\_\-n\-Insided\-Hits\-Max\hspace{0.3cm}{\ttfamily [protected]}}\label{classCALICE_1_1SquareFinder_ab81ff4d872972c06c2d072c9e681b321}
+
+
+maximum number of hits inside the wafer. 
+
+
+
+Definition at line 55 of file Square\-Finder.\-hh.
+
+
+
+Referenced by process\-Event(), and Square\-Finder().
+
+\index{C\-A\-L\-I\-C\-E\-::\-Square\-Finder@{C\-A\-L\-I\-C\-E\-::\-Square\-Finder}!\-\_\-n\-Square\-Events@{\-\_\-n\-Square\-Events}}
+\index{\-\_\-n\-Square\-Events@{\-\_\-n\-Square\-Events}!CALICE::SquareFinder@{C\-A\-L\-I\-C\-E\-::\-Square\-Finder}}
+\subsubsection[{\-\_\-n\-Square\-Events}]{\setlength{\rightskip}{0pt plus 5cm}U\-Int\-\_\-t C\-A\-L\-I\-C\-E\-::\-Square\-Finder\-::\-\_\-n\-Square\-Events\hspace{0.3cm}{\ttfamily [protected]}}\label{classCALICE_1_1SquareFinder_a85c4e30fac259f17c8bbcb789b28d871}
+
+
+Number of square event candidates. 
+
+
+
+Definition at line 61 of file Square\-Finder.\-hh.
+
+
+
+Referenced by init(), and process\-Event().
+
+\index{C\-A\-L\-I\-C\-E\-::\-Square\-Finder@{C\-A\-L\-I\-C\-E\-::\-Square\-Finder}!\-\_\-n\-Square\-Hist\-Key@{\-\_\-n\-Square\-Hist\-Key}}
+\index{\-\_\-n\-Square\-Hist\-Key@{\-\_\-n\-Square\-Hist\-Key}!CALICE::SquareFinder@{C\-A\-L\-I\-C\-E\-::\-Square\-Finder}}
+\subsubsection[{\-\_\-n\-Square\-Hist\-Key}]{\setlength{\rightskip}{0pt plus 5cm}{\bf histmgr\-::\-Key\-\_\-t} C\-A\-L\-I\-C\-E\-::\-Square\-Finder\-::\-\_\-n\-Square\-Hist\-Key\hspace{0.3cm}{\ttfamily [private]}}\label{classCALICE_1_1SquareFinder_a9e2342e2496c5a353748704230eca4f2}
+
+
+Key for the number-\/of-\/squares histogram. 
+
+
+
+Definition at line 70 of file Square\-Finder.\-hh.
+
+
+
+Referenced by init(), and process\-Event().
+
+\index{C\-A\-L\-I\-C\-E\-::\-Square\-Finder@{C\-A\-L\-I\-C\-E\-::\-Square\-Finder}!\-\_\-pad\-Index\-Hist\-Key@{\-\_\-pad\-Index\-Hist\-Key}}
+\index{\-\_\-pad\-Index\-Hist\-Key@{\-\_\-pad\-Index\-Hist\-Key}!CALICE::SquareFinder@{C\-A\-L\-I\-C\-E\-::\-Square\-Finder}}
+\subsubsection[{\-\_\-pad\-Index\-Hist\-Key}]{\setlength{\rightskip}{0pt plus 5cm}{\bf histmgr\-::\-Key\-\_\-t} C\-A\-L\-I\-C\-E\-::\-Square\-Finder\-::\-\_\-pad\-Index\-Hist\-Key\hspace{0.3cm}{\ttfamily [private]}}\label{classCALICE_1_1SquareFinder_a5d5858d456eccaced33fae1e794893d0}
+
+
+Key for the pad index histograms. 
+
+
+
+Definition at line 68 of file Square\-Finder.\-hh.
+
+
+
+Referenced by init(), and process\-Event().
+
+\index{C\-A\-L\-I\-C\-E\-::\-Square\-Finder@{C\-A\-L\-I\-C\-E\-::\-Square\-Finder}!\-\_\-signal\-Hist\-Par@{\-\_\-signal\-Hist\-Par}}
+\index{\-\_\-signal\-Hist\-Par@{\-\_\-signal\-Hist\-Par}!CALICE::SquareFinder@{C\-A\-L\-I\-C\-E\-::\-Square\-Finder}}
+\subsubsection[{\-\_\-signal\-Hist\-Par}]{\setlength{\rightskip}{0pt plus 5cm}Float\-Vec C\-A\-L\-I\-C\-E\-::\-Square\-Finder\-::\-\_\-signal\-Hist\-Par\hspace{0.3cm}{\ttfamily [protected]}}\label{classCALICE_1_1SquareFinder_ad1db2cd08984b84ab549c2631b2e679d}
+
+
+binning of the border and total border signal histograms. 
+
+
+
+Definition at line 59 of file Square\-Finder.\-hh.
+
+
+
+Referenced by init(), and Square\-Finder().
+
+\index{C\-A\-L\-I\-C\-E\-::\-Square\-Finder@{C\-A\-L\-I\-C\-E\-::\-Square\-Finder}!\-\_\-square\-Flag\-Name@{\-\_\-square\-Flag\-Name}}
+\index{\-\_\-square\-Flag\-Name@{\-\_\-square\-Flag\-Name}!CALICE::SquareFinder@{C\-A\-L\-I\-C\-E\-::\-Square\-Finder}}
+\subsubsection[{\-\_\-square\-Flag\-Name}]{\setlength{\rightskip}{0pt plus 5cm}std\-::string C\-A\-L\-I\-C\-E\-::\-Square\-Finder\-::\-\_\-square\-Flag\-Name\hspace{0.3cm}{\ttfamily [protected]}}\label{classCALICE_1_1SquareFinder_a559678746ea01e5a0b4dc1c09901493d}
+
+
+name of the event parameter which flags square events. 
+
+
+
+Definition at line 58 of file Square\-Finder.\-hh.
+
+
+
+Referenced by process\-Event(), and Square\-Finder().
+
+\index{C\-A\-L\-I\-C\-E\-::\-Square\-Finder@{C\-A\-L\-I\-C\-E\-::\-Square\-Finder}!\-\_\-wafer\-Index\-Hist\-Key@{\-\_\-wafer\-Index\-Hist\-Key}}
+\index{\-\_\-wafer\-Index\-Hist\-Key@{\-\_\-wafer\-Index\-Hist\-Key}!CALICE::SquareFinder@{C\-A\-L\-I\-C\-E\-::\-Square\-Finder}}
+\subsubsection[{\-\_\-wafer\-Index\-Hist\-Key}]{\setlength{\rightskip}{0pt plus 5cm}{\bf histmgr\-::\-Key\-\_\-t} C\-A\-L\-I\-C\-E\-::\-Square\-Finder\-::\-\_\-wafer\-Index\-Hist\-Key\hspace{0.3cm}{\ttfamily [private]}}\label{classCALICE_1_1SquareFinder_adaf8926d3a1970aafb20e34852f21cbc}
+
+
+Key for the wafer index histograms. 
+
+
+
+Definition at line 69 of file Square\-Finder.\-hh.
+
+
+
+Referenced by init(), and process\-Event().
+
+
+
+The documentation for this class was generated from the following files\-:\begin{DoxyCompactItemize}
+\item 
+Square\-Finder.\-hh\item 
+Square\-Finder.\-cc\end{DoxyCompactItemize}

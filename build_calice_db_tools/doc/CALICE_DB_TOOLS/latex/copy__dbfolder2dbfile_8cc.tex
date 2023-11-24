@@ -1,0 +1,59 @@
+\section{/nfs/dust/ilc/user/marquezh/\-Calice\-Soft\-\_\-w\-\_\-\-I\-L\-C\-Soft\-\_\-v02-\/03-\/02/calice\-\_\-db\-\_\-tools/src/copy\-\_\-dbfolder2dbfile.cc File Reference}
+\label{copy__dbfolder2dbfile_8cc}\index{/nfs/dust/ilc/user/marquezh/\-Calice\-Soft\-\_\-w\-\_\-\-I\-L\-C\-Soft\-\_\-v02-\/03-\/02/calice\-\_\-db\-\_\-tools/src/copy\-\_\-dbfolder2dbfile.\-cc@{/nfs/dust/ilc/user/marquezh/\-Calice\-Soft\-\_\-w\-\_\-\-I\-L\-C\-Soft\-\_\-v02-\/03-\/02/calice\-\_\-db\-\_\-tools/src/copy\-\_\-dbfolder2dbfile.\-cc}}
+{\ttfamily \#include $<$Conditions\-D\-B/\-Cond\-D\-B\-Exception.\-h$>$}\\*
+{\ttfamily \#include $<$lccd.\-h$>$}\\*
+{\ttfamily \#include $<$lccd/\-D\-B\-Interface.\-hh$>$}\\*
+{\ttfamily \#include $<$lccd/\-Conditions\-Map.\-hh$>$}\\*
+{\ttfamily \#include \char`\"{}Calice\-D\-B\-Init\-Helper.\-hh\char`\"{}}\\*
+{\ttfamily \#include $<$iostream$>$}\\*
+{\ttfamily \#include $<$sstream$>$}\\*
+{\ttfamily \#include $<$stdexcept$>$}\\*
+{\ttfamily \#include $<$cstring$>$}\\*
+\subsection*{Typedefs}
+\begin{DoxyCompactItemize}
+\item 
+typedef unsigned int {\bfseries U\-Int\-\_\-t}\label{copy__dbfolder2dbfile_8cc_a7c1bc4939263cb6c0f48e434d77ac258}
+
+\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+int {\bfseries print\-\_\-help} (const char $\ast$prg\-\_\-name)\label{copy__dbfolder2dbfile_8cc_a170557fe929be51cb9838ca62f0dc01a}
+
+\item 
+int {\bfseries main} (int argc, char $\ast$$\ast$argv)\label{copy__dbfolder2dbfile_8cc_a3c04138a5bfe5d72780bb7e82a18e627}
+
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+This tool copies the content of a database folder (H\-E\-A\-D or a specific tag) to a D\-B\-File (format\-: .slcio). The output file name is generated automatically.
+
+Usage\-:
+
+
+\begin{DoxyCode}
+copy\_dbfolder2dbfile [--help] [--folder <foldername>] [--tag <tagname>]
+\end{DoxyCode}
+
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em $<$foldername$>$} & source database folder \\
+\hline
+\mbox{\tt in}  & {\em $<$tagname$>$} & (optional) choose specific folder tag (use H\-E\-A\-D if left empty)\\
+\hline
+\end{DoxyParams}
+\begin{DoxySeeAlso}{See Also}
+\doxyref{copy\-\_\-dbfolder2dump.\-cc}{p.}{copy__dbfolder2dump_8cc} 
+
+\doxyref{copy\-\_\-dbfolder2simplefile.\-cc}{p.}{copy__dbfolder2simplefile_8cc} 
+
+\doxyref{copy\-\_\-dump2dbfolder.\-cc}{p.}{copy__dump2dbfolder_8cc} 
+
+\doxyref{copy\-\_\-file2dbfolder.\-cc}{p.}{copy__file2dbfolder_8cc} 
+\end{DoxySeeAlso}
+
+
+Definition in file {\bf copy\-\_\-dbfolder2dbfile.\-cc}.
+

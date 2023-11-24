@@ -1,0 +1,143 @@
+\section{C\-A\-L\-I\-C\-E\-:\-:Ahc\-Simple\-Temp\-Provider Class Reference}
+\label{classCALICE_1_1AhcSimpleTempProvider}\index{C\-A\-L\-I\-C\-E\-::\-Ahc\-Simple\-Temp\-Provider@{C\-A\-L\-I\-C\-E\-::\-Ahc\-Simple\-Temp\-Provider}}
+
+
+This is a very simple temperature provider for the ahcal.  
+
+
+
+
+{\ttfamily \#include $<$Ahc\-Simple\-Temp\-Provider.\-hh$>$}
+
+Inheritance diagram for C\-A\-L\-I\-C\-E\-:\-:Ahc\-Simple\-Temp\-Provider\-:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classCALICE_1_1AhcSimpleTempProvider}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+virtual float {\bf get\-Cell\-Temp} (int module, int chip, int chan)
+\begin{DoxyCompactList}\small\item\em Returns the temperature for the cell in the specified module connected to the given chip and channel. \end{DoxyCompactList}\item 
+virtual float {\bf get\-Cell\-Temp\-Error} (int module, int chip, int chan)\label{classCALICE_1_1AhcSimpleTempProvider_a2d3cd7fd1a3f144f62991e39b44d016f}
+
+\begin{DoxyCompactList}\small\item\em Returns the error on the temperature for the cell in the specified module connected to the given chip and channel. \end{DoxyCompactList}\item 
+virtual float {\bf get\-Avg\-Temp} ()\label{classCALICE_1_1AhcSimpleTempProvider_ae2055a46cab875cb672f33bf6395b3b7}
+
+\begin{DoxyCompactList}\small\item\em Returns the average calorimeter temperature. \end{DoxyCompactList}\item 
+virtual float {\bf get\-Avg\-Module\-Temp} (unsigned module)\label{classCALICE_1_1AhcSimpleTempProvider_abff6b07a15d952dc1f90a6e41500dabc}
+
+\begin{DoxyCompactList}\small\item\em Returns the average module temperature. \end{DoxyCompactList}\item 
+float {\bf get\-Sensor\-Temp} (int module, int sensor)\label{classCALICE_1_1AhcSimpleTempProvider_ab61d13863930498a336476d9ac049b2e}
+
+\begin{DoxyCompactList}\small\item\em Return the temperature for the specified module and sensor. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+virtual void {\bf apply\-Correction} ()
+\begin{DoxyCompactList}\small\item\em This function applies the correction to the internal 'cache' for the temperature values from the five sensors. \end{DoxyCompactList}\item 
+bool {\bf is\-Bad\-Value} (float t)\label{classCALICE_1_1AhcSimpleTempProvider_ab3f94a954ed71d269997f0b2cde87941}
+
+\begin{DoxyCompactList}\small\item\em Returns true if argument value is outside the sanity range. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+int {\bf get\-Sensor} (int chip, int chan)\label{classCALICE_1_1AhcSimpleTempProvider_ad000dcb24a383043a9c72b93d2f05836}
+
+\begin{DoxyCompactList}\small\item\em Returns the closest sensor to cell connected to chip, chan according to D\-E\-S\-Y-\/\-T\-H\-E\-S\-I\-S-\/2008-\/050. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+float {\bfseries \-\_\-calo\-Mean\-Temp}\label{classCALICE_1_1AhcSimpleTempProvider_a254fa40b19cdc8b1c09a04b201afff2f}
+
+\item 
+float {\bfseries \-\_\-calo\-Mean\-Temp\-R\-M\-S}\label{classCALICE_1_1AhcSimpleTempProvider_abe15d788019a2a354f8060dbfb9ef6e3}
+
+\item 
+int {\bfseries \-\_\-calo\-Mean\-Count}\label{classCALICE_1_1AhcSimpleTempProvider_a25cd84b21c382d4b7a2fc377588244b9}
+
+\item 
+std\-::vector$<$ float $>$ {\bfseries \-\_\-module\-Mean\-Temp}\label{classCALICE_1_1AhcSimpleTempProvider_a4d9109bd33c31ae2b06497ff73aeeb6e}
+
+\item 
+std\-::vector$<$ float $>$ {\bfseries \-\_\-module\-Mean\-Temp\-R\-M\-S}\label{classCALICE_1_1AhcSimpleTempProvider_a7573f43d01d8a5563367f15527ed711e}
+
+\item 
+std\-::vector$<$ int $>$ {\bfseries \-\_\-module\-Mean\-Count}\label{classCALICE_1_1AhcSimpleTempProvider_ad3c12b5824a629e59d8dcc4ff4869684}
+
+\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Detailed Description}
+This is a very simple temperature provider for the ahcal. 
+
+What it does\-:
+\begin{DoxyItemize}
+\item the calibration set is applied
+\item if a temperature sensor gives a value outside the defined sanity range the value is replaced by the average of the four sensors in that module
+\item for each cell the temperature value from the 'closest' sensor, according to the table 3.\-1, D\-E\-S\-Y-\/\-T\-H\-E\-S\-I\-S-\/2008-\/050 is returned
+\end{DoxyItemize}
+
+Also see the documentation for the several functions for more detailed information. 
+
+Definition at line 25 of file Ahc\-Simple\-Temp\-Provider.\-hh.
+
+
+
+\subsection{Member Function Documentation}
+\index{C\-A\-L\-I\-C\-E\-::\-Ahc\-Simple\-Temp\-Provider@{C\-A\-L\-I\-C\-E\-::\-Ahc\-Simple\-Temp\-Provider}!apply\-Correction@{apply\-Correction}}
+\index{apply\-Correction@{apply\-Correction}!CALICE::AhcSimpleTempProvider@{C\-A\-L\-I\-C\-E\-::\-Ahc\-Simple\-Temp\-Provider}}
+\subsubsection[{apply\-Correction}]{\setlength{\rightskip}{0pt plus 5cm}void C\-A\-L\-I\-C\-E\-::\-Ahc\-Simple\-Temp\-Provider\-::apply\-Correction (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}, {\ttfamily [virtual]}}\label{classCALICE_1_1AhcSimpleTempProvider_a465f433cd5082a1c3224262e179604e1}
+
+
+This function applies the correction to the internal 'cache' for the temperature values from the five sensors. 
+
+It should be called everytime a new collection of temperatures or calibrations have been at set or the sanity range has been changed, i.\-e. if one of new\-Sro\-Mod\-Col, new\-Calib\-Col or new\-Sanity\-Range is true. This is done in \doxyref{get\-Cell\-Temp()}{p.}{classCALICE_1_1AhcSimpleTempProvider_aff9186dfdab4801e41540f1d63428e3f} and \doxyref{get\-Cell\-Temp\-Error()}{p.}{classCALICE_1_1AhcSimpleTempProvider_a2d3cd7fd1a3f144f62991e39b44d016f}. 
+
+Definition at line 82 of file Ahc\-Simple\-Temp\-Provider.\-cc.
+
+
+
+References C\-A\-L\-I\-C\-E\-::\-Ahc\-Temp\-Provider\-::\-\_\-sro\-Mod\-Col, C\-A\-L\-I\-C\-E\-::\-Scint\-Calo\-Slow\-Readout\-Mod\-Block\-::get\-Module\-Number(), is\-Bad\-Value(), C\-A\-L\-I\-C\-E\-::\-Ahc\-Temp\-Provider\-::new\-Calib\-Col, C\-A\-L\-I\-C\-E\-::\-Ahc\-Temp\-Provider\-::new\-Sanity\-Range, C\-A\-L\-I\-C\-E\-::\-Ahc\-Temp\-Provider\-::new\-Sro\-Mod\-Col, C\-A\-L\-I\-C\-E\-::\-Ahc\-Temp\-Provider\-::sensor\-Temp, C\-A\-L\-I\-C\-E\-::\-Ahc\-Temp\-Provider\-::sensor\-Temp\-Error, and C\-A\-L\-I\-C\-E\-::\-Ahc\-Temp\-Provider\-::update\-Cache().
+
+
+
+Referenced by get\-Avg\-Module\-Temp(), get\-Avg\-Temp(), get\-Cell\-Temp(), get\-Cell\-Temp\-Error(), and get\-Sensor\-Temp().
+
+\index{C\-A\-L\-I\-C\-E\-::\-Ahc\-Simple\-Temp\-Provider@{C\-A\-L\-I\-C\-E\-::\-Ahc\-Simple\-Temp\-Provider}!get\-Cell\-Temp@{get\-Cell\-Temp}}
+\index{get\-Cell\-Temp@{get\-Cell\-Temp}!CALICE::AhcSimpleTempProvider@{C\-A\-L\-I\-C\-E\-::\-Ahc\-Simple\-Temp\-Provider}}
+\subsubsection[{get\-Cell\-Temp}]{\setlength{\rightskip}{0pt plus 5cm}float C\-A\-L\-I\-C\-E\-::\-Ahc\-Simple\-Temp\-Provider\-::get\-Cell\-Temp (
+\begin{DoxyParamCaption}
+\item[{int}]{module, }
+\item[{int}]{chip, }
+\item[{int}]{chan}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}\label{classCALICE_1_1AhcSimpleTempProvider_aff9186dfdab4801e41540f1d63428e3f}
+
+
+Returns the temperature for the cell in the specified module connected to the given chip and channel. 
+
+For each cell the temperature value from the 'closest' sensor, according to the table 3.\-1, D\-E\-S\-Y-\/\-T\-H\-E\-S\-I\-S-\/2008-\/050 is returned. 
+
+Implements {\bf C\-A\-L\-I\-C\-E\-::\-Ahc\-Temp\-Provider} \doxyref{}{p.}{classCALICE_1_1AhcTempProvider_aa12c75d45d7ade54316dd113a6bab2d1}.
+
+
+
+Definition at line 6 of file Ahc\-Simple\-Temp\-Provider.\-cc.
+
+
+
+References apply\-Correction(), get\-Sensor(), C\-A\-L\-I\-C\-E\-::\-Ahc\-Temp\-Provider\-::new\-Calib\-Col, C\-A\-L\-I\-C\-E\-::\-Ahc\-Temp\-Provider\-::new\-Sanity\-Range, C\-A\-L\-I\-C\-E\-::\-Ahc\-Temp\-Provider\-::new\-Sro\-Mod\-Col, and C\-A\-L\-I\-C\-E\-::\-Ahc\-Temp\-Provider\-::sensor\-Temp.
+
+
+
+The documentation for this class was generated from the following files\-:\begin{DoxyCompactItemize}
+\item 
+Ahc\-Simple\-Temp\-Provider.\-hh\item 
+Ahc\-Simple\-Temp\-Provider.\-cc\end{DoxyCompactItemize}

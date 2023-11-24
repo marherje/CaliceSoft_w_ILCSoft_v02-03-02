@@ -1,0 +1,1910 @@
+\section{C\-A\-L\-I\-C\-E Namespace Reference}
+\label{namespaceCALICE}\index{C\-A\-L\-I\-C\-E@{C\-A\-L\-I\-C\-E}}
+
+
+Store strings in L\-C\-Generic\-Objects.  
+
+
+\subsection*{Data Structures}
+\begin{DoxyCompactItemize}
+\item 
+class {\bf Acquisition\-Data}
+\begin{DoxyCompactList}\small\item\em Class to store acquisition data info, i.\-e. \end{DoxyCompactList}\item 
+class {\bf Adc\-Block}
+\begin{DoxyCompactList}\small\item\em Class for the A\-D\-C Data as acquired by the \doxyref{C\-A\-L\-I\-C\-E}{p.}{namespaceCALICE} D\-A\-Q. \end{DoxyCompactList}\item 
+class {\bf Ahc2\-Calibrations}
+\begin{DoxyCompactList}\small\item\em storing all informations necessary to calibrate a H\-B\-U Si\-P\-M read channel \end{DoxyCompactList}\item 
+class {\bf Ahc2\-Calibration\-Status\-Bits}
+\begin{DoxyCompactList}\small\item\em Bit set to describe the Ahc2 Calibration Status. \end{DoxyCompactList}\item 
+class {\bf Ahc2\-Hardware\-Connection}
+\begin{DoxyCompactList}\small\item\em Class to store int values for Hardware\-Connection plus integer cell index in L\-C\-I\-O. \end{DoxyCompactList}\item 
+class {\bf Ahc2\-Sat\-Corr}
+\item 
+class {\bf Ahc2\-Tile\-Index}
+\begin{DoxyCompactList}\small\item\em Encodes/decodes hardware channel information for the Large \doxyref{C\-A\-L\-I\-C\-E}{p.}{namespaceCALICE} A\-H\-C\-A\-L prototype. \end{DoxyCompactList}\item 
+class {\bf Ahc\-Amplitude}
+\item 
+class {\bf Ahc\-Cern2010\-Temp\-Provider}
+\begin{DoxyCompactList}\small\item\em This is a temperature provider for the A\-H\-C\-A\-L.\-based on the studies of the temperature profiles from C\-E\-R\-N 2010 data. \end{DoxyCompactList}\item 
+class {\bf Ahc\-Conditions}
+\begin{DoxyCompactList}\small\item\em Class for the \doxyref{C\-A\-L\-I\-C\-E}{p.}{namespaceCALICE} Ahcal conditions information during the reconstruction. \end{DoxyCompactList}\item 
+class {\bf Ahc\-Median\-Filter\-Temp\-Provider}
+\begin{DoxyCompactList}\small\item\em This is a very simple temperature provider for the ahcal. \end{DoxyCompactList}\item 
+class {\bf Ahc\-Simple\-Temp\-Provider}
+\begin{DoxyCompactList}\small\item\em This is a very simple temperature provider for the ahcal. \end{DoxyCompactList}\item 
+class {\bf Ahc\-Slow\-Readout\-Block}
+\begin{DoxyCompactList}\small\item\em Interface Class to access the Ahc\-Slow\-Configuration Data For the time being we treat only the movable stage positions Update\-: 6/7/08 Added z and rotated position of stage (Maintain backward compatibility) \end{DoxyCompactList}\item 
+class {\bf Ahc\-Slow\-Readout\-Mod\-Block}
+\begin{DoxyCompactList}\small\item\em Interface Class to access the Ahc\-Slow\-Readout Data Here we handle ahc voltages, temperatures et al. \end{DoxyCompactList}\item 
+class {\bf Ahc\-Slow\-Readout\-Mod\-Mapper}
+\begin{DoxyCompactList}\small\item\em Class to correct the mapping of Ahc\-Slow\-Readout\-Mod\-Block-\/classes. \end{DoxyCompactList}\item 
+class {\bf Ahc\-Slow\-Readout\-Mod\-Mapping}
+\begin{DoxyCompactList}\small\item\em Class to store the mapping corrections for the \doxyref{Ahc\-Slow\-Readout\-Mod\-Block}{p.}{classCALICE_1_1AhcSlowReadoutModBlock}. \end{DoxyCompactList}\item 
+class {\bf Ahc\-Temp\-Provider}
+\begin{DoxyCompactList}\small\item\em This is an abstract class defining an interface to access the temperatures in single A\-H\-C\-A\-L cells. \end{DoxyCompactList}\item 
+class {\bf Ahc\-Temp\-Sensor\-Index}
+\begin{DoxyCompactList}\small\item\em \doxyref{Ahc\-Temp\-Sensor\-Index}{p.}{classCALICE_1_1AhcTempSensorIndex} represents and Ahcal Temperature Sensor Index So what? it encodes (modules,sensor) into an integer. \end{DoxyCompactList}\item 
+class {\bf Ahc\-Vfe\-Configuration\-Block}
+\begin{DoxyCompactList}\small\item\em Interface Class to access the Ahc\-Vfe\-Configuration\-Data. \end{DoxyCompactList}\item 
+class {\bf Alignment}
+\begin{DoxyCompactList}\small\item\em Class to comunicate/handle the translation into unique layer/cell ids and 3\-D spacial coordinates. \end{DoxyCompactList}\item 
+class {\bf Beam\-Meta\-Data}
+\item 
+class {\bf Beam\-Momentum}
+\begin{DoxyCompactList}\small\item\em Class to claculate the beam momentum and momentum spread from beamline slow readout data. \end{DoxyCompactList}\item 
+class {\bf Beam\-Momentum\-Exception}
+\begin{DoxyCompactList}\small\item\em excpetion during beam momentum calculation \end{DoxyCompactList}\item 
+class {\bf Beam\-Parameter}
+\begin{DoxyCompactList}\small\item\em Define the experimental setup\-: beam energy, position, angle and detector position, angle. \end{DoxyCompactList}\item 
+class {\bf Beam\-Parameter\-Exception}
+\begin{DoxyCompactList}\small\item\em This class handles beam parameters which have been written by hand into the database. \end{DoxyCompactList}\item 
+class {\bf Be\-Event}
+\begin{DoxyCompactList}\small\item\em Stores the trigger history (i.\-e. \end{DoxyCompactList}\item 
+class {\bf Be\-Trg\-Conf}
+\begin{DoxyCompactList}\small\item\em Stores the configuration data of the trigger. \end{DoxyCompactList}\item 
+class {\bf Be\-Trg\-Event}
+\begin{DoxyCompactList}\small\item\em Stores the trigger event data. \end{DoxyCompactList}\item 
+class {\bf Be\-Trg\-Poll\-Data}
+\begin{DoxyCompactList}\small\item\em Class to store info on trigger polling, This is useful to detect a softtrigger among e.\-g. \end{DoxyCompactList}\item 
+class {\bf Binned\-Vector}
+\begin{DoxyCompactList}\small\item\em Template class to store data via a linear binned keys. \end{DoxyCompactList}\item 
+class {\bf Bit\-Set}
+\begin{DoxyCompactList}\small\item\em Base class for easy definition of bit sets. \end{DoxyCompactList}\item 
+class {\bf Bml\-Caen1290\-Configuration\-Block}
+\item 
+class {\bf Bml\-Caen767\-Configuration\-Block}
+\begin{DoxyCompactList}\small\item\em Class to store configuration data of the 767 Caen T\-D\-C obsolete as of 31/10/10, replaced by \doxyref{Bml\-Caen\-Configuration\-Block}{p.}{classCALICE_1_1BmlCaenConfigurationBlock}, kept for backward compatibility of the code. \end{DoxyCompactList}\item 
+class {\bf Bml\-Caen767\-Readout\-Configuration\-Block}
+\begin{DoxyCompactList}\small\item\em Stores the configuration of the Caen767 T\-D\-C into the database At the moment I am writing this class I don't know whether they'll serve for something but it is a small uncomplicated class, so here we go. \end{DoxyCompactList}\item 
+class {\bf Bml\-Caen\-Configuration\-Block}
+\begin{DoxyCompactList}\small\item\em Class to store configuration data of the Caen T\-D\-Cs (767, 1290) Replaces Bml\-Caen767\-Configuration\-Data. \end{DoxyCompactList}\item 
+class {\bf Bml\-Event\-Data}
+\begin{DoxyCompactList}\small\item\em Class to store the \doxyref{Bml\-Event\-Data}{p.}{classCALICE_1_1BmlEventData}. \end{DoxyCompactList}\item 
+class {\bf Bml\-Event\-Data\-Sup}
+\begin{DoxyCompactList}\small\item\em Class to store supplementary \doxyref{Bml\-Event\-Data}{p.}{classCALICE_1_1BmlEventData}. \end{DoxyCompactList}\item 
+class {\bf Bml\-Slow\-Run\-Data\-Block}
+\begin{DoxyCompactList}\small\item\em Interface Class to access the Bml\-Slow\-Run Data Here we handle ahc voltages, temperatures et al. \end{DoxyCompactList}\item 
+class {\bf Board\-I\-D}
+\begin{DoxyCompactList}\small\item\em Create a packed board id of crate, slot, component numbers and the label. \end{DoxyCompactList}\item 
+class {\bf Calibration\-Writer}
+\begin{DoxyCompactList}\small\item\em Class which handles the module wise storage of conditions data and the access to the lccd framework (i.\-e. \end{DoxyCompactList}\item 
+class {\bf Calice\-Conditions}
+\begin{DoxyCompactList}\small\item\em Class for the \doxyref{C\-A\-L\-I\-C\-E}{p.}{namespaceCALICE} Ahcal conditions information during the reconstruction. \end{DoxyCompactList}\item 
+class {\bf Calice\-Elog\-Info}
+\begin{DoxyCompactList}\small\item\em Implementation of the e-\/log information. \end{DoxyCompactList}\item 
+class {\bf Wrong\-Data\-Format\-Exception}
+\begin{DoxyCompactList}\small\item\em exception to be thrown when the data type in a parameter is wrong \end{DoxyCompactList}\item 
+class {\bf Bad\-Data\-Exception}
+\begin{DoxyCompactList}\small\item\em exception to be thrown when data leads to a conflict \end{DoxyCompactList}\item 
+class {\bf Calice\-Hit}
+\begin{DoxyCompactList}\small\item\em Class for the \doxyref{C\-A\-L\-I\-C\-E}{p.}{namespaceCALICE} Hcal calorimeter hit information during the reconstruction. \end{DoxyCompactList}\item 
+class {\bf Cell\-Index}
+\begin{DoxyCompactList}\small\item\em The Mokka conform cell index. \end{DoxyCompactList}\item 
+class {\bf Cell\-Mapping\-Hcal}
+\begin{DoxyCompactList}\small\item\em Example for a simple mapping class based on the L\-C\-Fixed\-Object template. \end{DoxyCompactList}\item 
+class {\bf Cell\-Quality}
+\begin{DoxyCompactList}\small\item\em L\-C\-I\-O contions data class to describe the cell quality. \end{DoxyCompactList}\item 
+class {\bf Cluster\-Shapes\-Typed}
+\item 
+class {\bf Conditions\-Change\-Delegator}
+\begin{DoxyCompactList}\small\item\em Listens for conditions data changes and delegates the information to a class. \end{DoxyCompactList}\item 
+class {\bf Conditions\-Data\-Write\-Handler}
+\begin{DoxyCompactList}\small\item\em Handler of conditions data changes which writes the replaced collections to a conditions data base. \end{DoxyCompactList}\item 
+class {\bf Conn\-Cell\-Mapping\-Hcal}
+\begin{DoxyCompactList}\small\item\em Mapping class based on the L\-C\-Fixed\-Object template. \end{DoxyCompactList}\item 
+class {\bf D\-A\-Qconnection}
+\begin{DoxyCompactList}\small\item\em Class to store the D\-A\-Q address of a singel channel. \end{DoxyCompactList}\item 
+class {\bf Daq\-Run\-Summary\-Block}
+\begin{DoxyCompactList}\small\item\em Stores a summary of a run in terms of Number of Congfiuration Changes, Slow Readouts, Acquisitions and Number of Events in additions it stores the time of a run and for convenience the run number. \end{DoxyCompactList}\item 
+class {\bf Daq\-Type\-Data\-Block}
+\begin{DoxyCompactList}\small\item\em Base Class to handle all daq types (for the time being apart from the actual crc data) This base class constains the functions to store the data The actual handling of the data is left to dedicated classes which have to derive from this class. \end{DoxyCompactList}\item 
+class {\bf D\-C\-Index}
+\item 
+class {\bf Dead\-Noise\-Constants}
+\begin{DoxyCompactList}\small\item\em Class to store the results of a selection of dead or noisy cells for a certain chip/channel for a fixed module\-I\-D. \end{DoxyCompactList}\item 
+class {\bf Detector\-Transformation}
+\begin{DoxyCompactList}\small\item\em Define the experimental setup\-: beam energy, position, angle and detector position, angle. \end{DoxyCompactList}\item 
+class {\bf Dhc\-Raw\-Chip\-Content}
+\begin{DoxyCompactList}\small\item\em Simple class which stores the dhcal chip content Note that the dchal as it is now delivers the same time stamp for {\itshape all} 64 channels served by a chip. \end{DoxyCompactList}\item 
+class {\bf Dhc\-Readout\-Conf\-Block}
+\begin{DoxyCompactList}\small\item\em Class to interface the configuration of the Dhcal fes. \end{DoxyCompactList}\item 
+class {\bf Dif\-Trigger}
+\begin{DoxyCompactList}\small\item\em Simple class which stores the trigger counter retrieved from the D\-I\-F cards. \end{DoxyCompactList}\item 
+class {\bf Drift\-Chamber\-Parameter}
+\begin{DoxyCompactList}\small\item\em Parameters for one drift chamber. \end{DoxyCompactList}\item 
+class {\bf Ecal\-Module\-Calibration}
+\begin{DoxyCompactList}\small\item\em Calibration constants for the Calice E\-C\-A\-L detector modules. \end{DoxyCompactList}\item 
+class {\bf Emc\-Stage\-Data\-Block}
+\begin{DoxyCompactList}\small\item\em Stores information about the Emc stage Here we need to duplicate a lot of code already written by Paul since we cannot top the 'intelligence' which is introduced already there. \end{DoxyCompactList}\item 
+class {\bf Encoding\-String\-Helper}
+\begin{DoxyCompactList}\small\item\em Utility class to get the field description according to an lcio Bit\-Field64. \end{DoxyCompactList}\item 
+class {\bf Error\-Bits}
+\begin{DoxyCompactList}\small\item\em Helper class to query or set the event errors. \end{DoxyCompactList}\item 
+class {\bf E\-U\-D\-A\-Q\-Block}
+\begin{DoxyCompactList}\small\item\em Class for the S\-L\-C\-I\-O E\-U\-D\-A\-Q Data as acquired by the E\-U\-D\-A\-Q system. \end{DoxyCompactList}\item 
+class {\bf E\-U\-D\-A\-Q\-Temp\-Sensor\-Block}
+\begin{DoxyCompactList}\small\item\em Class for the temperature sensor data as acquired by the A\-H\-C\-A\-L E\-U\-D\-A\-Q. \end{DoxyCompactList}\item 
+class {\bf Event\-Header}
+\begin{DoxyCompactList}\small\item\em Class to store event header info, i.\-e. \end{DoxyCompactList}\item 
+class {\bf Event\-Variables}
+\item 
+class {\bf Experimental\-Setup}
+\begin{DoxyCompactList}\small\item\em Define the experimental setup\-: beam energy, position, angle and detector position, angle. \end{DoxyCompactList}\item 
+struct {\bf Fast\-Calice\-Hit\-Memory\-Pool}
+\item 
+class {\bf Fast\-Calice\-Hit}
+\begin{DoxyCompactList}\small\item\em Using Raw\-Calorimeter\-Hits as Fast\-Calice\-Hits. \end{DoxyCompactList}\item 
+class {\bf Fe\-Configuration\-Block}
+\begin{DoxyCompactList}\small\item\em Stores the configuration data of the front-\/end of one C\-E\-R\-C board. \end{DoxyCompactList}\item 
+class {\bf Fe\-Event}
+\begin{DoxyCompactList}\small\item\em Stores the trigger history (i.\-e. \end{DoxyCompactList}\item 
+class {\bf Fe\-Info}
+\begin{DoxyCompactList}\small\item\em Stores the configuration data of the front-\/end of one C\-E\-R\-C board. \end{DoxyCompactList}\item 
+class {\bf Fe\-Trg\-Data}
+\begin{DoxyCompactList}\small\item\em Stores the trigger history (i.\-e. \end{DoxyCompactList}\item 
+class {\bf Gain\-Constants}
+\begin{DoxyCompactList}\small\item\em Class to store the results of a Gain calibration measurement, i.\-e. \end{DoxyCompactList}\item 
+class {\bf Hcal\-Boards\-Conn}
+\begin{DoxyCompactList}\small\item\em Mapping class based on the L\-C\-Fixed\-Object template. \end{DoxyCompactList}\item 
+class {\bf Hcal\-Cass\-Vs\-Crc}
+\begin{DoxyCompactList}\small\item\em Mapping class based on the L\-C\-Fixed\-Object template that relates hcal-\/cassette $<$-\/$>$ crc board. \end{DoxyCompactList}\item 
+class {\bf Hcal\-Cell\-Index}
+\begin{DoxyCompactList}\small\item\em like \doxyref{C\-A\-L\-I\-C\-E\-::\-Cell\-Index}{p.}{classCALICE_1_1CellIndex}, but with H\-C\-A\-L related funciton names \end{DoxyCompactList}\item 
+class {\bf Hcal\-Module\-Index\-Reverse\-Lookup}
+\begin{DoxyCompactList}\small\item\em Class to simplify the lookup geometrical index to hardware index. \end{DoxyCompactList}\item 
+class {\bf Hcal\-Tile\-Index}
+\begin{DoxyCompactList}\small\item\em Encodes/decodes hardware channel information for the \doxyref{C\-A\-L\-I\-C\-E}{p.}{namespaceCALICE} A\-H\-C\-A\-L prototype. \end{DoxyCompactList}\item 
+class {\bf Hit\-Variables}
+\item 
+class {\bf Hodoscope\-Block}
+\begin{DoxyCompactList}\small\item\em Class for the S\-L\-C\-I\-O hododscope as acquired by the E\-U\-D\-A\-Q system. \end{DoxyCompactList}\item 
+class {\bf Hodoscope\-Event\-Data\-Block}
+\begin{DoxyCompactList}\small\item\em Interface class to the (L\-A\-L) Hodoscope data. \end{DoxyCompactList}\item 
+class {\bf Inter\-Constants}
+\begin{DoxyCompactList}\small\item\em Class to store the results of a inter calibration measurement, i.\-e. \end{DoxyCompactList}\item 
+class {\bf Labview\-Block2}
+\begin{DoxyCompactList}\small\item\em Class for the Labview Data as acquired by the A\-H\-C\-A\-L Labview. \end{DoxyCompactList}\item 
+class {\bf Layer\-Variables}
+\item 
+class {\bf L\-C\-Generic\-Object\-Impl\-Cloner}
+\begin{DoxyCompactList}\small\item\em Utility class to clone a L\-C\-Generic\-Object this is needed is needed since during the writing of \doxyref{C\-A\-L\-I\-C\-E}{p.}{namespaceCALICE} conditions data a full collection has to be memorized until a new set of this datatype appears. \end{DoxyCompactList}\item 
+class {\bf L\-C\-Generic\-Object\-Impl\-Ext}
+\begin{DoxyCompactList}\small\item\em Extends functionality of the L\-C\-Generic\-Object\-Impl Class It simply adds a new constructor to the L\-C\-Generic\-Object Class such that we can construct an interface class around without being restricted by the L\-C\-Fixed\-Object It uses an instance of L\-C\-Generic\-Object\-Impl that holds the data, thus there is no overhead when the data is read from a database or file for copying it to some local structure (Decorator pattern). \end{DoxyCompactList}\item 
+class {\bf L\-C\-Hcal\-Calibration\-Object}
+\begin{DoxyCompactList}\small\item\em Object to store information about arbitrary cell wise calibration of the H\-C\-A\-L in L\-C Objects. \end{DoxyCompactList}\item 
+class {\bf L\-C\-Hcal\-Calibration\-Object2\-D}
+\begin{DoxyCompactList}\small\item\em The results of the calibrations done by \doxyref{L\-C\-Hcal\-Calibration\-Object2\-D}{p.}{classCALICE_1_1LCHcalCalibrationObject2D} can depend on two sets of input values (like saturation correction) \end{DoxyCompactList}\item 
+class {\bf Linear\-Fit\-Compound}
+\begin{DoxyCompactList}\small\item\em Class to store the constant of a linear fit within the lcio framework. \end{DoxyCompactList}\item 
+class {\bf Linear\-Fit\-Constant}
+\begin{DoxyCompactList}\small\item\em Class to store the constant of a linear fit within the lcio framework. \end{DoxyCompactList}\item 
+class {\bf Linear\-Fit\-Result}
+\begin{DoxyCompactList}\small\item\em Class to store the result of a linear fit within the lcio framework. \end{DoxyCompactList}\item 
+class {\bf Linear\-Fit\-Slope}
+\begin{DoxyCompactList}\small\item\em Class to store the slope of a linear fit within the lcio framework. \end{DoxyCompactList}\item 
+class {\bf Mapping\-And\-Alignment}
+\begin{DoxyCompactList}\small\item\em Class to comunicate/handle the translation into unique layer/cell ids and 3\-D spacial coordinates. \end{DoxyCompactList}\item 
+class {\bf Merged\-Hit\-Origin}
+\begin{DoxyCompactList}\small\item\em Class for indicating origin of hits in merged event. \end{DoxyCompactList}\item 
+class {\bf M\-I\-P\-Constants}
+\begin{DoxyCompactList}\small\item\em Class to store the results of a M\-I\-P calibration measurement, i.\-e. \end{DoxyCompactList}\item 
+class {\bf Module\-Connection}
+\begin{DoxyCompactList}\small\item\em Defines the electric connection of a module. \end{DoxyCompactList}\item 
+class {\bf Module\-Description}
+\begin{DoxyCompactList}\small\item\em Description of Calice (E\-C\-A\-L) detector modules. \end{DoxyCompactList}\item 
+class {\bf Module\-Location}
+\begin{DoxyCompactList}\small\item\em Define possible positions of modules. \end{DoxyCompactList}\item 
+class {\bf Multiple\-Conditions\-Change\-Delegator}
+\begin{DoxyCompactList}\small\item\em Listens for conditions data changes and delegates the information to a class. \end{DoxyCompactList}\item 
+class {\bf N\-Vector\-\_\-t}
+\begin{DoxyCompactList}\small\item\em Simple n-\/dimensional vector (size of the vector is defined at compile time) Provides methods to add and subtract vectors or multiply and divide by scalars. \end{DoxyCompactList}\item 
+class {\bf Pedestal\-Constants}
+\begin{DoxyCompactList}\small\item\em Class to store the results of a pedestal measurement, i.\-e. \end{DoxyCompactList}\item 
+class {\bf Read\-Out\-Configuration\-Block}
+\begin{DoxyCompactList}\small\item\em Stores the general readout configuration. \end{DoxyCompactList}\item 
+class {\bf Run\-Location}
+\begin{DoxyCompactList}\small\item\em run and the generic run type i.\-e. \end{DoxyCompactList}\item 
+class {\bf Run\-Location\-Whizard}
+\begin{DoxyCompactList}\small\item\em Simple interface class to retrieve information about the location of a run It accesses the runlocation folder in the database. \end{DoxyCompactList}\item 
+class {\bf Run\-Offset\-Value}
+\begin{DoxyCompactList}\small\item\em Class to store float value, its error, and status flag plus integer index in L\-C\-I\-O. \end{DoxyCompactList}\item 
+class {\bf Run\-Time\-Conditions\-Handler}
+\begin{DoxyCompactList}\small\item\em Implementation of Conditions\-Handler\-Base that can be used to propagate conditions data that were generated at runtime. \end{DoxyCompactList}\item 
+class {\bf Run\-Time\-Info}
+\begin{DoxyCompactList}\small\item\em Simple class which holds the start and stop times of runs. \end{DoxyCompactList}\item 
+class {\bf Run\-Time\-Whizard}
+\begin{DoxyCompactList}\small\item\em Simple interface class to retrieve the run start and stop times by means of the runnumber. \end{DoxyCompactList}\item 
+class {\bf Sat\-Corr\-Function}
+\begin{DoxyCompactList}\small\item\em interface for a function to correct (or apply) the Si\-P\-M saturation \end{DoxyCompactList}\item 
+class {\bf Sat\-Corr\-Itep}
+\item 
+class {\bf Sat\-Corr\-Itep\-Cut\-Off}
+\item 
+class {\bf Saturation\-Constants}
+\begin{DoxyCompactList}\small\item\em Class to store the parametrisation of the saturation curve (no error yet) for a certain chip/channel for a fixed module\-I\-D. \end{DoxyCompactList}\item 
+class {\bf Saturation\-Parameters}
+\begin{DoxyCompactList}\small\item\em Class to store float values for Saturation Correction Curves plus integer cell index in L\-C\-I\-O. \end{DoxyCompactList}\item 
+class {\bf Sc\-E\-C\-A\-L\-Gainfit}
+\item 
+class {\bf Sc\-E\-C\-A\-L\-Intercalib}
+\item 
+class {\bf Sc\-E\-C\-A\-L\-Mapping}
+\item 
+class {\bf Sc\-E\-C\-A\-L\-M\-I\-Pfit}
+\begin{DoxyCompactList}\small\item\em Class to store the constant of a Sc\-E\-C\-A\-L M\-I\-P fit within the lcio framework. \end{DoxyCompactList}\item 
+class {\bf Sc\-E\-C\-A\-L\-Noisy\-Channel}
+\item 
+class {\bf Sc\-E\-C\-A\-L\-One\-Pe\-A\-D\-C}
+\item 
+class {\bf Sc\-E\-C\-A\-L\-Temperature}
+\item 
+class {\bf Sce\-Slow\-Readout\-Mod\-Block}
+\begin{DoxyCompactList}\small\item\em Interface Class to access the Sce\-Slow\-Readout Data Here we handle ahc voltages, temperatures et al. \end{DoxyCompactList}\item 
+class {\bf Scint\-Calo\-Slow\-Readout\-Mod\-Block}
+\begin{DoxyCompactList}\small\item\em Interface Class to access the Scint\-Calo\-Slow\-Readout Data Here we handle ahc voltages, temperatures et al. \end{DoxyCompactList}\item 
+class {\bf Simple\-Value}
+\begin{DoxyCompactList}\small\item\em Class to store float value, its error, and status flag plus integer index in L\-C\-I\-O. \end{DoxyCompactList}\item 
+class {\bf Simple\-Value\-Vector}
+\item 
+class {\bf Si\-P\-M\-Calibrations}
+\begin{DoxyCompactList}\small\item\em storing all informations necessary to calibrate a Si\-P\-M read channel \end{DoxyCompactList}\item 
+class {\bf Si\-P\-M\-Calibration\-Status\-Bits}
+\begin{DoxyCompactList}\small\item\em Bit set to describe the Si\-P\-M Calibration Status. \end{DoxyCompactList}\item 
+class {\bf Si\-P\-M\-Mapping\-Hcal}
+\begin{DoxyCompactList}\small\item\em Mapping class based on the L\-C\-Fixed\-Object template. \end{DoxyCompactList}\item 
+class {\bf Si\-P\-M\-Vol\-Corr}
+\begin{DoxyCompactList}\small\item\em voltage corrections for Hcal Si\-P\-Ms \end{DoxyCompactList}\item 
+class {\bf Tcmt\-Connection}
+\begin{DoxyCompactList}\small\item\em Defines the electronic connection of a T\-C\-M\-T strip. \end{DoxyCompactList}\item 
+class {\bf Tcmt\-Event\-Bits}
+\begin{DoxyCompactList}\small\item\em Bit set to describe the type of event in the T\-C\-M\-T. \end{DoxyCompactList}\item 
+class {\bf Tcmt\-Event\-Identifier}
+\begin{DoxyCompactList}\small\item\em class that can identify type of event in T\-C\-M\-T \end{DoxyCompactList}\item 
+struct {\bf Tcmt\-Hit\-Memory\-Pool}
+\item 
+class {\bf Tcmt\-Hit}
+\begin{DoxyCompactList}\small\item\em Using Raw\-Calorimeter\-Hits as Tcmt\-Hits. \end{DoxyCompactList}\item 
+class {\bf Tcmt\-Saturation\-Constants}
+\begin{DoxyCompactList}\small\item\em Class to store the estimates for the Cpix parameters for saturation corrections of T\-C\-M\-T hits. \end{DoxyCompactList}\item 
+class {\bf Tdc\-Connection}
+\item 
+class {\bf Tdc\-Index}
+\item 
+class {\bf Temp\-Gain\-Constants}
+\begin{DoxyCompactList}\small\item\em = class \doxyref{Gain\-Constants}{p.}{classCALICE_1_1GainConstants} but with temperature \end{DoxyCompactList}\item 
+class {\bf Tiles\-Itep}
+\begin{DoxyCompactList}\small\item\em Parameters of the sipm delivered by I\-T\-E\-P. \end{DoxyCompactList}\item 
+class {\bf Tiles\-Itep\-Saturation}
+\begin{DoxyCompactList}\small\item\em Parameters of the sipm delivered by I\-T\-E\-P. \end{DoxyCompactList}\item 
+class {\bf Tiles\-Production}
+\begin{DoxyCompactList}\small\item\em Parameters of the sipm delivered by P\-R\-O\-D\-U\-C\-T\-I\-O\-N. \end{DoxyCompactList}\item 
+class {\bf Trg\-Readout\-Configuration\-Block}
+\begin{DoxyCompactList}\small\item\em Stores the general readout configuration. \end{DoxyCompactList}\item 
+class {\bf Trigger\-Bits}
+\begin{DoxyCompactList}\small\item\em A small class which allow for the easy analysis of core trigger information. \end{DoxyCompactList}\item 
+class {\bf Trigger\-Check}
+\begin{DoxyCompactList}\small\item\em Example for a simple class based on the L\-C\-Fixed\-Object template. \end{DoxyCompactList}\item 
+class {\bf Trigger\-Handler}
+\begin{DoxyCompactList}\small\item\em Base Class for the user access to trigger decisions. \end{DoxyCompactList}\item 
+class {\bf Trigger\-Handler\-Calice}
+\begin{DoxyCompactList}\small\item\em Implementation of \doxyref{Trigger\-Handler}{p.}{classCALICE_1_1TriggerHandler} base class for calice purposes Trigger conditions are read from a conditions data source or from the event information. \end{DoxyCompactList}\item 
+class {\bf Trigger\-History}
+\begin{DoxyCompactList}\small\item\em Utility class to chech the zero suppressed trigger history which will be atteched to the lcio event. \end{DoxyCompactList}\item 
+class {\bf Veto\-Fraction}
+\begin{DoxyCompactList}\small\item\em Class to store the fraction of events that are cut with a certain purity setting of the veto. \end{DoxyCompactList}\item 
+class {\bf Veto\-Threshold}
+\begin{DoxyCompactList}\small\item\em Container class to store the threshold necessary to achive a certain purity. \end{DoxyCompactList}\item 
+class {\bf Ahc2\-Mapper}
+\begin{DoxyCompactList}\small\item\em A\-H\-C\-A\-L implementation of \doxyref{Mapper}{p.}{classCALICE_1_1Mapper} class. \end{DoxyCompactList}\item 
+class {\bf Ahc\-Mapper}
+\begin{DoxyCompactList}\small\item\em A\-H\-C\-A\-L implementation of \doxyref{Mapper}{p.}{classCALICE_1_1Mapper} class. \end{DoxyCompactList}\item 
+class {\bf Cell\-Iterator}
+\begin{DoxyCompactList}\small\item\em iterator to run over all valid (Mokka) cell I\-Ds \end{DoxyCompactList}\item 
+class {\bf Decoder\-Set}
+\begin{DoxyCompactList}\small\item\em class containing decoders for the three \doxyref{C\-A\-L\-I\-C\-E}{p.}{namespaceCALICE} coordinate systems \end{DoxyCompactList}\item 
+class {\bf E4\-D\-Mapper}
+\begin{DoxyCompactList}\small\item\em A\-H\-C\-A\-L E\-P\-T implementation of \doxyref{Mapper}{p.}{classCALICE_1_1Mapper} class Functions to get dimensions of detector geometry. \end{DoxyCompactList}\item 
+class {\bf Fast\-Decoder}
+\begin{DoxyCompactList}\small\item\em decode I\-Ds with encoding string \end{DoxyCompactList}\item 
+class {\bf Mapped\-Container}
+\begin{DoxyCompactList}\small\item\em Container for fast access by index. \end{DoxyCompactList}\item 
+class {\bf Mapper}
+\begin{DoxyCompactList}\small\item\em Mapping for \doxyref{C\-A\-L\-I\-C\-E}{p.}{namespaceCALICE} detectors (currently\-: H\-C\-A\-L support only) \end{DoxyCompactList}\item 
+class {\bf Cell\-Description}
+\begin{DoxyCompactList}\small\item\em class to hold data describing calorimeter cells \end{DoxyCompactList}\item 
+class {\bf Cell\-Description\-Generator}
+\begin{DoxyCompactList}\small\item\em class that generates cell descriptions objects \end{DoxyCompactList}\item 
+class {\bf Cell\-Neighbour\-Calculator}
+\begin{DoxyCompactList}\small\item\em class to calculate all neighbour cells \end{DoxyCompactList}\item 
+class {\bf Cell\-Neighbours}
+\begin{DoxyCompactList}\small\item\em class to hold information of neighbouring cells \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Typedefs}
+\begin{DoxyCompactItemize}
+\item 
+typedef int {\bfseries Adc\-Block\-Array} [6]\label{namespaceCALICE_a9c2ce8fa65a4da129464cc32041a6cb3}
+
+\item 
+typedef \\*
+{\bf Scint\-Calo\-Slow\-Measures\-Dbl\-Map\-\_\-t} {\bf Ahc\-Slow\-Measures\-Dbl\-Map\-\_\-t}\label{namespaceCALICE_ad68f41183e5fdd30d4734f409778a4fb}
+
+\begin{DoxyCompactList}\small\item\em The map which contains the measured values of the different types. \end{DoxyCompactList}\item 
+typedef \\*
+Scint\-Calo\-Slow\-Measures\-Int\-Map\-\_\-t {\bfseries Ahc\-Slow\-Measures\-Int\-Map\-\_\-t}\label{namespaceCALICE_a33c319ca75aaa367d8a2281f21cedd96}
+
+\item 
+typedef \\*
+Scint\-Calo\-Slow\-Measures\-Float\-Map\-\_\-t {\bfseries Ahc\-Slow\-Measures\-Float\-Map\-\_\-t}\label{namespaceCALICE_ac528aeddbe40e2f1f6e3a04bfd973762}
+
+\item 
+typedef std\-::map$<$ unsigned int, \\*
+std\-::vector$<$ std\-::pair$<$ bool, \\*
+int $>$ $>$ $>$ {\bfseries T\-D\-C\-Channel\-Container\-\_\-t}\label{namespaceCALICE_a302ca92d51bac18357598721ba53bd0f}
+
+\item 
+typedef std\-::map$<$ unsigned, \\*
+lcio\-::\-L\-C\-Collection\-Vec $\ast$ $>$ {\bfseries Calibration\-Write\-Map}\label{namespaceCALICE_a5bc82902fb43177d37fdcac4b7301558}
+
+\item 
+typedef std\-::map$<$ std\-::string, \\*
+std\-::vector$<$ double $>$ $>$ {\bf Daq\-Type\-Data\-Dbl\-Map\-\_\-t}\label{namespaceCALICE_a41d5ba3d500e67c7686d34031dfbf2b1}
+
+\begin{DoxyCompactList}\small\item\em The map which contains the measured values of the different data types. \end{DoxyCompactList}\item 
+typedef std\-::map$<$ std\-::string, \\*
+std\-::vector$<$ int $>$ $>$ {\bfseries Daq\-Type\-Data\-Int\-Map\-\_\-t}\label{namespaceCALICE_a1d755621385b60375eb0ea038eaadbb4}
+
+\item 
+typedef std\-::map$<$ std\-::string, \\*
+std\-::vector$<$ unsigned int $>$ $>$ {\bfseries Daq\-Type\-Data\-U\-Int\-Map\-\_\-t}\label{namespaceCALICE_a26482e6cbdaf1aa8cb6ed999c82df9a7}
+
+\item 
+typedef std\-::map$<$ std\-::string, \\*
+std\-::vector$<$ float $>$ $>$ {\bfseries Daq\-Type\-Data\-Float\-Map\-\_\-t}\label{namespaceCALICE_a4b2418ca1ea2654a3995d7f9af67821a}
+
+\item 
+typedef std\-::map$<$ std\-::string, \\*
+L\-C\-Time $>$ {\bf Time\-Stamp\-Map\-\_\-t}\label{namespaceCALICE_a622a50caaf0a5048c39143160d9aec6c}
+
+\begin{DoxyCompactList}\small\item\em and for the timestamps \end{DoxyCompactList}\item 
+typedef std\-::map$<$ int, int $>$ {\bfseries Hodoscope\-Hit\-Map\-\_\-t}\label{namespaceCALICE_a7985c3924f9911dfd3c420759c702b3f}
+
+\item 
+typedef std\-::map$<$ unsigned, \\*
+{\bf L\-C\-Hcal\-Calibration\-Object} $\ast$ $>$ {\bfseries Hcal\-Calibration\-Module\-Map}\label{namespaceCALICE_a0398f53ce0ec7e722bb3c4a4a5cb7682}
+
+\item 
+typedef std\-::pair\\*
+$<$ lcio\-::\-L\-C\-Collection \\*
+$\ast$, Hcal\-Calibration\-Module\-Map $\ast$ $>$ {\bfseries Hcal\-Calibration\-Module\-Data}\label{namespaceCALICE_aa0a6e980df6754a4932b7df607bffdc9}
+
+\item 
+typedef std\-::map$<$ unsigned, \\*
+{\bf L\-C\-Hcal\-Calibration\-Object2\-D} $\ast$ $>$ {\bfseries Hcal\-Calibration2\-D\-Module\-Map}\label{namespaceCALICE_ad742ec973b0e96348870f3b3007f1ae7}
+
+\item 
+typedef std\-::pair\\*
+$<$ lcio\-::\-L\-C\-Collection \\*
+$\ast$, Hcal\-Calibration2\-D\-Module\-Map $\ast$ $>$ {\bfseries Hcal\-Calibration2\-D\-Module\-Data}\label{namespaceCALICE_adcda0108cf9121a79c99b6a9f18fe8fd}
+
+\item 
+typedef {\bf N\-Vector\-\_\-t}$<$ Float\-\_\-t, 3 $>$ {\bf Three\-Vector\-\_\-t}\label{namespaceCALICE_a1e4d014b94fc3069ff30bdddb02b786a}
+
+\begin{DoxyCompactList}\small\item\em A three dimensional single precision floating point vector. \end{DoxyCompactList}\item 
+typedef std\-::map$<$ std\-::string, \\*
+std\-::vector$<$ double $>$ $>$ {\bf Scint\-Calo\-Slow\-Measures\-Dbl\-Map\-\_\-t}\label{namespaceCALICE_a3e5e6d5badfe7d664c707772da688021}
+
+\begin{DoxyCompactList}\small\item\em The map which contains the measured values of the different types. \end{DoxyCompactList}\item 
+typedef std\-::map$<$ std\-::string, \\*
+std\-::vector$<$ int $>$ $>$ {\bfseries Scint\-Calo\-Slow\-Measures\-Int\-Map\-\_\-t}\label{namespaceCALICE_ab0110564397644da0bafd2107e69e9d1}
+
+\item 
+typedef std\-::map$<$ std\-::string, \\*
+std\-::vector$<$ float $>$ $>$ {\bfseries Scint\-Calo\-Slow\-Measures\-Float\-Map\-\_\-t}\label{namespaceCALICE_ad5c0256c0bb692464c18ed23d75dcd5d}
+
+\end{DoxyCompactItemize}
+\subsection*{Enumerations}
+\begin{DoxyCompactItemize}
+\item 
+enum {\bfseries E\-Acq\-Data\-Values} \{ \\*
+{\bfseries k\-Acq\-Data\-Int\-Val\-Acq\-Number\-Run}, 
+{\bfseries k\-Acq\-Data\-Int\-Val\-Acq\-Number\-Conf}, 
+{\bfseries k\-Acq\-Data\-Int\-Val\-Acq\-Evt\-Info}, 
+{\bfseries k\-Acq\-Data\-Int\-Val\-Acq\-Time\-Inf\-Sec}, 
+\\*
+{\bfseries k\-Acq\-Data\-Int\-Val\-Acq\-Time\-Inf\-Mus}, 
+{\bfseries k\-Acq\-Data\-Int\-Val\-Acq\-State}, 
+{\bfseries k\-Acq\-Data\-Int\-Val\-Has\-Dif\-Info}, 
+{\bfseries k\-Acq\-Data\-Int\-Val\-Dif\-Trigger\-Counter}, 
+\\*
+{\bfseries k\-Acq\-Data\-Int\-Val\-Dif\-Ndata\-Buffer\-Words}, 
+{\bfseries k\-Acq\-Data\-Int\-Values}
+ \}
+\item 
+enum {\bf Ahc\-Sro\-Dbl\-Values} \{ \\*
+{\bfseries kx\-Position\-\_\-mm}, 
+{\bfseries ky\-Position\-\_\-mm}, 
+{\bfseries kz\-Position\-\_\-mm}, 
+{\bfseries kc\-Position\-\_\-deg}, 
+\\*
+{\bfseries k\-Sro\-Dbl\-Values}
+ \}
+\begin{DoxyCompactList}\small\item\em The indices of the the stored values. \end{DoxyCompactList}\item 
+enum {\bf Ahc\-Sro\-Mod\-Int\-Values} \{ {\bfseries k\-Int\-Ahc\-Sro\-Mod\-Pos\-Cmb\-Vals} =k\-Int\-Sro\-Mod\-Pos\-Cmb\-Volts+2, 
+{\bfseries k\-Int\-Ahc\-Sro\-Mod\-Pos\-Hbab\-Temps} =k\-Int\-Ahc\-Sro\-Mod\-Pos\-Cmb\-Vals+2, 
+{\bfseries k\-Int\-Ahc\-Sro\-Mod\-Int\-Values} =k\-Int\-Sro\-Mod\-Pos\-Hbab\-Volts+1
+ \}
+\begin{DoxyCompactList}\small\item\em The indices of the the stored values. \end{DoxyCompactList}\item 
+enum {\bfseries Ahc\-Sro\-Mod\-Dbl\-Values} \{ {\bfseries k\-Int\-Ahc\-Sro\-Mod\-Dbl\-Values}
+ \}
+\item 
+enum {\bfseries Ahc\-Sro\-Mod\-Float\-Values} \{ {\bfseries k\-Ahc\-Int\-Sro\-Mod\-Float\-Values}
+ \}
+\item 
+enum {\bf Ahc\-Vfe\-Int\-Values} \{ {\bfseries k\-Int\-Val\-Vfe\-Board\-Id}, 
+{\bfseries k\-Int\-Ahc\-Vfe\-Rec\-Label}, 
+{\bfseries k\-Int\-Verification\-Data}, 
+{\bfseries k\-Int\-Shift\-Register\-Data\-Start}
+ \}
+\begin{DoxyCompactList}\small\item\em The indices of the the stored values. \end{DoxyCompactList}\item 
+enum {\bf E\-Beam\-Parameter\-Float\-Type} \{ \\*
+{\bf k\-Beam\-Parameter\-Float\-Peak\-Energy}, 
+{\bf k\-Beam\-Parameter\-Float\-Beam\-Angle\-Z\-X}, 
+{\bf k\-Beam\-Parameter\-Float\-Beam\-Angle\-Z\-Y}, 
+{\bf k\-Beam\-Parameter\-Float\-Beam\-Impact\-Position\-X0}, 
+\\*
+{\bf k\-Beam\-Parameter\-Float\-Beam\-Impact\-Position\-Y0}, 
+{\bfseries k\-N\-Beam\-Parameter\-Floats}
+ \}
+\item 
+enum {\bf E\-Beam\-Parameter\-Int\-Type} \{ {\bf k\-Beam\-Parameter\-Int\-Beam\-Type}, 
+{\bfseries k\-N\-Beam\-Parameter\-Ints}
+ \}
+\item 
+enum {\bf E\-Beam\-Parameter\-Exception\-Int\-Type} \{ {\bf k\-Beam\-Parameter\-Exception\-Int\-Beam\-Energy}, 
+{\bfseries k\-N\-Beam\-Parameter\-Exception\-Ints}
+ \}
+\item 
+enum {\bfseries E\-Be\-Event\-Int\-Values} \{ \\*
+{\bfseries k\-Be\-Event\-Int\-Val\-Board\-Id}, 
+{\bfseries k\-Be\-Event\-Int\-Val\-Rec\-Label}, 
+{\bfseries k\-Be\-Event\-Int\-Val\-Status\-Word}, 
+{\bfseries k\-Be\-Event\-Int\-Val\-L1a\-Counter}, 
+\\*
+{\bfseries k\-Be\-Event\-Int\-Val\-Bx\-Counter}, 
+{\bfseries k\-Be\-Event\-Int\-Val\-Qdr\-Frame\-Counter}, 
+{\bfseries k\-Be\-Event\-Int\-Val\-Qdr\-Data\-Counter}, 
+{\bfseries k\-Be\-Event\-Int\-Val\-Total\-Frame\-Counter}, 
+\\*
+{\bfseries k\-N\-Be\-Event\-Int\-Values}, 
+{\bfseries k\-Run\-Time\-Start\-M\-S\-B}, 
+{\bfseries k\-Run\-Time\-Start\-L\-S\-B}, 
+{\bfseries k\-Run\-Time\-Stop\-M\-S\-B}, 
+\\*
+{\bfseries k\-Run\-Time\-Stop\-L\-S\-B}, 
+{\bfseries k\-N\-Run\-Time\-Int\-Values}
+ \}
+\item 
+enum {\bf E\-Be\-Trf\-Conf\-Int\-Values} \{ \\*
+{\bfseries k\-Be\-Trg\-Conf\-Int\-Val\-Board\-Id}, 
+{\bfseries k\-Int\-Rec\-Label}, 
+{\bfseries k\-Be\-Trg\-Conf\-Int\-Val\-Input\-Enable}, 
+{\bfseries k\-Be\-Trg\-Conf\-Int\-Val\-Oscillator\-Enable}, 
+\\*
+{\bfseries k\-Be\-Trg\-Conf\-Int\-Val\-General\-Enable}, 
+{\bfseries k\-Be\-Trg\-Conf\-Int\-Val\-Oscillation\-Period}, 
+{\bfseries k\-Be\-Trg\-Conf\-Int\-Val\-Burst\-Counter}, 
+{\bfseries k\-Be\-Trg\-Conf\-Int\-Val\-Configuration}, 
+\\*
+{\bfseries k\-Be\-Trg\-Conf\-Int\-Val\-Fifo\-Idle\-Depth}, 
+{\bfseries k\-Be\-Trg\-Conf\-Int\-Val\-Busy\-Timeout}, 
+{\bfseries k\-Be\-Trg\-Conf\-Int\-Val\-Burst\-Timeout}, 
+{\bfseries k\-Be\-Trg\-Conf\-Int\-Val\-Ext\-Beam\-Mode}, 
+\\*
+{\bfseries k\-Be\-Trg\-Conf\-Int\-Val\-Input\-Invert}, 
+{\bfseries k\-Be\-Trg\-Conf\-Int\-Val\-Qdr\-Config}, 
+{\bfseries k\-Be\-Trg\-Conf\-Int\-Val\-Sequencer\-Control}, 
+{\bfseries k\-Be\-Trg\-Conf\-Int\-Val\-And\-Enable}, 
+\\*
+{\bfseries k\-N\-Be\-Trg\-Conf\-Int\-Values} =k\-Be\-Trg\-Conf\-Int\-Val\-And\-Enable+\-N\-L\-E\-N\-G\-A\-N\-D
+ \}
+\begin{DoxyCompactList}\small\item\em The indices of all the stored values. \end{DoxyCompactList}\item 
+enum {\bf E\-Be\-Trg\-Event\-Int\-Values} \{ \\*
+{\bfseries k\-Be\-Trg\-Event\-Int\-Val\-Board\-Id}, 
+{\bfseries k\-Be\-Trg\-Event\-Int\-Val\-Rec\-Label}, 
+{\bfseries k\-Be\-Trg\-Event\-Int\-Val\-Input\-Status}, 
+{\bfseries k\-Be\-Trg\-Event\-Int\-Val\-Input\-Catch}, 
+\\*
+{\bfseries k\-Be\-Trg\-Event\-Int\-Valprebusy\-Catch}, 
+{\bfseries k\-Be\-Trg\-Event\-Int\-Valsignal\-Catch}, 
+{\bfseries k\-Be\-Trg\-Event\-Int\-Valcontrol}, 
+{\bfseries k\-Be\-Trg\-Event\-Int\-Val\-Initial\-Fifo\-Status}, 
+\\*
+{\bfseries k\-Be\-Trg\-Event\-Int\-Val\-Final\-Fifo\-Status}, 
+{\bfseries k\-Be\-Trg\-Event\-Int\-Valtrigger\-Counter}, 
+{\bfseries k\-Be\-Trg\-Event\-Int\-Valpre\-Busy\-Trigger\-Counter}, 
+{\bfseries k\-N\-Be\-Trg\-Event\-Int\-Values}
+ \}
+\begin{DoxyCompactList}\small\item\em The indices of all the stored values. \end{DoxyCompactList}\item 
+enum {\bf E\-Be\-Trg\-Poll\-Int\-Values} \{ \\*
+{\bfseries k\-Be\-Trg\-Poll\-Board\-I\-D}, 
+{\bfseries k\-Be\-Trg\-Poll\-Record\-Label}, 
+{\bfseries k\-Be\-Trg\-Pollstart\-Timeymd}, 
+{\bfseries k\-Be\-Trg\-Pollstart\-Timehms}, 
+\\*
+{\bfseries k\-Be\-Trg\-Pollstart\-Timemus}, 
+{\bfseries k\-Be\-Trg\-Pollend\-Timeymd}, 
+{\bfseries k\-Be\-Trg\-Pollend\-Timehms}, 
+{\bfseries k\-Be\-Trg\-Pollend\-Timemus}, 
+\\*
+{\bfseries k\-Be\-Trg\-Pollmax\-Timesec}, 
+{\bfseries k\-Be\-Trg\-Pollmax\-Timemus}, 
+{\bfseries k\-Betrg\-Pollnumber\-Of\-Polls}, 
+{\bfseries k\-Be\-Trg\-Poll\-Timeout}, 
+\\*
+{\bfseries k\-Be\-Trg\-Poll\-Int\-Values}
+ \}
+\begin{DoxyCompactList}\small\item\em The indices of all the stored values. \end{DoxyCompactList}\item 
+enum {\bfseries E\-Bml\-Caen1290\-Int\-Values} \{ \\*
+{\bfseries k\-Bml\-Caen1290\-Conf\-Board\-I\-D}, 
+{\bfseries k\-Bml\-Caen1290\-Conf\-Base\-Address}, 
+{\bfseries k\-Bml\-Caen1290\-Conf\-Record\-Label}, 
+{\bfseries k\-Bml\-Caen1290\-Conf\-Control\-Register}, 
+\\*
+{\bfseries k\-Bml\-Caen1290\-Conf\-Interrupt\-Register}, 
+{\bfseries k\-Bml\-Caen1290\-Conf\-Count\-Register}, 
+{\bfseries k\-Bml\-Caen1290\-Conf\-Int\-Values}
+ \}
+\item 
+enum {\bfseries E\-Bml\-Caen767\-Int\-Values} \{ \\*
+{\bfseries k\-Bml\-Caen767\-Conf\-Board\-I\-D}, 
+{\bfseries k\-Bml\-Caen767\-Conf\-Base\-Address}, 
+{\bfseries k\-Bml\-Caen767\-Conf\-Record\-Label}, 
+{\bfseries k\-Bml\-Caen767\-Conf\-Control\-Register}, 
+\\*
+{\bfseries k\-Bml\-Caen767\-Conf\-Interrupt\-Register}, 
+{\bfseries k\-Bml\-Caen767\-Conf\-Int\-Values}, 
+{\bfseries k\-Bml\-Caen767\-Ro\-Conf\-Crate\-Number}, 
+{\bfseries k\-Bml\-Caen767\-Ro\-Conf\-Read\-Period}, 
+\\*
+{\bfseries k\-Bml\-Caen767\-Ro\-Conf\-Bool\-Col}, 
+{\bfseries k\-Bml\-Caen767\-Ro\-Conf\-Mode}, 
+{\bfseries k\-Bml\-Caen767\-Ro\-Conf\-Int\-Values}
+ \}
+\item 
+enum {\bf E\-Bml\-Caen767\-Int\-Values} \{ \\*
+{\bfseries k\-Bml\-Caen767\-Conf\-Board\-I\-D}, 
+{\bfseries k\-Bml\-Caen767\-Conf\-Base\-Address}, 
+{\bfseries k\-Bml\-Caen767\-Conf\-Record\-Label}, 
+{\bfseries k\-Bml\-Caen767\-Conf\-Control\-Register}, 
+\\*
+{\bfseries k\-Bml\-Caen767\-Conf\-Interrupt\-Register}, 
+{\bfseries k\-Bml\-Caen767\-Conf\-Int\-Values}, 
+{\bfseries k\-Bml\-Caen767\-Ro\-Conf\-Crate\-Number}, 
+{\bfseries k\-Bml\-Caen767\-Ro\-Conf\-Read\-Period}, 
+\\*
+{\bfseries k\-Bml\-Caen767\-Ro\-Conf\-Bool\-Col}, 
+{\bfseries k\-Bml\-Caen767\-Ro\-Conf\-Mode}, 
+{\bfseries k\-Bml\-Caen767\-Ro\-Conf\-Int\-Values}
+ \}
+\begin{DoxyCompactList}\small\item\em The indices of all the stored values. \end{DoxyCompactList}\item 
+enum {\bfseries E\-Bml\-Caen\-Int\-Values} \{ \\*
+{\bfseries k\-Bml\-Caen\-Conf\-Board\-I\-D}, 
+{\bfseries k\-Bml\-Caen\-Conf\-Base\-Address}, 
+{\bfseries k\-Bml\-Caen\-Conf\-Record\-Label}, 
+{\bfseries k\-Bml\-Caen\-Conf\-Control\-Register}, 
+\\*
+{\bfseries k\-Bml\-Caen\-Conf\-Interrupt\-Register}, 
+{\bfseries k\-Bml\-Caen\-Conf\-Count\-Register}, 
+{\bfseries k\-Bml\-Caen\-Conf\-Spare}, 
+{\bfseries k\-Bml\-Caen\-Conf\-Int\-Values}
+ \}
+\item 
+enum {\bf E\-Bml\-Event\-Int\-Values} \{ \\*
+{\bfseries k\-Bml\-Event\-Board\-I\-D}, 
+{\bfseries k\-Bml\-Event\-Base\-Address}, 
+{\bfseries k\-Bml\-Event\-Record\-Label}, 
+{\bfseries k\-Bml\-Event\-Status\-Register}, 
+\\*
+{\bfseries k\-Bml\-Event\-Number\-Of\-Words}, 
+{\bfseries k\-Bml\-Eventgeo\-Address}, 
+{\bfseries k\-Bml\-Eventevent\-Number}, 
+{\bfseries k\-Bml\-Event\-Status}, 
+\\*
+{\bfseries k\-Bml\-Event\-Event\-Data\-Counter}, 
+{\bfseries k\-Bml\-Event\-Number\-Of\-Signal\-Channels}, 
+{\bfseries k\-Bml\-Event\-Int\-Values}
+ \}
+\begin{DoxyCompactList}\small\item\em The indices of all the stored values. \end{DoxyCompactList}\item 
+enum {\bf E\-Bml\-Event\-Sup\-Int\-Values} \{ \\*
+{\bfseries k\-Bml\-Event\-Sup\-Fifo}, 
+{\bfseries k\-Bml\-Event\-Sup\-Event\-I\-D\-Trailer}, 
+{\bfseries k\-Bml\-Event\-Sup\-Bunch\-I\-D}, 
+{\bfseries k\-Bml\-Event\-Sup\-T\-D\-C\-Errors}, 
+\\*
+{\bfseries k\-Bml\-Event\-Sup\-Buffer\-Overflow}, 
+{\bfseries k\-Bml\-Event\-Sup\-Trigger\-Lost}, 
+{\bfseries k\-Bml\-Event\-Sup\-T\-D\-C\-Word\-Count\-Trailer}, 
+{\bfseries k\-Bml\-Event\-Names\-Pointer}, 
+\\*
+{\bfseries k\-Bml\-Event\-Names\-Length}, 
+{\bfseries k\-Bml\-Event\-Sup\-Int\-Values}
+ \}
+\begin{DoxyCompactList}\small\item\em The indices of all the stored values. \end{DoxyCompactList}\item 
+enum {\bf Bml\-Sro\-Run\-Int\-Values} \{ \\*
+{\bfseries k\-Int\-Bml\-Sro\-Run\-Pos\-Time\-Stampymd}, 
+{\bfseries k\-Int\-Bml\-Sro\-Run\-Pos\-Time\-Stamphms}, 
+{\bfseries k\-Int\-Bml\-Sro\-Run\-Pos\-Sext\-Cur}, 
+{\bfseries k\-Int\-Bml\-Sro\-Run\-Pos\-Bend\-Cur} =k\-Int\-Bml\-Sro\-Run\-Pos\-Sext\-Cur+2, 
+\\*
+{\bfseries k\-Int\-Bml\-Sro\-Run\-Pos\-Col\-Pos} =k\-Int\-Bml\-Sro\-Run\-Pos\-Bend\-Cur+2, 
+{\bfseries k\-Int\-Bml\-Sro\-Run\-Pos\-Quad\-Cur} =k\-Int\-Bml\-Sro\-Run\-Pos\-Col\-Pos+2, 
+{\bfseries k\-Int\-Bml\-Sro\-Run\-Pos\-Trim\-Cur} =k\-Int\-Bml\-Sro\-Run\-Pos\-Quad\-Cur+2, 
+{\bfseries k\-Int\-Bml\-Sro\-Run\-Pos\-H6a\-Exp\-Count} =k\-Int\-Bml\-Sro\-Run\-Pos\-Trim\-Cur+2, 
+\\*
+{\bfseries k\-Int\-Bml\-Sro\-Run\-Pos\-H6b\-Exp\-Count} =k\-Int\-Bml\-Sro\-Run\-Pos\-H6a\-Exp\-Count+2, 
+{\bfseries k\-Int\-Bml\-Sro\-Run\-Pos\-H6c\-Exp\-Count} =k\-Int\-Bml\-Sro\-Run\-Pos\-H6b\-Exp\-Count+2, 
+{\bfseries k\-Int\-Bml\-Sro\-Run\-Pos\-Rp\-Exp\-Count} =k\-Int\-Bml\-Sro\-Run\-Pos\-H6c\-Exp\-Count+2, 
+{\bfseries k\-Int\-Bml\-Sro\-Run\-Pos\-Scint\-Count} =k\-Int\-Bml\-Sro\-Run\-Pos\-Rp\-Exp\-Count+2, 
+\\*
+{\bfseries k\-Int\-Bml\-Sro\-Run\-Int\-Values}
+ \}
+\begin{DoxyCompactList}\small\item\em The map which contains the measured values of the different data types. \end{DoxyCompactList}\item 
+enum {\bfseries Bml\-Sro\-Run\-Dbl\-Values} \{ {\bfseries k\-Dbl\-Bml\-Sro\-Run\-Pos\-Abs\-Position}, 
+{\bfseries k\-Dbl\-Bml\-Sro\-Run\-Pos\-T4\-Position}, 
+{\bfseries k\-Dbl\-Bml\-Sro\-Run\-Pos\-Target\-Position}, 
+{\bfseries k\-Int\-Bml\-Sro\-Run\-Dbl\-Values}
+ \}
+\item 
+enum {\bfseries Bml\-Sro\-Run\-Float\-Values} \{ {\bfseries k\-Int\-Bml\-Sro\-Run\-Float\-Values}
+ \}
+\item 
+enum {\bf E\-Daq\-Sum\-Int\-Values} \{ \\*
+{\bfseries k\-Daq\-Run\-Num}, 
+{\bfseries k\-Daq\-Num\-Conf}, 
+{\bfseries k\-Daq\-Num\-Sro}, 
+{\bfseries k\-Daq\-Num\-Acq}, 
+\\*
+{\bfseries k\-Daq\-Num\-Evt}, 
+{\bfseries k\-Daq\-Run\-Time}, 
+{\bfseries k\-Daq\-Num\-Int\-Vals}
+ \}
+\begin{DoxyCompactList}\small\item\em The indices of all the stored values. \end{DoxyCompactList}\item 
+enum {\bf Daq\-Type\-Int\-Values} \{ \\*
+{\bfseries k\-Int\-Daq\-Type\-Time\-Stamps}, 
+{\bfseries k\-Int\-Daq\-Type\-Time\-Stamp\-Names\-Pointer}, 
+{\bfseries k\-Int\-Daq\-Type\-Time\-Stamp\-Names\-Length}, 
+{\bfseries k\-Int\-Daq\-Type\-Int\-Types}, 
+\\*
+{\bfseries k\-Int\-Daq\-Type\-Dbl\-Types}, 
+{\bfseries k\-Int\-Daq\-Type\-Float\-Types}, 
+{\bfseries k\-Int\-Daq\-Type\-Int\-Names\-Pointer}, 
+{\bfseries k\-Int\-Daq\-Type\-Dbl\-Names\-Pointer}, 
+\\*
+{\bfseries k\-Int\-Daq\-Type\-Float\-Names\-Pointer}, 
+{\bfseries k\-Int\-Daq\-Type\-Int\-Names\-Length}, 
+{\bfseries k\-Int\-Daq\-Type\-Dbl\-Names\-Length}, 
+{\bfseries k\-Int\-Daq\-Type\-Float\-Names\-Length}, 
+\\*
+{\bfseries k\-Int\-Daq\-Type\-Int\-Sizes}, 
+{\bfseries k\-Int\-Daq\-Type\-Dbl\-Sizes}, 
+{\bfseries k\-Int\-Daq\-Type\-Float\-Sizes}, 
+{\bfseries k\-Int\-Daq\-Type\-Data\-Start}
+ \}
+\begin{DoxyCompactList}\small\item\em The indices of the the stored values. \end{DoxyCompactList}\item 
+enum {\bfseries Daq\-Type\-Dbl\-Values} \{ {\bfseries k\-Int\-Daq\-Type\-Dbl\-Readings}
+ \}
+\item 
+enum {\bfseries Daq\-Type\-Float\-Values} \{ {\bfseries k\-Int\-Daq\-Type\-Float\-Readings}
+ \}
+\item 
+enum {\bf E\-Detector\-Transformation\-Float\-Type} \{ \\*
+{\bf k\-Detector\-Transformation\-Float\-Detector\-Angle\-Z\-X}, 
+{\bf k\-Detector\-Transformation\-Float\-Detector\-Rotation\-X0}, 
+{\bf k\-Detector\-Transformation\-Float\-Detector\-Rotation\-Z0}, 
+{\bf k\-Detector\-Transformation\-Float\-Detector\-X0}, 
+\\*
+{\bf k\-Detector\-Transformation\-Float\-Detector\-Y0}, 
+{\bf k\-Detector\-Transformation\-Float\-Detector\-Z0}, 
+{\bfseries k\-N\-Detector\-Transformation\-Floats}
+ \}
+\item 
+enum {\bfseries E\-Detector\-Transformation\-Int\-Type} \{ {\bfseries k\-N\-Detector\-Transformation\-Ints}
+ \}
+\item 
+enum {\bfseries E\-Dhc\-Raw\-Chip\-Content\-Int\-Values} \{ \\*
+{\bfseries k\-Dhc\-Raw\-Chip\-Int\-Crate\-Nr}, 
+{\bfseries k\-Dhc\-Raw\-Chip\-Int\-Elec\-Adr}, 
+{\bfseries k\-Dhc\-Raw\-Chip\-Int\-Hits\-Hi}, 
+{\bfseries k\-Dhc\-Raw\-Chip\-Int\-Hits\-Lo}, 
+\\*
+{\bfseries k\-Dhc\-Raw\-Chip\-Int\-Time\-Stamp}, 
+{\bfseries k\-Dhc\-Raw\-Chip\-Int\-Misc\-Info}, 
+{\bfseries k\-Dhc\-Raw\-Chip\-Int\-Values}
+ \}
+\item 
+enum {\bfseries E\-Dhcreadout\-Configuration\-Int\-Values} \{ \\*
+{\bfseries k\-Dhc\-Ro\-Conf\-Int\-Numbers}, 
+{\bfseries k\-Dhc\-Ro\-Conf\-Int\-Slot\-Enable\-Mask}, 
+{\bfseries k\-Dhc\-Ro\-Conf\-Int\-Slot\-Enable}, 
+{\bfseries k\-Dhc\-Ro\-Conf\-Int\-Num\-Slots}, 
+\\*
+{\bfseries k\-Dhc\-Ro\-Conf\-Int\-Be\-Time\-Dif}, 
+{\bfseries k\-Dhc\-Ro\-Conf\-Int\-Values}
+ \}
+\item 
+enum {\bfseries E\-Dif\-Trigger\-Int\-Values} \{ {\bfseries k\-Dif\-Trigger\-Counter}, 
+{\bfseries k\-Dif\-Trigger\-Int\-Values}
+ \}
+\item 
+enum {\bf E\-Drift\-Chamber\-Parameter\-Float\-Type} \{ \\*
+{\bf k\-Drift\-Chamber\-Parameter\-Float\-Velocity}, 
+{\bf k\-Drift\-Chamber\-Parameter\-Float\-Delay}, 
+{\bf k\-Drift\-Chamber\-Parameter\-Float\-Offset\-Z}, 
+{\bf k\-Drift\-Chamber\-Parameter\-Float\-Offset\-U}, 
+\\*
+{\bf k\-Drift\-Chamber\-Parameter\-Float\-Error}, 
+{\bfseries k\-N\-Drift\-Chamber\-Parameter\-Floats}
+ \}
+\item 
+enum {\bf E\-Drift\-Chamber\-Parameter\-Int\-Type} \{ {\bf k\-Drift\-Chamber\-Parameter\-Int\-Wire\-Type}, 
+{\bfseries k\-N\-Drift\-Chamber\-Parameter\-Ints}
+ \}
+\item 
+enum {\bfseries E\-Drift\-Chamber\-Wire\-Type} \{ \\*
+{\bfseries k\-Drift\-Chamber\-Wire\-Minus}, 
+{\bfseries k\-Drift\-Chamber\-Wire\-Plus}, 
+{\bfseries k\-Drift\-Chamber\-Wire\-X\-Minus}, 
+{\bfseries k\-Drift\-Chamber\-Wire\-X\-Plus}, 
+\\*
+{\bfseries k\-Drift\-Chamber\-Wire\-Y\-Minus}, 
+{\bfseries k\-Drift\-Chamber\-Wire\-Y\-Plus}, 
+{\bfseries k\-N\-Wire\-Types}
+ \}
+\item 
+enum {\bfseries E\-Ecal\-Module\-Calibration\-Int\-Type} \{ {\bfseries k\-Ecal\-Module\-Calibration\-Int\-Module\-I\-D}, 
+{\bfseries k\-Ecal\-Module\-Calibration\-Int\-Name\-Length}, 
+{\bfseries k\-N\-Ecal\-Module\-Calibration\-Ints}
+ \}
+\item 
+enum {\bfseries E\-Ecal\-Module\-Calibration\-Float\-Type} \{ {\bfseries k\-N\-Ecal\-Module\-Calibration\-Floats}
+ \}
+\item 
+enum {\bf E\-Emc\-St\-Int\-Values} \{ \\*
+{\bfseries k\-Emc\-St\-Header}, 
+{\bfseries k\-Emc\-Stx\-Status}, 
+{\bfseries k\-Emc\-Stx\-Value}, 
+{\bfseries k\-Emc\-Sty\-Status} =k\-Emc\-Stx\-Value+\-N\-U\-M\-X\-V\-A\-L\-U\-E\-S, 
+\\*
+{\bfseries k\-Emc\-Sty\-Value}, 
+{\bfseries k\-Emc\-St\-Check\-Sum} =k\-Emc\-Sty\-Value+\-N\-U\-M\-Y\-V\-A\-L\-U\-E\-S
+ \}
+\begin{DoxyCompactList}\small\item\em The indices of all the stored values. \end{DoxyCompactList}\item 
+enum {\bf E\-Experimental\-Setup\-Float\-Type} \{ \\*
+{\bf k\-Experimental\-Setup\-Float\-Peak\-Energy}, 
+{\bf k\-Experimental\-Setup\-Float\-Beam\-Angle\-Z\-X}, 
+{\bf k\-Experimental\-Setup\-Float\-Beam\-Angle\-Z\-Y}, 
+{\bf k\-Experimental\-Setup\-Float\-Beam\-Impact\-Position\-X0}, 
+\\*
+{\bf k\-Experimental\-Setup\-Float\-Beam\-Impact\-Position\-Y0}, 
+{\bf k\-Experimental\-Setup\-Float\-Detector\-Angle\-Z\-X}, 
+{\bf k\-Experimental\-Setup\-Float\-Detector\-Rotation\-X0}, 
+{\bf k\-Experimental\-Setup\-Float\-Detector\-Rotation\-Z0}, 
+\\*
+{\bf k\-Experimental\-Setup\-Float\-Detector\-X0}, 
+{\bf k\-Experimental\-Setup\-Float\-Detector\-Y0}, 
+{\bf k\-Experimental\-Setup\-Float\-Detector\-Z0}, 
+{\bfseries k\-N\-Experimental\-Setup\-Floats}
+ \}
+\item 
+enum {\bf E\-Experimental\-Setup\-Int\-Type} \{ {\bf k\-Experimental\-Setup\-Int\-Beam\-Type}, 
+{\bfseries k\-N\-Experimental\-Setup\-Ints}
+ \}
+\item 
+enum {\bf E\-Fe\-Conf\-Block\-Int\-Values} \{ \\*
+{\bfseries k\-Fe\-Conf\-Block\-Int\-Val\-Fe\-Board\-Id}, 
+{\bfseries k\-Int\-Fe\-Rec\-Label}, 
+{\bfseries k\-Fe\-Conf\-Block\-Int\-Val\-Calib\-Start}, 
+{\bfseries k\-Fe\-Conf\-Block\-Int\-Val\-Calib\-Width}, 
+\\*
+{\bfseries k\-Fe\-Conf\-Block\-Int\-Val\-Hold\-Start}, 
+{\bfseries k\-Fe\-Conf\-Block\-Int\-Val\-Hold\-Width}, 
+{\bfseries k\-Fe\-Conf\-Block\-Int\-Val\-Vfe\-Reset\-Start}, 
+{\bfseries k\-Fe\-Conf\-Block\-Int\-Val\-Vfe\-Reset\-End}, 
+\\*
+{\bfseries k\-Fe\-Conf\-Block\-Int\-Val\-Vfe\-Srin\-Start}, 
+{\bfseries k\-Fe\-Conf\-Block\-Int\-Val\-Vfe\-Srin\-End}, 
+{\bfseries k\-Fe\-Conf\-Block\-Int\-Val\-Vfe\-Mplex\-Clock\-Start}, 
+{\bfseries k\-Fe\-Conf\-Block\-Int\-Val\-Vfe\-Mplex\-Clock\-Mark}, 
+\\*
+{\bfseries k\-Fe\-Conf\-Block\-Int\-Val\-Vfe\-Mplex\-Clock\-Space}, 
+{\bfseries k\-Fe\-Conf\-Block\-Int\-Val\-Vfe\-Mplex\-Clock\-Pulses}, 
+{\bfseries k\-Fe\-Conf\-Block\-Int\-Val\-Adc\-Start}, 
+{\bfseries k\-Fe\-Conf\-Block\-Int\-Val\-Adc\-End}, 
+\\*
+{\bfseries k\-Fe\-Conf\-Block\-Int\-Val\-Adc\-Control}, 
+{\bfseries k\-Fe\-Conf\-Block\-Int\-Val\-Adc\-Delay}, 
+{\bfseries k\-Fe\-Conf\-Block\-Int\-Val\-Frame\-Sync\-Delay}, 
+{\bfseries k\-Fe\-Conf\-Block\-Int\-Val\-Qdr\-Data\-Delay}, 
+\\*
+{\bfseries k\-Fe\-Conf\-Block\-Int\-Val\-Dac\-Data}, 
+{\bfseries k\-Fe\-Conf\-Block\-Int\-Val\-Flags}, 
+{\bfseries k\-Fe\-Conf\-Block\-Int\-Val\-Vfe\-Info}, 
+{\bfseries k\-Fe\-Conf\-Block\-Int\-Val\-Emc\-Bot}, 
+\\*
+{\bfseries k\-Fe\-Conf\-Block\-Int\-Val\-Emc\-Top}, 
+{\bfseries k\-Fe\-Conf\-Block\-Int\-Val\-Emc\-Top\-Low\-Gain\-Bit}, 
+{\bfseries k\-Fe\-Conf\-Block\-Int\-Val\-Emc\-Bot\-Low\-Gain\-Bit}, 
+{\bfseries k\-N\-Fe\-Conf\-Block\-Int\-Values}
+ \}
+\begin{DoxyCompactList}\small\item\em The indices of all the stored values. \end{DoxyCompactList}\item 
+enum {\bfseries E\-Fe\-Event\-Int\-Values} \{ \\*
+{\bfseries k\-Fe\-Event\-Int\-Val\-Board\-Id}, 
+{\bfseries k\-Fe\-Event\-Int\-Val\-Rec\-Label}, 
+{\bfseries k\-Fe\-Event\-Int\-Val\-Trigger\-Counter}, 
+{\bfseries k\-Fe\-Event\-Int\-Val\-Spy\-Register}, 
+\\*
+{\bfseries k\-N\-Fe\-Event\-Int\-Values}
+ \}
+\item 
+enum {\bf E\-Int\-Values} \{ \\*
+{\bfseries k\-Int\-Val\-Fe\-Info\-Board\-Id}, 
+{\bfseries k\-Int\-Val\-Fe\-Info\-Label}, 
+{\bfseries k\-Int\-Val\-Fe\-Info\-Fe\-I\-D}, 
+{\bfseries k\-Int\-Val\-Fe\-Info\-Frame\-Sync\-Out\-Packed0}, 
+\\*
+{\bfseries k\-Int\-Val\-Fe\-Info\-Frame\-Sync\-Out\-Packed2}, 
+{\bfseries k\-Int\-Val\-Fe\-Info\-Fe\-Length}, 
+{\bfseries k\-Int\-Val\-Fe\-Info\-Frame\-Sync\-Out\-Packed4}, 
+{\bfseries k\-Int\-Val\-Fe\-Info\-Fifo}, 
+\\*
+{\bfseries k\-Int\-Val\-Fe\-Info\-Trigger\-Counter}, 
+{\bfseries k\-N\-Int\-Values\-Fe\-Info}
+ \}
+\begin{DoxyCompactList}\small\item\em The indices of all the stored values. \end{DoxyCompactList}\item 
+enum {\bfseries E\-Fe\-Trg\-Data\-Int\-Values} \{ \\*
+{\bfseries k\-Fe\-Trg\-Data\-Int\-Val\-Board\-Id}, 
+{\bfseries k\-Fe\-Trg\-Data\-Int\-Val\-Rec\-Label}, 
+{\bfseries k\-Fe\-Trg\-Data\-Int\-Val\-Header}, 
+{\bfseries k\-Fe\-Trg\-Data\-Int\-Val\-Trailer}, 
+\\*
+{\bfseries k\-Fe\-Trg\-Data\-Int\-Val\-Trig\-Counter}, 
+{\bfseries k\-N\-Fe\-Trg\-Data\-Int\-Values}
+ \}
+\item 
+enum {\bf E\-Ro\-Conf\-Int\-Values} \{ \\*
+{\bfseries k\-Hod\-Evt\-Status}, 
+{\bfseries k\-Hod\-Evt\-Evt\-Counter}, 
+{\bfseries k\-Hod\-Evt\-Time\-Counter}, 
+{\bfseries k\-Hod\-Evt\-Num\-Hits\-X}, 
+\\*
+{\bfseries k\-Hod\-Evt\-Num\-Hits\-Y}, 
+{\bfseries k\-Ro\-Conf\-Int\-Numbers}, 
+{\bfseries k\-Ro\-Conf\-Int\-Slot\-Enable}, 
+{\bfseries k\-Ro\-Conf\-Int\-Slot\-Fe\-Enable}, 
+\\*
+{\bfseries k\-Ro\-Conf\-Int\-Vme\-Period} =k\-Ro\-Conf\-Int\-Slot\-Fe\-Enable+\-N\-L\-E\-N\-S\-L\-O\-F\-E, 
+{\bfseries k\-Ro\-Conf\-Int\-Be\-Period}, 
+{\bfseries k\-Ro\-Conf\-Int\-Bec\-Period}, 
+{\bfseries k\-Ro\-Conf\-Int\-Fe\-Period}, 
+\\*
+{\bfseries k\-Ro\-Conf\-Int\-Be\-Soft\-Trigger}, 
+{\bfseries k\-Ro\-Conf\-Int\-Fe\-Soft\-Trigger}, 
+{\bfseries k\-Ro\-Conf\-Int\-Fe\-Brc\-Soft\-Trigger}, 
+{\bfseries k\-Ro\-Int\-Conf\-Mode}, 
+\\*
+{\bfseries k\-N\-Ro\-Conf\-Int\-Values} =k\-Ro\-Int\-Conf\-Mode
+ \}
+\begin{DoxyCompactList}\small\item\em The indices of all the stored values. \end{DoxyCompactList}\item 
+enum {\bfseries E\-Int\-L\-F\-Values} \{ {\bfseries k\-\_\-\-I\-D\-\_\-\-Int\-L\-F}, 
+{\bfseries k\-N\-Int\-L\-F\-Values}
+ \}
+\item 
+enum {\bfseries E\-Float\-L\-F\-Values} \{ {\bfseries k\-N\-Float\-L\-F\-Values}
+ \}
+\item 
+enum {\bfseries E\-Double\-L\-F\-Values} \{ \\*
+{\bfseries k\-\_\-\-Constant\-\_\-\-Double\-L\-F}, 
+{\bfseries k\-\_\-\-Constant\-\_\-\-Error\-\_\-\-Double\-L\-F}, 
+{\bfseries k\-\_\-\-Constant\-\_\-\-Reference\-\_\-\-Point\-\_\-\-Double\-L\-F}, 
+{\bfseries k\-\_\-\-Constant\-\_\-\-Reference\-\_\-\-Point\-\_\-\-Error\-\_\-\-Double\-L\-F}, 
+\\*
+{\bfseries k\-\_\-\-Slope\-\_\-\-Double\-L\-F}, 
+{\bfseries k\-\_\-\-Slope\-\_\-\-Error\-\_\-\-Double\-L\-F}, 
+{\bfseries k\-N\-Double\-L\-F\-Values}
+ \}
+\item 
+enum {\bfseries E\-Int\-L\-F\-C\-Values} \{ {\bfseries k\-\_\-\-I\-D\-\_\-\-Int\-L\-F\-C}, 
+{\bfseries k\-N\-Int\-L\-F\-C\-Values}
+ \}
+\item 
+enum {\bfseries E\-Float\-L\-F\-C\-Values} \{ {\bfseries k\-N\-Float\-L\-F\-C\-Values}
+ \}
+\item 
+enum {\bfseries E\-Double\-L\-F\-C\-Values} \{ \\*
+{\bfseries k\-\_\-\-Constant\-\_\-\-Double\-L\-F\-C}, 
+{\bfseries k\-\_\-\-Constant\-\_\-\-Error\-\_\-\-Double\-L\-F\-C}, 
+{\bfseries k\-\_\-\-Constant\-\_\-\-Reference\-\_\-\-Point\-\_\-\-Double\-L\-F\-C}, 
+{\bfseries k\-\_\-\-Constant\-\_\-\-Reference\-\_\-\-Point\-\_\-\-Error\-\_\-\-Double\-L\-F\-C}, 
+\\*
+{\bfseries k\-N\-Double\-L\-F\-C\-Values}
+ \}
+\item 
+enum {\bfseries E\-Int\-L\-F\-T\-Values} \{ {\bfseries k\-\_\-\-I\-D\-\_\-\-Int\-L\-F\-T}, 
+{\bfseries k\-\_\-\-N\-D\-F\-\_\-\-Int\-L\-F\-T}, 
+{\bfseries k\-N\-Int\-L\-F\-T\-Values}
+ \}
+\item 
+enum {\bfseries E\-Float\-L\-F\-T\-Values} \{ {\bfseries k\-N\-Float\-L\-F\-T\-Values}
+ \}
+\item 
+enum {\bfseries E\-Double\-L\-F\-T\-Values} \{ \\*
+{\bfseries k\-\_\-\-Offset\-\_\-\-Double\-L\-F\-T}, 
+{\bfseries k\-\_\-\-Slope\-\_\-\-Double\-L\-F\-T}, 
+{\bfseries k\-\_\-\-Chi2\-\_\-\-Double\-L\-F\-T}, 
+{\bfseries k\-\_\-\-Error\-Matrix\-A\-\_\-\-Double\-L\-F\-T}, 
+\\*
+{\bfseries k\-\_\-\-Error\-Matrix\-B\-\_\-\-Double\-L\-F\-T}, 
+{\bfseries k\-\_\-\-Error\-Matrix\-C\-\_\-\-Double\-L\-F\-T}, 
+{\bfseries k\-\_\-\-Error\-Matrix\-D\-\_\-\-Double\-L\-F\-T}, 
+{\bfseries k\-N\-Double\-L\-F\-T\-Values}
+ \}
+\item 
+enum {\bfseries E\-Int\-L\-F\-S\-Values} \{ {\bfseries k\-\_\-\-I\-D\-\_\-\-Int\-L\-F\-S}, 
+{\bfseries k\-N\-Int\-L\-F\-S\-Values}
+ \}
+\item 
+enum {\bfseries E\-Float\-L\-F\-S\-Values} \{ {\bfseries k\-N\-Float\-L\-F\-S\-Values}
+ \}
+\item 
+enum {\bfseries E\-Double\-L\-F\-S\-Values} \{ {\bfseries k\-\_\-\-Slope\-\_\-\-Double\-L\-F\-S}, 
+{\bfseries k\-\_\-\-Slope\-\_\-\-Error\-\_\-\-Double\-L\-F\-S}, 
+{\bfseries k\-N\-Double\-L\-F\-S\-Values}
+ \}
+\item 
+enum {\bf E\-Module\-Connection\-Float\-Type} \{ {\bfseries k\-N\-Module\-Connection\-Floats}
+ \}
+\item 
+enum {\bfseries E\-Module\-Connection\-Int\-Type} \{ \\*
+{\bfseries k\-Module\-Connection\-Int\-Crate}, 
+{\bfseries k\-Module\-Connection\-Int\-Slot}, 
+{\bfseries k\-Module\-Connection\-Int\-Front\-End}, 
+{\bfseries k\-Module\-Connection\-Int\-Connector\-Type}, 
+\\*
+{\bfseries k\-Module\-Connection\-Int\-Index\-Of\-Lower\-Left\-Cell}, 
+{\bfseries k\-Module\-Connection\-Int\-Module\-Type}, 
+{\bfseries k\-Module\-Connection\-Int\-Module\-I\-D}, 
+{\bfseries k\-N\-Module\-Connection\-Ints}
+ \}
+\item 
+enum {\bfseries E\-Module\-Connector\-Type} \{ {\bfseries k\-Left\-Connector}, 
+{\bfseries k\-Right\-Connector}, 
+{\bfseries k\-Full\-Connector}, 
+{\bfseries k\-N\-Connector\-Types}
+ \}
+\item 
+enum {\bfseries E\-Module\-Description\-Int\-Type} \{ \\*
+{\bfseries k\-Module\-Description\-Int\-Module\-Type}, 
+{\bfseries k\-Module\-Description\-Int\-Name\-Index\-Or\-Minus\-One}, 
+{\bfseries k\-Module\-Description\-Int\-Name\-Length}, 
+{\bfseries k\-N\-Module\-Description\-Ints\-Or\-N\-Cells}, 
+\\*
+{\bfseries k\-Module\-Description\-Int\-Name\-Index}, 
+{\bfseries k\-Module\-Description\-Int\-Cell\-Dimension\-Start}, 
+{\bfseries k\-Module\-Description\-Int\-Cell\-Z\-Position\-Start}, 
+{\bfseries k\-N\-Module\-Description\-Ints}
+ \}
+\item 
+enum {\bfseries E\-Module\-Description\-Float\-Type} \{ \\*
+{\bfseries k\-Module\-Description\-Width}, 
+{\bfseries k\-Module\-Description\-Height}, 
+{\bfseries k\-Module\-Description\-Cell\-Width}, 
+{\bfseries k\-Module\-Description\-Cell\-Height}, 
+\\*
+{\bfseries k\-N\-Module\-Description\-Floats}
+ \}
+\item 
+enum {\bfseries E\-Module\-Description\-Options} \{ {\bfseries k\-Module\-Description\-Normal} =0, 
+{\bfseries k\-Module\-Description\-With\-Cell\-Dimension} =1, 
+{\bfseries k\-Module\-Description\-With\-Cell\-Dimension\-And\-Z\-Pos} =3
+ \}
+\item 
+enum {\bf E\-Module\-Location\-Float\-Type} \{ {\bfseries k\-Module\-Location\-Float\-X}, 
+{\bfseries k\-Module\-Location\-Float\-Y}, 
+{\bfseries k\-Module\-Location\-Float\-Z}, 
+{\bfseries k\-N\-Module\-Location\-Floats}
+ \}
+\item 
+enum {\bfseries E\-Module\-Location\-Int\-Type} \{ {\bfseries k\-Module\-Location\-Int\-Module\-Type}, 
+{\bfseries k\-Module\-Location\-Int\-Cell\-Index\-Offset}, 
+{\bfseries k\-N\-Module\-Location\-Ints}
+ \}
+\item 
+enum {\bf E\-Ro\-Conf\-Int\-Values} \{ \\*
+{\bfseries k\-Hod\-Evt\-Status}, 
+{\bfseries k\-Hod\-Evt\-Evt\-Counter}, 
+{\bfseries k\-Hod\-Evt\-Time\-Counter}, 
+{\bfseries k\-Hod\-Evt\-Num\-Hits\-X}, 
+\\*
+{\bfseries k\-Hod\-Evt\-Num\-Hits\-Y}, 
+{\bfseries k\-Ro\-Conf\-Int\-Numbers}, 
+{\bfseries k\-Ro\-Conf\-Int\-Slot\-Enable}, 
+{\bfseries k\-Ro\-Conf\-Int\-Slot\-Fe\-Enable}, 
+\\*
+{\bfseries k\-Ro\-Conf\-Int\-Vme\-Period} =k\-Ro\-Conf\-Int\-Slot\-Fe\-Enable+\-N\-L\-E\-N\-S\-L\-O\-F\-E, 
+{\bfseries k\-Ro\-Conf\-Int\-Be\-Period}, 
+{\bfseries k\-Ro\-Conf\-Int\-Bec\-Period}, 
+{\bfseries k\-Ro\-Conf\-Int\-Fe\-Period}, 
+\\*
+{\bfseries k\-Ro\-Conf\-Int\-Be\-Soft\-Trigger}, 
+{\bfseries k\-Ro\-Conf\-Int\-Fe\-Soft\-Trigger}, 
+{\bfseries k\-Ro\-Conf\-Int\-Fe\-Brc\-Soft\-Trigger}, 
+{\bfseries k\-Ro\-Int\-Conf\-Mode}, 
+\\*
+{\bfseries k\-N\-Ro\-Conf\-Int\-Values} =k\-Ro\-Int\-Conf\-Mode
+ \}
+\begin{DoxyCompactList}\small\item\em The indices of all the stored values. \end{DoxyCompactList}\item 
+enum {\bfseries E\-Run\-Location\-Int\-Type} \{ \\*
+{\bfseries k\-Start\-Index\-Run\-Location\-Int}, 
+{\bfseries k\-Length\-Index\-Run\-Location\-Int}, 
+{\bfseries k\-Start\-Index\-Run\-Type\-Int}, 
+{\bfseries k\-Length\-Index\-Run\-Type\-Int}, 
+\\*
+{\bfseries k\-Start\-Index\-Month\-Info}, 
+{\bfseries k\-Length\-Index\-Month\-Info}, 
+{\bfseries k\-N\-Run\-Location\-Ints}
+ \}
+\item 
+enum {\bfseries E\-Be\-Event\-Int\-Values} \{ \\*
+{\bfseries k\-Be\-Event\-Int\-Val\-Board\-Id}, 
+{\bfseries k\-Be\-Event\-Int\-Val\-Rec\-Label}, 
+{\bfseries k\-Be\-Event\-Int\-Val\-Status\-Word}, 
+{\bfseries k\-Be\-Event\-Int\-Val\-L1a\-Counter}, 
+\\*
+{\bfseries k\-Be\-Event\-Int\-Val\-Bx\-Counter}, 
+{\bfseries k\-Be\-Event\-Int\-Val\-Qdr\-Frame\-Counter}, 
+{\bfseries k\-Be\-Event\-Int\-Val\-Qdr\-Data\-Counter}, 
+{\bfseries k\-Be\-Event\-Int\-Val\-Total\-Frame\-Counter}, 
+\\*
+{\bfseries k\-N\-Be\-Event\-Int\-Values}, 
+{\bfseries k\-Run\-Time\-Start\-M\-S\-B}, 
+{\bfseries k\-Run\-Time\-Start\-L\-S\-B}, 
+{\bfseries k\-Run\-Time\-Stop\-M\-S\-B}, 
+\\*
+{\bfseries k\-Run\-Time\-Stop\-L\-S\-B}, 
+{\bfseries k\-N\-Run\-Time\-Int\-Values}
+ \}
+\item 
+enum {\bf Sce\-Sro\-Mod\-Int\-Values} \{ {\bfseries k\-Int\-Sce\-Sro\-Mod\-Pos\-Hbab\-Curs} =k\-Int\-Sro\-Mod\-Pos\-Cmb\-Volts+2, 
+{\bfseries k\-Int\-Sce\-Sro\-Mod\-Int\-Values} =k\-Int\-Sro\-Mod\-Pos\-Hbab\-Volts+1
+ \}
+\begin{DoxyCompactList}\small\item\em The map which contains the measured values of the different types. \end{DoxyCompactList}\item 
+enum {\bfseries Sce\-Sro\-Mod\-Dbl\-Values} \{ {\bfseries k\-Int\-Sce\-Sro\-Mod\-Dbl\-Values}
+ \}
+\item 
+enum {\bfseries Sce\-Sro\-Mod\-Float\-Values} \{ {\bfseries k\-Sce\-Int\-Sro\-Mod\-Float\-Values}
+ \}
+\item 
+enum {\bf Scint\-Calo\-Sro\-Mod\-Int\-Values} \{ \\*
+{\bfseries k\-Int\-Sro\-Mod\-Mod\-Number}, 
+{\bfseries k\-Int\-Sro\-Mod\-Time\-Stampymd}, 
+{\bfseries k\-Int\-Sro\-Mod\-Time\-Stamphms}, 
+{\bfseries k\-Int\-Sro\-Mod\-Led\-Setting}, 
+\\*
+{\bfseries k\-Int\-Sro\-Mod\-Cmb\-Width}, 
+{\bfseries k\-Int\-Sro\-Mod\-Cmb\-Height}, 
+{\bfseries k\-Int\-Sro\-Mod\-Pos\-Cmb\-Temps}, 
+{\bfseries k\-Int\-Sro\-Mod\-Pos\-Cmb\-Volts} =k\-Int\-Sro\-Mod\-Pos\-Cmb\-Temps+2, 
+\\*
+{\bfseries k\-Int\-Sro\-Mod\-Pos\-Hbab\-Volts} =k\-Int\-Sro\-Mod\-Pos\-Cmb\-Volts+6
+ \}
+\begin{DoxyCompactList}\small\item\em The indices of the the stored values. \end{DoxyCompactList}\item 
+enum {\bf E\-Tcmt\-Connection\-Float\-Type} \{ {\bfseries k\-N\-Tcmt\-Connection\-Floats}
+ \}
+\item 
+enum {\bfseries E\-Tcmt\-Connection\-Int\-Type} \{ \\*
+{\bfseries k\-Tcmt\-Connection\-Int\-Crate}, 
+{\bfseries k\-Tcmt\-Connection\-Int\-Elec\-I\-D}, 
+{\bfseries k\-Tcmt\-Connection\-Int\-Fast\-I\-D}, 
+{\bfseries k\-Tcmt\-Connection\-Int\-Index\-Of\-Lower\-Left\-Cell}, 
+\\*
+{\bfseries k\-Tcmt\-Connection\-Int\-Module\-Type}, 
+{\bfseries k\-N\-Tcmt\-Connection\-Ints}
+ \}
+\item 
+enum {\bf E\-Trg\-Conf\-Int\-Values} \{ \\*
+{\bfseries k\-Trg\-Conf\-Int\-Numbers}, 
+{\bfseries k\-Trg\-Conf\-Int\-Enable}, 
+{\bfseries k\-Trg\-Conf\-Intclear\-Be\-Trg}, 
+{\bfseries k\-Trg\-Conf\-Intbe\-Trg\-Soft\-Trg}, 
+\\*
+{\bfseries k\-Trg\-Conf\-Intbe\-Trg\-Soft\-Spill}, 
+{\bfseries k\-Trg\-Conf\-Intbe\-Trg\-Squirt}, 
+{\bfseries k\-Trg\-Conf\-Intbe\-Trg\-Vlink}, 
+{\bfseries k\-Trg\-Conf\-Intspill\-Invert}, 
+\\*
+{\bfseries k\-Trg\-Conf\-Intread\-Period}, 
+{\bfseries k\-Trg\-Conf\-Intreadc\-Period}, 
+{\bfseries k\-Trg\-Conf\-Intbe\-Trg\-Poll\-Number}, 
+{\bfseries k\-Trg\-Conf\-Intbe\-Trg\-Poll\-Timesec}, 
+\\*
+{\bfseries k\-Trg\-Conf\-Intbe\-Trg\-Poll\-Timemus}, 
+{\bfseries k\-Trg\-Conf\-Intbe\-Trg\-Spill\-Number}, 
+{\bfseries k\-Trg\-Conf\-Intbe\-Trg\-Spill\-Timesec}, 
+{\bfseries k\-Trg\-Conf\-Intbe\-Trg\-Spill\-Timemus}, 
+\\*
+{\bfseries k\-N\-Trg\-Conf\-Int\-Values} =k\-Trg\-Conf\-Intbe\-Trg\-Spill\-Timemus
+ \}
+\begin{DoxyCompactList}\small\item\em The indices of all the stored values. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+std\-::ostream \& {\bfseries operator$<$$<$} (std\-::ostream \&out, const {\bf C\-A\-L\-I\-C\-E\-::\-Ahc2\-Tile\-Index} \&hti)\label{namespaceCALICE_a7e26391579e18a75e4251e40e454f64b}
+
+\item 
+std\-::ostream \& {\bfseries operator$<$$<$} (std\-::ostream \&os, const {\bf Bit\-Set} \&bits)\label{namespaceCALICE_ab9e3c3b8ac307dc9371d0203b43263aa}
+
+\item 
+bool const {\bf operator$>$} (const {\bf Board\-I\-D} \&board\-Id1, const {\bf Board\-I\-D} \&board\-Id2)
+\begin{DoxyCompactList}\small\item\em Implemetations of overloaded operators. \end{DoxyCompactList}\item 
+bool const {\bfseries operator$<$} (const {\bf Board\-I\-D} \&board\-Id1, const {\bf Board\-I\-D} \&board\-Id2)\label{namespaceCALICE_a2ad1d0dc3a3a9adf1fcf0cb90f388707}
+
+\item 
+std\-::ostream \& {\bfseries operator$<$$<$} (std\-::ostream \&os, const {\bf Board\-I\-D} \&a)\label{namespaceCALICE_abb47c7b46995bc60fa133d55abd1d752}
+
+\item 
+E\-V\-E\-N\-T\-::\-L\-C\-Generic\-Object $\ast$ {\bf clone\-L\-C\-Generic\-Object} (E\-V\-E\-N\-T\-::\-L\-C\-Object $\ast$obj)
+\begin{DoxyCompactList}\small\item\em Utility functions to clone L\-C\-Generic\-Objects. \end{DoxyCompactList}\item 
+E\-V\-E\-N\-T\-::\-L\-C\-Generic\-Object $\ast$ {\bfseries clone\-L\-C\-Generic\-Object} (E\-V\-E\-N\-T\-::\-L\-C\-Generic\-Object $\ast$generic\-\_\-object)\label{namespaceCALICE_a56b7c501d27e76b43e04a9765b9f5d11}
+
+\item 
+E\-V\-E\-N\-T\-::\-L\-C\-Collection $\ast$ {\bf clone\-Collection} (E\-V\-E\-N\-T\-::\-L\-C\-Collection $\ast$col)
+\begin{DoxyCompactList}\small\item\em Clone a collection. \end{DoxyCompactList}\item 
+float {\bf calculate\-Drift\-Velocity} (float drift\-\_\-time\-\_\-u, float drift\-\_\-time\-\_\-next\-\_\-u, const {\bf Drift\-Chamber\-Parameter} \&axis\-\_\-u, const {\bf Drift\-Chamber\-Parameter} \&next\-\_\-axis\-\_\-u)
+\begin{DoxyCompactList}\small\item\em Calculate the drift velocity from the measured drift time of two adjacent chambers (same axis). \end{DoxyCompactList}\item 
+std\-::ostream \& {\bfseries operator$<$$<$} (std\-::ostream \&os, const {\bf Error\-Bits} \&error)\label{namespaceCALICE_aca47067fb5a0a1433ce6d3eece513b50}
+
+\item 
+std\-::ostream \& {\bfseries operator$<$$<$} (std\-::ostream \&out, {\bf Fast\-Calice\-Hit} fch)\label{namespaceCALICE_ac774bcecab0f16faad5d98d1f34e27bb}
+
+\item 
+std\-::ostream \& {\bfseries operator$<$$<$} (std\-::ostream \&os, const {\bf Fe\-Info} \&a)\label{namespaceCALICE_a82067f1a74cfe10d60191da988c6c3bb}
+
+\item 
+std\-::ostream \& {\bfseries operator$<$$<$} (std\-::ostream \&out, const {\bf C\-A\-L\-I\-C\-E\-::\-Hcal\-Cell\-Index} \&hci)\label{namespaceCALICE_aff65f4377dea19e836b00b6c3b19a3dc}
+
+\item 
+std\-::ostream \& {\bfseries operator$<$$<$} (std\-::ostream \&out, const {\bf C\-A\-L\-I\-C\-E\-::\-Hcal\-Tile\-Index} \&hti)\label{namespaceCALICE_a22f7cee7ac2219e27f88d4fb7307300c}
+
+\item 
+std\-::ostream \& {\bfseries operator$<$$<$} (std\-::ostream \&out, const {\bf C\-A\-L\-I\-C\-E\-::\-Linear\-Fit\-Compound} \&lfr)\label{namespaceCALICE_a392913f11b414ad28f660c71ed62d133}
+
+\item 
+std\-::ostream \& {\bfseries operator$<$$<$} (std\-::ostream \&out, const {\bf C\-A\-L\-I\-C\-E\-::\-Linear\-Fit\-Constant} \&lfr)\label{namespaceCALICE_a004aede6b1bcdbfa05d74c80a848e1b2}
+
+\item 
+std\-::ostream \& {\bfseries operator$<$$<$} (std\-::ostream \&out, const {\bf C\-A\-L\-I\-C\-E\-::\-Linear\-Fit\-Result} \&lfr)\label{namespaceCALICE_a258830f64b6f93409aaa3e77ac063f9d}
+
+\item 
+std\-::ostream \& {\bfseries operator$<$$<$} (std\-::ostream \&out, const {\bf C\-A\-L\-I\-C\-E\-::\-Linear\-Fit\-Slope} \&lfr)\label{namespaceCALICE_a6f848688d37ec1b2bf32cdb9b20c3d57}
+
+\item 
+{\footnotesize template$<$class \-\_\-\-T , int \-\_\-dimension$>$ }\\{\bf N\-Vector\-\_\-t}$<$ \-\_\-\-T, \-\_\-dimension $>$ {\bf operator-\/} (const {\bf N\-Vector\-\_\-t}$<$ \-\_\-\-T, \-\_\-dimension $>$ \&a, const {\bf N\-Vector\-\_\-t}$<$ \-\_\-\-T, \-\_\-dimension $>$ \&b)\label{namespaceCALICE_af94b2cf0fe0cc9edda8470e7506e51a3}
+
+\begin{DoxyCompactList}\small\item\em Subtract two vectors of the same dimension. \end{DoxyCompactList}\item 
+{\footnotesize template$<$class \-\_\-\-T , int \-\_\-dimension$>$ }\\{\bf N\-Vector\-\_\-t}$<$ \-\_\-\-T, \-\_\-dimension $>$ {\bf operator+} (const {\bf N\-Vector\-\_\-t}$<$ \-\_\-\-T, \-\_\-dimension $>$ \&a, const {\bf N\-Vector\-\_\-t}$<$ \-\_\-\-T, \-\_\-dimension $>$ \&b)\label{namespaceCALICE_ac51859bb059bbd4200d135a387acc826}
+
+\begin{DoxyCompactList}\small\item\em Add two vectors of the same dimension. \end{DoxyCompactList}\item 
+{\footnotesize template$<$class \-\_\-\-T , int \-\_\-dimension$>$ }\\{\bf N\-Vector\-\_\-t}$<$ \-\_\-\-T, \-\_\-dimension $>$ {\bf operator$\ast$} (const float c, const {\bf N\-Vector\-\_\-t}$<$ \-\_\-\-T, \-\_\-dimension $>$ \&a)
+\begin{DoxyCompactList}\small\item\em Multiply a vector by a scalar. \end{DoxyCompactList}\item 
+{\footnotesize template$<$class \-\_\-\-T , int \-\_\-dimension$>$ }\\{\bf N\-Vector\-\_\-t}$<$ \-\_\-\-T, \-\_\-dimension $>$ {\bf operator$\ast$} (const {\bf N\-Vector\-\_\-t}$<$ \-\_\-\-T, \-\_\-dimension $>$ \&a, const float c)
+\begin{DoxyCompactList}\small\item\em Multiply a vector by a scalar. \end{DoxyCompactList}\item 
+{\footnotesize template$<$class \-\_\-\-T , int \-\_\-dimension$>$ }\\{\bf N\-Vector\-\_\-t}$<$ \-\_\-\-T, \-\_\-dimension $>$ {\bf operator/} (const {\bf N\-Vector\-\_\-t}$<$ \-\_\-\-T, \-\_\-dimension $>$ \&a, const float c)
+\begin{DoxyCompactList}\small\item\em Divide a vector by a scalar. \end{DoxyCompactList}\item 
+{\footnotesize template$<$class \-\_\-\-T , int \-\_\-dimension$>$ }\\Double\-\_\-t {\bf dot} (const {\bf N\-Vector\-\_\-t}$<$ \-\_\-\-T, \-\_\-dimension $>$ \&a, const {\bf N\-Vector\-\_\-t}$<$ \-\_\-\-T, \-\_\-dimension $>$ \&b)\label{namespaceCALICE_a195542017aeb70b2d0d0febbedbe73c9}
+
+\begin{DoxyCompactList}\small\item\em Scalar product of two vectors of the same dimension. \end{DoxyCompactList}\item 
+{\footnotesize template$<$class \-\_\-\-T , int \-\_\-dimension$>$ }\\Double\-\_\-t {\bf dot\-Of\-Difference} (const {\bf N\-Vector\-\_\-t}$<$ \-\_\-\-T, \-\_\-dimension $>$ \&a, const {\bf N\-Vector\-\_\-t}$<$ \-\_\-\-T, \-\_\-dimension $>$ \&b)\label{namespaceCALICE_a34c712791efde855afbc61eeb0edeff0}
+
+\begin{DoxyCompactList}\small\item\em Calculate the norm squared of the difference of the two given vectors. \end{DoxyCompactList}\item 
+{\footnotesize template$<$class \-\_\-\-T , int \-\_\-dimension$>$ }\\Double\-\_\-t {\bf norm} (const {\bf N\-Vector\-\_\-t}$<$ \-\_\-\-T, \-\_\-dimension $>$ \&a)\label{namespaceCALICE_a8035d7e74e44b440ef6330fd02398d96}
+
+\begin{DoxyCompactList}\small\item\em Euclidean Norm of a vector. \end{DoxyCompactList}\item 
+{\footnotesize template$<$class \-\_\-\-T , int \-\_\-dimension$>$ }\\Float\-\_\-t {\bf distance} (const {\bf N\-Vector\-\_\-t}$<$ \-\_\-\-T, \-\_\-dimension $>$ \&line\-\_\-origin, const {\bf N\-Vector\-\_\-t}$<$ \-\_\-\-T, \-\_\-dimension $>$ \&line\-\_\-direction, const {\bf N\-Vector\-\_\-t}$<$ \-\_\-\-T, \-\_\-dimension $>$ \&point)
+\begin{DoxyCompactList}\small\item\em Calculate the perpendicular distance between the line and the point. \end{DoxyCompactList}\item 
+{\bf Three\-Vector\-\_\-t} {\bf cross} (const {\bf Three\-Vector\-\_\-t} \&a, const {\bf Three\-Vector\-\_\-t} \&b)\label{namespaceCALICE_aad6e154dae5c0f3bcd7ea3da4c8bbb6d}
+
+\begin{DoxyCompactList}\small\item\em cross product of two three dimensional vectors. \end{DoxyCompactList}\item 
+std\-::ostream \& {\bfseries operator$<$$<$} (std\-::ostream \&out, const {\bf C\-A\-L\-I\-C\-E\-::\-Sc\-E\-C\-A\-L\-Gainfit} \&lfr)\label{namespaceCALICE_a1c2081da73234beb4a11fc1142982ce1}
+
+\item 
+std\-::ostream \& {\bfseries operator$<$$<$} (std\-::ostream \&out, const {\bf C\-A\-L\-I\-C\-E\-::\-Sc\-E\-C\-A\-L\-Intercalib} \&lfr)\label{namespaceCALICE_adfcda1b9c3b5cdd6c6b0d2746c324552}
+
+\item 
+std\-::ostream \& {\bfseries operator$<$$<$} (std\-::ostream \&out, const {\bf C\-A\-L\-I\-C\-E\-::\-Sc\-E\-C\-A\-L\-Mapping} \&lfr)\label{namespaceCALICE_abce99bfee29cb4baa969b680c6cf7af7}
+
+\item 
+std\-::ostream \& {\bfseries operator$<$$<$} (std\-::ostream \&out, const {\bf C\-A\-L\-I\-C\-E\-::\-Sc\-E\-C\-A\-L\-M\-I\-Pfit} \&lfr)\label{namespaceCALICE_a9de7f838b9074f4a55484fe8dcc70501}
+
+\item 
+std\-::ostream \& {\bfseries operator$<$$<$} (std\-::ostream \&out, const {\bf C\-A\-L\-I\-C\-E\-::\-Sc\-E\-C\-A\-L\-Noisy\-Channel} \&lfr)\label{namespaceCALICE_ac2aaffcb089704d6efeeacbfc2385c04}
+
+\item 
+std\-::ostream \& {\bfseries operator$<$$<$} (std\-::ostream \&out, const {\bf C\-A\-L\-I\-C\-E\-::\-Sc\-E\-C\-A\-L\-One\-Pe\-A\-D\-C} \&lfr)\label{namespaceCALICE_abb75c9ec9bbc538268dc3051e0406553}
+
+\item 
+std\-::ostream \& {\bfseries operator$<$$<$} (std\-::ostream \&out, const {\bf C\-A\-L\-I\-C\-E\-::\-Sc\-E\-C\-A\-L\-Temperature} \&lfr)\label{namespaceCALICE_ac8e752ed42b2b2052a34d9259086b2a6}
+
+\item 
+unsigned int {\bf get\-Needed\-Ints} (const std\-::string \&a\-\_\-string)\label{namespaceCALICE_a18a601b236a40f42df51079aa5a5344d}
+
+\begin{DoxyCompactList}\small\item\em Get the number of integer elements needed to store the string. \end{DoxyCompactList}\item 
+unsigned int {\bf get\-Needed\-Ints} (unsigned int string\-\_\-length)\label{namespaceCALICE_a99dbe9c9074b1c95eacf328c05f1aa39}
+
+\begin{DoxyCompactList}\small\item\em Get the number of integer elements needed to store the string. \end{DoxyCompactList}\item 
+unsigned int {\bf convert\-String\-To\-Ints} (lcio\-::\-L\-C\-Generic\-Object\-Impl $\ast$an\-\_\-obj, const std\-::string \&a\-\_\-string, unsigned int string\-\_\-start\-\_\-index, unsigned int string\-\_\-length\-\_\-index)
+\begin{DoxyCompactList}\small\item\em convert a string to integers which are stored at the given position in the integer array of the given L\-C\-Generic\-Object. \end{DoxyCompactList}\item 
+std\-::string {\bf get\-String\-From\-Ints} (lcio\-::\-L\-C\-Generic\-Object\-Impl $\ast$an\-\_\-obj, unsigned int string\-\_\-start\-\_\-index, unsigned int string\-\_\-length\-\_\-index)
+\begin{DoxyCompactList}\small\item\em Get a string which is encoded into an integer array. \end{DoxyCompactList}\item 
+std\-::ostream \& {\bfseries operator$<$$<$} (std\-::ostream \&os, const {\bf Tcmt\-Connection} \&me)\label{namespaceCALICE_a647781495abf84bc7032805178d22620}
+
+\item 
+void {\bf to\-\_\-binary\-\_\-bitops} (int toprint)
+\begin{DoxyCompactList}\small\item\em Utility function to print the bit representation of a integer. \end{DoxyCompactList}\item 
+std\-::ostream \& {\bfseries operator$<$$<$} (std\-::ostream \&os, const {\bf Trigger\-Bits} \&bits)\label{namespaceCALICE_a3930e6046b7631b8827856054c6bbff8}
+
+\end{DoxyCompactItemize}
+\subsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+{\bf Fast\-Calice\-Hit\-Memory\-Pool} {\bfseries the\-F\-C\-H\-Mem\-Pool}\label{namespaceCALICE_a55244d086b8e6939d978d99f9d7e1a8a}
+
+\item 
+int {\bfseries k\-\_\-\-I\-D0\-\_\-\-Int\-Sc\-Ecal\-One\-Pe} = 0\label{namespaceCALICE_a2294709b235fe194d689e20a19510b52}
+
+\item 
+int {\bfseries k\-\_\-\-I\-D1\-\_\-\-Int\-Sc\-Ecal\-One\-Pe} = 1\label{namespaceCALICE_a08dcf16ba3c83ce95ef08a1d0ed6fdcd}
+
+\item 
+int {\bfseries k\-\_\-calibconst\-\_\-\-Double\-Sc\-Ecal\-One\-Pe} = 0\label{namespaceCALICE_a4874703d0e0d8ed1ba1de81715a22127}
+
+\item 
+int {\bfseries k\-\_\-calibconst\-\_\-err\-\_\-\-Double\-Sc\-Ecal\-One\-Pe} = 1\label{namespaceCALICE_a05b7545b155bcf684a61a23d2b0c3e11}
+
+\item 
+{\bf Tcmt\-Hit\-Memory\-Pool} {\bfseries the\-T\-H\-Mem\-Pool}\label{namespaceCALICE_a30de6d7497ee34b94558a41166984bc4}
+
+\item 
+int {\bfseries debug} = 0\label{namespaceCALICE_a11a536f9358adeed389935b6405b0f84}
+
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Store strings in L\-C\-Generic\-Objects. The namespace \doxyref{C\-A\-L\-I\-C\-E}{p.}{namespaceCALICE} contains calice specific software needed for the processing of \doxyref{C\-A\-L\-I\-C\-E}{p.}{namespaceCALICE} data including the interface classes to the \doxyref{C\-A\-L\-I\-C\-E}{p.}{namespaceCALICE} Raw Data and convenient M\-A\-R\-L\-I\-N processors.
+
+T\-O\-D\-O\-: Create L\-C\-Generic\-Objects which can store strings. 
+
+\subsection{Enumeration Type Documentation}
+\index{C\-A\-L\-I\-C\-E@{C\-A\-L\-I\-C\-E}!Bml\-Sro\-Run\-Int\-Values@{Bml\-Sro\-Run\-Int\-Values}}
+\index{Bml\-Sro\-Run\-Int\-Values@{Bml\-Sro\-Run\-Int\-Values}!CALICE@{C\-A\-L\-I\-C\-E}}
+\subsubsection[{Bml\-Sro\-Run\-Int\-Values}]{\setlength{\rightskip}{0pt plus 5cm}enum {\bf C\-A\-L\-I\-C\-E\-::\-Bml\-Sro\-Run\-Int\-Values}}\label{namespaceCALICE_a36b5e3b9ecdc4f998e5207ab4ac625f7}
+
+
+The map which contains the measured values of the different data types. 
+
+The indices of the the stored values. 
+
+Definition at line 31 of file Bml\-Slow\-Run\-Data\-Block.\-hh.
+
+\index{C\-A\-L\-I\-C\-E@{C\-A\-L\-I\-C\-E}!Daq\-Type\-Int\-Values@{Daq\-Type\-Int\-Values}}
+\index{Daq\-Type\-Int\-Values@{Daq\-Type\-Int\-Values}!CALICE@{C\-A\-L\-I\-C\-E}}
+\subsubsection[{Daq\-Type\-Int\-Values}]{\setlength{\rightskip}{0pt plus 5cm}enum {\bf C\-A\-L\-I\-C\-E\-::\-Daq\-Type\-Int\-Values}}\label{namespaceCALICE_a5ae718b78892981cbadadb59dc20886d}
+
+
+The indices of the the stored values. 
+
+
+
+Definition at line 32 of file Daq\-Type\-Data\-Block.\-hh.
+
+\index{C\-A\-L\-I\-C\-E@{C\-A\-L\-I\-C\-E}!E\-Beam\-Parameter\-Exception\-Int\-Type@{E\-Beam\-Parameter\-Exception\-Int\-Type}}
+\index{E\-Beam\-Parameter\-Exception\-Int\-Type@{E\-Beam\-Parameter\-Exception\-Int\-Type}!CALICE@{C\-A\-L\-I\-C\-E}}
+\subsubsection[{E\-Beam\-Parameter\-Exception\-Int\-Type}]{\setlength{\rightskip}{0pt plus 5cm}enum {\bf C\-A\-L\-I\-C\-E\-::\-E\-Beam\-Parameter\-Exception\-Int\-Type}}\label{namespaceCALICE_a96f7ad2104da0f19d0981ae0b08834a4}
+\begin{Desc}
+\item[Enumerator]\par
+\begin{description}
+\index{k\-Beam\-Parameter\-Exception\-Int\-Beam\-Energy@{k\-Beam\-Parameter\-Exception\-Int\-Beam\-Energy}!C\-A\-L\-I\-C\-E@{C\-A\-L\-I\-C\-E}}\index{C\-A\-L\-I\-C\-E@{C\-A\-L\-I\-C\-E}!k\-Beam\-Parameter\-Exception\-Int\-Beam\-Energy@{k\-Beam\-Parameter\-Exception\-Int\-Beam\-Energy}}\item[{\em 
+k\-Beam\-Parameter\-Exception\-Int\-Beam\-Energy\label{namespaceCALICE_a96f7ad2104da0f19d0981ae0b08834a4a658933f81c576369d506266404eceafb}
+}]main particle type. \end{description}
+\end{Desc}
+
+
+Definition at line 17 of file Beam\-Parameter\-Exception.\-hh.
+
+\index{C\-A\-L\-I\-C\-E@{C\-A\-L\-I\-C\-E}!E\-Beam\-Parameter\-Float\-Type@{E\-Beam\-Parameter\-Float\-Type}}
+\index{E\-Beam\-Parameter\-Float\-Type@{E\-Beam\-Parameter\-Float\-Type}!CALICE@{C\-A\-L\-I\-C\-E}}
+\subsubsection[{E\-Beam\-Parameter\-Float\-Type}]{\setlength{\rightskip}{0pt plus 5cm}enum {\bf C\-A\-L\-I\-C\-E\-::\-E\-Beam\-Parameter\-Float\-Type}}\label{namespaceCALICE_ab9d32c7d0d823d540d4f07501d5265b2}
+\begin{DoxyAuthor}{Author}
+Götz Gaycken L\-L\-R (Ecole Polytechnique) 
+\end{DoxyAuthor}
+\begin{DoxyDate}{Date}
+Apr 2005 
+\end{DoxyDate}
+\begin{Desc}
+\item[Enumerator]\par
+\begin{description}
+\index{k\-Beam\-Parameter\-Float\-Peak\-Energy@{k\-Beam\-Parameter\-Float\-Peak\-Energy}!C\-A\-L\-I\-C\-E@{C\-A\-L\-I\-C\-E}}\index{C\-A\-L\-I\-C\-E@{C\-A\-L\-I\-C\-E}!k\-Beam\-Parameter\-Float\-Peak\-Energy@{k\-Beam\-Parameter\-Float\-Peak\-Energy}}\item[{\em 
+k\-Beam\-Parameter\-Float\-Peak\-Energy\label{namespaceCALICE_ab9d32c7d0d823d540d4f07501d5265b2a027c40b0417f47abdd8a981edb297c6e}
+}]maximum of the beam energy distribution \index{k\-Beam\-Parameter\-Float\-Beam\-Angle\-Z\-X@{k\-Beam\-Parameter\-Float\-Beam\-Angle\-Z\-X}!C\-A\-L\-I\-C\-E@{C\-A\-L\-I\-C\-E}}\index{C\-A\-L\-I\-C\-E@{C\-A\-L\-I\-C\-E}!k\-Beam\-Parameter\-Float\-Beam\-Angle\-Z\-X@{k\-Beam\-Parameter\-Float\-Beam\-Angle\-Z\-X}}\item[{\em 
+k\-Beam\-Parameter\-Float\-Beam\-Angle\-Z\-X\label{namespaceCALICE_ab9d32c7d0d823d540d4f07501d5265b2a99fcce2722d7185586cfa3aad77c90be}
+}]angle between beam axis and z-\/axis in the Z\-X-\/plane \index{k\-Beam\-Parameter\-Float\-Beam\-Angle\-Z\-Y@{k\-Beam\-Parameter\-Float\-Beam\-Angle\-Z\-Y}!C\-A\-L\-I\-C\-E@{C\-A\-L\-I\-C\-E}}\index{C\-A\-L\-I\-C\-E@{C\-A\-L\-I\-C\-E}!k\-Beam\-Parameter\-Float\-Beam\-Angle\-Z\-Y@{k\-Beam\-Parameter\-Float\-Beam\-Angle\-Z\-Y}}\item[{\em 
+k\-Beam\-Parameter\-Float\-Beam\-Angle\-Z\-Y\label{namespaceCALICE_ab9d32c7d0d823d540d4f07501d5265b2a661934dcd2da3e65a0188af7b60cb9e6}
+}]angle between beam axis and z-\/axis in the Z\-Y-\/plane \index{k\-Beam\-Parameter\-Float\-Beam\-Impact\-Position\-X0@{k\-Beam\-Parameter\-Float\-Beam\-Impact\-Position\-X0}!C\-A\-L\-I\-C\-E@{C\-A\-L\-I\-C\-E}}\index{C\-A\-L\-I\-C\-E@{C\-A\-L\-I\-C\-E}!k\-Beam\-Parameter\-Float\-Beam\-Impact\-Position\-X0@{k\-Beam\-Parameter\-Float\-Beam\-Impact\-Position\-X0}}\item[{\em 
+k\-Beam\-Parameter\-Float\-Beam\-Impact\-Position\-X0\label{namespaceCALICE_ab9d32c7d0d823d540d4f07501d5265b2a14140cfa735a0b40db3a61045796a45b}
+}]mean beam impact position in X\-Y-\/plane \index{k\-Beam\-Parameter\-Float\-Beam\-Impact\-Position\-Y0@{k\-Beam\-Parameter\-Float\-Beam\-Impact\-Position\-Y0}!C\-A\-L\-I\-C\-E@{C\-A\-L\-I\-C\-E}}\index{C\-A\-L\-I\-C\-E@{C\-A\-L\-I\-C\-E}!k\-Beam\-Parameter\-Float\-Beam\-Impact\-Position\-Y0@{k\-Beam\-Parameter\-Float\-Beam\-Impact\-Position\-Y0}}\item[{\em 
+k\-Beam\-Parameter\-Float\-Beam\-Impact\-Position\-Y0\label{namespaceCALICE_ab9d32c7d0d823d540d4f07501d5265b2a4bbfcb503f8711da0b5606a2f85f57c6}
+}]mean beam impact position in X\-Y-\/plane \end{description}
+\end{Desc}
+
+
+Definition at line 18 of file Beam\-Parameter.\-hh.
+
+\index{C\-A\-L\-I\-C\-E@{C\-A\-L\-I\-C\-E}!E\-Beam\-Parameter\-Int\-Type@{E\-Beam\-Parameter\-Int\-Type}}
+\index{E\-Beam\-Parameter\-Int\-Type@{E\-Beam\-Parameter\-Int\-Type}!CALICE@{C\-A\-L\-I\-C\-E}}
+\subsubsection[{E\-Beam\-Parameter\-Int\-Type}]{\setlength{\rightskip}{0pt plus 5cm}enum {\bf C\-A\-L\-I\-C\-E\-::\-E\-Beam\-Parameter\-Int\-Type}}\label{namespaceCALICE_aee0a19e16e221c87b2dea4dfc4b881ac}
+\begin{Desc}
+\item[Enumerator]\par
+\begin{description}
+\index{k\-Beam\-Parameter\-Int\-Beam\-Type@{k\-Beam\-Parameter\-Int\-Beam\-Type}!C\-A\-L\-I\-C\-E@{C\-A\-L\-I\-C\-E}}\index{C\-A\-L\-I\-C\-E@{C\-A\-L\-I\-C\-E}!k\-Beam\-Parameter\-Int\-Beam\-Type@{k\-Beam\-Parameter\-Int\-Beam\-Type}}\item[{\em 
+k\-Beam\-Parameter\-Int\-Beam\-Type\label{namespaceCALICE_aee0a19e16e221c87b2dea4dfc4b881aca47c4ac4f9c370b739565311878d8e4b7}
+}]main particle type. \end{description}
+\end{Desc}
+
+
+Definition at line 25 of file Beam\-Parameter.\-hh.
+
+\index{C\-A\-L\-I\-C\-E@{C\-A\-L\-I\-C\-E}!E\-Be\-Trg\-Poll\-Int\-Values@{E\-Be\-Trg\-Poll\-Int\-Values}}
+\index{E\-Be\-Trg\-Poll\-Int\-Values@{E\-Be\-Trg\-Poll\-Int\-Values}!CALICE@{C\-A\-L\-I\-C\-E}}
+\subsubsection[{E\-Be\-Trg\-Poll\-Int\-Values}]{\setlength{\rightskip}{0pt plus 5cm}enum {\bf C\-A\-L\-I\-C\-E\-::\-E\-Be\-Trg\-Poll\-Int\-Values}}\label{namespaceCALICE_a043375eaf9ca6b21b27f300b97e1cd73}
+
+
+The indices of all the stored values. 
+
+
+
+Definition at line 24 of file Be\-Trg\-Poll\-Data.\-hh.
+
+\index{C\-A\-L\-I\-C\-E@{C\-A\-L\-I\-C\-E}!E\-Bml\-Event\-Int\-Values@{E\-Bml\-Event\-Int\-Values}}
+\index{E\-Bml\-Event\-Int\-Values@{E\-Bml\-Event\-Int\-Values}!CALICE@{C\-A\-L\-I\-C\-E}}
+\subsubsection[{E\-Bml\-Event\-Int\-Values}]{\setlength{\rightskip}{0pt plus 5cm}enum {\bf C\-A\-L\-I\-C\-E\-::\-E\-Bml\-Event\-Int\-Values}}\label{namespaceCALICE_a836afabd7460d53a62c16e72bbcd7fd2}
+
+
+The indices of all the stored values. 
+
+
+
+Definition at line 43 of file Bml\-Event\-Data.\-hh.
+
+\index{C\-A\-L\-I\-C\-E@{C\-A\-L\-I\-C\-E}!E\-Bml\-Event\-Sup\-Int\-Values@{E\-Bml\-Event\-Sup\-Int\-Values}}
+\index{E\-Bml\-Event\-Sup\-Int\-Values@{E\-Bml\-Event\-Sup\-Int\-Values}!CALICE@{C\-A\-L\-I\-C\-E}}
+\subsubsection[{E\-Bml\-Event\-Sup\-Int\-Values}]{\setlength{\rightskip}{0pt plus 5cm}enum {\bf C\-A\-L\-I\-C\-E\-::\-E\-Bml\-Event\-Sup\-Int\-Values}}\label{namespaceCALICE_a5332a51e92735de19cc618ace1ab2b14}
+
+
+The indices of all the stored values. 
+
+
+
+Definition at line 25 of file Bml\-Event\-Data\-Sup.\-hh.
+
+\index{C\-A\-L\-I\-C\-E@{C\-A\-L\-I\-C\-E}!E\-Detector\-Transformation\-Float\-Type@{E\-Detector\-Transformation\-Float\-Type}}
+\index{E\-Detector\-Transformation\-Float\-Type@{E\-Detector\-Transformation\-Float\-Type}!CALICE@{C\-A\-L\-I\-C\-E}}
+\subsubsection[{E\-Detector\-Transformation\-Float\-Type}]{\setlength{\rightskip}{0pt plus 5cm}enum {\bf C\-A\-L\-I\-C\-E\-::\-E\-Detector\-Transformation\-Float\-Type}}\label{namespaceCALICE_afdc076c2e1630dca538b86bece19ef9b}
+\begin{DoxyAuthor}{Author}
+Götz Gaycken L\-L\-R (Ecole Polytechnique) 
+\end{DoxyAuthor}
+\begin{DoxyDate}{Date}
+Apr 2005 
+\end{DoxyDate}
+\begin{Desc}
+\item[Enumerator]\par
+\begin{description}
+\index{k\-Detector\-Transformation\-Float\-Detector\-Angle\-Z\-X@{k\-Detector\-Transformation\-Float\-Detector\-Angle\-Z\-X}!C\-A\-L\-I\-C\-E@{C\-A\-L\-I\-C\-E}}\index{C\-A\-L\-I\-C\-E@{C\-A\-L\-I\-C\-E}!k\-Detector\-Transformation\-Float\-Detector\-Angle\-Z\-X@{k\-Detector\-Transformation\-Float\-Detector\-Angle\-Z\-X}}\item[{\em 
+k\-Detector\-Transformation\-Float\-Detector\-Angle\-Z\-X\label{namespaceCALICE_afdc076c2e1630dca538b86bece19ef9ba5516666ccff09213d049c00381a1dbe8}
+}]angle between the detector and z-\/axis in the Z\-X-\/plane \index{k\-Detector\-Transformation\-Float\-Detector\-Rotation\-X0@{k\-Detector\-Transformation\-Float\-Detector\-Rotation\-X0}!C\-A\-L\-I\-C\-E@{C\-A\-L\-I\-C\-E}}\index{C\-A\-L\-I\-C\-E@{C\-A\-L\-I\-C\-E}!k\-Detector\-Transformation\-Float\-Detector\-Rotation\-X0@{k\-Detector\-Transformation\-Float\-Detector\-Rotation\-X0}}\item[{\em 
+k\-Detector\-Transformation\-Float\-Detector\-Rotation\-X0\label{namespaceCALICE_afdc076c2e1630dca538b86bece19ef9babf2752ce78daa630689d8a34d9e0669c}
+}]origin of the rotation of the detector in Z\-X-\/plane \index{k\-Detector\-Transformation\-Float\-Detector\-Rotation\-Z0@{k\-Detector\-Transformation\-Float\-Detector\-Rotation\-Z0}!C\-A\-L\-I\-C\-E@{C\-A\-L\-I\-C\-E}}\index{C\-A\-L\-I\-C\-E@{C\-A\-L\-I\-C\-E}!k\-Detector\-Transformation\-Float\-Detector\-Rotation\-Z0@{k\-Detector\-Transformation\-Float\-Detector\-Rotation\-Z0}}\item[{\em 
+k\-Detector\-Transformation\-Float\-Detector\-Rotation\-Z0\label{namespaceCALICE_afdc076c2e1630dca538b86bece19ef9bab194921c1081c10cf0e9fbe9b23e78d3}
+}]origin of the rotation of the detector in Z\-X-\/plane \index{k\-Detector\-Transformation\-Float\-Detector\-X0@{k\-Detector\-Transformation\-Float\-Detector\-X0}!C\-A\-L\-I\-C\-E@{C\-A\-L\-I\-C\-E}}\index{C\-A\-L\-I\-C\-E@{C\-A\-L\-I\-C\-E}!k\-Detector\-Transformation\-Float\-Detector\-X0@{k\-Detector\-Transformation\-Float\-Detector\-X0}}\item[{\em 
+k\-Detector\-Transformation\-Float\-Detector\-X0\label{namespaceCALICE_afdc076c2e1630dca538b86bece19ef9bad5249932ae34d0dcea3219a1d0bb3780}
+}]origin of the detector x-\/coordinate \index{k\-Detector\-Transformation\-Float\-Detector\-Y0@{k\-Detector\-Transformation\-Float\-Detector\-Y0}!C\-A\-L\-I\-C\-E@{C\-A\-L\-I\-C\-E}}\index{C\-A\-L\-I\-C\-E@{C\-A\-L\-I\-C\-E}!k\-Detector\-Transformation\-Float\-Detector\-Y0@{k\-Detector\-Transformation\-Float\-Detector\-Y0}}\item[{\em 
+k\-Detector\-Transformation\-Float\-Detector\-Y0\label{namespaceCALICE_afdc076c2e1630dca538b86bece19ef9bad320df65a8ed7d2e84d1266d941ac4f7}
+}]origin of the detector y-\/coordinate \index{k\-Detector\-Transformation\-Float\-Detector\-Z0@{k\-Detector\-Transformation\-Float\-Detector\-Z0}!C\-A\-L\-I\-C\-E@{C\-A\-L\-I\-C\-E}}\index{C\-A\-L\-I\-C\-E@{C\-A\-L\-I\-C\-E}!k\-Detector\-Transformation\-Float\-Detector\-Z0@{k\-Detector\-Transformation\-Float\-Detector\-Z0}}\item[{\em 
+k\-Detector\-Transformation\-Float\-Detector\-Z0\label{namespaceCALICE_afdc076c2e1630dca538b86bece19ef9ba0a2d20cf39ccb163cd659f2b475461e9}
+}]origin of the detector z-\/coordinate \end{description}
+\end{Desc}
+
+
+Definition at line 18 of file Detector\-Transformation.\-hh.
+
+\index{C\-A\-L\-I\-C\-E@{C\-A\-L\-I\-C\-E}!E\-Drift\-Chamber\-Parameter\-Float\-Type@{E\-Drift\-Chamber\-Parameter\-Float\-Type}}
+\index{E\-Drift\-Chamber\-Parameter\-Float\-Type@{E\-Drift\-Chamber\-Parameter\-Float\-Type}!CALICE@{C\-A\-L\-I\-C\-E}}
+\subsubsection[{E\-Drift\-Chamber\-Parameter\-Float\-Type}]{\setlength{\rightskip}{0pt plus 5cm}enum {\bf C\-A\-L\-I\-C\-E\-::\-E\-Drift\-Chamber\-Parameter\-Float\-Type}}\label{namespaceCALICE_acc4ab05bf89642562469a9f6c7eb9f32}
+\begin{DoxyAuthor}{Author}
+Gï¿½tz Gaycken L\-L\-R (Ecole Polytechnique) 
+\end{DoxyAuthor}
+\begin{DoxyDate}{Date}
+Apr 2005 
+\end{DoxyDate}
+\begin{Desc}
+\item[Enumerator]\par
+\begin{description}
+\index{k\-Drift\-Chamber\-Parameter\-Float\-Velocity@{k\-Drift\-Chamber\-Parameter\-Float\-Velocity}!C\-A\-L\-I\-C\-E@{C\-A\-L\-I\-C\-E}}\index{C\-A\-L\-I\-C\-E@{C\-A\-L\-I\-C\-E}!k\-Drift\-Chamber\-Parameter\-Float\-Velocity@{k\-Drift\-Chamber\-Parameter\-Float\-Velocity}}\item[{\em 
+k\-Drift\-Chamber\-Parameter\-Float\-Velocity\label{namespaceCALICE_acc4ab05bf89642562469a9f6c7eb9f32a3168985ac11531896a01a46ff719b422}
+}]The drift velocity. \index{k\-Drift\-Chamber\-Parameter\-Float\-Delay@{k\-Drift\-Chamber\-Parameter\-Float\-Delay}!C\-A\-L\-I\-C\-E@{C\-A\-L\-I\-C\-E}}\index{C\-A\-L\-I\-C\-E@{C\-A\-L\-I\-C\-E}!k\-Drift\-Chamber\-Parameter\-Float\-Delay@{k\-Drift\-Chamber\-Parameter\-Float\-Delay}}\item[{\em 
+k\-Drift\-Chamber\-Parameter\-Float\-Delay\label{namespaceCALICE_acc4ab05bf89642562469a9f6c7eb9f32a598ebd2f1e6777d3def927c43d8b4344}
+}]time shift to subtracted from the measured time. \index{k\-Drift\-Chamber\-Parameter\-Float\-Offset\-Z@{k\-Drift\-Chamber\-Parameter\-Float\-Offset\-Z}!C\-A\-L\-I\-C\-E@{C\-A\-L\-I\-C\-E}}\index{C\-A\-L\-I\-C\-E@{C\-A\-L\-I\-C\-E}!k\-Drift\-Chamber\-Parameter\-Float\-Offset\-Z@{k\-Drift\-Chamber\-Parameter\-Float\-Offset\-Z}}\item[{\em 
+k\-Drift\-Chamber\-Parameter\-Float\-Offset\-Z\label{namespaceCALICE_acc4ab05bf89642562469a9f6c7eb9f32a8d7a8f82ea2d7c638b190da0ba0b7a76}
+}]the position in the z-\/direction (negative) w.\-r.\-t. E\-C\-A\-L front plate. \index{k\-Drift\-Chamber\-Parameter\-Float\-Offset\-U@{k\-Drift\-Chamber\-Parameter\-Float\-Offset\-U}!C\-A\-L\-I\-C\-E@{C\-A\-L\-I\-C\-E}}\index{C\-A\-L\-I\-C\-E@{C\-A\-L\-I\-C\-E}!k\-Drift\-Chamber\-Parameter\-Float\-Offset\-U@{k\-Drift\-Chamber\-Parameter\-Float\-Offset\-U}}\item[{\em 
+k\-Drift\-Chamber\-Parameter\-Float\-Offset\-U\label{namespaceCALICE_acc4ab05bf89642562469a9f6c7eb9f32a84b411a21b482e1537d3649a77a81770}
+}]The position offset in the drift-\/direction. \index{k\-Drift\-Chamber\-Parameter\-Float\-Error@{k\-Drift\-Chamber\-Parameter\-Float\-Error}!C\-A\-L\-I\-C\-E@{C\-A\-L\-I\-C\-E}}\index{C\-A\-L\-I\-C\-E@{C\-A\-L\-I\-C\-E}!k\-Drift\-Chamber\-Parameter\-Float\-Error@{k\-Drift\-Chamber\-Parameter\-Float\-Error}}\item[{\em 
+k\-Drift\-Chamber\-Parameter\-Float\-Error\label{namespaceCALICE_acc4ab05bf89642562469a9f6c7eb9f32aace0f5c90ad932ca8b9992ea7c04c41d}
+}]The error on the position measurement. \end{description}
+\end{Desc}
+
+
+Definition at line 19 of file Drift\-Chamber\-Parameter.\-hh.
+
+\index{C\-A\-L\-I\-C\-E@{C\-A\-L\-I\-C\-E}!E\-Drift\-Chamber\-Parameter\-Int\-Type@{E\-Drift\-Chamber\-Parameter\-Int\-Type}}
+\index{E\-Drift\-Chamber\-Parameter\-Int\-Type@{E\-Drift\-Chamber\-Parameter\-Int\-Type}!CALICE@{C\-A\-L\-I\-C\-E}}
+\subsubsection[{E\-Drift\-Chamber\-Parameter\-Int\-Type}]{\setlength{\rightskip}{0pt plus 5cm}enum {\bf C\-A\-L\-I\-C\-E\-::\-E\-Drift\-Chamber\-Parameter\-Int\-Type}}\label{namespaceCALICE_ac0e2c8720a0d54999c18ef1df102284c}
+\begin{Desc}
+\item[Enumerator]\par
+\begin{description}
+\index{k\-Drift\-Chamber\-Parameter\-Int\-Wire\-Type@{k\-Drift\-Chamber\-Parameter\-Int\-Wire\-Type}!C\-A\-L\-I\-C\-E@{C\-A\-L\-I\-C\-E}}\index{C\-A\-L\-I\-C\-E@{C\-A\-L\-I\-C\-E}!k\-Drift\-Chamber\-Parameter\-Int\-Wire\-Type@{k\-Drift\-Chamber\-Parameter\-Int\-Wire\-Type}}\item[{\em 
+k\-Drift\-Chamber\-Parameter\-Int\-Wire\-Type\label{namespaceCALICE_ac0e2c8720a0d54999c18ef1df102284caf3ea0506f1d447285fb6c96693f6b986}
+}]The drift direction w.\-r.\-t. to the drift axis Y/\-X. \end{description}
+\end{Desc}
+
+
+Definition at line 27 of file Drift\-Chamber\-Parameter.\-hh.
+
+\index{C\-A\-L\-I\-C\-E@{C\-A\-L\-I\-C\-E}!E\-Experimental\-Setup\-Float\-Type@{E\-Experimental\-Setup\-Float\-Type}}
+\index{E\-Experimental\-Setup\-Float\-Type@{E\-Experimental\-Setup\-Float\-Type}!CALICE@{C\-A\-L\-I\-C\-E}}
+\subsubsection[{E\-Experimental\-Setup\-Float\-Type}]{\setlength{\rightskip}{0pt plus 5cm}enum {\bf C\-A\-L\-I\-C\-E\-::\-E\-Experimental\-Setup\-Float\-Type}}\label{namespaceCALICE_a47a86fde83c467d6ac0d6f495c342932}
+\begin{DoxyAuthor}{Author}
+Götz Gaycken L\-L\-R (Ecole Polytechnique) 
+\end{DoxyAuthor}
+\begin{DoxyDate}{Date}
+Apr 2005 
+\end{DoxyDate}
+\begin{Desc}
+\item[Enumerator]\par
+\begin{description}
+\index{k\-Experimental\-Setup\-Float\-Peak\-Energy@{k\-Experimental\-Setup\-Float\-Peak\-Energy}!C\-A\-L\-I\-C\-E@{C\-A\-L\-I\-C\-E}}\index{C\-A\-L\-I\-C\-E@{C\-A\-L\-I\-C\-E}!k\-Experimental\-Setup\-Float\-Peak\-Energy@{k\-Experimental\-Setup\-Float\-Peak\-Energy}}\item[{\em 
+k\-Experimental\-Setup\-Float\-Peak\-Energy\label{namespaceCALICE_a47a86fde83c467d6ac0d6f495c342932a927bc2f8ff184deba8d19743e7d7a1e2}
+}]maximum of the beam energy distribution \index{k\-Experimental\-Setup\-Float\-Beam\-Angle\-Z\-X@{k\-Experimental\-Setup\-Float\-Beam\-Angle\-Z\-X}!C\-A\-L\-I\-C\-E@{C\-A\-L\-I\-C\-E}}\index{C\-A\-L\-I\-C\-E@{C\-A\-L\-I\-C\-E}!k\-Experimental\-Setup\-Float\-Beam\-Angle\-Z\-X@{k\-Experimental\-Setup\-Float\-Beam\-Angle\-Z\-X}}\item[{\em 
+k\-Experimental\-Setup\-Float\-Beam\-Angle\-Z\-X\label{namespaceCALICE_a47a86fde83c467d6ac0d6f495c342932a2466f6d257d383aba141b21ffafbcf82}
+}]angle between beam axis and z-\/axis in the Z\-X-\/plane \index{k\-Experimental\-Setup\-Float\-Beam\-Angle\-Z\-Y@{k\-Experimental\-Setup\-Float\-Beam\-Angle\-Z\-Y}!C\-A\-L\-I\-C\-E@{C\-A\-L\-I\-C\-E}}\index{C\-A\-L\-I\-C\-E@{C\-A\-L\-I\-C\-E}!k\-Experimental\-Setup\-Float\-Beam\-Angle\-Z\-Y@{k\-Experimental\-Setup\-Float\-Beam\-Angle\-Z\-Y}}\item[{\em 
+k\-Experimental\-Setup\-Float\-Beam\-Angle\-Z\-Y\label{namespaceCALICE_a47a86fde83c467d6ac0d6f495c342932accb9593e7653c897dd62359318945ceb}
+}]angle between beam axis and z-\/axis in the Z\-Y-\/plane \index{k\-Experimental\-Setup\-Float\-Beam\-Impact\-Position\-X0@{k\-Experimental\-Setup\-Float\-Beam\-Impact\-Position\-X0}!C\-A\-L\-I\-C\-E@{C\-A\-L\-I\-C\-E}}\index{C\-A\-L\-I\-C\-E@{C\-A\-L\-I\-C\-E}!k\-Experimental\-Setup\-Float\-Beam\-Impact\-Position\-X0@{k\-Experimental\-Setup\-Float\-Beam\-Impact\-Position\-X0}}\item[{\em 
+k\-Experimental\-Setup\-Float\-Beam\-Impact\-Position\-X0\label{namespaceCALICE_a47a86fde83c467d6ac0d6f495c342932a6b6cef9776806a033fee924c18254a4f}
+}]mean beam impact position in X\-Y-\/plane \index{k\-Experimental\-Setup\-Float\-Beam\-Impact\-Position\-Y0@{k\-Experimental\-Setup\-Float\-Beam\-Impact\-Position\-Y0}!C\-A\-L\-I\-C\-E@{C\-A\-L\-I\-C\-E}}\index{C\-A\-L\-I\-C\-E@{C\-A\-L\-I\-C\-E}!k\-Experimental\-Setup\-Float\-Beam\-Impact\-Position\-Y0@{k\-Experimental\-Setup\-Float\-Beam\-Impact\-Position\-Y0}}\item[{\em 
+k\-Experimental\-Setup\-Float\-Beam\-Impact\-Position\-Y0\label{namespaceCALICE_a47a86fde83c467d6ac0d6f495c342932a8ac1ca53176d2398649841553023f257}
+}]mean beam impact position in X\-Y-\/plane \index{k\-Experimental\-Setup\-Float\-Detector\-Angle\-Z\-X@{k\-Experimental\-Setup\-Float\-Detector\-Angle\-Z\-X}!C\-A\-L\-I\-C\-E@{C\-A\-L\-I\-C\-E}}\index{C\-A\-L\-I\-C\-E@{C\-A\-L\-I\-C\-E}!k\-Experimental\-Setup\-Float\-Detector\-Angle\-Z\-X@{k\-Experimental\-Setup\-Float\-Detector\-Angle\-Z\-X}}\item[{\em 
+k\-Experimental\-Setup\-Float\-Detector\-Angle\-Z\-X\label{namespaceCALICE_a47a86fde83c467d6ac0d6f495c342932a6eccede87a39e6cc689a8b06718c0943}
+}]angle between the detector and z-\/axis in the Z\-X-\/plane \index{k\-Experimental\-Setup\-Float\-Detector\-Rotation\-X0@{k\-Experimental\-Setup\-Float\-Detector\-Rotation\-X0}!C\-A\-L\-I\-C\-E@{C\-A\-L\-I\-C\-E}}\index{C\-A\-L\-I\-C\-E@{C\-A\-L\-I\-C\-E}!k\-Experimental\-Setup\-Float\-Detector\-Rotation\-X0@{k\-Experimental\-Setup\-Float\-Detector\-Rotation\-X0}}\item[{\em 
+k\-Experimental\-Setup\-Float\-Detector\-Rotation\-X0\label{namespaceCALICE_a47a86fde83c467d6ac0d6f495c342932ada4c661cd39a3cf2089765e8576c9cd1}
+}]origin of the rotation of the detector in Z\-X-\/plane \index{k\-Experimental\-Setup\-Float\-Detector\-Rotation\-Z0@{k\-Experimental\-Setup\-Float\-Detector\-Rotation\-Z0}!C\-A\-L\-I\-C\-E@{C\-A\-L\-I\-C\-E}}\index{C\-A\-L\-I\-C\-E@{C\-A\-L\-I\-C\-E}!k\-Experimental\-Setup\-Float\-Detector\-Rotation\-Z0@{k\-Experimental\-Setup\-Float\-Detector\-Rotation\-Z0}}\item[{\em 
+k\-Experimental\-Setup\-Float\-Detector\-Rotation\-Z0\label{namespaceCALICE_a47a86fde83c467d6ac0d6f495c342932a3a356ee6d8f0dbc8cad2f72288c3ca30}
+}]origin of the rotation of the detector in Z\-X-\/plane \index{k\-Experimental\-Setup\-Float\-Detector\-X0@{k\-Experimental\-Setup\-Float\-Detector\-X0}!C\-A\-L\-I\-C\-E@{C\-A\-L\-I\-C\-E}}\index{C\-A\-L\-I\-C\-E@{C\-A\-L\-I\-C\-E}!k\-Experimental\-Setup\-Float\-Detector\-X0@{k\-Experimental\-Setup\-Float\-Detector\-X0}}\item[{\em 
+k\-Experimental\-Setup\-Float\-Detector\-X0\label{namespaceCALICE_a47a86fde83c467d6ac0d6f495c342932aea1baf2c7880540fdaa5db319be4e3a0}
+}]origin of the detector x-\/coordinate \index{k\-Experimental\-Setup\-Float\-Detector\-Y0@{k\-Experimental\-Setup\-Float\-Detector\-Y0}!C\-A\-L\-I\-C\-E@{C\-A\-L\-I\-C\-E}}\index{C\-A\-L\-I\-C\-E@{C\-A\-L\-I\-C\-E}!k\-Experimental\-Setup\-Float\-Detector\-Y0@{k\-Experimental\-Setup\-Float\-Detector\-Y0}}\item[{\em 
+k\-Experimental\-Setup\-Float\-Detector\-Y0\label{namespaceCALICE_a47a86fde83c467d6ac0d6f495c342932aa5fe856456f4e6b9bf83a4592bd9eb73}
+}]origin of the detector y-\/coordinate \index{k\-Experimental\-Setup\-Float\-Detector\-Z0@{k\-Experimental\-Setup\-Float\-Detector\-Z0}!C\-A\-L\-I\-C\-E@{C\-A\-L\-I\-C\-E}}\index{C\-A\-L\-I\-C\-E@{C\-A\-L\-I\-C\-E}!k\-Experimental\-Setup\-Float\-Detector\-Z0@{k\-Experimental\-Setup\-Float\-Detector\-Z0}}\item[{\em 
+k\-Experimental\-Setup\-Float\-Detector\-Z0\label{namespaceCALICE_a47a86fde83c467d6ac0d6f495c342932a12dbfc545ddf14fe3cc6890624850c62}
+}]origin of the detector z-\/coordinate \end{description}
+\end{Desc}
+
+
+Definition at line 18 of file Experimental\-Setup.\-hh.
+
+\index{C\-A\-L\-I\-C\-E@{C\-A\-L\-I\-C\-E}!E\-Experimental\-Setup\-Int\-Type@{E\-Experimental\-Setup\-Int\-Type}}
+\index{E\-Experimental\-Setup\-Int\-Type@{E\-Experimental\-Setup\-Int\-Type}!CALICE@{C\-A\-L\-I\-C\-E}}
+\subsubsection[{E\-Experimental\-Setup\-Int\-Type}]{\setlength{\rightskip}{0pt plus 5cm}enum {\bf C\-A\-L\-I\-C\-E\-::\-E\-Experimental\-Setup\-Int\-Type}}\label{namespaceCALICE_a49af971019044fe3fea691316bf634d0}
+\begin{Desc}
+\item[Enumerator]\par
+\begin{description}
+\index{k\-Experimental\-Setup\-Int\-Beam\-Type@{k\-Experimental\-Setup\-Int\-Beam\-Type}!C\-A\-L\-I\-C\-E@{C\-A\-L\-I\-C\-E}}\index{C\-A\-L\-I\-C\-E@{C\-A\-L\-I\-C\-E}!k\-Experimental\-Setup\-Int\-Beam\-Type@{k\-Experimental\-Setup\-Int\-Beam\-Type}}\item[{\em 
+k\-Experimental\-Setup\-Int\-Beam\-Type\label{namespaceCALICE_a49af971019044fe3fea691316bf634d0ab93d3ed1ba31242907319cf4d775a5fb}
+}]main particle type. \end{description}
+\end{Desc}
+
+
+Definition at line 31 of file Experimental\-Setup.\-hh.
+
+\index{C\-A\-L\-I\-C\-E@{C\-A\-L\-I\-C\-E}!E\-Fe\-Conf\-Block\-Int\-Values@{E\-Fe\-Conf\-Block\-Int\-Values}}
+\index{E\-Fe\-Conf\-Block\-Int\-Values@{E\-Fe\-Conf\-Block\-Int\-Values}!CALICE@{C\-A\-L\-I\-C\-E}}
+\subsubsection[{E\-Fe\-Conf\-Block\-Int\-Values}]{\setlength{\rightskip}{0pt plus 5cm}enum {\bf C\-A\-L\-I\-C\-E\-::\-E\-Fe\-Conf\-Block\-Int\-Values}}\label{namespaceCALICE_a99a351edf8b18a786df1217c8a2ad3f3}
+
+
+The indices of all the stored values. 
+
+
+
+Definition at line 20 of file Fe\-Configuration\-Block.\-hh.
+
+\index{C\-A\-L\-I\-C\-E@{C\-A\-L\-I\-C\-E}!E\-Int\-Values@{E\-Int\-Values}}
+\index{E\-Int\-Values@{E\-Int\-Values}!CALICE@{C\-A\-L\-I\-C\-E}}
+\subsubsection[{E\-Int\-Values}]{\setlength{\rightskip}{0pt plus 5cm}enum {\bf C\-A\-L\-I\-C\-E\-::\-E\-Int\-Values}}\label{namespaceCALICE_a4d53afcd787a392b39aee875062b0c3c}
+
+
+The indices of all the stored values. 
+
+
+
+Definition at line 25 of file Fe\-Info.\-hh.
+
+\index{C\-A\-L\-I\-C\-E@{C\-A\-L\-I\-C\-E}!E\-Module\-Connection\-Float\-Type@{E\-Module\-Connection\-Float\-Type}}
+\index{E\-Module\-Connection\-Float\-Type@{E\-Module\-Connection\-Float\-Type}!CALICE@{C\-A\-L\-I\-C\-E}}
+\subsubsection[{E\-Module\-Connection\-Float\-Type}]{\setlength{\rightskip}{0pt plus 5cm}enum {\bf C\-A\-L\-I\-C\-E\-::\-E\-Module\-Connection\-Float\-Type}}\label{namespaceCALICE_a1c6a9ca4913cda765ebdbd3fe486de1c}
+\begin{DoxyAuthor}{Author}
+Götz Gaycken L\-L\-R (Ecole Polytechnique) 
+\end{DoxyAuthor}
+\begin{DoxyDate}{Date}
+Apr 2005 
+\end{DoxyDate}
+
+
+Definition at line 20 of file Module\-Connection.\-hh.
+
+\index{C\-A\-L\-I\-C\-E@{C\-A\-L\-I\-C\-E}!E\-Module\-Location\-Float\-Type@{E\-Module\-Location\-Float\-Type}}
+\index{E\-Module\-Location\-Float\-Type@{E\-Module\-Location\-Float\-Type}!CALICE@{C\-A\-L\-I\-C\-E}}
+\subsubsection[{E\-Module\-Location\-Float\-Type}]{\setlength{\rightskip}{0pt plus 5cm}enum {\bf C\-A\-L\-I\-C\-E\-::\-E\-Module\-Location\-Float\-Type}}\label{namespaceCALICE_ad8dd9237e1402ffd776090967f53b885}
+\begin{DoxyAuthor}{Author}
+Götz Gaycken L\-L\-R (Ecole Polytechnique) 
+\end{DoxyAuthor}
+\begin{DoxyDate}{Date}
+Apr 2005 
+\end{DoxyDate}
+
+
+Definition at line 21 of file Module\-Location.\-hh.
+
+\index{C\-A\-L\-I\-C\-E@{C\-A\-L\-I\-C\-E}!E\-Tcmt\-Connection\-Float\-Type@{E\-Tcmt\-Connection\-Float\-Type}}
+\index{E\-Tcmt\-Connection\-Float\-Type@{E\-Tcmt\-Connection\-Float\-Type}!CALICE@{C\-A\-L\-I\-C\-E}}
+\subsubsection[{E\-Tcmt\-Connection\-Float\-Type}]{\setlength{\rightskip}{0pt plus 5cm}enum {\bf C\-A\-L\-I\-C\-E\-::\-E\-Tcmt\-Connection\-Float\-Type}}\label{namespaceCALICE_ac6c6f79dd5223d4836cededdfe142012}
+\begin{DoxyAuthor}{Author}
+Guilherme Lima (Northern Illinois University) 
+\end{DoxyAuthor}
+\begin{DoxyDate}{Date}
+July 2007 
+\end{DoxyDate}
+
+
+Definition at line 28 of file Tcmt\-Connection.\-hh.
+
+\index{C\-A\-L\-I\-C\-E@{C\-A\-L\-I\-C\-E}!Sce\-Sro\-Mod\-Int\-Values@{Sce\-Sro\-Mod\-Int\-Values}}
+\index{Sce\-Sro\-Mod\-Int\-Values@{Sce\-Sro\-Mod\-Int\-Values}!CALICE@{C\-A\-L\-I\-C\-E}}
+\subsubsection[{Sce\-Sro\-Mod\-Int\-Values}]{\setlength{\rightskip}{0pt plus 5cm}enum {\bf C\-A\-L\-I\-C\-E\-::\-Sce\-Sro\-Mod\-Int\-Values}}\label{namespaceCALICE_a16ea5bc876f062a76ece0c3384014e58}
+
+
+The map which contains the measured values of the different types. 
+
+The indices of the the stored values. 
+
+Definition at line 30 of file Sce\-Slow\-Readout\-Mod\-Block.\-hh.
+
+
+
+\subsection{Function Documentation}
+\index{C\-A\-L\-I\-C\-E@{C\-A\-L\-I\-C\-E}!calculate\-Drift\-Velocity@{calculate\-Drift\-Velocity}}
+\index{calculate\-Drift\-Velocity@{calculate\-Drift\-Velocity}!CALICE@{C\-A\-L\-I\-C\-E}}
+\subsubsection[{calculate\-Drift\-Velocity}]{\setlength{\rightskip}{0pt plus 5cm}float C\-A\-L\-I\-C\-E\-::calculate\-Drift\-Velocity (
+\begin{DoxyParamCaption}
+\item[{float}]{drift\-\_\-time\-\_\-u, }
+\item[{float}]{drift\-\_\-time\-\_\-next\-\_\-u, }
+\item[{const Drift\-Chamber\-Parameter \&}]{axis\-\_\-u, }
+\item[{const Drift\-Chamber\-Parameter \&}]{next\-\_\-axis\-\_\-u}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\label{namespaceCALICE_ae6c623aea7b39191ad11be991e29528c}
+
+
+Calculate the drift velocity from the measured drift time of two adjacent chambers (same axis). 
+
+Assuming that the particle track is reasonably parallel to the z-\/axis, the electrons generated in two adjacent chambers (containing wires pointing in the same direction) will travel in total the distance (in the drift direction) between the adjacent wires. The drift velocity is then\-: L/(t1+t2), where L is the distance of the wires and t1 and t2 the drift times measured at the two wires. 
+
+Definition at line 217 of file Drift\-Chamber\-Parameter.\-hh.
+
+
+
+References calculate\-Drift\-Velocity(), C\-A\-L\-I\-C\-E\-::\-Drift\-Chamber\-Parameter\-::get\-Delay(), and C\-A\-L\-I\-C\-E\-::\-Drift\-Chamber\-Parameter\-::get\-Offset\-U().
+
+
+
+Referenced by calculate\-Drift\-Velocity().
+
+\index{C\-A\-L\-I\-C\-E@{C\-A\-L\-I\-C\-E}!clone\-Collection@{clone\-Collection}}
+\index{clone\-Collection@{clone\-Collection}!CALICE@{C\-A\-L\-I\-C\-E}}
+\subsubsection[{clone\-Collection}]{\setlength{\rightskip}{0pt plus 5cm}E\-V\-E\-N\-T\-::\-L\-C\-Collection $\ast$ C\-A\-L\-I\-C\-E\-::clone\-Collection (
+\begin{DoxyParamCaption}
+\item[{E\-V\-E\-N\-T\-::\-L\-C\-Collection $\ast$}]{col}
+\end{DoxyParamCaption}
+)}\label{namespaceCALICE_a3e37b441ad7623c0e77392a0b68c2e3c}
+
+
+Clone a collection. 
+
+This will clone all the elements and the int, float and string parameters. This should be everything. N\-O\-T\-E\-: depending on the size of the collection, and the number of parameters this may be a very expenisve operation. 
+
+Definition at line 32 of file clone\-Utils.\-cc.
+
+
+
+References clone\-L\-C\-Generic\-Object().
+
+
+
+Referenced by C\-A\-L\-I\-C\-E\-::\-Conditions\-Data\-Write\-Handler\-::conditions\-Changed().
+
+\index{C\-A\-L\-I\-C\-E@{C\-A\-L\-I\-C\-E}!clone\-L\-C\-Generic\-Object@{clone\-L\-C\-Generic\-Object}}
+\index{clone\-L\-C\-Generic\-Object@{clone\-L\-C\-Generic\-Object}!CALICE@{C\-A\-L\-I\-C\-E}}
+\subsubsection[{clone\-L\-C\-Generic\-Object}]{\setlength{\rightskip}{0pt plus 5cm}E\-V\-E\-N\-T\-::\-L\-C\-Generic\-Object $\ast$ C\-A\-L\-I\-C\-E\-::clone\-L\-C\-Generic\-Object (
+\begin{DoxyParamCaption}
+\item[{E\-V\-E\-N\-T\-::\-L\-C\-Object $\ast$}]{obj}
+\end{DoxyParamCaption}
+)}\label{namespaceCALICE_a5b373599fcaeff6f0c7b2e045e17e606}
+
+
+Utility functions to clone L\-C\-Generic\-Objects. 
+
+Implementation of cloning functions.
+
+\begin{DoxyAuthor}{Author}
+G. Gaycken (L\-L\-R) (put into own file by R. Pöschl (L\-A\-L) 
+\end{DoxyAuthor}
+\begin{DoxyDate}{Date}
+Feb 22 2006\-Different methods for object cloning 
+\end{DoxyDate}
+
+
+Definition at line 13 of file clone\-Utils.\-cc.
+
+
+
+Referenced by clone\-Collection().
+
+\index{C\-A\-L\-I\-C\-E@{C\-A\-L\-I\-C\-E}!convert\-String\-To\-Ints@{convert\-String\-To\-Ints}}
+\index{convert\-String\-To\-Ints@{convert\-String\-To\-Ints}!CALICE@{C\-A\-L\-I\-C\-E}}
+\subsubsection[{convert\-String\-To\-Ints}]{\setlength{\rightskip}{0pt plus 5cm}unsigned int C\-A\-L\-I\-C\-E\-::convert\-String\-To\-Ints (
+\begin{DoxyParamCaption}
+\item[{lcio\-::\-L\-C\-Generic\-Object\-Impl $\ast$}]{an\-\_\-obj, }
+\item[{const std\-::string \&}]{a\-\_\-string, }
+\item[{unsigned int}]{string\-\_\-start\-\_\-index, }
+\item[{unsigned int}]{string\-\_\-length\-\_\-index}
+\end{DoxyParamCaption}
+)}\label{namespaceCALICE_a081ff53823e245adf23d47938770d251}
+
+
+convert a string to integers which are stored at the given position in the integer array of the given L\-C\-Generic\-Object. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em an\-\_\-obj} & the generic L\-C\-Object in which the string is going to be stored. \\
+\hline
+{\em a\-\_\-string} & the string to be stored. \\
+\hline
+{\em string\-\_\-start\-\_\-index} & the index of the element in the integer array to which the first character of the string will be written. \\
+\hline
+{\em string\-\_\-length\-\_\-index} & the index of the element in the integer array where the length of the string will be stored. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+the index of first unused element of the integer array after the string. 
+\end{DoxyReturn}
+
+
+Definition at line 11 of file string\-From\-To\-Ints.\-cc.
+
+
+
+Referenced by C\-A\-L\-I\-C\-E\-::\-Daq\-Type\-Data\-Block\-::finalize(), C\-A\-L\-I\-C\-E\-::\-Module\-Description\-::\-Module\-Description(), C\-A\-L\-I\-C\-E\-::\-Run\-Location\-::set\-Run\-Location\-Parameters(), and C\-A\-L\-I\-C\-E\-::\-Bml\-Event\-Data\-Sup\-::set\-T\-D\-C\-Type().
+
+\index{C\-A\-L\-I\-C\-E@{C\-A\-L\-I\-C\-E}!distance@{distance}}
+\index{distance@{distance}!CALICE@{C\-A\-L\-I\-C\-E}}
+\subsubsection[{distance}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class \-\_\-\-T , int \-\_\-dimension$>$ Float\-\_\-t C\-A\-L\-I\-C\-E\-::distance (
+\begin{DoxyParamCaption}
+\item[{const N\-Vector\-\_\-t$<$ \-\_\-\-T, \-\_\-dimension $>$ \&}]{line\-\_\-origin, }
+\item[{const N\-Vector\-\_\-t$<$ \-\_\-\-T, \-\_\-dimension $>$ \&}]{line\-\_\-direction, }
+\item[{const N\-Vector\-\_\-t$<$ \-\_\-\-T, \-\_\-dimension $>$ \&}]{point}
+\end{DoxyParamCaption}
+)}\label{namespaceCALICE_a0be956be1e5060d202e93a1e4a46982f}
+
+
+Calculate the perpendicular distance between the line and the point. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em line\-\_\-origin} & the origin of the line \\
+\hline
+{\em line\-\_\-direction} & the direction of the line must have norm 1. \\
+\hline
+{\em point} & position of the point. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+the distance between the line and the point (along the perpendicular). 
+\end{DoxyReturn}
+
+
+Definition at line 237 of file N\-Vector\-\_\-t.\-hh.
+
+
+
+References dot(), and norm().
+
+\index{C\-A\-L\-I\-C\-E@{C\-A\-L\-I\-C\-E}!get\-String\-From\-Ints@{get\-String\-From\-Ints}}
+\index{get\-String\-From\-Ints@{get\-String\-From\-Ints}!CALICE@{C\-A\-L\-I\-C\-E}}
+\subsubsection[{get\-String\-From\-Ints}]{\setlength{\rightskip}{0pt plus 5cm}std\-::string C\-A\-L\-I\-C\-E\-::get\-String\-From\-Ints (
+\begin{DoxyParamCaption}
+\item[{lcio\-::\-L\-C\-Generic\-Object\-Impl $\ast$}]{an\-\_\-obj, }
+\item[{unsigned int}]{string\-\_\-start\-\_\-index, }
+\item[{unsigned int}]{string\-\_\-length\-\_\-index}
+\end{DoxyParamCaption}
+)}\label{namespaceCALICE_ad8dafc263ab829eceb278d73bbe378da}
+
+
+Get a string which is encoded into an integer array. 
+
+Get the name assigned to the module type.
+
+
+\begin{DoxyParams}{Parameters}
+{\em an\-\_\-obj} & the generic L\-C\-Object which contains a string. \\
+\hline
+{\em string\-\_\-start\-\_\-index} & the index of the element in the integer array which contains the first character. \\
+\hline
+{\em string\-\_\-length\-\_\-index} & the index of the element in the integer array which contains the string length.\\
+\hline
+\end{DoxyParams}
+The module type together with the module I\-D is considered to be unique. Due to the character encoding in an integer array, the function may perform slowly. 
+
+Definition at line 37 of file string\-From\-To\-Ints.\-cc.
+
+
+
+Referenced by C\-A\-L\-I\-C\-E\-::\-Daq\-Type\-Data\-Block\-::finalize(), C\-A\-L\-I\-C\-E\-::\-Run\-Location\-::get\-Generic\-Run\-Type(), C\-A\-L\-I\-C\-E\-::\-Run\-Location\-::get\-Location(), C\-A\-L\-I\-C\-E\-::\-Ecal\-Module\-Calibration\-::get\-Module\-Type\-Name(), C\-A\-L\-I\-C\-E\-::\-Module\-Description\-::get\-Module\-Type\-Name(), C\-A\-L\-I\-C\-E\-::\-Run\-Location\-::get\-Month\-Info(), C\-A\-L\-I\-C\-E\-::\-Bml\-Event\-Data\-Sup\-::get\-T\-D\-C\-Type(), and C\-A\-L\-I\-C\-E\-::\-Daq\-Type\-Data\-Block\-::\-Restore\-Maps().
+
+\index{C\-A\-L\-I\-C\-E@{C\-A\-L\-I\-C\-E}!operator$\ast$@{operator$\ast$}}
+\index{operator$\ast$@{operator$\ast$}!CALICE@{C\-A\-L\-I\-C\-E}}
+\subsubsection[{operator$\ast$}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class \-\_\-\-T , int \-\_\-dimension$>$ {\bf N\-Vector\-\_\-t}$<$\-\_\-\-T,\-\_\-dimension$>$ C\-A\-L\-I\-C\-E\-::operator$\ast$ (
+\begin{DoxyParamCaption}
+\item[{const float}]{c, }
+\item[{const N\-Vector\-\_\-t$<$ \-\_\-\-T, \-\_\-dimension $>$ \&}]{a}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\label{namespaceCALICE_abb30a61b9ad4a93d3e9a583d7c07d4aa}
+
+
+Multiply a vector by a scalar. 
+
+\begin{DoxyRefDesc}{Todo}
+\item[{\bf Todo}]replace float by \-\_\-\-T? \end{DoxyRefDesc}
+
+
+Definition at line 171 of file N\-Vector\-\_\-t.\-hh.
+
+
+
+References C\-A\-L\-I\-C\-E\-::\-N\-Vector\-\_\-t$<$ T, dimension $>$\-::\-\_\-x.
+
+\index{C\-A\-L\-I\-C\-E@{C\-A\-L\-I\-C\-E}!operator$\ast$@{operator$\ast$}}
+\index{operator$\ast$@{operator$\ast$}!CALICE@{C\-A\-L\-I\-C\-E}}
+\subsubsection[{operator$\ast$}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class \-\_\-\-T , int \-\_\-dimension$>$ {\bf N\-Vector\-\_\-t}$<$\-\_\-\-T,\-\_\-dimension$>$ C\-A\-L\-I\-C\-E\-::operator$\ast$ (
+\begin{DoxyParamCaption}
+\item[{const N\-Vector\-\_\-t$<$ \-\_\-\-T, \-\_\-dimension $>$ \&}]{a, }
+\item[{const float}]{c}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\label{namespaceCALICE_aaf6fd0323ca803a1be53b6fd9ebb6398}
+
+
+Multiply a vector by a scalar. 
+
+\begin{DoxyRefDesc}{Todo}
+\item[{\bf Todo}]replace float by \-\_\-\-T? \end{DoxyRefDesc}
+
+
+Definition at line 182 of file N\-Vector\-\_\-t.\-hh.
+
+
+
+References C\-A\-L\-I\-C\-E\-::\-N\-Vector\-\_\-t$<$ T, dimension $>$\-::\-\_\-x.
+
+\index{C\-A\-L\-I\-C\-E@{C\-A\-L\-I\-C\-E}!operator/@{operator/}}
+\index{operator/@{operator/}!CALICE@{C\-A\-L\-I\-C\-E}}
+\subsubsection[{operator/}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class \-\_\-\-T , int \-\_\-dimension$>$ {\bf N\-Vector\-\_\-t}$<$\-\_\-\-T,\-\_\-dimension$>$ C\-A\-L\-I\-C\-E\-::operator/ (
+\begin{DoxyParamCaption}
+\item[{const N\-Vector\-\_\-t$<$ \-\_\-\-T, \-\_\-dimension $>$ \&}]{a, }
+\item[{const float}]{c}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\label{namespaceCALICE_acb2b7cdf6c5d5523f3e3ee8bcc675d64}
+
+
+Divide a vector by a scalar. 
+
+\begin{DoxyRefDesc}{Todo}
+\item[{\bf Todo}]replace float by \-\_\-\-T? \end{DoxyRefDesc}
+
+
+Definition at line 193 of file N\-Vector\-\_\-t.\-hh.
+
+
+
+References C\-A\-L\-I\-C\-E\-::\-N\-Vector\-\_\-t$<$ T, dimension $>$\-::\-\_\-x.
+
+\index{C\-A\-L\-I\-C\-E@{C\-A\-L\-I\-C\-E}!operator$>$@{operator$>$}}
+\index{operator$>$@{operator$>$}!CALICE@{C\-A\-L\-I\-C\-E}}
+\subsubsection[{operator$>$}]{\setlength{\rightskip}{0pt plus 5cm}bool const C\-A\-L\-I\-C\-E\-::operator$>$ (
+\begin{DoxyParamCaption}
+\item[{const Board\-I\-D \&}]{board\-Id1, }
+\item[{const Board\-I\-D \&}]{board\-Id2}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\label{namespaceCALICE_ae550279f3a514bd4fb351b65564a8bc6}
+
+
+Implemetations of overloaded operators. 
+
+See above ...
+
+Definition at line 101 of file Board\-I\-D.\-hh.
+
+
+
+References C\-A\-L\-I\-C\-E\-::\-Board\-I\-D\-::id().
+
+\index{C\-A\-L\-I\-C\-E@{C\-A\-L\-I\-C\-E}!to\-\_\-binary\-\_\-bitops@{to\-\_\-binary\-\_\-bitops}}
+\index{to\-\_\-binary\-\_\-bitops@{to\-\_\-binary\-\_\-bitops}!CALICE@{C\-A\-L\-I\-C\-E}}
+\subsubsection[{to\-\_\-binary\-\_\-bitops}]{\setlength{\rightskip}{0pt plus 5cm}void C\-A\-L\-I\-C\-E\-::to\-\_\-binary\-\_\-bitops (
+\begin{DoxyParamCaption}
+\item[{int}]{toprint}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\label{namespaceCALICE_ad883e1bcf81f3ff94c8939d2ebc9b4f1}
+
+
+Utility function to print the bit representation of a integer. 
+
+\begin{DoxyAuthor}{Author}
+R. Poeschl (L\-A\-L/\-Orsay) 'stolen' from Fred Swartz -\/ 2001-\/09-\/04 
+\end{DoxyAuthor}
+\begin{DoxyDate}{Date}
+Jul 21 2006 'stolen' from Fred Swartz -\/ 2001-\/09-\/04 'stolen' from Fred Swartz -\/ 2001-\/09-\/04 
+\end{DoxyDate}
+
+
+Definition at line 17 of file to\-\_\-binary\-\_\-bitops.\-hh.
+
+
+
+References to\-\_\-binary\-\_\-bitops().
+
+
+
+Referenced by C\-A\-L\-I\-C\-E\-::\-Sce\-Slow\-Readout\-Mod\-Block\-::print(), C\-A\-L\-I\-C\-E\-::\-Ahc\-Slow\-Readout\-Mod\-Block\-::print(), C\-A\-L\-I\-C\-E\-::\-Trigger\-Handler\-Calice\-::search\-Trigger\-Main\-Word(), and to\-\_\-binary\-\_\-bitops().
+

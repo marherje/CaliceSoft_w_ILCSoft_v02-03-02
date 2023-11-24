@@ -1,0 +1,81 @@
+\section{C\-A\-L\-I\-C\-E\-:\-:Tcmt\-Saturation\-Constants Class Reference}
+\label{classCALICE_1_1TcmtSaturationConstants}\index{C\-A\-L\-I\-C\-E\-::\-Tcmt\-Saturation\-Constants@{C\-A\-L\-I\-C\-E\-::\-Tcmt\-Saturation\-Constants}}
+
+
+Class to store the estimates for the Cpix parameters for saturation corrections of T\-C\-M\-T hits.  
+
+
+
+
+{\ttfamily \#include $<$Tcmt\-Saturation\-Constants.\-hh$>$}
+
+Inheritance diagram for C\-A\-L\-I\-C\-E\-:\-:Tcmt\-Saturation\-Constants\-:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=3.000000cm]{classCALICE_1_1TcmtSaturationConstants}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+{\bfseries Tcmt\-Saturation\-Constants} (unsigned chip, unsigned channel, float value, float error)\label{classCALICE_1_1TcmtSaturationConstants_a0fda0990cb0fe3a38739584411e64a87}
+
+\item 
+{\bfseries Tcmt\-Saturation\-Constants} (L\-C\-Object $\ast${\bf obj})\label{classCALICE_1_1TcmtSaturationConstants_abaffbcb4fd0af3d9152c5dea75316bf5}
+
+\item 
+float {\bf get\-Cpix\-Value} () const \label{classCALICE_1_1TcmtSaturationConstants_af9835522fd68a4f67efd90a02082cc76}
+
+\begin{DoxyCompactList}\small\item\em get conversion factor value \end{DoxyCompactList}\item 
+float {\bf get\-Cpix\-Error} () const \label{classCALICE_1_1TcmtSaturationConstants_add6f57e7924d554ec4954ba11f0469cf}
+
+\begin{DoxyCompactList}\small\item\em get conversion factor error \end{DoxyCompactList}\item 
+float {\bf apply\-Calibration} (float input\-Value) const \label{classCALICE_1_1TcmtSaturationConstants_a7a6e4f80607f938d3a739bf2527f3a56}
+
+\begin{DoxyCompactList}\small\item\em apply calibration to energy value \end{DoxyCompactList}\item 
+float {\bf cancel\-Calibration} (float output\-Value) const \label{classCALICE_1_1TcmtSaturationConstants_a4aeddf593c38c241ab1a299dcafe3e3e}
+
+\begin{DoxyCompactList}\small\item\em cancel an applied calibration from energy value \end{DoxyCompactList}\item 
+float {\bf apply\-Calibration\-Error} (float input\-Value, float input\-Error) const \label{classCALICE_1_1TcmtSaturationConstants_a256def068f131f98cb3a62669cc4dcaa}
+
+\begin{DoxyCompactList}\small\item\em apply calibration error to current error \end{DoxyCompactList}\item 
+float {\bf cancel\-Calibration\-Error} (float output\-Value, float output\-Error) const \label{classCALICE_1_1TcmtSaturationConstants_afad0ee5ac5383f4c6a408ecc053545e3}
+
+\begin{DoxyCompactList}\small\item\em apply error due to canceling a calibration to current error \end{DoxyCompactList}\item 
+bool {\bf calibration\-Valid} () const \label{classCALICE_1_1TcmtSaturationConstants_aa2b6117fdcb356a8af69f54a2944a0af}
+
+\begin{DoxyCompactList}\small\item\em check if a valid calibration is available \end{DoxyCompactList}\item 
+bool {\bf keep\-Event} (float result\-Value, float result\-Error) const \label{classCALICE_1_1TcmtSaturationConstants_adb8d6310076d321706941a73904e4f02}
+
+\begin{DoxyCompactList}\small\item\em no cut for the moment \end{DoxyCompactList}\item 
+void {\bf print} (std\-::ostream \&os)\label{classCALICE_1_1TcmtSaturationConstants_af97b8ce17fbc53bab69f4de239006219}
+
+\begin{DoxyCompactList}\small\item\em convenient print method \end{DoxyCompactList}\item 
+const std\-::string {\bf get\-Type\-Name} () const \label{classCALICE_1_1TcmtSaturationConstants_ab17f95c26bb5cbae16f113aead9deb2e}
+
+\begin{DoxyCompactList}\small\item\em return type of the class \end{DoxyCompactList}\item 
+const std\-::string {\bf get\-Data\-Description} () const \label{classCALICE_1_1TcmtSaturationConstants_a5fc2759ca9ffa7f1b9d0864980fe1a4c}
+
+\begin{DoxyCompactList}\small\item\em return a brief description of the data member \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Detailed Description}
+Class to store the estimates for the Cpix parameters for saturation corrections of T\-C\-M\-T hits. 
+
+The correction factor Cpix = f(ped\-Sub\-A\-D\-C) = 1/(1-\/ped\-Sub\-A\-D\-C$\ast$\-Cpix). For more details, see {\tt http\-://..}. \begin{DoxyAuthor}{Author}
+G.\-Lima, K.\-Francis (N\-I\-U) 
+\end{DoxyAuthor}
+\begin{DoxyDate}{Date}
+March 15 2008 
+\end{DoxyDate}
+
+
+Definition at line 26 of file Tcmt\-Saturation\-Constants.\-hh.
+
+
+
+The documentation for this class was generated from the following files\-:\begin{DoxyCompactItemize}
+\item 
+Tcmt\-Saturation\-Constants.\-hh\item 
+Tcmt\-Saturation\-Constants.\-cc\end{DoxyCompactItemize}

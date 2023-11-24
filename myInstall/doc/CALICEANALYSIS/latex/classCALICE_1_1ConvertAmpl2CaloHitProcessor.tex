@@ -1,0 +1,164 @@
+\section{C\-A\-L\-I\-C\-E\-:\-:Convert\-Ampl2\-Calo\-Hit\-Processor Class Reference}
+\label{classCALICE_1_1ConvertAmpl2CaloHitProcessor}\index{C\-A\-L\-I\-C\-E\-::\-Convert\-Ampl2\-Calo\-Hit\-Processor@{C\-A\-L\-I\-C\-E\-::\-Convert\-Ampl2\-Calo\-Hit\-Processor}}
+
+
+{\ttfamily \#include $<$Convert\-Ampl2\-Calo\-Hit\-Processor.\-hh$>$}
+
+Inheritance diagram for C\-A\-L\-I\-C\-E\-:\-:Convert\-Ampl2\-Calo\-Hit\-Processor\-:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classCALICE_1_1ConvertAmpl2CaloHitProcessor}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+{\bf Convert\-Ampl2\-Calo\-Hit\-Processor} $\ast$ {\bf new\-Processor} ()
+\item 
+{\bf Convert\-Ampl2\-Calo\-Hit\-Processor} ()
+\item 
+{\bf $\sim$\-Convert\-Ampl2\-Calo\-Hit\-Processor} ()
+\item 
+virtual void {\bf init} ()
+\item 
+virtual void {\bf process\-Event} (L\-C\-Event $\ast$evt)
+\item 
+virtual void {\bf end} ()
+\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+std\-::string {\bf \-\_\-ahc\-Hit\-Col\-Name}
+\item 
+std\-::string {\bf \-\_\-ahc\-Ampl\-Col\-Name}
+\item 
+std\-::string {\bf \-\_\-hit\-Ampl\-Relation\-Col\-Name}
+\item 
+std\-::string {\bf \-\_\-ahc\-Hit\-Output\-V2\-Col\-Name}
+\item 
+std\-::string {\bf \-\_\-ampl\-Name}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Processor which converts an Ahc\-Amplitude\-Relation collection to a Calorimeter\-Hits collection.
+
+\begin{DoxyAuthor}{Author}
+{\tt nils.\-feege@desy.\-de} 
+\end{DoxyAuthor}
+\begin{DoxyDate}{Date}
+January 2011 
+\end{DoxyDate}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\index{C\-A\-L\-I\-C\-E\-::\-Convert\-Ampl2\-Calo\-Hit\-Processor@{C\-A\-L\-I\-C\-E\-::\-Convert\-Ampl2\-Calo\-Hit\-Processor}!Convert\-Ampl2\-Calo\-Hit\-Processor@{Convert\-Ampl2\-Calo\-Hit\-Processor}}
+\index{Convert\-Ampl2\-Calo\-Hit\-Processor@{Convert\-Ampl2\-Calo\-Hit\-Processor}!CALICE::ConvertAmpl2CaloHitProcessor@{C\-A\-L\-I\-C\-E\-::\-Convert\-Ampl2\-Calo\-Hit\-Processor}}
+\subsubsection[{Convert\-Ampl2\-Calo\-Hit\-Processor}]{\setlength{\rightskip}{0pt plus 5cm}C\-A\-L\-I\-C\-E\-::\-Convert\-Ampl2\-Calo\-Hit\-Processor\-::\-Convert\-Ampl2\-Calo\-Hit\-Processor (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{classCALICE_1_1ConvertAmpl2CaloHitProcessor_a3ece83f39a4b688cc612b6dc82b59c84}
+Default constructor 
+
+References \-\_\-ahc\-Ampl\-Col\-Name, \-\_\-ahc\-Hit\-Col\-Name, \-\_\-ahc\-Hit\-Output\-V2\-Col\-Name, \-\_\-ampl\-Name, and \-\_\-hit\-Ampl\-Relation\-Col\-Name.
+
+
+
+Referenced by new\-Processor().
+
+\index{C\-A\-L\-I\-C\-E\-::\-Convert\-Ampl2\-Calo\-Hit\-Processor@{C\-A\-L\-I\-C\-E\-::\-Convert\-Ampl2\-Calo\-Hit\-Processor}!$\sim$\-Convert\-Ampl2\-Calo\-Hit\-Processor@{$\sim$\-Convert\-Ampl2\-Calo\-Hit\-Processor}}
+\index{$\sim$\-Convert\-Ampl2\-Calo\-Hit\-Processor@{$\sim$\-Convert\-Ampl2\-Calo\-Hit\-Processor}!CALICE::ConvertAmpl2CaloHitProcessor@{C\-A\-L\-I\-C\-E\-::\-Convert\-Ampl2\-Calo\-Hit\-Processor}}
+\subsubsection[{$\sim$\-Convert\-Ampl2\-Calo\-Hit\-Processor}]{\setlength{\rightskip}{0pt plus 5cm}C\-A\-L\-I\-C\-E\-::\-Convert\-Ampl2\-Calo\-Hit\-Processor\-::$\sim$\-Convert\-Ampl2\-Calo\-Hit\-Processor (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\label{classCALICE_1_1ConvertAmpl2CaloHitProcessor_aa65c16e3769a83f7dda850a536124d34}
+Destructor 
+
+\subsection{Member Function Documentation}
+\index{C\-A\-L\-I\-C\-E\-::\-Convert\-Ampl2\-Calo\-Hit\-Processor@{C\-A\-L\-I\-C\-E\-::\-Convert\-Ampl2\-Calo\-Hit\-Processor}!end@{end}}
+\index{end@{end}!CALICE::ConvertAmpl2CaloHitProcessor@{C\-A\-L\-I\-C\-E\-::\-Convert\-Ampl2\-Calo\-Hit\-Processor}}
+\subsubsection[{end}]{\setlength{\rightskip}{0pt plus 5cm}void C\-A\-L\-I\-C\-E\-::\-Convert\-Ampl2\-Calo\-Hit\-Processor\-::end (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}\label{classCALICE_1_1ConvertAmpl2CaloHitProcessor_ad1a50d41b2d3bf3fda6bbde40b7b4354}
+Function called after all events have been processed, for cleanup \index{C\-A\-L\-I\-C\-E\-::\-Convert\-Ampl2\-Calo\-Hit\-Processor@{C\-A\-L\-I\-C\-E\-::\-Convert\-Ampl2\-Calo\-Hit\-Processor}!init@{init}}
+\index{init@{init}!CALICE::ConvertAmpl2CaloHitProcessor@{C\-A\-L\-I\-C\-E\-::\-Convert\-Ampl2\-Calo\-Hit\-Processor}}
+\subsubsection[{init}]{\setlength{\rightskip}{0pt plus 5cm}void C\-A\-L\-I\-C\-E\-::\-Convert\-Ampl2\-Calo\-Hit\-Processor\-::init (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}\label{classCALICE_1_1ConvertAmpl2CaloHitProcessor_a561f09c937c62f066fe965dcd4358a34}
+Initialise variables, if needed \index{C\-A\-L\-I\-C\-E\-::\-Convert\-Ampl2\-Calo\-Hit\-Processor@{C\-A\-L\-I\-C\-E\-::\-Convert\-Ampl2\-Calo\-Hit\-Processor}!new\-Processor@{new\-Processor}}
+\index{new\-Processor@{new\-Processor}!CALICE::ConvertAmpl2CaloHitProcessor@{C\-A\-L\-I\-C\-E\-::\-Convert\-Ampl2\-Calo\-Hit\-Processor}}
+\subsubsection[{new\-Processor}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Convert\-Ampl2\-Calo\-Hit\-Processor}$\ast$ C\-A\-L\-I\-C\-E\-::\-Convert\-Ampl2\-Calo\-Hit\-Processor\-::new\-Processor (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\label{classCALICE_1_1ConvertAmpl2CaloHitProcessor_a3e276bde455ac2354058d9b8fe80d3b9}
+Return a new instance of this processor 
+
+References Convert\-Ampl2\-Calo\-Hit\-Processor().
+
+\index{C\-A\-L\-I\-C\-E\-::\-Convert\-Ampl2\-Calo\-Hit\-Processor@{C\-A\-L\-I\-C\-E\-::\-Convert\-Ampl2\-Calo\-Hit\-Processor}!process\-Event@{process\-Event}}
+\index{process\-Event@{process\-Event}!CALICE::ConvertAmpl2CaloHitProcessor@{C\-A\-L\-I\-C\-E\-::\-Convert\-Ampl2\-Calo\-Hit\-Processor}}
+\subsubsection[{process\-Event}]{\setlength{\rightskip}{0pt plus 5cm}void C\-A\-L\-I\-C\-E\-::\-Convert\-Ampl2\-Calo\-Hit\-Processor\-::process\-Event (
+\begin{DoxyParamCaption}
+\item[{L\-C\-Event $\ast$}]{evt}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}\label{classCALICE_1_1ConvertAmpl2CaloHitProcessor_a44987f31c02f5fae87c55b1ef4bac7a0}
+Process event (the working horse) 
+\begin{DoxyParams}{Parameters}
+{\em evt} & event to be processed \\
+\hline
+\end{DoxyParams}
+
+
+References \-\_\-ahc\-Hit\-Col\-Name, \-\_\-ahc\-Hit\-Output\-V2\-Col\-Name, \-\_\-ampl\-Name, and \-\_\-hit\-Ampl\-Relation\-Col\-Name.
+
+
+
+\subsection{Member Data Documentation}
+\index{C\-A\-L\-I\-C\-E\-::\-Convert\-Ampl2\-Calo\-Hit\-Processor@{C\-A\-L\-I\-C\-E\-::\-Convert\-Ampl2\-Calo\-Hit\-Processor}!\-\_\-ahc\-Ampl\-Col\-Name@{\-\_\-ahc\-Ampl\-Col\-Name}}
+\index{\-\_\-ahc\-Ampl\-Col\-Name@{\-\_\-ahc\-Ampl\-Col\-Name}!CALICE::ConvertAmpl2CaloHitProcessor@{C\-A\-L\-I\-C\-E\-::\-Convert\-Ampl2\-Calo\-Hit\-Processor}}
+\subsubsection[{\-\_\-ahc\-Ampl\-Col\-Name}]{\setlength{\rightskip}{0pt plus 5cm}std\-::string C\-A\-L\-I\-C\-E\-::\-Convert\-Ampl2\-Calo\-Hit\-Processor\-::\-\_\-ahc\-Ampl\-Col\-Name\hspace{0.3cm}{\ttfamily [protected]}}\label{classCALICE_1_1ConvertAmpl2CaloHitProcessor_a7bd1b45af294e4ecf31f566847dd061f}
+name of the input A\-H\-C amplitude collection 
+
+Referenced by Convert\-Ampl2\-Calo\-Hit\-Processor().
+
+\index{C\-A\-L\-I\-C\-E\-::\-Convert\-Ampl2\-Calo\-Hit\-Processor@{C\-A\-L\-I\-C\-E\-::\-Convert\-Ampl2\-Calo\-Hit\-Processor}!\-\_\-ahc\-Hit\-Col\-Name@{\-\_\-ahc\-Hit\-Col\-Name}}
+\index{\-\_\-ahc\-Hit\-Col\-Name@{\-\_\-ahc\-Hit\-Col\-Name}!CALICE::ConvertAmpl2CaloHitProcessor@{C\-A\-L\-I\-C\-E\-::\-Convert\-Ampl2\-Calo\-Hit\-Processor}}
+\subsubsection[{\-\_\-ahc\-Hit\-Col\-Name}]{\setlength{\rightskip}{0pt plus 5cm}std\-::string C\-A\-L\-I\-C\-E\-::\-Convert\-Ampl2\-Calo\-Hit\-Processor\-::\-\_\-ahc\-Hit\-Col\-Name\hspace{0.3cm}{\ttfamily [protected]}}\label{classCALICE_1_1ConvertAmpl2CaloHitProcessor_aea4cd71d349f6520f903b1fd6edb1aac}
+name of the input A\-H\-C hit collection 
+
+Referenced by Convert\-Ampl2\-Calo\-Hit\-Processor(), and process\-Event().
+
+\index{C\-A\-L\-I\-C\-E\-::\-Convert\-Ampl2\-Calo\-Hit\-Processor@{C\-A\-L\-I\-C\-E\-::\-Convert\-Ampl2\-Calo\-Hit\-Processor}!\-\_\-ahc\-Hit\-Output\-V2\-Col\-Name@{\-\_\-ahc\-Hit\-Output\-V2\-Col\-Name}}
+\index{\-\_\-ahc\-Hit\-Output\-V2\-Col\-Name@{\-\_\-ahc\-Hit\-Output\-V2\-Col\-Name}!CALICE::ConvertAmpl2CaloHitProcessor@{C\-A\-L\-I\-C\-E\-::\-Convert\-Ampl2\-Calo\-Hit\-Processor}}
+\subsubsection[{\-\_\-ahc\-Hit\-Output\-V2\-Col\-Name}]{\setlength{\rightskip}{0pt plus 5cm}std\-::string C\-A\-L\-I\-C\-E\-::\-Convert\-Ampl2\-Calo\-Hit\-Processor\-::\-\_\-ahc\-Hit\-Output\-V2\-Col\-Name\hspace{0.3cm}{\ttfamily [protected]}}\label{classCALICE_1_1ConvertAmpl2CaloHitProcessor_afbacc464c40229ac6c825dd7d9ac3a4c}
+name of the output A\-H\-C hit version 2 collection 
+
+Referenced by Convert\-Ampl2\-Calo\-Hit\-Processor(), and process\-Event().
+
+\index{C\-A\-L\-I\-C\-E\-::\-Convert\-Ampl2\-Calo\-Hit\-Processor@{C\-A\-L\-I\-C\-E\-::\-Convert\-Ampl2\-Calo\-Hit\-Processor}!\-\_\-ampl\-Name@{\-\_\-ampl\-Name}}
+\index{\-\_\-ampl\-Name@{\-\_\-ampl\-Name}!CALICE::ConvertAmpl2CaloHitProcessor@{C\-A\-L\-I\-C\-E\-::\-Convert\-Ampl2\-Calo\-Hit\-Processor}}
+\subsubsection[{\-\_\-ampl\-Name}]{\setlength{\rightskip}{0pt plus 5cm}std\-::string C\-A\-L\-I\-C\-E\-::\-Convert\-Ampl2\-Calo\-Hit\-Processor\-::\-\_\-ampl\-Name\hspace{0.3cm}{\ttfamily [protected]}}\label{classCALICE_1_1ConvertAmpl2CaloHitProcessor_a1cf4049cb77b69803d3826cc9d6fa9a7}
+name of the new amplitude used for the output hit collection 
+
+Referenced by Convert\-Ampl2\-Calo\-Hit\-Processor(), and process\-Event().
+
+\index{C\-A\-L\-I\-C\-E\-::\-Convert\-Ampl2\-Calo\-Hit\-Processor@{C\-A\-L\-I\-C\-E\-::\-Convert\-Ampl2\-Calo\-Hit\-Processor}!\-\_\-hit\-Ampl\-Relation\-Col\-Name@{\-\_\-hit\-Ampl\-Relation\-Col\-Name}}
+\index{\-\_\-hit\-Ampl\-Relation\-Col\-Name@{\-\_\-hit\-Ampl\-Relation\-Col\-Name}!CALICE::ConvertAmpl2CaloHitProcessor@{C\-A\-L\-I\-C\-E\-::\-Convert\-Ampl2\-Calo\-Hit\-Processor}}
+\subsubsection[{\-\_\-hit\-Ampl\-Relation\-Col\-Name}]{\setlength{\rightskip}{0pt plus 5cm}std\-::string C\-A\-L\-I\-C\-E\-::\-Convert\-Ampl2\-Calo\-Hit\-Processor\-::\-\_\-hit\-Ampl\-Relation\-Col\-Name\hspace{0.3cm}{\ttfamily [protected]}}\label{classCALICE_1_1ConvertAmpl2CaloHitProcessor_ad89c705437cb9ed98577893592e5d63a}
+name of the L\-C\-Relation collection between Calorimeter\-Hit and Ahc\-Amplitude 
+
+Referenced by Convert\-Ampl2\-Calo\-Hit\-Processor(), and process\-Event().
+
+
+
+The documentation for this class was generated from the following files\-:\begin{DoxyCompactItemize}
+\item 
+/nfs/dust/ilc/user/marquezh/\-Calice\-Soft\-\_\-w\-\_\-\-I\-L\-C\-Soft\-\_\-v02-\/03-\/02/calice\-\_\-analysis/addon\-Procs/include/Convert\-Ampl2\-Calo\-Hit\-Processor.\-hh\item 
+/nfs/dust/ilc/user/marquezh/\-Calice\-Soft\-\_\-w\-\_\-\-I\-L\-C\-Soft\-\_\-v02-\/03-\/02/calice\-\_\-analysis/addon\-Procs/src/Convert\-Ampl2\-Calo\-Hit\-Processor.\-cc\end{DoxyCompactItemize}

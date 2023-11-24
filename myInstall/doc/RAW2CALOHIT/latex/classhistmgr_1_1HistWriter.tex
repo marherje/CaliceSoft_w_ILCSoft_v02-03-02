@@ -1,0 +1,120 @@
+\section{histmgr\-:\-:Hist\-Writer Class Reference}
+\label{classhistmgr_1_1HistWriter}\index{histmgr\-::\-Hist\-Writer@{histmgr\-::\-Hist\-Writer}}
+
+
+Abstract interface of a class to write histograms to disk.  
+
+
+
+
+{\ttfamily \#include $<$Hist\-Writer.\-hh$>$}
+
+Inheritance diagram for histmgr\-:\-:Hist\-Writer\-:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classhistmgr_1_1HistWriter}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+virtual bool {\bf enter\-Dir} (const std\-::string \&name, Bool\-\_\-t create=false)=0
+\begin{DoxyCompactList}\small\item\em Enter a subdirectory in the file. \end{DoxyCompactList}\item 
+virtual void {\bf up\-Dir} ()=0\label{classhistmgr_1_1HistWriter_af4a84b802e1617ac850eb828f5d6a644}
+
+\begin{DoxyCompactList}\small\item\em Go up one directory level. \end{DoxyCompactList}\item 
+virtual void {\bf write\-To\-Current\-Dir} (const {\bf Float\-Histogram1\-D} \&hist, const std\-::string \&name)=0
+\begin{DoxyCompactList}\small\item\em Write the given histogram to a R\-O\-O\-T file. \end{DoxyCompactList}\item 
+virtual void {\bf write\-To\-Current\-Dir} (const {\bf Float\-Histogram2\-D} \&hist, const std\-::string \&name)=0
+\begin{DoxyCompactList}\small\item\em Write the given histogram to a R\-O\-O\-T file. \end{DoxyCompactList}\item 
+virtual void {\bfseries write\-To\-Current\-Dir} (const E\-V\-E\-N\-T\-::\-L\-C\-Generic\-Object $\ast$array\-\_\-x, const E\-V\-E\-N\-T\-::\-L\-C\-Generic\-Object $\ast$array\-\_\-y, const E\-V\-E\-N\-T\-::\-L\-C\-Generic\-Object $\ast$array\-\_\-ey, const std\-::string \&name)=0\label{classhistmgr_1_1HistWriter_a3d8cb01d364fb517626b4b5bb990b9d1}
+
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Abstract interface of a class to write histograms to disk. 
+
+\begin{DoxySeeAlso}{See Also}
+\doxyref{Root\-Writer}{p.}{classhistmgr_1_1RootWriter}. 
+\end{DoxySeeAlso}
+
+
+Definition at line 16 of file Hist\-Writer.\-hh.
+
+
+
+\subsection{Member Function Documentation}
+\index{histmgr\-::\-Hist\-Writer@{histmgr\-::\-Hist\-Writer}!enter\-Dir@{enter\-Dir}}
+\index{enter\-Dir@{enter\-Dir}!histmgr::HistWriter@{histmgr\-::\-Hist\-Writer}}
+\subsubsection[{enter\-Dir}]{\setlength{\rightskip}{0pt plus 5cm}virtual bool histmgr\-::\-Hist\-Writer\-::enter\-Dir (
+\begin{DoxyParamCaption}
+\item[{const std\-::string \&}]{name, }
+\item[{Bool\-\_\-t}]{create = {\ttfamily false}}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [pure virtual]}}\label{classhistmgr_1_1HistWriter_adbdbc5948a21d31ee3ab9ff2e3ba1999}
+
+
+Enter a subdirectory in the file. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em name} & the name of the sub directory \\
+\hline
+{\em create} & set to true if non existing directories shall be created \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true incase the directory exists 
+\end{DoxyReturn}
+\index{histmgr\-::\-Hist\-Writer@{histmgr\-::\-Hist\-Writer}!write\-To\-Current\-Dir@{write\-To\-Current\-Dir}}
+\index{write\-To\-Current\-Dir@{write\-To\-Current\-Dir}!histmgr::HistWriter@{histmgr\-::\-Hist\-Writer}}
+\subsubsection[{write\-To\-Current\-Dir}]{\setlength{\rightskip}{0pt plus 5cm}virtual void histmgr\-::\-Hist\-Writer\-::write\-To\-Current\-Dir (
+\begin{DoxyParamCaption}
+\item[{const {\bf Float\-Histogram1\-D} \&}]{hist, }
+\item[{const std\-::string \&}]{name}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [pure virtual]}}\label{classhistmgr_1_1HistWriter_ad9bdd8f2a07d67c39bb0e09e79009aa5}
+
+
+Write the given histogram to a R\-O\-O\-T file. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em hist} & reference to the histogram \\
+\hline
+{\em name} & the name given to the histogram \\
+\hline
+\end{DoxyParams}
+
+
+Implemented in {\bf histmgr\-::\-Root\-Writer} \doxyref{}{p.}{classhistmgr_1_1RootWriter_a14f07347e735118a227788b8a4c5a172}.
+
+\index{histmgr\-::\-Hist\-Writer@{histmgr\-::\-Hist\-Writer}!write\-To\-Current\-Dir@{write\-To\-Current\-Dir}}
+\index{write\-To\-Current\-Dir@{write\-To\-Current\-Dir}!histmgr::HistWriter@{histmgr\-::\-Hist\-Writer}}
+\subsubsection[{write\-To\-Current\-Dir}]{\setlength{\rightskip}{0pt plus 5cm}virtual void histmgr\-::\-Hist\-Writer\-::write\-To\-Current\-Dir (
+\begin{DoxyParamCaption}
+\item[{const {\bf Float\-Histogram2\-D} \&}]{hist, }
+\item[{const std\-::string \&}]{name}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [pure virtual]}}\label{classhistmgr_1_1HistWriter_a3c4e7228abcd2fe54ec6748aae6407c2}
+
+
+Write the given histogram to a R\-O\-O\-T file. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em hist} & reference to the histogram \\
+\hline
+{\em name} & the name given to the histogram \\
+\hline
+\end{DoxyParams}
+
+
+Implemented in {\bf histmgr\-::\-Root\-Writer} \doxyref{}{p.}{classhistmgr_1_1RootWriter_a6031ddaa5a402ae73f624fb3ea2e5970}.
+
+
+
+The documentation for this class was generated from the following file\-:\begin{DoxyCompactItemize}
+\item 
+Hist\-Writer.\-hh\end{DoxyCompactItemize}

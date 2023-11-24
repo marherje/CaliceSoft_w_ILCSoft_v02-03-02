@@ -1,0 +1,85 @@
+\section{Fast\-Space\-Holder$<$ \-\_\-\-Tp $>$ Class Template Reference}
+\label{classFastSpaceHolder}\index{Fast\-Space\-Holder$<$ \-\_\-\-Tp $>$@{Fast\-Space\-Holder$<$ \-\_\-\-Tp $>$}}
+
+
+Fast version, but\-: it is impossible put into this container something with implicit or explicit ctor/dtor (no virtual functions).  
+
+
+
+
+{\ttfamily \#include $<$Reco\-Util.\-hh$>$}
+
+Inheritance diagram for Fast\-Space\-Holder$<$ \-\_\-\-Tp $>$\-:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classFastSpaceHolder}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+{\bfseries Fast\-Space\-Holder} ({\bf Space\-Pool} \&pool, unsigned prealloc=256)\label{classFastSpaceHolder_a167f87252ec3e7efe1733d7471f873af}
+
+\item 
+virtual {\bf $\sim$\-Fast\-Space\-Holder} ()\label{classFastSpaceHolder_a9159af3587150c073efbdf9767675eae}
+
+\begin{DoxyCompactList}\small\item\em Destructor. \end{DoxyCompactList}\item 
+\-\_\-\-Tp $\ast$ {\bf array} (unsigned n)
+\begin{DoxyCompactList}\small\item\em Create array of type \-\_\-\-Tp. \end{DoxyCompactList}\item 
+\-\_\-\-Tp $\ast$ {\bf alloc} ()\label{classFastSpaceHolder_a0ad44bb4cc8378a4f5596c523ea1c8a9}
+
+\begin{DoxyCompactList}\small\item\em Allocate space for \-\_\-\-Tp. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+{\bfseries Fast\-Space\-Holder} ({\bf Fast\-Space\-Holder}$<$ \-\_\-\-Tp $>$ \&x, bool)\label{classFastSpaceHolder_a8d48587881491d4aa72aad07e5899a2e}
+
+\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\-\_\-\-Tp $\ast$ {\bfseries data}\label{classFastSpaceHolder_abb9b40a2bbb5b57766b28c406af250f9}
+
+\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Detailed Description}
+\subsubsection*{template$<$class \-\_\-\-Tp$>$class Fast\-Space\-Holder$<$ \-\_\-\-Tp $>$}
+
+Fast version, but\-: it is impossible put into this container something with implicit or explicit ctor/dtor (no virtual functions). 
+
+Definition at line 123 of file Reco\-Util.\-hh.
+
+
+
+\subsection{Member Function Documentation}
+\index{Fast\-Space\-Holder@{Fast\-Space\-Holder}!array@{array}}
+\index{array@{array}!FastSpaceHolder@{Fast\-Space\-Holder}}
+\subsubsection[{array}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class \-\_\-\-Tp$>$ \-\_\-\-Tp$\ast$ {\bf Fast\-Space\-Holder}$<$ \-\_\-\-Tp $>$\-::array (
+\begin{DoxyParamCaption}
+\item[{unsigned}]{n}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\label{classFastSpaceHolder_abbfd87752276f2833ed20a1410bfaa74}
+
+
+Create array of type \-\_\-\-Tp. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em n} & size of array \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 142 of file Reco\-Util.\-hh.
+
+
+
+Referenced by Fast\-Space\-Holder$<$ R\-S\-Link $>$\-::alloc().
+
+
+
+The documentation for this class was generated from the following file\-:\begin{DoxyCompactItemize}
+\item 
+Reco\-Util.\-hh\end{DoxyCompactItemize}

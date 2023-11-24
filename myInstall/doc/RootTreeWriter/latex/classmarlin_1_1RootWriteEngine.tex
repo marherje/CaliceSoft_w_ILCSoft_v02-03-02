@@ -1,0 +1,148 @@
+\section{marlin\-:\-:Root\-Write\-Engine Class Reference}
+\label{classmarlin_1_1RootWriteEngine}\index{marlin\-::\-Root\-Write\-Engine@{marlin\-::\-Root\-Write\-Engine}}
+
+
+{\ttfamily \#include $<$Root\-Write\-Engine.\-hh$>$}
+
+
+
+Inheritance diagram for marlin\-:\-:Root\-Write\-Engine\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=550pt]{classmarlin_1_1RootWriteEngine__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for marlin\-:\-:Root\-Write\-Engine\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=188pt]{classmarlin_1_1RootWriteEngine__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+{\bf Root\-Write\-Engine} ({\bf Root\-Tree\-Writer} $\ast$host)
+\item 
+virtual const std\-::string \& {\bf get\-Engine\-Name} ()=0
+\item 
+virtual void {\bf register\-Parameters} ()=0
+\item 
+virtual void {\bf register\-Branches} (T\-Tree $\ast$)=0
+\item 
+virtual void {\bf fill\-Variables} (E\-V\-E\-N\-T\-::\-L\-C\-Event $\ast$evt)=0
+\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+{\bf Root\-Tree\-Writer} \& {\bfseries \-\_\-host\-Processor}\label{classmarlin_1_1RootWriteEngine_ab53e690ff0f758b27f4ef45b87f3d3ce}
+
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Abstract base class of callback classes for the Root\-Tree\-Write processor Abstract interface for a Root\-Tree\-Writer-\/engine. Implement an descendant of this class to add variables to the output tree of the Root\-Tree\-Writer\-Processor. After that add the new {\itshape engine} to the list of writer engines in the \doxyref{Root\-Tree\-Writer}{p.}{classmarlin_1_1RootTreeWriter} processor 
+
+Definition at line 29 of file Root\-Write\-Engine.\-hh.
+
+
+
+\subsection{Constructor \& Destructor Documentation}
+\index{marlin\-::\-Root\-Write\-Engine@{marlin\-::\-Root\-Write\-Engine}!Root\-Write\-Engine@{Root\-Write\-Engine}}
+\index{Root\-Write\-Engine@{Root\-Write\-Engine}!marlin::RootWriteEngine@{marlin\-::\-Root\-Write\-Engine}}
+\subsubsection[{Root\-Write\-Engine}]{\setlength{\rightskip}{0pt plus 5cm}marlin\-::\-Root\-Write\-Engine\-::\-Root\-Write\-Engine (
+\begin{DoxyParamCaption}
+\item[{{\bf Root\-Tree\-Writer} $\ast$}]{host}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\label{classmarlin_1_1RootWriteEngine_a9a2f783fbd71d43487cb94feee09210a}
+\begin{DoxyVerb}constructor
+\param[in] host pointer to the RootTreeWriter processor the constructor
+of a derived class must pass this pointer to this base class e.g.@verbatim 
+\end{DoxyVerb}
+ /// Somee\-Write\-Engine( Root\-Tree\-Writer$\ast$ host )\-:Root\-Write\-Engine(host), /// \-\_\-engine\-Name(\char`\"{}\-Some\-Write\-Engine\char`\"{}) /// \{\}  
+
+Definition at line 38 of file Root\-Write\-Engine.\-hh.
+
+
+
+\subsection{Member Function Documentation}
+\index{marlin\-::\-Root\-Write\-Engine@{marlin\-::\-Root\-Write\-Engine}!fill\-Variables@{fill\-Variables}}
+\index{fill\-Variables@{fill\-Variables}!marlin::RootWriteEngine@{marlin\-::\-Root\-Write\-Engine}}
+\subsubsection[{fill\-Variables}]{\setlength{\rightskip}{0pt plus 5cm}virtual void marlin\-::\-Root\-Write\-Engine\-::fill\-Variables (
+\begin{DoxyParamCaption}
+\item[{E\-V\-E\-N\-T\-::\-L\-C\-Event $\ast$}]{evt}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [pure virtual]}}\label{classmarlin_1_1RootWriteEngine_ace823bd839cee7e8c8755e60c4cc7134}
+Implement this to extract the variables which you want to fill into the {\itshape R\-O\-O\-T} tree from the event. Write the value of the variables you want to add to the tree to the member variables, which you registered to the {\itshape R\-O\-O\-T} tree. The \doxyref{Root\-Tree\-Writer}{p.}{classmarlin_1_1RootTreeWriter} will call T\-Tree\-::\-Fill() for you. 
+\begin{DoxyParams}{Parameters}
+{\em evt} & the current event \\
+\hline
+\end{DoxyParams}
+
+
+Implemented in {\bf marlin\-::\-A\-Sim\-Calorimeter\-Hit\-Write\-Engine} \doxyref{}{p.}{classmarlin_1_1ASimCalorimeterHitWriteEngine_a23a4c30ce18b277e5dc5150775633d12}, {\bf marlin\-::\-Event\-Properties\-Write\-Engine} \doxyref{}{p.}{classmarlin_1_1EventPropertiesWriteEngine_abc2305e78939db762a4c83bf669fe952}, {\bf marlin\-::\-M\-C\-Particle\-Write\-Engine} \doxyref{}{p.}{classmarlin_1_1MCParticleWriteEngine_a54e93f37ea791fc4c4d6407a513d789e}, {\bf marlin\-::\-Track\-Finder\-Write\-Engine} \doxyref{}{p.}{classmarlin_1_1TrackFinderWriteEngine_a0c63d43ae46634934e0d7f1fe3ec8bc4}, {\bf marlin\-::\-Collection\-Parameter\-Write\-Engine} \doxyref{}{p.}{classmarlin_1_1CollectionParameterWriteEngine_a276cbc4b3fb6a51d52b7ff677cbe60ad}, {\bf marlin\-::\-Event\-Parameter\-Write\-Engine} \doxyref{}{p.}{classmarlin_1_1EventParameterWriteEngine_ad9ccfdb2f6596c2ae60e6408ad011832}, {\bf marlin\-::\-Trigger\-Write\-Engine} \doxyref{}{p.}{classmarlin_1_1TriggerWriteEngine_a6b1216c91a9acbd4f4e09b7d45f3c8f7}, {\bf marlin\-::\-Hodoscope\-Write\-Engine} \doxyref{}{p.}{classmarlin_1_1HodoscopeWriteEngine_a4db5d7173b75c3a59d2a8ae86fb0de93}, {\bf marlin\-::\-Hit\-Write\-Engine} \doxyref{}{p.}{classmarlin_1_1HitWriteEngine_a1ee46edbad4693ee7213c153c30dd2d9}, {\bf marlin\-::\-A\-S\-I\-C\-Info\-Write\-Engine} \doxyref{}{p.}{classmarlin_1_1ASICInfoWriteEngine_ad11e17f19e4138dd596bc54a0ba1532e}, {\bf marlin\-::\-Drift\-Chamber\-Write\-Engine} \doxyref{}{p.}{classmarlin_1_1DriftChamberWriteEngine_ae4ac9d60684437fd6b4d5c3365c0e7ef}, {\bf marlin\-::\-R\-O\-C\-Write\-Engine} \doxyref{}{p.}{classmarlin_1_1ROCWriteEngine_a56939e4b2ce64eb56d62b5bb01c2db41}, {\bf marlin\-::\-Deep\-Ana\-Write\-Engine} \doxyref{}{p.}{classmarlin_1_1DeepAnaWriteEngine_a9cf77605dc60b01d00169c80c2df921d}, {\bf marlin\-::\-Shower\-Shape\-Engine} \doxyref{}{p.}{classmarlin_1_1ShowerShapeEngine_a02d946fe7bb758c32cff7206109d6882}, {\bf marlin\-::\-Bif\-Write\-Engine} \doxyref{}{p.}{classmarlin_1_1BifWriteEngine_a5945f044afb17e832cf63380d3aa4330}, {\bf marlin\-::\-Dwc\-Write\-Engine} \doxyref{}{p.}{classmarlin_1_1DwcWriteEngine_ae5df4fef72e8c2a778ab623fb61d7c5d}, {\bf marlin\-::\-Lda\-Write\-Engine} \doxyref{}{p.}{classmarlin_1_1LdaWriteEngine_a09cf7b4240db2a6cd6b97251f6cfbb01}, {\bf marlin\-::\-T\-B\-Track\-Write\-Engine} \doxyref{}{p.}{classmarlin_1_1TBTrackWriteEngine_a5250f4b00f85aabc3be6cff9593dae0f}, and {\bf marlin\-::\-Hcal\-Track\-Lars\-Engine} \doxyref{}{p.}{classmarlin_1_1HcalTrackLarsEngine_a3f7f7a652c8bc019dc0a9b069a2c6fce}.
+
+\index{marlin\-::\-Root\-Write\-Engine@{marlin\-::\-Root\-Write\-Engine}!get\-Engine\-Name@{get\-Engine\-Name}}
+\index{get\-Engine\-Name@{get\-Engine\-Name}!marlin::RootWriteEngine@{marlin\-::\-Root\-Write\-Engine}}
+\subsubsection[{get\-Engine\-Name}]{\setlength{\rightskip}{0pt plus 5cm}virtual const std\-::string\& marlin\-::\-Root\-Write\-Engine\-::get\-Engine\-Name (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [pure virtual]}}\label{classmarlin_1_1RootWriteEngine_a31e38120fe60efcb15666fd569ba5862}
+Returns the name of the engine to the \doxyref{Root\-Tree\-Writer}{p.}{classmarlin_1_1RootTreeWriter} processor. \begin{DoxyReturn}{Returns}
+Must return a string with the engine name. 
+\end{DoxyReturn}
+\begin{DoxyRefDesc}{Todo}
+\item[{\bf Todo}]fixme\-: should be const, but must be declared const in implementations too. Need to fix all existing engines?!? \end{DoxyRefDesc}
+
+
+Implemented in {\bf marlin\-::\-A\-Sim\-Calorimeter\-Hit\-Write\-Engine} \doxyref{}{p.}{classmarlin_1_1ASimCalorimeterHitWriteEngine_a76af2d1c30ce8566f1dcfacf551ab3dc}, {\bf marlin\-::\-M\-C\-Particle\-Write\-Engine} \doxyref{}{p.}{classmarlin_1_1MCParticleWriteEngine_a5cec023911524d85fb491a9a5d702ea0}, {\bf marlin\-::\-Track\-Finder\-Write\-Engine} \doxyref{}{p.}{classmarlin_1_1TrackFinderWriteEngine_a195ec04e9898f5436d1da6ba98886e44}, {\bf marlin\-::\-Hodoscope\-Write\-Engine} \doxyref{}{p.}{classmarlin_1_1HodoscopeWriteEngine_a18aa5f3029fd0fc951f8770afdf37f8a}, {\bf marlin\-::\-Hit\-Write\-Engine} \doxyref{}{p.}{classmarlin_1_1HitWriteEngine_a13d17e1b000f55fd5819659426ece2f0}, {\bf marlin\-::\-Event\-Properties\-Write\-Engine} \doxyref{}{p.}{classmarlin_1_1EventPropertiesWriteEngine_ad264b9da6bc60ebd375faa319689941a}, {\bf marlin\-::\-Drift\-Chamber\-Write\-Engine} \doxyref{}{p.}{classmarlin_1_1DriftChamberWriteEngine_a54c3c6b481d7f957c95dc0b8dd9b9d37}, {\bf marlin\-::\-Deep\-Ana\-Write\-Engine} \doxyref{}{p.}{classmarlin_1_1DeepAnaWriteEngine_a3b67cb94563a6f930a28f71bba8833c1}, {\bf marlin\-::\-Trigger\-Write\-Engine} \doxyref{}{p.}{classmarlin_1_1TriggerWriteEngine_a6401f2bbd2a05725c55c851a0e4fcf39}, {\bf marlin\-::\-A\-S\-I\-C\-Info\-Write\-Engine} \doxyref{}{p.}{classmarlin_1_1ASICInfoWriteEngine_a2221295eb22d5609151640b05ab25706}, {\bf marlin\-::\-Collection\-Parameter\-Write\-Engine} \doxyref{}{p.}{classmarlin_1_1CollectionParameterWriteEngine_aec77b9403ff1661fd01d714b433157e8}, {\bf marlin\-::\-Event\-Parameter\-Write\-Engine} \doxyref{}{p.}{classmarlin_1_1EventParameterWriteEngine_a2a0b15f288547884438d616cba9a6ad0}, {\bf marlin\-::\-R\-O\-C\-Write\-Engine} \doxyref{}{p.}{classmarlin_1_1ROCWriteEngine_a8a9544ee503f13a760544ebf1671d15f}, {\bf marlin\-::\-Shower\-Shape\-Engine} \doxyref{}{p.}{classmarlin_1_1ShowerShapeEngine_ab379dcbe94700542c8a05c302d80231d}, {\bf marlin\-::\-Bif\-Write\-Engine} \doxyref{}{p.}{classmarlin_1_1BifWriteEngine_a82eecc72c7824876b9bb6211d9055e68}, {\bf marlin\-::\-Dwc\-Write\-Engine} \doxyref{}{p.}{classmarlin_1_1DwcWriteEngine_aef117e3b99d708b6d5b6653c15a13019}, {\bf marlin\-::\-Lda\-Write\-Engine} \doxyref{}{p.}{classmarlin_1_1LdaWriteEngine_a256ed5d60ebfe9f9e3646545c512fca1}, {\bf marlin\-::\-T\-B\-Track\-Write\-Engine} \doxyref{}{p.}{classmarlin_1_1TBTrackWriteEngine_ab7ff50302fa10ce40cd78cd87472d1fd}, and {\bf marlin\-::\-Hcal\-Track\-Lars\-Engine} \doxyref{}{p.}{classmarlin_1_1HcalTrackLarsEngine_a3d851ed89feec12237cb6c64a14cd54d}.
+
+
+
+Referenced by \-\_\-\-\_\-\-R\-T\-W\-::\-Engine\-Registrar\-::append\-All\-Engines().
+
+\index{marlin\-::\-Root\-Write\-Engine@{marlin\-::\-Root\-Write\-Engine}!register\-Branches@{register\-Branches}}
+\index{register\-Branches@{register\-Branches}!marlin::RootWriteEngine@{marlin\-::\-Root\-Write\-Engine}}
+\subsubsection[{register\-Branches}]{\setlength{\rightskip}{0pt plus 5cm}virtual void marlin\-::\-Root\-Write\-Engine\-::register\-Branches (
+\begin{DoxyParamCaption}
+\item[{T\-Tree $\ast$}]{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [pure virtual]}}\label{classmarlin_1_1RootWriteEngine_ad467dc6e73fdd9fd4311f7277fd02a89}
+\begin{DoxyVerb}Implement to register local variables to the output tree
+\param pointer to the \a ROOT tree, which the RootTreeWriter processor fills at the
+end of each event.
+Usually the implementation looks like@verbatim 
+\end{DoxyVerb}
+ /// host\-Tree-\/$>$Branch(\char`\"{}variable\char`\"{},\&\-\_\-variable\char`\"{} ,\char`\"{}variable/\-F" ); /// . But you can add any type of branch you like. 
+
+Implemented in {\bf marlin\-::\-A\-Sim\-Calorimeter\-Hit\-Write\-Engine} \doxyref{}{p.}{classmarlin_1_1ASimCalorimeterHitWriteEngine_a59a711512fa1cb7f0c3eb39a63af883d}, {\bf marlin\-::\-Event\-Properties\-Write\-Engine} \doxyref{}{p.}{classmarlin_1_1EventPropertiesWriteEngine_a4c1282d1d34392d66b56de4d7efc6be8}, {\bf marlin\-::\-M\-C\-Particle\-Write\-Engine} \doxyref{}{p.}{classmarlin_1_1MCParticleWriteEngine_abc8a55ab829d32228993664ee2fd084e}, {\bf marlin\-::\-Track\-Finder\-Write\-Engine} \doxyref{}{p.}{classmarlin_1_1TrackFinderWriteEngine_aa3fc66248aa14982aacea68e5b67f02e}, {\bf marlin\-::\-Collection\-Parameter\-Write\-Engine} \doxyref{}{p.}{classmarlin_1_1CollectionParameterWriteEngine_afd2c829f35e899f90f881a37aef206f9}, {\bf marlin\-::\-Event\-Parameter\-Write\-Engine} \doxyref{}{p.}{classmarlin_1_1EventParameterWriteEngine_ad3a5361c939e7fccab20dc2b334aa33d}, {\bf marlin\-::\-Trigger\-Write\-Engine} \doxyref{}{p.}{classmarlin_1_1TriggerWriteEngine_aa83e89d82bb8bc208b02d12d227e2bcb}, {\bf marlin\-::\-Hodoscope\-Write\-Engine} \doxyref{}{p.}{classmarlin_1_1HodoscopeWriteEngine_ac106fb65ad09c7f41975ae5c355da9d2}, {\bf marlin\-::\-Hit\-Write\-Engine} \doxyref{}{p.}{classmarlin_1_1HitWriteEngine_a9de31f39b17a9e782cc7d41d07fce547}, {\bf marlin\-::\-A\-S\-I\-C\-Info\-Write\-Engine} \doxyref{}{p.}{classmarlin_1_1ASICInfoWriteEngine_a5d1aca0dfd3b2c8e4d7e1b72463a1a8f}, {\bf marlin\-::\-Drift\-Chamber\-Write\-Engine} \doxyref{}{p.}{classmarlin_1_1DriftChamberWriteEngine_a3b32b9dc07adaa637821917ec5a879a3}, {\bf marlin\-::\-R\-O\-C\-Write\-Engine} \doxyref{}{p.}{classmarlin_1_1ROCWriteEngine_a87c0a7ff84442f5e184e03832adde931}, {\bf marlin\-::\-Deep\-Ana\-Write\-Engine} \doxyref{}{p.}{classmarlin_1_1DeepAnaWriteEngine_afa0d65f082b588ef7d61c06aecd9afe4}, {\bf marlin\-::\-Shower\-Shape\-Engine} \doxyref{}{p.}{classmarlin_1_1ShowerShapeEngine_aa9b11fb1cee4af0d4dc90a687932c341}, {\bf marlin\-::\-Bif\-Write\-Engine} \doxyref{}{p.}{classmarlin_1_1BifWriteEngine_a7589d618bd6113f426333a1aede37855}, {\bf marlin\-::\-Dwc\-Write\-Engine} \doxyref{}{p.}{classmarlin_1_1DwcWriteEngine_a1fc343056118664c22bdfcbb675310ec}, {\bf marlin\-::\-Lda\-Write\-Engine} \doxyref{}{p.}{classmarlin_1_1LdaWriteEngine_a490ccb85415f8b58b7db4818ac05d12b}, {\bf marlin\-::\-T\-B\-Track\-Write\-Engine} \doxyref{}{p.}{classmarlin_1_1TBTrackWriteEngine_a7eeb8a39b0a40bfb13a0d1deb9c143cc}, and {\bf marlin\-::\-Hcal\-Track\-Lars\-Engine} \doxyref{}{p.}{classmarlin_1_1HcalTrackLarsEngine_a5599070ef51668116f4287688f8e62a4}.
+
+\index{marlin\-::\-Root\-Write\-Engine@{marlin\-::\-Root\-Write\-Engine}!register\-Parameters@{register\-Parameters}}
+\index{register\-Parameters@{register\-Parameters}!marlin::RootWriteEngine@{marlin\-::\-Root\-Write\-Engine}}
+\subsubsection[{register\-Parameters}]{\setlength{\rightskip}{0pt plus 5cm}virtual void marlin\-::\-Root\-Write\-Engine\-::register\-Parameters (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [pure virtual]}}\label{classmarlin_1_1RootWriteEngine_ae12b70923768043fa5c1438f078c41d3}
+\begin{DoxyVerb}Used to register steering parameters.
+Implement to register \a marlin steering file parameters. Use \a marlin syntax
+to register parameters for the calling RootTreeWriter processor. 
+
+use@verbatim 
+\end{DoxyVerb}
+ /// \-\_\-host\-Proc.\-relay\-Register\-Processor\-Parameter(...) /// \-\_\-host\-Proc.\-relay\-Register...() ///  instead of {\itshape marlin} processors\begin{DoxyVerb}register...() \end{DoxyVerb}
+ methods 
+
+Implemented in {\bf marlin\-::\-A\-Sim\-Calorimeter\-Hit\-Write\-Engine} \doxyref{}{p.}{classmarlin_1_1ASimCalorimeterHitWriteEngine_a5ad32bcf2f6723033b5a543a715f4d3c}, {\bf marlin\-::\-Event\-Properties\-Write\-Engine} \doxyref{}{p.}{classmarlin_1_1EventPropertiesWriteEngine_a9394c4461b767c0f763d087988e8c854}, {\bf marlin\-::\-M\-C\-Particle\-Write\-Engine} \doxyref{}{p.}{classmarlin_1_1MCParticleWriteEngine_a18ac8b6f4d2818bf959ea494d1d17dae}, {\bf marlin\-::\-Track\-Finder\-Write\-Engine} \doxyref{}{p.}{classmarlin_1_1TrackFinderWriteEngine_a5c154e036f10b5ef6ed6673ec78e7598}, {\bf marlin\-::\-Collection\-Parameter\-Write\-Engine} \doxyref{}{p.}{classmarlin_1_1CollectionParameterWriteEngine_ae5bd3085f961a8ecc90272f00886d7d8}, {\bf marlin\-::\-Event\-Parameter\-Write\-Engine} \doxyref{}{p.}{classmarlin_1_1EventParameterWriteEngine_a05d652e2a9398160729f20aa7d6cdd0d}, {\bf marlin\-::\-Trigger\-Write\-Engine} \doxyref{}{p.}{classmarlin_1_1TriggerWriteEngine_ae39e2db93985319eb4e8db5c1f6946b1}, {\bf marlin\-::\-Hodoscope\-Write\-Engine} \doxyref{}{p.}{classmarlin_1_1HodoscopeWriteEngine_ad5150110764a1bdd16c8a8eab05ef7bf}, {\bf marlin\-::\-Hit\-Write\-Engine} \doxyref{}{p.}{classmarlin_1_1HitWriteEngine_a54f5c814d074396779ba6d21b2acff6c}, {\bf marlin\-::\-A\-S\-I\-C\-Info\-Write\-Engine} \doxyref{}{p.}{classmarlin_1_1ASICInfoWriteEngine_a8e4bb66df04f4637973bbc9110305ac9}, {\bf marlin\-::\-Drift\-Chamber\-Write\-Engine} \doxyref{}{p.}{classmarlin_1_1DriftChamberWriteEngine_a6632be0ed7f8ef14290e40550d64556c}, {\bf marlin\-::\-R\-O\-C\-Write\-Engine} \doxyref{}{p.}{classmarlin_1_1ROCWriteEngine_acdff2cfc64c531ecaeea6cdb64177b3c}, {\bf marlin\-::\-Deep\-Ana\-Write\-Engine} \doxyref{}{p.}{classmarlin_1_1DeepAnaWriteEngine_a757be550fb07212cfbe8cd2a9d6e26be}, {\bf marlin\-::\-Shower\-Shape\-Engine} \doxyref{}{p.}{classmarlin_1_1ShowerShapeEngine_a861065f4f0a4a91af65a700820cec207}, {\bf marlin\-::\-Bif\-Write\-Engine} \doxyref{}{p.}{classmarlin_1_1BifWriteEngine_a2f0940793cbb3314fe21843f9bde321b}, {\bf marlin\-::\-Dwc\-Write\-Engine} \doxyref{}{p.}{classmarlin_1_1DwcWriteEngine_a2a1d2aba7182e23d085f46ac1d6d8937}, {\bf marlin\-::\-Lda\-Write\-Engine} \doxyref{}{p.}{classmarlin_1_1LdaWriteEngine_ac981b23563e32a4b9c8da7018dca1f92}, {\bf marlin\-::\-T\-B\-Track\-Write\-Engine} \doxyref{}{p.}{classmarlin_1_1TBTrackWriteEngine_a9ad2d4c87c6a35c554ed34ada4819678}, and {\bf marlin\-::\-Hcal\-Track\-Lars\-Engine} \doxyref{}{p.}{classmarlin_1_1HcalTrackLarsEngine_a49bba2b5e26aafb89c9790f35175caae}.
+
+
+
+The documentation for this class was generated from the following file\-:\begin{DoxyCompactItemize}
+\item 
+Root\-Write\-Engine.\-hh\end{DoxyCompactItemize}

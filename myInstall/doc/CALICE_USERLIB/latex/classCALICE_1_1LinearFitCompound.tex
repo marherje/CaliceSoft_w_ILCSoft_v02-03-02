@@ -1,0 +1,160 @@
+\section{C\-A\-L\-I\-C\-E\-:\-:Linear\-Fit\-Compound Class Reference}
+\label{classCALICE_1_1LinearFitCompound}\index{C\-A\-L\-I\-C\-E\-::\-Linear\-Fit\-Compound@{C\-A\-L\-I\-C\-E\-::\-Linear\-Fit\-Compound}}
+
+
+Class to store the constant of a linear fit within the lcio framework.  
+
+
+
+
+{\ttfamily \#include $<$Linear\-Fit\-Compound.\-hh$>$}
+
+Inheritance diagram for C\-A\-L\-I\-C\-E\-:\-:Linear\-Fit\-Compound\-:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classCALICE_1_1LinearFitCompound}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+{\bfseries Linear\-Fit\-Compound} (lcio\-::\-L\-C\-Object $\ast$obj)\label{classCALICE_1_1LinearFitCompound_aa041bdcd07656d399c777cb69d3df568}
+
+\item 
+{\bfseries Linear\-Fit\-Compound} (const {\bf Linear\-Fit\-Constant} $\ast$lfc, const {\bf Linear\-Fit\-Slope} $\ast$lfs)\label{classCALICE_1_1LinearFitCompound_a8f5ac3c81a865ecc10f36e22bdb8e94f}
+
+\item 
+{\bfseries Linear\-Fit\-Compound} (int I\-D, double constant, double constant\-\_\-error, double constant\-\_\-reference\-\_\-point, double constant\-\_\-reference\-\_\-point\-\_\-error, double slope, double slope\-\_\-error)\label{classCALICE_1_1LinearFitCompound_aa9bea1b2c7c021daa57dc3542288c1ac}
+
+\item 
+double {\bf eval} (double x)
+\begin{DoxyCompactList}\small\item\em Evaluates the linear fit at the given point. \end{DoxyCompactList}\item 
+double {\bfseries eval\-Err} (double x, double x\-\_\-error)\label{classCALICE_1_1LinearFitCompound_a78b246859cb94fc056e66b65544f8d65}
+
+\item 
+int {\bf get\-I\-D} () const \label{classCALICE_1_1LinearFitCompound_a9cd94ca37460ca86c74fd4e659f280cc}
+
+\begin{DoxyCompactList}\small\item\em Get the identifier. \end{DoxyCompactList}\item 
+double {\bf get\-Constant} () const \label{classCALICE_1_1LinearFitCompound_ac1ca6ec7539fe980fbd67af7769930d3}
+
+\begin{DoxyCompactList}\small\item\em Get the constant/y-\/intercept of the fit. \end{DoxyCompactList}\item 
+double {\bf get\-Constant\-Error} () const \label{classCALICE_1_1LinearFitCompound_a1c512b13cee1df98953e18eff78047ac}
+
+\begin{DoxyCompactList}\small\item\em Get the error of the constant. \end{DoxyCompactList}\item 
+double {\bf get\-Slope} () const \label{classCALICE_1_1LinearFitCompound_adb11c7794278351a448df3bff3a0bd07}
+
+\begin{DoxyCompactList}\small\item\em Get slope of the linear fit. \end{DoxyCompactList}\item 
+double {\bf get\-Slope\-Error} () const \label{classCALICE_1_1LinearFitCompound_a19e287bdba39f38751496a5b06f28569}
+
+\begin{DoxyCompactList}\small\item\em Get error of the slope. \end{DoxyCompactList}\item 
+double {\bf get\-Constant\-Reference\-Point} () const \label{classCALICE_1_1LinearFitCompound_a72a91d14525eedaa7f2f436f6c7fe51e}
+
+\begin{DoxyCompactList}\small\item\em Get the reference point of the constant. \end{DoxyCompactList}\item 
+double {\bf get\-Constant\-Reference\-Point\-Error} () const \label{classCALICE_1_1LinearFitCompound_a77547513303b8e9df5329c5dd67571ac}
+
+\begin{DoxyCompactList}\small\item\em Get the error of the reference point of the constant. \end{DoxyCompactList}\item 
+void {\bf set\-I\-D} (const int I\-D)\label{classCALICE_1_1LinearFitCompound_af7dcd74ed57f41b64c7ba082c8070246}
+
+\begin{DoxyCompactList}\small\item\em Sets an identifier. \end{DoxyCompactList}\item 
+void {\bf set\-Constant} (const double constant)\label{classCALICE_1_1LinearFitCompound_a144ad1196e206d632f000939097d80aa}
+
+\begin{DoxyCompactList}\small\item\em Sets the constant. \end{DoxyCompactList}\item 
+void {\bf set\-Constant\-Error} (double constant\-Error)\label{classCALICE_1_1LinearFitCompound_aa990f347871e140731ae76b27277efc7}
+
+\begin{DoxyCompactList}\small\item\em Sets the error of the constant. \end{DoxyCompactList}\item 
+void {\bf set\-Slope} (const double slope)\label{classCALICE_1_1LinearFitCompound_afed1ff8b17afcaee84727a41ace77349}
+
+\begin{DoxyCompactList}\small\item\em Sets the slope. \end{DoxyCompactList}\item 
+void {\bf set\-Slope\-Error} (const double slope\-\_\-error)\label{classCALICE_1_1LinearFitCompound_af8761b938e369b0daaa1ec258db93a7e}
+
+\begin{DoxyCompactList}\small\item\em Sets the error of the slope. \end{DoxyCompactList}\item 
+void {\bf set\-Constant\-Reference\-Point} (const double constant\-Reference\-Point)\label{classCALICE_1_1LinearFitCompound_a9f694715ade079c8e0e8af5496707e37}
+
+\begin{DoxyCompactList}\small\item\em Sets the reference point of the constant. \end{DoxyCompactList}\item 
+void {\bf set\-Constant\-Reference\-Point\-Error} (double constant\-Reference\-Point\-Error)\label{classCALICE_1_1LinearFitCompound_a0e2c5570c83bbb2e3f3a0e9124258d4f}
+
+\begin{DoxyCompactList}\small\item\em Sets the error of the reference point of the constant. \end{DoxyCompactList}\item 
+const std\-::string {\bf get\-Type\-Name} () const 
+\begin{DoxyCompactList}\small\item\em Get the type name. \end{DoxyCompactList}\item 
+const std\-::string {\bf get\-Data\-Description} () const 
+\begin{DoxyCompactList}\small\item\em Get the data description. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Class to store the constant of a linear fit within the lcio framework. 
+
+\begin{DoxyAuthor}{Author}
+L\-N\-T\-A\-I 
+\end{DoxyAuthor}
+\begin{DoxyVersion}{Version}
+1.\-0 
+\end{DoxyVersion}
+\begin{DoxyDate}{Date}
+27 October 2009 
+\end{DoxyDate}
+
+
+Definition at line 37 of file Linear\-Fit\-Compound.\-hh.
+
+
+
+\subsection{Member Function Documentation}
+\index{C\-A\-L\-I\-C\-E\-::\-Linear\-Fit\-Compound@{C\-A\-L\-I\-C\-E\-::\-Linear\-Fit\-Compound}!eval@{eval}}
+\index{eval@{eval}!CALICE::LinearFitCompound@{C\-A\-L\-I\-C\-E\-::\-Linear\-Fit\-Compound}}
+\subsubsection[{eval}]{\setlength{\rightskip}{0pt plus 5cm}double C\-A\-L\-I\-C\-E\-::\-Linear\-Fit\-Compound\-::eval (
+\begin{DoxyParamCaption}
+\item[{double}]{x}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\label{classCALICE_1_1LinearFitCompound_a6a90eaa22d28b9223e5c67800cb41192}
+
+
+Evaluates the linear fit at the given point. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em x} & -\/ the point at which the fit is evaluated \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 97 of file Linear\-Fit\-Compound.\-hh.
+
+
+
+References get\-Constant(), get\-Constant\-Reference\-Point(), and get\-Slope().
+
+\index{C\-A\-L\-I\-C\-E\-::\-Linear\-Fit\-Compound@{C\-A\-L\-I\-C\-E\-::\-Linear\-Fit\-Compound}!get\-Data\-Description@{get\-Data\-Description}}
+\index{get\-Data\-Description@{get\-Data\-Description}!CALICE::LinearFitCompound@{C\-A\-L\-I\-C\-E\-::\-Linear\-Fit\-Compound}}
+\subsubsection[{get\-Data\-Description}]{\setlength{\rightskip}{0pt plus 5cm}const std\-::string C\-A\-L\-I\-C\-E\-::\-Linear\-Fit\-Compound\-::get\-Data\-Description (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}\label{classCALICE_1_1LinearFitCompound_ae44e7e243c8e2a030324852b4c1f1dd2}
+
+
+Get the data description. 
+
+The data description gives the meaning of the data fields. 
+
+Definition at line 247 of file Linear\-Fit\-Compound.\-hh.
+
+\index{C\-A\-L\-I\-C\-E\-::\-Linear\-Fit\-Compound@{C\-A\-L\-I\-C\-E\-::\-Linear\-Fit\-Compound}!get\-Type\-Name@{get\-Type\-Name}}
+\index{get\-Type\-Name@{get\-Type\-Name}!CALICE::LinearFitCompound@{C\-A\-L\-I\-C\-E\-::\-Linear\-Fit\-Compound}}
+\subsubsection[{get\-Type\-Name}]{\setlength{\rightskip}{0pt plus 5cm}const std\-::string C\-A\-L\-I\-C\-E\-::\-Linear\-Fit\-Compound\-::get\-Type\-Name (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}\label{classCALICE_1_1LinearFitCompound_a1479fcbd624f1452277f65bda2e3f65b}
+
+
+Get the type name. 
+
+The type name is used to determine which class interprets the L\-C\-Generic\-Object which holds the pure data. 
+
+Definition at line 238 of file Linear\-Fit\-Compound.\-hh.
+
+
+
+The documentation for this class was generated from the following file\-:\begin{DoxyCompactItemize}
+\item 
+Linear\-Fit\-Compound.\-hh\end{DoxyCompactItemize}

@@ -1,0 +1,94 @@
+\section{C\-A\-L\-I\-C\-E\-:\-:Simple\-Value Class Reference}
+\label{classCALICE_1_1SimpleValue}\index{C\-A\-L\-I\-C\-E\-::\-Simple\-Value@{C\-A\-L\-I\-C\-E\-::\-Simple\-Value}}
+
+
+Class to store float value, its error, and status flag plus integer index in L\-C\-I\-O.  
+
+
+
+
+{\ttfamily \#include $<$Simple\-Value.\-hh$>$}
+
+Inheritance diagram for C\-A\-L\-I\-C\-E\-:\-:Simple\-Value\-:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classCALICE_1_1SimpleValue}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+{\bf Simple\-Value} ()\label{classCALICE_1_1SimpleValue_ab63afbd0e34d1f5de34ba7f0301f6f84}
+
+\begin{DoxyCompactList}\small\item\em Empty constructor. \end{DoxyCompactList}\item 
+{\bf Simple\-Value} (const int id, const float val, const float err, const int stat)\label{classCALICE_1_1SimpleValue_ae5c7759090b4235eddfed2ea6b977e40}
+
+\begin{DoxyCompactList}\small\item\em Constructor with initial values. \end{DoxyCompactList}\item 
+{\bf Simple\-Value} (E\-V\-E\-N\-T\-::\-L\-C\-Object $\ast$obj)\label{classCALICE_1_1SimpleValue_a3d8634f99881f9481572b16a5e2bffda}
+
+\begin{DoxyCompactList}\small\item\em Constructor from L\-C\-Object. \end{DoxyCompactList}\item 
+{\bf $\sim$\-Simple\-Value} ()\label{classCALICE_1_1SimpleValue_a9027e479b382b6a6e9371a4dff09bdaa}
+
+\begin{DoxyCompactList}\small\item\em Destructor. \end{DoxyCompactList}\item 
+int {\bf get\-Cell\-I\-D} () const \label{classCALICE_1_1SimpleValue_a9cb25f2d1419faa25ee60ee6969088f2}
+
+\begin{DoxyCompactList}\small\item\em Return index identifier. \end{DoxyCompactList}\item 
+float {\bf get\-Value} () const \label{classCALICE_1_1SimpleValue_a10ed251ac01eeb6b7c7c630eb419e86b}
+
+\begin{DoxyCompactList}\small\item\em Return the value. \end{DoxyCompactList}\item 
+float {\bf get\-Error} () const \label{classCALICE_1_1SimpleValue_aac126ec03ca714db24176742edf86a5c}
+
+\begin{DoxyCompactList}\small\item\em Return the error on the value. \end{DoxyCompactList}\item 
+int {\bf get\-Status} () const \label{classCALICE_1_1SimpleValue_a1690e6ce44ea335f86853bf3e9e2e252}
+
+\begin{DoxyCompactList}\small\item\em Return the status. \end{DoxyCompactList}\item 
+void {\bf set\-Cell\-I\-D} (const int I\-D)\label{classCALICE_1_1SimpleValue_a1d0bf64c141a1eab8230cff9bedad99a}
+
+\begin{DoxyCompactList}\small\item\em set index identifier \end{DoxyCompactList}\item 
+void {\bf set\-Value} (const float value)\label{classCALICE_1_1SimpleValue_a3cb312cbed5170e517a8cb6988720374}
+
+\begin{DoxyCompactList}\small\item\em set the value \end{DoxyCompactList}\item 
+void {\bf set\-Error} (const float error)\label{classCALICE_1_1SimpleValue_a2ab0751649b263ce97ad6353c3a74b93}
+
+\begin{DoxyCompactList}\small\item\em set the error on the value \end{DoxyCompactList}\item 
+void {\bf set\-Status} (const int status)\label{classCALICE_1_1SimpleValue_a82caceee3e9f3757bd69be212788e4ad}
+
+\begin{DoxyCompactList}\small\item\em set the status \end{DoxyCompactList}\item 
+virtual const std\-::string {\bf get\-Type\-Name} () const \label{classCALICE_1_1SimpleValue_abbddaf6f2960066e61712572b74fa27c}
+
+\begin{DoxyCompactList}\small\item\em Implementation of L\-C\-Generic\-Object\-::get\-Type\-Name. \end{DoxyCompactList}\item 
+virtual const std\-::string {\bf get\-Data\-Description} () const \label{classCALICE_1_1SimpleValue_a8ee24ee2c956cbec74a8209e84594694}
+
+\begin{DoxyCompactList}\small\item\em Implementation of L\-C\-Generic\-Object\-::get\-Data\-Description. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Class to store float value, its error, and status flag plus integer index in L\-C\-I\-O. 
+
+This class provides an interface to store four numbers inside an L\-C\-I\-O object\-:
+\begin{DoxyItemize}
+\item an integer identifier, e.\-g. the index of a calorimeter cell
+\item a float value, e.\-g. a calibration constant
+\item a float error, e.\-g. the uncertainty on the calibration
+\item an integer status flag, e.\-g. to tell default from measured constants
+\end{DoxyItemize}
+
+\begin{DoxyAuthor}{Author}
+{\tt Niels.\-Meyer@desy.\-de} 
+
+{\tt Benjamin.\-Lutz@desy.\-de} 
+\end{DoxyAuthor}
+\begin{DoxyDate}{Date}
+February 2008 (N\-M) 
+
+February 2010 added set functions, fixed some const errors (B\-L) 
+\end{DoxyDate}
+
+
+Definition at line 25 of file Simple\-Value.\-hh.
+
+
+
+The documentation for this class was generated from the following file\-:\begin{DoxyCompactItemize}
+\item 
+Simple\-Value.\-hh\end{DoxyCompactItemize}

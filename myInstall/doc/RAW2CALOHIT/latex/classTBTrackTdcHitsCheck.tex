@@ -1,0 +1,94 @@
+\section{T\-B\-Track\-Tdc\-Hits\-Check Class Reference}
+\label{classTBTrackTdcHitsCheck}\index{T\-B\-Track\-Tdc\-Hits\-Check@{T\-B\-Track\-Tdc\-Hits\-Check}}
+Inheritance diagram for T\-B\-Track\-Tdc\-Hits\-Check\-:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=3.000000cm]{classTBTrackTdcHitsCheck}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+virtual Processor $\ast$ {\bfseries new\-Processor} ()\label{classTBTrackTdcHitsCheck_a4a3d12b82400668bbffe9b9a6993a97d}
+
+\item 
+virtual void {\bf Init} ()
+\begin{DoxyCompactList}\small\item\em Called at the begin of the job before anything is read. \end{DoxyCompactList}\item 
+virtual void {\bf Process\-Run\-Header} (L\-C\-Run\-Header $\ast$run)\label{classTBTrackTdcHitsCheck_af89a3701062f20bb205c4e8dd08e522c}
+
+\begin{DoxyCompactList}\small\item\em Called for every run. \end{DoxyCompactList}\item 
+virtual void {\bf Process\-Event} (L\-C\-Event $\ast$evt)\label{classTBTrackTdcHitsCheck_ac8199637e2c14163b67aa7be16e6b89f}
+
+\begin{DoxyCompactList}\small\item\em Called for every event -\/ the working horse. \end{DoxyCompactList}\item 
+virtual void {\bf End} ()\label{classTBTrackTdcHitsCheck_a8e979db0b7d4f3396cee4fe0c07cac32}
+
+\begin{DoxyCompactList}\small\item\em Called after data processing for clean up. \end{DoxyCompactList}\item 
+virtual void {\bfseries init\-Hists} (bool real)\label{classTBTrackTdcHitsCheck_a0a37f04069e36ffb78182a6154c2944b}
+
+\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+bool {\bf \-\_\-cern}\label{classTBTrackTdcHitsCheck_af989557649c4e709716ff4fb6ade30cb}
+
+\begin{DoxyCompactList}\small\item\em Method to write the histograms in a R\-O\-O\-T file. \end{DoxyCompactList}\item 
+T\-H1\-F $\ast$ {\bfseries h\-N\-Col}\label{classTBTrackTdcHitsCheck_a855f4e96cbe8858e152e10071d3e7b85}
+
+\item 
+T\-H1\-F $\ast$ {\bfseries h\-N\-Ent}\label{classTBTrackTdcHitsCheck_af977d14ce5313a7c93d4ccefb9cce998}
+
+\item 
+T\-H1\-F $\ast$ {\bfseries h\-Numb} [2][4]\label{classTBTrackTdcHitsCheck_aac7809c7921caea3c0e3bc624be02cf4}
+
+\item 
+T\-H1\-F $\ast$ {\bfseries h\-Dist} [2][4]\label{classTBTrackTdcHitsCheck_af1e18036c82ca0374147c1119d1a0fcd}
+
+\item 
+T\-H1\-F $\ast$ {\bfseries h\-Sepr} [2][4]\label{classTBTrackTdcHitsCheck_a10420c1a5f1a586a87b73ca0c013d9e8}
+
+\item 
+T\-H1\-F $\ast$ {\bfseries h\-Lpm\-L} [2][6]\label{classTBTrackTdcHitsCheck_a6ab7fbde4baa6a6dbb11a821a8b04583}
+
+\item 
+T\-H2\-F $\ast$ {\bfseries h\-Lvs\-L} [2][6]\label{classTBTrackTdcHitsCheck_ae4f5c1006e00659b2fa27d3bceabcd8f}
+
+\item 
+T\-H1\-F $\ast$ {\bfseries h\-Diff} [2][4]\label{classTBTrackTdcHitsCheck_a55fdb0e5a9c4358c3ac84ee8ab12971c}
+
+\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Detailed Description}
+
+
+Definition at line 22 of file T\-B\-Track\-Tdc\-Hits\-Check.\-hh.
+
+
+
+\subsection{Member Function Documentation}
+\index{T\-B\-Track\-Tdc\-Hits\-Check@{T\-B\-Track\-Tdc\-Hits\-Check}!Init@{Init}}
+\index{Init@{Init}!TBTrackTdcHitsCheck@{T\-B\-Track\-Tdc\-Hits\-Check}}
+\subsubsection[{Init}]{\setlength{\rightskip}{0pt plus 5cm}void T\-B\-Track\-Tdc\-Hits\-Check\-::\-Init (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}\label{classTBTrackTdcHitsCheck_a96a6fbe507db8ce20f3eaffdf661605a}
+
+
+Called at the begin of the job before anything is read. 
+
+Use to initialize the processor, e.\-g. book histograms. 
+
+Implements {\bf T\-B\-Track\-Base\-Processor} \doxyref{}{p.}{classTBTrackBaseProcessor}.
+
+
+
+Definition at line 104 of file T\-B\-Track\-Tdc\-Hits\-Check.\-cc.
+
+
+
+The documentation for this class was generated from the following files\-:\begin{DoxyCompactItemize}
+\item 
+T\-B\-Track\-Tdc\-Hits\-Check.\-hh\item 
+T\-B\-Track\-Tdc\-Hits\-Check.\-cc\end{DoxyCompactItemize}

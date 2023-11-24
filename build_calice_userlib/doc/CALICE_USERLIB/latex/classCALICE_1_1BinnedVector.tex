@@ -1,0 +1,282 @@
+\section{C\-A\-L\-I\-C\-E\-:\-:Binned\-Vector$<$ K, D $>$ Class Template Reference}
+\label{classCALICE_1_1BinnedVector}\index{C\-A\-L\-I\-C\-E\-::\-Binned\-Vector$<$ K, D $>$@{C\-A\-L\-I\-C\-E\-::\-Binned\-Vector$<$ K, D $>$}}
+
+
+Template class to store data via a linear binned keys.  
+
+
+
+
+{\ttfamily \#include $<$Binned\-Vector.\-hh$>$}
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+{\bf Binned\-Vector} ()
+\begin{DoxyCompactList}\small\item\em standard constructor \end{DoxyCompactList}\item 
+{\bf Binned\-Vector} (const unsigned int N, const K \&min\-Range, const K \&max\-Range, const D \&init\-Value)
+\begin{DoxyCompactList}\small\item\em constructor which sets dimensions \end{DoxyCompactList}\item 
+void {\bf set\-Binning} (const unsigned int N, const K \&min\-Range, const K \&max\-Range, const D \&init\-Value)
+\begin{DoxyCompactList}\small\item\em function to set the dimensions \end{DoxyCompactList}\item 
+D \& {\bf operator[$\,$]} (const K \&position)
+\begin{DoxyCompactList}\small\item\em access operator \end{DoxyCompactList}\item 
+const D \& {\bf operator[$\,$]} (const K \&position) const 
+\begin{DoxyCompactList}\small\item\em const access operator \end{DoxyCompactList}\item 
+void {\bf clear} ()
+\begin{DoxyCompactList}\small\item\em clear content of bins \end{DoxyCompactList}\item 
+const std\-::vector$<$ D $>$ \& {\bf get\-Vector} () const 
+\begin{DoxyCompactList}\small\item\em get vector of bins \end{DoxyCompactList}\item 
+std\-::vector$<$ K $>$ {\bf get\-Bin\-Centers} () const 
+\begin{DoxyCompactList}\small\item\em get vector of bin centers \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+unsigned int {\bfseries get\-Index} (const K \&position) const \label{classCALICE_1_1BinnedVector_a4123e06e0d7a11932c077dc5fe493f1a}
+
+\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+K {\bfseries \-\_\-bin\-Width}\label{classCALICE_1_1BinnedVector_afeaf367990f430e62c61ab0683783fd1}
+
+\item 
+K {\bfseries \-\_\-min\-Range}\label{classCALICE_1_1BinnedVector_af613299eaafb750fde3806ee35888911}
+
+\item 
+K {\bfseries \-\_\-max\-Range}\label{classCALICE_1_1BinnedVector_a91b5b2679ffa43db2731fe9fff33c108}
+
+\item 
+unsigned int {\bfseries \-\_\-\-N}\label{classCALICE_1_1BinnedVector_ab6da09732d112c6d308208eb634f8fdd}
+
+\item 
+std\-::vector$<$ D $>$ {\bfseries \-\_\-data}\label{classCALICE_1_1BinnedVector_a774e0934eb7e9115ceff381367cdb251}
+
+\item 
+D {\bfseries \-\_\-default}\label{classCALICE_1_1BinnedVector_ac882272e3b94ce45830b5f44f8c0309d}
+
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+\subsubsection*{template$<$class K, class D$>$class C\-A\-L\-I\-C\-E\-::\-Binned\-Vector$<$ K, D $>$}
+
+Template class to store data via a linear binned keys. 
+
+This is like a histogram, but without graphical functionallity.
+
+
+\begin{DoxyParams}{Parameters}
+{\em K} & type of the key \\
+\hline
+{\em D} & type of the data\\
+\hline
+\end{DoxyParams}
+\begin{DoxyAuthor}{Author}
+{\tt Benjamin.\-Lutz@desy.\-de} 
+\end{DoxyAuthor}
+\begin{DoxyVersion}{Version}
+0.\-2 
+\end{DoxyVersion}
+\begin{DoxyDate}{Date}
+October 2009 
+\end{DoxyDate}
+
+
+Definition at line 24 of file Binned\-Vector.\-hh.
+
+
+
+\subsection{Constructor \& Destructor Documentation}
+\index{C\-A\-L\-I\-C\-E\-::\-Binned\-Vector@{C\-A\-L\-I\-C\-E\-::\-Binned\-Vector}!Binned\-Vector@{Binned\-Vector}}
+\index{Binned\-Vector@{Binned\-Vector}!CALICE::BinnedVector@{C\-A\-L\-I\-C\-E\-::\-Binned\-Vector}}
+\subsubsection[{Binned\-Vector}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class K , class D $>$ {\bf C\-A\-L\-I\-C\-E\-::\-Binned\-Vector}$<$ K, D $>$\-::{\bf Binned\-Vector} (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{classCALICE_1_1BinnedVector_ac4a4d7f849e54dd2ca206c6c4c3b9a4d}
+
+
+standard constructor 
+
+\begin{DoxyWarning}{Warning}
+Dimensions have to be set with \doxyref{set\-Binning()}{p.}{classCALICE_1_1BinnedVector_a0a556d0e061a26a4a9f36c68bdaa5605} before the vector can be used. 
+\end{DoxyWarning}
+
+
+Definition at line 103 of file Binned\-Vector.\-hh.
+
+\index{C\-A\-L\-I\-C\-E\-::\-Binned\-Vector@{C\-A\-L\-I\-C\-E\-::\-Binned\-Vector}!Binned\-Vector@{Binned\-Vector}}
+\index{Binned\-Vector@{Binned\-Vector}!CALICE::BinnedVector@{C\-A\-L\-I\-C\-E\-::\-Binned\-Vector}}
+\subsubsection[{Binned\-Vector}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class K, class D$>$ {\bf C\-A\-L\-I\-C\-E\-::\-Binned\-Vector}$<$ K, D $>$\-::{\bf Binned\-Vector} (
+\begin{DoxyParamCaption}
+\item[{const unsigned int}]{N, }
+\item[{const K \&}]{min\-Range, }
+\item[{const K \&}]{max\-Range, }
+\item[{const D \&}]{init\-Value}
+\end{DoxyParamCaption}
+)}\label{classCALICE_1_1BinnedVector_ac82537603208f443464a68274d1b0003}
+
+
+constructor which sets dimensions 
+
+
+\begin{DoxyParams}{Parameters}
+{\em N} & number bins (without under and over range bins) \\
+\hline
+{\em min\-Range} & lower end of range \\
+\hline
+{\em max\-Range} & upper end of range \\
+\hline
+{\em init\-Value} & value for initialisation of bins \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 107 of file Binned\-Vector.\-hh.
+
+
+
+\subsection{Member Function Documentation}
+\index{C\-A\-L\-I\-C\-E\-::\-Binned\-Vector@{C\-A\-L\-I\-C\-E\-::\-Binned\-Vector}!clear@{clear}}
+\index{clear@{clear}!CALICE::BinnedVector@{C\-A\-L\-I\-C\-E\-::\-Binned\-Vector}}
+\subsubsection[{clear}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class K , class D $>$ void {\bf C\-A\-L\-I\-C\-E\-::\-Binned\-Vector}$<$ K, D $>$\-::clear (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{classCALICE_1_1BinnedVector_aabcdd48468006c8518ae4a5623aa21ab}
+
+
+clear content of bins 
+
+all bins will be set to init\-Value 
+
+Definition at line 112 of file Binned\-Vector.\-hh.
+
+\index{C\-A\-L\-I\-C\-E\-::\-Binned\-Vector@{C\-A\-L\-I\-C\-E\-::\-Binned\-Vector}!get\-Bin\-Centers@{get\-Bin\-Centers}}
+\index{get\-Bin\-Centers@{get\-Bin\-Centers}!CALICE::BinnedVector@{C\-A\-L\-I\-C\-E\-::\-Binned\-Vector}}
+\subsubsection[{get\-Bin\-Centers}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class K , class D $>$ std\-::vector$<$ K $>$ {\bf C\-A\-L\-I\-C\-E\-::\-Binned\-Vector}$<$ K, D $>$\-::get\-Bin\-Centers (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const}\label{classCALICE_1_1BinnedVector_abab5c9e035268638c18327f8a3826d43}
+
+
+get vector of bin centers 
+
+the vector starts with the under range bin and ends with the over range bin
+
+\begin{DoxyReturn}{Returns}
+vector of bin centers 
+\end{DoxyReturn}
+
+
+Definition at line 158 of file Binned\-Vector.\-hh.
+
+\index{C\-A\-L\-I\-C\-E\-::\-Binned\-Vector@{C\-A\-L\-I\-C\-E\-::\-Binned\-Vector}!get\-Vector@{get\-Vector}}
+\index{get\-Vector@{get\-Vector}!CALICE::BinnedVector@{C\-A\-L\-I\-C\-E\-::\-Binned\-Vector}}
+\subsubsection[{get\-Vector}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class K, class D$>$ const std\-::vector$<$D$>$\& {\bf C\-A\-L\-I\-C\-E\-::\-Binned\-Vector}$<$ K, D $>$\-::get\-Vector (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}\label{classCALICE_1_1BinnedVector_ab7bfb5aefe1cdb0e89664f30d15e48e3}
+
+
+get vector of bins 
+
+the vector starts with the under range bin and ends with the over range bin
+
+\begin{DoxyReturn}{Returns}
+vector of bins 
+\end{DoxyReturn}
+
+
+Definition at line 78 of file Binned\-Vector.\-hh.
+
+
+
+Referenced by C\-A\-L\-I\-C\-E\-::\-Tcmt\-Event\-Identifier\-::add\-Results(), and C\-A\-L\-I\-C\-E\-::\-Tcmt\-Event\-Identifier\-::process().
+
+\index{C\-A\-L\-I\-C\-E\-::\-Binned\-Vector@{C\-A\-L\-I\-C\-E\-::\-Binned\-Vector}!operator[$\,$]@{operator[]}}
+\index{operator[$\,$]@{operator[]}!CALICE::BinnedVector@{C\-A\-L\-I\-C\-E\-::\-Binned\-Vector}}
+\subsubsection[{operator[]}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class K, class D $>$ D \& {\bf C\-A\-L\-I\-C\-E\-::\-Binned\-Vector}$<$ K, D $>$\-::operator[$\,$] (
+\begin{DoxyParamCaption}
+\item[{const K \&}]{position}
+\end{DoxyParamCaption}
+)}\label{classCALICE_1_1BinnedVector_a6b32d7391a66dd275f51c92db106f0e7}
+
+
+access operator 
+
+
+\begin{DoxyParams}{Parameters}
+{\em position} & key to find bin \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+value at key 
+\end{DoxyReturn}
+
+
+Definition at line 148 of file Binned\-Vector.\-hh.
+
+\index{C\-A\-L\-I\-C\-E\-::\-Binned\-Vector@{C\-A\-L\-I\-C\-E\-::\-Binned\-Vector}!operator[$\,$]@{operator[]}}
+\index{operator[$\,$]@{operator[]}!CALICE::BinnedVector@{C\-A\-L\-I\-C\-E\-::\-Binned\-Vector}}
+\subsubsection[{operator[]}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class K, class D $>$ const D \& {\bf C\-A\-L\-I\-C\-E\-::\-Binned\-Vector}$<$ K, D $>$\-::operator[$\,$] (
+\begin{DoxyParamCaption}
+\item[{const K \&}]{position}
+\end{DoxyParamCaption}
+) const}\label{classCALICE_1_1BinnedVector_aac7fe817f2b702c34a9eff4fd3b205bb}
+
+
+const access operator 
+
+
+\begin{DoxyParams}{Parameters}
+{\em position} & key to find bin \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+value at key 
+\end{DoxyReturn}
+
+
+Definition at line 153 of file Binned\-Vector.\-hh.
+
+\index{C\-A\-L\-I\-C\-E\-::\-Binned\-Vector@{C\-A\-L\-I\-C\-E\-::\-Binned\-Vector}!set\-Binning@{set\-Binning}}
+\index{set\-Binning@{set\-Binning}!CALICE::BinnedVector@{C\-A\-L\-I\-C\-E\-::\-Binned\-Vector}}
+\subsubsection[{set\-Binning}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class K, class D$>$ void {\bf C\-A\-L\-I\-C\-E\-::\-Binned\-Vector}$<$ K, D $>$\-::set\-Binning (
+\begin{DoxyParamCaption}
+\item[{const unsigned int}]{N, }
+\item[{const K \&}]{min\-Range, }
+\item[{const K \&}]{max\-Range, }
+\item[{const D \&}]{init\-Value}
+\end{DoxyParamCaption}
+)}\label{classCALICE_1_1BinnedVector_a0a556d0e061a26a4a9f36c68bdaa5605}
+
+
+function to set the dimensions 
+
+
+\begin{DoxyParams}{Parameters}
+{\em N} & number bins (without under and over range bins) \\
+\hline
+{\em min\-Range} & lower end of range \\
+\hline
+{\em max\-Range} & upper end of range \\
+\hline
+{\em init\-Value} & value for initialisation of bins \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 120 of file Binned\-Vector.\-hh.
+
+
+
+Referenced by C\-A\-L\-I\-C\-E\-::\-Tcmt\-Event\-Identifier\-::\-Tcmt\-Event\-Identifier().
+
+
+
+The documentation for this class was generated from the following file\-:\begin{DoxyCompactItemize}
+\item 
+Binned\-Vector.\-hh\end{DoxyCompactItemize}

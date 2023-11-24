@@ -1,0 +1,78 @@
+\section{/nfs/dust/ilc/user/marquezh/\-Calice\-Soft\-\_\-w\-\_\-\-I\-L\-C\-Soft\-\_\-v02-\/03-\/02/calice\-\_\-db\-\_\-tools/src/extract\-Hcal\-Temperatures.cc File Reference}
+\label{extractHcalTemperatures_8cc}\index{/nfs/dust/ilc/user/marquezh/\-Calice\-Soft\-\_\-w\-\_\-\-I\-L\-C\-Soft\-\_\-v02-\/03-\/02/calice\-\_\-db\-\_\-tools/src/extract\-Hcal\-Temperatures.\-cc@{/nfs/dust/ilc/user/marquezh/\-Calice\-Soft\-\_\-w\-\_\-\-I\-L\-C\-Soft\-\_\-v02-\/03-\/02/calice\-\_\-db\-\_\-tools/src/extract\-Hcal\-Temperatures.\-cc}}
+{\ttfamily \#include $<$fstream$>$}\\*
+{\ttfamily \#include $<$iostream$>$}\\*
+{\ttfamily \#include $<$cstring$>$}\\*
+{\ttfamily \#include $<$unistd.\-h$>$}\\*
+{\ttfamily \#include \char`\"{}lccd/\-D\-B\-Interface.\-hh\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}lccd/\-D\-B\-Cond\-Handler.\-hh\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}Average.\-hh\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}Ahc\-Simple\-Temp\-Provider.\-hh\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}Ahc\-Cern2010\-Temp\-Provider.\-hh\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}Ahc\-Mapper.\-hh\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}Ahc\-Slow\-Readout\-Mod\-Mapper.\-hh\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}Calice\-Run\-Time.\-hh\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}Calice\-D\-B\-Init\-Helper.\-hh\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}Run\-Location.\-hh\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}Calice\-D\-B\-Helper.\-hh\char`\"{}}\\*
+\subsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\#define {\bfseries H\-C\-A\-L\-\_\-\-M\-A\-X\-\_\-\-M\-O\-D\-U\-L\-E}~39\label{extractHcalTemperatures_8cc_a76fff6cee3e56a904e5fb36c538cfda3}
+
+\item 
+\#define {\bfseries H\-C\-A\-L\-\_\-\-M\-A\-X\-\_\-\-C\-H\-I\-P}~12\label{extractHcalTemperatures_8cc_ae9aff8fe25711ec20f0caf6db90ae060}
+
+\item 
+\#define {\bfseries H\-C\-A\-L\-\_\-\-M\-A\-X\-\_\-\-C\-H\-A\-N\-N\-E\-L}~18\label{extractHcalTemperatures_8cc_a5ce1ff92baa7e4a39bd2e8f920e1d95c}
+
+\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+int {\bfseries my\-Index} (int m, int a, int c)\label{extractHcalTemperatures_8cc_a4501f51e193564ee55cdd7c5b47ef22e}
+
+\item 
+bool {\bfseries have\-Missing\-Chips\-In\-Coarse\-Modules} (int module, int chip)\label{extractHcalTemperatures_8cc_a731076a580a61d5e79eda00e1a91da9c}
+
+\item 
+bool {\bfseries have\-Incomplete\-Chip} (int module, int chip, int channel)\label{extractHcalTemperatures_8cc_a9006ae6bb0ab0b3ee7650841312fc36e}
+
+\item 
+int {\bfseries main} (int argc, char $\ast$$\ast$argv)\label{extractHcalTemperatures_8cc_a3c04138a5bfe5d72780bb7e82a18e627}
+
+\end{DoxyCompactItemize}
+\subsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+const bool {\bfseries \-\_\-debug} = true\label{extractHcalTemperatures_8cc_a2493ac148971274f1e916faa9f2449aa}
+
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+This tool dumps the H\-C\-A\-L temperatures from the database (channel-\/wise, module averages and calorimeter average). The values are averaged over a specified set of runs.
+
+Usage\-:
+
+
+\begin{DoxyCode}
+extractHcalTemperatures <runs>
+extractHcalTemperatures <runs> <outfile>
+extractHcalTemperatures <runs> <infile> <outfile>
+\end{DoxyCode}
+
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em $<$runs$>$} & .txt file containing a list of runs for which the tempaeratures are extracted \\
+\hline
+\mbox{\tt out}  & {\em $<$outfile$>$} & (optional) if specified, the output is written to this .txt file instead of dumped to std\-::out \\
+\hline
+\mbox{\tt in}  & {\em $<$infile$>$} & (optional) if specified, the temperature averages are added to an existing calibration file \\
+\hline
+\end{DoxyParams}
+
+
+Definition in file {\bf extract\-Hcal\-Temperatures.\-cc}.
+

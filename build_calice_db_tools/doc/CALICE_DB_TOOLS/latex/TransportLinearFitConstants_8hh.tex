@@ -1,0 +1,33 @@
+\section{/nfs/dust/ilc/user/marquezh/\-Calice\-Soft\-\_\-w\-\_\-\-I\-L\-C\-Soft\-\_\-v02-\/03-\/02/calice\-\_\-db\-\_\-tools/include/\-Transport\-Linear\-Fit\-Constants.hh File Reference}
+\label{TransportLinearFitConstants_8hh}\index{/nfs/dust/ilc/user/marquezh/\-Calice\-Soft\-\_\-w\-\_\-\-I\-L\-C\-Soft\-\_\-v02-\/03-\/02/calice\-\_\-db\-\_\-tools/include/\-Transport\-Linear\-Fit\-Constants.\-hh@{/nfs/dust/ilc/user/marquezh/\-Calice\-Soft\-\_\-w\-\_\-\-I\-L\-C\-Soft\-\_\-v02-\/03-\/02/calice\-\_\-db\-\_\-tools/include/\-Transport\-Linear\-Fit\-Constants.\-hh}}
+{\ttfamily \#include \char`\"{}Linear\-Fit\-Constant.\-hh\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}Access\-Linear\-Fit\-Constant.\-hh\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}Access\-Linear\-Fit\-Slope.\-hh\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}Access\-Simple\-Value.\-hh\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}lcio.\-h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}I\-M\-P\-L/\-L\-C\-Collection\-Vec.\-h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}I\-M\-P\-L/\-L\-C\-T\-O\-O\-L\-S.\-h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}I\-O/\-L\-C\-Reader.\-h\char`\"{}}\\*
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class {\bf Transport\-Linear\-Fit\-Constants}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+This tool transports C\-A\-L\-I\-C\-E\-:Lienar\-Fit\-Constants from one set of conditon parameters (e.\-g. high voltage) to another.
+
+Command line parameters\-: \begin{DoxyVerb}\e --values   -\> define LinearFitConstant input
+\e --slopes   -\> define input for LinearFitSlopes
+\e --cond_in  -\> define initial conditions (e.g. reference high voltage)
+\e --cond_out -\> define conditions the constants are shifted to (e.g. different high voltage settings)
+
+\e --txt    \<inputfile.txt\>                 -\> define .txt file as source (format: module/chip/channel/value/error...)
+\e --slcio  \<inputfile.slcio\> \<collection\>  -\> define collection from .slcio file as source
+\e --db     \<DBfolder\> \<time\>               -\> define database folder at time \<time\> as source, using no tag
+\e --db_tag \<DBfolder\> \<time\> \<tag\>         -\> define database folder at time \<time\> and tag \<tag\> as source\end{DoxyVerb}
+
+
+Definition in file {\bf Transport\-Linear\-Fit\-Constants.\-hh}.
+

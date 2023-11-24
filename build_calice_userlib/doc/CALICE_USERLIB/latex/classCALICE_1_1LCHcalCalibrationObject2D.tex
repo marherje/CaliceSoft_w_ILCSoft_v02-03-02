@@ -1,0 +1,114 @@
+\section{C\-A\-L\-I\-C\-E\-:\-:L\-C\-Hcal\-Calibration\-Object2\-D Class Reference}
+\label{classCALICE_1_1LCHcalCalibrationObject2D}\index{C\-A\-L\-I\-C\-E\-::\-L\-C\-Hcal\-Calibration\-Object2\-D@{C\-A\-L\-I\-C\-E\-::\-L\-C\-Hcal\-Calibration\-Object2\-D}}
+
+
+The results of the calibrations done by \doxyref{L\-C\-Hcal\-Calibration\-Object2\-D}{p.}{classCALICE_1_1LCHcalCalibrationObject2D} can depend on two sets of input values (like saturation correction)  
+
+
+
+
+{\ttfamily \#include $<$L\-C\-Hcal\-Calibration\-Object2\-D.\-hh$>$}
+
+Inheritance diagram for C\-A\-L\-I\-C\-E\-:\-:L\-C\-Hcal\-Calibration\-Object2\-D\-:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=4.000000cm]{classCALICE_1_1LCHcalCalibrationObject2D}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+{\bfseries L\-C\-Hcal\-Calibration\-Object2\-D} (L\-C\-Object $\ast${\bf obj})\label{classCALICE_1_1LCHcalCalibrationObject2D_a9d0b2e8a75de8cd23d1425d4221141f2}
+
+\item 
+virtual float {\bfseries apply\-Calibration} (float input\-Value, float input\-Parameter) const \label{classCALICE_1_1LCHcalCalibrationObject2D_a9e63a4d12f105fcea5e0faf73b4a34c9}
+
+\item 
+virtual float {\bfseries apply\-Calibration\-Error} (float input\-Value, float input\-Error, float input\-Parameter, float input\-Parameter\-Error) const \label{classCALICE_1_1LCHcalCalibrationObject2D_a48eb6be23a1512823a40c5597101eec1}
+
+\item 
+virtual float {\bf apply\-Calibration} (float input\-Value) const 
+\begin{DoxyCompactList}\small\item\em let the object apply the calibration stored in the object \end{DoxyCompactList}\item 
+virtual float {\bf apply\-Calibration\-Error} (float input\-Value, float input\-Error) const 
+\begin{DoxyCompactList}\small\item\em let the object calculate the error after applying the calibration stored in the object \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Detailed Description}
+The results of the calibrations done by \doxyref{L\-C\-Hcal\-Calibration\-Object2\-D}{p.}{classCALICE_1_1LCHcalCalibrationObject2D} can depend on two sets of input values (like saturation correction) 
+
+\begin{DoxyAuthor}{Author}
+S. Schmidt, D\-E\-S\-Y 
+\end{DoxyAuthor}
+\begin{DoxyDate}{Date}
+September 2006 
+\end{DoxyDate}
+
+
+Definition at line 21 of file L\-C\-Hcal\-Calibration\-Object2\-D.\-hh.
+
+
+
+\subsection{Member Function Documentation}
+\index{C\-A\-L\-I\-C\-E\-::\-L\-C\-Hcal\-Calibration\-Object2\-D@{C\-A\-L\-I\-C\-E\-::\-L\-C\-Hcal\-Calibration\-Object2\-D}!apply\-Calibration@{apply\-Calibration}}
+\index{apply\-Calibration@{apply\-Calibration}!CALICE::LCHcalCalibrationObject2D@{C\-A\-L\-I\-C\-E\-::\-L\-C\-Hcal\-Calibration\-Object2\-D}}
+\subsubsection[{apply\-Calibration}]{\setlength{\rightskip}{0pt plus 5cm}virtual float C\-A\-L\-I\-C\-E\-::\-L\-C\-Hcal\-Calibration\-Object2\-D\-::apply\-Calibration (
+\begin{DoxyParamCaption}
+\item[{float}]{input\-Value}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}\label{classCALICE_1_1LCHcalCalibrationObject2D_ad805292313b3bb8fe8a3008a3f285b10}
+
+
+let the object apply the calibration stored in the object 
+
+
+\begin{DoxyParams}{Parameters}
+{\em input\-Value} & \char`\"{}energy\char`\"{} value of the cell before the calibration \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\char`\"{}energy\char`\"{} value of the cell after the calibration 
+\end{DoxyReturn}
+
+
+Reimplemented from {\bf C\-A\-L\-I\-C\-E\-::\-L\-C\-Hcal\-Calibration\-Object} \doxyref{}{p.}{classCALICE_1_1LCHcalCalibrationObject_a763f1cf5b9c372fdde268d79b789adcc}.
+
+
+
+Definition at line 37 of file L\-C\-Hcal\-Calibration\-Object2\-D.\-hh.
+
+\index{C\-A\-L\-I\-C\-E\-::\-L\-C\-Hcal\-Calibration\-Object2\-D@{C\-A\-L\-I\-C\-E\-::\-L\-C\-Hcal\-Calibration\-Object2\-D}!apply\-Calibration\-Error@{apply\-Calibration\-Error}}
+\index{apply\-Calibration\-Error@{apply\-Calibration\-Error}!CALICE::LCHcalCalibrationObject2D@{C\-A\-L\-I\-C\-E\-::\-L\-C\-Hcal\-Calibration\-Object2\-D}}
+\subsubsection[{apply\-Calibration\-Error}]{\setlength{\rightskip}{0pt plus 5cm}virtual float C\-A\-L\-I\-C\-E\-::\-L\-C\-Hcal\-Calibration\-Object2\-D\-::apply\-Calibration\-Error (
+\begin{DoxyParamCaption}
+\item[{float}]{input\-Value, }
+\item[{float}]{input\-Error}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}\label{classCALICE_1_1LCHcalCalibrationObject2D_a5a73278000f9d13e19969bc229fe18f3}
+
+
+let the object calculate the error after applying the calibration stored in the object 
+
+
+\begin{DoxyParams}{Parameters}
+{\em input\-Value} & \char`\"{}energy\char`\"{} value of the cell stored before the calibration \\
+\hline
+{\em input\-Error} & error of the \char`\"{}energy\char`\"{} value of the cell before the calibration \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+error of the \char`\"{}energy\char`\"{} value of the cell after the calibration taking into account the error of the \char`\"{}energy\char`\"{} value of the cell before the calibration and the error of the calibration itself 
+\end{DoxyReturn}
+
+
+Reimplemented from {\bf C\-A\-L\-I\-C\-E\-::\-L\-C\-Hcal\-Calibration\-Object} \doxyref{}{p.}{classCALICE_1_1LCHcalCalibrationObject_a16d9de9567f68d7784a2daa4d2821341}.
+
+
+
+Definition at line 41 of file L\-C\-Hcal\-Calibration\-Object2\-D.\-hh.
+
+
+
+The documentation for this class was generated from the following file\-:\begin{DoxyCompactItemize}
+\item 
+L\-C\-Hcal\-Calibration\-Object2\-D.\-hh\end{DoxyCompactItemize}

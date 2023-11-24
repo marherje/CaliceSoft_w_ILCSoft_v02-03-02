@@ -1,0 +1,179 @@
+\section{C\-A\-L\-I\-C\-E\-:\-:T\-B\-Ecal\-Digitisation Class Reference}
+\label{classCALICE_1_1TBEcalDigitisation}\index{C\-A\-L\-I\-C\-E\-::\-T\-B\-Ecal\-Digitisation@{C\-A\-L\-I\-C\-E\-::\-T\-B\-Ecal\-Digitisation}}
+
+
+File\-: T\-B\-Ecal\-Digitisation.\-hpp.  
+
+
+
+
+{\ttfamily \#include $<$T\-B\-Ecal\-Digitisation.\-hh$>$}
+
+Inheritance diagram for C\-A\-L\-I\-C\-E\-:\-:T\-B\-Ecal\-Digitisation\-:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classCALICE_1_1TBEcalDigitisation}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+virtual Processor $\ast$ {\bfseries new\-Processor} ()\label{classCALICE_1_1TBEcalDigitisation_ac21322be565c00420729ed4eda6edf06}
+
+\item 
+virtual void {\bf init} ()
+\begin{DoxyCompactList}\small\item\em Called at the begin of the job before anything is read. \end{DoxyCompactList}\item 
+virtual void {\bf process\-Run\-Header} (L\-C\-Run\-Header $\ast$run)\label{classCALICE_1_1TBEcalDigitisation_ab68d8f2ddd5cb8a2167fd2cd7ef820ec}
+
+\begin{DoxyCompactList}\small\item\em Called for every run. \end{DoxyCompactList}\item 
+virtual void {\bf process\-Event} (L\-C\-Event $\ast$evt)\label{classCALICE_1_1TBEcalDigitisation_af7e2e52733cec587256fb883a86416ab}
+
+\begin{DoxyCompactList}\small\item\em Called for every event -\/ the working horse. \end{DoxyCompactList}\item 
+virtual void {\bf end} ()\label{classCALICE_1_1TBEcalDigitisation_a96a298b34d073351fea166cee60bd366}
+
+\begin{DoxyCompactList}\small\item\em Called after data processing for clean up. \end{DoxyCompactList}\item 
+void {\bfseries Decalibrate\-Hits} (double \&hitenergy, int cell\-I\-D0, int \&cell\-I\-D1)\label{classCALICE_1_1TBEcalDigitisation_ad0455f25a8e64078fb21e6bcd4062b2d}
+
+\item 
+void {\bfseries Fill\-Random\-Noise} ()\label{classCALICE_1_1TBEcalDigitisation_a76557d9096949f5ccd6ee71c0f23590a}
+
+\item 
+void {\bfseries set\-Noise\-Cell\-I\-Ds} (int \&cell\-I\-D0, int \&cell\-I\-D1, int lay, int waf, int ch)\label{classCALICE_1_1TBEcalDigitisation_ab2712d0b84c441c1205c594f9796ded5}
+
+\end{DoxyCompactItemize}
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static \\*
+C\-A\-L\-I\-C\-E\-::\-Noise\-Parameter\-Arrayof\-Array\-\_\-t \& {\bfseries get\-Cell\-Parameters} ()\label{classCALICE_1_1TBEcalDigitisation_a5f357fd6556cc967c61e06e1799fd6c5}
+
+\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+int {\bfseries \-\_\-n\-Run}\label{classCALICE_1_1TBEcalDigitisation_a8b0bf0725d87671080456d9abde15141}
+
+\item 
+int {\bfseries \-\_\-n\-Evt}\label{classCALICE_1_1TBEcalDigitisation_a09bea609608d0ec3f176e7919cb0fde2}
+
+\item 
+int {\bfseries \-\_\-debug}\label{classCALICE_1_1TBEcalDigitisation_a4d92596c66587a5c28c64ceaa0bf0c30}
+
+\item 
+int {\bfseries \-\_\-runnum}\label{classCALICE_1_1TBEcalDigitisation_a7583207c7420d2ad34254e37ea56e339}
+
+\item 
+double {\bfseries \-\_\-mip\-Energy}\label{classCALICE_1_1TBEcalDigitisation_abbe56f4bd66b7a36c0433be7c964fa31}
+
+\item 
+std\-::string {\bfseries \-\_\-input\-Col\-Name}\label{classCALICE_1_1TBEcalDigitisation_a9e21c767054e4aac049af0948b3655f0}
+
+\item 
+std\-::string {\bfseries \-\_\-output\-Col\-Name}\label{classCALICE_1_1TBEcalDigitisation_a964d7cb09e8e7e942be3e0dc3b8aa89d}
+
+\item 
+std\-::string {\bfseries \-\_\-rel\-Col\-Name}\label{classCALICE_1_1TBEcalDigitisation_a8a65575b6105516c40796f2321aad0ed}
+
+\item 
+std\-::string {\bfseries \-\_\-cell\-Parameter\-Collection\-Name}\label{classCALICE_1_1TBEcalDigitisation_a731d48a25e95f126c24a8b017b34ee7d}
+
+\item 
+std\-::string {\bfseries \-\_\-calibration\-Object\-Name}\label{classCALICE_1_1TBEcalDigitisation_af099ceeb1cec40bde0155326b0dceb26}
+
+\item 
+std\-::string {\bfseries \-\_\-calibration\-Constant\-Col\-Name}\label{classCALICE_1_1TBEcalDigitisation_a57ac73dc90456022a4bb5571a10af6bf}
+
+\item 
+double {\bfseries \-\_\-dummy\-Calib}\label{classCALICE_1_1TBEcalDigitisation_a24178b15603a94e9e5d28bbfe14ed64e}
+
+\item 
+std\-::string {\bfseries \-\_\-module\-Connection}\label{classCALICE_1_1TBEcalDigitisation_a63200bcd1fda80a6243bacd7cd534485}
+
+\item 
+std\-::string {\bfseries \-\_\-module\-Description}\label{classCALICE_1_1TBEcalDigitisation_acabe9d519c96bba0eb623c9757b3f75e}
+
+\item 
+std\-::string {\bfseries \-\_\-module\-Location}\label{classCALICE_1_1TBEcalDigitisation_af9f67abc019e0d7cec95ac03fc6b6396}
+
+\item 
+int {\bfseries \-\_\-input\-Seed}\label{classCALICE_1_1TBEcalDigitisation_a4daab5c5295efaede5a0e5656396ccc2}
+
+\item 
+Calibration $\ast$ {\bfseries \-\_\-calib}\label{classCALICE_1_1TBEcalDigitisation_a6fd75835047c58831f134f6396015817}
+
+\item 
+C\-A\-L\-I\-C\-E\-::\-Mapping\-And\-Alignment {\bfseries \-\_\-mapping}\label{classCALICE_1_1TBEcalDigitisation_a1208e39d52a7cc7547c81eac160e6829}
+
+\item 
+C\-A\-L\-I\-C\-E\-::\-Module\-Index\-Reverse\-Lookup {\bfseries \-\_\-convert}\label{classCALICE_1_1TBEcalDigitisation_a4a1dd197c0a75c2637ff0cfe649c44f4}
+
+\item 
+T\-Random3 {\bf \-\_\-randnum}\label{classCALICE_1_1TBEcalDigitisation_a1ac4e0e9dd9ff398f129b95d112fd6d9}
+
+\begin{DoxyCompactList}\small\item\em Patch R\-P\-: declare cell collection data member here in order to allow for protection of program if it is missing. \end{DoxyCompactList}\item 
+double {\bfseries \-\_\-noise} [30][9][36]\label{classCALICE_1_1TBEcalDigitisation_ad5685dc5810278e5e1227cb6070b490e}
+
+\item 
+double {\bfseries \-\_\-cohnoise} [30]\label{classCALICE_1_1TBEcalDigitisation_af11a9f75d613c9077daa8769cd5ec06b}
+
+\item 
+double {\bfseries \-\_\-pedestal} [30][9][36]\label{classCALICE_1_1TBEcalDigitisation_ae02e0c760c70f05059335e77c52647d2}
+
+\item 
+double {\bfseries \-\_\-rand\-Noise} [30][9][36]\label{classCALICE_1_1TBEcalDigitisation_adea189aa203e383959e7f5a6b874f02a}
+
+\item 
+unsigned int {\bfseries \-\_\-max\-K}\label{classCALICE_1_1TBEcalDigitisation_a0d656121cf458e7a6b16aac4164da026}
+
+\item 
+unsigned int {\bfseries \-\_\-max\-S}\label{classCALICE_1_1TBEcalDigitisation_aa3829ed78b6630d35da95e184cdb7b0d}
+
+\item 
+unsigned int {\bfseries \-\_\-max\-M}\label{classCALICE_1_1TBEcalDigitisation_a153190f2befb7bd50fb30562c2034b6b}
+
+\item 
+unsigned int {\bfseries \-\_\-max\-I}\label{classCALICE_1_1TBEcalDigitisation_a1630d0ccd95e8488c87b12c40a5896a8}
+
+\item 
+unsigned int {\bfseries \-\_\-max\-J}\label{classCALICE_1_1TBEcalDigitisation_a1b1a5768b9e3bcab3c48530aa70b3145}
+
+\item 
+bool {\bfseries \-\_\-there} [30][9][36]\label{classCALICE_1_1TBEcalDigitisation_a21752b35f73124def1d96f882e54a50b}
+
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+File\-: T\-B\-Ecal\-Digitisation.\-hpp. 
+
+Purpose\-: Digitisation step for the E\-C\-A\-L T\-B Prototype Based on digisim (author G.\-Lima), see {\tt http\-://nicadd.\-niu.\-edu/digisim/}
+
+\begin{DoxyAuthor}{Author}
+A.-\/\-M. Magnan U\-C\-L 
+\end{DoxyAuthor}
+\begin{DoxyDate}{Date}
+april 2007, A.-\/\-M. Magnan 
+\end{DoxyDate}
+
+
+Definition at line 33 of file T\-B\-Ecal\-Digitisation.\-hh.
+
+
+
+\subsection{Member Function Documentation}
+\index{C\-A\-L\-I\-C\-E\-::\-T\-B\-Ecal\-Digitisation@{C\-A\-L\-I\-C\-E\-::\-T\-B\-Ecal\-Digitisation}!init@{init}}
+\index{init@{init}!CALICE::TBEcalDigitisation@{C\-A\-L\-I\-C\-E\-::\-T\-B\-Ecal\-Digitisation}}
+\subsubsection[{init}]{\setlength{\rightskip}{0pt plus 5cm}virtual void C\-A\-L\-I\-C\-E\-::\-T\-B\-Ecal\-Digitisation\-::init (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}\label{classCALICE_1_1TBEcalDigitisation_a0b6c242a4ca8f7c0271e69c1eecfca35}
+
+
+Called at the begin of the job before anything is read. 
+
+Use to initialize the processor, e.\-g. book histograms. 
+
+The documentation for this class was generated from the following file\-:\begin{DoxyCompactItemize}
+\item 
+T\-B\-Ecal\-Digitisation.\-hh\end{DoxyCompactItemize}

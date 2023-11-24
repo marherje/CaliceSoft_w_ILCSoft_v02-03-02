@@ -1,0 +1,217 @@
+\section{C\-A\-L\-I\-C\-E\-:\-:Dead\-Noise\-Constants Class Reference}
+\label{classCALICE_1_1DeadNoiseConstants}\index{C\-A\-L\-I\-C\-E\-::\-Dead\-Noise\-Constants@{C\-A\-L\-I\-C\-E\-::\-Dead\-Noise\-Constants}}
+
+
+Class to store the results of a selection of dead or noisy cells for a certain chip/channel for a fixed module\-I\-D.  
+
+
+
+
+{\ttfamily \#include $<$Dead\-Noise\-Constants.\-hh$>$}
+
+Inheritance diagram for C\-A\-L\-I\-C\-E\-:\-:Dead\-Noise\-Constants\-:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=3.000000cm]{classCALICE_1_1DeadNoiseConstants}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+{\bf Dead\-Noise\-Constants} ()\label{classCALICE_1_1DeadNoiseConstants_a12212bb9fea94ac0480654f7115f77d7}
+
+\begin{DoxyCompactList}\small\item\em default constructor \end{DoxyCompactList}\item 
+{\bf Dead\-Noise\-Constants} (unsigned chip, unsigned channel, int dead\-Level, int noise\-Level)
+\begin{DoxyCompactList}\small\item\em constructor, initializing with parameters \end{DoxyCompactList}\item 
+{\bfseries Dead\-Noise\-Constants} (L\-C\-Object $\ast${\bf obj})\label{classCALICE_1_1DeadNoiseConstants_a8302f5e506b0cf1d98fc2bbb481e4b99}
+
+\item 
+int {\bf get\-Dead\-Level} () const \label{classCALICE_1_1DeadNoiseConstants_a10bc03bb0aa616f22eb1f1a734089858}
+
+\begin{DoxyCompactList}\small\item\em get cell dead level \end{DoxyCompactList}\item 
+float {\bf get\-Noise\-Level} () const \label{classCALICE_1_1DeadNoiseConstants_aea5232b89fb4db1f000539ac7b85e3e8}
+
+\begin{DoxyCompactList}\small\item\em get cell noise level \end{DoxyCompactList}\item 
+float {\bf apply\-Calibration} (float input\-Value) const 
+\begin{DoxyCompactList}\small\item\em apply calibration to energy value \end{DoxyCompactList}\item 
+float {\bf apply\-Calibration\-Error} (float input\-Value, float input\-Error) const 
+\begin{DoxyCompactList}\small\item\em apply calibration error to current error \end{DoxyCompactList}\item 
+bool {\bf calibration\-Valid} () const 
+\begin{DoxyCompactList}\small\item\em check if a valid calibration is available \end{DoxyCompactList}\item 
+bool {\bf keep\-Event} (float result\-Value, float result\-Error) const 
+\begin{DoxyCompactList}\small\item\em accept only non-\/dead and non-\/noisy events \end{DoxyCompactList}\item 
+void {\bf print} (std\-::ostream \&os)\label{classCALICE_1_1DeadNoiseConstants_a0c183f8c95da9581b250363ef26b2c21}
+
+\begin{DoxyCompactList}\small\item\em convenient print method \end{DoxyCompactList}\item 
+const std\-::string {\bf get\-Type\-Name} () const \label{classCALICE_1_1DeadNoiseConstants_a7560a94ebb09e6b925b2988fbeda12e0}
+
+\begin{DoxyCompactList}\small\item\em return type of the class \end{DoxyCompactList}\item 
+const std\-::string {\bf get\-Data\-Description} () const \label{classCALICE_1_1DeadNoiseConstants_a618908e466b60a838ecc6667971e6ad2}
+
+\begin{DoxyCompactList}\small\item\em return a brief description of the data member \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Detailed Description}
+Class to store the results of a selection of dead or noisy cells for a certain chip/channel for a fixed module\-I\-D. 
+
+\begin{DoxyAuthor}{Author}
+S. Schmidt D\-E\-S\-Y 
+\end{DoxyAuthor}
+\begin{DoxyDate}{Date}
+Sep 25 2006 
+\end{DoxyDate}
+
+
+Definition at line 25 of file Dead\-Noise\-Constants.\-hh.
+
+
+
+\subsection{Constructor \& Destructor Documentation}
+\index{C\-A\-L\-I\-C\-E\-::\-Dead\-Noise\-Constants@{C\-A\-L\-I\-C\-E\-::\-Dead\-Noise\-Constants}!Dead\-Noise\-Constants@{Dead\-Noise\-Constants}}
+\index{Dead\-Noise\-Constants@{Dead\-Noise\-Constants}!CALICE::DeadNoiseConstants@{C\-A\-L\-I\-C\-E\-::\-Dead\-Noise\-Constants}}
+\subsubsection[{Dead\-Noise\-Constants}]{\setlength{\rightskip}{0pt plus 5cm}C\-A\-L\-I\-C\-E\-::\-Dead\-Noise\-Constants\-::\-Dead\-Noise\-Constants (
+\begin{DoxyParamCaption}
+\item[{unsigned}]{chip, }
+\item[{unsigned}]{channel, }
+\item[{int}]{dead\-Level, }
+\item[{int}]{noise\-Level}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\label{classCALICE_1_1DeadNoiseConstants_a40bec0935780cdf617c71ca3f46af6a1}
+
+
+constructor, initializing with parameters 
+
+
+\begin{DoxyParams}{Parameters}
+{\em chip} & chip number of cell to be calibrated \\
+\hline
+{\em channel} & channel number of cell to be calibrated \\
+\hline
+{\em dead\-Level} & \char`\"{}level\char`\"{} of being dead for a cell, 0\-: not dead, 1\-: dead \\
+\hline
+{\em noise\-Level} & \char`\"{}level\char`\"{} of being noisy for a cell, 0\-: no noise, 1\-: low noise, 2\-: high noise \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 39 of file Dead\-Noise\-Constants.\-hh.
+
+
+
+\subsection{Member Function Documentation}
+\index{C\-A\-L\-I\-C\-E\-::\-Dead\-Noise\-Constants@{C\-A\-L\-I\-C\-E\-::\-Dead\-Noise\-Constants}!apply\-Calibration@{apply\-Calibration}}
+\index{apply\-Calibration@{apply\-Calibration}!CALICE::DeadNoiseConstants@{C\-A\-L\-I\-C\-E\-::\-Dead\-Noise\-Constants}}
+\subsubsection[{apply\-Calibration}]{\setlength{\rightskip}{0pt plus 5cm}float C\-A\-L\-I\-C\-E\-::\-Dead\-Noise\-Constants\-::apply\-Calibration (
+\begin{DoxyParamCaption}
+\item[{float}]{input\-Value}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}\label{classCALICE_1_1DeadNoiseConstants_a117a93e472c84e57b805de35e12b6e29}
+
+
+apply calibration to energy value 
+
+
+\begin{DoxyParams}{Parameters}
+{\em input\-Value} & \char`\"{}energy\char`\"{} value before the calibration \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+as the selection of non-\/dead/non-\/noisy cells has no impact on the \char`\"{}energy\char`\"{} the input\-Value is returned 
+\end{DoxyReturn}
+
+
+Reimplemented from {\bf C\-A\-L\-I\-C\-E\-::\-L\-C\-Hcal\-Calibration\-Object} \doxyref{}{p.}{classCALICE_1_1LCHcalCalibrationObject_a763f1cf5b9c372fdde268d79b789adcc}.
+
+
+
+Definition at line 67 of file Dead\-Noise\-Constants.\-hh.
+
+\index{C\-A\-L\-I\-C\-E\-::\-Dead\-Noise\-Constants@{C\-A\-L\-I\-C\-E\-::\-Dead\-Noise\-Constants}!apply\-Calibration\-Error@{apply\-Calibration\-Error}}
+\index{apply\-Calibration\-Error@{apply\-Calibration\-Error}!CALICE::DeadNoiseConstants@{C\-A\-L\-I\-C\-E\-::\-Dead\-Noise\-Constants}}
+\subsubsection[{apply\-Calibration\-Error}]{\setlength{\rightskip}{0pt plus 5cm}float C\-A\-L\-I\-C\-E\-::\-Dead\-Noise\-Constants\-::apply\-Calibration\-Error (
+\begin{DoxyParamCaption}
+\item[{float}]{input\-Value, }
+\item[{float}]{input\-Error}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}\label{classCALICE_1_1DeadNoiseConstants_a1c5558e71e236dabf1e54f54a87162f0}
+
+
+apply calibration error to current error 
+
+
+\begin{DoxyParams}{Parameters}
+{\em input\-Value} & \char`\"{}energy\char`\"{} value before the calibration \\
+\hline
+{\em input\-Error} & error of the \char`\"{}energy\char`\"{} value before the calibration \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+as the selection of non-\/dead/non-\/noisy cells has no error the input\-Error is returned 
+\end{DoxyReturn}
+
+
+Reimplemented from {\bf C\-A\-L\-I\-C\-E\-::\-L\-C\-Hcal\-Calibration\-Object} \doxyref{}{p.}{classCALICE_1_1LCHcalCalibrationObject_a16d9de9567f68d7784a2daa4d2821341}.
+
+
+
+Definition at line 76 of file Dead\-Noise\-Constants.\-hh.
+
+\index{C\-A\-L\-I\-C\-E\-::\-Dead\-Noise\-Constants@{C\-A\-L\-I\-C\-E\-::\-Dead\-Noise\-Constants}!calibration\-Valid@{calibration\-Valid}}
+\index{calibration\-Valid@{calibration\-Valid}!CALICE::DeadNoiseConstants@{C\-A\-L\-I\-C\-E\-::\-Dead\-Noise\-Constants}}
+\subsubsection[{calibration\-Valid}]{\setlength{\rightskip}{0pt plus 5cm}bool C\-A\-L\-I\-C\-E\-::\-Dead\-Noise\-Constants\-::calibration\-Valid (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}\label{classCALICE_1_1DeadNoiseConstants_ad7e3bc3298b47d8fa31a43c160a8a45b}
+
+
+check if a valid calibration is available 
+
+\begin{DoxyReturn}{Returns}
+true as the selection of non-\/dead/non-\/noisy cells is always valid 
+\end{DoxyReturn}
+
+
+Reimplemented from {\bf C\-A\-L\-I\-C\-E\-::\-L\-C\-Hcal\-Calibration\-Object} \doxyref{}{p.}{classCALICE_1_1LCHcalCalibrationObject_abbb1fce81f41a89147b721d593bbc734}.
+
+
+
+Definition at line 83 of file Dead\-Noise\-Constants.\-hh.
+
+\index{C\-A\-L\-I\-C\-E\-::\-Dead\-Noise\-Constants@{C\-A\-L\-I\-C\-E\-::\-Dead\-Noise\-Constants}!keep\-Event@{keep\-Event}}
+\index{keep\-Event@{keep\-Event}!CALICE::DeadNoiseConstants@{C\-A\-L\-I\-C\-E\-::\-Dead\-Noise\-Constants}}
+\subsubsection[{keep\-Event}]{\setlength{\rightskip}{0pt plus 5cm}bool C\-A\-L\-I\-C\-E\-::\-Dead\-Noise\-Constants\-::keep\-Event (
+\begin{DoxyParamCaption}
+\item[{float}]{result\-Value, }
+\item[{float}]{result\-Error}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}\label{classCALICE_1_1DeadNoiseConstants_af4318e256ff1466682855553d5ba453e}
+
+
+accept only non-\/dead and non-\/noisy events 
+
+
+\begin{DoxyParams}{Parameters}
+{\em result\-Value} & \char`\"{}energy\char`\"{} value after the calibration \\
+\hline
+{\em result\-Error} & error of the \char`\"{}energy\char`\"{} value after the calibration \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true if a cell is non-\/dead and non-\/noisy 
+\end{DoxyReturn}
+
+
+Reimplemented from {\bf C\-A\-L\-I\-C\-E\-::\-L\-C\-Hcal\-Calibration\-Object} \doxyref{}{p.}{classCALICE_1_1LCHcalCalibrationObject_a59f14a6b83e77717751ae4e7213e8d09}.
+
+
+
+Definition at line 92 of file Dead\-Noise\-Constants.\-hh.
+
+
+
+The documentation for this class was generated from the following files\-:\begin{DoxyCompactItemize}
+\item 
+Dead\-Noise\-Constants.\-hh\item 
+Dead\-Noise\-Constants.\-cc\end{DoxyCompactItemize}

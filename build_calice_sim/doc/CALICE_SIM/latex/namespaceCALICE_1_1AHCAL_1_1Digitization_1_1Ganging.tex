@@ -1,0 +1,48 @@
+\section{C\-A\-L\-I\-C\-E\-:\-:A\-H\-C\-A\-L\-:\-:Digitization\-:\-:Ganging Namespace Reference}
+\label{namespaceCALICE_1_1AHCAL_1_1Digitization_1_1Ganging}\index{C\-A\-L\-I\-C\-E\-::\-A\-H\-C\-A\-L\-::\-Digitization\-::\-Ganging@{C\-A\-L\-I\-C\-E\-::\-A\-H\-C\-A\-L\-::\-Digitization\-::\-Ganging}}
+
+
+The \doxyref{Ganging}{p.}{namespaceCALICE_1_1AHCAL_1_1Digitization_1_1Ganging}.  
+
+
+\subsection*{Data Structures}
+\begin{DoxyCompactItemize}
+\item 
+struct {\bf Geometrical\-Indices}
+\begin{DoxyCompactList}\small\item\em Helper class to store I, J, K. \end{DoxyCompactList}\item 
+class {\bf ahcal\-Ganging\-Processor}
+\begin{DoxyCompactList}\small\item\em The processor performing the ganging. \end{DoxyCompactList}\item 
+class {\bf Ganger}
+\begin{DoxyCompactList}\small\item\em The work horse. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Typedefs}
+\begin{DoxyCompactItemize}
+\item 
+typedef std\-::map\\*
+$<$ {\bf Geometrical\-Indices}, float $>$ {\bf Contribution\-Map}\label{namespaceCALICE_1_1AHCAL_1_1Digitization_1_1Ganging_a4a090aa6f3cdf8c96d2c4ee4697d2ffe}
+
+\begin{DoxyCompactList}\small\item\em A Contribution\-Map maps a ganged index to all its contributing Sim\-Calorimeter\-Hits. \end{DoxyCompactList}\item 
+typedef enum \\*
+C\-A\-L\-I\-C\-E\-::\-A\-H\-C\-A\-L\-::\-Digitization\-::\-Ganging\-::module\-Type {\bfseries Module\-Type}\label{namespaceCALICE_1_1AHCAL_1_1Digitization_1_1Ganging_a25bb82aacdcb678b103ae1387b75acd8}
+
+\end{DoxyCompactItemize}
+\subsection*{Enumerations}
+\begin{DoxyCompactItemize}
+\item 
+enum {\bfseries module\-Type} \{ {\bfseries unknown}, 
+{\bfseries fine}, 
+{\bfseries coarse}
+ \}
+\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+bool {\bf operator$<$} (const {\bf Geometrical\-Indices} \&lhs, const {\bf Geometrical\-Indices} \&rhs)\label{namespaceCALICE_1_1AHCAL_1_1Digitization_1_1Ganging_a837ad7248904d3b688dc511bf2409e97}
+
+\begin{DoxyCompactList}\small\item\em Needed to fill the \doxyref{Geometrical\-Indices}{p.}{structCALICE_1_1AHCAL_1_1Digitization_1_1Ganging_1_1GeometricalIndices} struct in a map. \end{DoxyCompactList}\item 
+std\-::ostream \& {\bf operator$<$$<$} (std\-::ostream \&out, const {\bf Geometrical\-Indices} \&ijk)\label{namespaceCALICE_1_1AHCAL_1_1Digitization_1_1Ganging_a44d3fc52c3299873bf874e13ba1221ef}
+
+\begin{DoxyCompactList}\small\item\em Convenient output operator. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+The \doxyref{Ganging}{p.}{namespaceCALICE_1_1AHCAL_1_1Digitization_1_1Ganging}. 

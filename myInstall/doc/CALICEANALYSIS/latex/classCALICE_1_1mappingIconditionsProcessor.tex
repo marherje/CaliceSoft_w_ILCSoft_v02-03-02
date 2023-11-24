@@ -1,0 +1,122 @@
+\section{C\-A\-L\-I\-C\-E\-:\-:mapping\-Iconditions\-Processor Class Reference}
+\label{classCALICE_1_1mappingIconditionsProcessor}\index{C\-A\-L\-I\-C\-E\-::mapping\-Iconditions\-Processor@{C\-A\-L\-I\-C\-E\-::mapping\-Iconditions\-Processor}}
+
+
+{\ttfamily \#include $<$mapping\-Iconditions\-Processor.\-hh$>$}
+
+Inheritance diagram for C\-A\-L\-I\-C\-E\-:\-:mapping\-Iconditions\-Processor\-:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classCALICE_1_1mappingIconditionsProcessor}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+virtual Processor $\ast$ {\bf new\-Processor} ()
+\item 
+{\bf mapping\-Iconditions\-Processor} ()
+\item 
+virtual void {\bf init} ()
+\item 
+virtual void {\bf process\-Run\-Header} (L\-C\-Run\-Header $\ast$run)
+\item 
+virtual void {\bf process\-Event} (L\-C\-Event $\ast$evt)
+\item 
+virtual void {\bf end} ()
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+A processor which collects and provides the conditions data for the A\-H\-C\-A\-L modules.
+
+\begin{DoxyRefDesc}{Todo}
+\item[{\bf Todo}]
+\begin{DoxyItemize}
+\item get rid of hardcoded range numbers
+\item get rid of hardcoded module index generation
+\item use central mapping instead of re-\/implementing vrawadcprocessor
+\end{DoxyItemize}\end{DoxyRefDesc}
+
+
+\begin{DoxyAuthor}{Author}
+B.\-Lutz 
+\end{DoxyAuthor}
+\begin{DoxyVersion}{Version}
+2.\-0 
+\end{DoxyVersion}
+\begin{DoxyDate}{Date}
+2010/06/15 
+\end{DoxyDate}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\index{C\-A\-L\-I\-C\-E\-::mapping\-Iconditions\-Processor@{C\-A\-L\-I\-C\-E\-::mapping\-Iconditions\-Processor}!mapping\-Iconditions\-Processor@{mapping\-Iconditions\-Processor}}
+\index{mapping\-Iconditions\-Processor@{mapping\-Iconditions\-Processor}!CALICE::mappingIconditionsProcessor@{C\-A\-L\-I\-C\-E\-::mapping\-Iconditions\-Processor}}
+\subsubsection[{mapping\-Iconditions\-Processor}]{\setlength{\rightskip}{0pt plus 5cm}C\-A\-L\-I\-C\-E\-::mapping\-Iconditions\-Processor\-::mapping\-Iconditions\-Processor (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{classCALICE_1_1mappingIconditionsProcessor_a9b19acde98a5704975cc9cdf0844ca01}
+Default constructor 
+
+Referenced by new\-Processor().
+
+
+
+\subsection{Member Function Documentation}
+\index{C\-A\-L\-I\-C\-E\-::mapping\-Iconditions\-Processor@{C\-A\-L\-I\-C\-E\-::mapping\-Iconditions\-Processor}!end@{end}}
+\index{end@{end}!CALICE::mappingIconditionsProcessor@{C\-A\-L\-I\-C\-E\-::mapping\-Iconditions\-Processor}}
+\subsubsection[{end}]{\setlength{\rightskip}{0pt plus 5cm}void C\-A\-L\-I\-C\-E\-::mapping\-Iconditions\-Processor\-::end (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}\label{classCALICE_1_1mappingIconditionsProcessor_a7d36c4a2371a44c59119f7253a01e50a}
+End of all events \index{C\-A\-L\-I\-C\-E\-::mapping\-Iconditions\-Processor@{C\-A\-L\-I\-C\-E\-::mapping\-Iconditions\-Processor}!init@{init}}
+\index{init@{init}!CALICE::mappingIconditionsProcessor@{C\-A\-L\-I\-C\-E\-::mapping\-Iconditions\-Processor}}
+\subsubsection[{init}]{\setlength{\rightskip}{0pt plus 5cm}void C\-A\-L\-I\-C\-E\-::mapping\-Iconditions\-Processor\-::init (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}\label{classCALICE_1_1mappingIconditionsProcessor_a06daeeb584e240e5eb310ef432a450bc}
+Initialize useful variables \index{C\-A\-L\-I\-C\-E\-::mapping\-Iconditions\-Processor@{C\-A\-L\-I\-C\-E\-::mapping\-Iconditions\-Processor}!new\-Processor@{new\-Processor}}
+\index{new\-Processor@{new\-Processor}!CALICE::mappingIconditionsProcessor@{C\-A\-L\-I\-C\-E\-::mapping\-Iconditions\-Processor}}
+\subsubsection[{new\-Processor}]{\setlength{\rightskip}{0pt plus 5cm}virtual Processor$\ast$ C\-A\-L\-I\-C\-E\-::mapping\-Iconditions\-Processor\-::new\-Processor (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}\label{classCALICE_1_1mappingIconditionsProcessor_a051c1a68f2fcf33bde820c9c190ed6d8}
+Create a new instance of this processor 
+
+References mapping\-Iconditions\-Processor().
+
+\index{C\-A\-L\-I\-C\-E\-::mapping\-Iconditions\-Processor@{C\-A\-L\-I\-C\-E\-::mapping\-Iconditions\-Processor}!process\-Event@{process\-Event}}
+\index{process\-Event@{process\-Event}!CALICE::mappingIconditionsProcessor@{C\-A\-L\-I\-C\-E\-::mapping\-Iconditions\-Processor}}
+\subsubsection[{process\-Event}]{\setlength{\rightskip}{0pt plus 5cm}void C\-A\-L\-I\-C\-E\-::mapping\-Iconditions\-Processor\-::process\-Event (
+\begin{DoxyParamCaption}
+\item[{L\-C\-Event $\ast$}]{evt}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}\label{classCALICE_1_1mappingIconditionsProcessor_a561ea75165004efdf734fcb251805c6d}
+Process the event 
+\begin{DoxyParams}{Parameters}
+{\em evt} & the event to be processed \\
+\hline
+\end{DoxyParams}
+\index{C\-A\-L\-I\-C\-E\-::mapping\-Iconditions\-Processor@{C\-A\-L\-I\-C\-E\-::mapping\-Iconditions\-Processor}!process\-Run\-Header@{process\-Run\-Header}}
+\index{process\-Run\-Header@{process\-Run\-Header}!CALICE::mappingIconditionsProcessor@{C\-A\-L\-I\-C\-E\-::mapping\-Iconditions\-Processor}}
+\subsubsection[{process\-Run\-Header}]{\setlength{\rightskip}{0pt plus 5cm}void C\-A\-L\-I\-C\-E\-::mapping\-Iconditions\-Processor\-::process\-Run\-Header (
+\begin{DoxyParamCaption}
+\item[{L\-C\-Run\-Header $\ast$}]{run}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}\label{classCALICE_1_1mappingIconditionsProcessor_a8bd9ab85e8d6fdd50eeba5661d12358f}
+Process the run header 
+\begin{DoxyParams}{Parameters}
+{\em run} & the run header to be processed \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following files\-:\begin{DoxyCompactItemize}
+\item 
+/nfs/dust/ilc/user/marquezh/\-Calice\-Soft\-\_\-w\-\_\-\-I\-L\-C\-Soft\-\_\-v02-\/03-\/02/calice\-\_\-analysis/addon\-Procs/include/mapping\-Iconditions\-Processor.\-hh\item 
+/nfs/dust/ilc/user/marquezh/\-Calice\-Soft\-\_\-w\-\_\-\-I\-L\-C\-Soft\-\_\-v02-\/03-\/02/calice\-\_\-analysis/addon\-Procs/src/mapping\-Iconditions\-Processor.\-cc\end{DoxyCompactItemize}

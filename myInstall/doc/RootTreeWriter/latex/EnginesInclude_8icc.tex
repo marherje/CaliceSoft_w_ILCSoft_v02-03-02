@@ -1,0 +1,45 @@
+\section{Engines\-Include.\-icc File Reference}
+\label{EnginesInclude_8icc}\index{Engines\-Include.\-icc@{Engines\-Include.\-icc}}
+
+
+Edit to add new engine.  
+
+
+{\ttfamily \#include \char`\"{}Hit\-Write\-Engine.\-hh\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}Trigger\-Write\-Engine.\-hh\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}Drift\-Chamber\-Write\-Engine.\-hh\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}M\-C\-Particle\-Write\-Engine.\-hh\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}A\-Sim\-Calorimeter\-Hit\-Write\-Engine.\-hh\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}T\-B\-Track\-Write\-Engine.\-hh\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}Track\-Finder\-Write\-Engine.\-hh\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}Shower\-Shape\-Engine.\-hh\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}Hcal\-Track\-Lars\-Engine.\-hh\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}Bif\-Write\-Engine.\-hh\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}Lda\-Write\-Engine.\-hh\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}Dwc\-Write\-Engine.\-hh\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}Hodoscope\-Write\-Engine.\-hh\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}A\-S\-I\-C\-Info\-Write\-Engine.\-hh\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}R\-O\-C\-Write\-Engine.\-hh\char`\"{}}\\*
+This graph shows which files directly or indirectly include this file\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=150pt]{EnginesInclude_8icc__dep__incl}
+\end{center}
+\end{figure}
+
+
+\subsection{Detailed Description}
+Edit to add new engine. To activate a new engine you have to add a line like the following in this file\-:
+
+
+\begin{DoxyCode}
+\textcolor{preprocessor}{#include "MyNewEngineName.hh"}
+\end{DoxyCode}
+
+
+{\bfseries  You also have to edit the file \doxyref{engines/\-Engines\-Add.\-icc}{p.}{EnginesAdd_8icc}.} 
+
+Definition in file {\bf Engines\-Include.\-icc}.
+

@@ -1,0 +1,237 @@
+\section{C\-A\-L\-I\-C\-E\-:\-:Sat\-Corr\-Itep Class Reference}
+\label{classCALICE_1_1SatCorrItep}\index{C\-A\-L\-I\-C\-E\-::\-Sat\-Corr\-Itep@{C\-A\-L\-I\-C\-E\-::\-Sat\-Corr\-Itep}}
+Inheritance diagram for C\-A\-L\-I\-C\-E\-:\-:Sat\-Corr\-Itep\-:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classCALICE_1_1SatCorrItep}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+{\bfseries Sat\-Corr\-Itep} (E\-V\-E\-N\-T\-::\-L\-C\-Object $\ast$obj)\label{classCALICE_1_1SatCorrItep_a36932377a96da55554655d52c8ab51f3}
+
+\item 
+{\bfseries Sat\-Corr\-Itep} (const {\bf Hcal\-Tile\-Index} \&hti, const unsigned int n\-Points, const float $\ast$pixs, const float $\ast$pmts)\label{classCALICE_1_1SatCorrItep_a4209f0b71cd8b3fe6c763e8488081486}
+
+\item 
+const int {\bfseries get\-Index} () const \label{classCALICE_1_1SatCorrItep_ae348c8e773d11613a68f6aa94f56035f}
+
+\item 
+float {\bf get\-Scaling} () const \label{classCALICE_1_1SatCorrItep_ac848631bf428bdd9362b2055a77d36ff}
+
+\begin{DoxyCompactList}\small\item\em get the applied scaling \end{DoxyCompactList}\item 
+float {\bf de\-Saturate} (const float saturated\-Signal) const 
+\begin{DoxyCompactList}\small\item\em apply saturation correction to a signal amplitude \end{DoxyCompactList}\item 
+float {\bf de\-Saturated\-Error} (const float saturated\-Signal, const float saturated\-Signal\-Error) const 
+\begin{DoxyCompactList}\small\item\em error after application of saturation correction to a signal \end{DoxyCompactList}\item 
+float {\bf saturate} (const float unsaturated\-Signal) const 
+\begin{DoxyCompactList}\small\item\em apply saturation to a signal amplitude \end{DoxyCompactList}\item 
+float {\bf saturated\-Error} (const float unsaturated\-Signal, const float unsaturated\-Signal\-Error) const 
+\begin{DoxyCompactList}\small\item\em error after application of saturation to a signal \end{DoxyCompactList}\item 
+const std\-::string {\bfseries get\-Type\-Name} () const \label{classCALICE_1_1SatCorrItep_ac7344438cdc99ade41dea19429f2942c}
+
+\item 
+const std\-::string {\bfseries get\-Data\-Description} () const \label{classCALICE_1_1SatCorrItep_af8af7759c6bb7c63023e0b110ca57781}
+
+\item 
+void {\bfseries set\-Index} (const {\bf Hcal\-Tile\-Index} \&hti)\label{classCALICE_1_1SatCorrItep_aba4524c22c28073841fe3af53e6a4487}
+
+\item 
+void {\bfseries set\-Scaling} (const float scaling)\label{classCALICE_1_1SatCorrItep_a2a7b13b83fd35fa39df802e97bc3d713}
+
+\item 
+void {\bfseries set\-Procedure\-Type} (const int procedure\-Type)\label{classCALICE_1_1SatCorrItep_a11bdaa9dfeb0a2ddc2459b1028e925ee}
+
+\item 
+int {\bfseries get\-Procedure\-Type} () const \label{classCALICE_1_1SatCorrItep_a8b60267373d676f9753f588cc0c6a6b1}
+
+\item 
+float {\bfseries get\-Pix} (const unsigned int i) const \label{classCALICE_1_1SatCorrItep_accb42a0d845d9aeb3b192a9a8e6f9075}
+
+\item 
+float {\bfseries get\-Pmt} (const unsigned int i) const \label{classCALICE_1_1SatCorrItep_a789ea61674506567502f6b1ecd9d0334}
+
+\item 
+void {\bfseries set\-Pix} (const unsigned int i, const float pix)\label{classCALICE_1_1SatCorrItep_ae9346916bf90e463bb6ac5181b34e09e}
+
+\item 
+void {\bfseries set\-Pmt} (const unsigned int i, const float pmt)\label{classCALICE_1_1SatCorrItep_a9120288abb0bfe01342b870806d49180}
+
+\item 
+float {\bfseries get\-Fun\-Param0} () const \label{classCALICE_1_1SatCorrItep_afe5d6dd101b1d23dd7379ee5d769215b}
+
+\item 
+float {\bfseries get\-Fun\-Param1} () const \label{classCALICE_1_1SatCorrItep_a2f6ce467676a3e35b613469188e9d4c6}
+
+\item 
+float {\bfseries get\-Fun\-Param2} () const \label{classCALICE_1_1SatCorrItep_ae3c24704e9a0d5bb8e4f1a528751bca4}
+
+\item 
+void {\bfseries set\-Fun\-Parameters} (const float p0, const float p1, const float p2)\label{classCALICE_1_1SatCorrItep_a63189e211191b1c9427c486f7c7c7803}
+
+\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+float {\bfseries \-\_\-scaling}\label{classCALICE_1_1SatCorrItep_aa81089c5e2fd8e3e393cfd121cb9512c}
+
+\item 
+int {\bfseries \-\_\-procedure\-Type}\label{classCALICE_1_1SatCorrItep_a8538df08df9bc4a928c9b1d0a0aedf82}
+
+\item 
+float {\bfseries \-\_\-fun\-Param0}\label{classCALICE_1_1SatCorrItep_a96aa7f4148099dd4970090e8565b33b1}
+
+\item 
+float {\bfseries \-\_\-fun\-Param1}\label{classCALICE_1_1SatCorrItep_a8edcaa4609ed76511bbe134c2a5975c5}
+
+\item 
+float {\bfseries \-\_\-fun\-Param2}\label{classCALICE_1_1SatCorrItep_ae81872048f23d8597b81b77c4a47111b}
+
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+
+
+Definition at line 13 of file Sat\-Corr\-Itep.\-hh.
+
+
+
+\subsection{Member Function Documentation}
+\index{C\-A\-L\-I\-C\-E\-::\-Sat\-Corr\-Itep@{C\-A\-L\-I\-C\-E\-::\-Sat\-Corr\-Itep}!de\-Saturate@{de\-Saturate}}
+\index{de\-Saturate@{de\-Saturate}!CALICE::SatCorrItep@{C\-A\-L\-I\-C\-E\-::\-Sat\-Corr\-Itep}}
+\subsubsection[{de\-Saturate}]{\setlength{\rightskip}{0pt plus 5cm}float C\-A\-L\-I\-C\-E\-::\-Sat\-Corr\-Itep\-::de\-Saturate (
+\begin{DoxyParamCaption}
+\item[{const float}]{saturated\-Signal}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [virtual]}}\label{classCALICE_1_1SatCorrItep_a2a5321d98210f31824f04e9e5b332160}
+
+
+apply saturation correction to a signal amplitude 
+
+
+\begin{DoxyParams}{Parameters}
+{\em saturated\-Signal} & saturated signal \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+unsaturated signal 
+\end{DoxyReturn}
+
+
+Implements {\bf C\-A\-L\-I\-C\-E\-::\-Sat\-Corr\-Function} \doxyref{}{p.}{classCALICE_1_1SatCorrFunction_ae71bc6eba8efc85127996112dea69aa8}.
+
+
+
+Definition at line 59 of file Sat\-Corr\-Itep.\-cc.
+
+
+
+Referenced by de\-Saturated\-Error().
+
+\index{C\-A\-L\-I\-C\-E\-::\-Sat\-Corr\-Itep@{C\-A\-L\-I\-C\-E\-::\-Sat\-Corr\-Itep}!de\-Saturated\-Error@{de\-Saturated\-Error}}
+\index{de\-Saturated\-Error@{de\-Saturated\-Error}!CALICE::SatCorrItep@{C\-A\-L\-I\-C\-E\-::\-Sat\-Corr\-Itep}}
+\subsubsection[{de\-Saturated\-Error}]{\setlength{\rightskip}{0pt plus 5cm}float C\-A\-L\-I\-C\-E\-::\-Sat\-Corr\-Itep\-::de\-Saturated\-Error (
+\begin{DoxyParamCaption}
+\item[{const float}]{saturated\-Signal, }
+\item[{const float}]{saturated\-Signal\-Error}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [virtual]}}\label{classCALICE_1_1SatCorrItep_a6585460faf23fbf59b80608ee1953f72}
+
+
+error after application of saturation correction to a signal 
+
+
+\begin{DoxyParams}{Parameters}
+{\em saturated\-Signal} & saturated signal \\
+\hline
+{\em saturated\-Signal\-Error} & error of the saturated signal \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+error of the unsaturated signal 
+\end{DoxyReturn}
+
+
+Implements {\bf C\-A\-L\-I\-C\-E\-::\-Sat\-Corr\-Function} \doxyref{}{p.}{classCALICE_1_1SatCorrFunction_af31b1717f04b58362c90e091ed9ffcac}.
+
+
+
+Definition at line 128 of file Sat\-Corr\-Itep.\-cc.
+
+
+
+References de\-Saturate().
+
+\index{C\-A\-L\-I\-C\-E\-::\-Sat\-Corr\-Itep@{C\-A\-L\-I\-C\-E\-::\-Sat\-Corr\-Itep}!saturate@{saturate}}
+\index{saturate@{saturate}!CALICE::SatCorrItep@{C\-A\-L\-I\-C\-E\-::\-Sat\-Corr\-Itep}}
+\subsubsection[{saturate}]{\setlength{\rightskip}{0pt plus 5cm}float C\-A\-L\-I\-C\-E\-::\-Sat\-Corr\-Itep\-::saturate (
+\begin{DoxyParamCaption}
+\item[{const float}]{unsaturated\-Signal}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [virtual]}}\label{classCALICE_1_1SatCorrItep_aaaafd96272be710ff140b1a0d6e21707}
+
+
+apply saturation to a signal amplitude 
+
+
+\begin{DoxyParams}{Parameters}
+{\em unsaturated\-Signal} & unsaturated signal \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+saturated signal 
+\end{DoxyReturn}
+
+
+Implements {\bf C\-A\-L\-I\-C\-E\-::\-Sat\-Corr\-Function} \doxyref{}{p.}{classCALICE_1_1SatCorrFunction_a2245a5a516d3ae361af416f8dacf25f2}.
+
+
+
+Definition at line 140 of file Sat\-Corr\-Itep.\-cc.
+
+
+
+Referenced by saturated\-Error().
+
+\index{C\-A\-L\-I\-C\-E\-::\-Sat\-Corr\-Itep@{C\-A\-L\-I\-C\-E\-::\-Sat\-Corr\-Itep}!saturated\-Error@{saturated\-Error}}
+\index{saturated\-Error@{saturated\-Error}!CALICE::SatCorrItep@{C\-A\-L\-I\-C\-E\-::\-Sat\-Corr\-Itep}}
+\subsubsection[{saturated\-Error}]{\setlength{\rightskip}{0pt plus 5cm}float C\-A\-L\-I\-C\-E\-::\-Sat\-Corr\-Itep\-::saturated\-Error (
+\begin{DoxyParamCaption}
+\item[{const float}]{unsaturated\-Signal, }
+\item[{const float}]{unsaturated\-Signal\-Error}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [virtual]}}\label{classCALICE_1_1SatCorrItep_a2f48fa8fe8f1be17a984101b42935f72}
+
+
+error after application of saturation to a signal 
+
+
+\begin{DoxyParams}{Parameters}
+{\em unsaturated\-Signal} & unsaturated signal \\
+\hline
+{\em unsaturated\-Signal\-Error} & error of the unsaturated signal \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+error of saturated signal 
+\end{DoxyReturn}
+
+
+Implements {\bf C\-A\-L\-I\-C\-E\-::\-Sat\-Corr\-Function} \doxyref{}{p.}{classCALICE_1_1SatCorrFunction_a735f5369890f1ca8fa4de8153207a442}.
+
+
+
+Definition at line 218 of file Sat\-Corr\-Itep.\-cc.
+
+
+
+References saturate().
+
+
+
+The documentation for this class was generated from the following files\-:\begin{DoxyCompactItemize}
+\item 
+Sat\-Corr\-Itep.\-hh\item 
+Sat\-Corr\-Itep.\-cc\end{DoxyCompactItemize}

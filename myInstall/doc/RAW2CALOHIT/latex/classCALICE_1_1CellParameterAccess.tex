@@ -1,0 +1,262 @@
+\section{C\-A\-L\-I\-C\-E\-:\-:Cell\-Parameter\-Access Class Reference}
+\label{classCALICE_1_1CellParameterAccess}\index{C\-A\-L\-I\-C\-E\-::\-Cell\-Parameter\-Access@{C\-A\-L\-I\-C\-E\-::\-Cell\-Parameter\-Access}}
+
+
+Wrapper around the cell parameter collection to facilitate the access.  
+
+
+
+
+{\ttfamily \#include $<$Cell\-Parameter\-Access.\-hh$>$}
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+{\bf Cell\-Parameter\-Access} (const std\-::string \&col\-\_\-name, E\-V\-E\-N\-T\-::\-L\-C\-Event $\ast$evt\-P)
+\begin{DoxyCompactList}\small\item\em Create a simple wrapper to easily access the cell parameters from the L\-C\-Collection. \end{DoxyCompactList}\item 
+U\-Int\-\_\-t {\bf get\-Index\-Offset} (U\-Int\-\_\-t module\-\_\-index) const 
+\begin{DoxyCompactList}\small\item\em Get the index of the first cell of the given module. \end{DoxyCompactList}\item 
+U\-Int\-\_\-t {\bf get\-Index} (U\-Int\-\_\-t module\-\_\-index, U\-Int\-\_\-t cell\-\_\-index) const 
+\begin{DoxyCompactList}\small\item\em Get the cell index for the given module and cell index. \end{DoxyCompactList}\item 
+{\bf Cell\-Parameter} {\bf get\-Cell\-Parameter} (U\-Int\-\_\-t module\-\_\-index, U\-Int\-\_\-t cell\-\_\-index)
+\begin{DoxyCompactList}\small\item\em Get the cell parameters of the specified cell (read/write). \end{DoxyCompactList}\item 
+const {\bf Cell\-Parameter} {\bf get\-Cell\-Parameter} (U\-Int\-\_\-t module\-\_\-index, U\-Int\-\_\-t cell\-\_\-index) const 
+\begin{DoxyCompactList}\small\item\em Get the cell parameters of the specified cell (read only). \end{DoxyCompactList}\item 
+{\bf Cell\-Parameter} {\bf get\-Cell\-Parameter} (U\-Int\-\_\-t index)
+\begin{DoxyCompactList}\small\item\em Get the cell parameters of the specified cell (read/write). \end{DoxyCompactList}\item 
+const {\bf Cell\-Parameter} {\bf get\-Cell\-Parameter} (U\-Int\-\_\-t index) const 
+\begin{DoxyCompactList}\small\item\em Get the cell parameters of the specified cell (read only). \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+L\-C\-Collection $\ast$ {\bf \-\_\-cell\-Parameter\-Col}\label{classCALICE_1_1CellParameterAccess_a78debadc2027f233e522893ab8132f38}
+
+\begin{DoxyCompactList}\small\item\em The collection of the cell parameters. \end{DoxyCompactList}\item 
+Int\-Vec {\bf \-\_\-index\-Offset}
+\begin{DoxyCompactList}\small\item\em copy of the array which contains the index offset of the modules. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Wrapper around the cell parameter collection to facilitate the access. 
+
+Definition at line 17 of file Cell\-Parameter\-Access.\-hh.
+
+
+
+\subsection{Constructor \& Destructor Documentation}
+\index{C\-A\-L\-I\-C\-E\-::\-Cell\-Parameter\-Access@{C\-A\-L\-I\-C\-E\-::\-Cell\-Parameter\-Access}!Cell\-Parameter\-Access@{Cell\-Parameter\-Access}}
+\index{Cell\-Parameter\-Access@{Cell\-Parameter\-Access}!CALICE::CellParameterAccess@{C\-A\-L\-I\-C\-E\-::\-Cell\-Parameter\-Access}}
+\subsubsection[{Cell\-Parameter\-Access}]{\setlength{\rightskip}{0pt plus 5cm}C\-A\-L\-I\-C\-E\-::\-Cell\-Parameter\-Access\-::\-Cell\-Parameter\-Access (
+\begin{DoxyParamCaption}
+\item[{const std\-::string \&}]{col\-\_\-name, }
+\item[{E\-V\-E\-N\-T\-::\-L\-C\-Event $\ast$}]{evt\-P}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\label{classCALICE_1_1CellParameterAccess_a60d0f03312481332cd43e499bcef974a}
+
+
+Create a simple wrapper to easily access the cell parameters from the L\-C\-Collection. 
+
+
+\begin{DoxyExceptions}{Exceptions}
+{\em Data\-Not\-Available\-Exception} & if the cell paramter collection does not access. \\
+\hline
+\end{DoxyExceptions}
+
+
+Definition at line 23 of file Cell\-Parameter\-Access.\-hh.
+
+
+
+References \-\_\-cell\-Parameter\-Col, and \-\_\-index\-Offset.
+
+
+
+\subsection{Member Function Documentation}
+\index{C\-A\-L\-I\-C\-E\-::\-Cell\-Parameter\-Access@{C\-A\-L\-I\-C\-E\-::\-Cell\-Parameter\-Access}!get\-Cell\-Parameter@{get\-Cell\-Parameter}}
+\index{get\-Cell\-Parameter@{get\-Cell\-Parameter}!CALICE::CellParameterAccess@{C\-A\-L\-I\-C\-E\-::\-Cell\-Parameter\-Access}}
+\subsubsection[{get\-Cell\-Parameter}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Cell\-Parameter} C\-A\-L\-I\-C\-E\-::\-Cell\-Parameter\-Access\-::get\-Cell\-Parameter (
+\begin{DoxyParamCaption}
+\item[{U\-Int\-\_\-t}]{module\-\_\-index, }
+\item[{U\-Int\-\_\-t}]{cell\-\_\-index}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\label{classCALICE_1_1CellParameterAccess_a9d73c185b55c36fd2ee903246a5dff7d}
+
+
+Get the cell parameters of the specified cell (read/write). 
+
+
+\begin{DoxyParams}{Parameters}
+{\em module\-\_\-index} & the index of the module (starting from zero). \\
+\hline
+{\em cell\-\_\-index} & the index of the cell on the specified module (starting from zero). \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+a reference of the cell parameters (read/write access). 
+\end{DoxyReturn}
+
+
+Definition at line 75 of file Cell\-Parameter\-Access.\-hh.
+
+
+
+References \-\_\-cell\-Parameter\-Col, and get\-Index().
+
+
+
+Referenced by C\-A\-L\-I\-C\-E\-::\-Pedestal\-Noise\-Histograms\-::process\-Event().
+
+\index{C\-A\-L\-I\-C\-E\-::\-Cell\-Parameter\-Access@{C\-A\-L\-I\-C\-E\-::\-Cell\-Parameter\-Access}!get\-Cell\-Parameter@{get\-Cell\-Parameter}}
+\index{get\-Cell\-Parameter@{get\-Cell\-Parameter}!CALICE::CellParameterAccess@{C\-A\-L\-I\-C\-E\-::\-Cell\-Parameter\-Access}}
+\subsubsection[{get\-Cell\-Parameter}]{\setlength{\rightskip}{0pt plus 5cm}const {\bf Cell\-Parameter} C\-A\-L\-I\-C\-E\-::\-Cell\-Parameter\-Access\-::get\-Cell\-Parameter (
+\begin{DoxyParamCaption}
+\item[{U\-Int\-\_\-t}]{module\-\_\-index, }
+\item[{U\-Int\-\_\-t}]{cell\-\_\-index}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}\label{classCALICE_1_1CellParameterAccess_a519a471698646bf0ae9b59fbd80e7d1f}
+
+
+Get the cell parameters of the specified cell (read only). 
+
+
+\begin{DoxyParams}{Parameters}
+{\em module\-\_\-index} & the index of the module (starting from zero). \\
+\hline
+{\em cell\-\_\-index} & the index of the cell on the specified module (starting from zero). \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+a reference of the cell parameters (read only access). 
+\end{DoxyReturn}
+
+
+Definition at line 87 of file Cell\-Parameter\-Access.\-hh.
+
+
+
+References \-\_\-cell\-Parameter\-Col, and get\-Index().
+
+\index{C\-A\-L\-I\-C\-E\-::\-Cell\-Parameter\-Access@{C\-A\-L\-I\-C\-E\-::\-Cell\-Parameter\-Access}!get\-Cell\-Parameter@{get\-Cell\-Parameter}}
+\index{get\-Cell\-Parameter@{get\-Cell\-Parameter}!CALICE::CellParameterAccess@{C\-A\-L\-I\-C\-E\-::\-Cell\-Parameter\-Access}}
+\subsubsection[{get\-Cell\-Parameter}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Cell\-Parameter} C\-A\-L\-I\-C\-E\-::\-Cell\-Parameter\-Access\-::get\-Cell\-Parameter (
+\begin{DoxyParamCaption}
+\item[{U\-Int\-\_\-t}]{index}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\label{classCALICE_1_1CellParameterAccess_a7df752eebf34fb87ff5be595fbbc1095}
+
+
+Get the cell parameters of the specified cell (read/write). 
+
+
+\begin{DoxyParams}{Parameters}
+{\em index} & the internal index of the cell (combination of module and cell index). \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+a reference of the cell parameters (read/write access). The internal index is composed of an offset, which depends on the module, to which the cell index is added. 
+\end{DoxyReturn}
+
+
+Definition at line 106 of file Cell\-Parameter\-Access.\-hh.
+
+
+
+References \-\_\-cell\-Parameter\-Col.
+
+\index{C\-A\-L\-I\-C\-E\-::\-Cell\-Parameter\-Access@{C\-A\-L\-I\-C\-E\-::\-Cell\-Parameter\-Access}!get\-Cell\-Parameter@{get\-Cell\-Parameter}}
+\index{get\-Cell\-Parameter@{get\-Cell\-Parameter}!CALICE::CellParameterAccess@{C\-A\-L\-I\-C\-E\-::\-Cell\-Parameter\-Access}}
+\subsubsection[{get\-Cell\-Parameter}]{\setlength{\rightskip}{0pt plus 5cm}const {\bf Cell\-Parameter} C\-A\-L\-I\-C\-E\-::\-Cell\-Parameter\-Access\-::get\-Cell\-Parameter (
+\begin{DoxyParamCaption}
+\item[{U\-Int\-\_\-t}]{index}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}\label{classCALICE_1_1CellParameterAccess_a20186873138db5f0ae1f26862764ebe8}
+
+
+Get the cell parameters of the specified cell (read only). 
+
+
+\begin{DoxyParams}{Parameters}
+{\em index} & the internal index of the cell (combination of module and cell index). \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+a reference of the cell parameters (read only access). The internal index is composed of an offset, which depends on the module, to which the cell index is added. 
+\end{DoxyReturn}
+
+
+Definition at line 125 of file Cell\-Parameter\-Access.\-hh.
+
+
+
+References \-\_\-cell\-Parameter\-Col.
+
+\index{C\-A\-L\-I\-C\-E\-::\-Cell\-Parameter\-Access@{C\-A\-L\-I\-C\-E\-::\-Cell\-Parameter\-Access}!get\-Index@{get\-Index}}
+\index{get\-Index@{get\-Index}!CALICE::CellParameterAccess@{C\-A\-L\-I\-C\-E\-::\-Cell\-Parameter\-Access}}
+\subsubsection[{get\-Index}]{\setlength{\rightskip}{0pt plus 5cm}U\-Int\-\_\-t C\-A\-L\-I\-C\-E\-::\-Cell\-Parameter\-Access\-::get\-Index (
+\begin{DoxyParamCaption}
+\item[{U\-Int\-\_\-t}]{module\-\_\-index, }
+\item[{U\-Int\-\_\-t}]{cell\-\_\-index}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}\label{classCALICE_1_1CellParameterAccess_a7aed10502415d6e9511ad23eace08ece}
+
+
+Get the cell index for the given module and cell index. 
+
+If the code was compiled with B\-O\-U\-N\-D\-A\-R\-Y\-\_\-\-C\-H\-E\-C\-K defined an exception is thrown if the module index or cell index is larger than the number of modules.\-or cells. 
+
+Definition at line 51 of file Cell\-Parameter\-Access.\-hh.
+
+
+
+References \-\_\-cell\-Parameter\-Col, \-\_\-index\-Offset, and get\-Index\-Offset().
+
+
+
+Referenced by get\-Cell\-Parameter().
+
+\index{C\-A\-L\-I\-C\-E\-::\-Cell\-Parameter\-Access@{C\-A\-L\-I\-C\-E\-::\-Cell\-Parameter\-Access}!get\-Index\-Offset@{get\-Index\-Offset}}
+\index{get\-Index\-Offset@{get\-Index\-Offset}!CALICE::CellParameterAccess@{C\-A\-L\-I\-C\-E\-::\-Cell\-Parameter\-Access}}
+\subsubsection[{get\-Index\-Offset}]{\setlength{\rightskip}{0pt plus 5cm}U\-Int\-\_\-t C\-A\-L\-I\-C\-E\-::\-Cell\-Parameter\-Access\-::get\-Index\-Offset (
+\begin{DoxyParamCaption}
+\item[{U\-Int\-\_\-t}]{module\-\_\-index}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}\label{classCALICE_1_1CellParameterAccess_aeb83b00cd1c6686c1d0ee49c68fe4aec}
+
+
+Get the index of the first cell of the given module. 
+
+If the code was compiled with B\-O\-U\-N\-D\-A\-R\-Y\-\_\-\-C\-H\-E\-C\-K defined an exception is thrown if the module index is larger than the number of modules. 
+
+Definition at line 35 of file Cell\-Parameter\-Access.\-hh.
+
+
+
+References \-\_\-index\-Offset.
+
+
+
+Referenced by get\-Index().
+
+
+
+\subsection{Field Documentation}
+\index{C\-A\-L\-I\-C\-E\-::\-Cell\-Parameter\-Access@{C\-A\-L\-I\-C\-E\-::\-Cell\-Parameter\-Access}!\-\_\-index\-Offset@{\-\_\-index\-Offset}}
+\index{\-\_\-index\-Offset@{\-\_\-index\-Offset}!CALICE::CellParameterAccess@{C\-A\-L\-I\-C\-E\-::\-Cell\-Parameter\-Access}}
+\subsubsection[{\-\_\-index\-Offset}]{\setlength{\rightskip}{0pt plus 5cm}Int\-Vec C\-A\-L\-I\-C\-E\-::\-Cell\-Parameter\-Access\-::\-\_\-index\-Offset\hspace{0.3cm}{\ttfamily [private]}}\label{classCALICE_1_1CellParameterAccess_a273746ae202d398634e94e9fe7520128}
+
+
+copy of the array which contains the index offset of the modules. 
+
+This is array is a prameter of the collection. 
+
+Definition at line 140 of file Cell\-Parameter\-Access.\-hh.
+
+
+
+Referenced by Cell\-Parameter\-Access(), get\-Index(), and get\-Index\-Offset().
+
+
+
+The documentation for this class was generated from the following file\-:\begin{DoxyCompactItemize}
+\item 
+Cell\-Parameter\-Access.\-hh\end{DoxyCompactItemize}

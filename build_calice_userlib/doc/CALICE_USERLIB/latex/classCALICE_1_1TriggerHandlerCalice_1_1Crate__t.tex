@@ -1,0 +1,79 @@
+\section{C\-A\-L\-I\-C\-E\-:\-:Trigger\-Handler\-Calice\-:\-:Crate\-\_\-t Class Reference}
+\label{classCALICE_1_1TriggerHandlerCalice_1_1Crate__t}\index{C\-A\-L\-I\-C\-E\-::\-Trigger\-Handler\-Calice\-::\-Crate\-\_\-t@{C\-A\-L\-I\-C\-E\-::\-Trigger\-Handler\-Calice\-::\-Crate\-\_\-t}}
+
+
+Samll helper class which contains a collection of slots and which remebers all the sub detector ids conencted to it.  
+
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+{\bfseries Crate\-\_\-t} (unsigned int sub\-\_\-det\-\_\-i)\label{classCALICE_1_1TriggerHandlerCalice_1_1Crate__t_a42dd3d017eb1e0981e92f1e57f3605c3}
+
+\item 
+bool {\bf is\-Used} () const \label{classCALICE_1_1TriggerHandlerCalice_1_1Crate__t_ab0daf2d8f75bf475fb0523c860e6aed1}
+
+\begin{DoxyCompactList}\small\item\em Return true if this crate is connected to at least on known detector. \end{DoxyCompactList}\item 
+bool {\bf is\-Used\-By\-Multiple\-Sub\-Detectors} () const \label{classCALICE_1_1TriggerHandlerCalice_1_1Crate__t_a3141c360228a0a289e147c4a285bb42e}
+
+\begin{DoxyCompactList}\small\item\em Return true if the crate is connected to only one sub detector. \end{DoxyCompactList}\item 
+void {\bf set\-Sub\-Detector\-I\-D} (unsigned int a\-\_\-sub\-\_\-dector)
+\begin{DoxyCompactList}\small\item\em Return the I\-D of the sub detector which is connected to this crate. \end{DoxyCompactList}\item 
+bool {\bf is\-Connected\-To\-Sub\-Detector} (unsigned int a\-\_\-sub\-\_\-dector) const \label{classCALICE_1_1TriggerHandlerCalice_1_1Crate__t_a00386bdf45d49e71cd8604393b5abc6a}
+
+\begin{DoxyCompactList}\small\item\em Return true if the crate is conencted to the sub detector. \end{DoxyCompactList}\item 
+{\bf Slot\-List\-\_\-t} \& {\bf slot\-List} ()\label{classCALICE_1_1TriggerHandlerCalice_1_1Crate__t_ab71658dc613ae2c3d5f683d643838567}
+
+\begin{DoxyCompactList}\small\item\em Get the slotlist for read/write access. \end{DoxyCompactList}\item 
+const {\bf Slot\-List\-\_\-t} \& {\bf slot\-List} () const \label{classCALICE_1_1TriggerHandlerCalice_1_1Crate__t_a9bd990db0cf9d53c6946e697faabd6f7}
+
+\begin{DoxyCompactList}\small\item\em Get the slotlist for read only access. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+std\-::vector$<$ unsigned int $>$ {\bfseries \-\_\-sub\-Det\-I\-D}\label{classCALICE_1_1TriggerHandlerCalice_1_1Crate__t_a49e7c92525f987ffb4b8b83446935ce1}
+
+\item 
+bool {\bfseries \-\_\-one\-Detector\-Only}\label{classCALICE_1_1TriggerHandlerCalice_1_1Crate__t_af6fa23743ffea3d191ab389b996cd6b7}
+
+\item 
+{\bf Slot\-List\-\_\-t} {\bfseries \-\_\-slots}\label{classCALICE_1_1TriggerHandlerCalice_1_1Crate__t_af7e308e0893ec31e1d83d54e5856371b}
+
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Samll helper class which contains a collection of slots and which remebers all the sub detector ids conencted to it. 
+
+Definition at line 569 of file Trigger\-Handler\-Calice.\-hh.
+
+
+
+\subsection{Member Function Documentation}
+\index{C\-A\-L\-I\-C\-E\-::\-Trigger\-Handler\-Calice\-::\-Crate\-\_\-t@{C\-A\-L\-I\-C\-E\-::\-Trigger\-Handler\-Calice\-::\-Crate\-\_\-t}!set\-Sub\-Detector\-I\-D@{set\-Sub\-Detector\-I\-D}}
+\index{set\-Sub\-Detector\-I\-D@{set\-Sub\-Detector\-I\-D}!CALICE::TriggerHandlerCalice::Crate_t@{C\-A\-L\-I\-C\-E\-::\-Trigger\-Handler\-Calice\-::\-Crate\-\_\-t}}
+\subsubsection[{set\-Sub\-Detector\-I\-D}]{\setlength{\rightskip}{0pt plus 5cm}void C\-A\-L\-I\-C\-E\-::\-Trigger\-Handler\-Calice\-::\-Crate\-\_\-t\-::set\-Sub\-Detector\-I\-D (
+\begin{DoxyParamCaption}
+\item[{unsigned int}]{a\-\_\-sub\-\_\-dector}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\label{classCALICE_1_1TriggerHandlerCalice_1_1Crate__t_a4ad877cf64ba3e78b93d86d21834f281}
+
+
+Return the I\-D of the sub detector which is connected to this crate. 
+
+\begin{DoxySeeAlso}{See Also}
+set 
+\end{DoxySeeAlso}
+
+
+Definition at line 588 of file Trigger\-Handler\-Calice.\-hh.
+
+
+
+Referenced by C\-A\-L\-I\-C\-E\-::\-Trigger\-Handler\-Calice\-::module\-Connection\-Change().
+
+
+
+The documentation for this class was generated from the following file\-:\begin{DoxyCompactItemize}
+\item 
+Trigger\-Handler\-Calice.\-hh\end{DoxyCompactItemize}

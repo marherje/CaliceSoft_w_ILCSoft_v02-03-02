@@ -1,0 +1,526 @@
+\section{C\-A\-L\-I\-C\-E\-:\-:Mapped\-Container$<$ T $>$ Class Template Reference}
+\label{classCALICE_1_1MappedContainer}\index{C\-A\-L\-I\-C\-E\-::\-Mapped\-Container$<$ T $>$@{C\-A\-L\-I\-C\-E\-::\-Mapped\-Container$<$ T $>$}}
+
+
+Container for fast access by index.  
+
+
+
+
+{\ttfamily \#include $<$Mapped\-Container.\-hh$>$}
+
+\subsection*{Data Structures}
+\begin{DoxyCompactItemize}
+\item 
+class {\bf Data\-With\-Address}
+\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+{\bf Mapped\-Container} (const {\bf Mapper} $\ast$mapper, const bool delete\-Elements=true)
+\begin{DoxyCompactList}\small\item\em Constructor. \end{DoxyCompactList}\item 
+{\bf Decoder\-Set} $\ast$ {\bf get\-Decoder} ()
+\begin{DoxyCompactList}\small\item\em return a pointer to the \doxyref{Decoder\-Set}{p.}{classCALICE_1_1DecoderSet} handling the decoding of I\-Ds with encoding strings \end{DoxyCompactList}\item 
+void {\bf fill\-By\-Cell\-I\-D} (const int cell\-I\-D, T $\ast$object, bool unique=true)
+\begin{DoxyCompactList}\small\item\em fill content for (Mokka) cell\-I\-D \end{DoxyCompactList}\item 
+void {\bf fill\-By\-Module\-I\-D} (const int channel\-I\-D, T $\ast$object, bool unique=true)
+\begin{DoxyCompactList}\small\item\em fill content for (Module) channel I\-D \end{DoxyCompactList}\item 
+void {\bf fill\-By\-D\-A\-Q\-I\-D} (const int D\-A\-Q\-I\-D, T $\ast$object, bool unique=true)
+\begin{DoxyCompactList}\small\item\em fill content for D\-A\-Q channel I\-D \end{DoxyCompactList}\item 
+T $\ast$ {\bf get\-By\-Cell\-I\-D} (const int cell\-I\-D)
+\begin{DoxyCompactList}\small\item\em get content for (Mokka) cell\-I\-D \end{DoxyCompactList}\item 
+T $\ast$ {\bf get\-By\-Module\-I\-D} (const int channel\-I\-D)
+\begin{DoxyCompactList}\small\item\em get content for (Module) channel I\-D \end{DoxyCompactList}\item 
+T $\ast$ {\bf get\-By\-D\-A\-Q\-I\-D} (const int D\-A\-Q\-I\-D)
+\begin{DoxyCompactList}\small\item\em get content for D\-A\-Q channel I\-D \end{DoxyCompactList}\item 
+T $\ast$ {\bf remove\-By\-Cell\-I\-D} (const int cell\-I\-D)
+\begin{DoxyCompactList}\small\item\em get content for (Mokka) cell\-I\-D and remove it from the container \end{DoxyCompactList}\item 
+T $\ast$ {\bf remove\-By\-Module\-I\-D} (const int channel\-I\-D)
+\begin{DoxyCompactList}\small\item\em get content for (Module) channel I\-D and remove it from the container \end{DoxyCompactList}\item 
+T $\ast$ {\bf remove\-By\-D\-A\-Q\-I\-D} (const int D\-A\-Q\-I\-D)
+\begin{DoxyCompactList}\small\item\em get content for D\-A\-Q channel I\-D and remove it from the container \end{DoxyCompactList}\item 
+void {\bf delete\-By\-Cell\-I\-D} (const int cell\-I\-D)
+\begin{DoxyCompactList}\small\item\em delete entry for (Mokka) cell\-I\-D \end{DoxyCompactList}\item 
+void {\bf delete\-By\-Module\-I\-D} (const int channel\-I\-D)
+\begin{DoxyCompactList}\small\item\em delete entry for (Module) channel I\-D \end{DoxyCompactList}\item 
+void {\bf delete\-By\-D\-A\-Q\-I\-D} (const int D\-A\-Q\-I\-D)
+\begin{DoxyCompactList}\small\item\em delete entry for D\-A\-Q channel I\-D \end{DoxyCompactList}\item 
+void {\bf clear} ()\label{classCALICE_1_1MappedContainer_a0b733d99e35de19e4422d730b5ddc994}
+
+\begin{DoxyCompactList}\small\item\em clear container \end{DoxyCompactList}\item 
+std\-::vector$<$ T $\ast$ $>$ {\bf get\-All\-Elements} () const \label{classCALICE_1_1MappedContainer_a28abd598e5ff3417a756b20b9e780404}
+
+\begin{DoxyCompactList}\small\item\em get a vector with all elements \end{DoxyCompactList}\item 
+unsigned int {\bf get\-Version} () const \label{classCALICE_1_1MappedContainer_ac01affbfc9b3701b3a6543cdcf12632a}
+
+\begin{DoxyCompactList}\small\item\em get version number to check for updates \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+T $\ast$ {\bfseries get\-By\-Index} (const unsigned int index) const \label{classCALICE_1_1MappedContainer_a2a7af6508c4c4a7416ef4197060f8af6}
+
+\item 
+void {\bfseries fill\-By\-Index} (const unsigned int index, T $\ast$object, bool unique=true)\label{classCALICE_1_1MappedContainer_abeecc69c38d8aca5970f48b918b98f41}
+
+\item 
+T $\ast$ {\bfseries remove\-By\-Index} (const unsigned int index)\label{classCALICE_1_1MappedContainer_a414d9c918e2d9def466504365af9415f}
+
+\item 
+void {\bfseries delete\-By\-Index} (const unsigned int index)\label{classCALICE_1_1MappedContainer_a2a86512d86365e598602574fdb00e442}
+
+\item 
+void {\bfseries init\-Ordered\-Data} (const unsigned int size, const bool clear\-Addresses=true)\label{classCALICE_1_1MappedContainer_a0daea544e0a43913e0a977c1e02e9c3f}
+
+\item 
+void {\bfseries refill\-Ordered\-Data} (const unsigned int size)\label{classCALICE_1_1MappedContainer_aaefd6f81d353dfeaabd003f7d08b5483}
+
+\item 
+void {\bfseries check\-Mapping} ()\label{classCALICE_1_1MappedContainer_a3fd79a2f5e56c64825b23d7ccebd6508}
+
+\item 
+void {\bfseries content\-Modified} ()\label{classCALICE_1_1MappedContainer_a2d74afb942b75eecdb1a959b2181efb9}
+
+\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+const {\bf Mapper} $\ast$ {\bfseries \-\_\-mapper}\label{classCALICE_1_1MappedContainer_a79fbea27bbacedbddbf28e9499591272}
+
+\item 
+bool {\bfseries \-\_\-delete\-Elements}\label{classCALICE_1_1MappedContainer_a3fa9ed521e66ff429cec598037967005}
+
+\item 
+std\-::vector$<$ {\bf Data\-With\-Address} $\ast$ $>$ {\bfseries \-\_\-ordered\-Data}\label{classCALICE_1_1MappedContainer_a273e969bd8c698f3ec30533666004f37}
+
+\item 
+unsigned int {\bfseries \-\_\-mapper\-Version}\label{classCALICE_1_1MappedContainer_a3a6ae12346ea8dbb73ac983caf8fd862}
+
+\item 
+unsigned int {\bfseries \-\_\-version}\label{classCALICE_1_1MappedContainer_a46c49b404ddb28f59e0c5c677b9c566c}
+
+\item 
+unsigned int {\bfseries \-\_\-max\-Index}\label{classCALICE_1_1MappedContainer_a673fecb40939aa2ab027f4a40bba578f}
+
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+\subsubsection*{template$<$class T$>$class C\-A\-L\-I\-C\-E\-::\-Mapped\-Container$<$ T $>$}
+
+Container for fast access by index. 
+
+This class stores arbitrary data types and offers transparent access by different coordinate systems.
+
+\begin{DoxyAuthor}{Author}
+{\tt Benjamin.\-Lutz@desy.\-de} 
+\end{DoxyAuthor}
+\begin{DoxyVersion}{Version}
+1.\-3 
+\end{DoxyVersion}
+\begin{DoxyDate}{Date}
+November 2009 
+\end{DoxyDate}
+
+
+Definition at line 24 of file Mapped\-Container.\-hh.
+
+
+
+\subsection{Constructor \& Destructor Documentation}
+\index{C\-A\-L\-I\-C\-E\-::\-Mapped\-Container@{C\-A\-L\-I\-C\-E\-::\-Mapped\-Container}!Mapped\-Container@{Mapped\-Container}}
+\index{Mapped\-Container@{Mapped\-Container}!CALICE::MappedContainer@{C\-A\-L\-I\-C\-E\-::\-Mapped\-Container}}
+\subsubsection[{Mapped\-Container}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class T$>$ {\bf C\-A\-L\-I\-C\-E\-::\-Mapped\-Container}$<$ T $>$\-::{\bf Mapped\-Container} (
+\begin{DoxyParamCaption}
+\item[{const {\bf Mapper} $\ast$}]{mapper, }
+\item[{const bool}]{delete\-Elements = {\ttfamily true}}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\label{classCALICE_1_1MappedContainer_a2ad715f15ff8590f2c1e0c470c38c6af}
+
+
+Constructor. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em mapper} & \doxyref{Mapper}{p.}{classCALICE_1_1Mapper} object that is used to translate coordinate systems \\
+\hline
+\mbox{\tt in}  & {\em delete\-Elements} & Determines if the object behind the stored reference should be deleted, when it is removed from the container. \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 35 of file Mapped\-Container.\-hh.
+
+
+
+References C\-A\-L\-I\-C\-E\-::\-Mapper\-::get\-Max\-Index(), and C\-A\-L\-I\-C\-E\-::\-Mapper\-::get\-Version().
+
+
+
+\subsection{Member Function Documentation}
+\index{C\-A\-L\-I\-C\-E\-::\-Mapped\-Container@{C\-A\-L\-I\-C\-E\-::\-Mapped\-Container}!delete\-By\-Cell\-I\-D@{delete\-By\-Cell\-I\-D}}
+\index{delete\-By\-Cell\-I\-D@{delete\-By\-Cell\-I\-D}!CALICE::MappedContainer@{C\-A\-L\-I\-C\-E\-::\-Mapped\-Container}}
+\subsubsection[{delete\-By\-Cell\-I\-D}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class T$>$ void {\bf C\-A\-L\-I\-C\-E\-::\-Mapped\-Container}$<$ T $>$\-::delete\-By\-Cell\-I\-D (
+\begin{DoxyParamCaption}
+\item[{const int}]{cell\-I\-D}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\label{classCALICE_1_1MappedContainer_a5ae58ecf626acbd5aecd0f89ca939c8a}
+
+
+delete entry for (Mokka) cell\-I\-D 
+
+If delete\-Elements is set, the stored object will be deleted, too.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em cell\-I\-D} & coordinate for content as (Module) channel I\-D see \doxyref{Mapper}{p.}{classCALICE_1_1Mapper} \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 178 of file Mapped\-Container.\-hh.
+
+
+
+References C\-A\-L\-I\-C\-E\-::\-Mapper\-::get\-Index\-By\-Cell\-I\-D().
+
+\index{C\-A\-L\-I\-C\-E\-::\-Mapped\-Container@{C\-A\-L\-I\-C\-E\-::\-Mapped\-Container}!delete\-By\-D\-A\-Q\-I\-D@{delete\-By\-D\-A\-Q\-I\-D}}
+\index{delete\-By\-D\-A\-Q\-I\-D@{delete\-By\-D\-A\-Q\-I\-D}!CALICE::MappedContainer@{C\-A\-L\-I\-C\-E\-::\-Mapped\-Container}}
+\subsubsection[{delete\-By\-D\-A\-Q\-I\-D}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class T$>$ void {\bf C\-A\-L\-I\-C\-E\-::\-Mapped\-Container}$<$ T $>$\-::delete\-By\-D\-A\-Q\-I\-D (
+\begin{DoxyParamCaption}
+\item[{const int}]{D\-A\-Q\-I\-D}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\label{classCALICE_1_1MappedContainer_a586146424f67132696b172db51409fa4}
+
+
+delete entry for D\-A\-Q channel I\-D 
+
+If delete\-Elements is set, the stored object will be deleted, too.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em D\-A\-Q\-I\-D} & coordinate for content as (Module) channel I\-D see \doxyref{Mapper}{p.}{classCALICE_1_1Mapper} \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 202 of file Mapped\-Container.\-hh.
+
+
+
+References C\-A\-L\-I\-C\-E\-::\-Mapper\-::get\-Index\-By\-D\-A\-Q\-I\-D().
+
+\index{C\-A\-L\-I\-C\-E\-::\-Mapped\-Container@{C\-A\-L\-I\-C\-E\-::\-Mapped\-Container}!delete\-By\-Module\-I\-D@{delete\-By\-Module\-I\-D}}
+\index{delete\-By\-Module\-I\-D@{delete\-By\-Module\-I\-D}!CALICE::MappedContainer@{C\-A\-L\-I\-C\-E\-::\-Mapped\-Container}}
+\subsubsection[{delete\-By\-Module\-I\-D}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class T$>$ void {\bf C\-A\-L\-I\-C\-E\-::\-Mapped\-Container}$<$ T $>$\-::delete\-By\-Module\-I\-D (
+\begin{DoxyParamCaption}
+\item[{const int}]{channel\-I\-D}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\label{classCALICE_1_1MappedContainer_a06e3052b440596d6758010eec4eca336}
+
+
+delete entry for (Module) channel I\-D 
+
+If delete\-Elements is set, the stored object will be deleted, too.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em channel\-I\-D} & coordinate for content as (Module) channel I\-D see \doxyref{Mapper}{p.}{classCALICE_1_1Mapper} \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 190 of file Mapped\-Container.\-hh.
+
+
+
+References C\-A\-L\-I\-C\-E\-::\-Mapper\-::get\-Index\-By\-Module\-I\-D().
+
+\index{C\-A\-L\-I\-C\-E\-::\-Mapped\-Container@{C\-A\-L\-I\-C\-E\-::\-Mapped\-Container}!fill\-By\-Cell\-I\-D@{fill\-By\-Cell\-I\-D}}
+\index{fill\-By\-Cell\-I\-D@{fill\-By\-Cell\-I\-D}!CALICE::MappedContainer@{C\-A\-L\-I\-C\-E\-::\-Mapped\-Container}}
+\subsubsection[{fill\-By\-Cell\-I\-D}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class T $>$ void {\bf C\-A\-L\-I\-C\-E\-::\-Mapped\-Container}$<$ T $>$\-::fill\-By\-Cell\-I\-D (
+\begin{DoxyParamCaption}
+\item[{const int}]{cell\-I\-D, }
+\item[{T $\ast$}]{object, }
+\item[{bool}]{unique = {\ttfamily true}}
+\end{DoxyParamCaption}
+)}\label{classCALICE_1_1MappedContainer_aae13940ba51f3e2b134b2a8ebdfdb326}
+
+
+fill content for (Mokka) cell\-I\-D 
+
+If unique is set, an already set value cannot be overwritten and an exception is thrown. Otherwise, the old value gets overwritten.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em cell\-I\-D} & coordinate for content as (Mokka) cell\-I\-D see \doxyref{Mapper}{p.}{classCALICE_1_1Mapper} \\
+\hline
+\mbox{\tt in}  & {\em object} & data to be stored \\
+\hline
+\mbox{\tt in}  & {\em unique} & enables protection from overwriting\\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em \doxyref{Bad\-Data\-Exception}{p.}{classCALICE_1_1BadDataException}} & \\
+\hline
+\end{DoxyExceptions}
+
+
+Definition at line 326 of file Mapped\-Container.\-hh.
+
+
+
+Referenced by C\-A\-L\-I\-C\-E\-::\-Cell\-Description\-Generator\-::generate(), and C\-A\-L\-I\-C\-E\-::\-Cell\-Neighbour\-Calculator\-::get\-Neighbours().
+
+\index{C\-A\-L\-I\-C\-E\-::\-Mapped\-Container@{C\-A\-L\-I\-C\-E\-::\-Mapped\-Container}!fill\-By\-D\-A\-Q\-I\-D@{fill\-By\-D\-A\-Q\-I\-D}}
+\index{fill\-By\-D\-A\-Q\-I\-D@{fill\-By\-D\-A\-Q\-I\-D}!CALICE::MappedContainer@{C\-A\-L\-I\-C\-E\-::\-Mapped\-Container}}
+\subsubsection[{fill\-By\-D\-A\-Q\-I\-D}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class T $>$ void {\bf C\-A\-L\-I\-C\-E\-::\-Mapped\-Container}$<$ T $>$\-::fill\-By\-D\-A\-Q\-I\-D (
+\begin{DoxyParamCaption}
+\item[{const int}]{D\-A\-Q\-I\-D, }
+\item[{T $\ast$}]{object, }
+\item[{bool}]{unique = {\ttfamily true}}
+\end{DoxyParamCaption}
+)}\label{classCALICE_1_1MappedContainer_a55d9b2c21f9a4cb68792f921649940f5}
+
+
+fill content for D\-A\-Q channel I\-D 
+
+If unique is set, an already set value cannot be overwritten and an exception is thrown. Otherwise, the old value gets overwritten.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em D\-A\-Q\-I\-D} & coordinate for content as D\-A\-Q channel I\-D see \doxyref{Mapper}{p.}{classCALICE_1_1Mapper} \\
+\hline
+\mbox{\tt in}  & {\em object} & data to be stored \\
+\hline
+\mbox{\tt in}  & {\em unique} & enables protection from overwriting\\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em \doxyref{Bad\-Data\-Exception}{p.}{classCALICE_1_1BadDataException}} & \\
+\hline
+\end{DoxyExceptions}
+
+
+Definition at line 340 of file Mapped\-Container.\-hh.
+
+\index{C\-A\-L\-I\-C\-E\-::\-Mapped\-Container@{C\-A\-L\-I\-C\-E\-::\-Mapped\-Container}!fill\-By\-Module\-I\-D@{fill\-By\-Module\-I\-D}}
+\index{fill\-By\-Module\-I\-D@{fill\-By\-Module\-I\-D}!CALICE::MappedContainer@{C\-A\-L\-I\-C\-E\-::\-Mapped\-Container}}
+\subsubsection[{fill\-By\-Module\-I\-D}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class T $>$ void {\bf C\-A\-L\-I\-C\-E\-::\-Mapped\-Container}$<$ T $>$\-::fill\-By\-Module\-I\-D (
+\begin{DoxyParamCaption}
+\item[{const int}]{channel\-I\-D, }
+\item[{T $\ast$}]{object, }
+\item[{bool}]{unique = {\ttfamily true}}
+\end{DoxyParamCaption}
+)}\label{classCALICE_1_1MappedContainer_a504606138ece93187825e8fcb71e1220}
+
+
+fill content for (Module) channel I\-D 
+
+If unique is set, an already set value cannot be overwritten and an exception is thrown. Otherwise, the old value gets overwritten.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em channel\-I\-D} & coordinate for content as Module channel I\-D see \doxyref{Mapper}{p.}{classCALICE_1_1Mapper} \\
+\hline
+\mbox{\tt in}  & {\em object} & data to be stored \\
+\hline
+\mbox{\tt in}  & {\em unique} & enables protection from overwriting\\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em \doxyref{Bad\-Data\-Exception}{p.}{classCALICE_1_1BadDataException}} & \\
+\hline
+\end{DoxyExceptions}
+
+
+Definition at line 333 of file Mapped\-Container.\-hh.
+
+\index{C\-A\-L\-I\-C\-E\-::\-Mapped\-Container@{C\-A\-L\-I\-C\-E\-::\-Mapped\-Container}!get\-By\-Cell\-I\-D@{get\-By\-Cell\-I\-D}}
+\index{get\-By\-Cell\-I\-D@{get\-By\-Cell\-I\-D}!CALICE::MappedContainer@{C\-A\-L\-I\-C\-E\-::\-Mapped\-Container}}
+\subsubsection[{get\-By\-Cell\-I\-D}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class T$>$ T$\ast$ {\bf C\-A\-L\-I\-C\-E\-::\-Mapped\-Container}$<$ T $>$\-::get\-By\-Cell\-I\-D (
+\begin{DoxyParamCaption}
+\item[{const int}]{cell\-I\-D}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\label{classCALICE_1_1MappedContainer_aa665f0e07e0f8b884a56dd998c56b23e}
+
+
+get content for (Mokka) cell\-I\-D 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em cell\-I\-D} & coordinate for content as (Mokka) cell\-I\-D see \doxyref{Mapper}{p.}{classCALICE_1_1Mapper} \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+data for cell\-I\-D or 0 if no data is available (or channel does not exist) 
+\end{DoxyReturn}
+
+
+Definition at line 109 of file Mapped\-Container.\-hh.
+
+
+
+References C\-A\-L\-I\-C\-E\-::\-Mapper\-::get\-Index\-By\-Cell\-I\-D().
+
+\index{C\-A\-L\-I\-C\-E\-::\-Mapped\-Container@{C\-A\-L\-I\-C\-E\-::\-Mapped\-Container}!get\-By\-D\-A\-Q\-I\-D@{get\-By\-D\-A\-Q\-I\-D}}
+\index{get\-By\-D\-A\-Q\-I\-D@{get\-By\-D\-A\-Q\-I\-D}!CALICE::MappedContainer@{C\-A\-L\-I\-C\-E\-::\-Mapped\-Container}}
+\subsubsection[{get\-By\-D\-A\-Q\-I\-D}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class T$>$ T$\ast$ {\bf C\-A\-L\-I\-C\-E\-::\-Mapped\-Container}$<$ T $>$\-::get\-By\-D\-A\-Q\-I\-D (
+\begin{DoxyParamCaption}
+\item[{const int}]{D\-A\-Q\-I\-D}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\label{classCALICE_1_1MappedContainer_a516e25fc9a2f58dc64ff505a95fb5f53}
+
+
+get content for D\-A\-Q channel I\-D 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em D\-A\-Q\-I\-D} & coordinate for content as (Module) channel I\-D see \doxyref{Mapper}{p.}{classCALICE_1_1Mapper} \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+data for channel I\-D or 0 if no data is available (or channel does not exist) 
+\end{DoxyReturn}
+
+
+Definition at line 132 of file Mapped\-Container.\-hh.
+
+
+
+References C\-A\-L\-I\-C\-E\-::\-Mapper\-::get\-Index\-By\-D\-A\-Q\-I\-D().
+
+\index{C\-A\-L\-I\-C\-E\-::\-Mapped\-Container@{C\-A\-L\-I\-C\-E\-::\-Mapped\-Container}!get\-By\-Module\-I\-D@{get\-By\-Module\-I\-D}}
+\index{get\-By\-Module\-I\-D@{get\-By\-Module\-I\-D}!CALICE::MappedContainer@{C\-A\-L\-I\-C\-E\-::\-Mapped\-Container}}
+\subsubsection[{get\-By\-Module\-I\-D}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class T$>$ T$\ast$ {\bf C\-A\-L\-I\-C\-E\-::\-Mapped\-Container}$<$ T $>$\-::get\-By\-Module\-I\-D (
+\begin{DoxyParamCaption}
+\item[{const int}]{channel\-I\-D}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\label{classCALICE_1_1MappedContainer_a48d9b0adfedfddf3ba266b4dfe97c3f3}
+
+
+get content for (Module) channel I\-D 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em channel\-I\-D} & coordinate for content as (Module) channel I\-D see \doxyref{Mapper}{p.}{classCALICE_1_1Mapper} \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+data for channel I\-D or 0 if no data is available (or channel does not exist) 
+\end{DoxyReturn}
+
+
+Definition at line 120 of file Mapped\-Container.\-hh.
+
+
+
+References C\-A\-L\-I\-C\-E\-::\-Mapper\-::get\-Index\-By\-Module\-I\-D().
+
+\index{C\-A\-L\-I\-C\-E\-::\-Mapped\-Container@{C\-A\-L\-I\-C\-E\-::\-Mapped\-Container}!get\-Decoder@{get\-Decoder}}
+\index{get\-Decoder@{get\-Decoder}!CALICE::MappedContainer@{C\-A\-L\-I\-C\-E\-::\-Mapped\-Container}}
+\subsubsection[{get\-Decoder}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class T$>$ {\bf Decoder\-Set}$\ast$ {\bf C\-A\-L\-I\-C\-E\-::\-Mapped\-Container}$<$ T $>$\-::get\-Decoder (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\label{classCALICE_1_1MappedContainer_aa3c52d207f51cbe38e34094c2cbfef96}
+
+
+return a pointer to the \doxyref{Decoder\-Set}{p.}{classCALICE_1_1DecoderSet} handling the decoding of I\-Ds with encoding strings 
+
+This function returns a pointer to the \doxyref{Decoder\-Set}{p.}{classCALICE_1_1DecoderSet} used by the \doxyref{Mapper}{p.}{classCALICE_1_1Mapper}. This allows to change the used encoding string. Be aware that the \doxyref{Decoder\-Set}{p.}{classCALICE_1_1DecoderSet} might be the same for many Objects using the same \doxyref{Mapper}{p.}{classCALICE_1_1Mapper}. Therefore, you should always enfore your encoding before using the \doxyref{Mapped\-Container}{p.}{classCALICE_1_1MappedContainer}. 
+
+Definition at line 59 of file Mapped\-Container.\-hh.
+
+
+
+References C\-A\-L\-I\-C\-E\-::\-Mapper\-::get\-Decoder().
+
+\index{C\-A\-L\-I\-C\-E\-::\-Mapped\-Container@{C\-A\-L\-I\-C\-E\-::\-Mapped\-Container}!remove\-By\-Cell\-I\-D@{remove\-By\-Cell\-I\-D}}
+\index{remove\-By\-Cell\-I\-D@{remove\-By\-Cell\-I\-D}!CALICE::MappedContainer@{C\-A\-L\-I\-C\-E\-::\-Mapped\-Container}}
+\subsubsection[{remove\-By\-Cell\-I\-D}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class T$>$ T$\ast$ {\bf C\-A\-L\-I\-C\-E\-::\-Mapped\-Container}$<$ T $>$\-::remove\-By\-Cell\-I\-D (
+\begin{DoxyParamCaption}
+\item[{const int}]{cell\-I\-D}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\label{classCALICE_1_1MappedContainer_a93fc00788a8fb2a6ddb93033392d19fb}
+
+
+get content for (Mokka) cell\-I\-D and remove it from the container 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em cell\-I\-D} & coordinate for content as (Module) channel I\-D see \doxyref{Mapper}{p.}{classCALICE_1_1Mapper} \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+data for cell\-I\-D or 0 if no data is available (or channel does not exist) 
+\end{DoxyReturn}
+
+
+Definition at line 143 of file Mapped\-Container.\-hh.
+
+
+
+References C\-A\-L\-I\-C\-E\-::\-Mapper\-::get\-Index\-By\-Cell\-I\-D().
+
+\index{C\-A\-L\-I\-C\-E\-::\-Mapped\-Container@{C\-A\-L\-I\-C\-E\-::\-Mapped\-Container}!remove\-By\-D\-A\-Q\-I\-D@{remove\-By\-D\-A\-Q\-I\-D}}
+\index{remove\-By\-D\-A\-Q\-I\-D@{remove\-By\-D\-A\-Q\-I\-D}!CALICE::MappedContainer@{C\-A\-L\-I\-C\-E\-::\-Mapped\-Container}}
+\subsubsection[{remove\-By\-D\-A\-Q\-I\-D}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class T$>$ T$\ast$ {\bf C\-A\-L\-I\-C\-E\-::\-Mapped\-Container}$<$ T $>$\-::remove\-By\-D\-A\-Q\-I\-D (
+\begin{DoxyParamCaption}
+\item[{const int}]{D\-A\-Q\-I\-D}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\label{classCALICE_1_1MappedContainer_aaade8074abd607f8e7c61bef8415127c}
+
+
+get content for D\-A\-Q channel I\-D and remove it from the container 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em D\-A\-Q\-I\-D} & coordinate for content as (Module) channel I\-D see \doxyref{Mapper}{p.}{classCALICE_1_1Mapper} \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+data for channel I\-D or 0 if no data is available (or channel does not exist) 
+\end{DoxyReturn}
+
+
+Definition at line 165 of file Mapped\-Container.\-hh.
+
+
+
+References C\-A\-L\-I\-C\-E\-::\-Mapper\-::get\-Index\-By\-D\-A\-Q\-I\-D().
+
+\index{C\-A\-L\-I\-C\-E\-::\-Mapped\-Container@{C\-A\-L\-I\-C\-E\-::\-Mapped\-Container}!remove\-By\-Module\-I\-D@{remove\-By\-Module\-I\-D}}
+\index{remove\-By\-Module\-I\-D@{remove\-By\-Module\-I\-D}!CALICE::MappedContainer@{C\-A\-L\-I\-C\-E\-::\-Mapped\-Container}}
+\subsubsection[{remove\-By\-Module\-I\-D}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class T$>$ T$\ast$ {\bf C\-A\-L\-I\-C\-E\-::\-Mapped\-Container}$<$ T $>$\-::remove\-By\-Module\-I\-D (
+\begin{DoxyParamCaption}
+\item[{const int}]{channel\-I\-D}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\label{classCALICE_1_1MappedContainer_abf12898e98be0e23a9e05eccce59fefa}
+
+
+get content for (Module) channel I\-D and remove it from the container 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em channel\-I\-D} & coordinate for content as (Module) channel I\-D see \doxyref{Mapper}{p.}{classCALICE_1_1Mapper} \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+data for channel I\-D or 0 if no data is available (or channel does not exist) 
+\end{DoxyReturn}
+
+
+Definition at line 154 of file Mapped\-Container.\-hh.
+
+
+
+References C\-A\-L\-I\-C\-E\-::\-Mapper\-::get\-Index\-By\-Module\-I\-D().
+
+
+
+The documentation for this class was generated from the following file\-:\begin{DoxyCompactItemize}
+\item 
+Mapped\-Container.\-hh\end{DoxyCompactItemize}

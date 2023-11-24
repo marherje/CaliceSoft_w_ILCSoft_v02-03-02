@@ -1,0 +1,210 @@
+\section{histmgr\-:\-:Root\-Writer Class Reference}
+\label{classhistmgr_1_1RootWriter}\index{histmgr\-::\-Root\-Writer@{histmgr\-::\-Root\-Writer}}
+
+
+Write histograms to R\-O\-O\-T files.  
+
+
+
+
+{\ttfamily \#include $<$Root\-Writer.\-hh$>$}
+
+Inheritance diagram for histmgr\-:\-:Root\-Writer\-:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classhistmgr_1_1RootWriter}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+{\bf Root\-Writer} (const std\-::string \&file\-\_\-name)
+\begin{DoxyCompactList}\small\item\em create or update the given file and open for writing \end{DoxyCompactList}\item 
+{\bf $\sim$\-Root\-Writer} ()\label{classhistmgr_1_1RootWriter_a79b1f0223f75e27831fad78194525e7b}
+
+\begin{DoxyCompactList}\small\item\em write everything to disk, close file and destruct object. \end{DoxyCompactList}\item 
+bool {\bf enter\-Dir} (const std\-::string \&name, bool create=false)
+\begin{DoxyCompactList}\small\item\em Enter a subdirectory in the file. \end{DoxyCompactList}\item 
+void {\bf up\-Dir} ()\label{classhistmgr_1_1RootWriter_a70902dc22a314e98cc5f6eed84bd5d7b}
+
+\begin{DoxyCompactList}\small\item\em Go up one directory level. \end{DoxyCompactList}\item 
+void {\bf write\-To\-Current\-Dir} (const {\bf Float\-Histogram1\-D} \&hist, const std\-::string \&name)
+\begin{DoxyCompactList}\small\item\em Write the given histogram to a R\-O\-O\-T file. \end{DoxyCompactList}\item 
+void {\bf write\-To\-Current\-Dir} (const {\bf Float\-Histogram2\-D} \&hist, const std\-::string \&name)
+\begin{DoxyCompactList}\small\item\em Write the given histogram to a R\-O\-O\-T file. \end{DoxyCompactList}\item 
+void {\bf write\-To\-Current\-Dir} (const E\-V\-E\-N\-T\-::\-L\-C\-Generic\-Object $\ast$array\-\_\-x, const E\-V\-E\-N\-T\-::\-L\-C\-Generic\-Object $\ast$array\-\_\-y, const std\-::string \&name)
+\begin{DoxyCompactList}\small\item\em Write the given graph to a R\-O\-O\-T file. \end{DoxyCompactList}\item 
+void {\bfseries write\-To\-Current\-Dir} (const E\-V\-E\-N\-T\-::\-L\-C\-Generic\-Object $\ast$array\-\_\-x, const E\-V\-E\-N\-T\-::\-L\-C\-Generic\-Object $\ast$array\-\_\-y, const E\-V\-E\-N\-T\-::\-L\-C\-Generic\-Object $\ast$array\-\_\-ey, const std\-::string \&name)\label{classhistmgr_1_1RootWriter_a123cffc719468678938d9fdd127a8de0}
+
+\end{DoxyCompactItemize}
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static T\-H1 $\ast$ {\bfseries create\-T\-H1} (const {\bf Float\-Histogram1\-D} \&hist, const std\-::string \&name)\label{classhistmgr_1_1RootWriter_a853062957961f02909bf1e4775431fe8}
+
+\item 
+static T\-H2 $\ast$ {\bfseries create\-T\-H2} (const {\bf Float\-Histogram2\-D} \&hist, const std\-::string \&name)\label{classhistmgr_1_1RootWriter_a8064f19b9b5d6c9f9b2f5532dc1d03d0}
+
+\item 
+static T\-Graph $\ast$ {\bfseries create\-Graph} (const E\-V\-E\-N\-T\-::\-L\-C\-Generic\-Object $\ast$array\-\_\-x, const E\-V\-E\-N\-T\-::\-L\-C\-Generic\-Object $\ast$array\-\_\-y, const std\-::string \&name)\label{classhistmgr_1_1RootWriter_ad5d2809884a4a2945b6033de0149ed90}
+
+\item 
+static T\-Graph $\ast$ {\bfseries create\-Graph} (const E\-V\-E\-N\-T\-::\-L\-C\-Generic\-Object $\ast$array\-\_\-x, const E\-V\-E\-N\-T\-::\-L\-C\-Generic\-Object $\ast$array\-\_\-y, const E\-V\-E\-N\-T\-::\-L\-C\-Generic\-Object $\ast$array\-\_\-ey, const std\-::string \&name)\label{classhistmgr_1_1RootWriter_a123ada7069c614cc4044b8ab0e8c44a7}
+
+\end{DoxyCompactItemize}
+\subsection*{Static Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static T\-Directory $\ast$ {\bfseries enter\-Dir} (T\-Directory $\ast$dir, const std\-::string \&name)\label{classhistmgr_1_1RootWriter_ae67d37f07ee5e49c049457566b6ed35a}
+
+\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+T\-File $\ast$ {\bfseries \-\_\-file}\label{classhistmgr_1_1RootWriter_a7f36a64d91cd2fd36e58373dfef68b2e}
+
+\item 
+std\-::vector$<$ T\-Directory $\ast$ $>$ {\bfseries \-\_\-dir\-Stack}\label{classhistmgr_1_1RootWriter_ab586e486770415750374c4cb2e82b9cf}
+
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Write histograms to R\-O\-O\-T files. 
+
+Definition at line 19 of file Root\-Writer.\-hh.
+
+
+
+\subsection{Constructor \& Destructor Documentation}
+\index{histmgr\-::\-Root\-Writer@{histmgr\-::\-Root\-Writer}!Root\-Writer@{Root\-Writer}}
+\index{Root\-Writer@{Root\-Writer}!histmgr::RootWriter@{histmgr\-::\-Root\-Writer}}
+\subsubsection[{Root\-Writer}]{\setlength{\rightskip}{0pt plus 5cm}histmgr\-::\-Root\-Writer\-::\-Root\-Writer (
+\begin{DoxyParamCaption}
+\item[{const std\-::string \&}]{file\-\_\-name}
+\end{DoxyParamCaption}
+)}\label{classhistmgr_1_1RootWriter_a258807fed74356b5890130b3ddb1c283}
+
+
+create or update the given file and open for writing 
+
+
+\begin{DoxyParams}{Parameters}
+{\em file\-\_\-name} & the name including the path name of the file. \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 13 of file Root\-Writer.\-cc.
+
+
+
+\subsection{Member Function Documentation}
+\index{histmgr\-::\-Root\-Writer@{histmgr\-::\-Root\-Writer}!enter\-Dir@{enter\-Dir}}
+\index{enter\-Dir@{enter\-Dir}!histmgr::RootWriter@{histmgr\-::\-Root\-Writer}}
+\subsubsection[{enter\-Dir}]{\setlength{\rightskip}{0pt plus 5cm}bool histmgr\-::\-Root\-Writer\-::enter\-Dir (
+\begin{DoxyParamCaption}
+\item[{const std\-::string \&}]{name, }
+\item[{bool}]{create = {\ttfamily false}}
+\end{DoxyParamCaption}
+)}\label{classhistmgr_1_1RootWriter_a9c162f17d8c794600eae38ec8b055a80}
+
+
+Enter a subdirectory in the file. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em name} & the name of the sub directory \\
+\hline
+{\em create} & set to true if non existing directories shall be created \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true incase the directory exists 
+\end{DoxyReturn}
+
+
+Definition at line 30 of file Root\-Writer.\-cc.
+
+\index{histmgr\-::\-Root\-Writer@{histmgr\-::\-Root\-Writer}!write\-To\-Current\-Dir@{write\-To\-Current\-Dir}}
+\index{write\-To\-Current\-Dir@{write\-To\-Current\-Dir}!histmgr::RootWriter@{histmgr\-::\-Root\-Writer}}
+\subsubsection[{write\-To\-Current\-Dir}]{\setlength{\rightskip}{0pt plus 5cm}void histmgr\-::\-Root\-Writer\-::write\-To\-Current\-Dir (
+\begin{DoxyParamCaption}
+\item[{const {\bf Float\-Histogram1\-D} \&}]{hist, }
+\item[{const std\-::string \&}]{name}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}\label{classhistmgr_1_1RootWriter_a14f07347e735118a227788b8a4c5a172}
+
+
+Write the given histogram to a R\-O\-O\-T file. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em hist} & reference to the histogram \\
+\hline
+{\em name} & the name given to the histogram \\
+\hline
+\end{DoxyParams}
+
+
+Implements {\bf histmgr\-::\-Hist\-Writer} \doxyref{}{p.}{classhistmgr_1_1HistWriter_ad9bdd8f2a07d67c39bb0e09e79009aa5}.
+
+
+
+Definition at line 53 of file Root\-Writer.\-cc.
+
+\index{histmgr\-::\-Root\-Writer@{histmgr\-::\-Root\-Writer}!write\-To\-Current\-Dir@{write\-To\-Current\-Dir}}
+\index{write\-To\-Current\-Dir@{write\-To\-Current\-Dir}!histmgr::RootWriter@{histmgr\-::\-Root\-Writer}}
+\subsubsection[{write\-To\-Current\-Dir}]{\setlength{\rightskip}{0pt plus 5cm}void histmgr\-::\-Root\-Writer\-::write\-To\-Current\-Dir (
+\begin{DoxyParamCaption}
+\item[{const {\bf Float\-Histogram2\-D} \&}]{hist, }
+\item[{const std\-::string \&}]{name}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}\label{classhistmgr_1_1RootWriter_a6031ddaa5a402ae73f624fb3ea2e5970}
+
+
+Write the given histogram to a R\-O\-O\-T file. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em hist} & reference to the histogram \\
+\hline
+{\em name} & the name given to the histogram \\
+\hline
+\end{DoxyParams}
+
+
+Implements {\bf histmgr\-::\-Hist\-Writer} \doxyref{}{p.}{classhistmgr_1_1HistWriter_a3c4e7228abcd2fe54ec6748aae6407c2}.
+
+
+
+Definition at line 62 of file Root\-Writer.\-cc.
+
+\index{histmgr\-::\-Root\-Writer@{histmgr\-::\-Root\-Writer}!write\-To\-Current\-Dir@{write\-To\-Current\-Dir}}
+\index{write\-To\-Current\-Dir@{write\-To\-Current\-Dir}!histmgr::RootWriter@{histmgr\-::\-Root\-Writer}}
+\subsubsection[{write\-To\-Current\-Dir}]{\setlength{\rightskip}{0pt plus 5cm}void histmgr\-::\-Root\-Writer\-::write\-To\-Current\-Dir (
+\begin{DoxyParamCaption}
+\item[{const E\-V\-E\-N\-T\-::\-L\-C\-Generic\-Object $\ast$}]{array\-\_\-x, }
+\item[{const E\-V\-E\-N\-T\-::\-L\-C\-Generic\-Object $\ast$}]{array\-\_\-y, }
+\item[{const std\-::string \&}]{name}
+\end{DoxyParamCaption}
+)}\label{classhistmgr_1_1RootWriter_a23a007d670599732c86c814389e13358}
+
+
+Write the given graph to a R\-O\-O\-T file. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em array\-\_\-x} & graph parameters along x \\
+\hline
+{\em array\-\_\-y} & graph parameters along y \\
+\hline
+{\em name} & name of the graph to be written \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following files\-:\begin{DoxyCompactItemize}
+\item 
+Root\-Writer.\-hh\item 
+Root\-Writer.\-cc\end{DoxyCompactItemize}

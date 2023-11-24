@@ -1,0 +1,102 @@
+\section{C\-A\-L\-I\-C\-E\-:\-:Cell\-Description\-Processor Class Reference}
+\label{classCALICE_1_1CellDescriptionProcessor}\index{C\-A\-L\-I\-C\-E\-::\-Cell\-Description\-Processor@{C\-A\-L\-I\-C\-E\-::\-Cell\-Description\-Processor}}
+
+
+{\ttfamily \#include $<$Cell\-Description\-Processor.\-hh$>$}
+
+Inheritance diagram for C\-A\-L\-I\-C\-E\-:\-:Cell\-Description\-Processor\-:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classCALICE_1_1CellDescriptionProcessor}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+virtual Processor $\ast$ {\bfseries new\-Processor} ()\label{classCALICE_1_1CellDescriptionProcessor_a5e862890c14f596f06bfbbfba622218d}
+
+\item 
+virtual void {\bfseries init} ()\label{classCALICE_1_1CellDescriptionProcessor_afc72f4838174f264a950b8c0fe00bcd3}
+
+\item 
+virtual void {\bfseries process\-Event} (L\-C\-Event $\ast$evt)\label{classCALICE_1_1CellDescriptionProcessor_a65bb278cc74192f8aa7c85aa388cdc14}
+
+\item 
+virtual void {\bfseries end} ()\label{classCALICE_1_1CellDescriptionProcessor_a35900c15f5190036b7329bbb99391161}
+
+\item 
+virtual void {\bfseries conditions\-Changed} (L\-C\-Collection $\ast$col)\label{classCALICE_1_1CellDescriptionProcessor_a9ecddf9e127f6891bfa08fd255fe046f}
+
+\end{DoxyCompactItemize}
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static Mapped\-Container\\*
+$<$ Cell\-Description $>$ $\ast$ {\bf get\-Cell\-Descriptions} (const std\-::string \&processor\-Name)
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Processor that provides Cell\-Description for all cells.
+
+The processor generates and updates a Mapped\-Container of Cell\-Description objects from the conditions data. To obtain the Mapped\-Collection in other processors use\-: \doxyref{Cell\-Description\-Processor\-::get\-Cell\-Descriptions}{p.}{classCALICE_1_1CellDescriptionProcessor_a6d60e618b66caabf2cee48b10e6c0ca1}( \char`\"{}cell\-Description processor name\char`\"{} )
+
+\begin{DoxyParagraph}{processor parameters}
+\begin{TabularC}{2}
+\hline
+steering file parameter name &description  \\\cline{1-2}
+{\bfseries {\itshape  Detector\-Transformation }}&Name of the Detector\-Transformation collection \\\cline{1-2}
+{\bfseries {\itshape  Mapping\-Processor\-Name }}&Name of the mapping processor that provides the necessary Mapper class \\\cline{1-2}
+{\bfseries {\itshape  Module\-Connection }}&Name of the Module\-Connection collection \\\cline{1-2}
+{\bfseries {\itshape  Module\-Description }}&Name of the Module\-Description collection \\\cline{1-2}
+{\bfseries {\itshape  Module\-Location }}&Name of the Module\-Location collection \\\cline{1-2}
+\end{TabularC}
+
+\end{DoxyParagraph}
+\begin{DoxyAuthor}{Author}
+{\tt Benjamin.\-Lutz@desy.\-de} 
+\end{DoxyAuthor}
+\begin{DoxyVersion}{Version}
+0.\-2 
+\end{DoxyVersion}
+\begin{DoxyDate}{Date}
+November 2009 
+\end{DoxyDate}
+
+
+Definition at line 47 of file Cell\-Description\-Processor.\-hh.
+
+
+
+\subsection{Member Function Documentation}
+\index{C\-A\-L\-I\-C\-E\-::\-Cell\-Description\-Processor@{C\-A\-L\-I\-C\-E\-::\-Cell\-Description\-Processor}!get\-Cell\-Descriptions@{get\-Cell\-Descriptions}}
+\index{get\-Cell\-Descriptions@{get\-Cell\-Descriptions}!CALICE::CellDescriptionProcessor@{C\-A\-L\-I\-C\-E\-::\-Cell\-Description\-Processor}}
+\subsubsection[{get\-Cell\-Descriptions}]{\setlength{\rightskip}{0pt plus 5cm}Mapped\-Container$<$ Cell\-Description $>$ $\ast$ C\-A\-L\-I\-C\-E\-::\-Cell\-Description\-Processor\-::get\-Cell\-Descriptions (
+\begin{DoxyParamCaption}
+\item[{const std\-::string \&}]{processor\-Name}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}\label{classCALICE_1_1CellDescriptionProcessor_a6d60e618b66caabf2cee48b10e6c0ca1}
+static function to obtain cell description container
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em processor\-Name} & name of the \doxyref{Cell\-Description\-Processor}{p.}{classCALICE_1_1CellDescriptionProcessor} that takes care of this cell descriptions. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+pointer to the Mapped\-Container of Cell\-Descriptions 
+\end{DoxyReturn}
+
+
+Definition at line 22 of file Cell\-Description\-Processor.\-cc.
+
+
+
+Referenced by C\-A\-L\-I\-C\-E\-::\-Correct\-Position\-Processor\-::init().
+
+
+
+The documentation for this class was generated from the following files\-:\begin{DoxyCompactItemize}
+\item 
+Cell\-Description\-Processor.\-hh\item 
+Cell\-Description\-Processor.\-cc\end{DoxyCompactItemize}

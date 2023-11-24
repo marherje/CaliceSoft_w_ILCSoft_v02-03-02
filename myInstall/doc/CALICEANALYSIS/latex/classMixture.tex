@@ -1,0 +1,230 @@
+\section{Mixture Class Reference}
+\label{classMixture}\index{Mixture@{Mixture}}
+
+
+{\ttfamily \#include $<$Mixture.\-hh$>$}
+
+Inheritance diagram for Mixture\-:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classMixture}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+virtual Processor $\ast$ {\bfseries new\-Processor} ()\label{classMixture_a974eea4854e24fca74828b6fb0d819d5}
+
+\item 
+virtual const std\-::string \& {\bfseries name} () const \label{classMixture_a69d184efcf89c019ef80b053a31ab674}
+
+\item 
+virtual void {\bfseries modify\-Event} (L\-C\-Event $\ast$evt)\label{classMixture_ae75b52d146c7099c2ebe9b5ce49f459b}
+
+\item 
+virtual void {\bfseries init} ()\label{classMixture_aa7c954d87460d3af08842e6d74e349a3}
+
+\item 
+virtual void {\bfseries process\-Run\-Header} (L\-C\-Run\-Header $\ast$run)\label{classMixture_a952a1875c684d2c13488efb0afeaa06a}
+
+\item 
+virtual void {\bfseries check} (L\-C\-Event $\ast$evt)\label{classMixture_ae08333282d6a417414ce2a1dc71bca15}
+
+\item 
+virtual void {\bfseries end} ()\label{classMixture_a3306b1afd0d8c8e0337feae3d6b66390}
+
+\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+String\-Vec {\bf \-\_\-input\-File\-Names}
+\item 
+int {\bfseries \-\_\-num\-Mixture}\label{classMixture_ae60aa285e3c3c7c8b1ee40fc3d25a999}
+
+\item 
+std\-::vector$<$ L\-C\-Reader $\ast$ $>$ {\bfseries \-\_\-lc\-Readers}\label{classMixture_a6716ae4c3996d3fa3fc236611b2d0a4a}
+
+\item 
+std\-::vector$<$ float $>$ {\bf \-\_\-\-X\-Y\-\_\-shifts}
+\item 
+int {\bfseries \-\_\-num\-Shifts}\label{classMixture_a2702eb808bc0b7ee05c9acbbe94bc1d2}
+
+\item 
+std\-::string {\bfseries \-\_\-\-E\-C\-A\-L\-Hits\-Col}\label{classMixture_a725049116e64f5aa4e9e9258c6c4b471}
+
+\item 
+std\-::string {\bfseries \-\_\-\-H\-C\-A\-L\-Hits\-Col}\label{classMixture_ad88306876cc621965682e03cb62cbb09}
+
+\item 
+std\-::string {\bfseries \-\_\-prop\-Col}\label{classMixture_a0d090f78a480f022f4f8162d20bbbd38}
+
+\item 
+float {\bfseries ampl} [200][200][100]\label{classMixture_ac74297cf6e6b0d69c0dbd2e1e6c69717}
+
+\item 
+float {\bfseries emip\-\_\-vis}\label{classMixture_aabebb58587585833b39487b83bd104a8}
+
+\item 
+float {\bfseries hmip\-\_\-vis}\label{classMixture_ac03d33567452f7414b98a6f3514f11be}
+
+\item 
+float {\bfseries ecal\-\_\-coeff1}\label{classMixture_ac74952885c910557ecf910feac27f927}
+
+\item 
+float {\bfseries ecal\-\_\-coeff2}\label{classMixture_acf97fa1e1fd6a61e0a3915d71be7ae35}
+
+\item 
+float {\bfseries ecal\-\_\-coeff3}\label{classMixture_a948d1c022842622b359dd26cb7275ecb}
+
+\item 
+float {\bfseries hcal\-\_\-coeff1}\label{classMixture_aade5aabafc94193e21197ef1e9022d9a}
+
+\item 
+float {\bfseries hcal\-\_\-coeff2}\label{classMixture_acb3c8ea43025ed4cf15a2ac41f30cef8}
+
+\item 
+float {\bfseries tcal\-\_\-coeff1}\label{classMixture_a0de3298a32af62efc1f81b41435c0521}
+
+\item 
+float {\bfseries tcal\-\_\-coeff2}\label{classMixture_a8cd33e93fc05fedfa123056715d3f201}
+
+\item 
+int {\bfseries last\-\_\-layer}\label{classMixture_ab19effdaeb9cc9e48cd2f69bc8d6d2cb}
+
+\item 
+float {\bfseries er\-\_\-inner}\label{classMixture_a4974a78d2ebdce70f9da0a8218eef291}
+
+\item 
+float {\bfseries er\-\_\-outer}\label{classMixture_ac321d3f65d7461619949a321bd77aa63}
+
+\item 
+float {\bfseries ez\-\_\-inner}\label{classMixture_ae24aebd80e43efce1d2212bb22b5f841}
+
+\item 
+float {\bfseries ez\-\_\-outer}\label{classMixture_a32a3674234fa205ce0e22c45a8dc1792}
+
+\item 
+float {\bfseries en\-\_\-sampl}\label{classMixture_aa180a7e0f57f0cf6dee5e4be64816f3a}
+
+\item 
+float {\bfseries esampling\-\_\-1}\label{classMixture_a28fcee8e2e04db5fa57c809586e390af}
+
+\item 
+float {\bfseries esampling\-\_\-2}\label{classMixture_ad5476769631a80e20d16fb379fa6130a}
+
+\item 
+float {\bfseries esampling\-\_\-3}\label{classMixture_a453e49e958b5881f5025cc61921671a5}
+
+\item 
+int {\bfseries emin\-\_\-lay}\label{classMixture_a5d362fb2cde4351916095bbc3c8dc9f5}
+
+\item 
+int {\bfseries emax\-\_\-lay}\label{classMixture_a6b3a9df3567aebda0aa8ca2f553e021e}
+
+\item 
+float {\bfseries eabsorber}\label{classMixture_af35bc54f80aa148e41bfe610d8d91bcb}
+
+\item 
+float {\bfseries ecell\-\_\-size}\label{classMixture_a4eb6bcf5e95363459526cc53ef894bce}
+
+\item 
+float {\bfseries hr\-\_\-inner}\label{classMixture_ae13328b3a2c043be7b57d11d376d062e}
+
+\item 
+float {\bfseries hr\-\_\-outer}\label{classMixture_a9dfdb824bd9bf9c1115bbe3f8e498f4d}
+
+\item 
+float {\bfseries hz\-\_\-inner}\label{classMixture_ab7c3c4d05d02acd2b1668e67453f89be}
+
+\item 
+float {\bfseries hz\-\_\-outer}\label{classMixture_a7fe392f5e3d7e8d1f2e1df764a224209}
+
+\item 
+float {\bfseries hn\-\_\-sampl}\label{classMixture_a2e8b19148b1e7fef5569d7cf489f7886}
+
+\item 
+float {\bfseries hsampling}\label{classMixture_a5c99ddcbb2edbe612ffe5cc2d6e9c1cb}
+
+\item 
+int {\bfseries hmin\-\_\-lay}\label{classMixture_a3afe6986acf26f835428c40bb340ee72}
+
+\item 
+int {\bfseries hmax\-\_\-lay}\label{classMixture_a89efdf94eaa4875ce02912d2dcead8c8}
+
+\item 
+float {\bfseries habsorber}\label{classMixture_a11cbb2d621914a350630360c4b1e5180}
+
+\item 
+float {\bfseries hcell\-\_\-size}\label{classMixture_a59546d9c7d344d3724a5f68e114f3746}
+
+\item 
+int {\bfseries \-\_\-n\-Run}\label{classMixture_a936e0cd135c37e348e81ec199ccbe9a5}
+
+\item 
+int {\bfseries \-\_\-n\-Evt}\label{classMixture_a34621d40b93176a49cb3e0cbe4d573ab}
+
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+\doxyref{Mixture}{p.}{classMixture} processor reads a few files with C\-A\-L\-I\-C\-E data selected events and joint them by suming-\/up all of them into one artificial event to use it in any reconstruction program.
+
+\doxyref{Mixture}{p.}{classMixture} creates overlapped events from several especially prepared C\-A\-L\-I\-C\-E files
+
+Processor creates two Calorimeter hit collections\-: Mixture\-E\-C\-A\-L and Mixture\-H\-C\-A\-L
+
+List of input files should be restricted no more than 10 (0,1,2,3,4,5,6,7,8,9)
+
+\doxyref{Mixture}{p.}{classMixture} processor copies all additional collections into E\-C\-A\-L0,E\-C\-A\-L1, ...,H\-C\-A\-L0,H\-C\-A\-L1, ..., T\-C\-A\-L0,T\-C\-A\-L1, ..., P\-T\-R\-K0,P\-T\-R\-K1, ... to have all of them at the final stage of Analysis.
+
+First particle that is in main L\-C\-I\-O-\/file does not shifted; all additional particles that is in \-\_\-input\-File\-Names should have shifts of X and Y coordinates relatively to the first one. Vector \-\_\-\-X\-Y\-\_\-shifts
+
+\begin{DoxyVerb}                          |                                             
+                          |                                             
+                          |                                             
+                          |          First aditional particle in Mixture    
+                          |           (X1,Y1)                           
+                          |                                             
+       Second additional  |                                             
+                (X2,Y2)   |                                             
+       particle           |                                             
+                          |(0,0) X0,Y0 Zero particle in Mixture         
+\end{DoxyVerb}
+ -\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/---$|$-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/--- \begin{TabularC}{1}
+\hline
+\rowcolor{lightgray}{\bf }\\\cline{1-1}
+\\\cline{1-1}
+\end{TabularC}
+
+
+\begin{DoxyAuthor}{Author}
+V.\-L. Morgunov, I\-T\-E\-P 
+\end{DoxyAuthor}
+\begin{DoxyVersion}{Version}
+
+\end{DoxyVersion}
+\begin{DoxyParagraph}{Id\-:}
+Mixture.\-h,v 1.\-0 2009/04/02 20\-:22\-:50 morgunov Exp 
+\end{DoxyParagraph}
+
+
+
+\begin{DoxyParams}{Parameters}
+{\em Input\-File\-Names} & (String\-Vec) \\
+\hline
+\end{DoxyParams}
+
+
+\subsection{Member Data Documentation}
+\index{Mixture@{Mixture}!\-\_\-input\-File\-Names@{\-\_\-input\-File\-Names}}
+\index{\-\_\-input\-File\-Names@{\-\_\-input\-File\-Names}!Mixture@{Mixture}}
+\subsubsection[{\-\_\-input\-File\-Names}]{\setlength{\rightskip}{0pt plus 5cm}String\-Vec Mixture\-::\-\_\-input\-File\-Names\hspace{0.3cm}{\ttfamily [protected]}}\label{classMixture_ae40b0a91a75ffa96b02b40a22ba85e42}
+Input file names. \index{Mixture@{Mixture}!\-\_\-\-X\-Y\-\_\-shifts@{\-\_\-\-X\-Y\-\_\-shifts}}
+\index{\-\_\-\-X\-Y\-\_\-shifts@{\-\_\-\-X\-Y\-\_\-shifts}!Mixture@{Mixture}}
+\subsubsection[{\-\_\-\-X\-Y\-\_\-shifts}]{\setlength{\rightskip}{0pt plus 5cm}std\-::vector$<$float$>$ Mixture\-::\-\_\-\-X\-Y\-\_\-shifts\hspace{0.3cm}{\ttfamily [protected]}}\label{classMixture_aa06ac7a8d75875a275decf16928d9b85}
+Input coordinate shifts for that particles. 
+
+The documentation for this class was generated from the following files\-:\begin{DoxyCompactItemize}
+\item 
+/nfs/dust/ilc/user/marquezh/\-Calice\-Soft\-\_\-w\-\_\-\-I\-L\-C\-Soft\-\_\-v02-\/03-\/02/calice\-\_\-analysis/addon\-Procs/include/Mixture.\-hh\item 
+/nfs/dust/ilc/user/marquezh/\-Calice\-Soft\-\_\-w\-\_\-\-I\-L\-C\-Soft\-\_\-v02-\/03-\/02/calice\-\_\-analysis/addon\-Procs/src/Mixture.\-cc\end{DoxyCompactItemize}

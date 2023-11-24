@@ -1,0 +1,66 @@
+\section{Fe\-Stat\-List\-\_\-t$<$ T\-\_\-\-Stat\-Obj\-\_\-t $>$ Class Template Reference}
+\label{classFeStatList__t}\index{Fe\-Stat\-List\-\_\-t$<$ T\-\_\-\-Stat\-Obj\-\_\-t $>$@{Fe\-Stat\-List\-\_\-t$<$ T\-\_\-\-Stat\-Obj\-\_\-t $>$}}
+
+
+Template container which stores specific statistics objects per front-\/end.  
+
+
+
+
+{\ttfamily \#include $<$Fe\-Stat\-List\-\_\-t.\-hh$>$}
+
+Inheritance diagram for Fe\-Stat\-List\-\_\-t$<$ T\-\_\-\-Stat\-Obj\-\_\-t $>$\-:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classFeStatList__t}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+T\-\_\-\-Stat\-Obj\-\_\-t \& {\bf get\-Stat} (unsigned int board\-\_\-id)
+\begin{DoxyCompactList}\small\item\em Get a statistics object for the given front-\/end. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Detailed Description}
+\subsubsection*{template$<$class T\-\_\-\-Stat\-Obj\-\_\-t$>$class Fe\-Stat\-List\-\_\-t$<$ T\-\_\-\-Stat\-Obj\-\_\-t $>$}
+
+Template container which stores specific statistics objects per front-\/end. 
+
+The statistics can be printed 
+
+Definition at line 144 of file Fe\-Stat\-List\-\_\-t.\-hh.
+
+
+
+\subsection{Member Function Documentation}
+\index{Fe\-Stat\-List\-\_\-t@{Fe\-Stat\-List\-\_\-t}!get\-Stat@{get\-Stat}}
+\index{get\-Stat@{get\-Stat}!FeStatList_t@{Fe\-Stat\-List\-\_\-t}}
+\subsubsection[{get\-Stat}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class T\-\_\-\-Stat\-Obj\-\_\-t $>$ T\-\_\-\-Stat\-Obj\-\_\-t\& {\bf Fe\-Stat\-List\-\_\-t}$<$ T\-\_\-\-Stat\-Obj\-\_\-t $>$\-::get\-Stat (
+\begin{DoxyParamCaption}
+\item[{unsigned int}]{board\-\_\-id}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\label{classFeStatList__t_a5b29ca60859d52c5e2279f9636ac6b01}
+
+
+Get a statistics object for the given front-\/end. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em board\-\_\-id} & the id of the crate,slot and front-\/end. If no statistics object exists for the given front-\/end then a new object is created using the default constructor i.\-e. the objects T\-\_\-\-Stat\-Obj\-\_\-t must implement a default constructor. \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 153 of file Fe\-Stat\-List\-\_\-t.\-hh.
+
+
+
+References Fe\-Stat\-List\-Base\-\_\-t\-::get\-Stat().
+
+
+
+The documentation for this class was generated from the following file\-:\begin{DoxyCompactItemize}
+\item 
+Fe\-Stat\-List\-\_\-t.\-hh\end{DoxyCompactItemize}

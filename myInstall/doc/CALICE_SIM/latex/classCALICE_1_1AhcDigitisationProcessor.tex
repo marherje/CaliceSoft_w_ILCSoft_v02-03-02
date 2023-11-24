@@ -1,0 +1,341 @@
+\section{C\-A\-L\-I\-C\-E\-:\-:Ahc\-Digitisation\-Processor Class Reference}
+\label{classCALICE_1_1AhcDigitisationProcessor}\index{C\-A\-L\-I\-C\-E\-::\-Ahc\-Digitisation\-Processor@{C\-A\-L\-I\-C\-E\-::\-Ahc\-Digitisation\-Processor}}
+
+
+Class for doing the \doxyref{A\-H\-C\-A\-L}{p.}{namespaceCALICE_1_1AHCAL} digitisation.  
+
+
+
+
+{\ttfamily \#include $<$Ahc\-Digitisation\-Processor.\-hh$>$}
+
+Inheritance diagram for C\-A\-L\-I\-C\-E\-:\-:Ahc\-Digitisation\-Processor\-:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classCALICE_1_1AhcDigitisationProcessor}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+{\bf Ahc\-Digitisation\-Processor} (const std\-::string processor\-Name=\char`\"{}Ahc\-Digitisation\-Processor\char`\"{})\label{classCALICE_1_1AhcDigitisationProcessor_ac6d5d7399a3b6a27089e9dde461b2d5a}
+
+\begin{DoxyCompactList}\small\item\em Constructor. \end{DoxyCompactList}\item 
+virtual {\bf $\sim$\-Ahc\-Digitisation\-Processor} ()\label{classCALICE_1_1AhcDigitisationProcessor_a199927dbc65fcd321b131917dcfe260e}
+
+\begin{DoxyCompactList}\small\item\em Destructor. \end{DoxyCompactList}\item 
+{\bf Ahc\-Digitisation\-Processor} $\ast$ {\bfseries new\-Processor} ()\label{classCALICE_1_1AhcDigitisationProcessor_af899a14b8116b8784e83f6588e312665}
+
+\item 
+virtual void {\bf init} ()\label{classCALICE_1_1AhcDigitisationProcessor_a50f3bf333cdb63d658983d72b359ba83}
+
+\begin{DoxyCompactList}\small\item\em Initialise. \end{DoxyCompactList}\item 
+virtual void {\bf process\-Event} (lcio\-::\-L\-C\-Event $\ast$)\label{classCALICE_1_1AhcDigitisationProcessor_a0ebdc81c82c6c1a2b04ce517748d0b08}
+
+\begin{DoxyCompactList}\small\item\em Process event (the working horse) \end{DoxyCompactList}\item 
+virtual void {\bf end} ()\label{classCALICE_1_1AhcDigitisationProcessor_a36b498cc10f444ec3dc618481f52ab5b}
+
+\begin{DoxyCompactList}\small\item\em End of processing. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void {\bf fill\-Ganged\-Container} (L\-C\-Collection $\ast$input\-Col)
+\begin{DoxyCompactList}\small\item\em Fill a mapped container with the ganged \doxyref{A\-H\-C\-A\-L}{p.}{namespaceCALICE_1_1AHCAL} cells. \end{DoxyCompactList}\item 
+void {\bf simulate\-Optical\-Cross\-Talk} ()
+\begin{DoxyCompactList}\small\item\em Simulate the optical cross-\/talk (i.\-e. \end{DoxyCompactList}\item 
+void {\bf simulate\-Si\-P\-M\-Behaviour} ()\label{classCALICE_1_1AhcDigitisationProcessor_aa63b9bab2faf9b7dd8b46d131e60a91f}
+
+\begin{DoxyCompactList}\small\item\em Simulate the Si\-P\-M binomial behaviour. \end{DoxyCompactList}\item 
+void {\bf add\-Noise} (L\-C\-Collection $\ast$noise\-Col)
+\begin{DoxyCompactList}\small\item\em Add noise events from data. \end{DoxyCompactList}\item 
+void {\bf create\-Output\-Collection} (L\-C\-Event $\ast$evt)
+\begin{DoxyCompactList}\small\item\em Create output collection of digitised \doxyref{A\-H\-C\-A\-L}{p.}{namespaceCALICE_1_1AHCAL} hits. \end{DoxyCompactList}\item 
+void {\bf write\-Collection\-For\-Debug} (L\-C\-Event $\ast$evt, const std\-::string col\-Name)
+\begin{DoxyCompactList}\small\item\em Write collections after each step in digitisation, for debugging purposes. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+std\-::string {\bf \-\_\-input\-Col\-Name}\label{classCALICE_1_1AhcDigitisationProcessor_a72bda23d0bbb7f6d2a18e204b9a36463}
+
+\begin{DoxyCompactList}\small\item\em name of the input collection \end{DoxyCompactList}\item 
+std\-::string {\bf \-\_\-output\-Col\-Name}\label{classCALICE_1_1AhcDigitisationProcessor_ad3fe495aecfc6b5ad5d705bfede2edc5}
+
+\begin{DoxyCompactList}\small\item\em name of the output collection \end{DoxyCompactList}\item 
+std\-::string {\bf \-\_\-noise\-Col\-Name}\label{classCALICE_1_1AhcDigitisationProcessor_afcf557188248cfb03958d6a0ffbff1fd}
+
+\begin{DoxyCompactList}\small\item\em name of the \doxyref{A\-H\-C\-A\-L}{p.}{namespaceCALICE_1_1AHCAL} noise collection \end{DoxyCompactList}\item 
+std\-::string {\bf \-\_\-mapping\-Processor\-Name}\label{classCALICE_1_1AhcDigitisationProcessor_acaf77fc25248da21eb986295916d4bc3}
+
+\begin{DoxyCompactList}\small\item\em name of the mapping processor name \end{DoxyCompactList}\item 
+std\-::string {\bf \-\_\-cell\-Neighbours\-Processor\-Name}\label{classCALICE_1_1AhcDigitisationProcessor_ac7a70be0c607cf7f42a49c21682c35e2}
+
+\begin{DoxyCompactList}\small\item\em name of the processor which provides the cells neighbours \end{DoxyCompactList}\item 
+std\-::string {\bf \-\_\-cell\-Description\-Processor\-Name}\label{classCALICE_1_1AhcDigitisationProcessor_adb82414851fca1623d2819bd063450f9}
+
+\begin{DoxyCompactList}\small\item\em name of the processor which provides the cells description \end{DoxyCompactList}\item 
+std\-::string {\bf \-\_\-calib\-Processor\-Name}\label{classCALICE_1_1AhcDigitisationProcessor_a45bc5cc91c44e99857db273a32d4c27b}
+
+\begin{DoxyCompactList}\small\item\em name of the processor which provides the Si\-P\-M calibrations \end{DoxyCompactList}\item 
+std\-::string {\bf \-\_\-temperature\-Processor\-Name}\label{classCALICE_1_1AhcDigitisationProcessor_afd9832a3066c9a63d566214b7c3a3270}
+
+\begin{DoxyCompactList}\small\item\em name of the processor which provides the cell temperature \end{DoxyCompactList}\item 
+std\-::string {\bf \-\_\-sim\-Rec\-Relation\-Col\-Name}\label{classCALICE_1_1AhcDigitisationProcessor_a38db427f6421c7645321343a36ed2a31}
+
+\begin{DoxyCompactList}\small\item\em name of the relation between Mokka Sim\-Calorimeter\-Hits and reconstructed Calorimeter\-Hits \end{DoxyCompactList}\item 
+Mapped\-Container\\*
+$<$ C\-A\-L\-I\-C\-E\-::\-Cell\-Description $>$ $\ast$ {\bf \-\_\-cell\-Descriptions}\label{classCALICE_1_1AhcDigitisationProcessor_a7e32e9a109e5cb073c42f47007b7c053}
+
+\begin{DoxyCompactList}\small\item\em mapped container of cells description \end{DoxyCompactList}\item 
+Mapped\-Container\\*
+$<$ C\-A\-L\-I\-C\-E\-::\-Cell\-Neighbours $>$ $\ast$ {\bf \-\_\-cell\-Neighbours}\label{classCALICE_1_1AhcDigitisationProcessor_ab93720861f27ca6f83817c0d3f211445}
+
+\begin{DoxyCompactList}\small\item\em mapped container of cells neighbours \end{DoxyCompactList}\item 
+Mapped\-Container\\*
+$<$ Si\-P\-M\-Calibrations $>$ $\ast$ {\bf \-\_\-calib\-Container}\label{classCALICE_1_1AhcDigitisationProcessor_ab7f981a098e38f9b59c88f0ba33397c9}
+
+\begin{DoxyCompactList}\small\item\em mapped container of Si\-P\-M calibrations \end{DoxyCompactList}\item 
+Mapped\-Container\\*
+$<$ Calorimeter\-Hit\-Impl $>$ $\ast$ {\bf \-\_\-ganged\-Container}\label{classCALICE_1_1AhcDigitisationProcessor_a3b76cd6f9f5aba3fbe3f60ddb6dc1bb6}
+
+\begin{DoxyCompactList}\small\item\em mapped container of ganged \doxyref{A\-H\-C\-A\-L}{p.}{namespaceCALICE_1_1AHCAL} cells \end{DoxyCompactList}\item 
+float {\bf \-\_\-mip\-Per\-Ge\-V\-Factor}\label{classCALICE_1_1AhcDigitisationProcessor_a6ef245fe28f55767632ff05e77d9a829}
+
+\begin{DoxyCompactList}\small\item\em the M\-I\-P to Ge\-V factor (determined with muon events in Monte Carlo) \end{DoxyCompactList}\item 
+float {\bf \-\_\-light\-Leakage}\label{classCALICE_1_1AhcDigitisationProcessor_a1e9e0d0528dc47d7c9c19ac6586a71ea}
+
+\begin{DoxyCompactList}\small\item\em light leakage factor \end{DoxyCompactList}\item 
+bool {\bf \-\_\-create\-Sim\-Rec\-Relation}\label{classCALICE_1_1AhcDigitisationProcessor_a6c916929baa666c12298e317817084e4}
+
+\begin{DoxyCompactList}\small\item\em flag to disable/enable the creation of an L\-C\-Relation between the Mokka Sim\-Calorimeter\-Hits and the reconstructed Calorimeter\-Hits \end{DoxyCompactList}\item 
+bool {\bf \-\_\-do\-Binomial\-Smearing}\label{classCALICE_1_1AhcDigitisationProcessor_a30ba04dfeb3747c4f71f958f245a13bc}
+
+\begin{DoxyCompactList}\small\item\em flag to disable/enable binomial smearing \end{DoxyCompactList}\item 
+bool {\bf \-\_\-do\-Saturation}\label{classCALICE_1_1AhcDigitisationProcessor_aa916607376cccbd85fbfb26eb13c3bb7}
+
+\begin{DoxyCompactList}\small\item\em flag to disable/enable Si\-P\-M saturation behaver to ture M\-C \end{DoxyCompactList}\item 
+bool {\bf \-\_\-do\-Optical\-Cross\-Talk}\label{classCALICE_1_1AhcDigitisationProcessor_a075b820df994ae1c8821ed645bb66e75}
+
+\begin{DoxyCompactList}\small\item\em flag to disable/enable optical cross talk among neighbour tiles \end{DoxyCompactList}\item 
+bool {\bf \-\_\-do\-Add\-Noise}\label{classCALICE_1_1AhcDigitisationProcessor_a26d22b77b485d343f29f3a98cc9f1534}
+
+\begin{DoxyCompactList}\small\item\em flag to disable/enable adding detector noise \end{DoxyCompactList}\item 
+bool {\bf \-\_\-do\-Write\-Collection\-For\-Debug}\label{classCALICE_1_1AhcDigitisationProcessor_afe79a2e72054025e9c239da37fe53ea4}
+
+\begin{DoxyCompactList}\small\item\em flag to disable/enable the writing of collections after each step in digitisation, for debugging \end{DoxyCompactList}\item 
+bool {\bfseries \-\_\-do\-Mip\-Temp\-Corr}\label{classCALICE_1_1AhcDigitisationProcessor_afa09643e559a7a297525ad6541ec355c}
+
+\item 
+bool {\bfseries \-\_\-do\-Gain\-Temp\-Corr}\label{classCALICE_1_1AhcDigitisationProcessor_a61e0a30e65097cb54e665eadfa03c1e7}
+
+\item 
+const Mapper $\ast$ {\bf \-\_\-mapper}\label{classCALICE_1_1AhcDigitisationProcessor_acdb431b7145ac67ce614b16515f68962}
+
+\begin{DoxyCompactList}\small\item\em pointer to the used mapped \end{DoxyCompactList}\item 
+unsigned int {\bf \-\_\-mapper\-Version}\label{classCALICE_1_1AhcDigitisationProcessor_a601169fba8b997ddfe9c0fbc6350ceaf}
+
+\begin{DoxyCompactList}\small\item\em mapper version \end{DoxyCompactList}\item 
+bool {\bfseries \-\_\-correct\-Default\-Gain\-To\-L\-Y}\label{classCALICE_1_1AhcDigitisationProcessor_a61b4bcfff3e4655a52f06b959cf475f7}
+
+\item 
+float {\bfseries \-\_\-fixed\-L\-Y}\label{classCALICE_1_1AhcDigitisationProcessor_ae4400a9e07b000f1f68336d17b704de9}
+
+\item 
+T\-Random3 $\ast$ {\bf \-\_\-random\-Generator}\label{classCALICE_1_1AhcDigitisationProcessor_a768c421df0cce682c8f145a8b5ca6659}
+
+\begin{DoxyCompactList}\small\item\em pointer to R\-O\-O\-Ts random generator for pixel statistics \end{DoxyCompactList}\item 
+int {\bf \-\_\-random\-Seed}
+\begin{DoxyCompactList}\small\item\em random seed for the random generator. \end{DoxyCompactList}\item 
+std\-::string {\bf \-\_\-mokka\-Encoding\-String}\label{classCALICE_1_1AhcDigitisationProcessor_a831dc9819703c4ab138e232856b4d06c}
+
+\begin{DoxyCompactList}\small\item\em the Mokka encoding string \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Static Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+static const unsigned int {\bf M\-A\-X\-A\-D\-C} = 31768\label{classCALICE_1_1AhcDigitisationProcessor_a34e064b2439ad95265f45971621dd75a}
+
+\begin{DoxyCompactList}\small\item\em conservative maximum number of A\-D\-C channels the hardware provides, 32768 -\/ 1000 (average pedestal) \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Class for doing the \doxyref{A\-H\-C\-A\-L}{p.}{namespaceCALICE_1_1AHCAL} digitisation. 
+
+For more details, have a look here\-: {\tt http\-://www-\/flc.\-desy.\-de/hcal/documents/2008/diplom.\-2008.\-richter.\-pdf}
+
+\begin{DoxyAuthor}{Author}
+{\tt lucaci@mail.\-desy.\-de} 
+\end{DoxyAuthor}
+\begin{DoxyVersion}{Version}
+1.\-0 
+\end{DoxyVersion}
+\begin{DoxyDate}{Date}
+April 2010 
+\end{DoxyDate}
+
+
+Definition at line 30 of file Ahc\-Digitisation\-Processor.\-hh.
+
+
+
+\subsection{Member Function Documentation}
+\index{C\-A\-L\-I\-C\-E\-::\-Ahc\-Digitisation\-Processor@{C\-A\-L\-I\-C\-E\-::\-Ahc\-Digitisation\-Processor}!add\-Noise@{add\-Noise}}
+\index{add\-Noise@{add\-Noise}!CALICE::AhcDigitisationProcessor@{C\-A\-L\-I\-C\-E\-::\-Ahc\-Digitisation\-Processor}}
+\subsubsection[{add\-Noise}]{\setlength{\rightskip}{0pt plus 5cm}void C\-A\-L\-I\-C\-E\-::\-Ahc\-Digitisation\-Processor\-::add\-Noise (
+\begin{DoxyParamCaption}
+\item[{L\-C\-Collection $\ast$}]{noise\-Col}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}}\label{classCALICE_1_1AhcDigitisationProcessor_a2b8791a0e9f1abb9307ab4595fdd57ca}
+
+
+Add noise events from data. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em noise\-Col} & the noise collection \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 676 of file Ahc\-Digitisation\-Processor.\-cc.
+
+
+
+References \-\_\-do\-Add\-Noise, \-\_\-do\-Saturation, \-\_\-ganged\-Container, \-\_\-mokka\-Encoding\-String, and M\-A\-X\-A\-D\-C.
+
+
+
+Referenced by process\-Event().
+
+\index{C\-A\-L\-I\-C\-E\-::\-Ahc\-Digitisation\-Processor@{C\-A\-L\-I\-C\-E\-::\-Ahc\-Digitisation\-Processor}!create\-Output\-Collection@{create\-Output\-Collection}}
+\index{create\-Output\-Collection@{create\-Output\-Collection}!CALICE::AhcDigitisationProcessor@{C\-A\-L\-I\-C\-E\-::\-Ahc\-Digitisation\-Processor}}
+\subsubsection[{create\-Output\-Collection}]{\setlength{\rightskip}{0pt plus 5cm}void C\-A\-L\-I\-C\-E\-::\-Ahc\-Digitisation\-Processor\-::create\-Output\-Collection (
+\begin{DoxyParamCaption}
+\item[{L\-C\-Event $\ast$}]{evt}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}}\label{classCALICE_1_1AhcDigitisationProcessor_a2a61ddaf010ad7cba91246bbcb817063}
+
+
+Create output collection of digitised \doxyref{A\-H\-C\-A\-L}{p.}{namespaceCALICE_1_1AHCAL} hits. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em evt} & L\-C\-Event to which the collection will be added \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 744 of file Ahc\-Digitisation\-Processor.\-cc.
+
+
+
+References \-\_\-ganged\-Container, \-\_\-mokka\-Encoding\-String, and \-\_\-output\-Col\-Name.
+
+
+
+Referenced by process\-Event().
+
+\index{C\-A\-L\-I\-C\-E\-::\-Ahc\-Digitisation\-Processor@{C\-A\-L\-I\-C\-E\-::\-Ahc\-Digitisation\-Processor}!fill\-Ganged\-Container@{fill\-Ganged\-Container}}
+\index{fill\-Ganged\-Container@{fill\-Ganged\-Container}!CALICE::AhcDigitisationProcessor@{C\-A\-L\-I\-C\-E\-::\-Ahc\-Digitisation\-Processor}}
+\subsubsection[{fill\-Ganged\-Container}]{\setlength{\rightskip}{0pt plus 5cm}void C\-A\-L\-I\-C\-E\-::\-Ahc\-Digitisation\-Processor\-::fill\-Ganged\-Container (
+\begin{DoxyParamCaption}
+\item[{L\-C\-Collection $\ast$}]{input\-Col}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}}\label{classCALICE_1_1AhcDigitisationProcessor_a1f11528ab52b6152a1526937e24ab2b3}
+
+
+Fill a mapped container with the ganged \doxyref{A\-H\-C\-A\-L}{p.}{namespaceCALICE_1_1AHCAL} cells. 
+
+By default, Mokka creates 10x10 mm$^\wedge$2 cells. During ganging (i.\-e. grouping), the Mokka cells are grouped into 30x30 mm$^\wedge$2, 60x60 mm$^\wedge$2 and 120x120 mm$^\wedge$2 cells 
+\begin{DoxyParams}{Parameters}
+{\em input\-Col} & the input collection, with the \doxyref{A\-H\-C\-A\-L}{p.}{namespaceCALICE_1_1AHCAL} Mokka hits \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 290 of file Ahc\-Digitisation\-Processor.\-cc.
+
+
+
+References \-\_\-ganged\-Container, \-\_\-mapper, \-\_\-mip\-Per\-Ge\-V\-Factor, and \-\_\-mokka\-Encoding\-String.
+
+
+
+Referenced by process\-Event().
+
+\index{C\-A\-L\-I\-C\-E\-::\-Ahc\-Digitisation\-Processor@{C\-A\-L\-I\-C\-E\-::\-Ahc\-Digitisation\-Processor}!simulate\-Optical\-Cross\-Talk@{simulate\-Optical\-Cross\-Talk}}
+\index{simulate\-Optical\-Cross\-Talk@{simulate\-Optical\-Cross\-Talk}!CALICE::AhcDigitisationProcessor@{C\-A\-L\-I\-C\-E\-::\-Ahc\-Digitisation\-Processor}}
+\subsubsection[{simulate\-Optical\-Cross\-Talk}]{\setlength{\rightskip}{0pt plus 5cm}void C\-A\-L\-I\-C\-E\-::\-Ahc\-Digitisation\-Processor\-::simulate\-Optical\-Cross\-Talk (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}}\label{classCALICE_1_1AhcDigitisationProcessor_abb6aeaac9f722631e32656a59a32b4ab}
+
+
+Simulate the optical cross-\/talk (i.\-e. 
+
+light leakage) between the tiles 
+
+Definition at line 329 of file Ahc\-Digitisation\-Processor.\-cc.
+
+
+
+References \-\_\-cell\-Descriptions, \-\_\-cell\-Neighbours, \-\_\-cell\-Neighbours\-Processor\-Name, \-\_\-ganged\-Container, \-\_\-light\-Leakage, and \-\_\-mokka\-Encoding\-String.
+
+
+
+Referenced by process\-Event().
+
+\index{C\-A\-L\-I\-C\-E\-::\-Ahc\-Digitisation\-Processor@{C\-A\-L\-I\-C\-E\-::\-Ahc\-Digitisation\-Processor}!write\-Collection\-For\-Debug@{write\-Collection\-For\-Debug}}
+\index{write\-Collection\-For\-Debug@{write\-Collection\-For\-Debug}!CALICE::AhcDigitisationProcessor@{C\-A\-L\-I\-C\-E\-::\-Ahc\-Digitisation\-Processor}}
+\subsubsection[{write\-Collection\-For\-Debug}]{\setlength{\rightskip}{0pt plus 5cm}void C\-A\-L\-I\-C\-E\-::\-Ahc\-Digitisation\-Processor\-::write\-Collection\-For\-Debug (
+\begin{DoxyParamCaption}
+\item[{L\-C\-Event $\ast$}]{evt, }
+\item[{const std\-::string}]{col\-Name}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}}\label{classCALICE_1_1AhcDigitisationProcessor_af7f0890bc1d7d7277b364931b83177b5}
+
+
+Write collections after each step in digitisation, for debugging purposes. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em evt} & L\-C\-Event to which the collection will be added \\
+\hline
+{\em col\-Name} & name of the collection to be written \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 785 of file Ahc\-Digitisation\-Processor.\-cc.
+
+
+
+References \-\_\-ganged\-Container, and \-\_\-mokka\-Encoding\-String.
+
+
+
+Referenced by process\-Event().
+
+
+
+\subsection{Field Documentation}
+\index{C\-A\-L\-I\-C\-E\-::\-Ahc\-Digitisation\-Processor@{C\-A\-L\-I\-C\-E\-::\-Ahc\-Digitisation\-Processor}!\-\_\-random\-Seed@{\-\_\-random\-Seed}}
+\index{\-\_\-random\-Seed@{\-\_\-random\-Seed}!CALICE::AhcDigitisationProcessor@{C\-A\-L\-I\-C\-E\-::\-Ahc\-Digitisation\-Processor}}
+\subsubsection[{\-\_\-random\-Seed}]{\setlength{\rightskip}{0pt plus 5cm}int C\-A\-L\-I\-C\-E\-::\-Ahc\-Digitisation\-Processor\-::\-\_\-random\-Seed\hspace{0.3cm}{\ttfamily [private]}}\label{classCALICE_1_1AhcDigitisationProcessor_a2d175f5694eef8ad4d7179f26a48958f}
+
+
+random seed for the random generator. 
+
+Steerable. 
+
+Definition at line 127 of file Ahc\-Digitisation\-Processor.\-hh.
+
+
+
+Referenced by Ahc\-Digitisation\-Processor(), and init().
+
+
+
+The documentation for this class was generated from the following files\-:\begin{DoxyCompactItemize}
+\item 
+Ahc\-Digitisation\-Processor.\-hh\item 
+Ahc\-Digitisation\-Processor.\-cc\end{DoxyCompactItemize}

@@ -1,0 +1,231 @@
+\section{C\-A\-L\-I\-C\-E\-:\-:Mip\-Select Class Reference}
+\label{classCALICE_1_1MipSelect}\index{C\-A\-L\-I\-C\-E\-::\-Mip\-Select@{C\-A\-L\-I\-C\-E\-::\-Mip\-Select}}
+
+
+Simple class to try to select hits resulting from one mip.  
+
+
+
+
+{\ttfamily \#include $<$Mip\-Select.\-hh$>$}
+
+Inheritance diagram for C\-A\-L\-I\-C\-E\-:\-:Mip\-Select\-:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classCALICE_1_1MipSelect}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+Processor $\ast$ {\bfseries new\-Processor} ()\label{classCALICE_1_1MipSelect_a0f4980cc56e6302a351f1029f1259655}
+
+\item 
+{\bf Mip\-Select} ()
+\begin{DoxyCompactList}\small\item\em Select Mips . \end{DoxyCompactList}\item 
+void {\bf init} ()
+\begin{DoxyCompactList}\small\item\em Called at the begin of the job before anything is read. \end{DoxyCompactList}\item 
+void {\bf process\-Run\-Header} (L\-C\-Run\-Header $\ast$run)
+\begin{DoxyCompactList}\small\item\em Called for every run, e.\-g. \end{DoxyCompactList}\item 
+void {\bf process\-Event} (L\-C\-Event $\ast$evt\-P)\label{classCALICE_1_1MipSelect_a4fda653147df06d659939dfe36aceb34}
+
+\begin{DoxyCompactList}\small\item\em Called for every event -\/ the working horse. \end{DoxyCompactList}\item 
+void {\bfseries end} ()\label{classCALICE_1_1MipSelect_aa1e14b5e9e444acae637f2cbcc0511e0}
+
+\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+Int\-Vec {\bf \-\_\-n\-Hits}
+\begin{DoxyCompactList}\small\item\em minimum and maximum required number of hits for a cluster (Marlin processor parameter). \end{DoxyCompactList}\item 
+Float\-\_\-t {\bf \-\_\-max\-Dist}
+\begin{DoxyCompactList}\small\item\em the maximum distance between hits considered to be close (Marlin processor parameter). \end{DoxyCompactList}\item 
+Float\-Vec {\bf \-\_\-cluster\-Energy}
+\begin{DoxyCompactList}\small\item\em minimum and maximum required cluster energy (Marlin processor parameter). \end{DoxyCompactList}\item 
+Float\-\_\-t {\bf \-\_\-max\-Chi2}
+\begin{DoxyCompactList}\small\item\em minimum required chi2 of the x and y straight line fits (Marlin processor parameter). \end{DoxyCompactList}\item 
+Float\-\_\-t {\bf \-\_\-w0}
+\begin{DoxyCompactList}\small\item\em Cut parameter which defines the energy threshold of hits considered in the centre-\/of-\/gravity determination (Marlin processor parameter). \end{DoxyCompactList}\item 
+Float\-Vec {\bf \-\_\-pos\-Error}
+\begin{DoxyCompactList}\small\item\em Error assigned to the cluster barycentre (marlin processor parameter). \end{DoxyCompactList}\item 
+std\-::string {\bf \-\_\-col\-Name}\label{classCALICE_1_1MipSelect_ac9ae37843e4f13fdb0339917b36e3bb9}
+
+\begin{DoxyCompactList}\small\item\em name of the hit input collection (Marlin processor parameter) \end{DoxyCompactList}\item 
+std\-::string {\bf \-\_\-cluster\-Col\-Name}\label{classCALICE_1_1MipSelect_ad9094c81faee001d8cb848cbd0da5ac4}
+
+\begin{DoxyCompactList}\small\item\em name of the cluster output collection (Marlin processor parameter) \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+std\-::vector$<$ U\-Int\-\_\-t $>$ {\bf \-\_\-isolated\-Hits}\label{classCALICE_1_1MipSelect_a9e44a652e454927b32108da491368eec}
+
+\begin{DoxyCompactList}\small\item\em temporary buffer \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Simple class to try to select hits resulting from one mip. 
+
+This processor tries to find hits in the chosen hit collection which are close together. If the number adjacent hits is large enough a cluster is created. \begin{DoxyRefDesc}{Todo}
+\item[{\bf Todo}]\-: add shower shape criterium, maximum number of tolerated hits \end{DoxyRefDesc}
+
+
+Definition at line 28 of file Mip\-Select.\-hh.
+
+
+
+\subsection{Constructor \& Destructor Documentation}
+\index{C\-A\-L\-I\-C\-E\-::\-Mip\-Select@{C\-A\-L\-I\-C\-E\-::\-Mip\-Select}!Mip\-Select@{Mip\-Select}}
+\index{Mip\-Select@{Mip\-Select}!CALICE::MipSelect@{C\-A\-L\-I\-C\-E\-::\-Mip\-Select}}
+\subsubsection[{Mip\-Select}]{\setlength{\rightskip}{0pt plus 5cm}C\-A\-L\-I\-C\-E\-::\-Mip\-Select\-::\-Mip\-Select (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{classCALICE_1_1MipSelect_a187a4421470be1e416ad1aaffabdab45}
+
+
+Select Mips . 
+
+Mip tracks are search within the calorimeter hits. Developped for cosmics. 
+
+Definition at line 42 of file Mip\-Select.\-cc.
+
+
+
+References \-\_\-cluster\-Col\-Name, \-\_\-cluster\-Energy, \-\_\-col\-Name, \-\_\-max\-Chi2, \-\_\-max\-Dist, \-\_\-n\-Hits, \-\_\-pos\-Error, and \-\_\-w0.
+
+
+
+\subsection{Member Function Documentation}
+\index{C\-A\-L\-I\-C\-E\-::\-Mip\-Select@{C\-A\-L\-I\-C\-E\-::\-Mip\-Select}!init@{init}}
+\index{init@{init}!CALICE::MipSelect@{C\-A\-L\-I\-C\-E\-::\-Mip\-Select}}
+\subsubsection[{init}]{\setlength{\rightskip}{0pt plus 5cm}void C\-A\-L\-I\-C\-E\-::\-Mip\-Select\-::init (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{classCALICE_1_1MipSelect_a6e9d97e8a6a621de6803dac121a9662b}
+
+
+Called at the begin of the job before anything is read. 
+
+Use to initialize the processor, e.\-g. book histograms. 
+
+Definition at line 176 of file Mip\-Select.\-cc.
+
+
+
+References \-\_\-cluster\-Energy, and \-\_\-n\-Hits.
+
+\index{C\-A\-L\-I\-C\-E\-::\-Mip\-Select@{C\-A\-L\-I\-C\-E\-::\-Mip\-Select}!process\-Run\-Header@{process\-Run\-Header}}
+\index{process\-Run\-Header@{process\-Run\-Header}!CALICE::MipSelect@{C\-A\-L\-I\-C\-E\-::\-Mip\-Select}}
+\subsubsection[{process\-Run\-Header}]{\setlength{\rightskip}{0pt plus 5cm}void C\-A\-L\-I\-C\-E\-::\-Mip\-Select\-::process\-Run\-Header (
+\begin{DoxyParamCaption}
+\item[{L\-C\-Run\-Header $\ast$}]{run}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\label{classCALICE_1_1MipSelect_af4ddc35f44aa0c65145e592fba7abb64}
+
+
+Called for every run, e.\-g. 
+
+overwrite to initialize run dependent histograms. 
+
+Definition at line 46 of file Mip\-Select.\-hh.
+
+
+
+\subsection{Field Documentation}
+\index{C\-A\-L\-I\-C\-E\-::\-Mip\-Select@{C\-A\-L\-I\-C\-E\-::\-Mip\-Select}!\-\_\-cluster\-Energy@{\-\_\-cluster\-Energy}}
+\index{\-\_\-cluster\-Energy@{\-\_\-cluster\-Energy}!CALICE::MipSelect@{C\-A\-L\-I\-C\-E\-::\-Mip\-Select}}
+\subsubsection[{\-\_\-cluster\-Energy}]{\setlength{\rightskip}{0pt plus 5cm}Float\-Vec C\-A\-L\-I\-C\-E\-::\-Mip\-Select\-::\-\_\-cluster\-Energy\hspace{0.3cm}{\ttfamily [protected]}}\label{classCALICE_1_1MipSelect_a4724ccf37d271a114791a2d0d5575cb9}
+
+
+minimum and maximum required cluster energy (Marlin processor parameter). 
+
+
+
+Definition at line 57 of file Mip\-Select.\-hh.
+
+
+
+Referenced by init(), Mip\-Select(), and process\-Event().
+
+\index{C\-A\-L\-I\-C\-E\-::\-Mip\-Select@{C\-A\-L\-I\-C\-E\-::\-Mip\-Select}!\-\_\-max\-Chi2@{\-\_\-max\-Chi2}}
+\index{\-\_\-max\-Chi2@{\-\_\-max\-Chi2}!CALICE::MipSelect@{C\-A\-L\-I\-C\-E\-::\-Mip\-Select}}
+\subsubsection[{\-\_\-max\-Chi2}]{\setlength{\rightskip}{0pt plus 5cm}Float\-\_\-t C\-A\-L\-I\-C\-E\-::\-Mip\-Select\-::\-\_\-max\-Chi2\hspace{0.3cm}{\ttfamily [protected]}}\label{classCALICE_1_1MipSelect_a9ad0ff3988f10698ba6398158fdba7d3}
+
+
+minimum required chi2 of the x and y straight line fits (Marlin processor parameter). 
+
+
+
+Definition at line 58 of file Mip\-Select.\-hh.
+
+
+
+Referenced by Mip\-Select(), and process\-Event().
+
+\index{C\-A\-L\-I\-C\-E\-::\-Mip\-Select@{C\-A\-L\-I\-C\-E\-::\-Mip\-Select}!\-\_\-max\-Dist@{\-\_\-max\-Dist}}
+\index{\-\_\-max\-Dist@{\-\_\-max\-Dist}!CALICE::MipSelect@{C\-A\-L\-I\-C\-E\-::\-Mip\-Select}}
+\subsubsection[{\-\_\-max\-Dist}]{\setlength{\rightskip}{0pt plus 5cm}Float\-\_\-t C\-A\-L\-I\-C\-E\-::\-Mip\-Select\-::\-\_\-max\-Dist\hspace{0.3cm}{\ttfamily [protected]}}\label{classCALICE_1_1MipSelect_af5b5c0952ac42edf3e33ccc3354ce999}
+
+
+the maximum distance between hits considered to be close (Marlin processor parameter). 
+
+
+
+Definition at line 56 of file Mip\-Select.\-hh.
+
+
+
+Referenced by Mip\-Select(), and process\-Event().
+
+\index{C\-A\-L\-I\-C\-E\-::\-Mip\-Select@{C\-A\-L\-I\-C\-E\-::\-Mip\-Select}!\-\_\-n\-Hits@{\-\_\-n\-Hits}}
+\index{\-\_\-n\-Hits@{\-\_\-n\-Hits}!CALICE::MipSelect@{C\-A\-L\-I\-C\-E\-::\-Mip\-Select}}
+\subsubsection[{\-\_\-n\-Hits}]{\setlength{\rightskip}{0pt plus 5cm}Int\-Vec C\-A\-L\-I\-C\-E\-::\-Mip\-Select\-::\-\_\-n\-Hits\hspace{0.3cm}{\ttfamily [protected]}}\label{classCALICE_1_1MipSelect_a9942825c9ee70c394f78dde00c43c8ef}
+
+
+minimum and maximum required number of hits for a cluster (Marlin processor parameter). 
+
+
+
+Definition at line 55 of file Mip\-Select.\-hh.
+
+
+
+Referenced by init(), Mip\-Select(), and process\-Event().
+
+\index{C\-A\-L\-I\-C\-E\-::\-Mip\-Select@{C\-A\-L\-I\-C\-E\-::\-Mip\-Select}!\-\_\-pos\-Error@{\-\_\-pos\-Error}}
+\index{\-\_\-pos\-Error@{\-\_\-pos\-Error}!CALICE::MipSelect@{C\-A\-L\-I\-C\-E\-::\-Mip\-Select}}
+\subsubsection[{\-\_\-pos\-Error}]{\setlength{\rightskip}{0pt plus 5cm}Float\-Vec C\-A\-L\-I\-C\-E\-::\-Mip\-Select\-::\-\_\-pos\-Error\hspace{0.3cm}{\ttfamily [protected]}}\label{classCALICE_1_1MipSelect_a47f1821c1518e00d403d026c5b1eb848}
+
+
+Error assigned to the cluster barycentre (marlin processor parameter). 
+
+
+
+Definition at line 62 of file Mip\-Select.\-hh.
+
+
+
+Referenced by Mip\-Select(), and process\-Event().
+
+\index{C\-A\-L\-I\-C\-E\-::\-Mip\-Select@{C\-A\-L\-I\-C\-E\-::\-Mip\-Select}!\-\_\-w0@{\-\_\-w0}}
+\index{\-\_\-w0@{\-\_\-w0}!CALICE::MipSelect@{C\-A\-L\-I\-C\-E\-::\-Mip\-Select}}
+\subsubsection[{\-\_\-w0}]{\setlength{\rightskip}{0pt plus 5cm}Float\-\_\-t C\-A\-L\-I\-C\-E\-::\-Mip\-Select\-::\-\_\-w0\hspace{0.3cm}{\ttfamily [protected]}}\label{classCALICE_1_1MipSelect_ae601de1184f473e69224607d827436a3}
+
+
+Cut parameter which defines the energy threshold of hits considered in the centre-\/of-\/gravity determination (Marlin processor parameter). 
+
+
+
+Definition at line 59 of file Mip\-Select.\-hh.
+
+
+
+Referenced by Mip\-Select(), and process\-Event().
+
+
+
+The documentation for this class was generated from the following files\-:\begin{DoxyCompactItemize}
+\item 
+Mip\-Select.\-hh\item 
+Mip\-Select.\-cc\end{DoxyCompactItemize}

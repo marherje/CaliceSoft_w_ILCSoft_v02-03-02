@@ -1,0 +1,135 @@
+\section{C\-A\-L\-I\-C\-E\-:\-:Cell\-Neighbour\-Calculator Class Reference}
+\label{classCALICE_1_1CellNeighbourCalculator}\index{C\-A\-L\-I\-C\-E\-::\-Cell\-Neighbour\-Calculator@{C\-A\-L\-I\-C\-E\-::\-Cell\-Neighbour\-Calculator}}
+
+
+class to calculate all neighbour cells  
+
+
+
+
+{\ttfamily \#include $<$Cell\-Neighbour\-Calculator.\-hh$>$}
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+{\bf Cell\-Neighbour\-Calculator} (const {\bf Mapper} $\ast$mapper)
+\begin{DoxyCompactList}\small\item\em constructor \end{DoxyCompactList}\item 
+lcio\-::\-L\-C\-Collection $\ast$ {\bf get\-Neighbours} () const 
+\begin{DoxyCompactList}\small\item\em get cell neighbours for all valid cells \end{DoxyCompactList}\item 
+void {\bf get\-Neighbours} ({\bf Mapped\-Container}$<$ {\bf Cell\-Neighbours} $>$ $\ast$container) const 
+\begin{DoxyCompactList}\small\item\em get cell neighbours for all valid cells \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void {\bfseries check\-For\-Cell} (const unsigned int i, const unsigned int j, const unsigned int k, std\-::set$<$ int $>$ \&cell\-I\-Dset) const \label{classCALICE_1_1CellNeighbourCalculator_af07fc90a40e8baaf67fac09d53ee2988}
+
+\item 
+{\bf Cell\-Neighbours} $\ast$ {\bfseries get\-Neighbours} (const int cell\-I\-D) const \label{classCALICE_1_1CellNeighbourCalculator_a687feccba274d8aa4ab40b2c37bf4261}
+
+\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+const {\bf Mapper} $\ast$ {\bfseries \-\_\-mapper}\label{classCALICE_1_1CellNeighbourCalculator_a73c7934a2879e61cf0946e5539067181}
+
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+class to calculate all neighbour cells 
+
+\begin{DoxyAuthor}{Author}
+{\tt Benjamin.\-Lutz@desy.\-de} 
+\end{DoxyAuthor}
+\begin{DoxyVersion}{Version}
+0.\-1 
+\end{DoxyVersion}
+\begin{DoxyDate}{Date}
+June 2009 
+\end{DoxyDate}
+
+
+Definition at line 22 of file Cell\-Neighbour\-Calculator.\-hh.
+
+
+
+\subsection{Constructor \& Destructor Documentation}
+\index{C\-A\-L\-I\-C\-E\-::\-Cell\-Neighbour\-Calculator@{C\-A\-L\-I\-C\-E\-::\-Cell\-Neighbour\-Calculator}!Cell\-Neighbour\-Calculator@{Cell\-Neighbour\-Calculator}}
+\index{Cell\-Neighbour\-Calculator@{Cell\-Neighbour\-Calculator}!CALICE::CellNeighbourCalculator@{C\-A\-L\-I\-C\-E\-::\-Cell\-Neighbour\-Calculator}}
+\subsubsection[{Cell\-Neighbour\-Calculator}]{\setlength{\rightskip}{0pt plus 5cm}C\-A\-L\-I\-C\-E\-::\-Cell\-Neighbour\-Calculator\-::\-Cell\-Neighbour\-Calculator (
+\begin{DoxyParamCaption}
+\item[{const {\bf Mapper} $\ast$}]{mapper}
+\end{DoxyParamCaption}
+)}\label{classCALICE_1_1CellNeighbourCalculator_abd2c59c1797a382c0518df7efd9a3108}
+
+
+constructor 
+
+
+\begin{DoxyParams}{Parameters}
+{\em mapper} & \doxyref{Mapper}{p.}{classCALICE_1_1Mapper} that holds the mapping information from which the neighbours can be generated. \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 10 of file Cell\-Neighbour\-Calculator.\-cc.
+
+
+
+\subsection{Member Function Documentation}
+\index{C\-A\-L\-I\-C\-E\-::\-Cell\-Neighbour\-Calculator@{C\-A\-L\-I\-C\-E\-::\-Cell\-Neighbour\-Calculator}!get\-Neighbours@{get\-Neighbours}}
+\index{get\-Neighbours@{get\-Neighbours}!CALICE::CellNeighbourCalculator@{C\-A\-L\-I\-C\-E\-::\-Cell\-Neighbour\-Calculator}}
+\subsubsection[{get\-Neighbours}]{\setlength{\rightskip}{0pt plus 5cm}lcio\-::\-L\-C\-Collection $\ast$ C\-A\-L\-I\-C\-E\-::\-Cell\-Neighbour\-Calculator\-::get\-Neighbours (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const}\label{classCALICE_1_1CellNeighbourCalculator_a029af1aa53034010a443d205c554e92b}
+
+
+get cell neighbours for all valid cells 
+
+\begin{DoxyReturn}{Returns}
+L\-C\-Collection of \doxyref{Cell\-Neighbours}{p.}{classCALICE_1_1CellNeighbours} objects 
+\end{DoxyReturn}
+
+
+Definition at line 88 of file Cell\-Neighbour\-Calculator.\-cc.
+
+
+
+References C\-A\-L\-I\-C\-E\-::\-Mapper\-::begin(), and C\-A\-L\-I\-C\-E\-::\-Mapper\-::end().
+
+
+
+Referenced by get\-Neighbours().
+
+\index{C\-A\-L\-I\-C\-E\-::\-Cell\-Neighbour\-Calculator@{C\-A\-L\-I\-C\-E\-::\-Cell\-Neighbour\-Calculator}!get\-Neighbours@{get\-Neighbours}}
+\index{get\-Neighbours@{get\-Neighbours}!CALICE::CellNeighbourCalculator@{C\-A\-L\-I\-C\-E\-::\-Cell\-Neighbour\-Calculator}}
+\subsubsection[{get\-Neighbours}]{\setlength{\rightskip}{0pt plus 5cm}void C\-A\-L\-I\-C\-E\-::\-Cell\-Neighbour\-Calculator\-::get\-Neighbours (
+\begin{DoxyParamCaption}
+\item[{{\bf Mapped\-Container}$<$ {\bf Cell\-Neighbours} $>$ $\ast$}]{container}
+\end{DoxyParamCaption}
+) const}\label{classCALICE_1_1CellNeighbourCalculator_ad17cd5438d923800b419794ffa853386}
+
+
+get cell neighbours for all valid cells 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt out}  & {\em container} & \doxyref{Mapped\-Container}{p.}{classCALICE_1_1MappedContainer} where the \doxyref{Cell\-Neighbours}{p.}{classCALICE_1_1CellNeighbours} objects should be stored \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 103 of file Cell\-Neighbour\-Calculator.\-cc.
+
+
+
+References C\-A\-L\-I\-C\-E\-::\-Mapper\-::begin(), C\-A\-L\-I\-C\-E\-::\-Mapped\-Container$<$ T $>$\-::clear(), C\-A\-L\-I\-C\-E\-::\-Mapper\-::end(), C\-A\-L\-I\-C\-E\-::\-Mapped\-Container$<$ T $>$\-::fill\-By\-Cell\-I\-D(), and get\-Neighbours().
+
+
+
+The documentation for this class was generated from the following files\-:\begin{DoxyCompactItemize}
+\item 
+Cell\-Neighbour\-Calculator.\-hh\item 
+Cell\-Neighbour\-Calculator.\-cc\end{DoxyCompactItemize}

@@ -1,0 +1,54 @@
+\section{/nfs/dust/ilc/user/marquezh/\-Calice\-Soft\-\_\-w\-\_\-\-I\-L\-C\-Soft\-\_\-v02-\/03-\/02/calice\-\_\-db\-\_\-tools/src/copy\-\_\-dbfolder2simplefile.cc File Reference}
+\label{copy__dbfolder2simplefile_8cc}\index{/nfs/dust/ilc/user/marquezh/\-Calice\-Soft\-\_\-w\-\_\-\-I\-L\-C\-Soft\-\_\-v02-\/03-\/02/calice\-\_\-db\-\_\-tools/src/copy\-\_\-dbfolder2simplefile.\-cc@{/nfs/dust/ilc/user/marquezh/\-Calice\-Soft\-\_\-w\-\_\-\-I\-L\-C\-Soft\-\_\-v02-\/03-\/02/calice\-\_\-db\-\_\-tools/src/copy\-\_\-dbfolder2simplefile.\-cc}}
+{\ttfamily \#include $<$iostream$>$}\\*
+{\ttfamily \#include $<$string$>$}\\*
+{\ttfamily \#include $<$unistd.\-h$>$}\\*
+{\ttfamily \#include \char`\"{}lccd/\-D\-B\-Interface.\-hh\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}Calice\-Time.\-hh\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}Calice\-D\-B\-Init\-Helper.\-hh\char`\"{}}\\*
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+void {\bfseries print\-Help} (const char $\ast$prog, std\-::ostream \&out)\label{copy__dbfolder2simplefile_8cc_a916a9682d2523299f47f4ac23e667f0e}
+
+\item 
+int {\bfseries main} (int argc, char $\ast$$\ast$argv)\label{copy__dbfolder2simplefile_8cc_a3c04138a5bfe5d72780bb7e82a18e627}
+
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+This tool writes the content of a database folder for a given tag and point in time to an .slcio file.
+
+Usage\-:
+
+
+\begin{DoxyCode}
+copy\_dbfolder2simplefile [-t <tagname>] [-a <time>] <foldername> <filename>
+\end{DoxyCode}
+
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em $<$foldername$>$} & source database folder \\
+\hline
+\mbox{\tt out}  & {\em $<$filename$>$} & output file (.slcio) \\
+\hline
+\mbox{\tt in}  & {\em $<$tagname$>$} & (optional) choose specific folder tag (use H\-E\-A\-D if left empty) \\
+\hline
+\mbox{\tt in}  & {\em $<$time$>$} & point in time at which the D\-B information is extracted\\
+\hline
+\end{DoxyParams}
+\begin{DoxySeeAlso}{See Also}
+\doxyref{copy\-\_\-dbfolder2dbfile.\-cc}{p.}{copy__dbfolder2dbfile_8cc} 
+
+\doxyref{copy\-\_\-dbfolder2dump.\-cc}{p.}{copy__dbfolder2dump_8cc} 
+
+\doxyref{copy\-\_\-dump2dbfolder.\-cc}{p.}{copy__dump2dbfolder_8cc} 
+
+\doxyref{copy\-\_\-file2dbfolder.\-cc}{p.}{copy__file2dbfolder_8cc} 
+\end{DoxySeeAlso}
+
+
+Definition in file {\bf copy\-\_\-dbfolder2simplefile.\-cc}.
+

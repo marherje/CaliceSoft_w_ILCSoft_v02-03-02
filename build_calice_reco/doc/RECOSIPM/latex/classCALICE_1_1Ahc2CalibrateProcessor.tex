@@ -1,0 +1,365 @@
+\section{C\-A\-L\-I\-C\-E\-:\-:Ahc2\-Calibrate\-Processor Class Reference}
+\label{classCALICE_1_1Ahc2CalibrateProcessor}\index{C\-A\-L\-I\-C\-E\-::\-Ahc2\-Calibrate\-Processor@{C\-A\-L\-I\-C\-E\-::\-Ahc2\-Calibrate\-Processor}}
+
+
+Processor that does the Si\-P\-M calibration.  
+
+
+
+
+{\ttfamily \#include $<$Ahc2\-Calibrate\-Processor.\-hh$>$}
+
+Inheritance diagram for C\-A\-L\-I\-C\-E\-:\-:Ahc2\-Calibrate\-Processor\-:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classCALICE_1_1Ahc2CalibrateProcessor}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+{\bf Ahc2\-Calibrate\-Processor} $\ast$ {\bfseries new\-Processor} ()\label{classCALICE_1_1Ahc2CalibrateProcessor_a57d619e6f0986ae6a02cbced83acc6f5}
+
+\item 
+virtual void {\bfseries init} ()\label{classCALICE_1_1Ahc2CalibrateProcessor_ad821f0bc1b0bd316e93eba7a24b7a723}
+
+\item 
+virtual void {\bfseries process\-Run\-Header} (L\-C\-Run\-Header $\ast$run)\label{classCALICE_1_1Ahc2CalibrateProcessor_ab1633c8a20a474042b7e2925276921c3}
+
+\item 
+virtual void {\bfseries process\-Event} (L\-C\-Event $\ast$evt)\label{classCALICE_1_1Ahc2CalibrateProcessor_a95d7418cc0c13b2e941f64bc222fb8b6}
+
+\item 
+virtual void {\bfseries check} (L\-C\-Event $\ast$evt)\label{classCALICE_1_1Ahc2CalibrateProcessor_a95b2468cd5bfb6ef37e3f4b4c08c2c68}
+
+\item 
+virtual void {\bfseries end} ()\label{classCALICE_1_1Ahc2CalibrateProcessor_a74e9e535f35082ecc9d311ce036324c4}
+
+\end{DoxyCompactItemize}
+\subsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void {\bfseries Fill\-Container} (L\-C\-Event $\ast$evt)\label{classCALICE_1_1Ahc2CalibrateProcessor_acaa509d1340c3afffb7f3eea852397f5}
+
+\item 
+void {\bf calibrate\-Energy\-And\-Fill\-Output\-Collections} (Ahc2\-Calibrations $\ast$calibration, const int Gain\-Bit, const int Hit\-Bit, const float raw\-Energy, const float raw\-T\-D\-C, const float time\-Reference, const int B\-X\-I\-D, const int Mem, L\-C\-Collection $\ast$ahc\-Hit\-Output\-Col, boost\-::optional$<$ std\-::pair$<$ int, int $>$ $>$ asic\-Stop\-Info)
+\begin{DoxyCompactList}\small\item\em Calibrate the energy (convert from energy in A\-D\-C counts to energy in M\-I\-Ps) \end{DoxyCompactList}\item 
+void {\bfseries Correct\-Occupancy} (Decoder\-Set $\ast$decoder, L\-C\-Collection $\ast$ahc\-Hit\-Output\-Col, int bxid)\label{classCALICE_1_1Ahc2CalibrateProcessor_a710d5725af93224c9e277df6994535ab}
+
+\item 
+bool {\bfseries check\-Hit} (Calorimeter\-Hit\-Impl $\ast$hit)\label{classCALICE_1_1Ahc2CalibrateProcessor_aaa5a4d84225a0455058ec8ab24f650b1}
+
+\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+std\-::string {\bf \-\_\-input\-Col\-Name}\label{classCALICE_1_1Ahc2CalibrateProcessor_af40da80c07919fd7ff11c2eea1aeb381}
+
+\begin{DoxyCompactList}\small\item\em name of the input collection \end{DoxyCompactList}\item 
+std\-::string {\bf \-\_\-input\-Col\-Name\-A\-S\-I\-C}\label{classCALICE_1_1Ahc2CalibrateProcessor_aa80531c67c2722ad0e2460a7e0876bae}
+
+\begin{DoxyCompactList}\small\item\em Input L\-C\-I\-O Collection containig information on the stopping B\-X\-I\-S and asic of the R\-O\-C. \end{DoxyCompactList}\item 
+std\-::string {\bf \-\_\-ahc\-Hit\-Output\-Col\-Name}\label{classCALICE_1_1Ahc2CalibrateProcessor_a3dc06786436feb1670498da3fd69ad94}
+
+\begin{DoxyCompactList}\small\item\em name of the output A\-H\-C hit collection \end{DoxyCompactList}\item 
+std\-::string {\bf \-\_\-mapping\-Processor\-Name}\label{classCALICE_1_1Ahc2CalibrateProcessor_ac8d1b19a0ffa72a6ea1427664503921d}
+
+\begin{DoxyCompactList}\small\item\em name of the processor which provides the mapping \end{DoxyCompactList}\item 
+std\-::string {\bf \-\_\-calib\-Processor\-Name}\label{classCALICE_1_1Ahc2CalibrateProcessor_ae410aaaebdd65ba4054169c41266154e}
+
+\begin{DoxyCompactList}\small\item\em name of the processor which provides the Si\-P\-M calibrations \end{DoxyCompactList}\item 
+std\-::string {\bfseries \-\_\-\-Ahc2\-Hardware\-Connection\-Name}\label{classCALICE_1_1Ahc2CalibrateProcessor_a58a404a600c53c93f2a8d93cdd3d0bdd}
+
+\item 
+std\-::string {\bf \-\_\-temperature\-Processor\-Name}\label{classCALICE_1_1Ahc2CalibrateProcessor_acb920d14fbddb7869a6563c9b8e0591d}
+
+\begin{DoxyCompactList}\small\item\em name of the processor which provides the Si\-P\-M temperature \end{DoxyCompactList}\item 
+std\-::string {\bf \-\_\-\-B\-I\-F\-Collection\-Name}\label{classCALICE_1_1Ahc2CalibrateProcessor_a506a8b03d3d6114e8c9372319748e9a3}
+
+\begin{DoxyCompactList}\small\item\em name of the input collection \end{DoxyCompactList}\item 
+std\-::string {\bf \-\_\-cell\-Description\-Processor\-Name}\label{classCALICE_1_1Ahc2CalibrateProcessor_abb12c048f5ca0a876f4112580dcd790e}
+
+\begin{DoxyCompactList}\small\item\em name of the processor which provides the cells description \end{DoxyCompactList}\item 
+Mapped\-Container\\*
+$<$ Cell\-Description $>$ $\ast$ {\bf \-\_\-cell\-Descriptions}\label{classCALICE_1_1Ahc2CalibrateProcessor_a9569a1acebd769a434928d339a069eb3}
+
+\begin{DoxyCompactList}\small\item\em mapped container of cells description \end{DoxyCompactList}\item 
+bool {\bf \-\_\-scale\-Energy}\label{classCALICE_1_1Ahc2CalibrateProcessor_aef2b11d192204ebb3723fb47fe6a0976}
+
+\begin{DoxyCompactList}\small\item\em flag to enable/disable the scaling of the hits energy \end{DoxyCompactList}\item 
+float {\bf \-\_\-energy\-Scale\-Factor}\label{classCALICE_1_1Ahc2CalibrateProcessor_af0d0eb5ee2782716f379aff4798f7d0f}
+
+\begin{DoxyCompactList}\small\item\em factor to scale the hits energy \end{DoxyCompactList}\item 
+Mapped\-Container\\*
+$<$ Calorimeter\-Hit\-Impl $>$ $\ast$ {\bf \-\_\-reco\-Container}\label{classCALICE_1_1Ahc2CalibrateProcessor_a51ad92c817fd651000dec667467090b5}
+
+\begin{DoxyCompactList}\small\item\em mapped container of reconstructed A\-H\-C\-A\-L hits \end{DoxyCompactList}\item 
+const Ahc2\-Mapper $\ast$ {\bf \-\_\-mapper}\label{classCALICE_1_1Ahc2CalibrateProcessor_a72a7da187cbb927297e330c3d0bf63dc}
+
+\begin{DoxyCompactList}\small\item\em the mapper \end{DoxyCompactList}\item 
+Mapped\-Container\\*
+$<$ Ahc2\-Calibrations $>$ $\ast$ {\bf \-\_\-calib\-Container}\label{classCALICE_1_1Ahc2CalibrateProcessor_af32eea30839db78e5e5aa45c42dac715}
+
+\begin{DoxyCompactList}\small\item\em mapped container of Si\-P\-M calibrations \end{DoxyCompactList}\item 
+Mapped\-Container$<$ Simple\-Value $>$ $\ast$ {\bf \-\_\-temperature\-Container}\label{classCALICE_1_1Ahc2CalibrateProcessor_a8f227d17ea78bb5f560d695725099e93}
+
+\begin{DoxyCompactList}\small\item\em mapped container of cells temperature \end{DoxyCompactList}\item 
+bool {\bf \-\_\-newdataformat}\label{classCALICE_1_1Ahc2CalibrateProcessor_a8bae2aa3700e81f9f739a3d64c3e7cbb}
+
+\begin{DoxyCompactList}\small\item\em flag for the new data format in E\-U\-D\-A\-Q \end{DoxyCompactList}\item 
+bool {\bf \-\_\-has\-B\-I\-F}\label{classCALICE_1_1Ahc2CalibrateProcessor_a733c7dc2c412bba4ed34e4ffd0598784}
+
+\begin{DoxyCompactList}\small\item\em flag for the new data format in E\-U\-D\-A\-Q \end{DoxyCompactList}\item 
+bool {\bf \-\_\-pedestal\-Subtraction}\label{classCALICE_1_1Ahc2CalibrateProcessor_aad858c334434d3f75b9d993aaf60f076}
+
+\begin{DoxyCompactList}\small\item\em flag to enable/disable pedestal subtraction \end{DoxyCompactList}\item 
+bool {\bfseries \-\_\-do\-Pedestal\-Memory\-Cell\-Offset}\label{classCALICE_1_1Ahc2CalibrateProcessor_a91d4d566f70258fbf36cfcc7949e3971}
+
+\item 
+bool {\bf \-\_\-do\-High\-Gain\-Low\-Gain\-Pedestal}\label{classCALICE_1_1Ahc2CalibrateProcessor_a51aac1d9a2195810ab61ae74fd1e2812}
+
+\begin{DoxyCompactList}\small\item\em wether to correct the pedestal for each memory cell \end{DoxyCompactList}\item 
+bool {\bf \-\_\-do\-Mip\-Temp\-Corr}
+\begin{DoxyCompactList}\small\item\em wether to use different pedestal for high and low gain, if false, high gain values will be applied to all hits \end{DoxyCompactList}\item 
+bool {\bf \-\_\-do\-Gain\-Temp\-Corr}\label{classCALICE_1_1Ahc2CalibrateProcessor_a3d46c30741845b340de59f9b5fd5de40}
+
+\begin{DoxyCompactList}\small\item\em flag to enable/disable the temperature correction of the gain \end{DoxyCompactList}\item 
+bool {\bf \-\_\-do\-Saturation\-Corr}\label{classCALICE_1_1Ahc2CalibrateProcessor_a40d7fce6e7e82cb810b6c0a7e016a74d}
+
+\begin{DoxyCompactList}\small\item\em flag to enable/disable the saturation correction \end{DoxyCompactList}\item 
+bool {\bf \-\_\-zero\-Suppression}\label{classCALICE_1_1Ahc2CalibrateProcessor_a6498f3913e1c29ca1903001108e5fc23}
+
+\begin{DoxyCompactList}\small\item\em flag to enable/disable the zero suppression, that is if you want to apply the 0.\-4 M\-I\-P cut or not \end{DoxyCompactList}\item 
+bool {\bf \-\_\-is\-Physics\-Mode}\label{classCALICE_1_1Ahc2CalibrateProcessor_a2d753d78ae5426ff61005e48040ad22c}
+
+\begin{DoxyCompactList}\small\item\em flag to enable/disable the physics mode energy calibration \end{DoxyCompactList}\item 
+bool {\bf \-\_\-filter\-Dead\-Cells}\label{classCALICE_1_1Ahc2CalibrateProcessor_af1da32722c145038b42b025b34d451e9}
+
+\begin{DoxyCompactList}\small\item\em flag to enable/disable the filtering of dead cells \end{DoxyCompactList}\item 
+bool {\bf \-\_\-filter\-Default\-Cells}\label{classCALICE_1_1Ahc2CalibrateProcessor_afd38d20f0310d2ce016d80493a25c651}
+
+\begin{DoxyCompactList}\small\item\em flag to enable/disable the filgering of default cells \end{DoxyCompactList}\item 
+bool {\bfseries \-\_\-filter\-By\-D\-A\-Qquality}\label{classCALICE_1_1Ahc2CalibrateProcessor_a8f30adee1c7c058cead393f36b92e553}
+
+\item 
+bool {\bf \-\_\-do\-Error\-Calculation}\label{classCALICE_1_1Ahc2CalibrateProcessor_a14fc5b04c571329bde618c70e5aa9885}
+
+\begin{DoxyCompactList}\small\item\em flag to enable/disable the error calculation \end{DoxyCompactList}\item 
+float {\bf \-\_\-mip\-Cut}\label{classCALICE_1_1Ahc2CalibrateProcessor_a07cf5b93b24db2acad37b9c14b65011c}
+
+\begin{DoxyCompactList}\small\item\em value of the M\-I\-P cut (default\-: 0.\-4 M\-I\-Ps) \end{DoxyCompactList}\item 
+int {\bf \-\_\-mip\-To\-Ge\-V\-Flag}\label{classCALICE_1_1Ahc2CalibrateProcessor_a57684c698eda53958b7537201948ddaa}
+
+\begin{DoxyCompactList}\small\item\em conversion flag from M\-I\-Ps to Ge\-V (0 -\/ M\-I\-P, 1 -\/ Ge\-V) \end{DoxyCompactList}\item 
+float {\bf \-\_\-mip\-To\-Ge\-V\-Factor}\label{classCALICE_1_1Ahc2CalibrateProcessor_a7f34123a00ee631895bda7680794cfb6}
+
+\begin{DoxyCompactList}\small\item\em conversion factor from M\-I\-Ps to Ge\-V \end{DoxyCompactList}\item 
+bool {\bfseries \-\_\-do\-Mip\-Conversion}\label{classCALICE_1_1Ahc2CalibrateProcessor_a263941e7f6da582dd0e4336c2d0443bf}
+
+\item 
+bool {\bf \-\_\-do\-Time\-Conversion}\label{classCALICE_1_1Ahc2CalibrateProcessor_aacfee6708f5ebda2f4f14273a508c345}
+
+\begin{DoxyCompactList}\small\item\em Convert A\-D\-C to M\-I\-P or not. \end{DoxyCompactList}\item 
+bool {\bf \-\_\-is\-D\-A\-T\-A}
+\begin{DoxyCompactList}\small\item\em Convert T\-D\-C to ns or not. \end{DoxyCompactList}\item 
+bool {\bf \-\_\-is\-M\-C}\label{classCALICE_1_1Ahc2CalibrateProcessor_ab5809d2c7f3a1e6cf7deb8ed8fb48f90}
+
+\begin{DoxyCompactList}\small\item\em flag to switch to M\-C processing \end{DoxyCompactList}\item 
+bool {\bf \-\_\-is\-First\-Event}
+\begin{DoxyCompactList}\small\item\em flag to switch to D\-A\-T\-A/\-M\-C at the first event, the following events should be the same. \end{DoxyCompactList}\item 
+bool {\bfseries \-\_\-skip\-First\-Memory\-Cell}\label{classCALICE_1_1Ahc2CalibrateProcessor_a26ecaa70b84b39225a4b4bd772f5a22c}
+
+\item 
+Mapped\-Container\\*
+$<$ Calorimeter\-Hit\-Impl $>$ $\ast$ {\bf \-\_\-\-Hit\-Container}
+\begin{DoxyCompactList}\small\item\em Flag if the first memory cell should be skipped. \end{DoxyCompactList}\item 
+std\-::map$<$ int, pair$<$ int, int $>$ $>$ {\bf \-\_\-\-Hardware\-Connnection\-Container}\label{classCALICE_1_1Ahc2CalibrateProcessor_a34cb42883a07b2ef17026d96405e608b}
+
+\begin{DoxyCompactList}\small\item\em map containing relationship between Chip\-I\-D and Module/\-Chip\-Nb \end{DoxyCompactList}\item 
+bool {\bfseries \-\_\-calculate\-Occupancy}\label{classCALICE_1_1Ahc2CalibrateProcessor_a8fc64538e07b1c5f42df362426007387}
+
+\item 
+bool {\bfseries \-\_\-correct\-Occupancy}\label{classCALICE_1_1Ahc2CalibrateProcessor_a62acc67ca6e334fdfdd477d444b17efe}
+
+\item 
+std\-::map$<$ int, std\-::map$<$ int, \\*
+int $>$ $>$ {\bfseries \-\_\-occupancy\-Per\-Chip}\label{classCALICE_1_1Ahc2CalibrateProcessor_a7cc3d7822df8b0b386bdc0f0337cf95f}
+
+\item 
+int {\bfseries \-\_\-n\-Run}\label{classCALICE_1_1Ahc2CalibrateProcessor_abeebc6f169ea1548cd38e9405ea245cc}
+
+\item 
+int {\bfseries \-\_\-n\-Evt}\label{classCALICE_1_1Ahc2CalibrateProcessor_a81421e874b7f76b0fd09140df26310bd}
+
+\item 
+std\-::vector$<$ int $>$ {\bfseries \-\_\-module2\-Layer}\label{classCALICE_1_1Ahc2CalibrateProcessor_a4b5f551ec55b0c161dca109aba9898fc}
+
+\item 
+bool {\bfseries \-\_\-use\-Real\-Module\-Number}\label{classCALICE_1_1Ahc2CalibrateProcessor_a5a5f7a19959b43293781fa02469188b3}
+
+\item 
+std\-::vector$<$ std\-::string $>$ {\bfseries \-\_\-input\-Collection\-Names}\label{classCALICE_1_1Ahc2CalibrateProcessor_aa621f37c949aeb4e846960c8999c9e97}
+
+\item 
+std\-::vector$<$ std\-::string $>$ {\bfseries \-\_\-output\-Collection\-Names}\label{classCALICE_1_1Ahc2CalibrateProcessor_a88e442fd6b305342fa36e7ee5995ae8d}
+
+\item 
+bool {\bf \-\_\-ignore\-Hit\-Bit}\label{classCALICE_1_1Ahc2CalibrateProcessor_ae7528e4f54c09999911b7c6ac8552911}
+
+\begin{DoxyCompactList}\small\item\em flag for the hit bit \end{DoxyCompactList}\item 
+bool {\bf \-\_\-in\-C\-M}\label{classCALICE_1_1Ahc2CalibrateProcessor_a8618b53237fa25e3ea27f0ebbebe6d38}
+
+\begin{DoxyCompactList}\small\item\em flag to convert mm to cm \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Processor that does the Si\-P\-M calibration. 
+
+The calibration is done according to the formula\-: $E_{calibrated}=f_{saturation}((E_{raw}-pedestal) \cdot IC/gain) \cdot gain/IC/MIP$
+
+Please note\-:
+\begin{DoxyItemize}
+\item this processor does the calibration for both data and Monte Carlo, based on the type of the input collection (\char`\"{}\-L\-C\-Generic\-Object\char`\"{} for data, and \char`\"{}\-Calorimeter\-Hit\char`\"{} for Monte Carlo);
+\item for noise creation, the saturation correction is disabled (do\-Saturation\-Correction=false), as well as the Zero\-Suppression (Zero\-Suppression = false)
+\item for Monte Carlo, the pedestal subtraction is disabled (Pedestal\-Subtraction=false)
+\end{DoxyItemize}
+
+\begin{DoxyParagraph}{processor parameters}
+\begin{TabularC}{2}
+\hline
+steering file parameter name &description  \\\cline{1-2}
+{\bfseries {\itshape  Input\-Collection\-Name }}&name of the input collection, with energy in A\-D\-C counts \\\cline{1-2}
+{\bfseries {\itshape  Output\-Collection\-Name }}&name of the output collection, with energy in M\-I\-Ps \\\cline{1-2}
+{\bfseries {\itshape  Mapping\-Processor\-Name }}&name of the mapping processor that provides the necessary Mapper class \\\cline{1-2}
+{\bfseries {\itshape  Ahc2\-Calibrations\-Processor\-Name }}&name of the processor which provides the Si\-P\-M calibrations \\\cline{1-2}
+{\bfseries {\itshape  Si\-P\-M\-Temperature\-Processor\-Name }}&name of the processor which provides the Si\-P\-M temperature \\\cline{1-2}
+{\bfseries {\itshape  Pedestal\-Subtraction }}&Flag to enable/disable pedestal subtraction \\\cline{1-2}
+{\bfseries {\itshape  Zero\-Suppression }}&Flag to enable/disable zero suppression (intention to apply the M\-I\-P cut) \\\cline{1-2}
+{\bfseries {\itshape  Mip\-Cut }}&Value of the M\-I\-P cut (default\-: 0.\-4 M\-I\-Ps) \\\cline{1-2}
+{\bfseries {\itshape  do\-Mip\-Conversion }}&Flag to enable/disable M\-I\-P Calibration \\\cline{1-2}
+{\bfseries {\itshape  do\-Mip\-Temperature\-Correction }}&Flag to enable/disable temperature correction of the M\-I\-P \\\cline{1-2}
+{\bfseries {\itshape  do\-Gain\-Temperature\-Correction }}&Flag to enable/disable temperature correction of the gain \\\cline{1-2}
+{\bfseries {\itshape  do\-Saturation\-Correction }}&Flag to enable/disable the saturation correction \\\cline{1-2}
+{\bfseries {\itshape  do\-Time\-Conversion }}&Flag to enable/disable the T\-D\-C Calibration \\\cline{1-2}
+{\bfseries {\itshape  do\-Error\-Calculation }}&Flag to enable/disable error calculation \\\cline{1-2}
+{\bfseries {\itshape  filter\-Dead\-Cells }}&Flag to enable/disable the filtering of dead cells \\\cline{1-2}
+{\bfseries {\itshape  filter\-Default\-Cells }}&Flag to enable/disable the filtering of default dead cells \\\cline{1-2}
+\end{TabularC}
+
+\end{DoxyParagraph}
+\begin{DoxyAuthor}{Author}
+{\tt shaojun.\-lu@desy.\-de} 
+\end{DoxyAuthor}
+\begin{DoxyVersion}{Version}
+0.\-1 
+\end{DoxyVersion}
+\begin{DoxyDate}{Date}
+January 2013 
+\end{DoxyDate}
+
+
+Definition at line 61 of file Ahc2\-Calibrate\-Processor.\-hh.
+
+
+
+\subsection{Member Function Documentation}
+\index{C\-A\-L\-I\-C\-E\-::\-Ahc2\-Calibrate\-Processor@{C\-A\-L\-I\-C\-E\-::\-Ahc2\-Calibrate\-Processor}!calibrate\-Energy\-And\-Fill\-Output\-Collections@{calibrate\-Energy\-And\-Fill\-Output\-Collections}}
+\index{calibrate\-Energy\-And\-Fill\-Output\-Collections@{calibrate\-Energy\-And\-Fill\-Output\-Collections}!CALICE::Ahc2CalibrateProcessor@{C\-A\-L\-I\-C\-E\-::\-Ahc2\-Calibrate\-Processor}}
+\subsubsection[{calibrate\-Energy\-And\-Fill\-Output\-Collections}]{\setlength{\rightskip}{0pt plus 5cm}void C\-A\-L\-I\-C\-E\-::\-Ahc2\-Calibrate\-Processor\-::calibrate\-Energy\-And\-Fill\-Output\-Collections (
+\begin{DoxyParamCaption}
+\item[{Ahc2\-Calibrations $\ast$}]{calibration, }
+\item[{const int}]{Gain\-Bit, }
+\item[{const int}]{Hit\-Bit, }
+\item[{const float}]{raw\-Energy, }
+\item[{const float}]{raw\-T\-D\-C, }
+\item[{const float}]{time\-Reference, }
+\item[{const int}]{B\-X\-I\-D, }
+\item[{const int}]{Mem, }
+\item[{L\-C\-Collection $\ast$}]{ahc\-Hit\-Output\-Col, }
+\item[{boost\-::optional$<$ std\-::pair$<$ int, int $>$ $>$}]{asic\-Stop\-Info}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}}\label{classCALICE_1_1Ahc2CalibrateProcessor_a5c5304f297b7dff32bcc5e0193c50d58}
+
+
+Calibrate the energy (convert from energy in A\-D\-C counts to energy in M\-I\-Ps) 
+
+
+\begin{DoxyParams}{Parameters}
+{\em calibration} & calibration of the current Si\-P\-M \\
+\hline
+{\em Gain\-Bit} & gain bit \\
+\hline
+{\em Hit\-Bit} & hit bit \\
+\hline
+{\em raw\-Energy} & raw energy, in A\-D\-C counts \\
+\hline
+{\em raw\-T\-D\-C} & raw time, in T\-I\-C counts \\
+\hline
+{\em time\-Reference} & Reference time of the event \\
+\hline
+{\em B\-X\-I\-D} & Bunch\-X\-I\-D\%2 \\
+\hline
+{\em Mem} & Memory cell I\-D \\
+\hline
+{\em ahc\-Hit\-Output\-Col} & the A\-H\-C hit output collection, of type Calorimeter\-Hit \\
+\hline
+{\em asic\-Stop\-Info} & info on the stopping condiditon of the detector, pair of $<$asic I\-D, bx\-I\-D$>$ \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 819 of file Ahc2\-Calibrate\-Processor.\-cc.
+
+
+
+\subsection{Field Documentation}
+\index{C\-A\-L\-I\-C\-E\-::\-Ahc2\-Calibrate\-Processor@{C\-A\-L\-I\-C\-E\-::\-Ahc2\-Calibrate\-Processor}!\-\_\-do\-Mip\-Temp\-Corr@{\-\_\-do\-Mip\-Temp\-Corr}}
+\index{\-\_\-do\-Mip\-Temp\-Corr@{\-\_\-do\-Mip\-Temp\-Corr}!CALICE::Ahc2CalibrateProcessor@{C\-A\-L\-I\-C\-E\-::\-Ahc2\-Calibrate\-Processor}}
+\subsubsection[{\-\_\-do\-Mip\-Temp\-Corr}]{\setlength{\rightskip}{0pt plus 5cm}bool C\-A\-L\-I\-C\-E\-::\-Ahc2\-Calibrate\-Processor\-::\-\_\-do\-Mip\-Temp\-Corr\hspace{0.3cm}{\ttfamily [protected]}}\label{classCALICE_1_1Ahc2CalibrateProcessor_ac36692611bc1dc16e7b613f0f279121b}
+
+
+wether to use different pedestal for high and low gain, if false, high gain values will be applied to all hits 
+
+flag to enable/disable the temperature correction of the M\-I\-P 
+
+Definition at line 169 of file Ahc2\-Calibrate\-Processor.\-hh.
+
+\index{C\-A\-L\-I\-C\-E\-::\-Ahc2\-Calibrate\-Processor@{C\-A\-L\-I\-C\-E\-::\-Ahc2\-Calibrate\-Processor}!\-\_\-\-Hit\-Container@{\-\_\-\-Hit\-Container}}
+\index{\-\_\-\-Hit\-Container@{\-\_\-\-Hit\-Container}!CALICE::Ahc2CalibrateProcessor@{C\-A\-L\-I\-C\-E\-::\-Ahc2\-Calibrate\-Processor}}
+\subsubsection[{\-\_\-\-Hit\-Container}]{\setlength{\rightskip}{0pt plus 5cm}Mapped\-Container$<$Calorimeter\-Hit\-Impl$>$$\ast$ C\-A\-L\-I\-C\-E\-::\-Ahc2\-Calibrate\-Processor\-::\-\_\-\-Hit\-Container\hspace{0.3cm}{\ttfamily [protected]}}\label{classCALICE_1_1Ahc2CalibrateProcessor_ab386d03c40a8816dca77af0f9b1b7496}
+
+
+Flag if the first memory cell should be skipped. 
+
+E.\-g., because there is a dummy trigger like in 2015-\/2017 data mapped container of A\-H\-C\-A\-L cells 
+
+Definition at line 195 of file Ahc2\-Calibrate\-Processor.\-hh.
+
+\index{C\-A\-L\-I\-C\-E\-::\-Ahc2\-Calibrate\-Processor@{C\-A\-L\-I\-C\-E\-::\-Ahc2\-Calibrate\-Processor}!\-\_\-is\-D\-A\-T\-A@{\-\_\-is\-D\-A\-T\-A}}
+\index{\-\_\-is\-D\-A\-T\-A@{\-\_\-is\-D\-A\-T\-A}!CALICE::Ahc2CalibrateProcessor@{C\-A\-L\-I\-C\-E\-::\-Ahc2\-Calibrate\-Processor}}
+\subsubsection[{\-\_\-is\-D\-A\-T\-A}]{\setlength{\rightskip}{0pt plus 5cm}bool C\-A\-L\-I\-C\-E\-::\-Ahc2\-Calibrate\-Processor\-::\-\_\-is\-D\-A\-T\-A\hspace{0.3cm}{\ttfamily [protected]}}\label{classCALICE_1_1Ahc2CalibrateProcessor_af7fd3817f6aefdd07f107c05ed8f61f4}
+
+
+Convert T\-D\-C to ns or not. 
+
+flag to switch to D\-A\-T\-A processing 
+
+Definition at line 189 of file Ahc2\-Calibrate\-Processor.\-hh.
+
+\index{C\-A\-L\-I\-C\-E\-::\-Ahc2\-Calibrate\-Processor@{C\-A\-L\-I\-C\-E\-::\-Ahc2\-Calibrate\-Processor}!\-\_\-is\-First\-Event@{\-\_\-is\-First\-Event}}
+\index{\-\_\-is\-First\-Event@{\-\_\-is\-First\-Event}!CALICE::Ahc2CalibrateProcessor@{C\-A\-L\-I\-C\-E\-::\-Ahc2\-Calibrate\-Processor}}
+\subsubsection[{\-\_\-is\-First\-Event}]{\setlength{\rightskip}{0pt plus 5cm}bool C\-A\-L\-I\-C\-E\-::\-Ahc2\-Calibrate\-Processor\-::\-\_\-is\-First\-Event\hspace{0.3cm}{\ttfamily [protected]}}\label{classCALICE_1_1Ahc2CalibrateProcessor_af4cd3d6df2a690c09a6eb2689505a4b4}
+
+
+flag to switch to D\-A\-T\-A/\-M\-C at the first event, the following events should be the same. 
+
+
+
+Definition at line 191 of file Ahc2\-Calibrate\-Processor.\-hh.
+
+
+
+The documentation for this class was generated from the following files\-:\begin{DoxyCompactItemize}
+\item 
+Ahc2\-Calibrate\-Processor.\-hh\item 
+Ahc2\-Calibrate\-Processor.\-cc\end{DoxyCompactItemize}

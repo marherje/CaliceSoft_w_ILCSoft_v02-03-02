@@ -1,0 +1,165 @@
+\section{C\-A\-L\-I\-C\-E\-:\-:Ahc2\-Occupancy\-Calibrator Class Reference}
+\label{classCALICE_1_1Ahc2OccupancyCalibrator}\index{C\-A\-L\-I\-C\-E\-::\-Ahc2\-Occupancy\-Calibrator@{C\-A\-L\-I\-C\-E\-::\-Ahc2\-Occupancy\-Calibrator}}
+Inheritance diagram for C\-A\-L\-I\-C\-E\-:\-:Ahc2\-Occupancy\-Calibrator\-:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classCALICE_1_1Ahc2OccupancyCalibrator}
+\end{center}
+\end{figure}
+\subsection*{Data Structures}
+\begin{DoxyCompactItemize}
+\item 
+struct {\bf Calib\-Value}
+\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+{\bf Ahc2\-Occupancy\-Calibrator} $\ast$ {\bfseries new\-Processor} ()\label{classCALICE_1_1Ahc2OccupancyCalibrator_ab850d8d70dc40faec36a35bb92f1b7d4}
+
+\item 
+virtual void {\bfseries init} ()\label{classCALICE_1_1Ahc2OccupancyCalibrator_ac7f750b9e258f3ad92a09ad64a94827b}
+
+\item 
+virtual void {\bfseries process\-Event} (L\-C\-Event $\ast$evt)\label{classCALICE_1_1Ahc2OccupancyCalibrator_a6c72b27a0e96d8ecc564fdcbd4b8f272}
+
+\item 
+virtual void {\bfseries end} ()\label{classCALICE_1_1Ahc2OccupancyCalibrator_a6b5ac3a8f00949655788e5677775807a}
+
+\end{DoxyCompactItemize}
+\subsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void {\bfseries Fill\-Container} (L\-C\-Event $\ast$evt)\label{classCALICE_1_1Ahc2OccupancyCalibrator_aab17d7ea8610d706f1a4110a3b4720c0}
+
+\item 
+void {\bfseries Process\-Hit} (Calorimeter\-Hit $\ast$hit, int evt\-Bx\-I\-D)\label{classCALICE_1_1Ahc2OccupancyCalibrator_a08d8f75993a010a51e479ef6b1169ec7}
+
+\item 
+void {\bfseries Fit\-Occupancy} ()\label{classCALICE_1_1Ahc2OccupancyCalibrator_ab38c7f3009dcb59ec68358f2683e60a5}
+
+\item 
+void {\bfseries Write\-Constants} ()\label{classCALICE_1_1Ahc2OccupancyCalibrator_ab68258017b327ea743a09b76a7950521}
+
+\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+std\-::map$<$ int, std\-::map$<$ int, \\*
+int $>$ $>$ {\bfseries \-\_\-occupancy\-Per\-Chip}\label{classCALICE_1_1Ahc2OccupancyCalibrator_a98fd37f253000919187fda7e0e1bfc91}
+
+\item 
+std\-::map$<$ int, std\-::map$<$ int, \\*
+std\-::map$<$ int, std\-::map$<$ int, \\*
+std\-::map$<$ int, std\-::map$<$ int, \\*
+std\-::vector$<$ float $>$ $>$ $>$ $>$ $>$ $>$ $>$ {\bfseries \-\_\-sorted\-Hit\-Container}\label{classCALICE_1_1Ahc2OccupancyCalibrator_aa0007fc4dd8929013e30b6c17016eadd}
+
+\item 
+std\-::map$<$ int, std\-::map$<$ int, \\*
+std\-::map$<$ int, std\-::map$<$ int, \\*
+std\-::map$<$ int, {\bf Calib\-Value} $>$ $>$ $>$ $>$ $>$ {\bfseries \-\_\-m\-\_\-calibration\-\_\-constants}\label{classCALICE_1_1Ahc2OccupancyCalibrator_a80f0878a73713a22cb155cf976fe6b8b}
+
+\item 
+int {\bfseries \-\_\-n\-Channels}\label{classCALICE_1_1Ahc2OccupancyCalibrator_ab169b46b25955ef59442dc4b97a02366}
+
+\item 
+double {\bfseries \-\_\-tdc\-Error}\label{classCALICE_1_1Ahc2OccupancyCalibrator_a01e2a7ec01c030dcb734c71b56a1b75b}
+
+\item 
+double {\bfseries \-\_\-time\-Reference\-Error}\label{classCALICE_1_1Ahc2OccupancyCalibrator_a6f963856dff73e179c4d887798385d96}
+
+\item 
+std\-::string {\bf \-\_\-hit\-In\-Col\-Name}\label{classCALICE_1_1Ahc2OccupancyCalibrator_a7d75d3932599645dc6658795cc952deb}
+
+\begin{DoxyCompactList}\small\item\em name of the input collection \end{DoxyCompactList}\item 
+std\-::string {\bfseries \-\_\-occupancy\-In\-Col\-Name}\label{classCALICE_1_1Ahc2OccupancyCalibrator_a103e15d01b57c0f782e504b25eacd20f}
+
+\item 
+std\-::string {\bf \-\_\-ahc\-Hit\-Output\-Col\-Name}\label{classCALICE_1_1Ahc2OccupancyCalibrator_aa8fd9dbe672add06d67ab9d02c091738}
+
+\begin{DoxyCompactList}\small\item\em name of the output A\-H\-C hit collection \end{DoxyCompactList}\item 
+std\-::string {\bf \-\_\-mapping\-Processor\-Name}\label{classCALICE_1_1Ahc2OccupancyCalibrator_a36e578634b06a3bbfc1d1062b9e6c5ba}
+
+\begin{DoxyCompactList}\small\item\em name of the processor which provides the mapping \end{DoxyCompactList}\item 
+std\-::string {\bfseries \-\_\-\-Ahc2\-Hardware\-Connection\-Name}\label{classCALICE_1_1Ahc2OccupancyCalibrator_a653a9a2efd9f6b5d7c50afe550561870}
+
+\item 
+std\-::string {\bf \-\_\-temperature\-Processor\-Name}\label{classCALICE_1_1Ahc2OccupancyCalibrator_ad36670eaac520cd472476bfd0f3af00f}
+
+\begin{DoxyCompactList}\small\item\em name of the processor which provides the Si\-P\-M temperature \end{DoxyCompactList}\item 
+std\-::string {\bf \-\_\-bif\-Col\-Name}\label{classCALICE_1_1Ahc2OccupancyCalibrator_a346e6ef475334068a4400c80bf9daaef}
+
+\begin{DoxyCompactList}\small\item\em name of the processor which provides the Si\-P\-M temperature \end{DoxyCompactList}\item 
+int {\bfseries \-\_\-\-B\-I\-F\-Trigger\-Input\-Source}\label{classCALICE_1_1Ahc2OccupancyCalibrator_aad631504dc281bdd1e963ed0c324e260}
+
+\item 
+std\-::string {\bfseries \-\_\-prefix}\label{classCALICE_1_1Ahc2OccupancyCalibrator_ad82f4c256b53cd8a2990027afc57497a}
+
+\item 
+bool {\bfseries \-\_\-skip\-First\-Memory\-Cell}\label{classCALICE_1_1Ahc2OccupancyCalibrator_acff5130980088ebcee6c387a62dec589}
+
+\item 
+int {\bfseries \-\_\-max\-Occupancy}\label{classCALICE_1_1Ahc2OccupancyCalibrator_ae0c86199c81c6cfe7e2ba8fa40de9e7b}
+
+\item 
+int {\bfseries \-\_\-min\-Hits\-Fit}\label{classCALICE_1_1Ahc2OccupancyCalibrator_a3988bb71c15879d20f492ee7d1de8a58}
+
+\item 
+int {\bfseries \-\_\-max\-Hits\-Fit}\label{classCALICE_1_1Ahc2OccupancyCalibrator_a9c9b2e0ac821a14845b208246f406283}
+
+\item 
+std\-::string {\bf \-\_\-cell\-Description\-Processor\-Name}\label{classCALICE_1_1Ahc2OccupancyCalibrator_a01731f039efcc81e00e184f96a98e790}
+
+\begin{DoxyCompactList}\small\item\em name of the processor which provides the cells description \end{DoxyCompactList}\item 
+Mapped\-Container\\*
+$<$ Cell\-Description $>$ $\ast$ {\bf \-\_\-cell\-Descriptions}\label{classCALICE_1_1Ahc2OccupancyCalibrator_af83028233eb862a8973e23fe6f46be0f}
+
+\begin{DoxyCompactList}\small\item\em mapped container of cells description \end{DoxyCompactList}\item 
+const Ahc2\-Mapper $\ast$ {\bf \-\_\-mapper}\label{classCALICE_1_1Ahc2OccupancyCalibrator_ac9b4e7c9103d8d99a3b65b9fcf19aec9}
+
+\begin{DoxyCompactList}\small\item\em the mapper \end{DoxyCompactList}\item 
+Mapped\-Container$<$ Simple\-Value $>$ $\ast$ {\bf \-\_\-temperature\-Container}\label{classCALICE_1_1Ahc2OccupancyCalibrator_ab55012d14a3510fa4b89ae1fae372dd7}
+
+\begin{DoxyCompactList}\small\item\em mapped container of cells temperature \end{DoxyCompactList}\item 
+bool {\bf \-\_\-newdataformat}\label{classCALICE_1_1Ahc2OccupancyCalibrator_adaa51b1a6af59df6c4e1a762cb4ab722}
+
+\begin{DoxyCompactList}\small\item\em flag for the new data format in E\-U\-D\-A\-Q \end{DoxyCompactList}\item 
+bool {\bf \-\_\-is\-First\-Event}
+\begin{DoxyCompactList}\small\item\em flag to switch to D\-A\-T\-A/\-M\-C at the first event, the following events should be the same. \end{DoxyCompactList}\item 
+Mapped\-Container\\*
+$<$ Calorimeter\-Hit\-Impl $>$ $\ast$ {\bf \-\_\-\-Hit\-Container}\label{classCALICE_1_1Ahc2OccupancyCalibrator_a75f803b0e387a026e6394d1629f53442}
+
+\begin{DoxyCompactList}\small\item\em mapped container of A\-H\-C\-A\-L cells \end{DoxyCompactList}\item 
+std\-::map$<$ int, std\-::pair$<$ int, \\*
+int $>$ $>$ {\bf \-\_\-\-Hardware\-Connnection\-Container}\label{classCALICE_1_1Ahc2OccupancyCalibrator_a59ac6fbccb3f906f284a1072e744ebc0}
+
+\begin{DoxyCompactList}\small\item\em map containing relationship between Chip\-I\-D and Module/\-Chip\-Nb \end{DoxyCompactList}\item 
+int {\bfseries \-\_\-i\-Evt} = 0\label{classCALICE_1_1Ahc2OccupancyCalibrator_a1e3aaa9c9d7c8a34191f3d7fe6dc80e0}
+
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+
+
+Definition at line 29 of file Ahc2\-Occupancy\-Calibrator.\-hh.
+
+
+
+\subsection{Field Documentation}
+\index{C\-A\-L\-I\-C\-E\-::\-Ahc2\-Occupancy\-Calibrator@{C\-A\-L\-I\-C\-E\-::\-Ahc2\-Occupancy\-Calibrator}!\-\_\-is\-First\-Event@{\-\_\-is\-First\-Event}}
+\index{\-\_\-is\-First\-Event@{\-\_\-is\-First\-Event}!CALICE::Ahc2OccupancyCalibrator@{C\-A\-L\-I\-C\-E\-::\-Ahc2\-Occupancy\-Calibrator}}
+\subsubsection[{\-\_\-is\-First\-Event}]{\setlength{\rightskip}{0pt plus 5cm}bool C\-A\-L\-I\-C\-E\-::\-Ahc2\-Occupancy\-Calibrator\-::\-\_\-is\-First\-Event\hspace{0.3cm}{\ttfamily [protected]}}\label{classCALICE_1_1Ahc2OccupancyCalibrator_a7f980b83820cdf653a0f9028c230f2d1}
+
+
+flag to switch to D\-A\-T\-A/\-M\-C at the first event, the following events should be the same. 
+
+
+
+Definition at line 128 of file Ahc2\-Occupancy\-Calibrator.\-hh.
+
+
+
+The documentation for this class was generated from the following files\-:\begin{DoxyCompactItemize}
+\item 
+Ahc2\-Occupancy\-Calibrator.\-hh\item 
+Ahc2\-Occupancy\-Calibrator.\-cc\end{DoxyCompactItemize}

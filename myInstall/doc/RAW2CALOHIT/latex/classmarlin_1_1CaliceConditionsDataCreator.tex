@@ -1,0 +1,209 @@
+\section{marlin\-:\-:Calice\-Conditions\-Data\-Creator Class Reference}
+\label{classmarlin_1_1CaliceConditionsDataCreator}\index{marlin\-::\-Calice\-Conditions\-Data\-Creator@{marlin\-::\-Calice\-Conditions\-Data\-Creator}}
+
+
+Marlin processr which creates calice conditions data and makes them via a simplefile handler available.  
+
+
+
+
+{\ttfamily \#include $<$Calice\-Conditions\-Data\-Creator.\-hh$>$}
+
+Inheritance diagram for marlin\-:\-:Calice\-Conditions\-Data\-Creator\-:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classmarlin_1_1CaliceConditionsDataCreator}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+Processor $\ast$ {\bfseries new\-Processor} ()\label{classmarlin_1_1CaliceConditionsDataCreator_a602c419bdb5c11770dd620711941f175}
+
+\item 
+void {\bf init} ()
+\begin{DoxyCompactList}\small\item\em Install conditions change listener. \end{DoxyCompactList}\item 
+void {\bfseries process\-Run\-Header} (L\-C\-Run\-Header $\ast$run)\label{classmarlin_1_1CaliceConditionsDataCreator_add37acebb16fb3faa09f17afa353ad6a}
+
+\item 
+void {\bf process\-Event} (L\-C\-Event $\ast$evt\-P)\label{classmarlin_1_1CaliceConditionsDataCreator_a1a7b0067f58a6376ab5e9ba73d389280}
+
+\begin{DoxyCompactList}\small\item\em Update conditions data (not yet). \end{DoxyCompactList}\item 
+void {\bfseries end} ()\label{classmarlin_1_1CaliceConditionsDataCreator_a7903f04212f4cbb7f95fecd657c289f0}
+
+\end{DoxyCompactItemize}
+\subsection*{Protected Types}
+\begin{DoxyCompactItemize}
+\item 
+enum \{ \\*
+{\bfseries k\-Ahc\-Module\-Location}, 
+{\bfseries k\-Ahc\-Module\-Connection}, 
+{\bfseries k\-Ahc\-Module\-Description}, 
+{\bfseries k\-Emc\-Module\-Location}, 
+\\*
+{\bfseries k\-Emc\-Module\-Connection}, 
+{\bfseries k\-Emc\-Module\-Description}, 
+{\bfseries k\-Drift\-Chamber\-Parameter}, 
+{\bfseries k\-Trigger\-Assignment}, 
+\\*
+{\bfseries k\-Trigger\-Check}, 
+{\bfseries k\-Experimental\-Setup}, 
+{\bfseries k\-N\-Collections}
+ \}
+\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+std\-::string {\bfseries \-\_\-col\-Name} [k\-N\-Collections]\label{classmarlin_1_1CaliceConditionsDataCreator_a1c7c2ec9238554a06a8850b0679b66f9}
+
+\item 
+std\-::vector$<$ std\-::string $>$ {\bfseries \-\_\-input\-File\-Name} [k\-N\-Collections]\label{classmarlin_1_1CaliceConditionsDataCreator_a91361a635c7673038c4482ad8209f639}
+
+\item 
+std\-::vector$<$ std\-::string $>$ {\bfseries \-\_\-since\-Till\-Time} [k\-N\-Collections]\label{classmarlin_1_1CaliceConditionsDataCreator_a5dd2783bec7e29c83911b2c62a5733ea}
+
+\item 
+std\-::vector$<$ U\-T\-I\-L\-::\-L\-C\-Time $>$ {\bfseries \-\_\-since} [k\-N\-Collections]\label{classmarlin_1_1CaliceConditionsDataCreator_afb8943272775c52775822d64f0445505}
+
+\item 
+std\-::vector$<$ U\-T\-I\-L\-::\-L\-C\-Time $>$ {\bfseries \-\_\-till} [k\-N\-Collections]\label{classmarlin_1_1CaliceConditionsDataCreator_a6c8842188702a4d711ece614f93c0d88}
+
+\item 
+std\-::vector$<$ std\-::string $>$ {\bf \-\_\-beam\-Type}
+\begin{DoxyCompactList}\small\item\em the nominal beam type. \end{DoxyCompactList}\item 
+std\-::vector$<$ float $>$ {\bf \-\_\-beam\-Energy}
+\begin{DoxyCompactList}\small\item\em nominal beam energy. \end{DoxyCompactList}\item 
+std\-::vector$<$ float $>$ {\bf \-\_\-configuration\-Angle}
+\begin{DoxyCompactList}\small\item\em angle between the detector normal and the beam axis. \end{DoxyCompactList}\item 
+std\-::vector$<$ int $>$ {\bf \-\_\-trigger\-Main\-Word}
+\begin{DoxyCompactList}\small\item\em position of the trigger main word in th fifo. \end{DoxyCompactList}\item 
+std\-::vector$<$ int $>$ {\bf \-\_\-trigger\-Main\-Word\-Tolerance}\label{classmarlin_1_1CaliceConditionsDataCreator_ae121828e72a6e69229ea1102e3cacc4c}
+
+\begin{DoxyCompactList}\small\item\em the tolerance on the trigger main word position \end{DoxyCompactList}\item 
+std\-::vector$<$ int $>$ {\bf \-\_\-trigger\-Search\-Range}
+\begin{DoxyCompactList}\small\item\em search range around the trigger main word which is search for overlapping triggers. \end{DoxyCompactList}\item 
+lccd\-::\-I\-Conditions\-Handler $\ast$ {\bfseries \-\_\-conddb\-Handler} [k\-N\-Collections]\label{classmarlin_1_1CaliceConditionsDataCreator_ac99c9b4383bf7e786b763f5789147b1c}
+
+\item 
+std\-::vector\\*
+$<$ E\-V\-E\-N\-T\-::\-L\-C\-Collection $\ast$ $>$ {\bfseries \-\_\-conddb\-Col} [k\-N\-Collections]\label{classmarlin_1_1CaliceConditionsDataCreator_a115c3f1d7deec6ab19666acff4be962e}
+
+\item 
+U\-T\-I\-L\-::\-L\-C\-Time {\bfseries \-\_\-valid\-Since}\label{classmarlin_1_1CaliceConditionsDataCreator_aa0271519445413603682631355db7a63}
+
+\item 
+U\-T\-I\-L\-::\-L\-C\-Time {\bfseries \-\_\-valid\-Till}\label{classmarlin_1_1CaliceConditionsDataCreator_a39ed98e58fe973f45aedbbf64a3aef2e}
+
+\end{DoxyCompactItemize}
+\subsection*{Static Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+static const char $\ast$ {\bfseries \-\_\-\-\_\-beam\-Type\-Names} [11]\label{classmarlin_1_1CaliceConditionsDataCreator_a86e1060f18685fd8e77e84a396b9004f}
+
+\item 
+static const char $\ast$ {\bfseries \-\_\-\-\_\-collection\-Names} [k\-N\-Collections]\label{classmarlin_1_1CaliceConditionsDataCreator_a828d149c7eaaa7c07aa28ccd2bcffd69}
+
+\item 
+static Create\-Coll\-Func\-\_\-t {\bfseries \-\_\-\-\_\-create\-Func} [k\-N\-Collections]\label{classmarlin_1_1CaliceConditionsDataCreator_a50bb1fc9365a24fde378c286a30cd47b}
+
+\end{DoxyCompactItemize}
+\subsection*{Friends}
+\begin{DoxyCompactItemize}
+\item 
+class {\bfseries C\-A\-L\-I\-C\-E\-::\-Conditions\-Data\-Write\-Handler}\label{classmarlin_1_1CaliceConditionsDataCreator_a0e401bb1bfedeba5808934499877adf4}
+
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Marlin processr which creates calice conditions data and makes them via a simplefile handler available. 
+
+The processor creates\-: 
+\begin{DoxyEnumerate}
+\item Module\-Connection 
+\item Module\-Location 
+\item Module\-Description 
+\item Drift\-Chamber\-Parameter 
+\item Experimental\-Setup 
+\item Trigger\-Assignament 
+\end{DoxyEnumerate}collections. The creation of each collection can be individually steered. 
+
+Definition at line 39 of file Calice\-Conditions\-Data\-Creator.\-hh.
+
+
+
+\subsection{Member Function Documentation}
+\index{marlin\-::\-Calice\-Conditions\-Data\-Creator@{marlin\-::\-Calice\-Conditions\-Data\-Creator}!init@{init}}
+\index{init@{init}!marlin::CaliceConditionsDataCreator@{marlin\-::\-Calice\-Conditions\-Data\-Creator}}
+\subsubsection[{init}]{\setlength{\rightskip}{0pt plus 5cm}void marlin\-::\-Calice\-Conditions\-Data\-Creator\-::init (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{classmarlin_1_1CaliceConditionsDataCreator_a53e34b9c420e45dda6bbab5f9f4400cc}
+
+
+Install conditions change listener. 
+
+The listeners are installed for the conditions data specified by the processor parameters. 
+
+\subsection{Field Documentation}
+\index{marlin\-::\-Calice\-Conditions\-Data\-Creator@{marlin\-::\-Calice\-Conditions\-Data\-Creator}!\-\_\-beam\-Energy@{\-\_\-beam\-Energy}}
+\index{\-\_\-beam\-Energy@{\-\_\-beam\-Energy}!marlin::CaliceConditionsDataCreator@{marlin\-::\-Calice\-Conditions\-Data\-Creator}}
+\subsubsection[{\-\_\-beam\-Energy}]{\setlength{\rightskip}{0pt plus 5cm}std\-::vector$<$float$>$ marlin\-::\-Calice\-Conditions\-Data\-Creator\-::\-\_\-beam\-Energy\hspace{0.3cm}{\ttfamily [protected]}}\label{classmarlin_1_1CaliceConditionsDataCreator_af8aa319f5771ba7bfcf4c3be1c36cf4f}
+
+
+nominal beam energy. 
+
+
+
+Definition at line 75 of file Calice\-Conditions\-Data\-Creator.\-hh.
+
+\index{marlin\-::\-Calice\-Conditions\-Data\-Creator@{marlin\-::\-Calice\-Conditions\-Data\-Creator}!\-\_\-beam\-Type@{\-\_\-beam\-Type}}
+\index{\-\_\-beam\-Type@{\-\_\-beam\-Type}!marlin::CaliceConditionsDataCreator@{marlin\-::\-Calice\-Conditions\-Data\-Creator}}
+\subsubsection[{\-\_\-beam\-Type}]{\setlength{\rightskip}{0pt plus 5cm}std\-::vector$<$std\-::string$>$ marlin\-::\-Calice\-Conditions\-Data\-Creator\-::\-\_\-beam\-Type\hspace{0.3cm}{\ttfamily [protected]}}\label{classmarlin_1_1CaliceConditionsDataCreator_a0c0658ad562522454b5c278757e02118}
+
+
+the nominal beam type. 
+
+
+
+Definition at line 74 of file Calice\-Conditions\-Data\-Creator.\-hh.
+
+\index{marlin\-::\-Calice\-Conditions\-Data\-Creator@{marlin\-::\-Calice\-Conditions\-Data\-Creator}!\-\_\-configuration\-Angle@{\-\_\-configuration\-Angle}}
+\index{\-\_\-configuration\-Angle@{\-\_\-configuration\-Angle}!marlin::CaliceConditionsDataCreator@{marlin\-::\-Calice\-Conditions\-Data\-Creator}}
+\subsubsection[{\-\_\-configuration\-Angle}]{\setlength{\rightskip}{0pt plus 5cm}std\-::vector$<$float$>$ marlin\-::\-Calice\-Conditions\-Data\-Creator\-::\-\_\-configuration\-Angle\hspace{0.3cm}{\ttfamily [protected]}}\label{classmarlin_1_1CaliceConditionsDataCreator_ae54f3d9bb7f189e2b888c1f3a5aac59c}
+
+
+angle between the detector normal and the beam axis. 
+
+
+
+Definition at line 76 of file Calice\-Conditions\-Data\-Creator.\-hh.
+
+\index{marlin\-::\-Calice\-Conditions\-Data\-Creator@{marlin\-::\-Calice\-Conditions\-Data\-Creator}!\-\_\-trigger\-Main\-Word@{\-\_\-trigger\-Main\-Word}}
+\index{\-\_\-trigger\-Main\-Word@{\-\_\-trigger\-Main\-Word}!marlin::CaliceConditionsDataCreator@{marlin\-::\-Calice\-Conditions\-Data\-Creator}}
+\subsubsection[{\-\_\-trigger\-Main\-Word}]{\setlength{\rightskip}{0pt plus 5cm}std\-::vector$<$int$>$ marlin\-::\-Calice\-Conditions\-Data\-Creator\-::\-\_\-trigger\-Main\-Word\hspace{0.3cm}{\ttfamily [protected]}}\label{classmarlin_1_1CaliceConditionsDataCreator_a0459f44af2be6a6c11e129ec7a0f053c}
+
+
+position of the trigger main word in th fifo. 
+
+
+
+Definition at line 78 of file Calice\-Conditions\-Data\-Creator.\-hh.
+
+\index{marlin\-::\-Calice\-Conditions\-Data\-Creator@{marlin\-::\-Calice\-Conditions\-Data\-Creator}!\-\_\-trigger\-Search\-Range@{\-\_\-trigger\-Search\-Range}}
+\index{\-\_\-trigger\-Search\-Range@{\-\_\-trigger\-Search\-Range}!marlin::CaliceConditionsDataCreator@{marlin\-::\-Calice\-Conditions\-Data\-Creator}}
+\subsubsection[{\-\_\-trigger\-Search\-Range}]{\setlength{\rightskip}{0pt plus 5cm}std\-::vector$<$int$>$ marlin\-::\-Calice\-Conditions\-Data\-Creator\-::\-\_\-trigger\-Search\-Range\hspace{0.3cm}{\ttfamily [protected]}}\label{classmarlin_1_1CaliceConditionsDataCreator_a0e3e6e12b1a9177d4c233719db4978ca}
+
+
+search range around the trigger main word which is search for overlapping triggers. 
+
+
+
+Definition at line 80 of file Calice\-Conditions\-Data\-Creator.\-hh.
+
+
+
+The documentation for this class was generated from the following file\-:\begin{DoxyCompactItemize}
+\item 
+Calice\-Conditions\-Data\-Creator.\-hh\end{DoxyCompactItemize}

@@ -1,0 +1,96 @@
+\section{C\-A\-L\-I\-C\-E\-:\-:Daq\-Run\-Summary\-Block Class Reference}
+\label{classCALICE_1_1DaqRunSummaryBlock}\index{C\-A\-L\-I\-C\-E\-::\-Daq\-Run\-Summary\-Block@{C\-A\-L\-I\-C\-E\-::\-Daq\-Run\-Summary\-Block}}
+
+
+Stores a summary of a run in terms of Number of Congfiuration Changes, Slow Readouts, Acquisitions and Number of Events in additions it stores the time of a run and for convenience the run number.  
+
+
+
+
+{\ttfamily \#include $<$Daq\-Run\-Summary\-Block.\-hh$>$}
+
+Inheritance diagram for C\-A\-L\-I\-C\-E\-:\-:Daq\-Run\-Summary\-Block\-:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=3.000000cm]{classCALICE_1_1DaqRunSummaryBlock}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+{\bf Daq\-Run\-Summary\-Block} ()\label{classCALICE_1_1DaqRunSummaryBlock_a6fd29ed6330baa493439cdc34e5a3448}
+
+\begin{DoxyCompactList}\small\item\em Default Constructor. \end{DoxyCompactList}\item 
+{\bf Daq\-Run\-Summary\-Block} (L\-C\-Object $\ast${\bf obj})\label{classCALICE_1_1DaqRunSummaryBlock_a70bdf0e2b5f667feaf48dd4340c2457c}
+
+\begin{DoxyCompactList}\small\item\em 'Copy constructor' needed to interpret L\-C\-Collection read from file/database. \end{DoxyCompactList}\item 
+{\bf Daq\-Run\-Summary\-Block} \& {\bf set\-Run\-Number} (int runnum)\label{classCALICE_1_1DaqRunSummaryBlock_ade14fb40860cd66831ea5401566c0404}
+
+\begin{DoxyCompactList}\small\item\em Set the run number. \end{DoxyCompactList}\item 
+int {\bf get\-Run\-Number} ()\label{classCALICE_1_1DaqRunSummaryBlock_afdf5fa9bb1dff6475117c66ea60aa103}
+
+\begin{DoxyCompactList}\small\item\em Return the Number of Configurations. \end{DoxyCompactList}\item 
+{\bf Daq\-Run\-Summary\-Block} \& {\bf set\-Number\-Of\-Configurations} (int numconf)\label{classCALICE_1_1DaqRunSummaryBlock_aaeb253c0f1165d200dd7bc540cac845a}
+
+\begin{DoxyCompactList}\small\item\em Set the number of configurations. \end{DoxyCompactList}\item 
+int {\bf get\-Number\-Of\-Configurations} ()\label{classCALICE_1_1DaqRunSummaryBlock_ac2bf2eb7f4d0d279cee5a36a690dca83}
+
+\begin{DoxyCompactList}\small\item\em Return the Number of Configurations. \end{DoxyCompactList}\item 
+{\bf Daq\-Run\-Summary\-Block} \& {\bf set\-Number\-Of\-Slow\-Readouts} (int numsro)\label{classCALICE_1_1DaqRunSummaryBlock_abed0d403b72287188068448c772b2885}
+
+\begin{DoxyCompactList}\small\item\em Set the number of Slowreadouts. \end{DoxyCompactList}\item 
+int {\bf get\-Number\-Of\-Slow\-Readouts} ()\label{classCALICE_1_1DaqRunSummaryBlock_a0452377daba7afe69a9a4c054f1034d0}
+
+\begin{DoxyCompactList}\small\item\em Get the Number of Slowreadouts. \end{DoxyCompactList}\item 
+{\bf Daq\-Run\-Summary\-Block} \& {\bf set\-Number\-Of\-Acquisitions} (int numacq)\label{classCALICE_1_1DaqRunSummaryBlock_a5224040c1df1bf17fc0c5ec5bd68f40f}
+
+\begin{DoxyCompactList}\small\item\em Set the number of Acquisitions. \end{DoxyCompactList}\item 
+int {\bf get\-Number\-Of\-Acquisitions} ()\label{classCALICE_1_1DaqRunSummaryBlock_acd32c04a0c561e223c71b4d96ba300da}
+
+\begin{DoxyCompactList}\small\item\em Get the Number of Acquisitions. \end{DoxyCompactList}\item 
+{\bf Daq\-Run\-Summary\-Block} \& {\bf set\-Number\-Of\-Events} (int numevt)\label{classCALICE_1_1DaqRunSummaryBlock_aee86dd895d3cf1fc0077581aebb5b28e}
+
+\begin{DoxyCompactList}\small\item\em Set the number of Acquisitions. \end{DoxyCompactList}\item 
+int {\bf get\-Number\-Of\-Events} ()\label{classCALICE_1_1DaqRunSummaryBlock_a8c025e9d7f400d419125f66fed82094e}
+
+\begin{DoxyCompactList}\small\item\em Get the Number of Events. \end{DoxyCompactList}\item 
+{\bf Daq\-Run\-Summary\-Block} \& {\bf set\-Run\-Duration} (int runtime)\label{classCALICE_1_1DaqRunSummaryBlock_a253c0fb4bdd59cac9285a89e94d2ba5f}
+
+\begin{DoxyCompactList}\small\item\em Set the Run duration. \end{DoxyCompactList}\item 
+int {\bf get\-Run\-Duration} ()\label{classCALICE_1_1DaqRunSummaryBlock_af63f5f6495d45bbc64c5e3b658d593fb}
+
+\begin{DoxyCompactList}\small\item\em Get the Number of Events. \end{DoxyCompactList}\item 
+void {\bf print} (std\-::ostream \&os)\label{classCALICE_1_1DaqRunSummaryBlock_a731d6d70fad2033515728de4bb6ba9eb}
+
+\begin{DoxyCompactList}\small\item\em Convenient print method. \end{DoxyCompactList}\item 
+const std\-::string {\bf get\-Type\-Name} () const \label{classCALICE_1_1DaqRunSummaryBlock_a001a655e6a0b1d141833bae6f4975234}
+
+\begin{DoxyCompactList}\small\item\em Return the type of the class. \end{DoxyCompactList}\item 
+const std\-::string {\bf get\-Data\-Description} () const \label{classCALICE_1_1DaqRunSummaryBlock_ac619c2fba39178ba2bb5180ddea1a369}
+
+\begin{DoxyCompactList}\small\item\em Return a brief description of the data members. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Detailed Description}
+Stores a summary of a run in terms of Number of Congfiuration Changes, Slow Readouts, Acquisitions and Number of Events in additions it stores the time of a run and for convenience the run number. 
+
+\begin{DoxySeeAlso}{See Also}
+\doxyref{Conditions\-Change\-Delegator}{p.}{classCALICE_1_1ConditionsChangeDelegator} 
+\end{DoxySeeAlso}
+\begin{DoxyAuthor}{Author}
+R. Poeschl L\-A\-L (based on the other interface classes)
+\end{DoxyAuthor}
+\begin{DoxyDate}{Date}
+Sep 2007 
+\end{DoxyDate}
+
+
+Definition at line 34 of file Daq\-Run\-Summary\-Block.\-hh.
+
+
+
+The documentation for this class was generated from the following files\-:\begin{DoxyCompactItemize}
+\item 
+Daq\-Run\-Summary\-Block.\-hh\item 
+Daq\-Run\-Summary\-Block.\-cc\end{DoxyCompactItemize}

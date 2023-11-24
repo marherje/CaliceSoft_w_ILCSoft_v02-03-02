@@ -1,0 +1,60 @@
+\section{/nfs/dust/ilc/user/marquezh/\-Calice\-Soft\-\_\-w\-\_\-\-I\-L\-C\-Soft\-\_\-v02-\/03-\/02/calice\-\_\-db\-\_\-tools/src/add\-Collection\-Parameters.cc File Reference}
+\label{addCollectionParameters_8cc}\index{/nfs/dust/ilc/user/marquezh/\-Calice\-Soft\-\_\-w\-\_\-\-I\-L\-C\-Soft\-\_\-v02-\/03-\/02/calice\-\_\-db\-\_\-tools/src/add\-Collection\-Parameters.\-cc@{/nfs/dust/ilc/user/marquezh/\-Calice\-Soft\-\_\-w\-\_\-\-I\-L\-C\-Soft\-\_\-v02-\/03-\/02/calice\-\_\-db\-\_\-tools/src/add\-Collection\-Parameters.\-cc}}
+{\ttfamily \#include \char`\"{}lcio.\-h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}I\-O/\-L\-C\-Reader.\-h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}E\-V\-E\-N\-T/\-L\-C\-Collection.\-h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}E\-V\-E\-N\-T/\-L\-C\-Generic\-Object.\-h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}E\-V\-E\-N\-T/\-L\-C\-Parameters.\-h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}I\-M\-P\-L/\-L\-C\-Collection\-Vec.\-h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}U\-T\-I\-L/\-L\-C\-T\-O\-O\-L\-S.\-h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}lccd.\-h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}lccd/\-D\-B\-Interface.\-hh\char`\"{}}\\*
+{\ttfamily \#include $<$sstream$>$}\\*
+{\ttfamily \#include $<$fstream$>$}\\*
+{\ttfamily \#include $<$string$>$}\\*
+{\ttfamily \#include $<$vector$>$}\\*
+{\ttfamily \#include \char`\"{}Calice\-D\-B\-Init\-Helper.\-hh\char`\"{}}\\*
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+void {\bfseries add\-Filtered\-Parameters} (lcio\-::\-L\-C\-Collection\-Vec $\ast$new\-Col, const lcio\-::\-L\-C\-Collection $\ast$old\-Col)\label{addCollectionParameters_8cc_a047967f03df41b7af33447c4be54e9b1}
+
+\item 
+void {\bfseries add\-New\-Parameters} (lcio\-::\-L\-C\-Collection\-Vec $\ast$new\-Col, std\-::string file\-\_\-params)\label{addCollectionParameters_8cc_a76edb772997f9a3d83efc1692b0c62b8}
+
+\item 
+lccd\-::\-L\-C\-C\-D\-Time\-Stamp {\bfseries convert} (std\-::string str)\label{addCollectionParameters_8cc_a3b6d1fb98d3559fd48b26cad5e672bf6}
+
+\item 
+void {\bfseries read\-File} (std\-::string filename, std\-::string folder, std\-::string file\-\_\-params)\label{addCollectionParameters_8cc_ab40d281afabc667bf73373be8c30739c}
+
+\item 
+int {\bfseries main} (int argc, char $\ast$$\ast$argv)\label{addCollectionParameters_8cc_a3c04138a5bfe5d72780bb7e82a18e627}
+
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+This tool copies the content of a D\-B folder dump or a D\-B file to a database folder (all layers, tags and times) and adds new parameters to all collections copied.
+
+Usage\-:
+
+
+\begin{DoxyCode}
+copy\_dump2dbfolder <filename> <foldername> <parameterfile\_float>
+\end{DoxyCode}
+
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em $<$filename$>$} & input dump file (.slcio) \\
+\hline
+\mbox{\tt out}  & {\em $<$foldername$>$} & name of the D\-B folder where the content of the input file is stored \\
+\hline
+\mbox{\tt in}  & {\em $<$parameterfile\-\_\-float$>$} & input file (.txt) containing the float parameters to append to all collections (format\-: name value) \\
+\hline
+\end{DoxyParams}
+
+
+Definition in file {\bf add\-Collection\-Parameters.\-cc}.
+

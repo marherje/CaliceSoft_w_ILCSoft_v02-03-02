@@ -1,0 +1,82 @@
+\section{C\-A\-L\-I\-C\-E\-:\-:Conditions\-Change\-Delegator$<$ T $>$ Class Template Reference}
+\label{classCALICE_1_1ConditionsChangeDelegator}\index{C\-A\-L\-I\-C\-E\-::\-Conditions\-Change\-Delegator$<$ T $>$@{C\-A\-L\-I\-C\-E\-::\-Conditions\-Change\-Delegator$<$ T $>$}}
+
+
+Listens for conditions data changes and delegates the information to a class.  
+
+
+
+
+{\ttfamily \#include $<$Conditions\-Change\-Delegator.\-hh$>$}
+
+Inheritance diagram for C\-A\-L\-I\-C\-E\-:\-:Conditions\-Change\-Delegator$<$ T $>$\-:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classCALICE_1_1ConditionsChangeDelegator}
+\end{center}
+\end{figure}
+\subsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+typedef void(T\-::$\ast$ {\bfseries Conditions\-Change\-Handle\-Func\-\_\-t} )(lcio\-::\-L\-C\-Collection $\ast$col)\label{classCALICE_1_1ConditionsChangeDelegator_afd68318ab8917fd1f97d18ae8204c167}
+
+\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+{\bfseries Conditions\-Change\-Delegator} (T $\ast$responsible, Conditions\-Change\-Handle\-Func\-\_\-t a\-\_\-func)\label{classCALICE_1_1ConditionsChangeDelegator_a724d008ad96b77fa64b8716545052b57}
+
+\item 
+void {\bf conditions\-Changed} (lcio\-::\-L\-C\-Collection $\ast$col)
+\begin{DoxyCompactList}\small\item\em Be notified if conditions data changes and redirect changes to responsible class. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+Conditions\-Change\-Handle\-Func\-\_\-t {\bf \-\_\-func\-P}\label{classCALICE_1_1ConditionsChangeDelegator_adaf17b9ce91ac651de46c007b69f5719}
+
+\begin{DoxyCompactList}\small\item\em method to be called if the conditions data changed \end{DoxyCompactList}\item 
+T $\ast$ {\bf \-\_\-responsible}\label{classCALICE_1_1ConditionsChangeDelegator_a0d8f29b22856a229930ee6246ad066fd}
+
+\begin{DoxyCompactList}\small\item\em the object which will take care of the change \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+\subsubsection*{template$<$class T$>$class C\-A\-L\-I\-C\-E\-::\-Conditions\-Change\-Delegator$<$ T $>$}
+
+Listens for conditions data changes and delegates the information to a class. 
+
+a class can redirect several conditions data changes to itself. \begin{DoxySeeAlso}{See Also}
+test\-Conditions\-Data\-Delegator.\-cc 
+\end{DoxySeeAlso}
+
+
+Definition at line 13 of file Conditions\-Change\-Delegator.\-hh.
+
+
+
+\subsection{Member Function Documentation}
+\index{C\-A\-L\-I\-C\-E\-::\-Conditions\-Change\-Delegator@{C\-A\-L\-I\-C\-E\-::\-Conditions\-Change\-Delegator}!conditions\-Changed@{conditions\-Changed}}
+\index{conditions\-Changed@{conditions\-Changed}!CALICE::ConditionsChangeDelegator@{C\-A\-L\-I\-C\-E\-::\-Conditions\-Change\-Delegator}}
+\subsubsection[{conditions\-Changed}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class T$>$ void {\bf C\-A\-L\-I\-C\-E\-::\-Conditions\-Change\-Delegator}$<$ T $>$\-::conditions\-Changed (
+\begin{DoxyParamCaption}
+\item[{lcio\-::\-L\-C\-Collection $\ast$}]{col}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\label{classCALICE_1_1ConditionsChangeDelegator_a4eae95674a704dd8d59a6fb4ca1490ea}
+
+
+Be notified if conditions data changes and redirect changes to responsible class. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em col} & the collection containing the new conditions data \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 26 of file Conditions\-Change\-Delegator.\-hh.
+
+
+
+The documentation for this class was generated from the following file\-:\begin{DoxyCompactItemize}
+\item 
+Conditions\-Change\-Delegator.\-hh\end{DoxyCompactItemize}

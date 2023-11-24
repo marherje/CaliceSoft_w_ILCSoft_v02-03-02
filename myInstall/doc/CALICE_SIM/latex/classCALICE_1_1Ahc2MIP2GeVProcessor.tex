@@ -1,0 +1,131 @@
+\section{C\-A\-L\-I\-C\-E\-:\-:Ahc2\-M\-I\-P2\-Ge\-V\-Processor Class Reference}
+\label{classCALICE_1_1Ahc2MIP2GeVProcessor}\index{C\-A\-L\-I\-C\-E\-::\-Ahc2\-M\-I\-P2\-Ge\-V\-Processor@{C\-A\-L\-I\-C\-E\-::\-Ahc2\-M\-I\-P2\-Ge\-V\-Processor}}
+
+
+Class doing the conversion between Ge\-V and M\-I\-P + Correction of K layer (not smart!!)  
+
+
+
+
+{\ttfamily \#include $<$Ahc2\-M\-I\-P2\-Ge\-V\-Processor.\-hh$>$}
+
+Inheritance diagram for C\-A\-L\-I\-C\-E\-:\-:Ahc2\-M\-I\-P2\-Ge\-V\-Processor\-:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classCALICE_1_1Ahc2MIP2GeVProcessor}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+virtual Processor $\ast$ {\bfseries new\-Processor} ()\label{classCALICE_1_1Ahc2MIP2GeVProcessor_a7298172c4de82d57129cd2e5ae36f68b}
+
+\item 
+{\bf Ahc2\-M\-I\-P2\-Ge\-V\-Processor} ()\label{classCALICE_1_1Ahc2MIP2GeVProcessor_ab777ee23a63f9b782a8b62713c586835}
+
+\begin{DoxyCompactList}\small\item\em Constructor. \end{DoxyCompactList}\item 
+{\bf $\sim$\-Ahc2\-M\-I\-P2\-Ge\-V\-Processor} ()\label{classCALICE_1_1Ahc2MIP2GeVProcessor_ac4250234a03cfe94edd099dcada58d43}
+
+\begin{DoxyCompactList}\small\item\em Destructor. \end{DoxyCompactList}\item 
+virtual void {\bf init} ()\label{classCALICE_1_1Ahc2MIP2GeVProcessor_aeaaccd22b995e22688ec235d19230427}
+
+\begin{DoxyCompactList}\small\item\em Initialise. \end{DoxyCompactList}\item 
+virtual void {\bf process\-Run\-Header} (L\-C\-Run\-Header $\ast$run)\label{classCALICE_1_1Ahc2MIP2GeVProcessor_af3e43eb5e4f6ba85f86bea5d43985485}
+
+\begin{DoxyCompactList}\small\item\em Process header. \end{DoxyCompactList}\item 
+virtual void {\bf process\-Event} (L\-C\-Event $\ast$evt)\label{classCALICE_1_1Ahc2MIP2GeVProcessor_ac8478160bdb78253c8fe0f6a37049ef5}
+
+\begin{DoxyCompactList}\small\item\em Process event (the working horse) \end{DoxyCompactList}\item 
+virtual void {\bf check} (L\-C\-Event $\ast$evt)\label{classCALICE_1_1Ahc2MIP2GeVProcessor_ab7bc36ceb4918f6e9887056335c32587}
+
+\begin{DoxyCompactList}\small\item\em Check. \end{DoxyCompactList}\item 
+virtual void {\bf end} ()\label{classCALICE_1_1Ahc2MIP2GeVProcessor_ae0c106a5baa6cffe68639653bf079a67}
+
+\begin{DoxyCompactList}\small\item\em End of processing. \end{DoxyCompactList}\item 
+virtual void {\bf print\-Parameters} ()\label{classCALICE_1_1Ahc2MIP2GeVProcessor_ae502a5cb0cc0eaeaa63440ccbd7654cf}
+
+\begin{DoxyCompactList}\small\item\em Print Parameters. \end{DoxyCompactList}\item 
+virtual void {\bf Fill\-Map\-K} ()\label{classCALICE_1_1Ahc2MIP2GeVProcessor_a7e200e2780196bdac74de34c48b0e8ea}
+
+\begin{DoxyCompactList}\small\item\em Fill the K map. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+std\-::string {\bf \-\_\-calorim\-Inp\-Collection}\label{classCALICE_1_1Ahc2MIP2GeVProcessor_ac98bb5f559ade9930981b45e6af647df}
+
+\begin{DoxyCompactList}\small\item\em input collection name \end{DoxyCompactList}\item 
+std\-::string {\bf \-\_\-calorim\-Out\-Collection}\label{classCALICE_1_1Ahc2MIP2GeVProcessor_abc3aa68a225b5247bcf939ac444e8e3c}
+
+\begin{DoxyCompactList}\small\item\em output collection name \end{DoxyCompactList}\item 
+vector$<$ std\-::string $>$ {\bf \-\_\-calorim\-Inp\-Collections}\label{classCALICE_1_1Ahc2MIP2GeVProcessor_a1cbcfad20f4a1442e348069c0ee3ce4a}
+
+\begin{DoxyCompactList}\small\item\em input collection name \end{DoxyCompactList}\item 
+vector$<$ std\-::string $>$ {\bf \-\_\-calorim\-Out\-Collections}\label{classCALICE_1_1Ahc2MIP2GeVProcessor_aeac8962705d46a9508e48c5d09a11e80}
+
+\begin{DoxyCompactList}\small\item\em output collection name \end{DoxyCompactList}\item 
+std\-::string {\bfseries \-\_\-encoding}\label{classCALICE_1_1Ahc2MIP2GeVProcessor_adab396f0c5d55740e531225e7e4ce65d}
+
+\item 
+std\-::string {\bfseries \-\_\-file\-Map\-K}\label{classCALICE_1_1Ahc2MIP2GeVProcessor_af0b9513edea9da93c8a3a3c52f2e39b4}
+
+\item 
+std\-::map$<$ int, std\-::map$<$ int, \\*
+int $>$ $>$ {\bf \-\_\-map\-K}
+\begin{DoxyCompactList}\small\item\em File containing the relation between K in Simulation and K in data. \end{DoxyCompactList}\item 
+int {\bf \-\_\-n\-Run}\label{classCALICE_1_1Ahc2MIP2GeVProcessor_af41b36a5429f50a0eab3ac38a5f66c7f}
+
+\begin{DoxyCompactList}\small\item\em run number \end{DoxyCompactList}\item 
+int {\bf \-\_\-n\-Evt}\label{classCALICE_1_1Ahc2MIP2GeVProcessor_a9cdc466f2b1bd0bbb10dc7e485652369}
+
+\begin{DoxyCompactList}\small\item\em evt number \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+float {\bf \-\_\-\-M\-I\-Pvalue}\label{classCALICE_1_1Ahc2MIP2GeVProcessor_a30a2596fee76d2e4f13197348c432937}
+
+\begin{DoxyCompactList}\small\item\em M\-I\-P conversion factor in Ge\-V. \end{DoxyCompactList}\item 
+std\-::string {\bf \-\_\-rootfilename}\label{classCALICE_1_1Ahc2MIP2GeVProcessor_a7c0a3d4389476c59205c221b662762e6}
+
+\begin{DoxyCompactList}\small\item\em rootfile name \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Class doing the conversion between Ge\-V and M\-I\-P + Correction of K layer (not smart!!) 
+
+\begin{DoxyAuthor}{Author}
+{\tt eldwan.\-brianne@desy.\-de} 
+\end{DoxyAuthor}
+\begin{DoxyVersion}{Version}
+1.\-0 
+\end{DoxyVersion}
+\begin{DoxyDate}{Date}
+November 2015 
+\end{DoxyDate}
+
+
+Definition at line 30 of file Ahc2\-M\-I\-P2\-Ge\-V\-Processor.\-hh.
+
+
+
+\subsection{Field Documentation}
+\index{C\-A\-L\-I\-C\-E\-::\-Ahc2\-M\-I\-P2\-Ge\-V\-Processor@{C\-A\-L\-I\-C\-E\-::\-Ahc2\-M\-I\-P2\-Ge\-V\-Processor}!\-\_\-map\-K@{\-\_\-map\-K}}
+\index{\-\_\-map\-K@{\-\_\-map\-K}!CALICE::Ahc2MIP2GeVProcessor@{C\-A\-L\-I\-C\-E\-::\-Ahc2\-M\-I\-P2\-Ge\-V\-Processor}}
+\subsubsection[{\-\_\-map\-K}]{\setlength{\rightskip}{0pt plus 5cm}std\-::map$<$int,std\-::map$<$int,int$>$ $>$ C\-A\-L\-I\-C\-E\-::\-Ahc2\-M\-I\-P2\-Ge\-V\-Processor\-::\-\_\-map\-K\hspace{0.3cm}{\ttfamily [protected]}}\label{classCALICE_1_1Ahc2MIP2GeVProcessor_a796ade5fb97078104c67acf0b6a6b77e}
+
+
+File containing the relation between K in Simulation and K in data. 
+
+map containing Sim\-K and K to convert 
+
+Definition at line 89 of file Ahc2\-M\-I\-P2\-Ge\-V\-Processor.\-hh.
+
+
+
+Referenced by Fill\-Map\-K(), init(), and process\-Event().
+
+
+
+The documentation for this class was generated from the following files\-:\begin{DoxyCompactItemize}
+\item 
+Ahc2\-M\-I\-P2\-Ge\-V\-Processor.\-hh\item 
+Ahc2\-M\-I\-P2\-Ge\-V\-Processor.\-cc\end{DoxyCompactItemize}

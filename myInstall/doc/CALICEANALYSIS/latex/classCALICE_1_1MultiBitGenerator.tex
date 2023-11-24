@@ -1,0 +1,97 @@
+\section{C\-A\-L\-I\-C\-E\-:\-:Multi\-Bit\-Generator Class Reference}
+\label{classCALICE_1_1MultiBitGenerator}\index{C\-A\-L\-I\-C\-E\-::\-Multi\-Bit\-Generator@{C\-A\-L\-I\-C\-E\-::\-Multi\-Bit\-Generator}}
+
+
+{\ttfamily \#include $<$Multi\-Bit\-Generator.\-hh$>$}
+
+Inheritance diagram for C\-A\-L\-I\-C\-E\-:\-:Multi\-Bit\-Generator\-:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classCALICE_1_1MultiBitGenerator}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+Processor $\ast$ {\bfseries new\-Processor} ()\label{classCALICE_1_1MultiBitGenerator_a080c30da572966739180c5ad78b33726}
+
+\item 
+void {\bf init} ()
+\item 
+void {\bf process\-Run\-Header} (L\-C\-Run\-Header $\ast$run)
+\item 
+void {\bf process\-Event} (L\-C\-Event $\ast$evt)
+\item 
+void {\bfseries end} ()\label{classCALICE_1_1MultiBitGenerator_a9c66f8fc52d55b6185ee98d5d63b5b95}
+
+\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+std\-::string {\bfseries \-\_\-par\-Name\-Multi\-Amplitude}\label{classCALICE_1_1MultiBitGenerator_a54e51e094c859d5d8cad2a4d70415f0b}
+
+\item 
+std\-::string {\bfseries \-\_\-par\-Name\-Multi\-Bit}\label{classCALICE_1_1MultiBitGenerator_a2bb683f37ffefd42472f002425c1e184}
+
+\item 
+std\-::string {\bfseries \-\_\-threshold\-Col\-Name}\label{classCALICE_1_1MultiBitGenerator_a3d60b874142243c3161a22980c5add5f}
+
+\item 
+float {\bfseries \-\_\-set\-Purity}\label{classCALICE_1_1MultiBitGenerator_acdfc8dc40d3b785d401f534432b60e90}
+
+\item 
+float {\bfseries \-\_\-eff\-Purity}\label{classCALICE_1_1MultiBitGenerator_aa7af704d7fb005ee5374f6fe6852e27c}
+
+\item 
+float {\bfseries \-\_\-set\-Threshold}\label{classCALICE_1_1MultiBitGenerator_abc65d8c030a287e6e052fdfecea254f9}
+
+\item 
+float {\bfseries \-\_\-set\-Threshold\-Err}\label{classCALICE_1_1MultiBitGenerator_a9920211244785075a271343b7a122448}
+
+\item 
+bool {\bfseries \-\_\-fix\-Threshold}\label{classCALICE_1_1MultiBitGenerator_aa4724d6a3ae84e58da8c24cab192e2ac}
+
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Processor which generates a trigger bit for particle multiplicity (P\-A\-R\-\_\-\-V\-E\-T\-O\-\_\-\-B\-I\-T) based on the multiplicity counter amplitude given by P\-A\-R\-\_\-\-M\-U\-L\-T\-I\-\_\-\-A\-M\-P\-L. The threshold values can be extracted from the database based on a chosen purity for the single-\/particle-\/sample (default) or be defined explicitly in the steering file (set \char`\"{}use\-Fixed\-Threshold\char`\"{} to \char`\"{}true\char`\"{}).
+
+\begin{DoxyAuthor}{Author}
+{\tt Benjamin.\-Lutz@desy.\-de} 
+
+{\tt Nils.\-Feege@desy.\-de} 
+\end{DoxyAuthor}
+\begin{DoxyDate}{Date}
+Mar 2010 
+\end{DoxyDate}
+
+
+\subsection{Member Function Documentation}
+\index{C\-A\-L\-I\-C\-E\-::\-Multi\-Bit\-Generator@{C\-A\-L\-I\-C\-E\-::\-Multi\-Bit\-Generator}!init@{init}}
+\index{init@{init}!CALICE::MultiBitGenerator@{C\-A\-L\-I\-C\-E\-::\-Multi\-Bit\-Generator}}
+\subsubsection[{init}]{\setlength{\rightskip}{0pt plus 5cm}void C\-A\-L\-I\-C\-E\-::\-Multi\-Bit\-Generator\-::init (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{classCALICE_1_1MultiBitGenerator_ab3a76091024aee67a72bf47f197a76c6}
+Called at the begin of the job before anything is read. Use to initialize the processor, e.\-g. book histograms. \index{C\-A\-L\-I\-C\-E\-::\-Multi\-Bit\-Generator@{C\-A\-L\-I\-C\-E\-::\-Multi\-Bit\-Generator}!process\-Event@{process\-Event}}
+\index{process\-Event@{process\-Event}!CALICE::MultiBitGenerator@{C\-A\-L\-I\-C\-E\-::\-Multi\-Bit\-Generator}}
+\subsubsection[{process\-Event}]{\setlength{\rightskip}{0pt plus 5cm}void C\-A\-L\-I\-C\-E\-::\-Multi\-Bit\-Generator\-::process\-Event (
+\begin{DoxyParamCaption}
+\item[{L\-C\-Event $\ast$}]{evt}
+\end{DoxyParamCaption}
+)}\label{classCALICE_1_1MultiBitGenerator_ab9b5cf63447e159929f34de39244ee32}
+Called for every event -\/ the working horse. \index{C\-A\-L\-I\-C\-E\-::\-Multi\-Bit\-Generator@{C\-A\-L\-I\-C\-E\-::\-Multi\-Bit\-Generator}!process\-Run\-Header@{process\-Run\-Header}}
+\index{process\-Run\-Header@{process\-Run\-Header}!CALICE::MultiBitGenerator@{C\-A\-L\-I\-C\-E\-::\-Multi\-Bit\-Generator}}
+\subsubsection[{process\-Run\-Header}]{\setlength{\rightskip}{0pt plus 5cm}void C\-A\-L\-I\-C\-E\-::\-Multi\-Bit\-Generator\-::process\-Run\-Header (
+\begin{DoxyParamCaption}
+\item[{L\-C\-Run\-Header $\ast$}]{run}
+\end{DoxyParamCaption}
+)}\label{classCALICE_1_1MultiBitGenerator_a8e78905f379426472b533a53c86be977}
+Called for every run, e.\-g. overwrite to initialize run dependent histograms. 
+
+The documentation for this class was generated from the following files\-:\begin{DoxyCompactItemize}
+\item 
+/nfs/dust/ilc/user/marquezh/\-Calice\-Soft\-\_\-w\-\_\-\-I\-L\-C\-Soft\-\_\-v02-\/03-\/02/calice\-\_\-analysis/addon\-Procs/include/Multi\-Bit\-Generator.\-hh\item 
+/nfs/dust/ilc/user/marquezh/\-Calice\-Soft\-\_\-w\-\_\-\-I\-L\-C\-Soft\-\_\-v02-\/03-\/02/calice\-\_\-analysis/addon\-Procs/src/Multi\-Bit\-Generator.\-cc\end{DoxyCompactItemize}

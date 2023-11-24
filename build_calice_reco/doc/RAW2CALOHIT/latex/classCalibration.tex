@@ -1,0 +1,171 @@
+\section{Calibration Class Reference}
+\label{classCalibration}\index{Calibration@{Calibration}}
+
+
+Abstract interface of a calibration object.  
+
+
+
+
+{\ttfamily \#include $<$Calibration.\-hh$>$}
+
+Inheritance diagram for Calibration\-:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=1.934370cm]{classCalibration}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+virtual Float\-\_\-t {\bf get\-Calibrated\-Value} (U\-Int\-\_\-t module\-\_\-id, U\-Int\-\_\-t module\-\_\-type, U\-Int\-\_\-t cell\-\_\-index, Float\-\_\-t adc\-\_\-value) const =0
+\begin{DoxyCompactList}\small\item\em Determine from a pedestal subtracted A\-D\-C value a calibrated value. \end{DoxyCompactList}\item 
+virtual Bool\-\_\-t {\bf is\-Valid} (U\-Int\-\_\-t module\-\_\-id, U\-Int\-\_\-t module\-\_\-type, U\-Int\-\_\-t cell\-\_\-index) const 
+\begin{DoxyCompactList}\small\item\em Return true if a the calibration constants for the given cell are in the allowed range. \end{DoxyCompactList}\item 
+virtual Bool\-\_\-t {\bf check\-For\-Calibration\-Constants\-Of\-Module} (U\-Int\-\_\-t module\-\_\-id, U\-Int\-\_\-t module\-\_\-type, U\-Int\-\_\-t n\-\_\-cells) const =0
+\begin{DoxyCompactList}\small\item\em Verify that calibration constants exist for a certain module. \end{DoxyCompactList}\item 
+virtual Int\-\_\-t {\bf get\-Minium\-A\-D\-C\-For\-Mip\-Threshold} (Float\-\_\-t mip\-\_\-energy\-\_\-fraction) const =0
+\begin{DoxyCompactList}\small\item\em Get the minimum adc value mips will have for the given energy fraction on all pads. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Abstract interface of a calibration object. 
+
+The calibration object returns for a value measured with a certain cell a calibrated value. 
+
+Definition at line 9 of file Calibration.\-hh.
+
+
+
+\subsection{Member Function Documentation}
+\index{Calibration@{Calibration}!check\-For\-Calibration\-Constants\-Of\-Module@{check\-For\-Calibration\-Constants\-Of\-Module}}
+\index{check\-For\-Calibration\-Constants\-Of\-Module@{check\-For\-Calibration\-Constants\-Of\-Module}!Calibration@{Calibration}}
+\subsubsection[{check\-For\-Calibration\-Constants\-Of\-Module}]{\setlength{\rightskip}{0pt plus 5cm}virtual Bool\-\_\-t Calibration\-::check\-For\-Calibration\-Constants\-Of\-Module (
+\begin{DoxyParamCaption}
+\item[{U\-Int\-\_\-t}]{module\-\_\-id, }
+\item[{U\-Int\-\_\-t}]{module\-\_\-type, }
+\item[{U\-Int\-\_\-t}]{n\-\_\-cells}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [pure virtual]}}\label{classCalibration_a04c8f21c6e77cd3c91c858ca2c9373c4}
+
+
+Verify that calibration constants exist for a certain module. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em module\-\_\-id} & id Or serial number of a module which uniquely identifies a detector module of a certain type. \\
+\hline
+{\em module\-\_\-type} & the type of the detector module \\
+\hline
+{\em n\-\_\-cells} & the number of cells on this module. Return true if calibration constants exist for the given module and the number of cells matches the number of calibration constants. \\
+\hline
+\end{DoxyParams}
+
+
+Implemented in {\bf Constant\-Calibration} \doxyref{}{p.}{classConstantCalibration_aec30f5342ec651fa61708d2675e14d05}, and {\bf No\-Op\-Calibration} \doxyref{}{p.}{classNoOpCalibration_acdb31ec76cef7720c0cda5fb15ffa2fb}.
+
+
+
+Referenced by C\-A\-L\-I\-C\-E\-::\-Simple\-Hit\-Search\-::build\-Cell\-Parameters().
+
+\index{Calibration@{Calibration}!get\-Calibrated\-Value@{get\-Calibrated\-Value}}
+\index{get\-Calibrated\-Value@{get\-Calibrated\-Value}!Calibration@{Calibration}}
+\subsubsection[{get\-Calibrated\-Value}]{\setlength{\rightskip}{0pt plus 5cm}virtual Float\-\_\-t Calibration\-::get\-Calibrated\-Value (
+\begin{DoxyParamCaption}
+\item[{U\-Int\-\_\-t}]{module\-\_\-id, }
+\item[{U\-Int\-\_\-t}]{module\-\_\-type, }
+\item[{U\-Int\-\_\-t}]{cell\-\_\-index, }
+\item[{Float\-\_\-t}]{adc\-\_\-value}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [pure virtual]}}\label{classCalibration_aca88d93a445ba3021c05dd61b293568c}
+
+
+Determine from a pedestal subtracted A\-D\-C value a calibrated value. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em module\-\_\-id} & id Or serial number of a module which uniquely identifies a detector module of a certain type. \\
+\hline
+{\em module\-\_\-type} & the type of the detector module \\
+\hline
+{\em cell\-\_\-index} & the cell\-\_\-index in read order\-: first the A\-D\-C values of the first sample from all chips, then the next sample ... \\
+\hline
+{\em adc\-\_\-value} & the A\-D\-C value which should be calibrated. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+the calibrated value. 
+\end{DoxyReturn}
+
+
+Implemented in {\bf Constant\-Calibration} \doxyref{}{p.}{classConstantCalibration_a347808435c2c9e499af4c9a83d1c6915}, and {\bf No\-Op\-Calibration} \doxyref{}{p.}{classNoOpCalibration_a8dd43819c4e5bb09e097f4db360a57fe}.
+
+
+
+Referenced by C\-A\-L\-I\-C\-E\-::\-Calibrate\-And\-Apply\-Threshold\-::process\-Event().
+
+\index{Calibration@{Calibration}!get\-Minium\-A\-D\-C\-For\-Mip\-Threshold@{get\-Minium\-A\-D\-C\-For\-Mip\-Threshold}}
+\index{get\-Minium\-A\-D\-C\-For\-Mip\-Threshold@{get\-Minium\-A\-D\-C\-For\-Mip\-Threshold}!Calibration@{Calibration}}
+\subsubsection[{get\-Minium\-A\-D\-C\-For\-Mip\-Threshold}]{\setlength{\rightskip}{0pt plus 5cm}virtual Int\-\_\-t Calibration\-::get\-Minium\-A\-D\-C\-For\-Mip\-Threshold (
+\begin{DoxyParamCaption}
+\item[{Float\-\_\-t}]{mip\-\_\-energy\-\_\-fraction}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [pure virtual]}}\label{classCalibration_a4e45f1eca0d4fdf19ad76b8f581aee12}
+
+
+Get the minimum adc value mips will have for the given energy fraction on all pads. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em mip\-\_\-energy\-\_\-fraction} & the energy in mips \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+minimum adc value which is below the given energy on all pads. This method can be used to get the lowest adc value a mip of the given energy fraction will have on all pads. This value is useful to select candidates before actually performing th calibration. This function is intended to be called at the beginning of each event. 
+\end{DoxyReturn}
+
+
+Implemented in {\bf Constant\-Calibration} \doxyref{}{p.}{classConstantCalibration_ada035fed7a513d3da391bdea2c1d23f7}, and {\bf No\-Op\-Calibration} \doxyref{}{p.}{classNoOpCalibration_a8b478c6680b5980c2b87cedc8a589989}.
+
+
+
+Referenced by C\-A\-L\-I\-C\-E\-::\-Calibrate\-And\-Apply\-Threshold\-::process\-Event(), C\-A\-L\-I\-C\-E\-::\-Simple\-Hit\-Search\-::search\-Hits(), and C\-A\-L\-I\-C\-E\-::\-Simple\-Hit\-Search\-::search\-Hits\-And\-Adjust\-Pedestals\-And\-Noise().
+
+\index{Calibration@{Calibration}!is\-Valid@{is\-Valid}}
+\index{is\-Valid@{is\-Valid}!Calibration@{Calibration}}
+\subsubsection[{is\-Valid}]{\setlength{\rightskip}{0pt plus 5cm}virtual Bool\-\_\-t Calibration\-::is\-Valid (
+\begin{DoxyParamCaption}
+\item[{U\-Int\-\_\-t}]{module\-\_\-id, }
+\item[{U\-Int\-\_\-t}]{module\-\_\-type, }
+\item[{U\-Int\-\_\-t}]{cell\-\_\-index}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}\label{classCalibration_a7d516d7b66b1f20640829d12adfd64d6}
+
+
+Return true if a the calibration constants for the given cell are in the allowed range. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em module\-\_\-id} & id Or serial number of a module which uniquely identifies a detector module of a certain type. \\
+\hline
+{\em module\-\_\-type} & the type of the detector module \\
+\hline
+{\em cell\-\_\-index} & the cell\-\_\-index in read order\-: first the A\-D\-C values of the first sample from all chips, then the next sample ... \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true for cells with valid calibration constants, false for cells which should be declared dead.
+\end{DoxyReturn}
+This method is used to find, after module connection changes, cells which should be declared dead. 
+
+Definition at line 31 of file Calibration.\-hh.
+
+
+
+Referenced by C\-A\-L\-I\-C\-E\-::\-Simple\-Hit\-Search\-::build\-Cell\-Parameters(), C\-A\-L\-I\-C\-E\-::\-Calibrate\-And\-Apply\-Threshold\-::process\-Run\-Header(), C\-A\-L\-I\-C\-E\-::\-Simple\-Hit\-Search\-::reset\-For\-Initial\-Pedestal\-Noise\-Calculation(), and C\-A\-L\-I\-C\-E\-::\-Simple\-Hit\-Search\-::reset\-For\-Pedestal\-Noise\-Re\-Calculation().
+
+
+
+The documentation for this class was generated from the following file\-:\begin{DoxyCompactItemize}
+\item 
+Calibration.\-hh\end{DoxyCompactItemize}

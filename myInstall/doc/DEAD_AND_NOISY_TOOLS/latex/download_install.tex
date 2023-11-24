@@ -1,0 +1,22 @@
+\hypertarget{download_install_Download}{}\section{Download}\label{download_install_Download}
+Dead\-And\-Noisy\-Tools is part of the calice\-\_\-calib package. To download the latest version from svn directly check it out of the repsoitory\-: 
+\begin{DoxyCode}
+$~> svn co https:\textcolor{comment}{//svnsrv.desy.de/public/calice/calice\_calib/trunk calice\_calib}
+\end{DoxyCode}
+\hypertarget{download_install_Installation}{}\section{Installation}\label{download_install_Installation}
+The calice software uses C\-Make to generate the Makefiles. It is recommended to do an out of souce build. To do so create a build directory and run C\-Make.\hypertarget{download_install_Dependencies}{}\section{Dependencies}\label{download_install_Dependencies}
+\begin{DoxyItemize}
+\item Root \item C\-Make\-Modules from I\-L\-C\-Soft \item calice\-\_\-cmake \item calice\-\_\-userlib \mbox{[}planned\mbox{]}\end{DoxyItemize}
+The Dead\-And\-Noisy\-Tools depend on Root. In order to find it the C\-Make\-Modules from I\-L\-C\-Soft are used. To generate the documetation a C\-Make makro from calice\-\_\-cmake is used.
+
+\begin{DoxyWarning}{Warning}
+Linking to the calice\-\_\-userlib ensures that the status produced by create\-Bad\-Channels\-List really is the status of the lccd {\ttfamily Cell\-Quality} class which is in the data base. This is not implemented yet. The current status is the expert status, which currently is identical to the data base status, but this done manually is not guaranteed if either create\-Bad\-Channels\-List or {\ttfamily Cell\-Quality} change. Check consistency before writing to the data base!
+\end{DoxyWarning}
+\hypertarget{download_install_installExample}{}\section{Example}\label{download_install_installExample}
+This example assumes that I\-L\-C\-Soft is installed in a directory pointed to by \$\{I\-L\-C\-P\-A\-T\-H\} and that the calice\-\_\-cmake directory is known to the I\-L\-C\-Soft.\-cmake. Do not forget the two dots at the end of the cmake command. 
+\begin{DoxyCode}
+$~/calice\_calib> mkdir build; cd build
+$~/calice\_calib/build> cmake -C $\{ILCPATH\}/ILCSoft.cmake ..
+$~/calice\_calib/build> make
+\end{DoxyCode}
+ 

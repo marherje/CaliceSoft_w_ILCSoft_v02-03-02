@@ -1,0 +1,865 @@
+\section{C\-A\-L\-I\-C\-E\-:\-:Calice\-Elog\-Info Class Reference}
+\label{classCALICE_1_1CaliceElogInfo}\index{C\-A\-L\-I\-C\-E\-::\-Calice\-Elog\-Info@{C\-A\-L\-I\-C\-E\-::\-Calice\-Elog\-Info}}
+
+
+Implementation of the e-\/log information.  
+
+
+
+
+{\ttfamily \#include $<$Calice\-Elog\-Info.\-hh$>$}
+
+Inheritance diagram for C\-A\-L\-I\-C\-E\-:\-:Calice\-Elog\-Info\-:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classCALICE_1_1CaliceElogInfo}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+{\bf Calice\-Elog\-Info} (E\-V\-E\-N\-T\-::\-L\-C\-Collection $\ast$col)
+\begin{DoxyCompactList}\small\item\em constructor from L\-C\-Collection (this way, the user does not need to cast anymore) \end{DoxyCompactList}\item 
+{\bf Calice\-Elog\-Info} (const unsigned int run\-Number, const int pdg\-Type, const float energy, const int quality\-Flag, const int trigger\-Type, const int trigger\-Setting, const float cherenkov\-Pressure, const float cherenkov2\-Pressure, const float position\-X, const float position\-Y, const float rotation\-Angle)
+\begin{DoxyCompactList}\small\item\em constructor from elements \end{DoxyCompactList}\item 
+void {\bf set\-Run\-Number} (const unsigned int run\-Number)
+\begin{DoxyCompactList}\small\item\em Set the run number. \end{DoxyCompactList}\item 
+unsigned int {\bf get\-Run\-Number} ()
+\begin{DoxyCompactList}\small\item\em Get the run number. \end{DoxyCompactList}\item 
+void {\bf set\-Pdg\-Type} (const int pdg\-Type)
+\begin{DoxyCompactList}\small\item\em Set the P\-D\-G I\-D. \end{DoxyCompactList}\item 
+int {\bf get\-Pdg\-Type} ()
+\begin{DoxyCompactList}\small\item\em Get the P\-D\-G I\-D. \end{DoxyCompactList}\item 
+void {\bf set\-Trigger\-Type} (const int trigger\-Type)
+\begin{DoxyCompactList}\small\item\em Set the trigger type. \end{DoxyCompactList}\item 
+int {\bf get\-Trigger\-Type} ()
+\begin{DoxyCompactList}\small\item\em Get the trigger type. \end{DoxyCompactList}\item 
+void {\bf set\-Trigger\-Setting} (const int trigger\-Setting)
+\begin{DoxyCompactList}\small\item\em Set the trigger setting. \end{DoxyCompactList}\item 
+int {\bf get\-Trigger\-Setting} ()
+\begin{DoxyCompactList}\small\item\em Get the trigger setting. \end{DoxyCompactList}\item 
+void {\bf set\-Quality\-Flag} (const int quality\-Flag)
+\begin{DoxyCompactList}\small\item\em Set the quality flag (0=good, 1=bad). \end{DoxyCompactList}\item 
+int {\bf get\-Quality\-Flag} ()
+\begin{DoxyCompactList}\small\item\em Get the quality flag. \end{DoxyCompactList}\item 
+void {\bf set\-Energy} (const float energy)
+\begin{DoxyCompactList}\small\item\em Set the energy of this run. \end{DoxyCompactList}\item 
+float {\bf get\-Energy} ()
+\begin{DoxyCompactList}\small\item\em Get the energy of this run. \end{DoxyCompactList}\item 
+void {\bf set\-Cherenkov\-Pressure} (const float cherenkov\-Pressure)
+\begin{DoxyCompactList}\small\item\em Set the pressure in Cherenkov counter A. \end{DoxyCompactList}\item 
+float {\bf get\-Cherenkov\-Pressure} ()
+\begin{DoxyCompactList}\small\item\em Get the pressure in Cherenkov counter A. \end{DoxyCompactList}\item 
+void {\bf set\-Cherenkov2\-Pressure} (const float cherenkov2\-Pressure)
+\begin{DoxyCompactList}\small\item\em Set the pressure in Cherenkov counter B. \end{DoxyCompactList}\item 
+float {\bf get\-Cherenkov2\-Pressure} ()
+\begin{DoxyCompactList}\small\item\em Get the pressure in Cherenkov counter B. \end{DoxyCompactList}\item 
+void {\bf set\-Position\-X} (const float position\-X)
+\begin{DoxyCompactList}\small\item\em Set the x-\/position of the stage. \end{DoxyCompactList}\item 
+float {\bf get\-Position\-X} ()
+\begin{DoxyCompactList}\small\item\em Get the x-\/position of the stage. \end{DoxyCompactList}\item 
+void {\bf set\-Position\-Y} (const float position\-Y)
+\begin{DoxyCompactList}\small\item\em Set the y-\/position of the stage. \end{DoxyCompactList}\item 
+float {\bf get\-Position\-Y} ()
+\begin{DoxyCompactList}\small\item\em Get the y-\/position of the stage. \end{DoxyCompactList}\item 
+void {\bf set\-Rotation\-Angle} (const float rotation\-Angle)
+\begin{DoxyCompactList}\small\item\em Set the rotation angle of the stage. \end{DoxyCompactList}\item 
+float {\bf get\-Rotation\-Angle} ()
+\begin{DoxyCompactList}\small\item\em Get the rotation angle of the stage. \end{DoxyCompactList}\item 
+void {\bf set\-Run\-Type} (const std\-::string run\-Type)
+\begin{DoxyCompactList}\small\item\em Set the run type (beam\-Data, calibration etc) \end{DoxyCompactList}\item 
+const std\-::string {\bf get\-Run\-Type} ()\label{classCALICE_1_1CaliceElogInfo_a38072c9af25952630e41d98d0c001512}
+
+\begin{DoxyCompactList}\small\item\em Get the run type (beam\-Data, calibration etc) \end{DoxyCompactList}\item 
+void {\bf set\-Target\-String} (const std\-::string target\-String)
+\begin{DoxyCompactList}\small\item\em Set the target string. \end{DoxyCompactList}\item 
+const std\-::string {\bf get\-Target\-String} (const E\-V\-E\-N\-T\-::\-L\-C\-Parameters \&params)\label{classCALICE_1_1CaliceElogInfo_ab036592fded5b7cf6eef2b905bd8a602}
+
+\begin{DoxyCompactList}\small\item\em Get the target string. \end{DoxyCompactList}\item 
+void {\bf set\-Absorber\-String} (const std\-::string absorber\-String)
+\begin{DoxyCompactList}\small\item\em Set the absorber string. \end{DoxyCompactList}\item 
+const std\-::string {\bf get\-Absorber\-String} (const E\-V\-E\-N\-T\-::\-L\-C\-Parameters \&params)\label{classCALICE_1_1CaliceElogInfo_aeeb0758e7f2491bd15665de2e09d2408}
+
+\begin{DoxyCompactList}\small\item\em Get the absorber string. \end{DoxyCompactList}\item 
+void {\bf set\-Comment} (const std\-::string comment)
+\begin{DoxyCompactList}\small\item\em Set the comment. \end{DoxyCompactList}\item 
+const std\-::string {\bf get\-Comment} (const E\-V\-E\-N\-T\-::\-L\-C\-Parameters \&params)
+\begin{DoxyCompactList}\small\item\em Get the comment from the e-\/log. \end{DoxyCompactList}\item 
+const std\-::string {\bf get\-Type\-Name} () const 
+\begin{DoxyCompactList}\small\item\em Implementation of the virtual method from L\-C\-Generic\-Object. \end{DoxyCompactList}\item 
+const std\-::string {\bf get\-Data\-Description} () const 
+\begin{DoxyCompactList}\small\item\em Implementation of the virtual method from L\-C\-Generic\-Object. \end{DoxyCompactList}\item 
+E\-V\-E\-N\-T\-::\-L\-C\-Collection $\ast$ {\bf get\-Collection} () const \label{classCALICE_1_1CaliceElogInfo_a48625b8367f9c424f9064a8231556ad2}
+
+\begin{DoxyCompactList}\small\item\em Get the L\-C\-Collection. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Private Types}
+\begin{DoxyCompactItemize}
+\item 
+enum {\bfseries Ints} \{ \\*
+{\bfseries k\-Run\-Number}, 
+{\bfseries k\-Pdg\-Type}, 
+{\bfseries k\-Quality\-Flag}, 
+{\bfseries k\-Trigger\-Type}, 
+\\*
+{\bfseries k\-Trigger\-Setting}, 
+{\bfseries k\-N\-Ints}
+ \}
+\item 
+enum {\bfseries Floats} \{ \\*
+{\bfseries k\-Energy}, 
+{\bfseries k\-Cherenkov\-Pressure}, 
+{\bfseries k\-Cherenkov2\-Pressure}, 
+{\bfseries k\-Position\-X}, 
+\\*
+{\bfseries k\-Position\-Y}, 
+{\bfseries k\-Rotation\-Angle}, 
+{\bfseries k\-N\-Floats}
+ \}
+\item 
+enum {\bfseries Doubless} \{ {\bfseries k\-N\-Doubles}
+ \}
+\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+std\-::string {\bf \-\_\-run\-Type}
+\begin{DoxyCompactList}\small\item\em run type, e.\-g. \end{DoxyCompactList}\item 
+std\-::string {\bf \-\_\-target\-String}
+\begin{DoxyCompactList}\small\item\em target string, e.\-g. \end{DoxyCompactList}\item 
+std\-::string {\bf \-\_\-absorber\-String}
+\begin{DoxyCompactList}\small\item\em absorber string, e.\-g. \end{DoxyCompactList}\item 
+std\-::string {\bf \-\_\-comment}
+\begin{DoxyCompactList}\small\item\em e-\/log comment, e.\-g. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Implementation of the e-\/log information. 
+
+\begin{DoxyAuthor}{Author}
+{\tt lucaci@mail.\-desy.\-de} 
+\end{DoxyAuthor}
+\begin{DoxyDate}{Date}
+June 2010 
+\end{DoxyDate}
+
+
+Definition at line 18 of file Calice\-Elog\-Info.\-hh.
+
+
+
+\subsection{Constructor \& Destructor Documentation}
+\index{C\-A\-L\-I\-C\-E\-::\-Calice\-Elog\-Info@{C\-A\-L\-I\-C\-E\-::\-Calice\-Elog\-Info}!Calice\-Elog\-Info@{Calice\-Elog\-Info}}
+\index{Calice\-Elog\-Info@{Calice\-Elog\-Info}!CALICE::CaliceElogInfo@{C\-A\-L\-I\-C\-E\-::\-Calice\-Elog\-Info}}
+\subsubsection[{Calice\-Elog\-Info}]{\setlength{\rightskip}{0pt plus 5cm}C\-A\-L\-I\-C\-E\-::\-Calice\-Elog\-Info\-::\-Calice\-Elog\-Info (
+\begin{DoxyParamCaption}
+\item[{E\-V\-E\-N\-T\-::\-L\-C\-Collection $\ast$}]{col}
+\end{DoxyParamCaption}
+)}\label{classCALICE_1_1CaliceElogInfo_ac95c7a4917689baa38e2d8001f8555b5}
+
+
+constructor from L\-C\-Collection (this way, the user does not need to cast anymore) 
+
+Constructor from L\-C\-Object\-: use L\-C\-Object, and do the cast from the L\-C\-Generic\-Object; this way, the users do not have to do the cast anymore. 
+
+Definition at line 13 of file Calice\-Elog\-Info.\-cc.
+
+
+
+References \-\_\-run\-Type, set\-Cherenkov2\-Pressure(), set\-Cherenkov\-Pressure(), set\-Energy(), set\-Pdg\-Type(), set\-Position\-X(), set\-Position\-Y(), set\-Quality\-Flag(), set\-Rotation\-Angle(), set\-Run\-Number(), set\-Trigger\-Setting(), and set\-Trigger\-Type().
+
+\index{C\-A\-L\-I\-C\-E\-::\-Calice\-Elog\-Info@{C\-A\-L\-I\-C\-E\-::\-Calice\-Elog\-Info}!Calice\-Elog\-Info@{Calice\-Elog\-Info}}
+\index{Calice\-Elog\-Info@{Calice\-Elog\-Info}!CALICE::CaliceElogInfo@{C\-A\-L\-I\-C\-E\-::\-Calice\-Elog\-Info}}
+\subsubsection[{Calice\-Elog\-Info}]{\setlength{\rightskip}{0pt plus 5cm}C\-A\-L\-I\-C\-E\-::\-Calice\-Elog\-Info\-::\-Calice\-Elog\-Info (
+\begin{DoxyParamCaption}
+\item[{const unsigned int}]{run\-Number, }
+\item[{const int}]{pdg\-Type, }
+\item[{const float}]{energy, }
+\item[{const int}]{quality\-Flag, }
+\item[{const int}]{trigger\-Type, }
+\item[{const int}]{trigger\-Setting, }
+\item[{const float}]{cherenkov\-Pressure, }
+\item[{const float}]{cherenkov2\-Pressure, }
+\item[{const float}]{position\-X, }
+\item[{const float}]{position\-Y, }
+\item[{const float}]{rotation\-Angle}
+\end{DoxyParamCaption}
+)}\label{classCALICE_1_1CaliceElogInfo_af86284759774e0975c59eef4eb3164cf}
+
+
+constructor from elements 
+
+
+\begin{DoxyParams}{Parameters}
+{\em run\-Number} & run number \\
+\hline
+{\em pdg\-Type} & P\-D\-G I\-D of the beam particle (e.\-g. -\/211 for pi-\/) \\
+\hline
+{\em energy} & energy of the run, in Ge\-V (according to elog information) \\
+\hline
+{\em quality\-Flag} & quality Flag\-: 0 = good, 1 = junk or garbage \\
+\hline
+{\em trigger\-Type} & trigger type\-: 10 for the '10x10' trigger, 20 for the '20x20' trigger, 100 for the '100x100' trigger \\
+\hline
+{\em trigger\-Setting} & trigger setting (available only for F\-N\-A\-L data, see elog) \\
+\hline
+{\em cherenkov\-Pressure} & pressure in cherenkov counter A, in psia \\
+\hline
+{\em cherenkov2\-Pressure} & pressure in cherenkov counter B, in psia \\
+\hline
+{\em position\-X} & x position of the beam, in mm \\
+\hline
+{\em position\-Y} & y position of the beam, in mm \\
+\hline
+{\em rotation\-Angle} & rotation angle (in degrees) \\
+\hline
+\end{DoxyParams}
+
+
+\subsection{Member Function Documentation}
+\index{C\-A\-L\-I\-C\-E\-::\-Calice\-Elog\-Info@{C\-A\-L\-I\-C\-E\-::\-Calice\-Elog\-Info}!get\-Cherenkov2\-Pressure@{get\-Cherenkov2\-Pressure}}
+\index{get\-Cherenkov2\-Pressure@{get\-Cherenkov2\-Pressure}!CALICE::CaliceElogInfo@{C\-A\-L\-I\-C\-E\-::\-Calice\-Elog\-Info}}
+\subsubsection[{get\-Cherenkov2\-Pressure}]{\setlength{\rightskip}{0pt plus 5cm}float C\-A\-L\-I\-C\-E\-::\-Calice\-Elog\-Info\-::get\-Cherenkov2\-Pressure (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{classCALICE_1_1CaliceElogInfo_a70529642b2e5e744993d851a2d4d5a35}
+
+
+Get the pressure in Cherenkov counter B. 
+
+\begin{DoxyReturn}{Returns}
+the Cherenkov pressure 
+\end{DoxyReturn}
+
+
+Definition at line 162 of file Calice\-Elog\-Info.\-cc.
+
+\index{C\-A\-L\-I\-C\-E\-::\-Calice\-Elog\-Info@{C\-A\-L\-I\-C\-E\-::\-Calice\-Elog\-Info}!get\-Cherenkov\-Pressure@{get\-Cherenkov\-Pressure}}
+\index{get\-Cherenkov\-Pressure@{get\-Cherenkov\-Pressure}!CALICE::CaliceElogInfo@{C\-A\-L\-I\-C\-E\-::\-Calice\-Elog\-Info}}
+\subsubsection[{get\-Cherenkov\-Pressure}]{\setlength{\rightskip}{0pt plus 5cm}float C\-A\-L\-I\-C\-E\-::\-Calice\-Elog\-Info\-::get\-Cherenkov\-Pressure (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{classCALICE_1_1CaliceElogInfo_a64dba0c7ea6009be1c833d44661a0ebf}
+
+
+Get the pressure in Cherenkov counter A. 
+
+\begin{DoxyReturn}{Returns}
+the Cherenkov pressure 
+\end{DoxyReturn}
+
+
+Definition at line 151 of file Calice\-Elog\-Info.\-cc.
+
+\index{C\-A\-L\-I\-C\-E\-::\-Calice\-Elog\-Info@{C\-A\-L\-I\-C\-E\-::\-Calice\-Elog\-Info}!get\-Comment@{get\-Comment}}
+\index{get\-Comment@{get\-Comment}!CALICE::CaliceElogInfo@{C\-A\-L\-I\-C\-E\-::\-Calice\-Elog\-Info}}
+\subsubsection[{get\-Comment}]{\setlength{\rightskip}{0pt plus 5cm}const std\-::string C\-A\-L\-I\-C\-E\-::\-Calice\-Elog\-Info\-::get\-Comment (
+\begin{DoxyParamCaption}
+\item[{const E\-V\-E\-N\-T\-::\-L\-C\-Parameters \&}]{params}
+\end{DoxyParamCaption}
+)}\label{classCALICE_1_1CaliceElogInfo_a5d7a81f00bdb9ab9260d11416e2ee266}
+
+
+Get the comment from the e-\/log. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em params} & the L\-C\-Parameters (since the comment is saved as a parameter of the collection of \doxyref{Calice\-Elog\-Info}{p.}{classCALICE_1_1CaliceElogInfo} objects) \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 239 of file Calice\-Elog\-Info.\-cc.
+
+\index{C\-A\-L\-I\-C\-E\-::\-Calice\-Elog\-Info@{C\-A\-L\-I\-C\-E\-::\-Calice\-Elog\-Info}!get\-Data\-Description@{get\-Data\-Description}}
+\index{get\-Data\-Description@{get\-Data\-Description}!CALICE::CaliceElogInfo@{C\-A\-L\-I\-C\-E\-::\-Calice\-Elog\-Info}}
+\subsubsection[{get\-Data\-Description}]{\setlength{\rightskip}{0pt plus 5cm}const std\-::string C\-A\-L\-I\-C\-E\-::\-Calice\-Elog\-Info\-::get\-Data\-Description (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const}\label{classCALICE_1_1CaliceElogInfo_ad2f4fb5b358f25ba0ff59bb4cacadef9}
+
+
+Implementation of the virtual method from L\-C\-Generic\-Object. 
+
+\begin{DoxyReturn}{Returns}
+data description, i.\-e description of the L\-C\-Object elements\-: \char`\"{}i\-:run\-Number,i\-:pdg\-Type,i\-:energy,i\-:quality\-Flag,i\-:trigger\-Type,i\-:trigget\-Setting,\char`\"{} \char`\"{}f\-:cherenkov\-Pressure,f\-:position\-X,f\-:position\-Y,f\-:rotation\-Angle\char`\"{}; 
+\end{DoxyReturn}
+
+
+Definition at line 209 of file Calice\-Elog\-Info.\-cc.
+
+\index{C\-A\-L\-I\-C\-E\-::\-Calice\-Elog\-Info@{C\-A\-L\-I\-C\-E\-::\-Calice\-Elog\-Info}!get\-Energy@{get\-Energy}}
+\index{get\-Energy@{get\-Energy}!CALICE::CaliceElogInfo@{C\-A\-L\-I\-C\-E\-::\-Calice\-Elog\-Info}}
+\subsubsection[{get\-Energy}]{\setlength{\rightskip}{0pt plus 5cm}float C\-A\-L\-I\-C\-E\-::\-Calice\-Elog\-Info\-::get\-Energy (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{classCALICE_1_1CaliceElogInfo_a7af788f2a7cbda67f1fb37a63fc98271}
+
+
+Get the energy of this run. 
+
+\begin{DoxyReturn}{Returns}
+the energy 
+\end{DoxyReturn}
+
+
+Definition at line 139 of file Calice\-Elog\-Info.\-cc.
+
+\index{C\-A\-L\-I\-C\-E\-::\-Calice\-Elog\-Info@{C\-A\-L\-I\-C\-E\-::\-Calice\-Elog\-Info}!get\-Pdg\-Type@{get\-Pdg\-Type}}
+\index{get\-Pdg\-Type@{get\-Pdg\-Type}!CALICE::CaliceElogInfo@{C\-A\-L\-I\-C\-E\-::\-Calice\-Elog\-Info}}
+\subsubsection[{get\-Pdg\-Type}]{\setlength{\rightskip}{0pt plus 5cm}int C\-A\-L\-I\-C\-E\-::\-Calice\-Elog\-Info\-::get\-Pdg\-Type (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{classCALICE_1_1CaliceElogInfo_a697ea7426f6177b224da091350b91450}
+
+
+Get the P\-D\-G I\-D. 
+
+\begin{DoxyReturn}{Returns}
+the P\-D\-G I\-D 
+\end{DoxyReturn}
+
+
+Definition at line 90 of file Calice\-Elog\-Info.\-cc.
+
+\index{C\-A\-L\-I\-C\-E\-::\-Calice\-Elog\-Info@{C\-A\-L\-I\-C\-E\-::\-Calice\-Elog\-Info}!get\-Position\-X@{get\-Position\-X}}
+\index{get\-Position\-X@{get\-Position\-X}!CALICE::CaliceElogInfo@{C\-A\-L\-I\-C\-E\-::\-Calice\-Elog\-Info}}
+\subsubsection[{get\-Position\-X}]{\setlength{\rightskip}{0pt plus 5cm}float C\-A\-L\-I\-C\-E\-::\-Calice\-Elog\-Info\-::get\-Position\-X (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{classCALICE_1_1CaliceElogInfo_a10fbaa90ae11969de35f8cd7c9477c05}
+
+
+Get the x-\/position of the stage. 
+
+\begin{DoxyReturn}{Returns}
+the x-\/position of the stage 
+\end{DoxyReturn}
+
+
+Definition at line 174 of file Calice\-Elog\-Info.\-cc.
+
+\index{C\-A\-L\-I\-C\-E\-::\-Calice\-Elog\-Info@{C\-A\-L\-I\-C\-E\-::\-Calice\-Elog\-Info}!get\-Position\-Y@{get\-Position\-Y}}
+\index{get\-Position\-Y@{get\-Position\-Y}!CALICE::CaliceElogInfo@{C\-A\-L\-I\-C\-E\-::\-Calice\-Elog\-Info}}
+\subsubsection[{get\-Position\-Y}]{\setlength{\rightskip}{0pt plus 5cm}float C\-A\-L\-I\-C\-E\-::\-Calice\-Elog\-Info\-::get\-Position\-Y (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{classCALICE_1_1CaliceElogInfo_a8567162b99806996bde8ca9d7ba41c05}
+
+
+Get the y-\/position of the stage. 
+
+\begin{DoxyReturn}{Returns}
+the y-\/position of the stage 
+\end{DoxyReturn}
+
+
+Definition at line 185 of file Calice\-Elog\-Info.\-cc.
+
+\index{C\-A\-L\-I\-C\-E\-::\-Calice\-Elog\-Info@{C\-A\-L\-I\-C\-E\-::\-Calice\-Elog\-Info}!get\-Quality\-Flag@{get\-Quality\-Flag}}
+\index{get\-Quality\-Flag@{get\-Quality\-Flag}!CALICE::CaliceElogInfo@{C\-A\-L\-I\-C\-E\-::\-Calice\-Elog\-Info}}
+\subsubsection[{get\-Quality\-Flag}]{\setlength{\rightskip}{0pt plus 5cm}int C\-A\-L\-I\-C\-E\-::\-Calice\-Elog\-Info\-::get\-Quality\-Flag (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{classCALICE_1_1CaliceElogInfo_a1211b6753b4736c819b163949b645433}
+
+
+Get the quality flag. 
+
+\begin{DoxyReturn}{Returns}
+get the quality flag 
+\end{DoxyReturn}
+
+
+Definition at line 102 of file Calice\-Elog\-Info.\-cc.
+
+\index{C\-A\-L\-I\-C\-E\-::\-Calice\-Elog\-Info@{C\-A\-L\-I\-C\-E\-::\-Calice\-Elog\-Info}!get\-Rotation\-Angle@{get\-Rotation\-Angle}}
+\index{get\-Rotation\-Angle@{get\-Rotation\-Angle}!CALICE::CaliceElogInfo@{C\-A\-L\-I\-C\-E\-::\-Calice\-Elog\-Info}}
+\subsubsection[{get\-Rotation\-Angle}]{\setlength{\rightskip}{0pt plus 5cm}float C\-A\-L\-I\-C\-E\-::\-Calice\-Elog\-Info\-::get\-Rotation\-Angle (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{classCALICE_1_1CaliceElogInfo_ab366d0ecb73d742195dcc293b88eed4f}
+
+
+Get the rotation angle of the stage. 
+
+\begin{DoxyReturn}{Returns}
+the rotation angle 
+\end{DoxyReturn}
+
+
+Definition at line 197 of file Calice\-Elog\-Info.\-cc.
+
+\index{C\-A\-L\-I\-C\-E\-::\-Calice\-Elog\-Info@{C\-A\-L\-I\-C\-E\-::\-Calice\-Elog\-Info}!get\-Run\-Number@{get\-Run\-Number}}
+\index{get\-Run\-Number@{get\-Run\-Number}!CALICE::CaliceElogInfo@{C\-A\-L\-I\-C\-E\-::\-Calice\-Elog\-Info}}
+\subsubsection[{get\-Run\-Number}]{\setlength{\rightskip}{0pt plus 5cm}unsigned int C\-A\-L\-I\-C\-E\-::\-Calice\-Elog\-Info\-::get\-Run\-Number (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{classCALICE_1_1CaliceElogInfo_a1f913b1191a57417115181042d61bebb}
+
+
+Get the run number. 
+
+\begin{DoxyReturn}{Returns}
+the run number 
+\end{DoxyReturn}
+
+
+Definition at line 78 of file Calice\-Elog\-Info.\-cc.
+
+\index{C\-A\-L\-I\-C\-E\-::\-Calice\-Elog\-Info@{C\-A\-L\-I\-C\-E\-::\-Calice\-Elog\-Info}!get\-Trigger\-Setting@{get\-Trigger\-Setting}}
+\index{get\-Trigger\-Setting@{get\-Trigger\-Setting}!CALICE::CaliceElogInfo@{C\-A\-L\-I\-C\-E\-::\-Calice\-Elog\-Info}}
+\subsubsection[{get\-Trigger\-Setting}]{\setlength{\rightskip}{0pt plus 5cm}int C\-A\-L\-I\-C\-E\-::\-Calice\-Elog\-Info\-::get\-Trigger\-Setting (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{classCALICE_1_1CaliceElogInfo_a43bddb9063ee8deb8a99f47ff40f60c5}
+
+
+Get the trigger setting. 
+
+\begin{DoxyReturn}{Returns}
+the trigger setting 
+\end{DoxyReturn}
+
+
+Definition at line 125 of file Calice\-Elog\-Info.\-cc.
+
+\index{C\-A\-L\-I\-C\-E\-::\-Calice\-Elog\-Info@{C\-A\-L\-I\-C\-E\-::\-Calice\-Elog\-Info}!get\-Trigger\-Type@{get\-Trigger\-Type}}
+\index{get\-Trigger\-Type@{get\-Trigger\-Type}!CALICE::CaliceElogInfo@{C\-A\-L\-I\-C\-E\-::\-Calice\-Elog\-Info}}
+\subsubsection[{get\-Trigger\-Type}]{\setlength{\rightskip}{0pt plus 5cm}int C\-A\-L\-I\-C\-E\-::\-Calice\-Elog\-Info\-::get\-Trigger\-Type (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{classCALICE_1_1CaliceElogInfo_ae69657e00230909eacaa96df61246c36}
+
+
+Get the trigger type. 
+
+\begin{DoxyReturn}{Returns}
+the trigger type (10 for the '10x10' trigger, 20 for the '20x20' trigger, 100 for the '100x100' trigger) 
+\end{DoxyReturn}
+
+
+Definition at line 114 of file Calice\-Elog\-Info.\-cc.
+
+\index{C\-A\-L\-I\-C\-E\-::\-Calice\-Elog\-Info@{C\-A\-L\-I\-C\-E\-::\-Calice\-Elog\-Info}!get\-Type\-Name@{get\-Type\-Name}}
+\index{get\-Type\-Name@{get\-Type\-Name}!CALICE::CaliceElogInfo@{C\-A\-L\-I\-C\-E\-::\-Calice\-Elog\-Info}}
+\subsubsection[{get\-Type\-Name}]{\setlength{\rightskip}{0pt plus 5cm}const std\-::string C\-A\-L\-I\-C\-E\-::\-Calice\-Elog\-Info\-::get\-Type\-Name (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const}\label{classCALICE_1_1CaliceElogInfo_ac7d8e9cfc726aed8b82184386df1d0f3}
+
+
+Implementation of the virtual method from L\-C\-Generic\-Object. 
+
+\begin{DoxyReturn}{Returns}
+type name, i.\-e. name of the class 
+\end{DoxyReturn}
+
+
+Definition at line 204 of file Calice\-Elog\-Info.\-cc.
+
+\index{C\-A\-L\-I\-C\-E\-::\-Calice\-Elog\-Info@{C\-A\-L\-I\-C\-E\-::\-Calice\-Elog\-Info}!set\-Absorber\-String@{set\-Absorber\-String}}
+\index{set\-Absorber\-String@{set\-Absorber\-String}!CALICE::CaliceElogInfo@{C\-A\-L\-I\-C\-E\-::\-Calice\-Elog\-Info}}
+\subsubsection[{set\-Absorber\-String}]{\setlength{\rightskip}{0pt plus 5cm}void C\-A\-L\-I\-C\-E\-::\-Calice\-Elog\-Info\-::set\-Absorber\-String (
+\begin{DoxyParamCaption}
+\item[{const std\-::string}]{absorber\-String}
+\end{DoxyParamCaption}
+)}\label{classCALICE_1_1CaliceElogInfo_a859927fef587dd3d1ed1ba6fc9a6e59d}
+
+
+Set the absorber string. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em absorber\-String} & the target string to be set \\
+\hline
+\end{DoxyParams}
+\index{C\-A\-L\-I\-C\-E\-::\-Calice\-Elog\-Info@{C\-A\-L\-I\-C\-E\-::\-Calice\-Elog\-Info}!set\-Cherenkov2\-Pressure@{set\-Cherenkov2\-Pressure}}
+\index{set\-Cherenkov2\-Pressure@{set\-Cherenkov2\-Pressure}!CALICE::CaliceElogInfo@{C\-A\-L\-I\-C\-E\-::\-Calice\-Elog\-Info}}
+\subsubsection[{set\-Cherenkov2\-Pressure}]{\setlength{\rightskip}{0pt plus 5cm}void C\-A\-L\-I\-C\-E\-::\-Calice\-Elog\-Info\-::set\-Cherenkov2\-Pressure (
+\begin{DoxyParamCaption}
+\item[{const float}]{cherenkov2\-Pressure}
+\end{DoxyParamCaption}
+)}\label{classCALICE_1_1CaliceElogInfo_a20ab6bff51831653e7215c72f99e1d07}
+
+
+Set the pressure in Cherenkov counter B. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em cherenkov2\-Pressure} & the Cherenkov pressure to be set \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 157 of file Calice\-Elog\-Info.\-cc.
+
+
+
+Referenced by Calice\-Elog\-Info().
+
+\index{C\-A\-L\-I\-C\-E\-::\-Calice\-Elog\-Info@{C\-A\-L\-I\-C\-E\-::\-Calice\-Elog\-Info}!set\-Cherenkov\-Pressure@{set\-Cherenkov\-Pressure}}
+\index{set\-Cherenkov\-Pressure@{set\-Cherenkov\-Pressure}!CALICE::CaliceElogInfo@{C\-A\-L\-I\-C\-E\-::\-Calice\-Elog\-Info}}
+\subsubsection[{set\-Cherenkov\-Pressure}]{\setlength{\rightskip}{0pt plus 5cm}void C\-A\-L\-I\-C\-E\-::\-Calice\-Elog\-Info\-::set\-Cherenkov\-Pressure (
+\begin{DoxyParamCaption}
+\item[{const float}]{cherenkov\-Pressure}
+\end{DoxyParamCaption}
+)}\label{classCALICE_1_1CaliceElogInfo_afefee1aa0ee343a7b813305826163270}
+
+
+Set the pressure in Cherenkov counter A. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em cherenkov\-Pressure} & the Cherenkov pressure to be set \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 146 of file Calice\-Elog\-Info.\-cc.
+
+
+
+Referenced by Calice\-Elog\-Info().
+
+\index{C\-A\-L\-I\-C\-E\-::\-Calice\-Elog\-Info@{C\-A\-L\-I\-C\-E\-::\-Calice\-Elog\-Info}!set\-Comment@{set\-Comment}}
+\index{set\-Comment@{set\-Comment}!CALICE::CaliceElogInfo@{C\-A\-L\-I\-C\-E\-::\-Calice\-Elog\-Info}}
+\subsubsection[{set\-Comment}]{\setlength{\rightskip}{0pt plus 5cm}void C\-A\-L\-I\-C\-E\-::\-Calice\-Elog\-Info\-::set\-Comment (
+\begin{DoxyParamCaption}
+\item[{const std\-::string}]{comment}
+\end{DoxyParamCaption}
+)}\label{classCALICE_1_1CaliceElogInfo_aa0c8d3a4999b87c62e2a55e7848bd870}
+
+
+Set the comment. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em comment} & the comment to be set \\
+\hline
+\end{DoxyParams}
+\index{C\-A\-L\-I\-C\-E\-::\-Calice\-Elog\-Info@{C\-A\-L\-I\-C\-E\-::\-Calice\-Elog\-Info}!set\-Energy@{set\-Energy}}
+\index{set\-Energy@{set\-Energy}!CALICE::CaliceElogInfo@{C\-A\-L\-I\-C\-E\-::\-Calice\-Elog\-Info}}
+\subsubsection[{set\-Energy}]{\setlength{\rightskip}{0pt plus 5cm}void C\-A\-L\-I\-C\-E\-::\-Calice\-Elog\-Info\-::set\-Energy (
+\begin{DoxyParamCaption}
+\item[{const float}]{energy}
+\end{DoxyParamCaption}
+)}\label{classCALICE_1_1CaliceElogInfo_af19688a789197c84db6273d606ce0a3f}
+
+
+Set the energy of this run. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em energy} & the energy to be set \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 134 of file Calice\-Elog\-Info.\-cc.
+
+
+
+Referenced by Calice\-Elog\-Info().
+
+\index{C\-A\-L\-I\-C\-E\-::\-Calice\-Elog\-Info@{C\-A\-L\-I\-C\-E\-::\-Calice\-Elog\-Info}!set\-Pdg\-Type@{set\-Pdg\-Type}}
+\index{set\-Pdg\-Type@{set\-Pdg\-Type}!CALICE::CaliceElogInfo@{C\-A\-L\-I\-C\-E\-::\-Calice\-Elog\-Info}}
+\subsubsection[{set\-Pdg\-Type}]{\setlength{\rightskip}{0pt plus 5cm}void C\-A\-L\-I\-C\-E\-::\-Calice\-Elog\-Info\-::set\-Pdg\-Type (
+\begin{DoxyParamCaption}
+\item[{const int}]{pdg\-Type}
+\end{DoxyParamCaption}
+)}\label{classCALICE_1_1CaliceElogInfo_a90bdb26738e9e5343af9c034816ef4f5}
+
+
+Set the P\-D\-G I\-D. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em pdg\-Type} & P\-D\-G I\-D to be set \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 85 of file Calice\-Elog\-Info.\-cc.
+
+
+
+Referenced by Calice\-Elog\-Info().
+
+\index{C\-A\-L\-I\-C\-E\-::\-Calice\-Elog\-Info@{C\-A\-L\-I\-C\-E\-::\-Calice\-Elog\-Info}!set\-Position\-X@{set\-Position\-X}}
+\index{set\-Position\-X@{set\-Position\-X}!CALICE::CaliceElogInfo@{C\-A\-L\-I\-C\-E\-::\-Calice\-Elog\-Info}}
+\subsubsection[{set\-Position\-X}]{\setlength{\rightskip}{0pt plus 5cm}void C\-A\-L\-I\-C\-E\-::\-Calice\-Elog\-Info\-::set\-Position\-X (
+\begin{DoxyParamCaption}
+\item[{const float}]{position\-X}
+\end{DoxyParamCaption}
+)}\label{classCALICE_1_1CaliceElogInfo_a3b2cde809cdf5754e5572db98faa1fbd}
+
+
+Set the x-\/position of the stage. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em position\-X} & the x-\/position of the stage \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 169 of file Calice\-Elog\-Info.\-cc.
+
+
+
+Referenced by Calice\-Elog\-Info().
+
+\index{C\-A\-L\-I\-C\-E\-::\-Calice\-Elog\-Info@{C\-A\-L\-I\-C\-E\-::\-Calice\-Elog\-Info}!set\-Position\-Y@{set\-Position\-Y}}
+\index{set\-Position\-Y@{set\-Position\-Y}!CALICE::CaliceElogInfo@{C\-A\-L\-I\-C\-E\-::\-Calice\-Elog\-Info}}
+\subsubsection[{set\-Position\-Y}]{\setlength{\rightskip}{0pt plus 5cm}void C\-A\-L\-I\-C\-E\-::\-Calice\-Elog\-Info\-::set\-Position\-Y (
+\begin{DoxyParamCaption}
+\item[{const float}]{position\-Y}
+\end{DoxyParamCaption}
+)}\label{classCALICE_1_1CaliceElogInfo_ad3c17fc4e4374c18720b4a46ad5d2b66}
+
+
+Set the y-\/position of the stage. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em position\-Y} & the y-\/position of the stage \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 180 of file Calice\-Elog\-Info.\-cc.
+
+
+
+Referenced by Calice\-Elog\-Info().
+
+\index{C\-A\-L\-I\-C\-E\-::\-Calice\-Elog\-Info@{C\-A\-L\-I\-C\-E\-::\-Calice\-Elog\-Info}!set\-Quality\-Flag@{set\-Quality\-Flag}}
+\index{set\-Quality\-Flag@{set\-Quality\-Flag}!CALICE::CaliceElogInfo@{C\-A\-L\-I\-C\-E\-::\-Calice\-Elog\-Info}}
+\subsubsection[{set\-Quality\-Flag}]{\setlength{\rightskip}{0pt plus 5cm}void C\-A\-L\-I\-C\-E\-::\-Calice\-Elog\-Info\-::set\-Quality\-Flag (
+\begin{DoxyParamCaption}
+\item[{const int}]{quality\-Flag}
+\end{DoxyParamCaption}
+)}\label{classCALICE_1_1CaliceElogInfo_a556bdeb94e436ec7be3c75687219b77b}
+
+
+Set the quality flag (0=good, 1=bad). 
+
+Please note that this is a general quality flag, based on the comments done by the people on shift. If they mentioned that the run was 'bad', 'junk' or 'garbage', the quality flag for this run is set to 1 (i.\-e. bad). This is different from the data quality flag set by the D\-Q bits (for more information, please see here\-: {\tt http\-://www-\/flc.\-desy.\-de/flc/flcwiki/\-Run\-Log\-Data\-Quality} 
+\begin{DoxyParams}{Parameters}
+{\em quality\-Flag} & the quality flag to be set \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 97 of file Calice\-Elog\-Info.\-cc.
+
+
+
+Referenced by Calice\-Elog\-Info().
+
+\index{C\-A\-L\-I\-C\-E\-::\-Calice\-Elog\-Info@{C\-A\-L\-I\-C\-E\-::\-Calice\-Elog\-Info}!set\-Rotation\-Angle@{set\-Rotation\-Angle}}
+\index{set\-Rotation\-Angle@{set\-Rotation\-Angle}!CALICE::CaliceElogInfo@{C\-A\-L\-I\-C\-E\-::\-Calice\-Elog\-Info}}
+\subsubsection[{set\-Rotation\-Angle}]{\setlength{\rightskip}{0pt plus 5cm}void C\-A\-L\-I\-C\-E\-::\-Calice\-Elog\-Info\-::set\-Rotation\-Angle (
+\begin{DoxyParamCaption}
+\item[{const float}]{rotation\-Angle}
+\end{DoxyParamCaption}
+)}\label{classCALICE_1_1CaliceElogInfo_a4c54970b6c6e5eda6b4a5d81b760939b}
+
+
+Set the rotation angle of the stage. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em rotation\-Angle} & the rotation angle \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 192 of file Calice\-Elog\-Info.\-cc.
+
+
+
+Referenced by Calice\-Elog\-Info().
+
+\index{C\-A\-L\-I\-C\-E\-::\-Calice\-Elog\-Info@{C\-A\-L\-I\-C\-E\-::\-Calice\-Elog\-Info}!set\-Run\-Number@{set\-Run\-Number}}
+\index{set\-Run\-Number@{set\-Run\-Number}!CALICE::CaliceElogInfo@{C\-A\-L\-I\-C\-E\-::\-Calice\-Elog\-Info}}
+\subsubsection[{set\-Run\-Number}]{\setlength{\rightskip}{0pt plus 5cm}void C\-A\-L\-I\-C\-E\-::\-Calice\-Elog\-Info\-::set\-Run\-Number (
+\begin{DoxyParamCaption}
+\item[{const unsigned int}]{run\-Number}
+\end{DoxyParamCaption}
+)}\label{classCALICE_1_1CaliceElogInfo_a6baaf70dc59575276292de977cac70e5}
+
+
+Set the run number. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em run\-Number} & the run number to be set \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 73 of file Calice\-Elog\-Info.\-cc.
+
+
+
+Referenced by Calice\-Elog\-Info().
+
+\index{C\-A\-L\-I\-C\-E\-::\-Calice\-Elog\-Info@{C\-A\-L\-I\-C\-E\-::\-Calice\-Elog\-Info}!set\-Run\-Type@{set\-Run\-Type}}
+\index{set\-Run\-Type@{set\-Run\-Type}!CALICE::CaliceElogInfo@{C\-A\-L\-I\-C\-E\-::\-Calice\-Elog\-Info}}
+\subsubsection[{set\-Run\-Type}]{\setlength{\rightskip}{0pt plus 5cm}void C\-A\-L\-I\-C\-E\-::\-Calice\-Elog\-Info\-::set\-Run\-Type (
+\begin{DoxyParamCaption}
+\item[{const std\-::string}]{run\-Type}
+\end{DoxyParamCaption}
+)}\label{classCALICE_1_1CaliceElogInfo_aaa477c9f9a50257d116a99cab4883ae2}
+
+
+Set the run type (beam\-Data, calibration etc) 
+
+
+\begin{DoxyParams}{Parameters}
+{\em run\-Type} & \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 220 of file Calice\-Elog\-Info.\-cc.
+
+
+
+References \-\_\-run\-Type.
+
+\index{C\-A\-L\-I\-C\-E\-::\-Calice\-Elog\-Info@{C\-A\-L\-I\-C\-E\-::\-Calice\-Elog\-Info}!set\-Target\-String@{set\-Target\-String}}
+\index{set\-Target\-String@{set\-Target\-String}!CALICE::CaliceElogInfo@{C\-A\-L\-I\-C\-E\-::\-Calice\-Elog\-Info}}
+\subsubsection[{set\-Target\-String}]{\setlength{\rightskip}{0pt plus 5cm}void C\-A\-L\-I\-C\-E\-::\-Calice\-Elog\-Info\-::set\-Target\-String (
+\begin{DoxyParamCaption}
+\item[{const std\-::string}]{target\-String}
+\end{DoxyParamCaption}
+)}\label{classCALICE_1_1CaliceElogInfo_a03b57d4587a38ff31829536580628525}
+
+
+Set the target string. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em target\-String} & the target string to be set \\
+\hline
+\end{DoxyParams}
+\index{C\-A\-L\-I\-C\-E\-::\-Calice\-Elog\-Info@{C\-A\-L\-I\-C\-E\-::\-Calice\-Elog\-Info}!set\-Trigger\-Setting@{set\-Trigger\-Setting}}
+\index{set\-Trigger\-Setting@{set\-Trigger\-Setting}!CALICE::CaliceElogInfo@{C\-A\-L\-I\-C\-E\-::\-Calice\-Elog\-Info}}
+\subsubsection[{set\-Trigger\-Setting}]{\setlength{\rightskip}{0pt plus 5cm}void C\-A\-L\-I\-C\-E\-::\-Calice\-Elog\-Info\-::set\-Trigger\-Setting (
+\begin{DoxyParamCaption}
+\item[{const int}]{trigger\-Setting}
+\end{DoxyParamCaption}
+)}\label{classCALICE_1_1CaliceElogInfo_a48863237a83d1e4002693ffa07885690}
+
+
+Set the trigger setting. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em trigger\-Setting} & \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 120 of file Calice\-Elog\-Info.\-cc.
+
+
+
+Referenced by Calice\-Elog\-Info().
+
+\index{C\-A\-L\-I\-C\-E\-::\-Calice\-Elog\-Info@{C\-A\-L\-I\-C\-E\-::\-Calice\-Elog\-Info}!set\-Trigger\-Type@{set\-Trigger\-Type}}
+\index{set\-Trigger\-Type@{set\-Trigger\-Type}!CALICE::CaliceElogInfo@{C\-A\-L\-I\-C\-E\-::\-Calice\-Elog\-Info}}
+\subsubsection[{set\-Trigger\-Type}]{\setlength{\rightskip}{0pt plus 5cm}void C\-A\-L\-I\-C\-E\-::\-Calice\-Elog\-Info\-::set\-Trigger\-Type (
+\begin{DoxyParamCaption}
+\item[{const int}]{trigger\-Type}
+\end{DoxyParamCaption}
+)}\label{classCALICE_1_1CaliceElogInfo_afeebb83b902105daab5925dcda2d1c14}
+
+
+Set the trigger type. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em trigger\-Type} & the trigger type\-: 10 for the '10x10' trigger, 20 for the '20x20' trigger, 100 for the '100x100' trigger \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 109 of file Calice\-Elog\-Info.\-cc.
+
+
+
+Referenced by Calice\-Elog\-Info().
+
+
+
+\subsection{Field Documentation}
+\index{C\-A\-L\-I\-C\-E\-::\-Calice\-Elog\-Info@{C\-A\-L\-I\-C\-E\-::\-Calice\-Elog\-Info}!\-\_\-absorber\-String@{\-\_\-absorber\-String}}
+\index{\-\_\-absorber\-String@{\-\_\-absorber\-String}!CALICE::CaliceElogInfo@{C\-A\-L\-I\-C\-E\-::\-Calice\-Elog\-Info}}
+\subsubsection[{\-\_\-absorber\-String}]{\setlength{\rightskip}{0pt plus 5cm}std\-::string C\-A\-L\-I\-C\-E\-::\-Calice\-Elog\-Info\-::\-\_\-absorber\-String\hspace{0.3cm}{\ttfamily [private]}}\label{classCALICE_1_1CaliceElogInfo_a6619c62f472cb7385242a0c7d301a1d8}
+
+
+absorber string, e.\-g. 
+
+\char`\"{}6 mm Pb\char`\"{} 
+
+Definition at line 215 of file Calice\-Elog\-Info.\-hh.
+
+\index{C\-A\-L\-I\-C\-E\-::\-Calice\-Elog\-Info@{C\-A\-L\-I\-C\-E\-::\-Calice\-Elog\-Info}!\-\_\-comment@{\-\_\-comment}}
+\index{\-\_\-comment@{\-\_\-comment}!CALICE::CaliceElogInfo@{C\-A\-L\-I\-C\-E\-::\-Calice\-Elog\-Info}}
+\subsubsection[{\-\_\-comment}]{\setlength{\rightskip}{0pt plus 5cm}std\-::string C\-A\-L\-I\-C\-E\-::\-Calice\-Elog\-Info\-::\-\_\-comment\hspace{0.3cm}{\ttfamily [private]}}\label{classCALICE_1_1CaliceElogInfo_a5191499169242dc9ad1c43459e6fce51}
+
+
+e-\/log comment, e.\-g. 
+
+\char`\"{}10 deg, 100k\char`\"{} 
+
+Definition at line 216 of file Calice\-Elog\-Info.\-hh.
+
+\index{C\-A\-L\-I\-C\-E\-::\-Calice\-Elog\-Info@{C\-A\-L\-I\-C\-E\-::\-Calice\-Elog\-Info}!\-\_\-run\-Type@{\-\_\-run\-Type}}
+\index{\-\_\-run\-Type@{\-\_\-run\-Type}!CALICE::CaliceElogInfo@{C\-A\-L\-I\-C\-E\-::\-Calice\-Elog\-Info}}
+\subsubsection[{\-\_\-run\-Type}]{\setlength{\rightskip}{0pt plus 5cm}std\-::string C\-A\-L\-I\-C\-E\-::\-Calice\-Elog\-Info\-::\-\_\-run\-Type\hspace{0.3cm}{\ttfamily [private]}}\label{classCALICE_1_1CaliceElogInfo_a1a1821d59f676a7805131d53f6310eff}
+
+
+run type, e.\-g. 
+
+\char`\"{}beam\-Data\char`\"{}, noise, etc 
+
+Definition at line 213 of file Calice\-Elog\-Info.\-hh.
+
+
+
+Referenced by Calice\-Elog\-Info(), get\-Collection(), get\-Run\-Type(), and set\-Run\-Type().
+
+\index{C\-A\-L\-I\-C\-E\-::\-Calice\-Elog\-Info@{C\-A\-L\-I\-C\-E\-::\-Calice\-Elog\-Info}!\-\_\-target\-String@{\-\_\-target\-String}}
+\index{\-\_\-target\-String@{\-\_\-target\-String}!CALICE::CaliceElogInfo@{C\-A\-L\-I\-C\-E\-::\-Calice\-Elog\-Info}}
+\subsubsection[{\-\_\-target\-String}]{\setlength{\rightskip}{0pt plus 5cm}std\-::string C\-A\-L\-I\-C\-E\-::\-Calice\-Elog\-Info\-::\-\_\-target\-String\hspace{0.3cm}{\ttfamily [private]}}\label{classCALICE_1_1CaliceElogInfo_a93c30846719e525039e370d49d420dd0}
+
+
+target string, e.\-g. 
+
+\char`\"{}air\char`\"{} 
+
+Definition at line 214 of file Calice\-Elog\-Info.\-hh.
+
+
+
+The documentation for this class was generated from the following files\-:\begin{DoxyCompactItemize}
+\item 
+Calice\-Elog\-Info.\-hh\item 
+Calice\-Elog\-Info.\-cc\end{DoxyCompactItemize}

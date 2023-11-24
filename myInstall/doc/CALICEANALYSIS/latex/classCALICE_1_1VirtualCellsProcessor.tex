@@ -1,0 +1,84 @@
+\section{C\-A\-L\-I\-C\-E\-:\-:Virtual\-Cells\-Processor Class Reference}
+\label{classCALICE_1_1VirtualCellsProcessor}\index{C\-A\-L\-I\-C\-E\-::\-Virtual\-Cells\-Processor@{C\-A\-L\-I\-C\-E\-::\-Virtual\-Cells\-Processor}}
+
+
+{\ttfamily \#include $<$Virtual\-Cells\-Processor.\-hh$>$}
+
+Inheritance diagram for C\-A\-L\-I\-C\-E\-:\-:Virtual\-Cells\-Processor\-:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classCALICE_1_1VirtualCellsProcessor}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+virtual Processor $\ast$ {\bfseries new\-Processor} ()\label{classCALICE_1_1VirtualCellsProcessor_a58e24bc7d4c0f33f9de682678f8f68e0}
+
+\item 
+virtual void {\bfseries init} ()\label{classCALICE_1_1VirtualCellsProcessor_abac6131a93b8f735222d63e695d6b401}
+
+\item 
+virtual void {\bfseries process\-Event} (L\-C\-Event $\ast$evt)\label{classCALICE_1_1VirtualCellsProcessor_af2bb752abf56392252ff8cd222a99bc4}
+
+\item 
+virtual void {\bfseries end} ()\label{classCALICE_1_1VirtualCellsProcessor_a0644fe9c1934cda6f2107eea88faf2ba}
+
+\end{DoxyCompactItemize}
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static Mapped\-Container\\*
+$<$ {\bf Virtual\-Cells} $>$ $\ast$ {\bf get\-Virtual\-Cells} (const std\-::string \&processor\-Name)
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Processor that provides virtual cells of $1\mathrm{cm}\times1\mathrm{cm}$
+
+To obtain the object in other processors use\-: \doxyref{Virtual\-Cells\-Processor\-::get\-Virtual\-Cells}{p.}{classCALICE_1_1VirtualCellsProcessor_ab5d72dc70bac4d60c96e3d446e89750f}( \char`\"{}virtual\-Cells processor name\char`\"{} )
+
+\begin{DoxyParagraph}{processor parameters}
+\begin{TabularC}{2}
+\hline
+steering file parameter name &description  \\\cline{1-2}
+{\bfseries {\itshape  Mapping\-Processor\-Name }}&name of the mapping processor that provides the necessary Mapper class \\\cline{1-2}
+{\bfseries {\itshape  Cell\-Description\-Processor\-Name }}&name of the cell description processor that provides the necessary cell description information \\\cline{1-2}
+\end{TabularC}
+
+\end{DoxyParagraph}
+\begin{DoxyAuthor}{Author}
+{\tt Benjamin.\-Lutz@desy.\-de} 
+\end{DoxyAuthor}
+\begin{DoxyVersion}{Version}
+0.\-1 
+\end{DoxyVersion}
+\begin{DoxyDate}{Date}
+June 2009 
+\end{DoxyDate}
+
+
+\subsection{Member Function Documentation}
+\index{C\-A\-L\-I\-C\-E\-::\-Virtual\-Cells\-Processor@{C\-A\-L\-I\-C\-E\-::\-Virtual\-Cells\-Processor}!get\-Virtual\-Cells@{get\-Virtual\-Cells}}
+\index{get\-Virtual\-Cells@{get\-Virtual\-Cells}!CALICE::VirtualCellsProcessor@{C\-A\-L\-I\-C\-E\-::\-Virtual\-Cells\-Processor}}
+\subsubsection[{get\-Virtual\-Cells}]{\setlength{\rightskip}{0pt plus 5cm}Mapped\-Container$<$ {\bf Virtual\-Cells} $>$ $\ast$ C\-A\-L\-I\-C\-E\-::\-Virtual\-Cells\-Processor\-::get\-Virtual\-Cells (
+\begin{DoxyParamCaption}
+\item[{const std\-::string \&}]{processor\-Name}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}\label{classCALICE_1_1VirtualCellsProcessor_ab5d72dc70bac4d60c96e3d446e89750f}
+static function to obtain a Mapped\-Container with virtual cells
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em processor\-Name} & name of the \doxyref{Virtual\-Cells\-Processor}{p.}{classCALICE_1_1VirtualCellsProcessor} that takes care of this \doxyref{Virtual\-Cells}{p.}{classCALICE_1_1VirtualCells}. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+pointer to the Mapped\-Container including \doxyref{Virtual\-Cells}{p.}{classCALICE_1_1VirtualCells} 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following files\-:\begin{DoxyCompactItemize}
+\item 
+/nfs/dust/ilc/user/marquezh/\-Calice\-Soft\-\_\-w\-\_\-\-I\-L\-C\-Soft\-\_\-v02-\/03-\/02/calice\-\_\-analysis/addon\-Procs/include/Virtual\-Cells\-Processor.\-hh\item 
+/nfs/dust/ilc/user/marquezh/\-Calice\-Soft\-\_\-w\-\_\-\-I\-L\-C\-Soft\-\_\-v02-\/03-\/02/calice\-\_\-analysis/addon\-Procs/src/Virtual\-Cells\-Processor.\-cc\end{DoxyCompactItemize}

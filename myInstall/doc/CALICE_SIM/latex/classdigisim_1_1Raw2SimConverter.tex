@@ -1,0 +1,75 @@
+\section{digisim\-:\-:Raw2\-Sim\-Converter Class Reference}
+\label{classdigisim_1_1Raw2SimConverter}\index{digisim\-::\-Raw2\-Sim\-Converter@{digisim\-::\-Raw2\-Sim\-Converter}}
+
+
+Utility class to handle the conversion of Raw\-Calorimeter\-Hits to Sim\-Calorimeter\-Hits.  
+
+
+
+
+{\ttfamily \#include $<$Raw2\-Sim\-Converter.\-hpp$>$}
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+{\bfseries Raw2\-Sim\-Converter} (double efac, double tfac)\label{classdigisim_1_1Raw2SimConverter_a3b8813468d4e04fd8376a60bf000ff7a}
+
+\item 
+void {\bfseries add\-Contribution} (const E\-V\-E\-N\-T\-::\-M\-C\-Particle $\ast$mcp, double energy, double time)\label{classdigisim_1_1Raw2SimConverter_a85735b6b24724a147e18a590b73e6d82}
+
+\item 
+I\-M\-P\-L\-::\-Sim\-Calorimeter\-Hit\-Impl $\ast$ {\bfseries convert\-To\-Sim\-Calorimeter\-Hit} ()\label{classdigisim_1_1Raw2SimConverter_acfaa9558ee8dfb5b1bad8074d2dad04f}
+
+\item 
+void {\bfseries print} ()\label{classdigisim_1_1Raw2SimConverter_a921681abcd4b3a5a47e0178f21b395c1}
+
+\item 
+void {\bfseries process} (const E\-V\-E\-N\-T\-::\-L\-C\-Collection $\ast$links)\label{classdigisim_1_1Raw2SimConverter_aeaa1d246252d1ec7ba232cccf525958d}
+
+\item 
+std\-::vector$<$ const \\*
+I\-M\-P\-L\-::\-Sim\-Calorimeter\-Hit\-Impl $\ast$ $>$ \& {\bfseries get\-Sim\-Calorimeter\-Hits} ()\label{classdigisim_1_1Raw2SimConverter_ac5790f350960f5ce762e28ced791c4d3}
+
+\item 
+void {\bfseries reset} ()\label{classdigisim_1_1Raw2SimConverter_a0172859c9e945b41ece695142e633514}
+
+\end{DoxyCompactItemize}
+\subsection*{Private Types}
+\begin{DoxyCompactItemize}
+\item 
+typedef std\-::map$<$ const \\*
+E\-V\-E\-N\-T\-::\-Raw\-Calorimeter\-Hit \\*
+$\ast$, I\-M\-P\-L\-::\-Sim\-Calorimeter\-Hit\-Impl $\ast$ $>$ {\bfseries Hit\-Map}\label{classdigisim_1_1Raw2SimConverter_ab7849e5504e56b9de9e197bc2c6302d1}
+
+\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+double {\bfseries \-\_\-energy\-Factor}\label{classdigisim_1_1Raw2SimConverter_a929259f124928c57f1ea3e0c9959d793}
+
+\item 
+double {\bfseries \-\_\-time\-Factor}\label{classdigisim_1_1Raw2SimConverter_a3e550984ccc24b0bffdf2d970206f8c2}
+
+\item 
+std\-::vector$<$ const \\*
+I\-M\-P\-L\-::\-Sim\-Calorimeter\-Hit\-Impl $\ast$ $>$ {\bfseries \-\_\-out\-Sim\-Hits}\label{classdigisim_1_1Raw2SimConverter_a39264bb7f024834813c10ff25f32928e}
+
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Utility class to handle the conversion of Raw\-Calorimeter\-Hits to Sim\-Calorimeter\-Hits. 
+
+\begin{DoxyAuthor}{Author}
+Guilherme Lima 
+\end{DoxyAuthor}
+
+
+Definition at line 22 of file Raw2\-Sim\-Converter.\-hpp.
+
+
+
+The documentation for this class was generated from the following files\-:\begin{DoxyCompactItemize}
+\item 
+Raw2\-Sim\-Converter.\-hpp\item 
+Raw2\-Sim\-Converter.\-cpp\end{DoxyCompactItemize}

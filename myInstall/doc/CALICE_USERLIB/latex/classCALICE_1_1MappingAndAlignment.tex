@@ -1,0 +1,736 @@
+\section{C\-A\-L\-I\-C\-E\-:\-:Mapping\-And\-Alignment Class Reference}
+\label{classCALICE_1_1MappingAndAlignment}\index{C\-A\-L\-I\-C\-E\-::\-Mapping\-And\-Alignment@{C\-A\-L\-I\-C\-E\-::\-Mapping\-And\-Alignment}}
+
+
+Class to comunicate/handle the translation into unique layer/cell ids and 3\-D spacial coordinates.  
+
+
+
+
+{\ttfamily \#include $<$Mapping\-And\-Alignment.\-hh$>$}
+
+Inheritance diagram for C\-A\-L\-I\-C\-E\-:\-:Mapping\-And\-Alignment\-:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classCALICE_1_1MappingAndAlignment}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+{\bf Mapping\-And\-Alignment} ()
+\begin{DoxyCompactList}\small\item\em default constructor. \end{DoxyCompactList}\item 
+void {\bf init} ()\label{classCALICE_1_1MappingAndAlignment_ab65734fd9a72ab2d06cc6d9943f426b5}
+
+\begin{DoxyCompactList}\small\item\em Does noting for the time beeing. \end{DoxyCompactList}\item 
+std\-::pair$<$ U\-Int\-\_\-t, U\-Int\-\_\-t $>$ {\bf get\-Module\-Index} (U\-Int\-\_\-t crate\-\_\-id, U\-Int\-\_\-t slot\-\_\-id, U\-Int\-\_\-t front\-\_\-end\-\_\-nr) const noexcept(false)
+\begin{DoxyCompactList}\small\item\em Get the module indices connected to the right and left side of the given front-\/end. \end{DoxyCompactList}\item 
+U\-Int\-\_\-t {\bf get\-Cell\-Index} (U\-Int\-\_\-t module\-\_\-index, U\-Int\-\_\-t multiplex\-\_\-position, U\-Int\-\_\-t line\-\_\-i) const 
+\begin{DoxyCompactList}\small\item\em get the cell index for the given module according to the current multiplex position and line index. \end{DoxyCompactList}\item 
+U\-Int\-\_\-t {\bf get\-Module\-I\-D} (U\-Int\-\_\-t module\-\_\-index) const 
+\begin{DoxyCompactList}\small\item\em Get the I\-D of module which uniquely identifies a certain module of one module type. \end{DoxyCompactList}\item 
+string {\bf get\-Module\-Name} (U\-Int\-\_\-t module\-\_\-index) const noexcept(false)
+\begin{DoxyCompactList}\small\item\em Get the name containing the type specifier and the module I\-D. \end{DoxyCompactList}\item 
+bool {\bf is\-Module\-Connected} (U\-Int\-\_\-t module\-\_\-index) const noexcept(false)
+\begin{DoxyCompactList}\small\item\em Verify whether the module location is connected to an active front-\/end. \end{DoxyCompactList}\item 
+Int\-\_\-t {\bf get\-Module\-Index\-From\-Cell\-Index} (U\-Int\-\_\-t)
+\begin{DoxyCompactList}\small\item\em Return the module index for a given ({\itshape Mokka}) Cellindex All this assumes that the \doxyref{Module\-Location}{p.}{classCALICE_1_1ModuleLocation} class has got set properly the index of the lower left cell e.\-g. \end{DoxyCompactList}\item 
+U\-Int\-\_\-t {\bf get\-N\-Cells\-Total} () const 
+\begin{DoxyCompactList}\small\item\em Return the total number of defined cells. \end{DoxyCompactList}\item 
+U\-Int\-\_\-t {\bf get\-N\-Connected\-Cells} () const \label{classCALICE_1_1MappingAndAlignment_a46301567d4816d91e621600a33322cee}
+
+\begin{DoxyCompactList}\small\item\em Return the number of cells connected to the D\-A\-Q. \end{DoxyCompactList}\item 
+Bool\-\_\-t {\bf is\-Cell\-Dead} (U\-Int\-\_\-t module\-\_\-index, U\-Int\-\_\-t cell\-\_\-index)
+\begin{DoxyCompactList}\small\item\em Verify whether the given cell is dead. \end{DoxyCompactList}\item 
+void {\bf module\-Type\-Changed} (lcio\-::\-L\-C\-Collection $\ast$col)
+\begin{DoxyCompactList}\small\item\em Inform the object about changes of the module types. \end{DoxyCompactList}\item 
+void {\bf module\-Location\-Changed} (lcio\-::\-L\-C\-Collection $\ast$col)
+\begin{DoxyCompactList}\small\item\em Inform the object about changes of the module locations. \end{DoxyCompactList}\item 
+void {\bf module\-Connection\-Changed} (lcio\-::\-L\-C\-Collection $\ast$col)
+\begin{DoxyCompactList}\small\item\em Inform the object about changes of the module connection. \end{DoxyCompactList}\item 
+void {\bf print} (std\-::ostream \&os)\label{classCALICE_1_1MappingAndAlignment_a287c144d8b3df57eb3bea2d22b37e816}
+
+\begin{DoxyCompactList}\small\item\em To debug. \end{DoxyCompactList}\item 
+void {\bfseries print\-Tcmt\-Connections} (std\-::ostream \&os)\label{classCALICE_1_1MappingAndAlignment_a83b86ef9d0152f7166acb21e0c219a9a}
+
+\item 
+bool {\bf is\-Valid\-Crate} (U\-Int\-\_\-t crate) const 
+\begin{DoxyCompactList}\small\item\em Validates a crate number based on mapping. \end{DoxyCompactList}\item 
+void {\bf set\-View\-Connection\-Tree} (bool view\-\_\-connection=true)
+\begin{DoxyCompactList}\small\item\em Toggle printing of the connecting tree after each rebuild (conditions data change\-: \doxyref{Module\-Connection}{p.}{classCALICE_1_1ModuleConnection}, \doxyref{Module\-Location}{p.}{classCALICE_1_1ModuleLocation}). \end{DoxyCompactList}\item 
+bool {\bf has\-Right\-Side} (const std\-::pair$<$ U\-Int\-\_\-t, U\-Int\-\_\-t $>$ \&module\-\_\-indices) const 
+\begin{DoxyCompactList}\small\item\em Return true if the front-\/end has a right side connected. \end{DoxyCompactList}\item 
+U\-Int\-\_\-t {\bf get\-Number\-Of\-Lines} (const std\-::pair$<$ U\-Int\-\_\-t, U\-Int\-\_\-t $>$ \&module\-\_\-indices, bool right\-\_\-instead\-\_\-of\-\_\-left) const 
+\begin{DoxyCompactList}\small\item\em Return the number above the last line which should be used for the left or the right index. \end{DoxyCompactList}\item 
+U\-Int\-\_\-t {\bf get\-Line\-Index\-Of\-Left\-Side} () const \label{classCALICE_1_1MappingAndAlignment_a5a476cb79ba69482760288820ded99e5}
+
+\begin{DoxyCompactList}\small\item\em Return the first line associated to the module connected to the left side of the front-\/end. \end{DoxyCompactList}\item 
+U\-Int\-\_\-t {\bf get\-Line\-Index\-Of\-Right\-Side} () const \label{classCALICE_1_1MappingAndAlignment_ace30c8f6d801e2fc395516bc669e09c6}
+
+\begin{DoxyCompactList}\small\item\em Return the first line associated to the module connected to the right side of the front-\/end. \end{DoxyCompactList}\item 
+Bool\-\_\-t {\bf is\-Module\-Conditions\-Data\-Complete} () const \label{classCALICE_1_1MappingAndAlignment_a62f40cce6e79ea54a52983d8538f01c8}
+
+\begin{DoxyCompactList}\small\item\em Basic completeness test of conditions data. \end{DoxyCompactList}\item 
+U\-Int\-\_\-t {\bfseries get\-Max\-Cells\-Per\-Front\-End} () const \label{classCALICE_1_1MappingAndAlignment_ae9ecc9d0eaed57b3831138af4e312376}
+
+\item 
+const {\bf Tcmt\-Connection} $\ast$ {\bf get\-Tcmt\-Connection} (U\-Int\-\_\-t crate, U\-Int\-\_\-t slot, U\-Int\-\_\-t fe, U\-Int\-\_\-t chip, U\-Int\-\_\-t chan) const 
+\begin{DoxyCompactList}\small\item\em Get the connection object associated to an electronic channel. \end{DoxyCompactList}\item 
+void {\bf rebuild\-Connection\-Tree} ()\label{classCALICE_1_1MappingAndAlignment_a3979f678d52819accc77b415aaaf3aa1}
+
+\begin{DoxyCompactList}\small\item\em Builds Ecal/\-Hcal connection mappings. \end{DoxyCompactList}\item 
+const std\-::string {\bf get\-Cell\-I\-D\-Encoding} ()\label{classCALICE_1_1MappingAndAlignment_a4406a7799f33545f2911fe95ca320944}
+
+\begin{DoxyCompactList}\small\item\em Returns the cell id encoding for the given detector. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void {\bf rebuild\-Tcmt\-Connection\-Tree} ()\label{classCALICE_1_1MappingAndAlignment_ad694ddef557f4fe05ae2419e87f22dda}
+
+\begin{DoxyCompactList}\small\item\em Builds T\-C\-M\-T connection mappings. \end{DoxyCompactList}\item 
+void {\bf clear\-Tcmt\-Connections} ()
+\begin{DoxyCompactList}\small\item\em Reset T\-C\-M\-T connection mappings. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Private Types}
+\begin{DoxyCompactItemize}
+\item 
+typedef {\bf Simple\-Array\-\_\-t}$<$ U\-Int\-\_\-t $>$ {\bf Front\-End\-List\-\_\-t}
+\begin{DoxyCompactList}\small\item\em Array which contains the module I\-D of the front-\/end to which it is connected. \end{DoxyCompactList}\item 
+typedef {\bf Simple\-Array\-\_\-t}\\*
+$<$ {\bf Front\-End\-List\-\_\-t} $>$ {\bf Slot\-List\-\_\-t}
+\begin{DoxyCompactList}\small\item\em List of slots. \end{DoxyCompactList}\item 
+typedef {\bf Simple\-Array\-\_\-t}$<$ pair\\*
+$<$ U\-Int\-\_\-t, {\bf Slot\-List\-\_\-t} $>$ $>$ {\bf Crate\-List\-\_\-t}
+\begin{DoxyCompactList}\small\item\em list of crates\-: first argument crate I\-D. \end{DoxyCompactList}\item 
+typedef {\bf Simple\-Array\-\_\-t}\\*
+$<$ {\bf Module\-Connection} $>$ {\bf Module\-Connection\-List\-\_\-t}\label{classCALICE_1_1MappingAndAlignment_a11deca040a915bfa0b2bb41cde0c6bd0}
+
+\begin{DoxyCompactList}\small\item\em List which stores the module connection information provided by the conditions data handler (T\-O\-D\-O\-: just store a pointer to the collection?) \end{DoxyCompactList}\item 
+typedef map$<$ int, \\*
+{\bf Tcmt\-Connection} $\ast$ $>$ {\bf Tcmt\-Connection\-List\-\_\-t}\label{classCALICE_1_1MappingAndAlignment_a4a2d15f2206d6729a7a913eb03934e1f}
+
+\begin{DoxyCompactList}\small\item\em map of T\-C\-M\-T connections, keyed by elec\-I\-D (slot,fe,chip,chan) \end{DoxyCompactList}\item 
+typedef map$<$ U\-Int\-\_\-t, U\-Int\-\_\-t $>$ {\bf Module\-Index\-\_\-t}
+\begin{DoxyCompactList}\small\item\em The first component is a uniqe module index (the index offset) , the second component the array index in \-\_\-module\-Location\-List. \end{DoxyCompactList}\item 
+typedef std\-::map$<$ U\-Int\-\_\-t, U\-Int\-\_\-t $>$ {\bf Map\-Cellto\-Module\-Index\-\_\-t}\label{classCALICE_1_1MappingAndAlignment_adb2c356a3c031c3b76a2fa39b33452c3}
+
+\begin{DoxyCompactList}\small\item\em A map which relates indices (M,K) of a given cell to a module. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void {\bf correct\-Full\-Half\-Connector\-Errors} ()
+\begin{DoxyCompactList}\small\item\em Cludge to correct configuration errors. \end{DoxyCompactList}\item 
+void {\bf determine\-Maximum\-Cell\-Number\-Per\-Front\-End} ()
+\begin{DoxyCompactList}\small\item\em Determine the maximum number of cells per front end. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+{\bf Module\-Connection\-List\-\_\-t} {\bfseries \-\_\-module\-Connection\-List}\label{classCALICE_1_1MappingAndAlignment_ac733fc6ba9d616d2df42c463a48b4030}
+
+\item 
+{\bf Tcmt\-Connection\-List\-\_\-t} {\bfseries \-\_\-tcmt\-Connection\-List}\label{classCALICE_1_1MappingAndAlignment_afe70ae28f6d338ea5fd318a4bd0d4fc1}
+
+\item 
+{\bf Module\-Index\-\_\-t} {\bfseries \-\_\-module\-Index}\label{classCALICE_1_1MappingAndAlignment_a9957bbdcd0e508beb91a3e057b3f32c6}
+
+\item 
+{\bf Crate\-List\-\_\-t} {\bfseries \-\_\-crate\-List}\label{classCALICE_1_1MappingAndAlignment_a292b468cfa2e32cb2651544535b15b48}
+
+\item 
+U\-Int\-\_\-t {\bf \-\_\-n\-Cells}\label{classCALICE_1_1MappingAndAlignment_a19b8f6a67746c23c116c97c467622079}
+
+\begin{DoxyCompactList}\small\item\em total number of cells; \end{DoxyCompactList}\item 
+U\-Int\-\_\-t {\bf \-\_\-n\-Connected\-Cells}\label{classCALICE_1_1MappingAndAlignment_aa1b0b2441f98af871ea184677e6a45e6}
+
+\begin{DoxyCompactList}\small\item\em total number of cells which are connected to the D\-A\-Q; \end{DoxyCompactList}\item 
+Bool\-\_\-t {\bfseries \-\_\-view\-Connection\-Tree}\label{classCALICE_1_1MappingAndAlignment_a11281471aa9548845ea8c33045e6ff59}
+
+\item 
+{\bf Map\-Cellto\-Module\-Index\-\_\-t} {\bfseries \-\_\-map\-Cellto\-Module\-Index}\label{classCALICE_1_1MappingAndAlignment_a38d71ec8db47cdc6a07dcdb37d570336}
+
+\item 
+std\-::string {\bf \-\_\-cell\-I\-D\-Encoding}\label{classCALICE_1_1MappingAndAlignment_a28f0de5a05fe4d2e298836b63db2967a}
+
+\begin{DoxyCompactList}\small\item\em A string which constains the cell id encoding. \end{DoxyCompactList}\item 
+U\-Int\-\_\-t {\bfseries \-\_\-max\-N\-Cells}\label{classCALICE_1_1MappingAndAlignment_abec431705b22b12cbb78b1aab103b67d}
+
+\end{DoxyCompactItemize}
+\subsection*{Static Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+static const U\-Int\-\_\-t {\bf \-\_\-\-\_\-n\-Lines} =12\label{classCALICE_1_1MappingAndAlignment_a251b86e88d0f7c13697e9bdce8a324f8}
+
+\begin{DoxyCompactList}\small\item\em some constants \end{DoxyCompactList}\item 
+static const U\-Int\-\_\-t {\bfseries \-\_\-\-\_\-n\-Lines\-Half} =6\label{classCALICE_1_1MappingAndAlignment_aaa24d0c93f80ae30dab87fa0918572a0}
+
+\item 
+static const U\-Int\-\_\-t {\bfseries \-\_\-\-\_\-n\-Front\-Ends} =8\label{classCALICE_1_1MappingAndAlignment_a67aa6824271f96655c51520395958b8b}
+
+\end{DoxyCompactItemize}
+\subsection*{Friends}
+\begin{DoxyCompactItemize}
+\item 
+class {\bfseries V\-Raw\-A\-D\-C\-Value\-Processor}\label{classCALICE_1_1MappingAndAlignment_a1060eb3029e99c96ee8dfd4d10d4db42}
+
+\item 
+class {\bfseries Module\-Index\-Reverse\-Lookup}\label{classCALICE_1_1MappingAndAlignment_a5472b0a328fc7a12404ebfb1be1d0f8d}
+
+\item 
+class {\bfseries Hcal\-Module\-Index\-Reverse\-Lookup}\label{classCALICE_1_1MappingAndAlignment_a50ed2a9c32996f0dbb44b55cd0e9690a}
+
+\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Detailed Description}
+Class to comunicate/handle the translation into unique layer/cell ids and 3\-D spacial coordinates. 
+
+The class has to be informed about changes of the detector configuration using the methods \doxyref{C\-A\-L\-I\-C\-E\-::\-Mapping\-And\-Alignment\-::module\-Type\-Changed}{p.}{classCALICE_1_1MappingAndAlignment_a5564c399de481a023b702a39a04fea7f}, \doxyref{C\-A\-L\-I\-C\-E\-::\-Mapping\-And\-Alignment\-::module\-Location\-Changed}{p.}{classCALICE_1_1MappingAndAlignment_ab9d17873aeb090388556547cb6b67ba8} and \doxyref{C\-A\-L\-I\-C\-E\-::\-Mapping\-And\-Alignment\-::module\-Connection\-Changed}{p.}{classCALICE_1_1MappingAndAlignment_a3717c2ea27a5a60ff2a41d17803ff148} This information is used to map the D\-A\-Q signals to cells and calculate 3\-D spacial coordinates for hits.
+
+The class performs range checks only if B\-O\-U\-N\-D\-A\-R\-Y\-\_\-\-C\-H\-E\-C\-K is defined. 
+
+Definition at line 43 of file Mapping\-And\-Alignment.\-hh.
+
+
+
+\subsection{Member Typedef Documentation}
+\index{C\-A\-L\-I\-C\-E\-::\-Mapping\-And\-Alignment@{C\-A\-L\-I\-C\-E\-::\-Mapping\-And\-Alignment}!Crate\-List\-\_\-t@{Crate\-List\-\_\-t}}
+\index{Crate\-List\-\_\-t@{Crate\-List\-\_\-t}!CALICE::MappingAndAlignment@{C\-A\-L\-I\-C\-E\-::\-Mapping\-And\-Alignment}}
+\subsubsection[{Crate\-List\-\_\-t}]{\setlength{\rightskip}{0pt plus 5cm}typedef {\bf Simple\-Array\-\_\-t}$<$pair$<$U\-Int\-\_\-t,{\bf Slot\-List\-\_\-t} $>$ $>$ {\bf C\-A\-L\-I\-C\-E\-::\-Mapping\-And\-Alignment\-::\-Crate\-List\-\_\-t}\hspace{0.3cm}{\ttfamily [private]}}\label{classCALICE_1_1MappingAndAlignment_ad781275a2200261d7900283ad388fce0}
+
+
+list of crates\-: first argument crate I\-D. 
+
+
+
+Definition at line 386 of file Mapping\-And\-Alignment.\-hh.
+
+\index{C\-A\-L\-I\-C\-E\-::\-Mapping\-And\-Alignment@{C\-A\-L\-I\-C\-E\-::\-Mapping\-And\-Alignment}!Front\-End\-List\-\_\-t@{Front\-End\-List\-\_\-t}}
+\index{Front\-End\-List\-\_\-t@{Front\-End\-List\-\_\-t}!CALICE::MappingAndAlignment@{C\-A\-L\-I\-C\-E\-::\-Mapping\-And\-Alignment}}
+\subsubsection[{Front\-End\-List\-\_\-t}]{\setlength{\rightskip}{0pt plus 5cm}typedef {\bf Simple\-Array\-\_\-t}$<$U\-Int\-\_\-t$>$ {\bf C\-A\-L\-I\-C\-E\-::\-Mapping\-And\-Alignment\-::\-Front\-End\-List\-\_\-t}\hspace{0.3cm}{\ttfamily [private]}}\label{classCALICE_1_1MappingAndAlignment_a4afbca274b2208db1f1fd688cd11cf06}
+
+
+Array which contains the module I\-D of the front-\/end to which it is connected. 
+
+The frond-\/end I\-D$\ast$2+ front-\/end sid (0/1) is used as an array index 
+
+Definition at line 382 of file Mapping\-And\-Alignment.\-hh.
+
+\index{C\-A\-L\-I\-C\-E\-::\-Mapping\-And\-Alignment@{C\-A\-L\-I\-C\-E\-::\-Mapping\-And\-Alignment}!Module\-Index\-\_\-t@{Module\-Index\-\_\-t}}
+\index{Module\-Index\-\_\-t@{Module\-Index\-\_\-t}!CALICE::MappingAndAlignment@{C\-A\-L\-I\-C\-E\-::\-Mapping\-And\-Alignment}}
+\subsubsection[{Module\-Index\-\_\-t}]{\setlength{\rightskip}{0pt plus 5cm}typedef map$<$U\-Int\-\_\-t , U\-Int\-\_\-t $>$ {\bf C\-A\-L\-I\-C\-E\-::\-Mapping\-And\-Alignment\-::\-Module\-Index\-\_\-t}\hspace{0.3cm}{\ttfamily [private]}}\label{classCALICE_1_1MappingAndAlignment_a248150849e7ee949b96327de20ab3d55}
+
+
+The first component is a uniqe module index (the index offset) , the second component the array index in \-\_\-module\-Location\-List. 
+
+
+
+Definition at line 397 of file Mapping\-And\-Alignment.\-hh.
+
+\index{C\-A\-L\-I\-C\-E\-::\-Mapping\-And\-Alignment@{C\-A\-L\-I\-C\-E\-::\-Mapping\-And\-Alignment}!Slot\-List\-\_\-t@{Slot\-List\-\_\-t}}
+\index{Slot\-List\-\_\-t@{Slot\-List\-\_\-t}!CALICE::MappingAndAlignment@{C\-A\-L\-I\-C\-E\-::\-Mapping\-And\-Alignment}}
+\subsubsection[{Slot\-List\-\_\-t}]{\setlength{\rightskip}{0pt plus 5cm}typedef {\bf Simple\-Array\-\_\-t}$<${\bf Front\-End\-List\-\_\-t}$>$ {\bf C\-A\-L\-I\-C\-E\-::\-Mapping\-And\-Alignment\-::\-Slot\-List\-\_\-t}\hspace{0.3cm}{\ttfamily [private]}}\label{classCALICE_1_1MappingAndAlignment_a83157b1d568890919c1504e9f784d3c1}
+
+
+List of slots. 
+
+It is assumed that the slot I\-D is small and can be used as an array index (without requiring very large unused arrays) 
+
+Definition at line 384 of file Mapping\-And\-Alignment.\-hh.
+
+
+
+\subsection{Constructor \& Destructor Documentation}
+\index{C\-A\-L\-I\-C\-E\-::\-Mapping\-And\-Alignment@{C\-A\-L\-I\-C\-E\-::\-Mapping\-And\-Alignment}!Mapping\-And\-Alignment@{Mapping\-And\-Alignment}}
+\index{Mapping\-And\-Alignment@{Mapping\-And\-Alignment}!CALICE::MappingAndAlignment@{C\-A\-L\-I\-C\-E\-::\-Mapping\-And\-Alignment}}
+\subsubsection[{Mapping\-And\-Alignment}]{\setlength{\rightskip}{0pt plus 5cm}C\-A\-L\-I\-C\-E\-::\-Mapping\-And\-Alignment\-::\-Mapping\-And\-Alignment (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{classCALICE_1_1MappingAndAlignment_a14eb3de5a8df0c6929a768d33f4efd08}
+
+
+default constructor. 
+
+The default constructor configures the conditions data change delegators. 
+
+Definition at line 24 of file Mapping\-And\-Alignment.\-cc.
+
+
+
+\subsection{Member Function Documentation}
+\index{C\-A\-L\-I\-C\-E\-::\-Mapping\-And\-Alignment@{C\-A\-L\-I\-C\-E\-::\-Mapping\-And\-Alignment}!clear\-Tcmt\-Connections@{clear\-Tcmt\-Connections}}
+\index{clear\-Tcmt\-Connections@{clear\-Tcmt\-Connections}!CALICE::MappingAndAlignment@{C\-A\-L\-I\-C\-E\-::\-Mapping\-And\-Alignment}}
+\subsubsection[{clear\-Tcmt\-Connections}]{\setlength{\rightskip}{0pt plus 5cm}void C\-A\-L\-I\-C\-E\-::\-Mapping\-And\-Alignment\-::clear\-Tcmt\-Connections (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}}\label{classCALICE_1_1MappingAndAlignment_ac0bfe9fec7fc2b8a6c0196e61429b558}
+
+
+Reset T\-C\-M\-T connection mappings. 
+
+Automatically called before these connection mappings are (re)built. 
+
+Definition at line 562 of file Mapping\-And\-Alignment.\-cc.
+
+
+
+Referenced by module\-Connection\-Changed().
+
+\index{C\-A\-L\-I\-C\-E\-::\-Mapping\-And\-Alignment@{C\-A\-L\-I\-C\-E\-::\-Mapping\-And\-Alignment}!correct\-Full\-Half\-Connector\-Errors@{correct\-Full\-Half\-Connector\-Errors}}
+\index{correct\-Full\-Half\-Connector\-Errors@{correct\-Full\-Half\-Connector\-Errors}!CALICE::MappingAndAlignment@{C\-A\-L\-I\-C\-E\-::\-Mapping\-And\-Alignment}}
+\subsubsection[{correct\-Full\-Half\-Connector\-Errors}]{\setlength{\rightskip}{0pt plus 5cm}void C\-A\-L\-I\-C\-E\-::\-Mapping\-And\-Alignment\-::correct\-Full\-Half\-Connector\-Errors (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [private]}}\label{classCALICE_1_1MappingAndAlignment_a13ba7dc3c8e53ac73350fc5f81b3797f}
+
+
+Cludge to correct configuration errors. 
+
+Initially there was only support for full connectors 
+
+Definition at line 509 of file Mapping\-And\-Alignment.\-cc.
+
+
+
+References C\-A\-L\-I\-C\-E\-::\-Module\-Description\-::get\-Module\-Type\-Name(), and C\-A\-L\-I\-C\-E\-::\-Alignment\-::is\-Module().
+
+
+
+Referenced by module\-Connection\-Changed(), module\-Location\-Changed(), and module\-Type\-Changed().
+
+\index{C\-A\-L\-I\-C\-E\-::\-Mapping\-And\-Alignment@{C\-A\-L\-I\-C\-E\-::\-Mapping\-And\-Alignment}!determine\-Maximum\-Cell\-Number\-Per\-Front\-End@{determine\-Maximum\-Cell\-Number\-Per\-Front\-End}}
+\index{determine\-Maximum\-Cell\-Number\-Per\-Front\-End@{determine\-Maximum\-Cell\-Number\-Per\-Front\-End}!CALICE::MappingAndAlignment@{C\-A\-L\-I\-C\-E\-::\-Mapping\-And\-Alignment}}
+\subsubsection[{determine\-Maximum\-Cell\-Number\-Per\-Front\-End}]{\setlength{\rightskip}{0pt plus 5cm}void C\-A\-L\-I\-C\-E\-::\-Mapping\-And\-Alignment\-::determine\-Maximum\-Cell\-Number\-Per\-Front\-End (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [private]}}\label{classCALICE_1_1MappingAndAlignment_a9f5684ddcdc43087817c2882e4e60760}
+
+
+Determine the maximum number of cells per front end. 
+
+The maxmimum number of cells per front-\/end is defined such that this number is equal or larger than the number of cells per front end of all front ends which only have left sides and half this number is equal or large than the maximum number of cells of all right sides and all left sides respectively. 
+
+Definition at line 457 of file Mapping\-And\-Alignment.\-cc.
+
+
+
+References is\-Module\-Conditions\-Data\-Complete().
+
+
+
+Referenced by module\-Connection\-Changed(), module\-Location\-Changed(), and module\-Type\-Changed().
+
+\index{C\-A\-L\-I\-C\-E\-::\-Mapping\-And\-Alignment@{C\-A\-L\-I\-C\-E\-::\-Mapping\-And\-Alignment}!get\-Cell\-Index@{get\-Cell\-Index}}
+\index{get\-Cell\-Index@{get\-Cell\-Index}!CALICE::MappingAndAlignment@{C\-A\-L\-I\-C\-E\-::\-Mapping\-And\-Alignment}}
+\subsubsection[{get\-Cell\-Index}]{\setlength{\rightskip}{0pt plus 5cm}U\-Int\-\_\-t C\-A\-L\-I\-C\-E\-::\-Mapping\-And\-Alignment\-::get\-Cell\-Index (
+\begin{DoxyParamCaption}
+\item[{U\-Int\-\_\-t}]{module\-\_\-index, }
+\item[{U\-Int\-\_\-t}]{multiplex\-\_\-position, }
+\item[{U\-Int\-\_\-t}]{line\-\_\-i}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}\label{classCALICE_1_1MappingAndAlignment_ab51a0f33e8d02234ddc96a399a02e9be}
+
+
+get the cell index for the given module according to the current multiplex position and line index. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em module\-\_\-index} & a valid index of a conencted module (\doxyref{get\-Module\-Index}{p.}{classCALICE_1_1MappingAndAlignment_abfec75a8a422aee24768117b0ebdf3a7}) \\
+\hline
+{\em multiplex\-\_\-position} & the multiplex sequence number (0-\/17). \\
+\hline
+{\em line\-\_\-i} & the number of the input line/ chip (0-\/11). \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+the cell index for the given multiplex position and line index. The cell index can be savely increment for the remaining lines (0 $<$ line\-\_\-i $<$ get\-N\-Lines\-Of\-Left\-Index, get\-N\-Lines\-Of\-Right\-Index). 
+\end{DoxyReturn}
+\begin{DoxyRefDesc}{Todo}
+\item[{\bf Todo}]need more robust method to determine the number of lines per modules \end{DoxyRefDesc}
+
+
+Definition at line 130 of file Mapping\-And\-Alignment.\-hh.
+
+\index{C\-A\-L\-I\-C\-E\-::\-Mapping\-And\-Alignment@{C\-A\-L\-I\-C\-E\-::\-Mapping\-And\-Alignment}!get\-Module\-I\-D@{get\-Module\-I\-D}}
+\index{get\-Module\-I\-D@{get\-Module\-I\-D}!CALICE::MappingAndAlignment@{C\-A\-L\-I\-C\-E\-::\-Mapping\-And\-Alignment}}
+\subsubsection[{get\-Module\-I\-D}]{\setlength{\rightskip}{0pt plus 5cm}U\-Int\-\_\-t C\-A\-L\-I\-C\-E\-::\-Mapping\-And\-Alignment\-::get\-Module\-I\-D (
+\begin{DoxyParamCaption}
+\item[{U\-Int\-\_\-t}]{module\-\_\-index}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}\label{classCALICE_1_1MappingAndAlignment_a4446637bff9619ec7750593d70ec46ba}
+
+
+Get the I\-D of module which uniquely identifies a certain module of one module type. 
+
+Different modules of one type always have different I\-Ds but modules of different types may have the same I\-D. In case of the E\-C\-A\-L the module I\-D is the serial number of the P\-C\-Bs. 
+\begin{DoxyParams}{Parameters}
+{\em module\-\_\-index} & the index of the module within the detector (not necessarily the same as the module I\-D) \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+the I\-D of a module. 
+\end{DoxyReturn}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em range\-\_\-error} & if the module specified by module\-\_\-index is not defined but only if B\-O\-U\-N\-D\-A\-R\-Y\-\_\-\-C\-H\-E\-C\-K is defined. \\
+\hline
+\end{DoxyExceptions}
+\begin{DoxySeeAlso}{See Also}
+\doxyref{get\-Module\-Type()}{p.}{classCALICE_1_1Alignment_a6347626acbfc5dfcbca3c97c89fcad70} 
+\end{DoxySeeAlso}
+
+
+Definition at line 188 of file Mapping\-And\-Alignment.\-hh.
+
+\index{C\-A\-L\-I\-C\-E\-::\-Mapping\-And\-Alignment@{C\-A\-L\-I\-C\-E\-::\-Mapping\-And\-Alignment}!get\-Module\-Index@{get\-Module\-Index}}
+\index{get\-Module\-Index@{get\-Module\-Index}!CALICE::MappingAndAlignment@{C\-A\-L\-I\-C\-E\-::\-Mapping\-And\-Alignment}}
+\subsubsection[{get\-Module\-Index}]{\setlength{\rightskip}{0pt plus 5cm}std\-::pair$<$U\-Int\-\_\-t,U\-Int\-\_\-t$>$ C\-A\-L\-I\-C\-E\-::\-Mapping\-And\-Alignment\-::get\-Module\-Index (
+\begin{DoxyParamCaption}
+\item[{U\-Int\-\_\-t}]{crate\-\_\-id, }
+\item[{U\-Int\-\_\-t}]{slot\-\_\-id, }
+\item[{U\-Int\-\_\-t}]{front\-\_\-end\-\_\-nr}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [noexcept]}}\label{classCALICE_1_1MappingAndAlignment_abfec75a8a422aee24768117b0ebdf3a7}
+
+
+Get the module indices connected to the right and left side of the given front-\/end. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em crate\-\_\-id} & the identifier of the crate. \\
+\hline
+{\em slot\-\_\-id} & the identifier of the slot of the vme crate (usually 0-\/22) \\
+\hline
+{\em front\-\_\-end\-\_\-nr} & the identifier of the front-\/end (0-\/7, 8 has special meaning which is not supported). \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+pair containing the module indices of the modules connected to the left and the right side of the front-\/end.
+\end{DoxyReturn}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em std\-::runtime\-\_\-error} & if the crate is not registered or the slot of the crate has no connected front-\/ends. \\
+\hline
+{\em std\-::range\-\_\-error} & if the B\-O\-U\-N\-D\-A\-R\-Y\-\_\-\-C\-H\-E\-C\-K is defined and the crate and slot numbers are valid but the front-\/end number is out of the considered range.\\
+\hline
+\end{DoxyExceptions}
+Each front-\/end has two sides. the left side can be connected with a full connector (12 lines) or both sides can be connected with half connectors (6 lines). In case the left side is connected to a full connector the left and the rigtht module index will be the same. 
+
+Definition at line 76 of file Mapping\-And\-Alignment.\-hh.
+
+\index{C\-A\-L\-I\-C\-E\-::\-Mapping\-And\-Alignment@{C\-A\-L\-I\-C\-E\-::\-Mapping\-And\-Alignment}!get\-Module\-Index\-From\-Cell\-Index@{get\-Module\-Index\-From\-Cell\-Index}}
+\index{get\-Module\-Index\-From\-Cell\-Index@{get\-Module\-Index\-From\-Cell\-Index}!CALICE::MappingAndAlignment@{C\-A\-L\-I\-C\-E\-::\-Mapping\-And\-Alignment}}
+\subsubsection[{get\-Module\-Index\-From\-Cell\-Index}]{\setlength{\rightskip}{0pt plus 5cm}Int\-\_\-t C\-A\-L\-I\-C\-E\-::\-Mapping\-And\-Alignment\-::get\-Module\-Index\-From\-Cell\-Index (
+\begin{DoxyParamCaption}
+\item[{U\-Int\-\_\-t}]{cellindex}
+\end{DoxyParamCaption}
+)}\label{classCALICE_1_1MappingAndAlignment_a7c80e28c748f3238cf2edca2a8190dc3}
+
+
+Return the module index for a given ({\itshape Mokka}) Cellindex All this assumes that the \doxyref{Module\-Location}{p.}{classCALICE_1_1ModuleLocation} class has got set properly the index of the lower left cell e.\-g. 
+
+\doxyref{C\-A\-L\-I\-C\-E\-::\-Cell\-Index}{p.}{classCALICE_1_1CellIndex}(0,1,0,0,layer\-\_\-i+1) , \doxyref{C\-A\-L\-I\-C\-E\-::\-Cell\-Index}{p.}{classCALICE_1_1CellIndex}(a,1,0,0,layer\-\_\-i+1) where the first argument is the wafer row (in case of Si\-W Ecal). \begin{DoxyRefDesc}{Todo}
+\item[{\bf Todo}]Extend function to handle situation in which a layer k does not exist in data but is simulated \end{DoxyRefDesc}
+
+
+Definition at line 351 of file Mapping\-And\-Alignment.\-cc.
+
+\index{C\-A\-L\-I\-C\-E\-::\-Mapping\-And\-Alignment@{C\-A\-L\-I\-C\-E\-::\-Mapping\-And\-Alignment}!get\-Module\-Name@{get\-Module\-Name}}
+\index{get\-Module\-Name@{get\-Module\-Name}!CALICE::MappingAndAlignment@{C\-A\-L\-I\-C\-E\-::\-Mapping\-And\-Alignment}}
+\subsubsection[{get\-Module\-Name}]{\setlength{\rightskip}{0pt plus 5cm}string C\-A\-L\-I\-C\-E\-::\-Mapping\-And\-Alignment\-::get\-Module\-Name (
+\begin{DoxyParamCaption}
+\item[{U\-Int\-\_\-t}]{module\-\_\-index}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [noexcept]}}\label{classCALICE_1_1MappingAndAlignment_a38751bfec0b152bd41eae06a9a3fe143}
+
+
+Get the name containing the type specifier and the module I\-D. 
+
+A string is formed from th I\-D of the specified module and the module type name. 
+\begin{DoxyParams}{Parameters}
+{\em module\-\_\-index} & the index of the module within the detector (not necessarily the same as the module I\-D) \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+a string which uniquely identifies a module 
+\end{DoxyReturn}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em range\-\_\-error} & if the module specified by module\-\_\-index is not defined but only if B\-O\-U\-N\-D\-A\-R\-Y\-\_\-\-C\-H\-E\-C\-K is defined. \\
+\hline
+\end{DoxyExceptions}
+\begin{DoxySeeAlso}{See Also}
+\doxyref{Module\-Description\-::get\-Module\-Type\-Name()}{p.}{classCALICE_1_1ModuleDescription_a8d595c654170721c3de730f63008d3b6}, \doxyref{Module\-Connection\-::get\-Module\-I\-D()}{p.}{classCALICE_1_1ModuleConnection_ab2af8a960291746f02dc9b68fd5ec40f} 
+\end{DoxySeeAlso}
+
+
+Definition at line 38 of file Mapping\-And\-Alignment.\-cc.
+
+\index{C\-A\-L\-I\-C\-E\-::\-Mapping\-And\-Alignment@{C\-A\-L\-I\-C\-E\-::\-Mapping\-And\-Alignment}!get\-N\-Cells\-Total@{get\-N\-Cells\-Total}}
+\index{get\-N\-Cells\-Total@{get\-N\-Cells\-Total}!CALICE::MappingAndAlignment@{C\-A\-L\-I\-C\-E\-::\-Mapping\-And\-Alignment}}
+\subsubsection[{get\-N\-Cells\-Total}]{\setlength{\rightskip}{0pt plus 5cm}U\-Int\-\_\-t C\-A\-L\-I\-C\-E\-::\-Mapping\-And\-Alignment\-::get\-N\-Cells\-Total (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}\label{classCALICE_1_1MappingAndAlignment_a2ad32a5d8e7975eec6dc08d8e9062ee7}
+
+
+Return the total number of defined cells. 
+
+The total number of cells includes cells of all modules also modules which are not connected to the D\-A\-Q but which are defined. 
+
+Definition at line 244 of file Mapping\-And\-Alignment.\-hh.
+
+\index{C\-A\-L\-I\-C\-E\-::\-Mapping\-And\-Alignment@{C\-A\-L\-I\-C\-E\-::\-Mapping\-And\-Alignment}!get\-Number\-Of\-Lines@{get\-Number\-Of\-Lines}}
+\index{get\-Number\-Of\-Lines@{get\-Number\-Of\-Lines}!CALICE::MappingAndAlignment@{C\-A\-L\-I\-C\-E\-::\-Mapping\-And\-Alignment}}
+\subsubsection[{get\-Number\-Of\-Lines}]{\setlength{\rightskip}{0pt plus 5cm}U\-Int\-\_\-t C\-A\-L\-I\-C\-E\-::\-Mapping\-And\-Alignment\-::get\-Number\-Of\-Lines (
+\begin{DoxyParamCaption}
+\item[{const std\-::pair$<$ U\-Int\-\_\-t, U\-Int\-\_\-t $>$ \&}]{module\-\_\-indices, }
+\item[{bool}]{right\-\_\-instead\-\_\-of\-\_\-left}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}\label{classCALICE_1_1MappingAndAlignment_a6a1819aca1589b9b289606c4628bdd0a}
+
+
+Return the number above the last line which should be used for the left or the right index. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em module\-\_\-indices} & the left and the right module indec. \\
+\hline
+{\em right\-\_\-instead\-\_\-of\-\_\-left} & if true the right index is used instead of the left. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+the line after the last line which may be use for the specified module index. 
+\end{DoxyReturn}
+
+
+Definition at line 313 of file Mapping\-And\-Alignment.\-hh.
+
+\index{C\-A\-L\-I\-C\-E\-::\-Mapping\-And\-Alignment@{C\-A\-L\-I\-C\-E\-::\-Mapping\-And\-Alignment}!get\-Tcmt\-Connection@{get\-Tcmt\-Connection}}
+\index{get\-Tcmt\-Connection@{get\-Tcmt\-Connection}!CALICE::MappingAndAlignment@{C\-A\-L\-I\-C\-E\-::\-Mapping\-And\-Alignment}}
+\subsubsection[{get\-Tcmt\-Connection}]{\setlength{\rightskip}{0pt plus 5cm}const {\bf Tcmt\-Connection} $\ast$ C\-A\-L\-I\-C\-E\-::\-Mapping\-And\-Alignment\-::get\-Tcmt\-Connection (
+\begin{DoxyParamCaption}
+\item[{U\-Int\-\_\-t}]{crate, }
+\item[{U\-Int\-\_\-t}]{slot, }
+\item[{U\-Int\-\_\-t}]{fe, }
+\item[{U\-Int\-\_\-t}]{chip, }
+\item[{U\-Int\-\_\-t}]{chan}
+\end{DoxyParamCaption}
+) const}\label{classCALICE_1_1MappingAndAlignment_a0a65816e125db8d947ea0db2d9614a90}
+
+
+Get the connection object associated to an electronic channel. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em crate} & Crate number \\
+\hline
+{\em slot} & Slot number \\
+\hline
+{\em fe} & Front end number \\
+\hline
+{\em chip} & Chip number \\
+\hline
+{\em chan} & Channel number \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 571 of file Mapping\-And\-Alignment.\-cc.
+
+\index{C\-A\-L\-I\-C\-E\-::\-Mapping\-And\-Alignment@{C\-A\-L\-I\-C\-E\-::\-Mapping\-And\-Alignment}!has\-Right\-Side@{has\-Right\-Side}}
+\index{has\-Right\-Side@{has\-Right\-Side}!CALICE::MappingAndAlignment@{C\-A\-L\-I\-C\-E\-::\-Mapping\-And\-Alignment}}
+\subsubsection[{has\-Right\-Side}]{\setlength{\rightskip}{0pt plus 5cm}bool C\-A\-L\-I\-C\-E\-::\-Mapping\-And\-Alignment\-::has\-Right\-Side (
+\begin{DoxyParamCaption}
+\item[{const std\-::pair$<$ U\-Int\-\_\-t, U\-Int\-\_\-t $>$ \&}]{module\-\_\-indices}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}\label{classCALICE_1_1MappingAndAlignment_a35fd3d56055b90ee536669971ff4e842}
+
+
+Return true if the front-\/end has a right side connected. 
+
+\begin{DoxyReturn}{Returns}
+true if the right side is connected and is not conencted to the same module as the left side. If the left and the right side is connected to the same module, then it is considered that a full connector was connected to the left side and the right side was not directly connected. 
+\end{DoxyReturn}
+
+
+Definition at line 304 of file Mapping\-And\-Alignment.\-hh.
+
+\index{C\-A\-L\-I\-C\-E\-::\-Mapping\-And\-Alignment@{C\-A\-L\-I\-C\-E\-::\-Mapping\-And\-Alignment}!is\-Cell\-Dead@{is\-Cell\-Dead}}
+\index{is\-Cell\-Dead@{is\-Cell\-Dead}!CALICE::MappingAndAlignment@{C\-A\-L\-I\-C\-E\-::\-Mapping\-And\-Alignment}}
+\subsubsection[{is\-Cell\-Dead}]{\setlength{\rightskip}{0pt plus 5cm}Bool\-\_\-t C\-A\-L\-I\-C\-E\-::\-Mapping\-And\-Alignment\-::is\-Cell\-Dead (
+\begin{DoxyParamCaption}
+\item[{U\-Int\-\_\-t}]{module\-\_\-index, }
+\item[{U\-Int\-\_\-t}]{cell\-\_\-index}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\label{classCALICE_1_1MappingAndAlignment_a773b6a3deaa508092682424c757c6f21}
+
+
+Verify whether the given cell is dead. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em module\-\_\-index} & the index of the module location \\
+\hline
+{\em cell\-\_\-index} & the index of the cell on the module. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true if the cell is dead. 
+\end{DoxyReturn}
+
+
+Definition at line 255 of file Mapping\-And\-Alignment.\-hh.
+
+\index{C\-A\-L\-I\-C\-E\-::\-Mapping\-And\-Alignment@{C\-A\-L\-I\-C\-E\-::\-Mapping\-And\-Alignment}!is\-Module\-Connected@{is\-Module\-Connected}}
+\index{is\-Module\-Connected@{is\-Module\-Connected}!CALICE::MappingAndAlignment@{C\-A\-L\-I\-C\-E\-::\-Mapping\-And\-Alignment}}
+\subsubsection[{is\-Module\-Connected}]{\setlength{\rightskip}{0pt plus 5cm}bool C\-A\-L\-I\-C\-E\-::\-Mapping\-And\-Alignment\-::is\-Module\-Connected (
+\begin{DoxyParamCaption}
+\item[{U\-Int\-\_\-t}]{module\-\_\-index}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [noexcept]}}\label{classCALICE_1_1MappingAndAlignment_a8969c87adc6e0e75bb95e9ba6ee488bc}
+
+
+Verify whether the module location is connected to an active front-\/end. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em module\-\_\-index} & the index of the module location. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true if the module location is connected to a front-\/end otherwise false. 
+\end{DoxyReturn}
+
+
+Definition at line 217 of file Mapping\-And\-Alignment.\-hh.
+
+
+
+Referenced by print().
+
+\index{C\-A\-L\-I\-C\-E\-::\-Mapping\-And\-Alignment@{C\-A\-L\-I\-C\-E\-::\-Mapping\-And\-Alignment}!is\-Valid\-Crate@{is\-Valid\-Crate}}
+\index{is\-Valid\-Crate@{is\-Valid\-Crate}!CALICE::MappingAndAlignment@{C\-A\-L\-I\-C\-E\-::\-Mapping\-And\-Alignment}}
+\subsubsection[{is\-Valid\-Crate}]{\setlength{\rightskip}{0pt plus 5cm}bool C\-A\-L\-I\-C\-E\-::\-Mapping\-And\-Alignment\-::is\-Valid\-Crate (
+\begin{DoxyParamCaption}
+\item[{U\-Int\-\_\-t}]{crate}
+\end{DoxyParamCaption}
+) const}\label{classCALICE_1_1MappingAndAlignment_a01f7691dff98340b5a5b198109726b3c}
+
+
+Validates a crate number based on mapping. 
+
+It can be used to skip processing of unused crates as early as possible. 
+\begin{DoxyParams}{Parameters}
+{\em crate} & Crate number to be validated \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 599 of file Mapping\-And\-Alignment.\-cc.
+
+\index{C\-A\-L\-I\-C\-E\-::\-Mapping\-And\-Alignment@{C\-A\-L\-I\-C\-E\-::\-Mapping\-And\-Alignment}!module\-Connection\-Changed@{module\-Connection\-Changed}}
+\index{module\-Connection\-Changed@{module\-Connection\-Changed}!CALICE::MappingAndAlignment@{C\-A\-L\-I\-C\-E\-::\-Mapping\-And\-Alignment}}
+\subsubsection[{module\-Connection\-Changed}]{\setlength{\rightskip}{0pt plus 5cm}void C\-A\-L\-I\-C\-E\-::\-Mapping\-And\-Alignment\-::module\-Connection\-Changed (
+\begin{DoxyParamCaption}
+\item[{lcio\-::\-L\-C\-Collection $\ast$}]{col}
+\end{DoxyParamCaption}
+)}\label{classCALICE_1_1MappingAndAlignment_a3717c2ea27a5a60ff2a41d17803ff148}
+
+
+Inform the object about changes of the module connection. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em col} & collection of \doxyref{Module\-Connection}{p.}{classCALICE_1_1ModuleConnection} objects This class must be called before using any(most) of the other methods. The function call will cause a rebuild of the module D\-A\-Q front-\/end connection tree. \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 92 of file Mapping\-And\-Alignment.\-cc.
+
+
+
+References clear\-Tcmt\-Connections(), correct\-Full\-Half\-Connector\-Errors(), determine\-Maximum\-Cell\-Number\-Per\-Front\-End(), and rebuild\-Connection\-Tree().
+
+\index{C\-A\-L\-I\-C\-E\-::\-Mapping\-And\-Alignment@{C\-A\-L\-I\-C\-E\-::\-Mapping\-And\-Alignment}!module\-Location\-Changed@{module\-Location\-Changed}}
+\index{module\-Location\-Changed@{module\-Location\-Changed}!CALICE::MappingAndAlignment@{C\-A\-L\-I\-C\-E\-::\-Mapping\-And\-Alignment}}
+\subsubsection[{module\-Location\-Changed}]{\setlength{\rightskip}{0pt plus 5cm}void C\-A\-L\-I\-C\-E\-::\-Mapping\-And\-Alignment\-::module\-Location\-Changed (
+\begin{DoxyParamCaption}
+\item[{lcio\-::\-L\-C\-Collection $\ast$}]{col}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}\label{classCALICE_1_1MappingAndAlignment_ab9d17873aeb090388556547cb6b67ba8}
+
+
+Inform the object about changes of the module locations. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em col} & collection of \doxyref{Module\-Location}{p.}{classCALICE_1_1ModuleLocation} objects This class must be called before using any(most) of the other methods. The function call will cause a rebuild of the module D\-A\-Q front-\/end connection tree. \\
+\hline
+\end{DoxyParams}
+
+
+Reimplemented from {\bf C\-A\-L\-I\-C\-E\-::\-Alignment} \doxyref{}{p.}{classCALICE_1_1Alignment_a3ea188d0a90c7e0881d735cf55ef5604}.
+
+
+
+Definition at line 77 of file Mapping\-And\-Alignment.\-cc.
+
+
+
+References correct\-Full\-Half\-Connector\-Errors(), determine\-Maximum\-Cell\-Number\-Per\-Front\-End(), C\-A\-L\-I\-C\-E\-::\-Module\-Location\-::get\-Cell\-Index\-Offset(), C\-A\-L\-I\-C\-E\-::\-Alignment\-::module\-Location\-Changed(), and rebuild\-Connection\-Tree().
+
+\index{C\-A\-L\-I\-C\-E\-::\-Mapping\-And\-Alignment@{C\-A\-L\-I\-C\-E\-::\-Mapping\-And\-Alignment}!module\-Type\-Changed@{module\-Type\-Changed}}
+\index{module\-Type\-Changed@{module\-Type\-Changed}!CALICE::MappingAndAlignment@{C\-A\-L\-I\-C\-E\-::\-Mapping\-And\-Alignment}}
+\subsubsection[{module\-Type\-Changed}]{\setlength{\rightskip}{0pt plus 5cm}void C\-A\-L\-I\-C\-E\-::\-Mapping\-And\-Alignment\-::module\-Type\-Changed (
+\begin{DoxyParamCaption}
+\item[{lcio\-::\-L\-C\-Collection $\ast$}]{col}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}\label{classCALICE_1_1MappingAndAlignment_a5564c399de481a023b702a39a04fea7f}
+
+
+Inform the object about changes of the module types. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em col} & collection of \doxyref{Module\-Description}{p.}{classCALICE_1_1ModuleDescription} objects This class must be called before using any(most) of the other methods. The function call will cause a rebuild of the module D\-A\-Q front-\/end connection tree. \\
+\hline
+\end{DoxyParams}
+
+
+Reimplemented from {\bf C\-A\-L\-I\-C\-E\-::\-Alignment} \doxyref{}{p.}{classCALICE_1_1Alignment_adc041696a184db384a57bca51df7bc25}.
+
+
+
+Definition at line 65 of file Mapping\-And\-Alignment.\-cc.
+
+
+
+References \-\_\-cell\-I\-D\-Encoding, correct\-Full\-Half\-Connector\-Errors(), determine\-Maximum\-Cell\-Number\-Per\-Front\-End(), C\-A\-L\-I\-C\-E\-::\-Alignment\-::module\-Type\-Changed(), and rebuild\-Connection\-Tree().
+
+\index{C\-A\-L\-I\-C\-E\-::\-Mapping\-And\-Alignment@{C\-A\-L\-I\-C\-E\-::\-Mapping\-And\-Alignment}!set\-View\-Connection\-Tree@{set\-View\-Connection\-Tree}}
+\index{set\-View\-Connection\-Tree@{set\-View\-Connection\-Tree}!CALICE::MappingAndAlignment@{C\-A\-L\-I\-C\-E\-::\-Mapping\-And\-Alignment}}
+\subsubsection[{set\-View\-Connection\-Tree}]{\setlength{\rightskip}{0pt plus 5cm}void C\-A\-L\-I\-C\-E\-::\-Mapping\-And\-Alignment\-::set\-View\-Connection\-Tree (
+\begin{DoxyParamCaption}
+\item[{bool}]{view\-\_\-connection = {\ttfamily true}}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\label{classCALICE_1_1MappingAndAlignment_a7f185408e77829624349e0e857a6eca3}
+
+
+Toggle printing of the connecting tree after each rebuild (conditions data change\-: \doxyref{Module\-Connection}{p.}{classCALICE_1_1ModuleConnection}, \doxyref{Module\-Location}{p.}{classCALICE_1_1ModuleLocation}). 
+
+Set to true if the connection tree should be displayed after each call to rebuild the connection tree. The latter is initiated after module location or module connection changes. 
+
+Definition at line 297 of file Mapping\-And\-Alignment.\-hh.
+
+
+
+The documentation for this class was generated from the following files\-:\begin{DoxyCompactItemize}
+\item 
+Mapping\-And\-Alignment.\-hh\item 
+Mapping\-And\-Alignment.\-cc\end{DoxyCompactItemize}

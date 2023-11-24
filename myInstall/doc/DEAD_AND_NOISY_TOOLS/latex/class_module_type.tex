@@ -1,0 +1,78 @@
+\hypertarget{class_module_type}{\section{Module\-Type Class Reference}
+\label{class_module_type}\index{Module\-Type@{Module\-Type}}
+}
+
+
+A class to define the different module types.  
+
+
+
+
+{\ttfamily \#include $<$Module\-Type.\-h$>$}
+
+\subsection*{Static Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+static const unsigned int \hyperlink{class_module_type_aab41c936717bfb248a8bf1f38138db0b}{A\-H\-C} = 0x1
+\item 
+static const unsigned int \hyperlink{class_module_type_a9cbd6a48fabe66ed9d47d23e53d8c9b9}{A\-H\-C8} = 0x2
+\item 
+static const unsigned int \hyperlink{class_module_type_a64c7a7092ce31ace2f6e1a44918cd7cc}{T\-C\-M\-T} = 0x4
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+A class to define the different module types. 
+
+Currently there are the \begin{DoxyItemize}
+\item A\-H\-C Analogue H\-Cal \item A\-H\-C8 Analogue H\-Cal for coarse layers. Only 8 chips instead of 12. \item T\-C\-M\-T Tail catcher and muon tracker\end{DoxyItemize}
+The constants are defined to be a bit pattern, so they can be combined. 
+\begin{DoxyCode}
+\textcolor{comment}{// only use AHC and AHC8}
+UInt\_t useModulesMask = \hyperlink{class_module_type_aab41c936717bfb248a8bf1f38138db0b}{AHC} | \hyperlink{class_module_type_a9cbd6a48fabe66ed9d47d23e53d8c9b9}{AHC8};
+\end{DoxyCode}
+ 
+
+Definition at line 17 of file Module\-Type.\-h.
+
+
+
+\subsection{Field Documentation}
+\hypertarget{class_module_type_aab41c936717bfb248a8bf1f38138db0b}{\index{Module\-Type@{Module\-Type}!A\-H\-C@{A\-H\-C}}
+\index{A\-H\-C@{A\-H\-C}!ModuleType@{Module\-Type}}
+\subsubsection[{A\-H\-C}]{\setlength{\rightskip}{0pt plus 5cm}const unsigned int Module\-Type\-::\-A\-H\-C = 0x1\hspace{0.3cm}{\ttfamily [static]}}}\label{class_module_type_aab41c936717bfb248a8bf1f38138db0b}
+
+
+Definition at line 20 of file Module\-Type.\-h.
+
+
+
+Referenced by Simple\-Mapper\-::print(), and Simple\-Mapper\-::\-Simple\-Mapper().
+
+\hypertarget{class_module_type_a9cbd6a48fabe66ed9d47d23e53d8c9b9}{\index{Module\-Type@{Module\-Type}!A\-H\-C8@{A\-H\-C8}}
+\index{A\-H\-C8@{A\-H\-C8}!ModuleType@{Module\-Type}}
+\subsubsection[{A\-H\-C8}]{\setlength{\rightskip}{0pt plus 5cm}const unsigned int Module\-Type\-::\-A\-H\-C8 = 0x2\hspace{0.3cm}{\ttfamily [static]}}}\label{class_module_type_a9cbd6a48fabe66ed9d47d23e53d8c9b9}
+
+
+Definition at line 21 of file Module\-Type.\-h.
+
+
+
+Referenced by Simple\-Mapper\-::is\-A\-H\-C8(), Simple\-Mapper\-::print(), and Simple\-Mapper\-::\-Simple\-Mapper().
+
+\hypertarget{class_module_type_a64c7a7092ce31ace2f6e1a44918cd7cc}{\index{Module\-Type@{Module\-Type}!T\-C\-M\-T@{T\-C\-M\-T}}
+\index{T\-C\-M\-T@{T\-C\-M\-T}!ModuleType@{Module\-Type}}
+\subsubsection[{T\-C\-M\-T}]{\setlength{\rightskip}{0pt plus 5cm}const unsigned int Module\-Type\-::\-T\-C\-M\-T = 0x4\hspace{0.3cm}{\ttfamily [static]}}}\label{class_module_type_a64c7a7092ce31ace2f6e1a44918cd7cc}
+
+
+Definition at line 22 of file Module\-Type.\-h.
+
+
+
+Referenced by Simple\-Mapper\-::is\-T\-C\-M\-T(), Simple\-Mapper\-::print(), and Simple\-Mapper\-::\-Simple\-Mapper().
+
+
+
+The documentation for this class was generated from the following file\-:\begin{DoxyCompactItemize}
+\item 
+\hyperlink{_module_type_8h}{Module\-Type.\-h}\end{DoxyCompactItemize}

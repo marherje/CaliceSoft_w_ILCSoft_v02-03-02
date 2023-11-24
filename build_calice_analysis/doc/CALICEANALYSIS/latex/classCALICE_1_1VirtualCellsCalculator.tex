@@ -1,0 +1,84 @@
+\section{C\-A\-L\-I\-C\-E\-:\-:Virtual\-Cells\-Calculator Class Reference}
+\label{classCALICE_1_1VirtualCellsCalculator}\index{C\-A\-L\-I\-C\-E\-::\-Virtual\-Cells\-Calculator@{C\-A\-L\-I\-C\-E\-::\-Virtual\-Cells\-Calculator}}
+
+
+{\ttfamily \#include $<$Virtual\-Cells\-Calculator.\-hh$>$}
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+{\bf Virtual\-Cells\-Calculator} (const Mapper $\ast$mapper)
+\item 
+void {\bf calculate} (Mapped\-Container$<$ Cell\-Description $>$ $\ast$cell\-Description, const float virtual\-Cell\-Size\-X, const float virtual\-Cell\-Size\-Y, Mapped\-Container$<$ {\bf Virtual\-Cells} $>$ $\ast$container)
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+class to calculate virtual cells of given size
+
+A Mapped\-Container of \doxyref{Virtual\-Cells}{p.}{classCALICE_1_1VirtualCells} is filled with virtual cell positions for cells of the give size. The size of the virtual cells has to be $size_{\mathrm{mother}}/N$ with $N$ beeing an integer.
+
+\begin{DoxyAuthor}{Author}
+{\tt Benjamin.\-Lutz@desy.\-de} 
+\end{DoxyAuthor}
+\begin{DoxyVersion}{Version}
+0.\-1 
+\end{DoxyVersion}
+\begin{DoxyDate}{Date}
+July 2009 
+\end{DoxyDate}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\index{C\-A\-L\-I\-C\-E\-::\-Virtual\-Cells\-Calculator@{C\-A\-L\-I\-C\-E\-::\-Virtual\-Cells\-Calculator}!Virtual\-Cells\-Calculator@{Virtual\-Cells\-Calculator}}
+\index{Virtual\-Cells\-Calculator@{Virtual\-Cells\-Calculator}!CALICE::VirtualCellsCalculator@{C\-A\-L\-I\-C\-E\-::\-Virtual\-Cells\-Calculator}}
+\subsubsection[{Virtual\-Cells\-Calculator}]{\setlength{\rightskip}{0pt plus 5cm}C\-A\-L\-I\-C\-E\-::\-Virtual\-Cells\-Calculator\-::\-Virtual\-Cells\-Calculator (
+\begin{DoxyParamCaption}
+\item[{const Mapper $\ast$}]{mapper}
+\end{DoxyParamCaption}
+)}\label{classCALICE_1_1VirtualCellsCalculator_aee013776c36ff2b1a4735551315da558}
+constructor
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em mapper} & Mapper that holds global mapping information. \\
+\hline
+\end{DoxyParams}
+
+
+\subsection{Member Function Documentation}
+\index{C\-A\-L\-I\-C\-E\-::\-Virtual\-Cells\-Calculator@{C\-A\-L\-I\-C\-E\-::\-Virtual\-Cells\-Calculator}!calculate@{calculate}}
+\index{calculate@{calculate}!CALICE::VirtualCellsCalculator@{C\-A\-L\-I\-C\-E\-::\-Virtual\-Cells\-Calculator}}
+\subsubsection[{calculate}]{\setlength{\rightskip}{0pt plus 5cm}void C\-A\-L\-I\-C\-E\-::\-Virtual\-Cells\-Calculator\-::calculate (
+\begin{DoxyParamCaption}
+\item[{Mapped\-Container$<$ Cell\-Description $>$ $\ast$}]{cell\-Description, }
+\item[{const float}]{virtual\-Cell\-Size\-X, }
+\item[{const float}]{virtual\-Cell\-Size\-Y, }
+\item[{Mapped\-Container$<$ {\bf Virtual\-Cells} $>$ $\ast$}]{container}
+\end{DoxyParamCaption}
+)}\label{classCALICE_1_1VirtualCellsCalculator_a77d3505350f0d9b4c498b711699d4f5a}
+update the Mapped\-Container of Virtuall\-Cells
+
+All old content will be erased. Sizes have to be smaller and an exact fraction of the mother size. There is no checking of the values implemented.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em cell\-Description} & Container of Cell\-Descriptions that is used for position calculation. \\
+\hline
+\mbox{\tt in}  & {\em virtual\-Cell\-Size\-X} & x-\/size of the virtual cells, has to be $sizeX_{\mathrm{mother}}/N$, $N=\mathrm{integer} $ \\
+\hline
+\mbox{\tt in}  & {\em virtual\-Cell\-Size\-Y} & y-\/size of the virtual cells, has to be $sizeY_{\mathrm{mother}}/N$, $N=\mathrm{integer} $ \\
+\hline
+\mbox{\tt out}  & {\em container} & the \doxyref{Virtual\-Cells}{p.}{classCALICE_1_1VirtualCells} container that should be updated \\
+\hline
+\end{DoxyParams}
+
+
+References C\-A\-L\-I\-C\-E\-::\-Virtual\-Cells\-::add\-Cell().
+
+
+
+The documentation for this class was generated from the following files\-:\begin{DoxyCompactItemize}
+\item 
+/nfs/dust/ilc/user/marquezh/\-Calice\-Soft\-\_\-w\-\_\-\-I\-L\-C\-Soft\-\_\-v02-\/03-\/02/calice\-\_\-analysis/addon\-Procs/include/Virtual\-Cells\-Calculator.\-hh\item 
+/nfs/dust/ilc/user/marquezh/\-Calice\-Soft\-\_\-w\-\_\-\-I\-L\-C\-Soft\-\_\-v02-\/03-\/02/calice\-\_\-analysis/addon\-Procs/src/Virtual\-Cells\-Calculator.\-cc\end{DoxyCompactItemize}

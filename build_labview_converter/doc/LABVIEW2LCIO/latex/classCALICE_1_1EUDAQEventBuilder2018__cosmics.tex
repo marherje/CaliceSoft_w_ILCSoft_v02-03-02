@@ -1,0 +1,140 @@
+\section{C\-A\-L\-I\-C\-E\-:\-:E\-U\-D\-A\-Q\-Event\-Builder2018\-\_\-cosmics Class Reference}
+\label{classCALICE_1_1EUDAQEventBuilder2018__cosmics}\index{C\-A\-L\-I\-C\-E\-::\-E\-U\-D\-A\-Q\-Event\-Builder2018\-\_\-cosmics@{C\-A\-L\-I\-C\-E\-::\-E\-U\-D\-A\-Q\-Event\-Builder2018\-\_\-cosmics}}
+
+
+Processor for reading the A\-H\-C\-A\-L E\-U\-D\-A\-Q S\-L\-C\-I\-O files.  
+
+
+
+
+{\ttfamily \#include $<$E\-U\-D\-A\-Q\-Event\-Builder2018\-\_\-cosmics.\-hh$>$}
+
+Inheritance diagram for C\-A\-L\-I\-C\-E\-:\-:E\-U\-D\-A\-Q\-Event\-Builder2018\-\_\-cosmics\-:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classCALICE_1_1EUDAQEventBuilder2018__cosmics}
+\end{center}
+\end{figure}
+\subsection*{Data Structures}
+\begin{DoxyCompactItemize}
+\item 
+struct {\bf raw\-Data}
+\begin{DoxyCompactList}\small\item\em The slcio data format. \end{DoxyCompactList}\item 
+struct {\bf raw\-Data2016}
+\begin{DoxyCompactList}\small\item\em The slcio data format. \end{DoxyCompactList}\item 
+struct {\bf raw\-Temp}
+\begin{DoxyCompactList}\small\item\em The slcio data format for the temperature sensor. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+virtual Processor $\ast$ {\bf new\-Processor} ()\label{classCALICE_1_1EUDAQEventBuilder2018__cosmics_a7357879bb180050f40062ca632441b25}
+
+\begin{DoxyCompactList}\small\item\em Implementation of new Processor returns pointer to processor. \end{DoxyCompactList}\item 
+void {\bf process\-Event} (L\-C\-Event $\ast$evt)\label{classCALICE_1_1EUDAQEventBuilder2018__cosmics_ad4a6f924ab44833e8e1a1ead3acb0265}
+
+\begin{DoxyCompactList}\small\item\em Creates events with L\-C\-Genreal\-Object collections from the E\-U\-D\-A\-Q input file and calls all active processors' \doxyref{process\-Event()}{p.}{classCALICE_1_1EUDAQEventBuilder2018__cosmics_ad4a6f924ab44833e8e1a1ead3acb0265} and process\-Run\-Header Method. \end{DoxyCompactList}\item 
+void {\bf write\-Slow\-Control} ()\label{classCALICE_1_1EUDAQEventBuilder2018__cosmics_a80621b89658e99fc4124dce8ed7ea18a}
+
+\begin{DoxyCompactList}\small\item\em work on slow control data, A\-S\-I\-C \end{DoxyCompactList}\item 
+virtual void {\bf init} ()
+\begin{DoxyCompactList}\small\item\em work on slow control data, Temperature \end{DoxyCompactList}\item 
+virtual void {\bf end} ()\label{classCALICE_1_1EUDAQEventBuilder2018__cosmics_a658729a9d275c4d79029f43cf12dc369}
+
+\begin{DoxyCompactList}\small\item\em end method \end{DoxyCompactList}\item 
+void {\bf print\-Parameters} ()\label{classCALICE_1_1EUDAQEventBuilder2018__cosmics_a2119bdb252323a67bcda8d42204bd03d}
+
+\begin{DoxyCompactList}\small\item\em print parameters \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+std\-::string {\bfseries \-\_\-input\-Col\-Name}\label{classCALICE_1_1EUDAQEventBuilder2018__cosmics_afa3f13aed5e59aecf2c965a88275b962}
+
+\item 
+std\-::string {\bfseries \-\_\-input\-Col\-Name\-Hodo1}\label{classCALICE_1_1EUDAQEventBuilder2018__cosmics_ae2c3b6766658ff7adb56fe24fa7a2a8a}
+
+\item 
+std\-::string {\bfseries \-\_\-input\-Col\-Name\-Hodo2}\label{classCALICE_1_1EUDAQEventBuilder2018__cosmics_a104213a036355f8238c65006b7f41f09}
+
+\item 
+std\-::string {\bfseries \-\_\-input\-Col\-Name\-Temp}\label{classCALICE_1_1EUDAQEventBuilder2018__cosmics_a80870e3d9842055bee7c7ea1cee4ce17}
+
+\item 
+std\-::string {\bfseries \-\_\-output\-Col\-Name\-E\-C\-A\-L}\label{classCALICE_1_1EUDAQEventBuilder2018__cosmics_aa7489e2126ff767326d24b99861bf615}
+
+\item 
+std\-::string {\bfseries \-\_\-output\-Col\-Name\-H\-C\-A\-L}\label{classCALICE_1_1EUDAQEventBuilder2018__cosmics_a4040953124cb9cd903fff698dc25d639}
+
+\item 
+std\-::string {\bfseries \-\_\-output\-Col\-Name\-Hodo1}\label{classCALICE_1_1EUDAQEventBuilder2018__cosmics_a06379f662fb5032d059c17f2d3e98987}
+
+\item 
+std\-::string {\bfseries \-\_\-output\-Col\-Name\-Hodo2}\label{classCALICE_1_1EUDAQEventBuilder2018__cosmics_a114a9d23b19871ca643e39a15100d2b0}
+
+\item 
+std\-::string {\bfseries \-\_\-output\-Col\-Name\-Temp}\label{classCALICE_1_1EUDAQEventBuilder2018__cosmics_a2990b7c5501541bcf4450f492b262351}
+
+\item 
+std\-::string {\bfseries \-\_\-detector\-Type\-Name}\label{classCALICE_1_1EUDAQEventBuilder2018__cosmics_a66b1bf45f6c32f1efba2af6af7aca4a8}
+
+\item 
+int {\bf \-\_\-run\-Number}\label{classCALICE_1_1EUDAQEventBuilder2018__cosmics_ad987ff19dc97413e687cc97dd7c559d3}
+
+\begin{DoxyCompactList}\small\item\em The run number. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+int {\bfseries Lcio\-Event\-Nr}\label{classCALICE_1_1EUDAQEventBuilder2018__cosmics_a492c27b52ae835beee0690feb93ddf77}
+
+\item 
+int {\bfseries discarded\-\_\-events}\label{classCALICE_1_1EUDAQEventBuilder2018__cosmics_a40ab39464bbef828d05217325b281aa3}
+
+\item 
+int {\bfseries all\-\_\-events}\label{classCALICE_1_1EUDAQEventBuilder2018__cosmics_afc5c87eec1814fdfa07f3babde043bad}
+
+\item 
+bool {\bfseries temperaturecollection\-\_\-write}\label{classCALICE_1_1EUDAQEventBuilder2018__cosmics_a0f1c95b600decec735998ce6451855e6}
+
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Processor for reading the A\-H\-C\-A\-L E\-U\-D\-A\-Q S\-L\-C\-I\-O files. 
+
+It processes the input data to create events with L\-C\-I\-O collections of the A\-H\-C\-A\-L E\-U\-D\-A\-Q S\-L\-C\-I\-O output (sorted by readout cycles). Based on F. Gaede's Std\-Hep\-Reader to be found in the marlin package. \begin{DoxyAuthor}{Author}
+\-: A. Irles (D\-E\-S\-Y), based on the S. Lu's (D\-E\-S\-Y Hamburg) Labview\-Converter2 
+\end{DoxyAuthor}
+\begin{DoxyDate}{Date}
+May 20 2015 
+\end{DoxyDate}
+
+
+Definition at line 22 of file E\-U\-D\-A\-Q\-Event\-Builder2018\-\_\-cosmics.\-hh.
+
+
+
+\subsection{Member Function Documentation}
+\index{C\-A\-L\-I\-C\-E\-::\-E\-U\-D\-A\-Q\-Event\-Builder2018\-\_\-cosmics@{C\-A\-L\-I\-C\-E\-::\-E\-U\-D\-A\-Q\-Event\-Builder2018\-\_\-cosmics}!init@{init}}
+\index{init@{init}!CALICE::EUDAQEventBuilder2018_cosmics@{C\-A\-L\-I\-C\-E\-::\-E\-U\-D\-A\-Q\-Event\-Builder2018\-\_\-cosmics}}
+\subsubsection[{init}]{\setlength{\rightskip}{0pt plus 5cm}void C\-A\-L\-I\-C\-E\-::\-E\-U\-D\-A\-Q\-Event\-Builder2018\-\_\-cosmics\-::init (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}\label{classCALICE_1_1EUDAQEventBuilder2018__cosmics_acc4e1a445d624669c60bed1bbb995969}
+
+
+work on slow control data, Temperature 
+
+init method 
+
+Definition at line 107 of file E\-U\-D\-A\-Q\-Event\-Builder2018\-\_\-cosmics.\-cc.
+
+
+
+References C\-A\-L\-I\-C\-E\-::\-E\-U\-D\-A\-Q\-Event\-Builder2016\-\_\-wo\-B\-I\-F\-::print\-Parameters().
+
+
+
+The documentation for this class was generated from the following files\-:\begin{DoxyCompactItemize}
+\item 
+E\-U\-D\-A\-Q\-Event\-Builder2018\-\_\-cosmics.\-hh\item 
+E\-U\-D\-A\-Q\-Event\-Builder2018\-\_\-cosmics.\-cc\end{DoxyCompactItemize}

@@ -1,0 +1,123 @@
+\section{marlin\-:\-:Labview\-Converter Class Reference}
+\label{classmarlin_1_1LabviewConverter}\index{marlin\-::\-Labview\-Converter@{marlin\-::\-Labview\-Converter}}
+
+
+Processor for reading the A\-H\-C\-A\-L Labview asscii files.  
+
+
+
+
+{\ttfamily \#include $<$Labview\-Converter.\-hh$>$}
+
+Inheritance diagram for marlin\-:\-:Labview\-Converter\-:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classmarlin_1_1LabviewConverter}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+virtual {\bf Labview\-Converter} $\ast$ {\bf new\-Processor} ()\label{classmarlin_1_1LabviewConverter_ac445a8f712cbc96fd9f90c190dad8347}
+
+\begin{DoxyCompactList}\small\item\em Implementation of new Processor returns pointer to processor. \end{DoxyCompactList}\item 
+virtual void {\bf read\-Data\-Source} (int num\-Events)\label{classmarlin_1_1LabviewConverter_ad865613e9671e541a1e64ecd8c9c897b}
+
+\begin{DoxyCompactList}\small\item\em Creates events with L\-C\-Genreal\-Object collections from the Labview input file and calls all active processors' process\-Event() and process\-Run\-Header Method. \end{DoxyCompactList}\item 
+void {\bf write\-Slow\-Control} ()\label{classmarlin_1_1LabviewConverter_a3e5cfb39a19c0ca17ac3ecdb3c9f85e7}
+
+\begin{DoxyCompactList}\small\item\em work on slow control data, A\-S\-I\-C \end{DoxyCompactList}\item 
+virtual void {\bf init} ()
+\begin{DoxyCompactList}\small\item\em work on slow control data, Temperature \end{DoxyCompactList}\item 
+virtual void {\bf end} ()\label{classmarlin_1_1LabviewConverter_ae1700a9004281db26476d22b5cc7c10b}
+
+\begin{DoxyCompactList}\small\item\em end method \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+std\-::string {\bf \-\_\-ofile}
+\begin{DoxyCompactList}\small\item\em The string variable to access the data. \end{DoxyCompactList}\item 
+std\-::string {\bf \-\_\-data}\label{classmarlin_1_1LabviewConverter_a2a7a7963f225275d1b19989c356f4f9a}
+
+\begin{DoxyCompactList}\small\item\em The string variable to access the data. \end{DoxyCompactList}\item 
+int {\bf \-\_\-run\-Number}\label{classmarlin_1_1LabviewConverter_aeefca366348efb5bf87b819ec8807132}
+
+\begin{DoxyCompactList}\small\item\em The run number. \end{DoxyCompactList}\item 
+int {\bf \-\_\-\-Slow\-Control\-Line\-Number}\label{classmarlin_1_1LabviewConverter_ab280114ab31d4ff2bedfea28ec3a7fc8}
+
+\begin{DoxyCompactList}\small\item\em Slow control line number, H\-B\-U\-: 120, E\-P\-T\-: 1920. \end{DoxyCompactList}\item 
+int {\bf \-\_\-\-H\-B\-U\-Number}
+\begin{DoxyCompactList}\small\item\em The H\-B\-U number\-: H\-B\-U\-V\-I\-: 6; H\-B\-U\-V\-I\-: 7, H\-B\-U\-V\-I\-I\-I\-: 8, H\-B\-U\-I\-X\-: 9. \end{DoxyCompactList}\item 
+int {\bf \-\_\-\-E\-P\-T\-Model\-Nr}\label{classmarlin_1_1LabviewConverter_a8559206de7459e3c8d92dd74be0ae5e2}
+
+\begin{DoxyCompactList}\small\item\em The E\-P\-T model number\-: C\-E\-R\-N November testbeam E\-P\-T\-: 1. \end{DoxyCompactList}\item 
+std\-::stringstream {\bf Slow\-Control}\label{classmarlin_1_1LabviewConverter_a728e8504c1c11db843755f9d2f90df3b}
+
+\begin{DoxyCompactList}\small\item\em Slow Control data block. \end{DoxyCompactList}\item 
+std\-::string {\bf \-\_\-detector\-Type\-Name}\label{classmarlin_1_1LabviewConverter_a83fa755238559bb5051226ccaaf476a8}
+
+\begin{DoxyCompactList}\small\item\em The string variable of the detector type name, A\-H\-C A\-E\-C. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Processor for reading the A\-H\-C\-A\-L Labview asscii files. 
+
+It processes the input data to create events with L\-C\-I\-O collections of the A\-H\-C\-A\-L Labview ascii output. Based on F. Gaede's Std\-Hep\-Reader to be found in the marlin package. \begin{DoxyAuthor}{Author}
+\-: S. Lu (D\-E\-S\-Y Hamburg) 
+\end{DoxyAuthor}
+\begin{DoxyDate}{Date}
+Aug 15 2012 
+\end{DoxyDate}
+
+
+Definition at line 18 of file Labview\-Converter.\-hh.
+
+
+
+\subsection{Member Function Documentation}
+\index{marlin\-::\-Labview\-Converter@{marlin\-::\-Labview\-Converter}!init@{init}}
+\index{init@{init}!marlin::LabviewConverter@{marlin\-::\-Labview\-Converter}}
+\subsubsection[{init}]{\setlength{\rightskip}{0pt plus 5cm}void marlin\-::\-Labview\-Converter\-::init (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}\label{classmarlin_1_1LabviewConverter_a537a93a94e2ac7ca4f7a7aa1fd9dbb56}
+
+
+work on slow control data, Temperature 
+
+init method 
+
+Definition at line 64 of file Labview\-Converter.\-cc.
+
+
+
+\subsection{Field Documentation}
+\index{marlin\-::\-Labview\-Converter@{marlin\-::\-Labview\-Converter}!\-\_\-\-H\-B\-U\-Number@{\-\_\-\-H\-B\-U\-Number}}
+\index{\-\_\-\-H\-B\-U\-Number@{\-\_\-\-H\-B\-U\-Number}!marlin::LabviewConverter@{marlin\-::\-Labview\-Converter}}
+\subsubsection[{\-\_\-\-H\-B\-U\-Number}]{\setlength{\rightskip}{0pt plus 5cm}int marlin\-::\-Labview\-Converter\-::\-\_\-\-H\-B\-U\-Number\hspace{0.3cm}{\ttfamily [protected]}}\label{classmarlin_1_1LabviewConverter_af4d39fa4509ab8f4c3a8e074ab6a5140}
+
+
+The H\-B\-U number\-: H\-B\-U\-V\-I\-: 6; H\-B\-U\-V\-I\-: 7, H\-B\-U\-V\-I\-I\-I\-: 8, H\-B\-U\-I\-X\-: 9. 
+
+
+
+Definition at line 66 of file Labview\-Converter.\-hh.
+
+\index{marlin\-::\-Labview\-Converter@{marlin\-::\-Labview\-Converter}!\-\_\-ofile@{\-\_\-ofile}}
+\index{\-\_\-ofile@{\-\_\-ofile}!marlin::LabviewConverter@{marlin\-::\-Labview\-Converter}}
+\subsubsection[{\-\_\-ofile}]{\setlength{\rightskip}{0pt plus 5cm}std\-::string marlin\-::\-Labview\-Converter\-::\-\_\-ofile\hspace{0.3cm}{\ttfamily [protected]}}\label{classmarlin_1_1LabviewConverter_aae187f85848e953e0a1bb84763c9d817}
+
+
+The string variable to access the data. 
+
+Requires \char`\"{}yourpath/\-Run\char`\"{} 
+
+Definition at line 53 of file Labview\-Converter.\-hh.
+
+
+
+The documentation for this class was generated from the following files\-:\begin{DoxyCompactItemize}
+\item 
+Labview\-Converter.\-hh\item 
+Labview\-Converter.\-cc\end{DoxyCompactItemize}

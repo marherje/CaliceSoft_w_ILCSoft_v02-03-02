@@ -1,0 +1,21 @@
+<map id="marlin::RootWriteEngine" name="marlin::RootWriteEngine">
+<area shape="rect" id="node2" href="$classmarlin_1_1ASICInfoWriteEngine.html" title="marlin::ASICInfoWriteEngine" alt="" coords="241,5,447,32"/>
+<area shape="rect" id="node3" href="$classmarlin_1_1ASimCalorimeterHitWriteEngine.html" title="marlin::ASimCalorimeterHit\lWriteEngine" alt="" coords="243,57,445,98"/>
+<area shape="rect" id="node4" href="$classmarlin_1_1BifWriteEngine.html" title="marlin::BifWriteEngine" alt="" coords="260,123,428,149"/>
+<area shape="rect" id="node5" href="$classmarlin_1_1CollectionParameterWriteEngine.html" title="marlin::CollectionParameter\lWriteEngine" alt="" coords="242,174,446,215"/>
+<area shape="rect" id="node6" href="$classmarlin_1_1DeepAnaWriteEngine.html" title="marlin::DeepAnaWriteEngine" alt="" coords="239,240,449,267"/>
+<area shape="rect" id="node7" href="$classmarlin_1_1DriftChamberWriteEngine.html" title="marlin::DriftChamberWrite\lEngine" alt="" coords="247,291,441,333"/>
+<area shape="rect" id="node8" href="$classmarlin_1_1DwcWriteEngine.html" title="marlin::DwcWriteEngine" alt="" coords="255,357,433,384"/>
+<area shape="rect" id="node9" href="$classmarlin_1_1EventParameterWriteEngine.html" title="marlin::EventParameterWrite\lEngine" alt="" coords="239,409,449,450"/>
+<area shape="rect" id="node10" href="$classmarlin_1_1EventPropertiesWriteEngine.html" title="marlin::EventPropertiesWrite\lEngine" alt="" coords="239,474,449,515"/>
+<area shape="rect" id="node11" href="$classmarlin_1_1HcalTrackLarsEngine.html" title="marlin::HcalTrackLarsEngine" alt="" coords="241,540,447,567"/>
+<area shape="rect" id="node12" href="$classmarlin_1_1HitWriteEngine.html" title="marlin::HitWriteEngine" alt="" coords="259,591,429,617"/>
+<area shape="rect" id="node13" href="$classmarlin_1_1HodoscopeWriteEngine.html" title="marlin::HodoscopeWriteEngine" alt="" coords="233,641,455,668"/>
+<area shape="rect" id="node14" href="$classmarlin_1_1LdaWriteEngine.html" title="marlin::LdaWriteEngine" alt="" coords="257,692,431,719"/>
+<area shape="rect" id="node15" href="$classmarlin_1_1MCParticleWriteEngine.html" title="marlin::MCParticleWriteEngine" alt="" coords="235,743,453,769"/>
+<area shape="rect" id="node16" href="$classmarlin_1_1ROCWriteEngine.html" title="marlin::ROCWriteEngine" alt="" coords="255,793,433,820"/>
+<area shape="rect" id="node17" href="$classmarlin_1_1ShowerShapeEngine.html" title="marlin::ShowerShapeEngine" alt="" coords="242,844,446,871"/>
+<area shape="rect" id="node18" href="$classmarlin_1_1TBTrackWriteEngine.html" title="marlin::TBTrackWriteEngine" alt="" coords="243,895,445,921"/>
+<area shape="rect" id="node19" href="$classmarlin_1_1TrackFinderWriteEngine.html" title="marlin::TrackFinderWrite\lEngine" alt="" coords="255,946,433,987"/>
+<area shape="rect" id="node20" href="$classmarlin_1_1TriggerWriteEngine.html" title="marlin::TriggerWriteEngine" alt="" coords="247,1012,441,1039"/>
+</map>

@@ -1,0 +1,180 @@
+\section{Deep\-Analysis\-:\-:Hit Class Reference}
+\label{classDeepAnalysis_1_1Hit}\index{Deep\-Analysis\-::\-Hit@{Deep\-Analysis\-::\-Hit}}
+
+
+Class for hit\-: consists of\-:  
+
+
+
+
+{\ttfamily \#include $<$Deep\-Analysis.\-hh$>$}
+
+Inheritance diagram for Deep\-Analysis\-:\-:Hit\-:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classDeepAnalysis_1_1Hit}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+{\bf Hit} ()\label{classDeepAnalysis_1_1Hit_ae07a53b3fc9dc9ee0c3a7bcd6dadb748}
+
+\begin{DoxyCompactList}\small\item\em Constructor. \end{DoxyCompactList}\item 
+void {\bf set} (unsigned \-\_\-idx, double \-\_\-x, double \-\_\-y, double \-\_\-z, double \-\_\-am, double \-\_\-ampl\-\_\-mip, double \-\_\-thr, unsigned \-\_\-lay, int \-\_\-addr)
+\begin{DoxyCompactList}\small\item\em Set hit parameters. \end{DoxyCompactList}\item 
+void {\bf draw} (unsigned type, unsigned size, unsigned color)
+\begin{DoxyCompactList}\small\item\em Draw hit. \end{DoxyCompactList}\item 
+{\bf K\-I\-N\-D} {\bf get\-\_\-color} ({\bf Deep\-Analysis} \&rs)
+\begin{DoxyCompactList}\small\item\em Get hit color. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Data Fields}
+\begin{DoxyCompactItemize}
+\item 
+unsigned {\bf idx}\label{classDeepAnalysis_1_1Hit_adcc608658d5021b8acfd56f34d2e57cc}
+
+\begin{DoxyCompactList}\small\item\em index in input hits \end{DoxyCompactList}\item 
+Point3\-D {\bf cartesian\-Point}\label{classDeepAnalysis_1_1Hit_a4be7f547d9bb071d195dbbcdbc8fe900}
+
+\begin{DoxyCompactList}\small\item\em cartesian coordinates \end{DoxyCompactList}\item 
+Sphere3\-D {\bf sphere3d}\label{classDeepAnalysis_1_1Hit_af2fa1f58d38c3a02f006f8b5289b7648}
+
+\begin{DoxyCompactList}\small\item\em spherical coordinates \end{DoxyCompactList}\item 
+double {\bf ampl\-Ge\-V}\label{classDeepAnalysis_1_1Hit_a3b8f817d02b3171fdb57c997ee9a558c}
+
+\begin{DoxyCompactList}\small\item\em amplitude [Ge\-V] \end{DoxyCompactList}\item 
+double {\bf ampl\-\_\-mip}\label{classDeepAnalysis_1_1Hit_ae28b50dafae6721b055170d2d367c956}
+
+\begin{DoxyCompactList}\small\item\em amplitude in M\-I\-Ps \end{DoxyCompactList}\item 
+double {\bf thr}\label{classDeepAnalysis_1_1Hit_a4dab2d64d7e398e42b8cb74f2bbb0fbc}
+
+\begin{DoxyCompactList}\small\item\em threshold in M\-I\-Ps \end{DoxyCompactList}\item 
+unsigned {\bf lay}\label{classDeepAnalysis_1_1Hit_a31a55598c143d18d3443365e496e7515}
+
+\begin{DoxyCompactList}\small\item\em layer number \end{DoxyCompactList}\item 
+int {\bf addr}\label{classDeepAnalysis_1_1Hit_a8a8f5aae460bf9ba23eff1066aa72a99}
+
+\begin{DoxyCompactList}\small\item\em address in initial event array \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Static Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+static const unsigned {\bf R\-S\-\_\-\-T\-Y\-P\-E} = 0\label{classDeepAnalysis_1_1Hit_a0da168f06fb6b3d48524db3f3b226d47}
+
+\begin{DoxyCompactList}\small\item\em type of \doxyref{R\-S}{p.}{classRS} object \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Detailed Description}
+Class for hit\-: consists of\-: 
+
+Definition at line 170 of file Deep\-Analysis.\-hh.
+
+
+
+\subsection{Member Function Documentation}
+\index{Deep\-Analysis\-::\-Hit@{Deep\-Analysis\-::\-Hit}!draw@{draw}}
+\index{draw@{draw}!DeepAnalysis::Hit@{Deep\-Analysis\-::\-Hit}}
+\subsubsection[{draw}]{\setlength{\rightskip}{0pt plus 5cm}void Deep\-Analysis\-::\-Hit\-::draw (
+\begin{DoxyParamCaption}
+\item[{unsigned}]{type, }
+\item[{unsigned}]{size, }
+\item[{unsigned}]{color}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\label{classDeepAnalysis_1_1Hit_a5ac3851b0250e454434733fd18923a56}
+
+
+Draw hit. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em type} & hit type \\
+\hline
+{\em size} & size of point/size of cross \\
+\hline
+{\em color} & color n R\-G\-B form (e.\-g. 0xff0000 is R\-E\-D) \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 216 of file Deep\-Analysis.\-hh.
+
+\index{Deep\-Analysis\-::\-Hit@{Deep\-Analysis\-::\-Hit}!get\-\_\-color@{get\-\_\-color}}
+\index{get\-\_\-color@{get\-\_\-color}!DeepAnalysis::Hit@{Deep\-Analysis\-::\-Hit}}
+\subsubsection[{get\-\_\-color}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Deep\-Analysis\-::\-K\-I\-N\-D} Deep\-Analysis\-::\-Hit\-::get\-\_\-color (
+\begin{DoxyParamCaption}
+\item[{{\bf Deep\-Analysis} \&}]{deep\-Analysis}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\label{classDeepAnalysis_1_1Hit_a78087dea3baa8b9fd1ffcf99c820a496}
+
+
+Get hit color. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em deep\-Analysis} & \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 1633 of file Deep\-Analysis.\-hh.
+
+
+
+References Deep\-Analysis\-::\-E\-M, Deep\-Analysis\-::\-H\-A\-D, Deep\-Analysis\-::kind, Deep\-Analysis\-::\-N\-E\-U\-T\-R, and Deep\-Analysis\-::\-T\-R\-K.
+
+\index{Deep\-Analysis\-::\-Hit@{Deep\-Analysis\-::\-Hit}!set@{set}}
+\index{set@{set}!DeepAnalysis::Hit@{Deep\-Analysis\-::\-Hit}}
+\subsubsection[{set}]{\setlength{\rightskip}{0pt plus 5cm}void Deep\-Analysis\-::\-Hit\-::set (
+\begin{DoxyParamCaption}
+\item[{unsigned}]{\-\_\-idx, }
+\item[{double}]{\-\_\-x, }
+\item[{double}]{\-\_\-y, }
+\item[{double}]{\-\_\-z, }
+\item[{double}]{\-\_\-am, }
+\item[{double}]{\-\_\-ampl\-\_\-mip, }
+\item[{double}]{\-\_\-thr, }
+\item[{unsigned}]{\-\_\-lay, }
+\item[{int}]{\-\_\-addr}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\label{classDeepAnalysis_1_1Hit_aee70433682ef0e0b4d33f374d8686fb8}
+
+
+Set hit parameters. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em \-\_\-idx} & index in input hits \\
+\hline
+{\em \-\_\-x} & x-\/coordinate \\
+\hline
+{\em \-\_\-y} & y-\/coordinate \\
+\hline
+{\em \-\_\-z} & z-\/coordinate \\
+\hline
+{\em \-\_\-am} & amplitude (in Ge\-V) \\
+\hline
+{\em \-\_\-ampl\-\_\-mip} & amplitude (in M\-I\-Ps) \\
+\hline
+{\em \-\_\-thr} & threshold in M\-I\-Ps \\
+\hline
+{\em \-\_\-lay} & layer number \\
+\hline
+{\em \-\_\-addr} & address in initial event array \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 198 of file Deep\-Analysis.\-hh.
+
+
+
+References addr, ampl\-\_\-mip, ampl\-Ge\-V, cartesian\-Point, idx, lay, sphere3d, and thr.
+
+
+
+Referenced by Deep\-Analysis\-::add\-\_\-hit().
+
+
+
+The documentation for this class was generated from the following file\-:\begin{DoxyCompactItemize}
+\item 
+Deep\-Analysis.\-hh\end{DoxyCompactItemize}

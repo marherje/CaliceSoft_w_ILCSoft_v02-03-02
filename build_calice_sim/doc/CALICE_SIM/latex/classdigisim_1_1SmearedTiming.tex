@@ -1,0 +1,58 @@
+\section{digisim\-:\-:Smeared\-Timing Class Reference}
+\label{classdigisim_1_1SmearedTiming}\index{digisim\-::\-Smeared\-Timing@{digisim\-::\-Smeared\-Timing}}
+Inheritance diagram for digisim\-:\-:Smeared\-Timing\-:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classdigisim_1_1SmearedTiming}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+{\bf Smeared\-Timing} $\ast$ {\bf new\-Instance} (const std\-::string \&mod\-Name)\label{classdigisim_1_1SmearedTiming_a100c03fd016ab2747ef91ca484e86ac5}
+
+\begin{DoxyCompactList}\small\item\em Returns a reference to a new instance. \end{DoxyCompactList}\item 
+{\bf Smeared\-Timing} ()\label{classdigisim_1_1SmearedTiming_ad1de97af7e1f49556c31f9761a7251f9}
+
+\begin{DoxyCompactList}\small\item\em default constructor is only called for global instance \end{DoxyCompactList}\item 
+void {\bf init} (std\-::vector$<$ float $>$ \&floats)\label{classdigisim_1_1SmearedTiming_a7dcecdda4d162208887cc59df10235a0}
+
+\begin{DoxyCompactList}\small\item\em initialize parameters \end{DoxyCompactList}\item 
+void {\bfseries process\-Hits} (std\-::map$<$ long long, {\bf Temp\-Cal\-Hit} $>$ \&hitmap)\label{classdigisim_1_1SmearedTiming_ac39257e23e67cb167164cdf27a53d9b0}
+
+\item 
+double {\bf transform\-Time} (const {\bf Temp\-Cal\-Hit} \&hit)\label{classdigisim_1_1SmearedTiming_ac061272e8d099d7448b636b691af7db2}
+
+\begin{DoxyCompactList}\small\item\em Smeared linear transformations on time. \end{DoxyCompactList}\item 
+void {\bf print} () const \label{classdigisim_1_1SmearedTiming_aa801b4cb37d9cd384a0f3698e2f5aa9d}
+
+\begin{DoxyCompactList}\small\item\em debugging printout \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+{\bfseries Smeared\-Timing} (const std\-::string \&mod\-Name)\label{classdigisim_1_1SmearedTiming_a145f06b6464795163fe3e155a0e61e1c}
+
+\item 
+{\bfseries Smeared\-Timing} (const {\bf Smeared\-Timing} \&rhs)\label{classdigisim_1_1SmearedTiming_a642b9104cc973966ef4a7a16761cdb9d}
+
+\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+std\-::vector$<$ float $>$ {\bf \-\_\-par}\label{classdigisim_1_1SmearedTiming_ae561a940d1502fd5194184320ca9d8a4}
+
+\begin{DoxyCompactList}\small\item\em Parameters\-: gain and threshold. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Detailed Description}
+
+
+Definition at line 11 of file Smeared\-Timing.\-hpp.
+
+
+
+The documentation for this class was generated from the following files\-:\begin{DoxyCompactItemize}
+\item 
+Smeared\-Timing.\-hpp\item 
+Smeared\-Timing.\-cpp\end{DoxyCompactItemize}

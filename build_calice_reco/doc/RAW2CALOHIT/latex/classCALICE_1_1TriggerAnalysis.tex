@@ -1,0 +1,130 @@
+\section{C\-A\-L\-I\-C\-E\-:\-:Trigger\-Analysis Class Reference}
+\label{classCALICE_1_1TriggerAnalysis}\index{C\-A\-L\-I\-C\-E\-::\-Trigger\-Analysis@{C\-A\-L\-I\-C\-E\-::\-Trigger\-Analysis}}
+
+
+Search for good trigger words.  
+
+
+
+
+{\ttfamily \#include $<$Trigger\-Analysis.\-hh$>$}
+
+Inheritance diagram for C\-A\-L\-I\-C\-E\-:\-:Trigger\-Analysis\-:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classCALICE_1_1TriggerAnalysis}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+Processor $\ast$ {\bfseries new\-Processor} ()\label{classCALICE_1_1TriggerAnalysis_ab21f54611eb9ddd3ad43fc21503d4e33}
+
+\item 
+void {\bf init} ()\label{classCALICE_1_1TriggerAnalysis_a7a51af68dccbac1354f5246cdcea5c83}
+
+\begin{DoxyCompactList}\small\item\em Set up conditions data handler, verify parameters et.\-c. \end{DoxyCompactList}\item 
+void {\bf process\-Event} (L\-C\-Event $\ast$evt\-P)
+\begin{DoxyCompactList}\small\item\em Called for every run (does nothing.) \end{DoxyCompactList}\item 
+void {\bfseries end} ()\label{classCALICE_1_1TriggerAnalysis_a3dc3f0ae7a921facafc54fa4e271f664}
+
+\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+std\-::string {\bf \-\_\-par\-Name\-Trigger\-Main\-Word}
+\begin{DoxyCompactList}\small\item\em Par. \end{DoxyCompactList}\item 
+unsigned int {\bfseries \-\_\-n\-Events}\label{classCALICE_1_1TriggerAnalysis_ad08524b6d02fb2d7b75b172652b1d435}
+
+\item 
+unsigned int {\bfseries \-\_\-missing\-Trigger\-Event\-Data}\label{classCALICE_1_1TriggerAnalysis_aee5bbae4a0166c2432de8eaa16fa6dca}
+
+\item 
+{\bf histmgr\-::\-Key\-\_\-t} {\bf \-\_\-hist\-Group\-Key}
+\begin{DoxyCompactList}\small\item\em Key for the histogram group. \end{DoxyCompactList}\item 
+{\bf histmgr\-::\-Key\-\_\-t} {\bf \-\_\-hist\-Trigger\-On\-Posisiton\-Key}
+\begin{DoxyCompactList}\small\item\em Key for the trigger on position histograms. \end{DoxyCompactList}\item 
+{\bf histmgr\-::\-Key\-\_\-t} {\bf \-\_\-hist\-Trigger\-Length\-Key}
+\begin{DoxyCompactList}\small\item\em Key for the trigger pulse length histograms. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Search for good trigger words. 
+
+Definition at line 22 of file Trigger\-Analysis.\-hh.
+
+
+
+\subsection{Member Function Documentation}
+\index{C\-A\-L\-I\-C\-E\-::\-Trigger\-Analysis@{C\-A\-L\-I\-C\-E\-::\-Trigger\-Analysis}!process\-Event@{process\-Event}}
+\index{process\-Event@{process\-Event}!CALICE::TriggerAnalysis@{C\-A\-L\-I\-C\-E\-::\-Trigger\-Analysis}}
+\subsubsection[{process\-Event}]{\setlength{\rightskip}{0pt plus 5cm}void C\-A\-L\-I\-C\-E\-::\-Trigger\-Analysis\-::process\-Event (
+\begin{DoxyParamCaption}
+\item[{L\-C\-Event $\ast$}]{evt\-P}
+\end{DoxyParamCaption}
+)}\label{classCALICE_1_1TriggerAnalysis_a687740dc2b5d83e9bbcd705dede331ef}
+
+
+Called for every run (does nothing.) 
+
+Search good trigger words. If no good trigger word is found a damaged flag is set in the event header. 
+
+Definition at line 135 of file Trigger\-Analysis.\-cc.
+
+
+
+References histmgr\-::\-Float\-Histogram1\-D\-::fill(), histmgr\-::\-Hist\-Mgr\-::get\-Histogram\-Collection(), and histmgr\-::\-Histogram\-Collection\-\_\-t\-::histogram().
+
+
+
+\subsection{Field Documentation}
+\index{C\-A\-L\-I\-C\-E\-::\-Trigger\-Analysis@{C\-A\-L\-I\-C\-E\-::\-Trigger\-Analysis}!\-\_\-hist\-Group\-Key@{\-\_\-hist\-Group\-Key}}
+\index{\-\_\-hist\-Group\-Key@{\-\_\-hist\-Group\-Key}!CALICE::TriggerAnalysis@{C\-A\-L\-I\-C\-E\-::\-Trigger\-Analysis}}
+\subsubsection[{\-\_\-hist\-Group\-Key}]{\setlength{\rightskip}{0pt plus 5cm}{\bf histmgr\-::\-Key\-\_\-t} C\-A\-L\-I\-C\-E\-::\-Trigger\-Analysis\-::\-\_\-hist\-Group\-Key\hspace{0.3cm}{\ttfamily [private]}}\label{classCALICE_1_1TriggerAnalysis_ac6c3ea8f3ff2b56e809f4969f59704d3}
+
+
+Key for the histogram group. 
+
+
+
+Definition at line 58 of file Trigger\-Analysis.\-hh.
+
+\index{C\-A\-L\-I\-C\-E\-::\-Trigger\-Analysis@{C\-A\-L\-I\-C\-E\-::\-Trigger\-Analysis}!\-\_\-hist\-Trigger\-Length\-Key@{\-\_\-hist\-Trigger\-Length\-Key}}
+\index{\-\_\-hist\-Trigger\-Length\-Key@{\-\_\-hist\-Trigger\-Length\-Key}!CALICE::TriggerAnalysis@{C\-A\-L\-I\-C\-E\-::\-Trigger\-Analysis}}
+\subsubsection[{\-\_\-hist\-Trigger\-Length\-Key}]{\setlength{\rightskip}{0pt plus 5cm}{\bf histmgr\-::\-Key\-\_\-t} C\-A\-L\-I\-C\-E\-::\-Trigger\-Analysis\-::\-\_\-hist\-Trigger\-Length\-Key\hspace{0.3cm}{\ttfamily [private]}}\label{classCALICE_1_1TriggerAnalysis_a4af95b807dcdd3389a2b64663f31e6db}
+
+
+Key for the trigger pulse length histograms. 
+
+
+
+Definition at line 60 of file Trigger\-Analysis.\-hh.
+
+\index{C\-A\-L\-I\-C\-E\-::\-Trigger\-Analysis@{C\-A\-L\-I\-C\-E\-::\-Trigger\-Analysis}!\-\_\-hist\-Trigger\-On\-Posisiton\-Key@{\-\_\-hist\-Trigger\-On\-Posisiton\-Key}}
+\index{\-\_\-hist\-Trigger\-On\-Posisiton\-Key@{\-\_\-hist\-Trigger\-On\-Posisiton\-Key}!CALICE::TriggerAnalysis@{C\-A\-L\-I\-C\-E\-::\-Trigger\-Analysis}}
+\subsubsection[{\-\_\-hist\-Trigger\-On\-Posisiton\-Key}]{\setlength{\rightskip}{0pt plus 5cm}{\bf histmgr\-::\-Key\-\_\-t} C\-A\-L\-I\-C\-E\-::\-Trigger\-Analysis\-::\-\_\-hist\-Trigger\-On\-Posisiton\-Key\hspace{0.3cm}{\ttfamily [private]}}\label{classCALICE_1_1TriggerAnalysis_a9e02480c102f82efe0629255b7bc1bd3}
+
+
+Key for the trigger on position histograms. 
+
+
+
+Definition at line 59 of file Trigger\-Analysis.\-hh.
+
+\index{C\-A\-L\-I\-C\-E\-::\-Trigger\-Analysis@{C\-A\-L\-I\-C\-E\-::\-Trigger\-Analysis}!\-\_\-par\-Name\-Trigger\-Main\-Word@{\-\_\-par\-Name\-Trigger\-Main\-Word}}
+\index{\-\_\-par\-Name\-Trigger\-Main\-Word@{\-\_\-par\-Name\-Trigger\-Main\-Word}!CALICE::TriggerAnalysis@{C\-A\-L\-I\-C\-E\-::\-Trigger\-Analysis}}
+\subsubsection[{\-\_\-par\-Name\-Trigger\-Main\-Word}]{\setlength{\rightskip}{0pt plus 5cm}std\-::string C\-A\-L\-I\-C\-E\-::\-Trigger\-Analysis\-::\-\_\-par\-Name\-Trigger\-Main\-Word\hspace{0.3cm}{\ttfamily [private]}}\label{classCALICE_1_1TriggerAnalysis_a4601167e6fe8aa42e2336a893bf83a21}
+
+
+Par. 
+
+name of the trigger main word. 
+
+Definition at line 53 of file Trigger\-Analysis.\-hh.
+
+
+
+The documentation for this class was generated from the following files\-:\begin{DoxyCompactItemize}
+\item 
+Trigger\-Analysis.\-hh\item 
+Trigger\-Analysis.\-cc\end{DoxyCompactItemize}

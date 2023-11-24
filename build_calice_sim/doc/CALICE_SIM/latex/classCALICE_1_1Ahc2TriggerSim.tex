@@ -1,0 +1,150 @@
+\section{C\-A\-L\-I\-C\-E\-:\-:Ahc2\-Trigger\-Sim Class Reference}
+\label{classCALICE_1_1Ahc2TriggerSim}\index{C\-A\-L\-I\-C\-E\-::\-Ahc2\-Trigger\-Sim@{C\-A\-L\-I\-C\-E\-::\-Ahc2\-Trigger\-Sim}}
+
+
+Class for setting trigger bits in the event for M\-C.  
+
+
+
+
+{\ttfamily \#include $<$Ahc2\-Trigger\-Sim.\-hh$>$}
+
+Inheritance diagram for C\-A\-L\-I\-C\-E\-:\-:Ahc2\-Trigger\-Sim\-:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classCALICE_1_1Ahc2TriggerSim}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+virtual Processor $\ast$ {\bfseries new\-Processor} ()\label{classCALICE_1_1Ahc2TriggerSim_a908c333749d8847017189ebeccc67f36}
+
+\item 
+{\bf Ahc2\-Trigger\-Sim} ()\label{classCALICE_1_1Ahc2TriggerSim_a1c994c4a99a30d71da81baaf73d709e7}
+
+\begin{DoxyCompactList}\small\item\em Constructor. \end{DoxyCompactList}\item 
+{\bf $\sim$\-Ahc2\-Trigger\-Sim} ()\label{classCALICE_1_1Ahc2TriggerSim_ad40eb8e475c728e4be82ea48018f85ca}
+
+\begin{DoxyCompactList}\small\item\em Destructor. \end{DoxyCompactList}\item 
+virtual void {\bf init} ()\label{classCALICE_1_1Ahc2TriggerSim_a037a2ce2ab0d11398dea77f8b998f05e}
+
+\begin{DoxyCompactList}\small\item\em Initialise. \end{DoxyCompactList}\item 
+virtual void {\bf process\-Run\-Header} (L\-C\-Run\-Header $\ast$run)\label{classCALICE_1_1Ahc2TriggerSim_a4aa0642673b0742092bd2f9a4ba43550}
+
+\begin{DoxyCompactList}\small\item\em Process header. \end{DoxyCompactList}\item 
+virtual void {\bf process\-Event} (L\-C\-Event $\ast$evt)\label{classCALICE_1_1Ahc2TriggerSim_a652e15f9aac83ecd3f80f347f0b4d8d7}
+
+\begin{DoxyCompactList}\small\item\em Process event (the working horse) \end{DoxyCompactList}\item 
+virtual void {\bf check} (L\-C\-Event $\ast$evt)\label{classCALICE_1_1Ahc2TriggerSim_a3e23709a27312703b0ef9f7f1dd70ddf}
+
+\begin{DoxyCompactList}\small\item\em Check. \end{DoxyCompactList}\item 
+virtual void {\bf end} ()\label{classCALICE_1_1Ahc2TriggerSim_a60551290571f36baac32e08f2c0db082}
+
+\begin{DoxyCompactList}\small\item\em End of processing. \end{DoxyCompactList}\item 
+virtual void {\bf print\-Parameters} ()\label{classCALICE_1_1Ahc2TriggerSim_afc31cd3417220e2d4c21db6c41fec3f8}
+
+\begin{DoxyCompactList}\small\item\em Print Parameters. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Protected Types}
+\begin{DoxyCompactItemize}
+\item 
+enum {\bf E\-Trigger\-Sim\-Mode} \{ {\bf k\-Sim\-Trigger\-Mode100x100\-Coincidence} =1, 
+{\bf k\-Sim\-Trigger\-Mode500x500\-Coincidence} =2
+ \}
+\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+{\bf E\-Trigger\-Sim\-Mode} {\bfseries \-\_\-sim\-Trigger\-Mode}\label{classCALICE_1_1Ahc2TriggerSim_a9ae476f2767aac3277f781e47e356643}
+
+\item 
+int {\bfseries \-\_\-sim\-Trigger\-Mode\-Parameter}\label{classCALICE_1_1Ahc2TriggerSim_a579a9908f65019aec5435ec3c8c4006f}
+
+\item 
+int {\bf \-\_\-n\-Sc1\-\_\-100x100}\label{classCALICE_1_1Ahc2TriggerSim_af0b85f62b857567d2ad97362ad867944}
+
+\begin{DoxyCompactList}\small\item\em number of events passing through the scintillator 100x100 S\-C1 \end{DoxyCompactList}\item 
+int {\bf \-\_\-n\-Sc2\-\_\-100x100}\label{classCALICE_1_1Ahc2TriggerSim_a62c9633a37533c1454a674227e1adbfe}
+
+\begin{DoxyCompactList}\small\item\em number of events passing through the scintillator 100x100 S\-C2 \end{DoxyCompactList}\item 
+int {\bf \-\_\-n\-Sc1\-\_\-500x500}\label{classCALICE_1_1Ahc2TriggerSim_ad7c0a48243f57169f5f52a702bf1d0e1}
+
+\begin{DoxyCompactList}\small\item\em number of events passing through the scintillator 500x500 S\-C1 \end{DoxyCompactList}\item 
+int {\bf \-\_\-n\-Sc2\-\_\-500x500}\label{classCALICE_1_1Ahc2TriggerSim_a7d0a9227eecfed359175b1d5738b4ecf}
+
+\begin{DoxyCompactList}\small\item\em number of events passing through the scintillator 500x500 S\-C2 \end{DoxyCompactList}\item 
+int {\bf \-\_\-n\-Beam\-Trigger}\label{classCALICE_1_1Ahc2TriggerSim_a744848f19b893adba50bf589ca642f86}
+
+\begin{DoxyCompactList}\small\item\em number of beam trigger events \end{DoxyCompactList}\item 
+std\-::string {\bf \-\_\-\-Detector\-Name}\label{classCALICE_1_1Ahc2TriggerSim_a4832bbd1f850338fee65c2f03e2c189e}
+
+\begin{DoxyCompactList}\small\item\em detector name \end{DoxyCompactList}\item 
+std\-::vector$<$ std\-::string $>$ {\bfseries \-\_\-\-Inp\-Collections}\label{classCALICE_1_1Ahc2TriggerSim_ae77a7bf9820cbfe1034e3d1fa6c28631}
+
+\item 
+int {\bf \-\_\-n\-Run}
+\begin{DoxyCompactList}\small\item\em input collection names \end{DoxyCompactList}\item 
+int {\bf \-\_\-n\-Evt}\label{classCALICE_1_1Ahc2TriggerSim_ae33b2c3da2135fd22c96e837ec3d27f4}
+
+\begin{DoxyCompactList}\small\item\em evt number \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Class for setting trigger bits in the event for M\-C. 
+
+\begin{DoxyAuthor}{Author}
+{\tt eldwan.\-brianne@desy.\-de} 
+\end{DoxyAuthor}
+\begin{DoxyVersion}{Version}
+1.\-0 
+\end{DoxyVersion}
+\begin{DoxyDate}{Date}
+January 2017 
+\end{DoxyDate}
+
+
+Definition at line 27 of file Ahc2\-Trigger\-Sim.\-hh.
+
+
+
+\subsection{Member Enumeration Documentation}
+\index{C\-A\-L\-I\-C\-E\-::\-Ahc2\-Trigger\-Sim@{C\-A\-L\-I\-C\-E\-::\-Ahc2\-Trigger\-Sim}!E\-Trigger\-Sim\-Mode@{E\-Trigger\-Sim\-Mode}}
+\index{E\-Trigger\-Sim\-Mode@{E\-Trigger\-Sim\-Mode}!CALICE::Ahc2TriggerSim@{C\-A\-L\-I\-C\-E\-::\-Ahc2\-Trigger\-Sim}}
+\subsubsection[{E\-Trigger\-Sim\-Mode}]{\setlength{\rightskip}{0pt plus 5cm}enum {\bf C\-A\-L\-I\-C\-E\-::\-Ahc2\-Trigger\-Sim\-::\-E\-Trigger\-Sim\-Mode}\hspace{0.3cm}{\ttfamily [protected]}}\label{classCALICE_1_1Ahc2TriggerSim_a33e97f8d57ff4119782304c160476887}
+\begin{Desc}
+\item[Enumerator]\par
+\begin{description}
+\index{k\-Sim\-Trigger\-Mode100x100\-Coincidence@{k\-Sim\-Trigger\-Mode100x100\-Coincidence}!C\-A\-L\-I\-C\-E\-::\-Ahc2\-Trigger\-Sim@{C\-A\-L\-I\-C\-E\-::\-Ahc2\-Trigger\-Sim}}\index{C\-A\-L\-I\-C\-E\-::\-Ahc2\-Trigger\-Sim@{C\-A\-L\-I\-C\-E\-::\-Ahc2\-Trigger\-Sim}!k\-Sim\-Trigger\-Mode100x100\-Coincidence@{k\-Sim\-Trigger\-Mode100x100\-Coincidence}}\item[{\em 
+k\-Sim\-Trigger\-Mode100x100\-Coincidence\label{classCALICE_1_1Ahc2TriggerSim_a33e97f8d57ff4119782304c160476887a57485d2a6a7a31e93db1e28183689f60}
+}]100x100 coincidence is used as beam bit \index{k\-Sim\-Trigger\-Mode500x500\-Coincidence@{k\-Sim\-Trigger\-Mode500x500\-Coincidence}!C\-A\-L\-I\-C\-E\-::\-Ahc2\-Trigger\-Sim@{C\-A\-L\-I\-C\-E\-::\-Ahc2\-Trigger\-Sim}}\index{C\-A\-L\-I\-C\-E\-::\-Ahc2\-Trigger\-Sim@{C\-A\-L\-I\-C\-E\-::\-Ahc2\-Trigger\-Sim}!k\-Sim\-Trigger\-Mode500x500\-Coincidence@{k\-Sim\-Trigger\-Mode500x500\-Coincidence}}\item[{\em 
+k\-Sim\-Trigger\-Mode500x500\-Coincidence\label{classCALICE_1_1Ahc2TriggerSim_a33e97f8d57ff4119782304c160476887a76b453084784176fa90d6d70843cd70b}
+}]500x500 coincidence is used as beam bit \end{description}
+\end{Desc}
+
+
+Definition at line 67 of file Ahc2\-Trigger\-Sim.\-hh.
+
+
+
+\subsection{Field Documentation}
+\index{C\-A\-L\-I\-C\-E\-::\-Ahc2\-Trigger\-Sim@{C\-A\-L\-I\-C\-E\-::\-Ahc2\-Trigger\-Sim}!\-\_\-n\-Run@{\-\_\-n\-Run}}
+\index{\-\_\-n\-Run@{\-\_\-n\-Run}!CALICE::Ahc2TriggerSim@{C\-A\-L\-I\-C\-E\-::\-Ahc2\-Trigger\-Sim}}
+\subsubsection[{\-\_\-n\-Run}]{\setlength{\rightskip}{0pt plus 5cm}int C\-A\-L\-I\-C\-E\-::\-Ahc2\-Trigger\-Sim\-::\-\_\-n\-Run\hspace{0.3cm}{\ttfamily [protected]}}\label{classCALICE_1_1Ahc2TriggerSim_a1445fdbede4c597a8e4e0da6eb76a443}
+
+
+input collection names 
+
+run number 
+
+Definition at line 84 of file Ahc2\-Trigger\-Sim.\-hh.
+
+
+
+Referenced by end(), init(), and process\-Run\-Header().
+
+
+
+The documentation for this class was generated from the following files\-:\begin{DoxyCompactItemize}
+\item 
+Ahc2\-Trigger\-Sim.\-hh\item 
+Ahc2\-Trigger\-Sim.\-cc\end{DoxyCompactItemize}

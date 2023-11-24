@@ -1,0 +1,123 @@
+\section{C\-A\-L\-I\-C\-E\-:\-:Correct\-Position\-Processor Class Reference}
+\label{classCALICE_1_1CorrectPositionProcessor}\index{C\-A\-L\-I\-C\-E\-::\-Correct\-Position\-Processor@{C\-A\-L\-I\-C\-E\-::\-Correct\-Position\-Processor}}
+
+
+{\ttfamily \#include $<$Correct\-Position\-Processor.\-hh$>$}
+
+Inheritance diagram for C\-A\-L\-I\-C\-E\-:\-:Correct\-Position\-Processor\-:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classCALICE_1_1CorrectPositionProcessor}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+virtual Processor $\ast$ {\bfseries new\-Processor} ()\label{classCALICE_1_1CorrectPositionProcessor_a2746de98b6d03b9eb77431df1016a062}
+
+\item 
+virtual void {\bf init} ()
+\item 
+virtual void {\bf process\-Event} (L\-C\-Event $\ast$evt)
+\end{DoxyCompactItemize}
+\subsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void {\bf create\-Sim\-Rec\-Relation} (L\-C\-Event $\ast$evt)
+\item 
+virtual void {\bf check\-Sim\-Rec\-Relation} (L\-C\-Event $\ast$evt)
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Processor that generates a collection of Calorimeter\-Hits with corrected position.
+
+\begin{DoxyParagraph}{processor parameters}
+\begin{TabularC}{2}
+\hline
+steering file parameter name &description  \\\cline{1-2}
+{\bfseries {\itshape  Cell\-Description\-Processor\-Name }}&name of the \doxyref{Cell\-Description\-Processor}{p.}{classCALICE_1_1CellDescriptionProcessor} that provides position information \\\cline{1-2}
+{\bfseries {\itshape  Input\-Collection }}&name of the collection that contains the Calorimeter\-Hits to be corrected \\\cline{1-2}
+{\bfseries {\itshape  Output\-Collection }}&name of the collection that will contain the corrected Calorimeter\-Hits \\\cline{1-2}
+{\bfseries {\itshape  Scale\-Energy }}&scale factor for the energy of the hits \\\cline{1-2}
+\end{TabularC}
+
+\end{DoxyParagraph}
+\begin{DoxyAuthor}{Author}
+{\tt Benjamin.\-Lutz@desy.\-de} 
+\end{DoxyAuthor}
+\begin{DoxyVersion}{Version}
+0.\-1 
+\end{DoxyVersion}
+\begin{DoxyDate}{Date}
+June 2009 
+\end{DoxyDate}
+
+
+Definition at line 40 of file Correct\-Position\-Processor.\-hh.
+
+
+
+\subsection{Member Function Documentation}
+\index{C\-A\-L\-I\-C\-E\-::\-Correct\-Position\-Processor@{C\-A\-L\-I\-C\-E\-::\-Correct\-Position\-Processor}!check\-Sim\-Rec\-Relation@{check\-Sim\-Rec\-Relation}}
+\index{check\-Sim\-Rec\-Relation@{check\-Sim\-Rec\-Relation}!CALICE::CorrectPositionProcessor@{C\-A\-L\-I\-C\-E\-::\-Correct\-Position\-Processor}}
+\subsubsection[{check\-Sim\-Rec\-Relation}]{\setlength{\rightskip}{0pt plus 5cm}void C\-A\-L\-I\-C\-E\-::\-Correct\-Position\-Processor\-::check\-Sim\-Rec\-Relation (
+\begin{DoxyParamCaption}
+\item[{L\-C\-Event $\ast$}]{evt}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}, {\ttfamily [virtual]}}\label{classCALICE_1_1CorrectPositionProcessor_a58578535a9a6c68351516650628c1c59}
+Check the L\-C\-Relation between Mokka Sim\-Calorimeter\-Hits and reconstructed Calorimeter\-Hits 
+
+Definition at line 276 of file Correct\-Position\-Processor.\-cc.
+
+\index{C\-A\-L\-I\-C\-E\-::\-Correct\-Position\-Processor@{C\-A\-L\-I\-C\-E\-::\-Correct\-Position\-Processor}!create\-Sim\-Rec\-Relation@{create\-Sim\-Rec\-Relation}}
+\index{create\-Sim\-Rec\-Relation@{create\-Sim\-Rec\-Relation}!CALICE::CorrectPositionProcessor@{C\-A\-L\-I\-C\-E\-::\-Correct\-Position\-Processor}}
+\subsubsection[{create\-Sim\-Rec\-Relation}]{\setlength{\rightskip}{0pt plus 5cm}void C\-A\-L\-I\-C\-E\-::\-Correct\-Position\-Processor\-::create\-Sim\-Rec\-Relation (
+\begin{DoxyParamCaption}
+\item[{L\-C\-Event $\ast$}]{evt}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}}\label{classCALICE_1_1CorrectPositionProcessor_a6cb567824d023f735791b2cb2bb3a399}
+Create a collection of type L\-C\-Relation (relation between Mokka Sim\-Calorimeter\-Hits and reconstructed Calorimeter\-Hits), if the processor parameter Create\-Sim\-Rec\-Relation is true 
+
+Definition at line 202 of file Correct\-Position\-Processor.\-cc.
+
+
+
+Referenced by process\-Event().
+
+\index{C\-A\-L\-I\-C\-E\-::\-Correct\-Position\-Processor@{C\-A\-L\-I\-C\-E\-::\-Correct\-Position\-Processor}!init@{init}}
+\index{init@{init}!CALICE::CorrectPositionProcessor@{C\-A\-L\-I\-C\-E\-::\-Correct\-Position\-Processor}}
+\subsubsection[{init}]{\setlength{\rightskip}{0pt plus 5cm}void C\-A\-L\-I\-C\-E\-::\-Correct\-Position\-Processor\-::init (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}\label{classCALICE_1_1CorrectPositionProcessor_aa53c287405b06abca48790751f5aaab4}
+Called at the begin of the job before anything is read. 
+
+Definition at line 84 of file Correct\-Position\-Processor.\-cc.
+
+
+
+References C\-A\-L\-I\-C\-E\-::\-Cell\-Description\-Processor\-::get\-Cell\-Descriptions(), and C\-A\-L\-I\-C\-E\-::\-Mapping\-Processor\-::get\-Mapper().
+
+\index{C\-A\-L\-I\-C\-E\-::\-Correct\-Position\-Processor@{C\-A\-L\-I\-C\-E\-::\-Correct\-Position\-Processor}!process\-Event@{process\-Event}}
+\index{process\-Event@{process\-Event}!CALICE::CorrectPositionProcessor@{C\-A\-L\-I\-C\-E\-::\-Correct\-Position\-Processor}}
+\subsubsection[{process\-Event}]{\setlength{\rightskip}{0pt plus 5cm}void C\-A\-L\-I\-C\-E\-::\-Correct\-Position\-Processor\-::process\-Event (
+\begin{DoxyParamCaption}
+\item[{L\-C\-Event $\ast$}]{evt}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}\label{classCALICE_1_1CorrectPositionProcessor_a8ec9f3ef853fb453faca1efd3b82d660}
+Called for every event. 
+
+Definition at line 119 of file Correct\-Position\-Processor.\-cc.
+
+
+
+References create\-Sim\-Rec\-Relation().
+
+
+
+The documentation for this class was generated from the following files\-:\begin{DoxyCompactItemize}
+\item 
+Correct\-Position\-Processor.\-hh\item 
+Correct\-Position\-Processor.\-cc\end{DoxyCompactItemize}

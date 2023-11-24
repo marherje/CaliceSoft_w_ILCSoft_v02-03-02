@@ -1,0 +1,374 @@
+\section{C\-A\-L\-I\-C\-E\-:\-:N\-Vector\-\_\-t$<$ T, dimension $>$ Class Template Reference}
+\label{classCALICE_1_1NVector__t}\index{C\-A\-L\-I\-C\-E\-::\-N\-Vector\-\_\-t$<$ T, dimension $>$@{C\-A\-L\-I\-C\-E\-::\-N\-Vector\-\_\-t$<$ T, dimension $>$}}
+
+
+Simple n-\/dimensional vector (size of the vector is defined at compile time) Provides methods to add and subtract vectors or multiply and divide by scalars.  
+
+
+
+
+{\ttfamily \#include $<$N\-Vector\-\_\-t.\-hh$>$}
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+{\bf N\-Vector\-\_\-t} \& {\bf clear} ()
+\begin{DoxyCompactList}\small\item\em Set all elements to zero. \end{DoxyCompactList}\item 
+U\-Int\-\_\-t {\bf n} () const \label{classCALICE_1_1NVector__t_abdf25cc48054ab30cf01c410f8e8279a}
+
+\begin{DoxyCompactList}\small\item\em Get the dimension of the vector. \end{DoxyCompactList}\item 
+{\bf N\-Vector\-\_\-t} \& {\bf set} (const T $\ast$array)
+\begin{DoxyCompactList}\small\item\em Set the elements of the vector from the given array. \end{DoxyCompactList}\item 
+Float\-\_\-t \& {\bf operator[$\,$]} (U\-Int\-\_\-t index)
+\begin{DoxyCompactList}\small\item\em get the element of the given index (read and write access). \end{DoxyCompactList}\item 
+const Float\-\_\-t \& {\bf operator[$\,$]} (U\-Int\-\_\-t index) const 
+\begin{DoxyCompactList}\small\item\em get the element of the given index (read access only). \end{DoxyCompactList}\item 
+{\bf N\-Vector\-\_\-t} \& {\bf operator+=} (const {\bf N\-Vector\-\_\-t} \&a)
+\begin{DoxyCompactList}\small\item\em Add a vector having the same dimension to this vector. \end{DoxyCompactList}\item 
+{\bf N\-Vector\-\_\-t} \& {\bf operator-\/=} (const {\bf N\-Vector\-\_\-t} \&a)
+\begin{DoxyCompactList}\small\item\em Subtract a vector having the same dimension to this vector. \end{DoxyCompactList}\item 
+{\bf N\-Vector\-\_\-t} \& {\bf operator$\ast$=} (const float c)
+\begin{DoxyCompactList}\small\item\em Multiply this vector by a scalar. \end{DoxyCompactList}\item 
+{\bf N\-Vector\-\_\-t} \& {\bf operator/=} (const float c)
+\begin{DoxyCompactList}\small\item\em Divide this vector by a scalar. \end{DoxyCompactList}\item 
+Float\-\_\-t $\ast$ {\bf data} ()
+\begin{DoxyCompactList}\small\item\em get a pointer to the underlying array (read and write access). \end{DoxyCompactList}\item 
+const Float\-\_\-t $\ast$ {\bf data} () const 
+\begin{DoxyCompactList}\small\item\em get a pointer to the underlying array (read only access). \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+Float\-\_\-t {\bf \-\_\-x} [dimension]
+\end{DoxyCompactItemize}
+\subsection*{Friends}
+\begin{DoxyCompactItemize}
+\item 
+{\footnotesize template$<$class \-\_\-\-T , int \-\_\-dimension$>$ }\\{\bf N\-Vector\-\_\-t}$<$ \-\_\-\-T, \-\_\-dimension $>$ {\bf operator-\/} (const {\bf N\-Vector\-\_\-t}$<$ \-\_\-\-T, \-\_\-dimension $>$ \&a, const {\bf N\-Vector\-\_\-t}$<$ \-\_\-\-T, \-\_\-dimension $>$ \&b)\label{classCALICE_1_1NVector__t_a8b9a92a937c2f74d6a98889be55373db}
+
+\begin{DoxyCompactList}\small\item\em Subtract two vectors of the same dimension. \end{DoxyCompactList}\item 
+{\footnotesize template$<$class \-\_\-\-T , int \-\_\-dimension$>$ }\\{\bf N\-Vector\-\_\-t}$<$ \-\_\-\-T, \-\_\-dimension $>$ {\bf operator+} (const {\bf N\-Vector\-\_\-t}$<$ \-\_\-\-T, \-\_\-dimension $>$ \&a, const {\bf N\-Vector\-\_\-t}$<$ \-\_\-\-T, \-\_\-dimension $>$ \&b)\label{classCALICE_1_1NVector__t_a345dbcc20a67386011969dccac6ed891}
+
+\begin{DoxyCompactList}\small\item\em Add two vectors of the same dimension. \end{DoxyCompactList}\item 
+{\footnotesize template$<$class \-\_\-\-T , int \-\_\-dimension$>$ }\\{\bf N\-Vector\-\_\-t}$<$ \-\_\-\-T, \-\_\-dimension $>$ {\bf operator$\ast$} (const {\bf N\-Vector\-\_\-t}$<$ \-\_\-\-T, \-\_\-dimension $>$ \&a, float c)
+\begin{DoxyCompactList}\small\item\em Multiply a vector by a scalar. \end{DoxyCompactList}\item 
+{\footnotesize template$<$class \-\_\-\-T , int \-\_\-dimension$>$ }\\{\bf N\-Vector\-\_\-t}$<$ \-\_\-\-T, \-\_\-dimension $>$ {\bf operator$\ast$} (float c, const {\bf N\-Vector\-\_\-t}$<$ \-\_\-\-T, \-\_\-dimension $>$ \&a)
+\begin{DoxyCompactList}\small\item\em Multiply a vector by a scalar. \end{DoxyCompactList}\item 
+{\footnotesize template$<$class \-\_\-\-T , int \-\_\-dimension$>$ }\\{\bf N\-Vector\-\_\-t}$<$ \-\_\-\-T, \-\_\-dimension $>$ {\bf operator/} (const {\bf N\-Vector\-\_\-t}$<$ \-\_\-\-T, \-\_\-dimension $>$ \&a, float c)
+\begin{DoxyCompactList}\small\item\em Divide a vector by a scalar. \end{DoxyCompactList}\item 
+{\footnotesize template$<$class \-\_\-\-T , int \-\_\-dimension$>$ }\\Double\-\_\-t {\bf norm} (const {\bf N\-Vector\-\_\-t}$<$ \-\_\-\-T, \-\_\-dimension $>$ \&a)\label{classCALICE_1_1NVector__t_abc603727f3464e21addcc6dfcad55953}
+
+\begin{DoxyCompactList}\small\item\em Euclidean Norm of a vector. \end{DoxyCompactList}\item 
+{\footnotesize template$<$class \-\_\-\-T , int \-\_\-dimension$>$ }\\Double\-\_\-t {\bf dot} (const {\bf N\-Vector\-\_\-t}$<$ \-\_\-\-T, \-\_\-dimension $>$ \&a, const {\bf N\-Vector\-\_\-t}$<$ \-\_\-\-T, \-\_\-dimension $>$ \&b)\label{classCALICE_1_1NVector__t_a4e03d5cfcb4cd45a83308d7218af8ac2}
+
+\begin{DoxyCompactList}\small\item\em Scalar product of two vectors of the same dimension. \end{DoxyCompactList}\item 
+{\bf Three\-Vector\-\_\-t} {\bf cross} (const {\bf Three\-Vector\-\_\-t} \&a, const {\bf Three\-Vector\-\_\-t} \&b)\label{classCALICE_1_1NVector__t_a4cad467a11b3438c7bc1afc3995ae2cb}
+
+\begin{DoxyCompactList}\small\item\em cross product of two three dimensional vectors. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+\subsubsection*{template$<$class T, int dimension$>$class C\-A\-L\-I\-C\-E\-::\-N\-Vector\-\_\-t$<$ T, dimension $>$}
+
+Simple n-\/dimensional vector (size of the vector is defined at compile time) Provides methods to add and subtract vectors or multiply and divide by scalars. 
+
+There are also functions to calculate the scalar and cross products (the latter for three dimensional vectors only). A flat array (currently floats only) can be casted to an \doxyref{N\-Vector\-\_\-t}{p.}{classCALICE_1_1NVector__t}\-: {\ttfamily  lcio\-::\-Calorimeter\-Hit $\ast$a\-\_\-hit; N\-Vector\-\_\-t$<$\-Float\-\_\-t,3$>$ $\ast$vector=static\-\_\-cast$<$N\-Vector\-\_\-t$<$\-Float\-\_\-t,3$>$ $\ast$$>$(a\-\_\-hit-\/$>$get\-Position()); } 
+
+Definition at line 12 of file N\-Vector\-\_\-t.\-hh.
+
+
+
+\subsection{Member Function Documentation}
+\index{C\-A\-L\-I\-C\-E\-::\-N\-Vector\-\_\-t@{C\-A\-L\-I\-C\-E\-::\-N\-Vector\-\_\-t}!clear@{clear}}
+\index{clear@{clear}!CALICE::NVector_t@{C\-A\-L\-I\-C\-E\-::\-N\-Vector\-\_\-t}}
+\subsubsection[{clear}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class T, int dimension$>$ {\bf N\-Vector\-\_\-t}\& {\bf C\-A\-L\-I\-C\-E\-::\-N\-Vector\-\_\-t}$<$ T, dimension $>$\-::clear (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\label{classCALICE_1_1NVector__t_acdcc0e98ea504c04cfc4341269969e5c}
+
+
+Set all elements to zero. 
+
+\begin{DoxyRefDesc}{Todo}
+\item[{\bf Todo}]this only works for simple types like int, float, double. \end{DoxyRefDesc}
+
+
+Definition at line 45 of file N\-Vector\-\_\-t.\-hh.
+
+
+
+References C\-A\-L\-I\-C\-E\-::\-N\-Vector\-\_\-t$<$ T, dimension $>$\-::\-\_\-x.
+
+\index{C\-A\-L\-I\-C\-E\-::\-N\-Vector\-\_\-t@{C\-A\-L\-I\-C\-E\-::\-N\-Vector\-\_\-t}!data@{data}}
+\index{data@{data}!CALICE::NVector_t@{C\-A\-L\-I\-C\-E\-::\-N\-Vector\-\_\-t}}
+\subsubsection[{data}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class T, int dimension$>$ Float\-\_\-t$\ast$ {\bf C\-A\-L\-I\-C\-E\-::\-N\-Vector\-\_\-t}$<$ T, dimension $>$\-::data (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\label{classCALICE_1_1NVector__t_a216c4f7afc34c21e101a4122e857a120}
+
+
+get a pointer to the underlying array (read and write access). 
+
+
+
+Definition at line 139 of file N\-Vector\-\_\-t.\-hh.
+
+
+
+References C\-A\-L\-I\-C\-E\-::\-N\-Vector\-\_\-t$<$ T, dimension $>$\-::\-\_\-x.
+
+\index{C\-A\-L\-I\-C\-E\-::\-N\-Vector\-\_\-t@{C\-A\-L\-I\-C\-E\-::\-N\-Vector\-\_\-t}!data@{data}}
+\index{data@{data}!CALICE::NVector_t@{C\-A\-L\-I\-C\-E\-::\-N\-Vector\-\_\-t}}
+\subsubsection[{data}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class T, int dimension$>$ const Float\-\_\-t$\ast$ {\bf C\-A\-L\-I\-C\-E\-::\-N\-Vector\-\_\-t}$<$ T, dimension $>$\-::data (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}\label{classCALICE_1_1NVector__t_ad523fba7620726c1d58a5b32c8b2d517}
+
+
+get a pointer to the underlying array (read only access). 
+
+\begin{DoxyRefDesc}{Todo}
+\item[{\bf Todo}]float ? not T ? \end{DoxyRefDesc}
+
+
+Definition at line 142 of file N\-Vector\-\_\-t.\-hh.
+
+
+
+References C\-A\-L\-I\-C\-E\-::\-N\-Vector\-\_\-t$<$ T, dimension $>$\-::\-\_\-x.
+
+\index{C\-A\-L\-I\-C\-E\-::\-N\-Vector\-\_\-t@{C\-A\-L\-I\-C\-E\-::\-N\-Vector\-\_\-t}!operator$\ast$=@{operator$\ast$=}}
+\index{operator$\ast$=@{operator$\ast$=}!CALICE::NVector_t@{C\-A\-L\-I\-C\-E\-::\-N\-Vector\-\_\-t}}
+\subsubsection[{operator$\ast$=}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class T, int dimension$>$ {\bf N\-Vector\-\_\-t}\& {\bf C\-A\-L\-I\-C\-E\-::\-N\-Vector\-\_\-t}$<$ T, dimension $>$\-::operator$\ast$= (
+\begin{DoxyParamCaption}
+\item[{const float}]{c}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\label{classCALICE_1_1NVector__t_af177ac27d671789ac8c8d61f257ccd4b}
+
+
+Multiply this vector by a scalar. 
+
+\begin{DoxyRefDesc}{Todo}
+\item[{\bf Todo}]the argument should not be a float but T ? \end{DoxyRefDesc}
+
+
+Definition at line 125 of file N\-Vector\-\_\-t.\-hh.
+
+
+
+References C\-A\-L\-I\-C\-E\-::\-N\-Vector\-\_\-t$<$ T, dimension $>$\-::\-\_\-x.
+
+\index{C\-A\-L\-I\-C\-E\-::\-N\-Vector\-\_\-t@{C\-A\-L\-I\-C\-E\-::\-N\-Vector\-\_\-t}!operator+=@{operator+=}}
+\index{operator+=@{operator+=}!CALICE::NVector_t@{C\-A\-L\-I\-C\-E\-::\-N\-Vector\-\_\-t}}
+\subsubsection[{operator+=}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class T, int dimension$>$ {\bf N\-Vector\-\_\-t}\& {\bf C\-A\-L\-I\-C\-E\-::\-N\-Vector\-\_\-t}$<$ T, dimension $>$\-::operator+= (
+\begin{DoxyParamCaption}
+\item[{const {\bf N\-Vector\-\_\-t}$<$ T, dimension $>$ \&}]{a}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\label{classCALICE_1_1NVector__t_ab2f2ef8cb2e16956a24eafcfd5965b19}
+
+
+Add a vector having the same dimension to this vector. 
+
+F\-I\-X\-M\-E\-: The compiler should create an error message if vectors of different dimensions are added Does this happen ? 
+
+Definition at line 108 of file N\-Vector\-\_\-t.\-hh.
+
+
+
+References C\-A\-L\-I\-C\-E\-::\-N\-Vector\-\_\-t$<$ T, dimension $>$\-::\-\_\-x.
+
+\index{C\-A\-L\-I\-C\-E\-::\-N\-Vector\-\_\-t@{C\-A\-L\-I\-C\-E\-::\-N\-Vector\-\_\-t}!operator-\/=@{operator-\/=}}
+\index{operator-\/=@{operator-\/=}!CALICE::NVector_t@{C\-A\-L\-I\-C\-E\-::\-N\-Vector\-\_\-t}}
+\subsubsection[{operator-\/=}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class T, int dimension$>$ {\bf N\-Vector\-\_\-t}\& {\bf C\-A\-L\-I\-C\-E\-::\-N\-Vector\-\_\-t}$<$ T, dimension $>$\-::operator-\/= (
+\begin{DoxyParamCaption}
+\item[{const {\bf N\-Vector\-\_\-t}$<$ T, dimension $>$ \&}]{a}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\label{classCALICE_1_1NVector__t_a921fef3e1b5fe52897c80917a696614d}
+
+
+Subtract a vector having the same dimension to this vector. 
+
+F\-I\-X\-M\-E\-: The compiler should create an error message if vectors of different dimensions are added Does this happen ? 
+
+Definition at line 117 of file N\-Vector\-\_\-t.\-hh.
+
+
+
+References C\-A\-L\-I\-C\-E\-::\-N\-Vector\-\_\-t$<$ T, dimension $>$\-::\-\_\-x.
+
+\index{C\-A\-L\-I\-C\-E\-::\-N\-Vector\-\_\-t@{C\-A\-L\-I\-C\-E\-::\-N\-Vector\-\_\-t}!operator/=@{operator/=}}
+\index{operator/=@{operator/=}!CALICE::NVector_t@{C\-A\-L\-I\-C\-E\-::\-N\-Vector\-\_\-t}}
+\subsubsection[{operator/=}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class T, int dimension$>$ {\bf N\-Vector\-\_\-t}\& {\bf C\-A\-L\-I\-C\-E\-::\-N\-Vector\-\_\-t}$<$ T, dimension $>$\-::operator/= (
+\begin{DoxyParamCaption}
+\item[{const float}]{c}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\label{classCALICE_1_1NVector__t_ab9758bc6c1ae323e33d25457b1f60993}
+
+
+Divide this vector by a scalar. 
+
+\begin{DoxyRefDesc}{Todo}
+\item[{\bf Todo}]the argument should not be a float but T ? \end{DoxyRefDesc}
+
+
+Definition at line 133 of file N\-Vector\-\_\-t.\-hh.
+
+
+
+References C\-A\-L\-I\-C\-E\-::\-N\-Vector\-\_\-t$<$ T, dimension $>$\-::\-\_\-x.
+
+\index{C\-A\-L\-I\-C\-E\-::\-N\-Vector\-\_\-t@{C\-A\-L\-I\-C\-E\-::\-N\-Vector\-\_\-t}!operator[$\,$]@{operator[]}}
+\index{operator[$\,$]@{operator[]}!CALICE::NVector_t@{C\-A\-L\-I\-C\-E\-::\-N\-Vector\-\_\-t}}
+\subsubsection[{operator[]}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class T, int dimension$>$ Float\-\_\-t\& {\bf C\-A\-L\-I\-C\-E\-::\-N\-Vector\-\_\-t}$<$ T, dimension $>$\-::operator[$\,$] (
+\begin{DoxyParamCaption}
+\item[{U\-Int\-\_\-t}]{index}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\label{classCALICE_1_1NVector__t_aa001e473489cb79a2be6bb0708b5f9be}
+
+
+get the element of the given index (read and write access). 
+
+
+\begin{DoxyParams}{Parameters}
+{\em index} & the index of the element (0 to dimension -\/ 1). \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+reference to the element of the given index (read and write access). When the preprocessor variable B\-O\-U\-N\-D\-A\-R\-Y\-\_\-\-C\-H\-E\-C\-K is defined the validity of index is checked and an exception std\-::runtime\-\_\-error is thrown in case of violations. 
+\end{DoxyReturn}
+
+
+Definition at line 71 of file N\-Vector\-\_\-t.\-hh.
+
+
+
+References C\-A\-L\-I\-C\-E\-::\-N\-Vector\-\_\-t$<$ T, dimension $>$\-::\-\_\-x.
+
+\index{C\-A\-L\-I\-C\-E\-::\-N\-Vector\-\_\-t@{C\-A\-L\-I\-C\-E\-::\-N\-Vector\-\_\-t}!operator[$\,$]@{operator[]}}
+\index{operator[$\,$]@{operator[]}!CALICE::NVector_t@{C\-A\-L\-I\-C\-E\-::\-N\-Vector\-\_\-t}}
+\subsubsection[{operator[]}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class T, int dimension$>$ const Float\-\_\-t\& {\bf C\-A\-L\-I\-C\-E\-::\-N\-Vector\-\_\-t}$<$ T, dimension $>$\-::operator[$\,$] (
+\begin{DoxyParamCaption}
+\item[{U\-Int\-\_\-t}]{index}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}\label{classCALICE_1_1NVector__t_afb5ddce261165c101329cba31be6363b}
+
+
+get the element of the given index (read access only). 
+
+
+\begin{DoxyParams}{Parameters}
+{\em index} & the index of the element (0 to dimension -\/ 1). \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+reference to the element of the given index (read access only). When the preprocessor variable B\-O\-U\-N\-D\-A\-R\-Y\-\_\-\-C\-H\-E\-C\-K is defined the validity of index is checked and an exception std\-::runtime\-\_\-error is thrown in case of violations. 
+\end{DoxyReturn}
+
+
+Definition at line 91 of file N\-Vector\-\_\-t.\-hh.
+
+
+
+References C\-A\-L\-I\-C\-E\-::\-N\-Vector\-\_\-t$<$ T, dimension $>$\-::\-\_\-x.
+
+\index{C\-A\-L\-I\-C\-E\-::\-N\-Vector\-\_\-t@{C\-A\-L\-I\-C\-E\-::\-N\-Vector\-\_\-t}!set@{set}}
+\index{set@{set}!CALICE::NVector_t@{C\-A\-L\-I\-C\-E\-::\-N\-Vector\-\_\-t}}
+\subsubsection[{set}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class T, int dimension$>$ {\bf N\-Vector\-\_\-t}\& {\bf C\-A\-L\-I\-C\-E\-::\-N\-Vector\-\_\-t}$<$ T, dimension $>$\-::set (
+\begin{DoxyParamCaption}
+\item[{const T $\ast$}]{array}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\label{classCALICE_1_1NVector__t_a72e8589546f57d77aa0368c56f1b9824}
+
+
+Set the elements of the vector from the given array. 
+
+It is assumed that the array contains the correct amount of elements (dimension of the vector). If the dimension of the given array is smaller than the dimension of this vector then the result will be undefined. 
+
+Definition at line 59 of file N\-Vector\-\_\-t.\-hh.
+
+
+
+References C\-A\-L\-I\-C\-E\-::\-N\-Vector\-\_\-t$<$ T, dimension $>$\-::\-\_\-x.
+
+
+
+\subsection{Friends And Related Function Documentation}
+\index{C\-A\-L\-I\-C\-E\-::\-N\-Vector\-\_\-t@{C\-A\-L\-I\-C\-E\-::\-N\-Vector\-\_\-t}!operator$\ast$@{operator$\ast$}}
+\index{operator$\ast$@{operator$\ast$}!CALICE::NVector_t@{C\-A\-L\-I\-C\-E\-::\-N\-Vector\-\_\-t}}
+\subsubsection[{operator$\ast$}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class T, int dimension$>$ template$<$class \-\_\-\-T , int \-\_\-dimension$>$ {\bf N\-Vector\-\_\-t}$<$\-\_\-\-T,\-\_\-dimension$>$ operator$\ast$ (
+\begin{DoxyParamCaption}
+\item[{const {\bf N\-Vector\-\_\-t}$<$ \-\_\-\-T, \-\_\-dimension $>$ \&}]{a, }
+\item[{float}]{c}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [friend]}}\label{classCALICE_1_1NVector__t_a05383138d229b2507e6903656ee16148}
+
+
+Multiply a vector by a scalar. 
+
+\begin{DoxyRefDesc}{Todo}
+\item[{\bf Todo}]replace float by \-\_\-\-T? \end{DoxyRefDesc}
+
+
+Definition at line 182 of file N\-Vector\-\_\-t.\-hh.
+
+\index{C\-A\-L\-I\-C\-E\-::\-N\-Vector\-\_\-t@{C\-A\-L\-I\-C\-E\-::\-N\-Vector\-\_\-t}!operator$\ast$@{operator$\ast$}}
+\index{operator$\ast$@{operator$\ast$}!CALICE::NVector_t@{C\-A\-L\-I\-C\-E\-::\-N\-Vector\-\_\-t}}
+\subsubsection[{operator$\ast$}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class T, int dimension$>$ template$<$class \-\_\-\-T , int \-\_\-dimension$>$ {\bf N\-Vector\-\_\-t}$<$\-\_\-\-T,\-\_\-dimension$>$ operator$\ast$ (
+\begin{DoxyParamCaption}
+\item[{float}]{c, }
+\item[{const {\bf N\-Vector\-\_\-t}$<$ \-\_\-\-T, \-\_\-dimension $>$ \&}]{a}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [friend]}}\label{classCALICE_1_1NVector__t_a0bb45733b94281bb1d1c77ad9675ed7e}
+
+
+Multiply a vector by a scalar. 
+
+\begin{DoxyRefDesc}{Todo}
+\item[{\bf Todo}]replace float by \-\_\-\-T? \end{DoxyRefDesc}
+
+
+Definition at line 171 of file N\-Vector\-\_\-t.\-hh.
+
+\index{C\-A\-L\-I\-C\-E\-::\-N\-Vector\-\_\-t@{C\-A\-L\-I\-C\-E\-::\-N\-Vector\-\_\-t}!operator/@{operator/}}
+\index{operator/@{operator/}!CALICE::NVector_t@{C\-A\-L\-I\-C\-E\-::\-N\-Vector\-\_\-t}}
+\subsubsection[{operator/}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class T, int dimension$>$ template$<$class \-\_\-\-T , int \-\_\-dimension$>$ {\bf N\-Vector\-\_\-t}$<$\-\_\-\-T,\-\_\-dimension$>$ operator/ (
+\begin{DoxyParamCaption}
+\item[{const {\bf N\-Vector\-\_\-t}$<$ \-\_\-\-T, \-\_\-dimension $>$ \&}]{a, }
+\item[{float}]{c}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [friend]}}\label{classCALICE_1_1NVector__t_a3fb7ccd2a9a60442a2c0a6f1c53dd7d0}
+
+
+Divide a vector by a scalar. 
+
+\begin{DoxyRefDesc}{Todo}
+\item[{\bf Todo}]replace float by \-\_\-\-T? \end{DoxyRefDesc}
+
+
+Definition at line 193 of file N\-Vector\-\_\-t.\-hh.
+
+
+
+\subsection{Field Documentation}
+\index{C\-A\-L\-I\-C\-E\-::\-N\-Vector\-\_\-t@{C\-A\-L\-I\-C\-E\-::\-N\-Vector\-\_\-t}!\-\_\-x@{\-\_\-x}}
+\index{\-\_\-x@{\-\_\-x}!CALICE::NVector_t@{C\-A\-L\-I\-C\-E\-::\-N\-Vector\-\_\-t}}
+\subsubsection[{\-\_\-x}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class T, int dimension$>$ Float\-\_\-t {\bf C\-A\-L\-I\-C\-E\-::\-N\-Vector\-\_\-t}$<$ T, dimension $>$\-::\-\_\-x[dimension]\hspace{0.3cm}{\ttfamily [private]}}\label{classCALICE_1_1NVector__t_a8089ceb5c1305789d489631c1da4913c}
+\begin{DoxyRefDesc}{Todo}
+\item[{\bf Todo}]float ? not T ? \end{DoxyRefDesc}
+\begin{DoxyRefDesc}{Todo}
+\item[{\bf Todo}]float ? not T ? \end{DoxyRefDesc}
+
+
+Definition at line 142 of file N\-Vector\-\_\-t.\-hh.
+
+
+
+Referenced by C\-A\-L\-I\-C\-E\-::\-N\-Vector\-\_\-t$<$ T, dimension $>$\-::clear(), C\-A\-L\-I\-C\-E\-::cross(), C\-A\-L\-I\-C\-E\-::\-N\-Vector\-\_\-t$<$ T, dimension $>$\-::data(), C\-A\-L\-I\-C\-E\-::dot(), C\-A\-L\-I\-C\-E\-::norm(), C\-A\-L\-I\-C\-E\-::operator$\ast$(), C\-A\-L\-I\-C\-E\-::\-N\-Vector\-\_\-t$<$ T, dimension $>$\-::operator$\ast$=(), C\-A\-L\-I\-C\-E\-::operator+(), C\-A\-L\-I\-C\-E\-::\-N\-Vector\-\_\-t$<$ T, dimension $>$\-::operator+=(), C\-A\-L\-I\-C\-E\-::operator-\/(), C\-A\-L\-I\-C\-E\-::\-N\-Vector\-\_\-t$<$ T, dimension $>$\-::operator-\/=(), C\-A\-L\-I\-C\-E\-::operator/(), C\-A\-L\-I\-C\-E\-::\-N\-Vector\-\_\-t$<$ T, dimension $>$\-::operator/=(), C\-A\-L\-I\-C\-E\-::\-N\-Vector\-\_\-t$<$ T, dimension $>$\-::operator[$\,$](), and C\-A\-L\-I\-C\-E\-::\-N\-Vector\-\_\-t$<$ T, dimension $>$\-::set().
+
+
+
+The documentation for this class was generated from the following file\-:\begin{DoxyCompactItemize}
+\item 
+N\-Vector\-\_\-t.\-hh\end{DoxyCompactItemize}

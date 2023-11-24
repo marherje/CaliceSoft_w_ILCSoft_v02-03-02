@@ -1,0 +1,1298 @@
+\section{C\-A\-L\-I\-C\-E\-:\-:Ahc\-Mapper Class Reference}
+\label{classCALICE_1_1AhcMapper}\index{C\-A\-L\-I\-C\-E\-::\-Ahc\-Mapper@{C\-A\-L\-I\-C\-E\-::\-Ahc\-Mapper}}
+
+
+A\-H\-C\-A\-L implementation of \doxyref{Mapper}{p.}{classCALICE_1_1Mapper} class.  
+
+
+
+
+{\ttfamily \#include $<$Ahc\-Mapper.\-hh$>$}
+
+Inheritance diagram for C\-A\-L\-I\-C\-E\-:\-:Ahc\-Mapper\-:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classCALICE_1_1AhcMapper}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+int {\bf get\-Cell\-I\-D\-From\-Mod\-Chip\-Chan} (const unsigned int module, const unsigned int chip, const unsigned int channel) const 
+\begin{DoxyCompactList}\small\item\em generate (Mokka) cell\-I\-D from module, chip, channel \end{DoxyCompactList}\item 
+unsigned int {\bf get\-Module\-From\-Cell\-I\-D} (const int cell\-I\-D) const 
+\begin{DoxyCompactList}\small\item\em module number from (Mokka) Cell\-I\-D \end{DoxyCompactList}\item 
+unsigned int {\bf get\-Module\-From\-D\-A\-Q\-I\-D} (const int D\-A\-Qchannel) const 
+\begin{DoxyCompactList}\small\item\em module number from D\-A\-Q channel I\-D \end{DoxyCompactList}\item 
+unsigned int {\bf get\-Module} (const unsigned int crate, const unsigned int slot, const unsigned int fe) const 
+\begin{DoxyCompactList}\small\item\em module number from triple crate, slot, fe \end{DoxyCompactList}\item 
+unsigned int {\bf get\-Module} (const unsigned int k) const 
+\begin{DoxyCompactList}\small\item\em module number from K \end{DoxyCompactList}\item 
+unsigned int {\bf get\-Module\-From\-Cell\-I\-D} (const int cell\-I\-D, bool \&valid) const 
+\begin{DoxyCompactList}\small\item\em get module (number) in which this cell is included from (Mokka) cell\-I\-D \end{DoxyCompactList}\item 
+unsigned int {\bf get\-Module\-From\-D\-A\-Q\-I\-D} (const int D\-A\-Qchannel, bool \&valid) const 
+\begin{DoxyCompactList}\small\item\em get module (number) in which this (D\-A\-Q) channel is included \end{DoxyCompactList}\item 
+unsigned int {\bf get\-Module\-From\-Module\-I\-D} (const int module\-I\-D, bool \&valid) const 
+\begin{DoxyCompactList}\small\item\em get module (number) from this (module) channel I\-D \end{DoxyCompactList}\item 
+unsigned int {\bf get\-Chip\-From\-Cell\-I\-D} (const int cell\-I\-D) const 
+\begin{DoxyCompactList}\small\item\em chip number from (Mokka) Cell\-I\-D \end{DoxyCompactList}\item 
+unsigned int {\bf get\-Chip} (const unsigned int i, const unsigned int j, const unsigned int k) const 
+\begin{DoxyCompactList}\small\item\em chip number from triple I, J, K \end{DoxyCompactList}\item 
+unsigned int {\bf get\-Chan\-From\-Cell\-I\-D} (const int cell\-I\-D) const 
+\begin{DoxyCompactList}\small\item\em channel number from (Mokka) Cell\-I\-D \end{DoxyCompactList}\item 
+unsigned int {\bf get\-Chan} (const unsigned int i, const unsigned int j, const unsigned int k) const 
+\begin{DoxyCompactList}\small\item\em chip number from triple I, J, K \end{DoxyCompactList}\item 
+unsigned int {\bf get\-Crate\-From\-Cell\-I\-D} (const int cell\-I\-D) const 
+\begin{DoxyCompactList}\small\item\em crate number from (Mokka) Cell\-I\-D \end{DoxyCompactList}\item 
+unsigned int {\bf get\-Crate\-From\-Module\-I\-D} (const int module\-I\-D) const 
+\begin{DoxyCompactList}\small\item\em crate number from Module cell I\-D \end{DoxyCompactList}\item 
+unsigned int {\bf get\-Crate} (const unsigned int module) const 
+\begin{DoxyCompactList}\small\item\em crate number from module number \end{DoxyCompactList}\item 
+unsigned int {\bf get\-Slot\-From\-Cell\-I\-D} (const int cell\-I\-D) const 
+\begin{DoxyCompactList}\small\item\em slot number from (Mokka) Cell\-I\-D \end{DoxyCompactList}\item 
+unsigned int {\bf get\-Slot\-From\-Module\-I\-D} (const int module\-I\-D) const 
+\begin{DoxyCompactList}\small\item\em slot number from Module cell I\-D \end{DoxyCompactList}\item 
+unsigned int {\bf get\-Slot} (const unsigned int module) const 
+\begin{DoxyCompactList}\small\item\em slot number from module number \end{DoxyCompactList}\item 
+unsigned int {\bf get\-Fe\-From\-Cell\-I\-D} (const int cell\-I\-D) const 
+\begin{DoxyCompactList}\small\item\em front end number from (Mokka) Cell\-I\-D \end{DoxyCompactList}\item 
+unsigned int {\bf get\-Fe\-From\-Module\-I\-D} (const int module\-I\-D) const 
+\begin{DoxyCompactList}\small\item\em front end number from Module cell I\-D \end{DoxyCompactList}\item 
+unsigned int {\bf get\-Fe} (const unsigned int module) const 
+\begin{DoxyCompactList}\small\item\em front end number from module number \end{DoxyCompactList}\item 
+unsigned int {\bf get\-I\-From\-Module\-I\-D} (const int module\-I\-D) const 
+\begin{DoxyCompactList}\small\item\em I of (Mokka) cell\-I\-D. \end{DoxyCompactList}\item 
+unsigned int {\bf get\-I\-From\-D\-A\-Q\-I\-D} (const int D\-A\-Qchannel) const 
+\begin{DoxyCompactList}\small\item\em I of (Mokka) cell\-I\-D. \end{DoxyCompactList}\item 
+unsigned int {\bf get\-I} (const unsigned int module, const unsigned int chip, const unsigned int chan) const 
+\begin{DoxyCompactList}\small\item\em I of (Mokka) cell\-I\-D. \end{DoxyCompactList}\item 
+unsigned int {\bf get\-J\-From\-Module\-I\-D} (const int module\-I\-D) const 
+\begin{DoxyCompactList}\small\item\em J of (Mokka) cell\-I\-D. \end{DoxyCompactList}\item 
+unsigned int {\bf get\-J\-From\-D\-A\-Q\-I\-D} (const int D\-A\-Qchannel) const 
+\begin{DoxyCompactList}\small\item\em J of (Mokka) cell\-I\-D. \end{DoxyCompactList}\item 
+unsigned int {\bf get\-J} (const unsigned int module, const unsigned chip, const unsigned chan) const 
+\begin{DoxyCompactList}\small\item\em J of (Mokka) cell\-I\-D. \end{DoxyCompactList}\item 
+unsigned int {\bf get\-K\-From\-Module\-I\-D} (const int module\-I\-D) const 
+\begin{DoxyCompactList}\small\item\em K of (Mokka) cell\-I\-D. \end{DoxyCompactList}\item 
+unsigned int {\bf get\-K\-From\-D\-A\-Q\-I\-D} (const int D\-A\-Qchannel) const 
+\begin{DoxyCompactList}\small\item\em K of (Mokka) cell\-I\-D. \end{DoxyCompactList}\item 
+unsigned int {\bf get\-K} (const unsigned int module) const 
+\begin{DoxyCompactList}\small\item\em K of (Mokka) cell\-I\-D. \end{DoxyCompactList}\item 
+unsigned int {\bf get\-I\-Size\-From\-Cell\-I\-D} (const int cell\-I\-D) const 
+\begin{DoxyCompactList}\small\item\em get cell size in I direction of (Mokka) Cell\-I\-D coordinate \end{DoxyCompactList}\item 
+unsigned int {\bf get\-I\-Size\-From\-Module\-I\-D} (const int module\-I\-D) const 
+\begin{DoxyCompactList}\small\item\em get cell size in I direction of (Mokka) Cell\-I\-D coordinate \end{DoxyCompactList}\item 
+unsigned int {\bf get\-I\-Size\-From\-D\-A\-Q\-I\-D} (const int D\-A\-Qchannel) const 
+\begin{DoxyCompactList}\small\item\em get cell size in I direction of (Mokka) Cell\-I\-D coordinate \end{DoxyCompactList}\item 
+unsigned int {\bf get\-I\-Size\-From\-I\-J\-K} (const unsigned int i, const unsigned int j, const unsigned int k) const 
+\begin{DoxyCompactList}\small\item\em get cell size in I direction of (Mokka) Cell\-I\-D coordinate \end{DoxyCompactList}\item 
+unsigned int {\bf get\-I\-Size} (const unsigned int module, const unsigned int chip, const unsigned int chan) const 
+\begin{DoxyCompactList}\small\item\em get cell size in I direction of (Mokka) Cell\-I\-D coordinate \end{DoxyCompactList}\item 
+unsigned int {\bf get\-J\-Size\-From\-Cell\-I\-D} (const int cell\-I\-D) const 
+\begin{DoxyCompactList}\small\item\em get cell size in J direction of (Mokka) Cell\-I\-D coordinate \end{DoxyCompactList}\item 
+unsigned int {\bf get\-J\-Size\-From\-Module\-I\-D} (const int module\-I\-D) const 
+\begin{DoxyCompactList}\small\item\em get cell size in J direction of (Mokka) Cell\-I\-D coordinate \end{DoxyCompactList}\item 
+unsigned int {\bf get\-J\-Size\-From\-D\-A\-Q\-I\-D} (const int D\-A\-Qchannel) const 
+\begin{DoxyCompactList}\small\item\em get cell size in J direction of (Mokka) Cell\-I\-D coordinate \end{DoxyCompactList}\item 
+unsigned int {\bf get\-J\-Size\-From\-I\-J\-K} (const unsigned int i, const unsigned int j, const unsigned int k) const 
+\begin{DoxyCompactList}\small\item\em get cell size in J direction of (Mokka) Cell\-I\-D coordinate \end{DoxyCompactList}\item 
+unsigned int {\bf get\-J\-Size} (const unsigned int module, const unsigned int chip, const unsigned int chan) const 
+\begin{DoxyCompactList}\small\item\em get cell size in J direction of (Mokka) Cell\-I\-D coordinate \end{DoxyCompactList}\item 
+int {\bf get\-True\-Cell\-I\-D} (const int virtual\-Cell\-Index) const 
+\begin{DoxyCompactList}\small\item\em return identifying index of cell \end{DoxyCompactList}\item 
+int {\bf get\-True\-Cell\-I\-D} (const unsigned int i, const unsigned int j, const unsigned int k) const 
+\begin{DoxyCompactList}\small\item\em return identifying index of cell \end{DoxyCompactList}\item 
+unsigned int {\bf get\-True\-I\-From\-Cell\-I\-D} (const int virtual\-Cell\-I\-D) const 
+\begin{DoxyCompactList}\small\item\em return I of identifying index of cell \end{DoxyCompactList}\item 
+unsigned int {\bf get\-True\-I\-From\-I\-J\-K} (const unsigned int i, const unsigned int j, const unsigned int k) const 
+\begin{DoxyCompactList}\small\item\em return I of identifying index of cell \end{DoxyCompactList}\item 
+unsigned int {\bf get\-True\-I} (const unsigned int module, const unsigned int i, const unsigned int j) const 
+\begin{DoxyCompactList}\small\item\em return I of identifying index of cell \end{DoxyCompactList}\item 
+unsigned int {\bf get\-True\-J\-From\-Cell\-I\-D} (const int virtual\-Cell\-I\-D) const 
+\begin{DoxyCompactList}\small\item\em return J of identifying index of cell \end{DoxyCompactList}\item 
+unsigned int {\bf get\-True\-J\-From\-I\-J\-K} (const unsigned int i, const unsigned int j, const unsigned int k) const 
+\begin{DoxyCompactList}\small\item\em return J of identifying index of cell \end{DoxyCompactList}\item 
+unsigned int {\bf get\-True\-J} (const unsigned int module, const unsigned int i, const unsigned int j) const 
+\begin{DoxyCompactList}\small\item\em return J of identifying index of cell \end{DoxyCompactList}\item 
+unsigned int {\bf get\-Max\-Module} () const 
+\begin{DoxyCompactList}\small\item\em return maximum module number \end{DoxyCompactList}\item 
+unsigned int {\bf get\-Max\-Chip} () const 
+\begin{DoxyCompactList}\small\item\em return maximum chip number \end{DoxyCompactList}\item 
+unsigned int {\bf get\-Max\-Channel} () const 
+\begin{DoxyCompactList}\small\item\em return maximum channel number \end{DoxyCompactList}\item 
+unsigned int {\bf get\-Max\-I} () const 
+\begin{DoxyCompactList}\small\item\em return maximum I index \end{DoxyCompactList}\item 
+unsigned int {\bf get\-Max\-J} () const 
+\begin{DoxyCompactList}\small\item\em return maximum J index \end{DoxyCompactList}\item 
+unsigned int {\bf get\-Max\-K} () const 
+\begin{DoxyCompactList}\small\item\em return maximum K index \end{DoxyCompactList}\item 
+void {\bf fill} (const lcio\-::\-L\-C\-Collection $\ast$module\-Description\-Col, const lcio\-::\-L\-C\-Collection $\ast$module\-Connection\-Col)
+\begin{DoxyCompactList}\small\item\em fills all necessary mapping information \end{DoxyCompactList}\item 
+void {\bf update\-Connections} (const lcio\-::\-L\-C\-Collection $\ast$module\-Connection\-Col)
+\begin{DoxyCompactList}\small\item\em updates the mapping information in the class (possible after first fill only) \end{DoxyCompactList}\item 
+void {\bf print} (std\-::ostream \&ostream) const 
+\begin{DoxyCompactList}\small\item\em print current data contents \end{DoxyCompactList}\item 
+void {\bf print\-Stats} (std\-::ostream \&ostream) const 
+\begin{DoxyCompactList}\small\item\em print summary of current data contents \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+unsigned int {\bf get\-Index\-By\-Cell\-I\-D} (const int cell\-I\-D) const 
+\begin{DoxyCompactList}\small\item\em get a compact index for storing data in vectors \end{DoxyCompactList}\item 
+unsigned int {\bf get\-Index\-By\-D\-A\-Q\-I\-D} (const int I\-D) const 
+\begin{DoxyCompactList}\small\item\em get a compact index for storing data in vectors \end{DoxyCompactList}\item 
+unsigned int {\bf get\-Index\-By\-Module\-I\-D} (const int I\-D) const 
+\begin{DoxyCompactList}\small\item\em get a compact index for storing data in vectors \end{DoxyCompactList}\item 
+unsigned int {\bf get\-Max\-Index} () const 
+\begin{DoxyCompactList}\small\item\em get the maximum value of the compact index for storing data in vectors \end{DoxyCompactList}\item 
+int {\bf get\-Cell\-I\-D\-Of\-Index} (unsigned int index) const 
+\begin{DoxyCompactList}\small\item\em get the cell I\-D of a certain compact index \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Private Types}
+\begin{DoxyCompactItemize}
+\item 
+typedef std\-::map$<$ unsigned int, \\*
+unsigned int $>$ {\bfseries index\-Map\-\_\-t}\label{classCALICE_1_1AhcMapper_aeeed74906b2af733e9892f881e1e10f4}
+
+\end{DoxyCompactItemize}
+\subsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+bool {\bfseries valid} (const unsigned int index, const std\-::vector$<$ bool $>$ \&available\-Vec) const \label{classCALICE_1_1AhcMapper_a74df7b7905102cd68455c8fbb1b69d7e}
+
+\item 
+bool {\bfseries valid} (const unsigned int index, const index\-Map\-\_\-t \&index\-Map) const \label{classCALICE_1_1AhcMapper_aa9eeded28b325b54d4a532fc645e5af4}
+
+\item 
+unsigned int {\bfseries get\-Module\-Type\-Index} (const unsigned int module) const \label{classCALICE_1_1AhcMapper_aab9e59fb5ea9b3796a01ad47d52bc1f6}
+
+\item 
+unsigned int {\bfseries get\-Index\-Module\-Connection} (const unsigned int crate, const unsigned int slot, const unsigned int fe) const \label{classCALICE_1_1AhcMapper_a8971d066c71198c8bf247bfee592349a}
+
+\item 
+unsigned int {\bfseries get\-Crate\-From\-Module\-Connection\-Index} (const unsigned int index) const \label{classCALICE_1_1AhcMapper_a3222ce7720aef1e7731426231e433452}
+
+\item 
+unsigned int {\bfseries get\-Slot\-From\-Module\-Connection\-Index} (const unsigned int index) const \label{classCALICE_1_1AhcMapper_a9b25bfccd367acde37bae9b90e1d622e}
+
+\item 
+unsigned int {\bfseries get\-Fe\-From\-Module\-Connection\-Index} (const unsigned int index) const \label{classCALICE_1_1AhcMapper_ad7258974e1fe5e8127b32b42619e2d1f}
+
+\item 
+unsigned int {\bfseries get\-Compact\-Index} (const unsigned int module, const unsigned int chip, const unsigned int chan) const \label{classCALICE_1_1AhcMapper_aab353949bad76aaf654e41da8deae82c}
+
+\item 
+unsigned int {\bfseries get\-Compact\-Index} (const unsigned int module, const unsigned int chan\-Index) const \label{classCALICE_1_1AhcMapper_ae37272cef13cfad682728dafb3d2324a}
+
+\item 
+unsigned int {\bfseries get\-Module\-From\-Compact\-Index} (const unsigned int index) const \label{classCALICE_1_1AhcMapper_ae9f81a2a43b50256d8950a11a88fa275}
+
+\item 
+unsigned int {\bfseries get\-Chip\-From\-Compact\-Index} (const unsigned int index) const \label{classCALICE_1_1AhcMapper_ad18f22334b7691c9b60855d2d63008a3}
+
+\item 
+unsigned int {\bfseries get\-Chan\-From\-Compact\-Index} (const unsigned int index) const \label{classCALICE_1_1AhcMapper_ae7a2539be4244d7fd0cdcf4afac85ad0}
+
+\item 
+unsigned int {\bfseries get\-Module\-From\-Index} (const unsigned int index, bool \&valid) const \label{classCALICE_1_1AhcMapper_a56c48aba41a7c726a457c7653eeb1a5c}
+
+\item 
+unsigned int {\bfseries get\-Index\-Chan} (const unsigned int chip, const unsigned int chan) const \label{classCALICE_1_1AhcMapper_a4a8f47ef57d76bd9fb2c23f27a7c6451}
+
+\item 
+unsigned int {\bfseries get\-Chip\-From\-Chan\-Index} (const unsigned int index) const \label{classCALICE_1_1AhcMapper_a2324012066d0903ba23d5f96d35b1c78}
+
+\item 
+unsigned int {\bfseries get\-Chan\-From\-Chan\-Index} (const unsigned int index) const \label{classCALICE_1_1AhcMapper_ac06830ea38f15374a584208d4a40f86a}
+
+\item 
+unsigned int {\bfseries get\-Index\-I\-J} (const unsigned int i, const unsigned int j) const \label{classCALICE_1_1AhcMapper_a204172bf4005d14c1bd7b70df98186d3}
+
+\item 
+unsigned int {\bfseries get\-I\-From\-I\-J\-Index} (const unsigned int index) const \label{classCALICE_1_1AhcMapper_a32cb7e27e0ae8867fb64b3217e8b4dac}
+
+\item 
+unsigned int {\bfseries get\-J\-From\-I\-J\-Index} (const unsigned int index) const \label{classCALICE_1_1AhcMapper_adcd54575e64211dc80da66e269834daa}
+
+\item 
+void {\bfseries clear\-Crate} ()\label{classCALICE_1_1AhcMapper_aefa941cea97ef01e1f400fd82cbd36f8}
+
+\item 
+void {\bfseries clear\-Slot} ()\label{classCALICE_1_1AhcMapper_a79794d916def06030787c9f288aa2bad}
+
+\item 
+void {\bfseries clear\-Module\-Type} ()\label{classCALICE_1_1AhcMapper_a024182c2a5e1ad79e0a9de21fc8a11d7}
+
+\item 
+{\footnotesize template$<$class T $>$ }\\void {\bfseries init\-To\-Size} (std\-::vector$<$ T $>$ \&vec, const unsigned int size, const T init\-Value)\label{classCALICE_1_1AhcMapper_a83f60c207caeac8ec658e5f569f478dd}
+
+\item 
+void {\bfseries init\-To\-Size} (std\-::vector$<$ bool $>$ \&vec, const unsigned int size)\label{classCALICE_1_1AhcMapper_a383c4627b641162bb5d7b78c60c3989a}
+
+\item 
+void {\bfseries init\-To\-Size} (std\-::vector$<$ unsigned int $>$ \&data\-Vec, std\-::vector$<$ bool $>$ \&available\-Vec, const unsigned int size)\label{classCALICE_1_1AhcMapper_ad6b97628b5c5e4db1fc12cee65cc3f4d}
+
+\item 
+void {\bfseries init\-Fe} (const unsigned int max\-Fe=0)\label{classCALICE_1_1AhcMapper_ad15c4051d56f20ffc66e0b5d52f81890}
+
+\item 
+void {\bfseries init\-Module} (const unsigned int max\-Mod=0)\label{classCALICE_1_1AhcMapper_af15a8d86b8f3d9210b0899a0ee1f218e}
+
+\item 
+void {\bfseries init\-K} (const unsigned int max\-K=0)\label{classCALICE_1_1AhcMapper_a76e45ca5b0e1e2706c49f6c8250a0d38}
+
+\item 
+void {\bfseries init\-I\-J\-Chip\-Channel} (const unsigned int max\-I=0, const unsigned int max\-J=0, const unsigned int max\-Chip=0, const unsigned int max\-Chan=0)\label{classCALICE_1_1AhcMapper_a65d452691dedf5bb9fecddf3bfb444b4}
+
+\item 
+void {\bfseries clear} ()\label{classCALICE_1_1AhcMapper_ac1442af64ad70eb7d0a1b7fc4c7f53b6}
+
+\item 
+void {\bfseries register\-Crate} (const unsigned int crate)\label{classCALICE_1_1AhcMapper_ac58c61c50764da525db379b0d1fc9294}
+
+\item 
+bool {\bfseries crate\-Available} (const unsigned int crate) const \label{classCALICE_1_1AhcMapper_ae477476123f13062074f2b9c650bb9b1}
+
+\item 
+void {\bfseries register\-Slot} (const unsigned int slot)\label{classCALICE_1_1AhcMapper_a41134f8aced6392e03c901a73ea9ee2a}
+
+\item 
+bool {\bfseries slot\-Available} (const unsigned int slot) const \label{classCALICE_1_1AhcMapper_a881f7bb684650d934f3e3f4712b89ee7}
+
+\item 
+void {\bfseries register\-Module\-Type} (const unsigned int module\-Type\-Name)\label{classCALICE_1_1AhcMapper_a45518c038310ae5493d7012d40664725}
+
+\item 
+bool {\bfseries module\-Type\-Available} (const unsigned int module\-Type\-Name) const \label{classCALICE_1_1AhcMapper_a81729b3b42e81d44cd31b29c95707f9e}
+
+\item 
+unsigned int {\bfseries count\-Available} (const std\-::vector$<$ bool $>$ \&vec) const \label{classCALICE_1_1AhcMapper_aac91ec43c8273688216ae604ac05e895}
+
+\item 
+void {\bfseries set\-Module\-Crate\-Slot\-Fe} (const unsigned int module, const unsigned int crate, const unsigned int slot, const unsigned int fe)\label{classCALICE_1_1AhcMapper_a4d3085baa30407cb160fc33c9c78bcd2}
+
+\item 
+void {\bfseries set\-Module\-Type} (const unsigned int module, const unsigned int type\-Name)\label{classCALICE_1_1AhcMapper_a2b871dd10848faae136940c12ca27bd9}
+
+\item 
+void {\bfseries set\-Module\-K} (const unsigned int module, const unsigned int K)\label{classCALICE_1_1AhcMapper_a08953a9ae064d95675d9cd0a749570a6}
+
+\item 
+void {\bfseries set\-Module\-Type\-I\-J\-Chip\-Channel} (const unsigned int module\-Type\-Name, const unsigned int I, const unsigned int J, const unsigned int size\-I, const unsigned int size\-J, const unsigned int chip, const unsigned int channel)\label{classCALICE_1_1AhcMapper_a73d414346acc2e03052b22fabc050d86}
+
+\item 
+void {\bf fill\-Module\-Connection} (const lcio\-::\-L\-C\-Collection $\ast$col)
+\begin{DoxyCompactList}\small\item\em sets the mapping information in the class, call after fill\-Module\-Description \end{DoxyCompactList}\item 
+void {\bf fill\-Module\-Description} (const lcio\-::\-L\-C\-Collection $\ast$col)
+\begin{DoxyCompactList}\small\item\em sets the module layout information in the class, module connection information will be invalidated \end{DoxyCompactList}\item 
+void {\bfseries get\-Chip\-Channel\-For\-Module\-Description\-I\-D} (const unsigned int id, const unsigned int module\-Type, int \&chip, int \&channel) const \label{classCALICE_1_1AhcMapper_a8a11bbe860cd7085fbc975bfcc791c37}
+
+\item 
+unsigned int {\bfseries get\-Combined\-Module\-Type} (const unsigned int module\-Type) const \label{classCALICE_1_1AhcMapper_a8749cdfa53ef252ff887bfec78d5830b}
+
+\item 
+int {\bfseries correct\-Cell\-Index} (const unsigned int module\-Type, const int cell\-Index) const \label{classCALICE_1_1AhcMapper_a6469d9f7071f5ebb451530e41b5660a5}
+
+\item 
+const std\-::string {\bfseries print\-If\-Available} (bool available, unsigned int value) const \label{classCALICE_1_1AhcMapper_ad775b776bc11616feafa9402b4d0f489}
+
+\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+unsigned int {\bfseries \-\_\-n\-Chan}\label{classCALICE_1_1AhcMapper_ad1223d57d472b9a1a47d0cdc58b2e4d7}
+
+\item 
+unsigned int {\bfseries \-\_\-n\-Chip}\label{classCALICE_1_1AhcMapper_acca5e6401c3930c7bd0a629ee3f93178}
+
+\item 
+unsigned int {\bfseries \-\_\-n\-Fe}\label{classCALICE_1_1AhcMapper_a0d39db3b164e7810a9ce1bec289a1410}
+
+\item 
+unsigned int {\bfseries \-\_\-n\-Slot}\label{classCALICE_1_1AhcMapper_a298cc6f721fe2a76514a49e83831f4e3}
+
+\item 
+unsigned int {\bfseries \-\_\-max\-Slot}\label{classCALICE_1_1AhcMapper_a51ef6086881b08eb51ca5af2bdcfcf83}
+
+\item 
+unsigned int {\bfseries \-\_\-n\-Crate}\label{classCALICE_1_1AhcMapper_a012ef86ff01b044e8c33b9871ecbc4b3}
+
+\item 
+unsigned int {\bfseries \-\_\-n\-Mod}\label{classCALICE_1_1AhcMapper_a1f91d835a24d504011715fc7cecd4a8e}
+
+\item 
+unsigned int {\bfseries \-\_\-n\-Mod\-Type}\label{classCALICE_1_1AhcMapper_a30c33cb167b3062406eaa4a51ef5b64f}
+
+\item 
+unsigned int {\bfseries \-\_\-n\-I}\label{classCALICE_1_1AhcMapper_a1df3b36a1945b9e16283de7159f61a4e}
+
+\item 
+unsigned int {\bfseries \-\_\-n\-J}\label{classCALICE_1_1AhcMapper_a2228494a778640c420afe67f81f4c030}
+
+\item 
+unsigned int {\bfseries \-\_\-n\-K}\label{classCALICE_1_1AhcMapper_aa20c4b918afca46a0315529efb2263a0}
+
+\item 
+index\-Map\-\_\-t {\bfseries \-\_\-crate\-Index}\label{classCALICE_1_1AhcMapper_a141fb6ec8b5c668ed3ad02edb89c8e0c}
+
+\item 
+std\-::vector$<$ unsigned int $>$ {\bfseries \-\_\-crate\-Number}\label{classCALICE_1_1AhcMapper_a9bcc209bc9a2cd2208451d9e7e98168f}
+
+\item 
+std\-::vector$<$ unsigned int $>$ {\bfseries \-\_\-slot\-Index}\label{classCALICE_1_1AhcMapper_a870803394fbfaf449dc5e3a9564abebf}
+
+\item 
+std\-::vector$<$ unsigned int $>$ {\bfseries \-\_\-slot\-Number}\label{classCALICE_1_1AhcMapper_ad2acb33e40a070102170ba90c90ac5df}
+
+\item 
+std\-::vector$<$ bool $>$ {\bfseries \-\_\-slot\-Available}\label{classCALICE_1_1AhcMapper_ad45184245e1c6716113883282fee77ad}
+
+\item 
+std\-::vector$<$ bool $>$ {\bfseries \-\_\-connection\-Available}\label{classCALICE_1_1AhcMapper_a0ef975b1772d9da449e18a94535a6ebc}
+
+\item 
+std\-::vector$<$ bool $>$ {\bfseries \-\_\-module\-Available}\label{classCALICE_1_1AhcMapper_a45ba28e98649b1f4956548e266537db3}
+
+\item 
+std\-::vector$<$ unsigned int $>$ {\bfseries \-\_\-type\-Vmodule}\label{classCALICE_1_1AhcMapper_a165279f2c79fc7bdaa6c5b33186d7174}
+
+\item 
+std\-::vector$<$ unsigned int $>$ {\bfseries \-\_\-connection\-Vmodule}\label{classCALICE_1_1AhcMapper_a210096c9fb1c3286b2a07e7fcfc3d1f8}
+
+\item 
+std\-::vector$<$ bool $>$ {\bfseries \-\_\-connection\-Vmodule\-Available}\label{classCALICE_1_1AhcMapper_ad03313bc91520da24585f0e3c5f33342}
+
+\item 
+std\-::vector$<$ unsigned int $>$ {\bfseries \-\_\-module\-Vconnection}\label{classCALICE_1_1AhcMapper_a9492ae109cabc3256c81d0ead4282422}
+
+\item 
+std\-::vector$<$ unsigned int $>$ {\bfseries \-\_\-k\-Vmodule}\label{classCALICE_1_1AhcMapper_a6c6557dbf072ae4742a2ead776a24d33}
+
+\item 
+std\-::vector$<$ bool $>$ {\bfseries \-\_\-k\-Vmodule\-Available}\label{classCALICE_1_1AhcMapper_a16287dbcd49d1734cd458fd21e27b8fb}
+
+\item 
+std\-::vector$<$ unsigned int $>$ {\bfseries \-\_\-module\-Vk}\label{classCALICE_1_1AhcMapper_a804a038a75c8576ba7e92546e7ef2354}
+
+\item 
+std\-::vector$<$ bool $>$ {\bfseries \-\_\-k\-Available}\label{classCALICE_1_1AhcMapper_a867fa2028b681d060300594a36ac71cd}
+
+\item 
+std\-::vector$<$ unsigned int $>$ {\bfseries \-\_\-module\-Type\-Name}\label{classCALICE_1_1AhcMapper_a1708a1be8814517d1f7a42367671228c}
+
+\item 
+std\-::vector$<$ unsigned int $>$ {\bfseries \-\_\-module\-Type\-Index}\label{classCALICE_1_1AhcMapper_abea6e5e1063923458a28fd310827d013}
+
+\item 
+std\-::vector$<$ bool $>$ {\bfseries \-\_\-module\-Type\-Available}\label{classCALICE_1_1AhcMapper_ab94ebc350d70dc688045317888d9bd6d}
+
+\item 
+std\-::vector$<$ std\-::vector\\*
+$<$ unsigned int $>$ $>$ {\bfseries \-\_\-ij\-Vchan}\label{classCALICE_1_1AhcMapper_af9679ed2782209ef2ea4b487751d1707}
+
+\item 
+std\-::vector$<$ std\-::vector$<$ bool $>$ $>$ {\bfseries \-\_\-chip\-Chan\-Available}\label{classCALICE_1_1AhcMapper_a4d7169258a2dfcf9539c3ace81a51585}
+
+\item 
+std\-::vector$<$ std\-::vector\\*
+$<$ unsigned int $>$ $>$ {\bfseries \-\_\-chan\-Vij}\label{classCALICE_1_1AhcMapper_a8437e5029df0527ee3f54daf75e3c42b}
+
+\item 
+std\-::vector$<$ std\-::vector$<$ bool $>$ $>$ {\bfseries \-\_\-ij\-Available}\label{classCALICE_1_1AhcMapper_aad90e93df3179242870ac3ee1487381f}
+
+\item 
+std\-::vector$<$ std\-::vector$<$ bool $>$ $>$ {\bfseries \-\_\-ij\-Secondary\-Available}\label{classCALICE_1_1AhcMapper_afc9cff60e5249739c91ea2a157259a6d}
+
+\item 
+std\-::vector$<$ std\-::vector\\*
+$<$ unsigned int $>$ $>$ {\bfseries \-\_\-size\-I\-Vchan}\label{classCALICE_1_1AhcMapper_a111d0fbbace0b66fe60eb42f338d7aba}
+
+\item 
+std\-::vector$<$ std\-::vector\\*
+$<$ unsigned int $>$ $>$ {\bfseries \-\_\-size\-J\-Vchan}\label{classCALICE_1_1AhcMapper_a55efa1152aec0daed30ad88b32c726ec}
+
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+A\-H\-C\-A\-L implementation of \doxyref{Mapper}{p.}{classCALICE_1_1Mapper} class. 
+
+\begin{DoxyParagraph}{invalid cells and exception handling}
+Most functions throw a \doxyref{C\-A\-L\-I\-C\-E\-::\-Bad\-Data\-Exception}{p.}{classCALICE_1_1BadDataException} if an invalid combination or I\-D is queried. Not all invalid combinations will be detected by all commands, depending on the necessary coordinate transformations in the command. E.\-g.\-: When querying the module from a Mokka cell I\-D, only K is extracted from the I\-D. If no module exists for this K an exception is thrown. But there will be no exception thrown if K is valid but I and J belong to a channel which does not exist in this module.
+\end{DoxyParagraph}
+\begin{DoxyParagraph}{}
+The protected get\-Index\-Functions do {\bfseries not} throw exceptions to allow a fast lookup of the index. Invalid channels are signalled with return value max\-Index+1.
+\end{DoxyParagraph}
+\begin{DoxyParagraph}{}
+Some functions have a second version that does a full check if the I\-D is valid without throwing an exception.
+\end{DoxyParagraph}
+\begin{DoxyAuthor}{Author}
+{\tt Benjamin.\-Lutz@desy.\-de} 
+\end{DoxyAuthor}
+\begin{DoxyVersion}{Version}
+0.\-3 
+\end{DoxyVersion}
+\begin{DoxyDate}{Date}
+January 2010 
+\end{DoxyDate}
+
+
+Definition at line 44 of file Ahc\-Mapper.\-hh.
+
+
+
+\subsection{Member Function Documentation}
+\index{C\-A\-L\-I\-C\-E\-::\-Ahc\-Mapper@{C\-A\-L\-I\-C\-E\-::\-Ahc\-Mapper}!fill@{fill}}
+\index{fill@{fill}!CALICE::AhcMapper@{C\-A\-L\-I\-C\-E\-::\-Ahc\-Mapper}}
+\subsubsection[{fill}]{\setlength{\rightskip}{0pt plus 5cm}void C\-A\-L\-I\-C\-E\-::\-Ahc\-Mapper\-::fill (
+\begin{DoxyParamCaption}
+\item[{const lcio\-::\-L\-C\-Collection $\ast$}]{module\-Description\-Col, }
+\item[{const lcio\-::\-L\-C\-Collection $\ast$}]{module\-Connection\-Col}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\label{classCALICE_1_1AhcMapper_ae4ab5d3a50a6105fb3fadb021790e46a}
+
+
+fills all necessary mapping information 
+
+Module layout types are set from module\-Description (chip,channel to I,J,K \& size) Module connections are set from module\-Connection (crate, slot, fe to module)
+
+Old settings are cleared before new are set.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em module\-Description\-Col} & L\-C\-Generic\-Object collection of \doxyref{Module\-Description}{p.}{classCALICE_1_1ModuleDescription} type \\
+\hline
+\mbox{\tt in}  & {\em module\-Connection\-Col} & L\-C\-Generic\-Object collection of \doxyref{Module\-Connection}{p.}{classCALICE_1_1ModuleConnection} type \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 937 of file Ahc\-Mapper.\-hh.
+
+
+
+References fill\-Module\-Connection(), and fill\-Module\-Description().
+
+\index{C\-A\-L\-I\-C\-E\-::\-Ahc\-Mapper@{C\-A\-L\-I\-C\-E\-::\-Ahc\-Mapper}!fill\-Module\-Connection@{fill\-Module\-Connection}}
+\index{fill\-Module\-Connection@{fill\-Module\-Connection}!CALICE::AhcMapper@{C\-A\-L\-I\-C\-E\-::\-Ahc\-Mapper}}
+\subsubsection[{fill\-Module\-Connection}]{\setlength{\rightskip}{0pt plus 5cm}void C\-A\-L\-I\-C\-E\-::\-Ahc\-Mapper\-::fill\-Module\-Connection (
+\begin{DoxyParamCaption}
+\item[{const lcio\-::\-L\-C\-Collection $\ast$}]{col}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [private]}}\label{classCALICE_1_1AhcMapper_ac73575dd541b8d4a392dfd6c60aa0da7}
+
+
+sets the mapping information in the class, call after fill\-Module\-Description 
+
+The internal mapping of modules to type and electronics connection is set.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em col} & L\-C\-Generic\-Object collection of \doxyref{Module\-Connection}{p.}{classCALICE_1_1ModuleConnection} type \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 15 of file Ahc\-Mapper.\-cc.
+
+
+
+References C\-A\-L\-I\-C\-E\-::\-Mapper\-::mapping\-Modified().
+
+
+
+Referenced by fill(), and update\-Connections().
+
+\index{C\-A\-L\-I\-C\-E\-::\-Ahc\-Mapper@{C\-A\-L\-I\-C\-E\-::\-Ahc\-Mapper}!fill\-Module\-Description@{fill\-Module\-Description}}
+\index{fill\-Module\-Description@{fill\-Module\-Description}!CALICE::AhcMapper@{C\-A\-L\-I\-C\-E\-::\-Ahc\-Mapper}}
+\subsubsection[{fill\-Module\-Description}]{\setlength{\rightskip}{0pt plus 5cm}void C\-A\-L\-I\-C\-E\-::\-Ahc\-Mapper\-::fill\-Module\-Description (
+\begin{DoxyParamCaption}
+\item[{const lcio\-::\-L\-C\-Collection $\ast$}]{col}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [private]}}\label{classCALICE_1_1AhcMapper_a82a573535ff437f989ecc52d2e8a7f8e}
+
+
+sets the module layout information in the class, module connection information will be invalidated 
+
+The internal layout of modules, like channel to I,J,K and cell sizes are set.
+
+\begin{DoxyWarning}{Warning}
+module connection information will be invalidated, fill\-Module\-Connection has to be called aftwards
+\end{DoxyWarning}
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em col} & L\-C\-Generic\-Object collection of \doxyref{Module\-Description}{p.}{classCALICE_1_1ModuleDescription} type \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 121 of file Ahc\-Mapper.\-cc.
+
+
+
+References C\-A\-L\-I\-C\-E\-::\-Cell\-Index\-::get\-Pad\-Column(), C\-A\-L\-I\-C\-E\-::\-Cell\-Index\-::get\-Pad\-Row(), and C\-A\-L\-I\-C\-E\-::\-Mapper\-::mapping\-Modified().
+
+
+
+Referenced by fill().
+
+\index{C\-A\-L\-I\-C\-E\-::\-Ahc\-Mapper@{C\-A\-L\-I\-C\-E\-::\-Ahc\-Mapper}!get\-Cell\-I\-D\-Of\-Index@{get\-Cell\-I\-D\-Of\-Index}}
+\index{get\-Cell\-I\-D\-Of\-Index@{get\-Cell\-I\-D\-Of\-Index}!CALICE::AhcMapper@{C\-A\-L\-I\-C\-E\-::\-Ahc\-Mapper}}
+\subsubsection[{get\-Cell\-I\-D\-Of\-Index}]{\setlength{\rightskip}{0pt plus 5cm}int C\-A\-L\-I\-C\-E\-::\-Ahc\-Mapper\-::get\-Cell\-I\-D\-Of\-Index (
+\begin{DoxyParamCaption}
+\item[{unsigned int}]{index}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [protected]}, {\ttfamily [virtual]}}\label{classCALICE_1_1AhcMapper_af53a274b50f0f75e632454a4072113eb}
+
+
+get the cell I\-D of a certain compact index 
+
+\begin{DoxyWarning}{Warning}
+This cell I\-D will only contain information about I, J and K. If the encoding string contains additional fields this will have value 0.
+\end{DoxyWarning}
+\begin{DoxySeeAlso}{See Also}
+set\-Cell\-I\-Dencoding
+\end{DoxySeeAlso}
+\begin{DoxyReturn}{Returns}
+(Mokka) cell I\-D 
+\end{DoxyReturn}
+
+
+Implements {\bf C\-A\-L\-I\-C\-E\-::\-Mapper} \doxyref{}{p.}{group__CellIDgroup_ga1157f15cfe97ad035e6f6fb2fd32ce2e}.
+
+
+
+Definition at line 1061 of file Ahc\-Mapper.\-hh.
+
+
+
+References C\-A\-L\-I\-C\-E\-::\-Decoder\-Set\-::get\-Cell\-I\-D(), C\-A\-L\-I\-C\-E\-::\-Mapper\-::get\-Decoder(), get\-I(), get\-J(), and get\-K().
+
+\index{C\-A\-L\-I\-C\-E\-::\-Ahc\-Mapper@{C\-A\-L\-I\-C\-E\-::\-Ahc\-Mapper}!get\-Chan@{get\-Chan}}
+\index{get\-Chan@{get\-Chan}!CALICE::AhcMapper@{C\-A\-L\-I\-C\-E\-::\-Ahc\-Mapper}}
+\subsubsection[{get\-Chan}]{\setlength{\rightskip}{0pt plus 5cm}unsigned int C\-A\-L\-I\-C\-E\-::\-Ahc\-Mapper\-::get\-Chan (
+\begin{DoxyParamCaption}
+\item[{const unsigned int}]{i, }
+\item[{const unsigned int}]{j, }
+\item[{const unsigned int}]{k}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}\label{classCALICE_1_1AhcMapper_adbb5dfc3ce2df861b5ef96f6910bc287}
+
+
+chip number from triple I, J, K 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em i} & I \\
+\hline
+\mbox{\tt in}  & {\em j} & J \\
+\hline
+\mbox{\tt in}  & {\em k} & K\\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em \doxyref{Bad\-Data\-Exception}{p.}{classCALICE_1_1BadDataException}} & if invalid channel\\
+\hline
+\end{DoxyExceptions}
+\begin{DoxyReturn}{Returns}
+channel number 
+\end{DoxyReturn}
+
+
+Definition at line 255 of file Ahc\-Mapper.\-hh.
+
+
+
+References get\-Module().
+
+
+
+Referenced by get\-Chan\-From\-Cell\-I\-D(), get\-I\-Size\-From\-I\-J\-K(), and get\-J\-Size\-From\-I\-J\-K().
+
+\index{C\-A\-L\-I\-C\-E\-::\-Ahc\-Mapper@{C\-A\-L\-I\-C\-E\-::\-Ahc\-Mapper}!get\-Chip@{get\-Chip}}
+\index{get\-Chip@{get\-Chip}!CALICE::AhcMapper@{C\-A\-L\-I\-C\-E\-::\-Ahc\-Mapper}}
+\subsubsection[{get\-Chip}]{\setlength{\rightskip}{0pt plus 5cm}unsigned int C\-A\-L\-I\-C\-E\-::\-Ahc\-Mapper\-::get\-Chip (
+\begin{DoxyParamCaption}
+\item[{const unsigned int}]{i, }
+\item[{const unsigned int}]{j, }
+\item[{const unsigned int}]{k}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}\label{classCALICE_1_1AhcMapper_a4ff7ad6e9ea5756c7599b204b6c17c76}
+
+
+chip number from triple I, J, K 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em i} & I \\
+\hline
+\mbox{\tt in}  & {\em j} & J \\
+\hline
+\mbox{\tt in}  & {\em k} & K\\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em \doxyref{Bad\-Data\-Exception}{p.}{classCALICE_1_1BadDataException}} & if lookup fails\\
+\hline
+\end{DoxyExceptions}
+\begin{DoxyReturn}{Returns}
+chip number 
+\end{DoxyReturn}
+
+
+Definition at line 219 of file Ahc\-Mapper.\-hh.
+
+
+
+References get\-Module().
+
+
+
+Referenced by get\-Chip\-From\-Cell\-I\-D(), get\-I\-Size\-From\-I\-J\-K(), and get\-J\-Size\-From\-I\-J\-K().
+
+\index{C\-A\-L\-I\-C\-E\-::\-Ahc\-Mapper@{C\-A\-L\-I\-C\-E\-::\-Ahc\-Mapper}!get\-Crate@{get\-Crate}}
+\index{get\-Crate@{get\-Crate}!CALICE::AhcMapper@{C\-A\-L\-I\-C\-E\-::\-Ahc\-Mapper}}
+\subsubsection[{get\-Crate}]{\setlength{\rightskip}{0pt plus 5cm}unsigned int C\-A\-L\-I\-C\-E\-::\-Ahc\-Mapper\-::get\-Crate (
+\begin{DoxyParamCaption}
+\item[{const unsigned int}]{module}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}\label{classCALICE_1_1AhcMapper_a5b28fe8764726c1b30d64e44195bdb5c}
+
+
+crate number from module number 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em module} & module number\\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em \doxyref{Bad\-Data\-Exception}{p.}{classCALICE_1_1BadDataException}} & if lookup fails\\
+\hline
+\end{DoxyExceptions}
+\begin{DoxyReturn}{Returns}
+crate number 
+\end{DoxyReturn}
+
+
+Definition at line 303 of file Ahc\-Mapper.\-hh.
+
+
+
+Referenced by get\-Crate\-From\-Cell\-I\-D(), get\-Crate\-From\-Module\-I\-D(), and print().
+
+\index{C\-A\-L\-I\-C\-E\-::\-Ahc\-Mapper@{C\-A\-L\-I\-C\-E\-::\-Ahc\-Mapper}!get\-Fe@{get\-Fe}}
+\index{get\-Fe@{get\-Fe}!CALICE::AhcMapper@{C\-A\-L\-I\-C\-E\-::\-Ahc\-Mapper}}
+\subsubsection[{get\-Fe}]{\setlength{\rightskip}{0pt plus 5cm}unsigned int C\-A\-L\-I\-C\-E\-::\-Ahc\-Mapper\-::get\-Fe (
+\begin{DoxyParamCaption}
+\item[{const unsigned int}]{module}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}\label{classCALICE_1_1AhcMapper_ae612d629678ea13991d810f3a72b4c96}
+
+
+front end number from module number 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em module} & module number\\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em \doxyref{Bad\-Data\-Exception}{p.}{classCALICE_1_1BadDataException}} & if lookup fails\\
+\hline
+\end{DoxyExceptions}
+\begin{DoxyReturn}{Returns}
+front end number 
+\end{DoxyReturn}
+
+
+Definition at line 390 of file Ahc\-Mapper.\-hh.
+
+
+
+Referenced by get\-Fe\-From\-Cell\-I\-D(), get\-Fe\-From\-Module\-I\-D(), and print().
+
+\index{C\-A\-L\-I\-C\-E\-::\-Ahc\-Mapper@{C\-A\-L\-I\-C\-E\-::\-Ahc\-Mapper}!get\-I@{get\-I}}
+\index{get\-I@{get\-I}!CALICE::AhcMapper@{C\-A\-L\-I\-C\-E\-::\-Ahc\-Mapper}}
+\subsubsection[{get\-I}]{\setlength{\rightskip}{0pt plus 5cm}unsigned int C\-A\-L\-I\-C\-E\-::\-Ahc\-Mapper\-::get\-I (
+\begin{DoxyParamCaption}
+\item[{const unsigned int}]{module, }
+\item[{const unsigned int}]{chip, }
+\item[{const unsigned int}]{chan}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}\label{classCALICE_1_1AhcMapper_ac64aa07b08160c003c6f02c4fa76746a}
+
+
+I of (Mokka) cell\-I\-D. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em module} & module number \\
+\hline
+\mbox{\tt in}  & {\em chip} & chip number \\
+\hline
+\mbox{\tt in}  & {\em chan} & channel number\\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em \doxyref{Bad\-Data\-Exception}{p.}{classCALICE_1_1BadDataException}} & if lookup fails\\
+\hline
+\end{DoxyExceptions}
+\begin{DoxyReturn}{Returns}
+I 
+\end{DoxyReturn}
+
+
+Definition at line 435 of file Ahc\-Mapper.\-hh.
+
+
+
+Referenced by get\-Cell\-I\-D\-From\-Mod\-Chip\-Chan(), get\-Cell\-I\-D\-Of\-Index(), get\-I\-From\-D\-A\-Q\-I\-D(), and get\-I\-From\-Module\-I\-D().
+
+\index{C\-A\-L\-I\-C\-E\-::\-Ahc\-Mapper@{C\-A\-L\-I\-C\-E\-::\-Ahc\-Mapper}!get\-Index\-By\-Cell\-I\-D@{get\-Index\-By\-Cell\-I\-D}}
+\index{get\-Index\-By\-Cell\-I\-D@{get\-Index\-By\-Cell\-I\-D}!CALICE::AhcMapper@{C\-A\-L\-I\-C\-E\-::\-Ahc\-Mapper}}
+\subsubsection[{get\-Index\-By\-Cell\-I\-D}]{\setlength{\rightskip}{0pt plus 5cm}unsigned int C\-A\-L\-I\-C\-E\-::\-Ahc\-Mapper\-::get\-Index\-By\-Cell\-I\-D (
+\begin{DoxyParamCaption}
+\item[{const int}]{cell\-I\-D}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [protected]}, {\ttfamily [virtual]}}\label{classCALICE_1_1AhcMapper_a1e4072147112a446171c2892ebe8e3e2}
+
+
+get a compact index for storing data in vectors 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em cell\-I\-D} & (Mokka) cell I\-D \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+compact index 
+\end{DoxyReturn}
+
+
+Implements {\bf C\-A\-L\-I\-C\-E\-::\-Mapper} \doxyref{}{p.}{group__CellIDgroup_gaaa6d826a6990c070c769f9754d2fbb76}.
+
+
+
+Definition at line 975 of file Ahc\-Mapper.\-hh.
+
+
+
+References C\-A\-L\-I\-C\-E\-::\-Mapper\-::get\-Decoder(), C\-A\-L\-I\-C\-E\-::\-Decoder\-Set\-::get\-I\-From\-Cell\-I\-D(), C\-A\-L\-I\-C\-E\-::\-Decoder\-Set\-::get\-J\-From\-Cell\-I\-D(), C\-A\-L\-I\-C\-E\-::\-Decoder\-Set\-::get\-K\-From\-Cell\-I\-D(), and get\-Max\-Index().
+
+
+
+Referenced by get\-Module\-From\-Cell\-I\-D().
+
+\index{C\-A\-L\-I\-C\-E\-::\-Ahc\-Mapper@{C\-A\-L\-I\-C\-E\-::\-Ahc\-Mapper}!get\-Index\-By\-D\-A\-Q\-I\-D@{get\-Index\-By\-D\-A\-Q\-I\-D}}
+\index{get\-Index\-By\-D\-A\-Q\-I\-D@{get\-Index\-By\-D\-A\-Q\-I\-D}!CALICE::AhcMapper@{C\-A\-L\-I\-C\-E\-::\-Ahc\-Mapper}}
+\subsubsection[{get\-Index\-By\-D\-A\-Q\-I\-D}]{\setlength{\rightskip}{0pt plus 5cm}unsigned int C\-A\-L\-I\-C\-E\-::\-Ahc\-Mapper\-::get\-Index\-By\-D\-A\-Q\-I\-D (
+\begin{DoxyParamCaption}
+\item[{const int}]{I\-D}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [protected]}, {\ttfamily [virtual]}}\label{classCALICE_1_1AhcMapper_a54a30bb2306d44a9ab0240593c7425a8}
+
+
+get a compact index for storing data in vectors 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em I\-D} & D\-A\-Q channel I\-D \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+compact index 
+\end{DoxyReturn}
+
+
+Implements {\bf C\-A\-L\-I\-C\-E\-::\-Mapper} \doxyref{}{p.}{group__DAQgroup_ga4c00b2760cd3e935bed9db2f3fd28b06}.
+
+
+
+Definition at line 998 of file Ahc\-Mapper.\-hh.
+
+
+
+References C\-A\-L\-I\-C\-E\-::\-Decoder\-Set\-::get\-Channel\-From\-D\-A\-Q\-I\-D(), C\-A\-L\-I\-C\-E\-::\-Decoder\-Set\-::get\-Chip\-From\-D\-A\-Q\-I\-D(), C\-A\-L\-I\-C\-E\-::\-Decoder\-Set\-::get\-Crate\-From\-D\-A\-Q\-I\-D(), C\-A\-L\-I\-C\-E\-::\-Mapper\-::get\-Decoder(), C\-A\-L\-I\-C\-E\-::\-Decoder\-Set\-::get\-Fe\-From\-D\-A\-Q\-I\-D(), get\-Max\-Index(), and C\-A\-L\-I\-C\-E\-::\-Decoder\-Set\-::get\-Slot\-From\-D\-A\-Q\-I\-D().
+
+
+
+Referenced by get\-Module\-From\-D\-A\-Q\-I\-D().
+
+\index{C\-A\-L\-I\-C\-E\-::\-Ahc\-Mapper@{C\-A\-L\-I\-C\-E\-::\-Ahc\-Mapper}!get\-Index\-By\-Module\-I\-D@{get\-Index\-By\-Module\-I\-D}}
+\index{get\-Index\-By\-Module\-I\-D@{get\-Index\-By\-Module\-I\-D}!CALICE::AhcMapper@{C\-A\-L\-I\-C\-E\-::\-Ahc\-Mapper}}
+\subsubsection[{get\-Index\-By\-Module\-I\-D}]{\setlength{\rightskip}{0pt plus 5cm}unsigned int C\-A\-L\-I\-C\-E\-::\-Ahc\-Mapper\-::get\-Index\-By\-Module\-I\-D (
+\begin{DoxyParamCaption}
+\item[{const int}]{I\-D}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [protected]}, {\ttfamily [virtual]}}\label{classCALICE_1_1AhcMapper_aaa1748613f85f7573be51b7344c69a4e}
+
+
+get a compact index for storing data in vectors 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em I\-D} & Module channel I\-D \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+compact index 
+\end{DoxyReturn}
+
+
+Implements {\bf C\-A\-L\-I\-C\-E\-::\-Mapper} \doxyref{}{p.}{group__ModuleIDgroup_gad546fcc374c9168872a957d90d62bda3}.
+
+
+
+Definition at line 1033 of file Ahc\-Mapper.\-hh.
+
+
+
+References C\-A\-L\-I\-C\-E\-::\-Decoder\-Set\-::get\-Channel\-From\-Module\-I\-D(), C\-A\-L\-I\-C\-E\-::\-Decoder\-Set\-::get\-Chip\-From\-Module\-I\-D(), C\-A\-L\-I\-C\-E\-::\-Mapper\-::get\-Decoder(), get\-Max\-Index(), and C\-A\-L\-I\-C\-E\-::\-Decoder\-Set\-::get\-Module\-From\-Module\-I\-D().
+
+
+
+Referenced by get\-Module\-From\-Module\-I\-D().
+
+\index{C\-A\-L\-I\-C\-E\-::\-Ahc\-Mapper@{C\-A\-L\-I\-C\-E\-::\-Ahc\-Mapper}!get\-I\-Size@{get\-I\-Size}}
+\index{get\-I\-Size@{get\-I\-Size}!CALICE::AhcMapper@{C\-A\-L\-I\-C\-E\-::\-Ahc\-Mapper}}
+\subsubsection[{get\-I\-Size}]{\setlength{\rightskip}{0pt plus 5cm}unsigned int C\-A\-L\-I\-C\-E\-::\-Ahc\-Mapper\-::get\-I\-Size (
+\begin{DoxyParamCaption}
+\item[{const unsigned int}]{module, }
+\item[{const unsigned int}]{chip, }
+\item[{const unsigned int}]{chan}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}\label{classCALICE_1_1AhcMapper_aca7b7a137d5df143f6ceac76b5b16989}
+
+
+get cell size in I direction of (Mokka) Cell\-I\-D coordinate 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em module} & module number \\
+\hline
+\mbox{\tt in}  & {\em chip} & chip number \\
+\hline
+\mbox{\tt in}  & {\em chan} & channel number\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+size in I
+\end{DoxyReturn}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em \doxyref{Bad\-Data\-Exception}{p.}{classCALICE_1_1BadDataException}} & if lookup fails \\
+\hline
+\end{DoxyExceptions}
+
+
+Definition at line 605 of file Ahc\-Mapper.\-hh.
+
+
+
+Referenced by get\-I\-Size\-From\-D\-A\-Q\-I\-D(), get\-I\-Size\-From\-I\-J\-K(), and get\-I\-Size\-From\-Module\-I\-D().
+
+\index{C\-A\-L\-I\-C\-E\-::\-Ahc\-Mapper@{C\-A\-L\-I\-C\-E\-::\-Ahc\-Mapper}!get\-I\-Size\-From\-I\-J\-K@{get\-I\-Size\-From\-I\-J\-K}}
+\index{get\-I\-Size\-From\-I\-J\-K@{get\-I\-Size\-From\-I\-J\-K}!CALICE::AhcMapper@{C\-A\-L\-I\-C\-E\-::\-Ahc\-Mapper}}
+\subsubsection[{get\-I\-Size\-From\-I\-J\-K}]{\setlength{\rightskip}{0pt plus 5cm}unsigned int C\-A\-L\-I\-C\-E\-::\-Ahc\-Mapper\-::get\-I\-Size\-From\-I\-J\-K (
+\begin{DoxyParamCaption}
+\item[{const unsigned int}]{i, }
+\item[{const unsigned int}]{j, }
+\item[{const unsigned int}]{k}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}\label{classCALICE_1_1AhcMapper_ad8568ed214d5cfc81b89b0718eeb07dc}
+
+
+get cell size in I direction of (Mokka) Cell\-I\-D coordinate 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em i} & I \\
+\hline
+\mbox{\tt in}  & {\em j} & J \\
+\hline
+\mbox{\tt in}  & {\em k} & K\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+size in I
+\end{DoxyReturn}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em \doxyref{Bad\-Data\-Exception}{p.}{classCALICE_1_1BadDataException}} & if lookup fails \\
+\hline
+\end{DoxyExceptions}
+
+
+Definition at line 591 of file Ahc\-Mapper.\-hh.
+
+
+
+References get\-Chan(), get\-Chip(), get\-I\-Size(), and get\-Module().
+
+
+
+Referenced by get\-I\-Size\-From\-Cell\-I\-D().
+
+\index{C\-A\-L\-I\-C\-E\-::\-Ahc\-Mapper@{C\-A\-L\-I\-C\-E\-::\-Ahc\-Mapper}!get\-J@{get\-J}}
+\index{get\-J@{get\-J}!CALICE::AhcMapper@{C\-A\-L\-I\-C\-E\-::\-Ahc\-Mapper}}
+\subsubsection[{get\-J}]{\setlength{\rightskip}{0pt plus 5cm}unsigned int C\-A\-L\-I\-C\-E\-::\-Ahc\-Mapper\-::get\-J (
+\begin{DoxyParamCaption}
+\item[{const unsigned int}]{module, }
+\item[{const unsigned}]{chip, }
+\item[{const unsigned}]{chan}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}\label{classCALICE_1_1AhcMapper_ab02fce56e98d645a365eb23ba30afd4a}
+
+
+J of (Mokka) cell\-I\-D. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em module} & module number \\
+\hline
+\mbox{\tt in}  & {\em chip} & chip number \\
+\hline
+\mbox{\tt in}  & {\em chan} & channel number\\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em \doxyref{Bad\-Data\-Exception}{p.}{classCALICE_1_1BadDataException}} & if lookup fails\\
+\hline
+\end{DoxyExceptions}
+\begin{DoxyReturn}{Returns}
+J 
+\end{DoxyReturn}
+
+
+Definition at line 484 of file Ahc\-Mapper.\-hh.
+
+
+
+Referenced by get\-Cell\-I\-D\-From\-Mod\-Chip\-Chan(), get\-Cell\-I\-D\-Of\-Index(), get\-J\-From\-D\-A\-Q\-I\-D(), and get\-J\-From\-Module\-I\-D().
+
+\index{C\-A\-L\-I\-C\-E\-::\-Ahc\-Mapper@{C\-A\-L\-I\-C\-E\-::\-Ahc\-Mapper}!get\-J\-Size@{get\-J\-Size}}
+\index{get\-J\-Size@{get\-J\-Size}!CALICE::AhcMapper@{C\-A\-L\-I\-C\-E\-::\-Ahc\-Mapper}}
+\subsubsection[{get\-J\-Size}]{\setlength{\rightskip}{0pt plus 5cm}unsigned int C\-A\-L\-I\-C\-E\-::\-Ahc\-Mapper\-::get\-J\-Size (
+\begin{DoxyParamCaption}
+\item[{const unsigned int}]{module, }
+\item[{const unsigned int}]{chip, }
+\item[{const unsigned int}]{chan}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}\label{classCALICE_1_1AhcMapper_a9d0ec772a24eb62b4538afbdec89a285}
+
+
+get cell size in J direction of (Mokka) Cell\-I\-D coordinate 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em module} & module number \\
+\hline
+\mbox{\tt in}  & {\em chip} & chip number \\
+\hline
+\mbox{\tt in}  & {\em chan} & channel number\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+size in J
+\end{DoxyReturn}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em \doxyref{Bad\-Data\-Exception}{p.}{classCALICE_1_1BadDataException}} & if lookup fails \\
+\hline
+\end{DoxyExceptions}
+
+
+Definition at line 683 of file Ahc\-Mapper.\-hh.
+
+
+
+Referenced by get\-J\-Size\-From\-D\-A\-Q\-I\-D(), get\-J\-Size\-From\-I\-J\-K(), and get\-J\-Size\-From\-Module\-I\-D().
+
+\index{C\-A\-L\-I\-C\-E\-::\-Ahc\-Mapper@{C\-A\-L\-I\-C\-E\-::\-Ahc\-Mapper}!get\-J\-Size\-From\-I\-J\-K@{get\-J\-Size\-From\-I\-J\-K}}
+\index{get\-J\-Size\-From\-I\-J\-K@{get\-J\-Size\-From\-I\-J\-K}!CALICE::AhcMapper@{C\-A\-L\-I\-C\-E\-::\-Ahc\-Mapper}}
+\subsubsection[{get\-J\-Size\-From\-I\-J\-K}]{\setlength{\rightskip}{0pt plus 5cm}unsigned int C\-A\-L\-I\-C\-E\-::\-Ahc\-Mapper\-::get\-J\-Size\-From\-I\-J\-K (
+\begin{DoxyParamCaption}
+\item[{const unsigned int}]{i, }
+\item[{const unsigned int}]{j, }
+\item[{const unsigned int}]{k}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}\label{classCALICE_1_1AhcMapper_a887299333957bbde8da9fed21d68c380}
+
+
+get cell size in J direction of (Mokka) Cell\-I\-D coordinate 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em i} & I \\
+\hline
+\mbox{\tt in}  & {\em j} & J \\
+\hline
+\mbox{\tt in}  & {\em k} & K\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+size in J
+\end{DoxyReturn}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em \doxyref{Bad\-Data\-Exception}{p.}{classCALICE_1_1BadDataException}} & if lookup fails \\
+\hline
+\end{DoxyExceptions}
+
+
+Definition at line 669 of file Ahc\-Mapper.\-hh.
+
+
+
+References get\-Chan(), get\-Chip(), get\-J\-Size(), and get\-Module().
+
+
+
+Referenced by get\-J\-Size\-From\-Cell\-I\-D().
+
+\index{C\-A\-L\-I\-C\-E\-::\-Ahc\-Mapper@{C\-A\-L\-I\-C\-E\-::\-Ahc\-Mapper}!get\-K@{get\-K}}
+\index{get\-K@{get\-K}!CALICE::AhcMapper@{C\-A\-L\-I\-C\-E\-::\-Ahc\-Mapper}}
+\subsubsection[{get\-K}]{\setlength{\rightskip}{0pt plus 5cm}unsigned int C\-A\-L\-I\-C\-E\-::\-Ahc\-Mapper\-::get\-K (
+\begin{DoxyParamCaption}
+\item[{const unsigned int}]{module}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}\label{classCALICE_1_1AhcMapper_a086377eb0064aab3337e8f12fcf40fc3}
+
+
+K of (Mokka) cell\-I\-D. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em module} & module number\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+K
+\end{DoxyReturn}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em \doxyref{Bad\-Data\-Exception}{p.}{classCALICE_1_1BadDataException}} & if lookup fails \\
+\hline
+\end{DoxyExceptions}
+
+
+Definition at line 531 of file Ahc\-Mapper.\-hh.
+
+
+
+Referenced by C\-A\-L\-I\-C\-E\-::\-Ahc\-Median\-Filter\-Temp\-Provider\-::apply\-Correction(), get\-Cell\-I\-D\-From\-Mod\-Chip\-Chan(), get\-Cell\-I\-D\-Of\-Index(), get\-K\-From\-D\-A\-Q\-I\-D(), get\-K\-From\-Module\-I\-D(), and print().
+
+\index{C\-A\-L\-I\-C\-E\-::\-Ahc\-Mapper@{C\-A\-L\-I\-C\-E\-::\-Ahc\-Mapper}!get\-Max\-Index@{get\-Max\-Index}}
+\index{get\-Max\-Index@{get\-Max\-Index}!CALICE::AhcMapper@{C\-A\-L\-I\-C\-E\-::\-Ahc\-Mapper}}
+\subsubsection[{get\-Max\-Index}]{\setlength{\rightskip}{0pt plus 5cm}unsigned int C\-A\-L\-I\-C\-E\-::\-Ahc\-Mapper\-::get\-Max\-Index (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [protected]}, {\ttfamily [virtual]}}\label{classCALICE_1_1AhcMapper_a9b0644605c525dd581d8d8098764120e}
+
+
+get the maximum value of the compact index for storing data in vectors 
+
+\begin{DoxyReturn}{Returns}
+maximum compact index 
+\end{DoxyReturn}
+
+
+Implements {\bf C\-A\-L\-I\-C\-E\-::\-Mapper} \doxyref{}{p.}{classCALICE_1_1Mapper_a34292aca2d87f6fc7f10094b5f7cab0e}.
+
+
+
+Definition at line 1057 of file Ahc\-Mapper.\-hh.
+
+
+
+Referenced by get\-Index\-By\-Cell\-I\-D(), get\-Index\-By\-D\-A\-Q\-I\-D(), and get\-Index\-By\-Module\-I\-D().
+
+\index{C\-A\-L\-I\-C\-E\-::\-Ahc\-Mapper@{C\-A\-L\-I\-C\-E\-::\-Ahc\-Mapper}!get\-Module@{get\-Module}}
+\index{get\-Module@{get\-Module}!CALICE::AhcMapper@{C\-A\-L\-I\-C\-E\-::\-Ahc\-Mapper}}
+\subsubsection[{get\-Module}]{\setlength{\rightskip}{0pt plus 5cm}unsigned int C\-A\-L\-I\-C\-E\-::\-Ahc\-Mapper\-::get\-Module (
+\begin{DoxyParamCaption}
+\item[{const unsigned int}]{crate, }
+\item[{const unsigned int}]{slot, }
+\item[{const unsigned int}]{fe}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}\label{classCALICE_1_1AhcMapper_aab2c351390279b6ddb691922c1697b94}
+
+
+module number from triple crate, slot, fe 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em crate} & crate number (should be 0xac) \\
+\hline
+\mbox{\tt in}  & {\em slot} & slot number \\
+\hline
+\mbox{\tt in}  & {\em fe} & fe number\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+module number
+\end{DoxyReturn}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em \doxyref{Bad\-Data\-Exception}{p.}{classCALICE_1_1BadDataException}} & if lookup fails \\
+\hline
+\end{DoxyExceptions}
+
+
+Definition at line 118 of file Ahc\-Mapper.\-hh.
+
+
+
+Referenced by get\-Chan(), get\-Chip(), get\-I\-Size\-From\-I\-J\-K(), get\-J\-Size\-From\-I\-J\-K(), get\-Module\-From\-Cell\-I\-D(), get\-Module\-From\-D\-A\-Q\-I\-D(), get\-True\-I\-From\-I\-J\-K(), and get\-True\-J\-From\-I\-J\-K().
+
+\index{C\-A\-L\-I\-C\-E\-::\-Ahc\-Mapper@{C\-A\-L\-I\-C\-E\-::\-Ahc\-Mapper}!get\-Module@{get\-Module}}
+\index{get\-Module@{get\-Module}!CALICE::AhcMapper@{C\-A\-L\-I\-C\-E\-::\-Ahc\-Mapper}}
+\subsubsection[{get\-Module}]{\setlength{\rightskip}{0pt plus 5cm}unsigned int C\-A\-L\-I\-C\-E\-::\-Ahc\-Mapper\-::get\-Module (
+\begin{DoxyParamCaption}
+\item[{const unsigned int}]{k}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}\label{classCALICE_1_1AhcMapper_a602233d596480f6f4b4248ddf6370d36}
+
+
+module number from K 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em k} & K\\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em \doxyref{Bad\-Data\-Exception}{p.}{classCALICE_1_1BadDataException}} & if lookup fails\\
+\hline
+\end{DoxyExceptions}
+\begin{DoxyReturn}{Returns}
+module number 
+\end{DoxyReturn}
+
+
+Definition at line 135 of file Ahc\-Mapper.\-hh.
+
+
+
+References C\-A\-L\-I\-C\-E\-::\-Decoder\-Set\-::get\-Cell\-I\-D\-Encoding(), and C\-A\-L\-I\-C\-E\-::\-Mapper\-::get\-Decoder().
+
+\index{C\-A\-L\-I\-C\-E\-::\-Ahc\-Mapper@{C\-A\-L\-I\-C\-E\-::\-Ahc\-Mapper}!get\-Slot@{get\-Slot}}
+\index{get\-Slot@{get\-Slot}!CALICE::AhcMapper@{C\-A\-L\-I\-C\-E\-::\-Ahc\-Mapper}}
+\subsubsection[{get\-Slot}]{\setlength{\rightskip}{0pt plus 5cm}unsigned int C\-A\-L\-I\-C\-E\-::\-Ahc\-Mapper\-::get\-Slot (
+\begin{DoxyParamCaption}
+\item[{const unsigned int}]{module}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}\label{classCALICE_1_1AhcMapper_a503f8cfd0f24380502c278adeb087015}
+
+
+slot number from module number 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em module} & module number\\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em \doxyref{Bad\-Data\-Exception}{p.}{classCALICE_1_1BadDataException}} & if lookup fails\\
+\hline
+\end{DoxyExceptions}
+\begin{DoxyReturn}{Returns}
+slot number 
+\end{DoxyReturn}
+
+
+Definition at line 346 of file Ahc\-Mapper.\-hh.
+
+
+
+Referenced by get\-Slot\-From\-Cell\-I\-D(), get\-Slot\-From\-Module\-I\-D(), and print().
+
+\index{C\-A\-L\-I\-C\-E\-::\-Ahc\-Mapper@{C\-A\-L\-I\-C\-E\-::\-Ahc\-Mapper}!print@{print}}
+\index{print@{print}!CALICE::AhcMapper@{C\-A\-L\-I\-C\-E\-::\-Ahc\-Mapper}}
+\subsubsection[{print}]{\setlength{\rightskip}{0pt plus 5cm}void C\-A\-L\-I\-C\-E\-::\-Ahc\-Mapper\-::print (
+\begin{DoxyParamCaption}
+\item[{std\-::ostream \&}]{ostream}
+\end{DoxyParamCaption}
+) const}\label{classCALICE_1_1AhcMapper_acb6947df0b876fd32cb206e576260fb9}
+
+
+print current data contents 
+
+A detailed printout of the current layout is sent to the given stream.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt out}  & {\em ostream} & stream for the output \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 286 of file Ahc\-Mapper.\-cc.
+
+
+
+References get\-Crate(), get\-Fe(), get\-K(), and get\-Slot().
+
+\index{C\-A\-L\-I\-C\-E\-::\-Ahc\-Mapper@{C\-A\-L\-I\-C\-E\-::\-Ahc\-Mapper}!print\-Stats@{print\-Stats}}
+\index{print\-Stats@{print\-Stats}!CALICE::AhcMapper@{C\-A\-L\-I\-C\-E\-::\-Ahc\-Mapper}}
+\subsubsection[{print\-Stats}]{\setlength{\rightskip}{0pt plus 5cm}void C\-A\-L\-I\-C\-E\-::\-Ahc\-Mapper\-::print\-Stats (
+\begin{DoxyParamCaption}
+\item[{std\-::ostream \&}]{ostream}
+\end{DoxyParamCaption}
+) const}\label{classCALICE_1_1AhcMapper_aebe2a8845c6b24584f111009ef7f89c4}
+
+
+print summary of current data contents 
+
+A summary of the current number of module types, modules, etc... is printed.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt out}  & {\em ostream} & stream for the output \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 254 of file Ahc\-Mapper.\-cc.
+
+\index{C\-A\-L\-I\-C\-E\-::\-Ahc\-Mapper@{C\-A\-L\-I\-C\-E\-::\-Ahc\-Mapper}!update\-Connections@{update\-Connections}}
+\index{update\-Connections@{update\-Connections}!CALICE::AhcMapper@{C\-A\-L\-I\-C\-E\-::\-Ahc\-Mapper}}
+\subsubsection[{update\-Connections}]{\setlength{\rightskip}{0pt plus 5cm}void C\-A\-L\-I\-C\-E\-::\-Ahc\-Mapper\-::update\-Connections (
+\begin{DoxyParamCaption}
+\item[{const lcio\-::\-L\-C\-Collection $\ast$}]{module\-Connection\-Col}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\label{classCALICE_1_1AhcMapper_a33e187b8e578c2dc6062e63fdae16e28}
+
+
+updates the mapping information in the class (possible after first fill only) 
+
+The internal mapping of modules to type and electronics connection is updated.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em module\-Connection\-Col} & L\-C\-Generic\-Object collection of \doxyref{Module\-Connection}{p.}{classCALICE_1_1ModuleConnection} type \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 949 of file Ahc\-Mapper.\-hh.
+
+
+
+References fill\-Module\-Connection().
+
+
+
+The documentation for this class was generated from the following files\-:\begin{DoxyCompactItemize}
+\item 
+Ahc\-Mapper.\-hh\item 
+Ahc\-Mapper.\-cc\end{DoxyCompactItemize}

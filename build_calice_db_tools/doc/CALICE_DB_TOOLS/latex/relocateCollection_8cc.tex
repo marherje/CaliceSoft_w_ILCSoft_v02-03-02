@@ -1,0 +1,59 @@
+\section{/nfs/dust/ilc/user/marquezh/\-Calice\-Soft\-\_\-w\-\_\-\-I\-L\-C\-Soft\-\_\-v02-\/03-\/02/calice\-\_\-db\-\_\-tools/src/relocate\-Collection.cc File Reference}
+\label{relocateCollection_8cc}\index{/nfs/dust/ilc/user/marquezh/\-Calice\-Soft\-\_\-w\-\_\-\-I\-L\-C\-Soft\-\_\-v02-\/03-\/02/calice\-\_\-db\-\_\-tools/src/relocate\-Collection.\-cc@{/nfs/dust/ilc/user/marquezh/\-Calice\-Soft\-\_\-w\-\_\-\-I\-L\-C\-Soft\-\_\-v02-\/03-\/02/calice\-\_\-db\-\_\-tools/src/relocate\-Collection.\-cc}}
+{\ttfamily \#include \char`\"{}D\-B\-Cond\-Writer.\-hh\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}Calice\-Run\-Time.\-hh\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}Time\-String.\-hh\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}Calice\-D\-B\-Init\-Helper.\-hh\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}lcio.\-h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}E\-V\-E\-N\-T/\-L\-C\-Parameters.\-h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}lccd/\-D\-B\-Cond\-Handler.\-hh\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}lccd/\-D\-B\-Interface.\-hh\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}Conditions\-D\-B/\-I\-Cond\-D\-B\-Data\-Access.\-h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}Conditions\-D\-B/\-I\-Cond\-D\-B\-Object.\-h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}Conditions\-D\-B/\-Cond\-D\-B\-Obj\-Factory.\-h\char`\"{}}\\*
+{\ttfamily \#include $<$string$>$}\\*
+{\ttfamily \#include $<$unistd.\-h$>$}\\*
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+lcio\-::long64 {\bfseries interprete\-Time} (const char $\ast$arg, bool from=true)\label{relocateCollection_8cc_ad4bc1ee6b3bcb259bd28bb7963f34db0}
+
+\item 
+void {\bfseries print\-Help} (int argc, char $\ast$$\ast$argv)\label{relocateCollection_8cc_a1b5a1d3071ab7a7222af534a20a6aba6}
+
+\item 
+int {\bfseries main} (int argc, char $\ast$$\ast$argv)\label{relocateCollection_8cc_a3c04138a5bfe5d72780bb7e82a18e627}
+
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+This tool writes a collection from an .slcio file to a database folder.
+
+Usage\-:
+
+
+\begin{DoxyCode}
+relocateCollection [-r <infolder>] [-a <time>] [-l <outfolder>] [-f <from>] [-u <until>] [-k]
+\end{DoxyCode}
+
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em $<$infolder$>$} & database folder the collection is read from \\
+\hline
+\mbox{\tt in}  & {\em $<$time$>$} & read input database folder for this run or time \\
+\hline
+\mbox{\tt out}  & {\em $<$outfolder$>$} & database folder the collection is written to \\
+\hline
+\mbox{\tt out}  & {\em $<$from$>$} & D\-B entry will be valid from this point in time \\
+\hline
+\mbox{\tt out}  & {\em $<$until$>$} & D\-B entry will be valid until this point in time \\
+\hline
+ & {\em -\/k} & switch\-: keep the validity range of the input folder/collection\\
+\hline
+\end{DoxyParams}
+Any time string has to have the format Y\-Y\-Y\-Y-\/\-M\-M-\/\-D\-D-\/hh-\/mm-\/ss.\-sss 
+
+Definition in file {\bf relocate\-Collection.\-cc}.
+

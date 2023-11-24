@@ -1,0 +1,130 @@
+\section{C\-A\-L\-I\-C\-E\-:\-:Ahc2\-Ganging\-Processor Class Reference}
+\label{classCALICE_1_1Ahc2GangingProcessor}\index{C\-A\-L\-I\-C\-E\-::\-Ahc2\-Ganging\-Processor@{C\-A\-L\-I\-C\-E\-::\-Ahc2\-Ganging\-Processor}}
+
+
+The processor performing the ganging.  
+
+
+
+
+{\ttfamily \#include $<$Ahc2\-Ganging\-Processor.\-hh$>$}
+
+Inheritance diagram for C\-A\-L\-I\-C\-E\-:\-:Ahc2\-Ganging\-Processor\-:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classCALICE_1_1Ahc2GangingProcessor}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+virtual Processor $\ast$ {\bfseries new\-Processor} ()\label{classCALICE_1_1Ahc2GangingProcessor_a641c4981d0a6e6b7262c533afef6610d}
+
+\item 
+virtual void {\bf init} ()
+\begin{DoxyCompactList}\small\item\em Initiliases the ganging chain of responsibilty for fine and coarse modules. \end{DoxyCompactList}\item 
+virtual void {\bf process\-Event} (lcio\-::\-L\-C\-Event $\ast$evt)\label{classCALICE_1_1Ahc2GangingProcessor_aabe6735d2ee4a77ea0b0f4471f3084f0}
+
+\begin{DoxyCompactList}\small\item\em Called every event. \end{DoxyCompactList}\item 
+float {\bf energy\-Sum} (std\-::vector$<$ Sim\-Calorimeter\-Hit $\ast$ $>$ vec\-Sim\-Hits)\label{classCALICE_1_1Ahc2GangingProcessor_a559c0975eaf8a4ba34865b0c61f9f44e}
+
+\begin{DoxyCompactList}\small\item\em Helper function to add up all Sim\-Calorimeter\-Hit energies. \end{DoxyCompactList}\item 
+virtual void {\bf create\-Output\-Collections} (lcio\-::\-L\-C\-Event $\ast$evt)\label{classCALICE_1_1Ahc2GangingProcessor_ac0ec34c59d8e08ef566d90bd3db0806d}
+
+\begin{DoxyCompactList}\small\item\em Creates the ganged collection. \end{DoxyCompactList}\item 
+virtual void {\bf tidy\-Up} ()\label{classCALICE_1_1Ahc2GangingProcessor_a77c89cea49112c5ae23a0f7cfa547514}
+
+\begin{DoxyCompactList}\small\item\em Resets everything which is event specific. \end{DoxyCompactList}\item 
+virtual void {\bfseries print\-Parameters} ()\label{classCALICE_1_1Ahc2GangingProcessor_aa992fa2e0139efbac4ca271fddbf4d09}
+
+\item 
+void {\bfseries end} ()\label{classCALICE_1_1Ahc2GangingProcessor_a055b34a63fff28f57dbad36e2e019a08}
+
+\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+vector$<$ std\-::string $>$ {\bfseries \-\_\-calorim\-Inp\-Collections}\label{classCALICE_1_1Ahc2GangingProcessor_a336a0172cf7433b6c59362856d133139}
+
+\item 
+vector$<$ std\-::string $>$ {\bfseries \-\_\-calorim\-Out\-Collections}\label{classCALICE_1_1Ahc2GangingProcessor_a0be4cc687a247ae1cbd8fccb5b9b89c4}
+
+\item 
+float {\bfseries \-\_\-tile\-Border\-Attenuation\-Factor}\label{classCALICE_1_1Ahc2GangingProcessor_a60ca794d80683e32799d3e15db651f40}
+
+\item 
+int {\bfseries \-\_\-\-Tokyo\-Layer}\label{classCALICE_1_1Ahc2GangingProcessor_ab7f3b82677dc2fa66ef598f26efc787a}
+
+\item 
+{\bf Contribution\-Map} {\bf \-\_\-contribution\-Map}
+\begin{DoxyCompactList}\small\item\em Instance which holds the gather Sim\-Calorimeter\-Hits. \end{DoxyCompactList}\item 
+std\-::vector$<$ {\bf Ganger} $\ast$ $>$ {\bf \-\_\-gangers\-For\-Tokyo\-Module}
+\begin{DoxyCompactList}\small\item\em All gangers needed for a tokyo module. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+The processor performing the ganging. 
+
+Definition at line 59 of file Ahc2\-Ganging\-Processor.\-hh.
+
+
+
+\subsection{Member Function Documentation}
+\index{C\-A\-L\-I\-C\-E\-::\-Ahc2\-Ganging\-Processor@{C\-A\-L\-I\-C\-E\-::\-Ahc2\-Ganging\-Processor}!init@{init}}
+\index{init@{init}!CALICE::Ahc2GangingProcessor@{C\-A\-L\-I\-C\-E\-::\-Ahc2\-Ganging\-Processor}}
+\subsubsection[{init}]{\setlength{\rightskip}{0pt plus 5cm}void C\-A\-L\-I\-C\-E\-::\-Ahc2\-Ganging\-Processor\-::init (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}\label{classCALICE_1_1Ahc2GangingProcessor_a85e1628f6cc79278e8fa51be8e41bcf6}
+
+
+Initiliases the ganging chain of responsibilty for fine and coarse modules. 
+
+Defines location of module types. 
+
+Definition at line 76 of file Ahc2\-Ganging\-Processor.\-cc.
+
+
+
+References \-\_\-contribution\-Map, and \-\_\-gangers\-For\-Tokyo\-Module.
+
+
+
+\subsection{Field Documentation}
+\index{C\-A\-L\-I\-C\-E\-::\-Ahc2\-Ganging\-Processor@{C\-A\-L\-I\-C\-E\-::\-Ahc2\-Ganging\-Processor}!\-\_\-contribution\-Map@{\-\_\-contribution\-Map}}
+\index{\-\_\-contribution\-Map@{\-\_\-contribution\-Map}!CALICE::Ahc2GangingProcessor@{C\-A\-L\-I\-C\-E\-::\-Ahc2\-Ganging\-Processor}}
+\subsubsection[{\-\_\-contribution\-Map}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Contribution\-Map} C\-A\-L\-I\-C\-E\-::\-Ahc2\-Ganging\-Processor\-::\-\_\-contribution\-Map\hspace{0.3cm}{\ttfamily [protected]}}\label{classCALICE_1_1Ahc2GangingProcessor_af9493a3b058b1da01eb61a750fa00dde}
+
+
+Instance which holds the gather Sim\-Calorimeter\-Hits. 
+
+The outcome of the ganging is here. 
+
+Definition at line 109 of file Ahc2\-Ganging\-Processor.\-hh.
+
+
+
+Referenced by create\-Output\-Collections(), init(), and tidy\-Up().
+
+\index{C\-A\-L\-I\-C\-E\-::\-Ahc2\-Ganging\-Processor@{C\-A\-L\-I\-C\-E\-::\-Ahc2\-Ganging\-Processor}!\-\_\-gangers\-For\-Tokyo\-Module@{\-\_\-gangers\-For\-Tokyo\-Module}}
+\index{\-\_\-gangers\-For\-Tokyo\-Module@{\-\_\-gangers\-For\-Tokyo\-Module}!CALICE::Ahc2GangingProcessor@{C\-A\-L\-I\-C\-E\-::\-Ahc2\-Ganging\-Processor}}
+\subsubsection[{\-\_\-gangers\-For\-Tokyo\-Module}]{\setlength{\rightskip}{0pt plus 5cm}std\-::vector$<${\bf Ganger}$\ast$$>$ C\-A\-L\-I\-C\-E\-::\-Ahc2\-Ganging\-Processor\-::\-\_\-gangers\-For\-Tokyo\-Module\hspace{0.3cm}{\ttfamily [protected]}}\label{classCALICE_1_1Ahc2GangingProcessor_abbfd0274ca1053690374699f6dd8ae2d}
+
+
+All gangers needed for a tokyo module. 
+
+Filled in \doxyref{init()}{p.}{classCALICE_1_1Ahc2GangingProcessor_a85e1628f6cc79278e8fa51be8e41bcf6}. 
+
+Definition at line 113 of file Ahc2\-Ganging\-Processor.\-hh.
+
+
+
+Referenced by init(), and process\-Event().
+
+
+
+The documentation for this class was generated from the following files\-:\begin{DoxyCompactItemize}
+\item 
+Ahc2\-Ganging\-Processor.\-hh\item 
+Ahc2\-Ganging\-Processor.\-cc\end{DoxyCompactItemize}

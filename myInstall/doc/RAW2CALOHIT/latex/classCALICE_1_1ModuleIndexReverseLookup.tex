@@ -1,0 +1,134 @@
+\section{C\-A\-L\-I\-C\-E\-:\-:Module\-Index\-Reverse\-Lookup Class Reference}
+\label{classCALICE_1_1ModuleIndexReverseLookup}\index{C\-A\-L\-I\-C\-E\-::\-Module\-Index\-Reverse\-Lookup@{C\-A\-L\-I\-C\-E\-::\-Module\-Index\-Reverse\-Lookup}}
+
+
+Creates huge arrays which allows to find out the module and the cell index using the Mokka conform geometrical index.  
+
+
+
+
+{\ttfamily \#include $<$Module\-Index\-Reverse\-Lookup.\-hh$>$}
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void {\bf create\-Index\-Reverse\-Lookup} (const Mapping\-And\-Alignment \&mapping)
+\begin{DoxyCompactList}\small\item\em Create a huge arrays which contains for each cell the module and the cell index. \end{DoxyCompactList}\item 
+pair$<$ U\-Int\-\_\-t, U\-Int\-\_\-t $>$ {\bf get\-Module\-And\-Cell\-Index} (const Mapping\-And\-Alignment \&mapping, const Cell\-Index \&a\-\_\-cell\-\_\-index) const 
+\begin{DoxyCompactList}\small\item\em Return the module and cell index for the given Mokka conform geometrical cell index. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Protected Types}
+\begin{DoxyCompactItemize}
+\item 
+typedef {\bf Simple\-Array\-\_\-t}\\*
+$<$ {\bf Simple\-Array\-\_\-t}$<$ {\bf Simple\-Array\-\_\-t}\\*
+$<$ {\bf Simple\-Array\-\_\-t}$<$ unsigned \\*
+short $>$ $>$ $>$ $>$ {\bfseries Cell\-Index\-Array\-\_\-t}\label{classCALICE_1_1ModuleIndexReverseLookup_a3cb8a61f3dc239ac5ffbee685bf6988f}
+
+\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+{\bf Simple\-Array\-\_\-t}$<$ {\bf Simple\-Array\-\_\-t}\\*
+$<$ {\bf Simple\-Array\-\_\-t}$<$ unsigned \\*
+short $>$ $>$ $>$ {\bf \-\_\-module\-Index\-Array}
+\begin{DoxyCompactList}\small\item\em Array which contains for each layer and wafer row and column the module index. \end{DoxyCompactList}\item 
+{\bf Simple\-Array\-\_\-t}$<$ {\bf Cell\-Index\-Array\-\_\-t} $>$ {\bf \-\_\-module\-Type\-Array}
+\begin{DoxyCompactList}\small\item\em Array which contains for each module type the cell indices for a pad of a given wafer, pad row and column. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Creates huge arrays which allows to find out the module and the cell index using the Mokka conform geometrical index. 
+
+Definition at line 9 of file Module\-Index\-Reverse\-Lookup.\-hh.
+
+
+
+\subsection{Member Function Documentation}
+\index{C\-A\-L\-I\-C\-E\-::\-Module\-Index\-Reverse\-Lookup@{C\-A\-L\-I\-C\-E\-::\-Module\-Index\-Reverse\-Lookup}!create\-Index\-Reverse\-Lookup@{create\-Index\-Reverse\-Lookup}}
+\index{create\-Index\-Reverse\-Lookup@{create\-Index\-Reverse\-Lookup}!CALICE::ModuleIndexReverseLookup@{C\-A\-L\-I\-C\-E\-::\-Module\-Index\-Reverse\-Lookup}}
+\subsubsection[{create\-Index\-Reverse\-Lookup}]{\setlength{\rightskip}{0pt plus 5cm}void C\-A\-L\-I\-C\-E\-::\-Module\-Index\-Reverse\-Lookup\-::create\-Index\-Reverse\-Lookup (
+\begin{DoxyParamCaption}
+\item[{const Mapping\-And\-Alignment \&}]{mapping}
+\end{DoxyParamCaption}
+)}\label{classCALICE_1_1ModuleIndexReverseLookup_a2bd62812d099ee99ec7cd26c8e25b39c}
+
+
+Create a huge arrays which contains for each cell the module and the cell index. 
+
+The array which contains the cell indices uses the module type, the wafer and pad row and column indices. The array which contains the module indices uses the wafer row and column index. 
+
+Definition at line 10 of file Module\-Index\-Reverse\-Lookup.\-cc.
+
+
+
+References \-\_\-module\-Index\-Array, and \-\_\-module\-Type\-Array.
+
+\index{C\-A\-L\-I\-C\-E\-::\-Module\-Index\-Reverse\-Lookup@{C\-A\-L\-I\-C\-E\-::\-Module\-Index\-Reverse\-Lookup}!get\-Module\-And\-Cell\-Index@{get\-Module\-And\-Cell\-Index}}
+\index{get\-Module\-And\-Cell\-Index@{get\-Module\-And\-Cell\-Index}!CALICE::ModuleIndexReverseLookup@{C\-A\-L\-I\-C\-E\-::\-Module\-Index\-Reverse\-Lookup}}
+\subsubsection[{get\-Module\-And\-Cell\-Index}]{\setlength{\rightskip}{0pt plus 5cm}pair$<$U\-Int\-\_\-t, U\-Int\-\_\-t$>$ C\-A\-L\-I\-C\-E\-::\-Module\-Index\-Reverse\-Lookup\-::get\-Module\-And\-Cell\-Index (
+\begin{DoxyParamCaption}
+\item[{const Mapping\-And\-Alignment \&}]{mapping, }
+\item[{const Cell\-Index \&}]{a\-\_\-cell\-\_\-index}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}\label{classCALICE_1_1ModuleIndexReverseLookup_a639f10b89a671e6259c9e2d3ae98965f}
+
+
+Return the module and cell index for the given Mokka conform geometrical cell index. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em mapping} & reference to the mapping object. \\
+\hline
+{\em a\-\_\-cell\-\_\-index} & the Mokka conform geometrical cell index \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+the module index and the cell index on the module. The module index is the index in the list of defined module locations (coditions datae). The cell index is the index of the cells on the module. The pads are multiplexed on 12(6) lines (readout chips). First the 12(6) cells of the fist sample are stored than the cells of next sample. 
+\end{DoxyReturn}
+\#ifdef B\-O\-U\-N\-D\-A\-R\-Y\-\_\-\-C\-H\-E\-C\-K 
+
+Definition at line 31 of file Module\-Index\-Reverse\-Lookup.\-hh.
+
+
+
+References \-\_\-module\-Index\-Array, and \-\_\-module\-Type\-Array.
+
+
+
+\subsection{Field Documentation}
+\index{C\-A\-L\-I\-C\-E\-::\-Module\-Index\-Reverse\-Lookup@{C\-A\-L\-I\-C\-E\-::\-Module\-Index\-Reverse\-Lookup}!\-\_\-module\-Index\-Array@{\-\_\-module\-Index\-Array}}
+\index{\-\_\-module\-Index\-Array@{\-\_\-module\-Index\-Array}!CALICE::ModuleIndexReverseLookup@{C\-A\-L\-I\-C\-E\-::\-Module\-Index\-Reverse\-Lookup}}
+\subsubsection[{\-\_\-module\-Index\-Array}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Simple\-Array\-\_\-t}$<$ {\bf Simple\-Array\-\_\-t}$<$ {\bf Simple\-Array\-\_\-t}$<$ unsigned short $>$ $>$ $>$ C\-A\-L\-I\-C\-E\-::\-Module\-Index\-Reverse\-Lookup\-::\-\_\-module\-Index\-Array\hspace{0.3cm}{\ttfamily [protected]}}\label{classCALICE_1_1ModuleIndexReverseLookup_a6f4c66de3a572faa169b6d8f605e7e2f}
+
+
+Array which contains for each layer and wafer row and column the module index. 
+
+
+
+Definition at line 81 of file Module\-Index\-Reverse\-Lookup.\-hh.
+
+
+
+Referenced by create\-Index\-Reverse\-Lookup(), and get\-Module\-And\-Cell\-Index().
+
+\index{C\-A\-L\-I\-C\-E\-::\-Module\-Index\-Reverse\-Lookup@{C\-A\-L\-I\-C\-E\-::\-Module\-Index\-Reverse\-Lookup}!\-\_\-module\-Type\-Array@{\-\_\-module\-Type\-Array}}
+\index{\-\_\-module\-Type\-Array@{\-\_\-module\-Type\-Array}!CALICE::ModuleIndexReverseLookup@{C\-A\-L\-I\-C\-E\-::\-Module\-Index\-Reverse\-Lookup}}
+\subsubsection[{\-\_\-module\-Type\-Array}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Simple\-Array\-\_\-t}$<$ {\bf Cell\-Index\-Array\-\_\-t} $>$ C\-A\-L\-I\-C\-E\-::\-Module\-Index\-Reverse\-Lookup\-::\-\_\-module\-Type\-Array\hspace{0.3cm}{\ttfamily [protected]}}\label{classCALICE_1_1ModuleIndexReverseLookup_a26cc1c3d8dba383ba59b4a8e8b96c98d}
+
+
+Array which contains for each module type the cell indices for a pad of a given wafer, pad row and column. 
+
+
+
+Definition at line 86 of file Module\-Index\-Reverse\-Lookup.\-hh.
+
+
+
+Referenced by create\-Index\-Reverse\-Lookup(), and get\-Module\-And\-Cell\-Index().
+
+
+
+The documentation for this class was generated from the following files\-:\begin{DoxyCompactItemize}
+\item 
+Module\-Index\-Reverse\-Lookup.\-hh\item 
+Module\-Index\-Reverse\-Lookup.\-cc\end{DoxyCompactItemize}

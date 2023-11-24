@@ -1,0 +1,110 @@
+\section{C\-A\-L\-I\-C\-E\-:\-:Sce\-Slow\-Readout\-Mod\-Block Class Reference}
+\label{classCALICE_1_1SceSlowReadoutModBlock}\index{C\-A\-L\-I\-C\-E\-::\-Sce\-Slow\-Readout\-Mod\-Block@{C\-A\-L\-I\-C\-E\-::\-Sce\-Slow\-Readout\-Mod\-Block}}
+
+
+Interface Class to access the Sce\-Slow\-Readout Data Here we handle ahc voltages, temperatures et al.  
+
+
+
+
+{\ttfamily \#include $<$Sce\-Slow\-Readout\-Mod\-Block.\-hh$>$}
+
+Inheritance diagram for C\-A\-L\-I\-C\-E\-:\-:Sce\-Slow\-Readout\-Mod\-Block\-:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=4.000000cm]{classCALICE_1_1SceSlowReadoutModBlock}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+{\bf Sce\-Slow\-Readout\-Mod\-Block} ()\label{classCALICE_1_1SceSlowReadoutModBlock_ae76345702171581b6d0b14c908138316}
+
+\begin{DoxyCompactList}\small\item\em Constructor. \end{DoxyCompactList}\item 
+{\bf Sce\-Slow\-Readout\-Mod\-Block} (L\-C\-Object $\ast${\bf obj})\label{classCALICE_1_1SceSlowReadoutModBlock_afce80d304f84ac8d5646cfd0b03ff254}
+
+\begin{DoxyCompactList}\small\item\em 'Copy constructor' needed to interpret L\-C\-Collection read from file/database. \end{DoxyCompactList}\item 
+std\-::vector$<$ double $>$ \& {\bf get\-Hbab\-Currents} ()\label{classCALICE_1_1SceSlowReadoutModBlock_a34df8f135cc36eecee4d60c7569f4d2b}
+
+\begin{DoxyCompactList}\small\item\em Retrieve the hbab Currents. \end{DoxyCompactList}\item 
+void {\bf print} (std\-::ostream \&)
+\begin{DoxyCompactList}\small\item\em convenient print method \end{DoxyCompactList}\item 
+virtual const std\-::string {\bf get\-Type\-Name} () const \label{classCALICE_1_1SceSlowReadoutModBlock_a0edd2064a07aae9d59f3aaa3b08d1712}
+
+\begin{DoxyCompactList}\small\item\em Return the type of the class. \end{DoxyCompactList}\item 
+virtual const std\-::string {\bf get\-Data\-Description} () const \label{classCALICE_1_1SceSlowReadoutModBlock_a9cd39f98c8cee70448c0da904bf95f41}
+
+\begin{DoxyCompactList}\small\item\em Return a brief description of the data members. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void {\bf set\-Types} ()\label{classCALICE_1_1SceSlowReadoutModBlock_a7b9d02e2f430d6084875286d2aa8eca7}
+
+\begin{DoxyCompactList}\small\item\em This method defines the (general) types of the measured values A type not present here will not be handled!!! \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+std\-::vector$<$ double $>$ {\bf \-\_\-hbab\-Currents}
+\begin{DoxyCompactList}\small\item\em The output vectors. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Detailed Description}
+Interface Class to access the Sce\-Slow\-Readout Data Here we handle ahc voltages, temperatures et al. 
+
+when filling the class the string identifying the measured values has to be given first, a warning is issued if no identifier is given for a given datatype. On the other hand this concerns just the filler of the class, i.\-e. the conversion where it is done once for all. See the print method at the end of the class for the meaning of the fields (as of 31/7/06) Use the interface methods to retrieve the data fields \begin{DoxyAuthor}{Author}
+\-: Roman Pöschl L\-A\-L/\-Orsay 
+\end{DoxyAuthor}
+\begin{DoxyDate}{Date}
+Aug 2006 
+\end{DoxyDate}
+
+
+Definition at line 55 of file Sce\-Slow\-Readout\-Mod\-Block.\-hh.
+
+
+
+\subsection{Member Function Documentation}
+\index{C\-A\-L\-I\-C\-E\-::\-Sce\-Slow\-Readout\-Mod\-Block@{C\-A\-L\-I\-C\-E\-::\-Sce\-Slow\-Readout\-Mod\-Block}!print@{print}}
+\index{print@{print}!CALICE::SceSlowReadoutModBlock@{C\-A\-L\-I\-C\-E\-::\-Sce\-Slow\-Readout\-Mod\-Block}}
+\subsubsection[{print}]{\setlength{\rightskip}{0pt plus 5cm}void C\-A\-L\-I\-C\-E\-::\-Sce\-Slow\-Readout\-Mod\-Block\-::print (
+\begin{DoxyParamCaption}
+\item[{std\-::ostream \&}]{os}
+\end{DoxyParamCaption}
+)}\label{classCALICE_1_1SceSlowReadoutModBlock_a5387c50b25d23fd4605a2ab2ffd2d8a9}
+
+
+convenient print method 
+
+Convenient print method. 
+
+Definition at line 32 of file Sce\-Slow\-Readout\-Mod\-Block.\-cc.
+
+
+
+References C\-A\-L\-I\-C\-E\-::\-Scint\-Calo\-Slow\-Readout\-Mod\-Block\-::get\-Cmb\-Height(), C\-A\-L\-I\-C\-E\-::\-Scint\-Calo\-Slow\-Readout\-Mod\-Block\-::get\-Cmb\-Temperatures(), C\-A\-L\-I\-C\-E\-::\-Scint\-Calo\-Slow\-Readout\-Mod\-Block\-::get\-Cmb\-Voltages(), C\-A\-L\-I\-C\-E\-::\-Scint\-Calo\-Slow\-Readout\-Mod\-Block\-::get\-Cmb\-Width(), get\-Hbab\-Currents(), C\-A\-L\-I\-C\-E\-::\-Scint\-Calo\-Slow\-Readout\-Mod\-Block\-::get\-Hbab\-Voltages(), C\-A\-L\-I\-C\-E\-::\-Scint\-Calo\-Slow\-Readout\-Mod\-Block\-::get\-Led\-Setting(), C\-A\-L\-I\-C\-E\-::\-Scint\-Calo\-Slow\-Readout\-Mod\-Block\-::get\-Module\-Number(), C\-A\-L\-I\-C\-E\-::\-Scint\-Calo\-Slow\-Readout\-Mod\-Block\-::get\-Time\-Stamp(), C\-A\-L\-I\-C\-E\-::\-Scint\-Calo\-Slow\-Readout\-Mod\-Block\-::prepare\-Output\-Vecs(), and C\-A\-L\-I\-C\-E\-::to\-\_\-binary\-\_\-bitops().
+
+
+
+\subsection{Field Documentation}
+\index{C\-A\-L\-I\-C\-E\-::\-Sce\-Slow\-Readout\-Mod\-Block@{C\-A\-L\-I\-C\-E\-::\-Sce\-Slow\-Readout\-Mod\-Block}!\-\_\-hbab\-Currents@{\-\_\-hbab\-Currents}}
+\index{\-\_\-hbab\-Currents@{\-\_\-hbab\-Currents}!CALICE::SceSlowReadoutModBlock@{C\-A\-L\-I\-C\-E\-::\-Sce\-Slow\-Readout\-Mod\-Block}}
+\subsubsection[{\-\_\-hbab\-Currents}]{\setlength{\rightskip}{0pt plus 5cm}std\-::vector$<$double$>$ C\-A\-L\-I\-C\-E\-::\-Sce\-Slow\-Readout\-Mod\-Block\-::\-\_\-hbab\-Currents\hspace{0.3cm}{\ttfamily [private]}}\label{classCALICE_1_1SceSlowReadoutModBlock_abb0604d20baa3b2944def056344fcfdf}
+
+
+The output vectors. 
+
+hbab temperatures 
+
+Definition at line 114 of file Sce\-Slow\-Readout\-Mod\-Block.\-hh.
+
+
+
+Referenced by set\-Types().
+
+
+
+The documentation for this class was generated from the following files\-:\begin{DoxyCompactItemize}
+\item 
+Sce\-Slow\-Readout\-Mod\-Block.\-hh\item 
+Sce\-Slow\-Readout\-Mod\-Block.\-cc\end{DoxyCompactItemize}

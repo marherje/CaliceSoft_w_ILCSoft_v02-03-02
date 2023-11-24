@@ -1,0 +1,109 @@
+\section{C\-A\-L\-I\-C\-E\-:\-:D\-A\-Qconnection Class Reference}
+\label{classCALICE_1_1DAQconnection}\index{C\-A\-L\-I\-C\-E\-::\-D\-A\-Qconnection@{C\-A\-L\-I\-C\-E\-::\-D\-A\-Qconnection}}
+
+
+Class to store the D\-A\-Q address of a singel channel.  
+
+
+
+
+{\ttfamily \#include $<$D\-A\-Qconnection.\-hh$>$}
+
+Inheritance diagram for C\-A\-L\-I\-C\-E\-:\-:D\-A\-Qconnection\-:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classCALICE_1_1DAQconnection}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+{\bf D\-A\-Qconnection} (const unsigned int crate, const unsigned slot, const unsigned int fe, const unsigned int chip, const unsigned int channel, const std\-::string enc=default\-Encoding\-String)\label{classCALICE_1_1DAQconnection_a1683f388c10013e8c435262de9c2b0a7}
+
+\begin{DoxyCompactList}\small\item\em Constructor with initial values. \end{DoxyCompactList}\item 
+{\bf D\-A\-Qconnection} (E\-V\-E\-N\-T\-::\-L\-C\-Object $\ast$object, const std\-::string enc=default\-Encoding\-String)\label{classCALICE_1_1DAQconnection_a7f6a1f3e76fe54b0f952cccf01b2b489}
+
+\begin{DoxyCompactList}\small\item\em Constructor from L\-C\-Object. \end{DoxyCompactList}\item 
+{\bf $\sim$\-D\-A\-Qconnection} ()\label{classCALICE_1_1DAQconnection_aab804c279b14b7139378825152f5d7af}
+
+\begin{DoxyCompactList}\small\item\em Destructor. \end{DoxyCompactList}\item 
+void {\bfseries set\-Channel} (unsigned int channel)\label{classCALICE_1_1DAQconnection_abc3d2a36439898873d04493ade4e2b79}
+
+\item 
+void {\bfseries set\-Chip} (unsigned int chip)\label{classCALICE_1_1DAQconnection_aa8749c6e343d3703cfd036a8a19851c8}
+
+\item 
+void {\bfseries set\-Fe} (unsigned int fe)\label{classCALICE_1_1DAQconnection_abbdb39c30e0d4c1709dc016fabbefabf}
+
+\item 
+void {\bfseries set\-Slot} (unsigned int slot)\label{classCALICE_1_1DAQconnection_a63a06aa5dda5881a3f19135cd5e42bf5}
+
+\item 
+void {\bfseries set\-Crate} (unsigned int crate)\label{classCALICE_1_1DAQconnection_aab13f456fa1e0f793b09820c82d9ada9}
+
+\item 
+unsigned int {\bfseries get\-Channel} () const \label{classCALICE_1_1DAQconnection_a5578725f9868a3c581425eca90fdd223}
+
+\item 
+unsigned int {\bfseries get\-Chip} () const \label{classCALICE_1_1DAQconnection_a4a783e2a4d37608d087479dc255731d2}
+
+\item 
+unsigned int {\bfseries get\-Fe} () const \label{classCALICE_1_1DAQconnection_ace1feda8e13487780aff0666eaadc83c}
+
+\item 
+unsigned int {\bfseries get\-Slot} () const \label{classCALICE_1_1DAQconnection_af873791c5318dc6496f96c16d1b782a7}
+
+\item 
+unsigned int {\bfseries get\-Crate} () const \label{classCALICE_1_1DAQconnection_a6379ea8cfc3e76ab748acae97e25553b}
+
+\item 
+const std\-::string {\bfseries get\-Encoding\-String} () const \label{classCALICE_1_1DAQconnection_aa1ccbcccb16b3ff6ace4b0e31c1d87ff}
+
+\item 
+const std\-::string {\bf get\-Type\-Name} () const \label{classCALICE_1_1DAQconnection_a25b1407516b5afd73f813662de211d7e}
+
+\begin{DoxyCompactList}\small\item\em Implementation of L\-C\-Generic\-Object\-::get\-Type\-Name. \end{DoxyCompactList}\item 
+const std\-::string {\bf get\-Data\-Description} () const \label{classCALICE_1_1DAQconnection_a7b2b9484febf8612c71291028c6675f4}
+
+\begin{DoxyCompactList}\small\item\em Implementation of L\-C\-Generic\-Object\-::get\-Data\-Description. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void {\bfseries update\-L\-Cobject} ()\label{classCALICE_1_1DAQconnection_a99cde9fbe145d08c6e60ce5946b28814}
+
+\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+const std\-::string {\bfseries encoding\-String}\label{classCALICE_1_1DAQconnection_ae7c2fbe117b63706706a28ac96610975}
+
+\item 
+U\-T\-I\-L\-::\-Bit\-Field64 {\bfseries bit\-Field}\label{classCALICE_1_1DAQconnection_a6d3903a6b24a78eb1c73ec087aeb8df1}
+
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Class to store the D\-A\-Q address of a singel channel. 
+
+This class uses the mechanism of the Bit\-Field64 to encode and decode the bit positions using a string value. User defined encoding strings are possible. These have to define following fields\-: \begin{DoxyItemize}
+\item crate The crate \item slot Slot in the crate \item fe Frontend on the card in slot \item chip Chip on the frontend \item channel Channel on the chip\end{DoxyItemize}
+\begin{DoxyAuthor}{Author}
+{\tt Benjamin.\-Lutz@desy.\-de} 
+\end{DoxyAuthor}
+\begin{DoxyVersion}{Version}
+1.\-0 
+\end{DoxyVersion}
+\begin{DoxyDate}{Date}
+September 2008 
+\end{DoxyDate}
+
+
+Definition at line 30 of file D\-A\-Qconnection.\-hh.
+
+
+
+The documentation for this class was generated from the following files\-:\begin{DoxyCompactItemize}
+\item 
+D\-A\-Qconnection.\-hh\item 
+D\-A\-Qconnection.\-cc\end{DoxyCompactItemize}

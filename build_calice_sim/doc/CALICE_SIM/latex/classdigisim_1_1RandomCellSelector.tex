@@ -1,0 +1,112 @@
+\section{digisim\-:\-:Random\-Cell\-Selector Class Reference}
+\label{classdigisim_1_1RandomCellSelector}\index{digisim\-::\-Random\-Cell\-Selector@{digisim\-::\-Random\-Cell\-Selector}}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void {\bfseries set\-Init\-Seed} (int init\-Seed)\label{classdigisim_1_1RandomCellSelector_aa389dcac8981ac416555e2866b75d479}
+
+\item 
+void {\bf set\-Symmetry\-Order} (int symmetry\-Order)\label{classdigisim_1_1RandomCellSelector_a71fc8e3ffdc9c4a644142aeb254d3c33}
+
+\begin{DoxyCompactList}\small\item\em Symmetry\-Order is the order of the rotational symmetry \par
+ 8 for an octagonal barrel calorimeter\par
+ 2 for an endcap calorimeter\par
+ 1 for a standalone prototype\par
+ 0 for an idealized cylindrical calorimeter. \end{DoxyCompactList}\item 
+void {\bfseries setup\-Geometry} (bool use\-X\-M\-Lfile, std\-::string file\-Name=\char`\"{}\char`\"{})\label{classdigisim_1_1RandomCellSelector_aa889df9415d75c53e942f952bf9ee58b}
+
+\item 
+long long {\bfseries get\-Random\-Cell} ()\label{classdigisim_1_1RandomCellSelector_a6f0e56776338612a189c849f4981f085}
+
+\item 
+long long {\bfseries get\-Random\-Cell} (int Layer)\label{classdigisim_1_1RandomCellSelector_a42e14117b5ce129c14268f5a08a78cf1}
+
+\item 
+long long {\bfseries get\-Random\-Cell} (int Layer, int Stave, int Module)\label{classdigisim_1_1RandomCellSelector_a2cb18c5875ef99e2aee721d23e2652e1}
+
+\item 
+int {\bfseries get\-Random\-Seed} ()\label{classdigisim_1_1RandomCellSelector_aebf5a5f6c6222990afba9c56c196d4c9}
+
+\item 
+int {\bfseries get\-Total\-Number\-Of\-Cells} ()\label{classdigisim_1_1RandomCellSelector_a47ae7440cce769364e34ec878aed147e}
+
+\item 
+bool {\bfseries use\-Encoder32} ()\label{classdigisim_1_1RandomCellSelector_acae9047a8c0477530a3f66ba7f9dc242}
+
+\item 
+int {\bfseries max\-K} ()\label{classdigisim_1_1RandomCellSelector_a24a9173fd46fc5a06f3b7bba113544c1}
+
+\item 
+int {\bfseries max\-M} ()\label{classdigisim_1_1RandomCellSelector_a2fe2b6f85fdaea0b31f32589118780aa}
+
+\item 
+int {\bfseries max\-S} ()\label{classdigisim_1_1RandomCellSelector_a2364c5617141b8f2413a686bd012d7c1}
+
+\item 
+int {\bfseries max\-I} ()\label{classdigisim_1_1RandomCellSelector_ad3bb62ee1f79f2a1097d0e170607c34c}
+
+\item 
+int {\bfseries max\-J} ()\label{classdigisim_1_1RandomCellSelector_a65b2022316841b74011dbcd04cd2410f}
+
+\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+gear\-::\-Gear\-Mgr $\ast$ {\bfseries \-\_\-gear\-Mgr}\label{classdigisim_1_1RandomCellSelector_ade71011e1f57476d105fc9479ab87469}
+
+\item 
+{\bf Cell\-I\-D\-Decoder} {\bfseries \-\_\-cell\-I\-D}\label{classdigisim_1_1RandomCellSelector_a1fb4b55bc5463c9d50e79459fa3e0e91}
+
+\item 
+int {\bfseries \-\_\-symmetry\-Order}\label{classdigisim_1_1RandomCellSelector_a5a3bf0a3b6f06079608c539868b28efc}
+
+\item 
+int {\bfseries \-\_\-max\-M}\label{classdigisim_1_1RandomCellSelector_a0df8bce5fad5dab347494b1494987422}
+
+\item 
+int {\bfseries \-\_\-max\-S}\label{classdigisim_1_1RandomCellSelector_ab390c4fd7f3aba78b30190e8e475fee1}
+
+\item 
+int {\bfseries \-\_\-max\-I}\label{classdigisim_1_1RandomCellSelector_aa34bf7f73f1563157ea8a2d4102ced1c}
+
+\item 
+int {\bfseries \-\_\-max\-J}\label{classdigisim_1_1RandomCellSelector_a8f193b8fd6b55a1d03fa8faeebe51e0f}
+
+\item 
+int {\bfseries \-\_\-nlayers}\label{classdigisim_1_1RandomCellSelector_a0967d00423125896764dddafd87678e0}
+
+\item 
+bool {\bfseries \-\_\-use\-Encoder32}\label{classdigisim_1_1RandomCellSelector_a82b47a95920e43853214352d1375d6b0}
+
+\item 
+int {\bfseries \-\_\-\-Layer}\label{classdigisim_1_1RandomCellSelector_aff30f83a262fa9a34856ffebaf874421}
+
+\item 
+int {\bfseries \-\_\-\-Module}\label{classdigisim_1_1RandomCellSelector_ae64969bde9ae87a8ccc594fc1e3de712}
+
+\item 
+int {\bfseries \-\_\-\-Stave}\label{classdigisim_1_1RandomCellSelector_ad50abf08f47c1485ebff9bf80ffd11d1}
+
+\item 
+T\-Random {\bfseries \-\_\-random}\label{classdigisim_1_1RandomCellSelector_aa3735334971457bee6190453076626d2}
+
+\item 
+int {\bfseries \-\_\-seed}\label{classdigisim_1_1RandomCellSelector_acf8dbe334144207374f82bc5fecb3bc1}
+
+\item 
+int {\bfseries \-\_\-num\-Tot\-Cells}\label{classdigisim_1_1RandomCellSelector_a4e709113e93171de3a57163bc96b8b9d}
+
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+
+
+Definition at line 15 of file Random\-Cell\-Selector.\-hpp.
+
+
+
+The documentation for this class was generated from the following files\-:\begin{DoxyCompactItemize}
+\item 
+Random\-Cell\-Selector.\-hpp\item 
+Random\-Cell\-Selector.\-cpp\end{DoxyCompactItemize}

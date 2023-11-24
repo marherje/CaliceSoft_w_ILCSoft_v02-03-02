@@ -1,0 +1,67 @@
+\section{C\-A\-L\-I\-C\-E\-:\-:Event\-List\-Processor Class Reference}
+\label{classCALICE_1_1EventListProcessor}\index{C\-A\-L\-I\-C\-E\-::\-Event\-List\-Processor@{C\-A\-L\-I\-C\-E\-::\-Event\-List\-Processor}}
+Inheritance diagram for C\-A\-L\-I\-C\-E\-:\-:Event\-List\-Processor\-:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classCALICE_1_1EventListProcessor}
+\end{center}
+\end{figure}
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+struct {\bf Run\-Event}
+\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+virtual Processor $\ast$ {\bfseries new\-Processor} ()\label{classCALICE_1_1EventListProcessor_a23be03857951c989b63af81d518564e9}
+
+\item 
+virtual void {\bfseries init} ()\label{classCALICE_1_1EventListProcessor_aa963b574bae85f4290f8ee22572ada31}
+
+\item 
+virtual void {\bfseries process\-Event} (E\-V\-E\-N\-T\-::\-L\-C\-Event $\ast$)\label{classCALICE_1_1EventListProcessor_a18ed652b62d32832397bc5c7a8fd698b}
+
+\end{DoxyCompactItemize}
+\subsection*{Protected Types}
+\begin{DoxyCompactItemize}
+\item 
+typedef std\-::vector$<$ {\bf Run\-Event} $>$ {\bfseries Event\-List}\label{classCALICE_1_1EventListProcessor_a6900af21cf795245d9e295277dba761c}
+
+\item 
+typedef Event\-List\-::const\-\_\-iterator {\bfseries Event\-List\-Iter}\label{classCALICE_1_1EventListProcessor_a1016f6cc849ec0898035ca82bae77876}
+
+\end{DoxyCompactItemize}
+\subsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void {\bfseries seek\-Next\-Run} ()\label{classCALICE_1_1EventListProcessor_ae343cf6f6cefa042a8cc0dedb6e10270}
+
+\item 
+void {\bfseries seek\-Event\-After} (int)\label{classCALICE_1_1EventListProcessor_a76b0e99806b8c34790e5d8a1da36b279}
+
+\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+std\-::string {\bfseries \-\_\-event\-List\-Filename}\label{classCALICE_1_1EventListProcessor_ab8779b7ff00ca329ec3195ede9558ce3}
+
+\item 
+std\-::fstream {\bfseries \-\_\-event\-List\-F\-Stream}\label{classCALICE_1_1EventListProcessor_a9e5afcb38c4a88ad22214ba552e97671}
+
+\item 
+bool {\bfseries \-\_\-skip\-All}\label{classCALICE_1_1EventListProcessor_a8f2c9676aeded88f48b3a203c19069a8}
+
+\item 
+Event\-List {\bfseries \-\_\-event\-List}\label{classCALICE_1_1EventListProcessor_a2b73e686f4ea3b6575dd77448017d89c}
+
+\item 
+Event\-List\-Iter {\bfseries \-\_\-next\-Event}\label{classCALICE_1_1EventListProcessor_a42a9da251da35720e119cc0c7d48c043}
+
+\end{DoxyCompactItemize}
+
+
+The documentation for this class was generated from the following files\-:\begin{DoxyCompactItemize}
+\item 
+/nfs/dust/ilc/user/marquezh/\-Calice\-Soft\-\_\-w\-\_\-\-I\-L\-C\-Soft\-\_\-v02-\/03-\/02/calice\-\_\-analysis/addon\-Procs/include/Event\-List\-Processor.\-hh\item 
+/nfs/dust/ilc/user/marquezh/\-Calice\-Soft\-\_\-w\-\_\-\-I\-L\-C\-Soft\-\_\-v02-\/03-\/02/calice\-\_\-analysis/addon\-Procs/src/Event\-List\-Processor.\-cc\end{DoxyCompactItemize}

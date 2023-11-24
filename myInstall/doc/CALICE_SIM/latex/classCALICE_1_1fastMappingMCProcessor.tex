@@ -1,0 +1,101 @@
+\section{C\-A\-L\-I\-C\-E\-:\-:fast\-Mapping\-M\-C\-Processor Class Reference}
+\label{classCALICE_1_1fastMappingMCProcessor}\index{C\-A\-L\-I\-C\-E\-::fast\-Mapping\-M\-C\-Processor@{C\-A\-L\-I\-C\-E\-::fast\-Mapping\-M\-C\-Processor}}
+
+
+A class which converts M\-C Calorimeter\-Hits to Calice\-Hits according to the hardware conditions.  
+
+
+
+
+{\ttfamily \#include $<$fast\-Mapping\-M\-C\-Processor.\-hh$>$}
+
+Inheritance diagram for C\-A\-L\-I\-C\-E\-:\-:fast\-Mapping\-M\-C\-Processor\-:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classCALICE_1_1fastMappingMCProcessor}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+virtual Processor $\ast$ {\bfseries new\-Processor} ()\label{classCALICE_1_1fastMappingMCProcessor_ab06a418d8f426b4f376038e15648f805}
+
+\item 
+virtual void {\bfseries init} ()\label{classCALICE_1_1fastMappingMCProcessor_ac553a3f1f37551ea82ec357033a94627}
+
+\item 
+virtual void {\bfseries process\-Event} (L\-C\-Event $\ast$evt)\label{classCALICE_1_1fastMappingMCProcessor_a421b8d6a2de101b449bd113174e765a3}
+
+\end{DoxyCompactItemize}
+\subsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+virtual void {\bfseries module\-Type\-Changed} (lcio\-::\-L\-C\-Collection $\ast$col)\label{classCALICE_1_1fastMappingMCProcessor_ac8ab2a7a6f74c8431825a07f968cc5c8}
+
+\item 
+virtual void {\bfseries module\-Location\-Changed} (lcio\-::\-L\-C\-Collection $\ast$col)\label{classCALICE_1_1fastMappingMCProcessor_af1594c423e9d7594ac32dfa3aefed41a}
+
+\item 
+virtual void {\bfseries module\-Connection\-Changed} (lcio\-::\-L\-C\-Collection $\ast$col)\label{classCALICE_1_1fastMappingMCProcessor_a80ccd4b7f2477e2ef827150d26b30d0d}
+
+\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+std\-::string {\bfseries \-\_\-input\-Col\-Name}\label{classCALICE_1_1fastMappingMCProcessor_a60c85c8ed4568c43d501b2f99225e799}
+
+\item 
+std\-::string {\bfseries \-\_\-output\-Col\-Name}\label{classCALICE_1_1fastMappingMCProcessor_a1cd51bb3f877ee4cf7b084a5dfb2e29b}
+
+\item 
+std\-::string {\bfseries \-\_\-col\-Name\-Module\-Description}\label{classCALICE_1_1fastMappingMCProcessor_a6151f9764b61143a403e7b5c1bf34387}
+
+\item 
+std\-::string {\bfseries \-\_\-col\-Name\-Module\-Location}\label{classCALICE_1_1fastMappingMCProcessor_a9a0f0f3f6d1eb5c7cb3f82afa0f06a15}
+
+\item 
+std\-::string {\bfseries \-\_\-col\-Name\-Module\-Connection}\label{classCALICE_1_1fastMappingMCProcessor_a37c008b2b1a94829e76c6d9d2da4ecbd}
+
+\item 
+Conditions\-Change\-Delegator\\*
+$<$ {\bf fast\-Mapping\-M\-C\-Processor} $>$ {\bfseries \-\_\-module\-Type\-Change}\label{classCALICE_1_1fastMappingMCProcessor_a002d46e3f4a40e2a9c44a2f442f2fb19}
+
+\item 
+Conditions\-Change\-Delegator\\*
+$<$ {\bf fast\-Mapping\-M\-C\-Processor} $>$ {\bfseries \-\_\-module\-Location\-Change}\label{classCALICE_1_1fastMappingMCProcessor_abf4769a3e7af7dc0c3948d3a80177133}
+
+\item 
+Conditions\-Change\-Delegator\\*
+$<$ {\bf fast\-Mapping\-M\-C\-Processor} $>$ {\bfseries \-\_\-module\-Connection\-Change}\label{classCALICE_1_1fastMappingMCProcessor_aef9057a9c5397b37fc04feb80ff8cefc}
+
+\item 
+Mapping\-And\-Alignment {\bfseries \-\_\-mapping}\label{classCALICE_1_1fastMappingMCProcessor_a01bc3fbd03d5743378634a88048feb4f}
+
+\item 
+int {\bfseries \-\_\-view\-Connection\-Tree}\label{classCALICE_1_1fastMappingMCProcessor_a7056c93cf2c9a55900b913d107ee664a}
+
+\item 
+Hcal\-Module\-Index\-Reverse\-Lookup {\bfseries \-\_\-index\-Lookup}\label{classCALICE_1_1fastMappingMCProcessor_a4548d21ad3b70db058cadb1b9050494d}
+
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+A class which converts M\-C Calorimeter\-Hits to Calice\-Hits according to the hardware conditions. 
+
+\begin{DoxyAuthor}{Author}
+S.\-Schmidt D\-E\-S\-Y 
+\end{DoxyAuthor}
+\begin{DoxyDate}{Date}
+April 2 2007 
+\end{DoxyDate}
+
+
+Definition at line 31 of file fast\-Mapping\-M\-C\-Processor.\-hh.
+
+
+
+The documentation for this class was generated from the following files\-:\begin{DoxyCompactItemize}
+\item 
+fast\-Mapping\-M\-C\-Processor.\-hh\item 
+fast\-Mapping\-M\-C\-Processor.\-cc\end{DoxyCompactItemize}
