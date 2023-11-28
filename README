@@ -13,3 +13,24 @@ SET(FULL_LIBRARY_NAME $<TARGET_FILE:${lib1name}>)
 
 Instead, we called the old policy using: 
 cmake_policy(SET CMP0026 OLD)
+
+
+Extra note: This patch work as well with older versions of ILCSoft such as v02-02-03, 
+but you'll need to import the softwre LighGBM using:
+#--------------------------------------------------------------------------------
+#     LightGBM
+#--------------------------------------------------------------------------------
+export LIGHTGBM_HOME="/cvmfs/calice.desy.de/lightGBM/v2.3.1"
+export PATH="$LIGHTGBM_HOME/bin:$PATH"
+export LD_LIBRARY_PATH="$LIGHTGBM_HOME/lib:$LD_LIBRARY_PATH"
+#--------------------------------------------------------------------------------
+also cmake might ask for the explicit definition of some paths such. For instance, for ilcutil in ILCSoft v02-02-03:
+#--------------------------------------------------------------------------------
+export ilcutil="/cvmfs/ilc.desy.de/sw/x86_64_gcc82_centos7/v02-02-03/ilcutil/v01-06-02"
+# --- additional ILCUTIL commands -------                                                                                                                     
+export PATH="/cvmfs/ilc.desy.de/sw/x86_64_gcc82_centos7/v02-02-03/ilcutil/v01-06-02/bin:$PATH"
+export LD_LIBRARY_PATH="$ilcutil/lib:$LD_LIBRARY_PATH"
+#--------------------------------------------------------------------------------
+
+Other (newer) versions of cmake require the definition of 'DIR', you just have to rewrite the export command 
+with the same syntax that the error message requires.
